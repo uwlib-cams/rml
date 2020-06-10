@@ -1,0 +1,1287 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ex: <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+ex:WorkMonographMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+  ].
+
+ex:WorkMonographMap rr:subjectMap [
+  rml:reference "@*[name()='rdf:about']";
+  rr:class bf:Work
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TelevisionProducerMap
+  ]
+].
+
+ex:TelevisionProducerMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
+].
+
+ex:TelevisionProducerMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:TelevisionProducerMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TelevisionProducerBNodeMap
+  ]
+].
+
+ex:TelevisionProducerBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
+].
+
+ex:TelevisionProducerBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:TelevisionProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10075']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:TelevisionProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10075']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:TelevisionProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/tlp";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:FilmProducerMap
+  ]
+].
+
+ex:FilmProducerMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10073]"
+].
+
+ex:FilmProducerMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:FilmProducerMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:FilmProducerBNodeMap
+  ]
+].
+
+ex:FilmProducerBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10073]"
+].
+
+ex:FilmProducerBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:FilmProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10073']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:FilmProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10073']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:FilmProducerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ScreenwriterMap
+  ]
+].
+
+ex:ScreenwriterMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+].
+
+ex:ScreenwriterMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:ScreenwriterMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ScreenwriterBNodeMap
+  ]
+].
+
+ex:ScreenwriterBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+].
+
+ex:ScreenwriterBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:ScreenwriterBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10203']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:ScreenwriterBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10203']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:ScreenwriterBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/aus";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:DirectorPhotographyMap
+  ]
+].
+
+ex:DirectorPhotographyMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
+].
+
+ex:DirectorPhotographyMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:DirectorPhotographyMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:DirectorPhotographyBNodeMap
+  ]
+].
+
+ex:DirectorPhotographyBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
+].
+
+ex:DirectorPhotographyBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:DirectorPhotographyBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10068']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:DirectorPhotographyBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10068']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:DirectorPhotographyBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cng";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ProductionCompanyMap
+  ]
+].
+
+ex:ProductionCompanyMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
+].
+
+ex:ProductionCompanyMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:ProductionCompanyMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ProductionCompanyBNodeMap
+  ]
+].
+
+ex:ProductionCompanyBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
+].
+
+ex:ProductionCompanyBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Organization
+] .
+
+ex:ProductionCompanyBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10008']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:ProductionCompanyBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10008']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:ProductionCompanyBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prn";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:FilmDirectorMap
+  ]
+].
+
+ex:FilmDirectorMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10013]"
+].
+
+ex:FilmDirectorMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:FilmDirectorMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:FilmDirectorBNodeMap
+  ]
+].
+
+ex:FilmDirectorBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10013]"
+].
+
+ex:FilmDirectorBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:FilmDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10013']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:FilmDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10013']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:FilmDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/fmd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TelevisionDirectorMap
+  ]
+].
+
+ex:TelevisionDirectorMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
+].
+
+ex:TelevisionDirectorMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:TelevisionDirectorMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TelevisionDirectorBNodeMap
+  ]
+].
+
+ex:TelevisionDirectorBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
+].
+
+ex:TelevisionDirectorBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:TelevisionDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10015']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:TelevisionDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10015']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:TelevisionDirectorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/tld";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CartographerMap
+  ]
+].
+
+ex:CartographerMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
+].
+
+ex:CartographerMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:CartographerMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CartographerBNodeMap
+  ]
+].
+
+ex:CartographerBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
+].
+
+ex:CartographerBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:CartographerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10052']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:CartographerBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10052']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:CartographerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/ctg";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ArtistMap
+  ]
+].
+
+ex:ArtistMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+].
+
+ex:ArtistMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:ArtistMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ArtistBNodeMap
+  ]
+].
+
+ex:ArtistBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+].
+
+ex:ArtistBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:ArtistBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10058']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:ArtistBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10058']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:ArtistBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/art";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CompilerMap
+  ]
+].
+
+ex:CompilerMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+].
+
+ex:CompilerMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:CompilerMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CompilerBNodeMap
+  ]
+].
+
+ex:CompilerBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+].
+
+ex:CompilerBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:CompilerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10055']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:CompilerBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10055']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:CompilerBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/com";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:contribution ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AuthorMap
+  ]
+].
+
+ex:AuthorMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+].
+
+ex:AuthorMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Contribution
+] .
+
+ex:AuthorMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AuthorBNodeMap
+  ]
+].
+
+ex:AuthorBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+].
+
+ex:AuthorBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Agent
+] .
+
+ex:AuthorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:agent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10061']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:AuthorBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10061']";
+    rr:termType rr:Literal
+  ]
+] .
+
+ex:AuthorBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:role ;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:dissertation ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:DissertationMapping
+  ]
+] .
+
+ex:DissertationMapping a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10077]"
+].
+
+ex:DissertationMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Dissertation
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:grantingInstitution ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10006']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:degree ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10077']";
+      rr:termType rr:Literal
+    ]
+  ] .
+
+ex:DissertationMapping rr:predicateObjectMap [
+    rr:predicate bf:date ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10215']";
+      rr:termType rr:Literal
+    ]
+  ] .
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:intendedAudience ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IntendedAudienceBNodeMap
+  ]
+].
+
+ex:IntendedAudienceBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10217]"
+].
+
+ex:IntendedAudienceBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:IntendedAudience
+].
+
+ex:IntendedAudienceBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10217']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:IntendedAudienceBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:intendedAudience ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10217']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:originPlace ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PlaceOfOriginBNodeMapping
+    ]
+  ] .
+
+ex:PlaceOfOriginBNodeMapping a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10218]"
+].
+
+ex:PlaceOfOriginBNodeMapping rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Place
+  ] .
+
+ex:PlaceOfOriginBNodeMapping rr:predicateObjectMap [
+    rr:predicate bf:source ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10218']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ] .
+
+ex:PlaceOfOriginBNodeMapping rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10218']";
+      rr:termType rr:Literal
+    ]
+  ] .
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:originDate ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10219']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:natureOfContent ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10222']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:identifiedBy ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IdentifiedByBNodeMapping
+  ]
+].
+
+ex:IdentifiedByBNodeMapping a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10002]"
+].
+
+ex:IdentifiedByBNodeMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Identifier
+].
+
+ex:IdentifiedByBNodeMapping rr:predicateObjectMap [
+  rr:predicate rdf:value ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10002']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CoordinatesBNodeMap
+  ]
+].
+
+ex:CoordinatesBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10024]"
+].
+
+ex:CoordinatesBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Cartographic
+].
+
+ex:CoordinatesBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10024']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:CoordinatesBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:coordinates ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10024']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:VariantTitleMap
+  ]
+].
+
+ex:VariantTitleMap a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10086]"
+].
+
+ex:VariantTitleMap rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:VariantTitle
+].
+
+ex:VariantTitleMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10086']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:derivativeOf ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:DerivativeOfBNodeMap
+  ]
+].
+
+ex:DerivativeOfBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10129]"
+].
+
+ex:DerivativeOfBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Work
+].
+
+ex:DerivativeOfBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:derivateOf ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10129']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:DerivativeOfBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10129']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:hasPart ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:PartWorkBNodeMap
+  ]
+].
+
+ex:PartWorkBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147]"
+].
+
+ex:PartWorkBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Work
+].
+
+ex:PartWorkBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:hasPart ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10147']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:PartWorkBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10147']"
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:title ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CoverageBNodeMap
+  ]
+].
+
+ex:CoverageBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10216]"
+].
+
+ex:CoverageBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Note
+].
+
+ex:CoverageBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10216']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:CoverageBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:note ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10216']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:CoverageBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:noteType ;
+  rr:objectMap [
+    rr:constant "Coverage of the work";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:title ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:KeyTitleBNodeMap
+  ]
+].
+
+ex:KeyTitleBNodeMap a rr:TriplesMap ;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1][P10367]"
+].
+
+ex:KeyTitleBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:KeyTitle
+].
+
+ex:KeyTitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10367']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:identifiedBy ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:VariantAccessPointMapping
+  ]
+].
+
+ex:VariantAccessPointMapping a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10332]"
+].
+
+ex:VariantAccessPointMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Identifier
+].
+
+ex:VariantAccessPointMapping rr:predicateObjectMap [
+  rr:predicate rdf:value ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10332']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:VariantAccessPointMapping rr:predicateObjectMap [
+  rr:predicate bf:source ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:VariantAccessPointBNodeMapping
+  ]
+].
+
+ex:VariantAccessPointBNodeMapping a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10332]"
+].
+
+ex:VariantAccessPointBNodeMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Source
+].
+
+ex:VariantAccessPointBNodeMapping rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rr:constant "RDA Variant Access Point";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TitleBNodeMap
+  ]
+].
+
+ex:TitleBNodeMap a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10223]"
+].
+
+ex:TitleBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Title
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10223']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10223']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:partNumber;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10012']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate madsrdf:authoritativeLabel ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:SubjectBNodeMap
+  ]
+].
+
+ex:SubjectBNodeMap a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
+].
+
+ex:SubjectBNodeMap rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class madsrdf:Authority
+  ] .
+
+ex:SubjectBNodeMap rr:predicateObjectMap [
+  rr:predicate madsrdf:authoritativeLabel ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10256']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:SubjectBNodeMap rr:predicateObjectMap [
+  rr:predicate madsrdf:authoritativeLabel ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10256']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:identifiedBy ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AuthorizedAccessPointMapping
+  ]
+].
+
+ex:AuthorizedAccessPointMapping a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+].
+
+ex:AuthorizedAccessPointMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Identifier
+].
+
+ex:AuthorizedAccessPointMapping rr:predicateObjectMap [
+  rr:predicate rdf:value ;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10331']";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:AuthorizedAccessPointMapping rr:predicateObjectMap [
+  rr:predicate bf:source ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AuthorizedAccessPointBNodeMapping
+  ]
+].
+
+ex:AuthorizedAccessPointMapping rr:predicateObjectMap [
+  rr:predicate bf:note ;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AuthorizedAccessPointNoteMapping
+  ]
+].
+
+ex:AuthorizedAccessPointBNodeMapping a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+].
+
+ex:AuthorizedAccessPointBNodeMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Source
+].
+
+ex:AuthorizedAccessPointBNodeMapping rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rr:constant "RDA Authorized Access Point";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:AuthorizedAccessPointNoteMapping a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+].
+
+ex:AuthorizedAccessPointNoteMapping rr:subjectMap [
+  rr:termType rr:BlankNode ;
+  rr:class bf:Note
+].
+
+ex:AuthorizedAccessPointNoteMapping rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rr:constant "This is an RDA Authorized Access Point";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:genreForm;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10004']/@*[name()='rdf:resource']";
+    rr:termType rr:IRI
+  ]
+].

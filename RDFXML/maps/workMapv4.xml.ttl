@@ -1,0 +1,1675 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix ex: <http://example.org/rules/>.
+@prefix schema: <http://schema.org/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdae: <http://rdaregistry.info/Elements/e/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix uwx: <https://doi.org/10.6069/uwlib.55.d.4#>.
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix rdam: <http://rdaregistry.info/Elements/m/>.
+@prefix ns7: <http://rdaregistry.info/Elements/m/datatype/>.
+@prefix rdai: <http://rdaregistry.info/Elements/i/>.
+@prefix rdau: <http://rdaregistry.info/Elements/u/>.
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/>.
+@prefix sin: <http://sinopia.io/vocabulary/>.
+@prefix ns12: <http://uw.edu/adaptationProperties/p/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+ex:WorkMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+  ].
+
+  ex:WorkMap rr:subjectMap [
+    rml:reference "@*[name()='rdf:about']";
+    rr:class bf:Work
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:identifiedBy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AuthorizedAccessPointMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:identifiedBy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:VariantAccessPointMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:title;
+    rr:objectMap [
+      rr:parentTriplesMap ex:TitleBNodeMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:title;
+    rr:objectMap [
+      rr:parentTriplesMap ex:VariantTitleMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate madsrdf:authoritativeLabel;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SubjectLiteralBNodeMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate madsrdf:authoritativeLabel;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SubjectIRIBNodeMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:genreForm;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10004']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:genreForm;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10004']";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "*[name()='rdaw:P10004']/@*[name()='xml:lang']"
+      ]
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AuthorLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AuthorIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:originDate ;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10219']";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+      rr:predicate bf:originPlace ;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10218']/@*[name()='rdf:resource']";
+        rr:termType rr:IRI
+      ]
+    ] .
+
+  ex:WorkMap rr:predicateObjectMap [
+      rr:predicate bf:originPlace ;
+      rr:objectMap [
+        rr:parentTriplesMap ex:PlaceOfOriginLiteralMap
+      ]
+    ] .
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ArtistLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ArtistIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ScreenwriterLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ScreenwriterIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FilmDirectorLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FilmDirectorIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CartographerLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CartographerBNodeMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:TelevisionDirectorLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:TelevisionDirectorIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CompilerLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CompilerIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FilmProducerLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FilmProducerIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:TelevisionProducerLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:TelevisionProducerIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DirectorOfPhotographyLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DirectorOfPhotographyIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PartWorkLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PartWorkIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ProductionCompanyLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:contribution ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ProductionCompanyIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:derivativeOf ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IsMotionPictureAdaptationLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:derivativeOf ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IsMotionPictureAdaptationIRIMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:identifiedBy ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IdentifierMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:natureOfContent ;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10222']";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "*[name()='rdaw:P10222']/@*[name()='xml:lang']"
+      ]
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:title ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CoverageOfContentLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:title ;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CoverageOfContentIRIMap
+    ]
+  ].
+
+  ex:AuthorizedAccessPointMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+    ].
+
+    ex:AuthorizedAccessPointMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Identifier
+    ].
+
+    ex:AuthorizedAccessPointMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10331']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10331']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+    ex:AuthorizedAccessPointMap rr:predicateObjectMap [
+      rr:predicate bf:source;
+      rr:objectMap [
+        rr:parentTriplesMap ex:AuthorizedAccessPointBNodeMap
+      ]
+    ].
+
+    ex:AuthorizedAccessPointMap rr:predicateObjectMap [
+      rr:predicate bf:note;
+      rr:objectMap [
+        rr:parentTriplesMap ex:AuthorizedAccessPointNoteMap
+      ]
+    ].
+
+    ex:AuthorizedAccessPointBNodeMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+      ].
+
+      ex:AuthorizedAccessPointBNodeMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class bf:Source
+      ].
+
+      ex:AuthorizedAccessPointBNodeMap rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+          rr:constant "RDA Authorized Access Point";
+          rr:termType rr:Literal;
+          rr:language "en"
+        ]
+      ].
+
+    ex:AuthorizedAccessPointNoteMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10331]"
+      ].
+
+      ex:AuthorizedAccessPointNoteMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class bf:Note
+      ].
+
+      ex:AuthorizedAccessPointNoteMap rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+          rr:constant "This is an RDA Authorized Access Point";
+          rr:termType rr:Literal;
+          rr:language "en"
+        ]
+      ].
+
+  ex:VariantAccessPointMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10332]"
+    ].
+
+    ex:VariantAccessPointMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Identifier
+    ].
+
+    ex:VariantAccessPointMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10332']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10332']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+    ex:VariantAccessPointMap rr:predicateObjectMap [
+      rr:predicate bf:source;
+      rr:objectMap [
+        rr:parentTriplesMap ex:VariantAccessPointBNodeMap
+      ]
+    ].
+
+    ex:VariantAccessPointBNodeMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10332]"
+      ].
+
+      ex:VariantAccessPointBNodeMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class bf:Source
+      ].
+
+      ex:VariantAccessPointBNodeMap rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [
+          rr:constant "RDA Variant Access Point";
+          rr:termType rr:Literal;
+          rr:language "en"
+        ]
+      ].
+
+  ex:TitleBNodeMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10223]"
+    ].
+
+    ex:TitleBNodeMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Title
+    ].
+
+    ex:TitleBNodeMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10223']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10223']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+    ex:TitleBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:mainTitle;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10223']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10223']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+    ex:TitleBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:partNumber;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10012']";
+        rr:termType rr:Literal
+      ]
+    ].
+
+    ex:TitleBNodeMap rr:predicateObjectMap [
+      rr:predicate bf:partNumber;
+      rr:objectMap [
+        rr:parentTriplesMap ex:KeyTitleMap
+      ]
+    ].
+
+  ex:VariantTitleMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10086]"
+    ].
+
+    ex:VariantTitleMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:VariantTitle
+    ].
+
+    ex:VariantTitleMap rr:predicateObjectMap [
+      rr:predicate bf:mainTitle;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10086']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10086']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+  # Subject
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:SubjectLiteralBNodeMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
+      ].
+
+      ex:SubjectLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode;
+          rr:class madsrdf:Authority
+        ].
+
+      ex:SubjectLiteralBNodeMap rr:predicateObjectMap [
+        rr:predicate madsrdf:authoritativeLabel;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10256']";
+          rr:termType rr:Literal
+        ]
+      ].
+
+    ex:SubjectIRIBNodeMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
+      ].
+
+      ex:SubjectIRIBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode;
+          rr:class madsrdf:Authority
+        ].
+
+      ex:SubjectIRIBNodeMap rr:predicateObjectMap [
+        rr:predicate madsrdf:authoritativeLabel;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10256']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Author
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:AuthorLiteralMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+      ].
+
+      ex:AuthorLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class bf:Contribution
+      ].
+
+      ex:AuthorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:AuthorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent;
+        rr:objectMap [
+          rr:parentTriplesMap ex:AuthorLiteralBNodeMap
+        ]
+      ].
+
+      ex:AuthorLiteralBNodeMap a rr:TriplesMap;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+        ].
+
+        ex:AuthorLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode;
+          rr:class bf:Agent
+        ].
+
+        ex:AuthorLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10061']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10061']/@*[name()='xml:lang']"
+            ]
+          ]
+        ].
+
+    ex:AuthorIRIMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+      ].
+
+      ex:AuthorIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class bf:Contribution
+      ].
+
+      ex:AuthorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:AuthorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10061']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
+    #NOTE: fix XPath so this bnode doesn't generate if the place of origin is an IRI
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10218]"
+    ].
+
+    ex:PlaceOfOriginLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Place
+      ] .
+
+    ex:PlaceOfOriginLiteralMap rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10218']";
+          rr:termType rr:Literal;
+          rml:languageMap [
+            rml:reference "*[name()='rdaw:P10218']/@*[name()='xml:lang']"
+          ]
+        ]
+      ] .
+
+  # Artist
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:ArtistLiteralMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+      ].
+
+      ex:ArtistLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ArtistLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/art";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ArtistLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent;
+        rr:objectMap [
+          rr:parentTriplesMap ex:ArtistLiteralBNodeMap
+        ]
+      ].
+
+      ex:ArtistLiteralBNodeMap a rr:TriplesMap;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+        ].
+
+      ex:ArtistLiteralBNodeMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Agent
+      ] .
+
+      ex:ArtistLiteralBNodeMap rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10058']";
+          rr:termType rr:Literal;
+          rml:languageMap [
+            rml:reference "*[name()='rdaw:P10058']/@*[name()='xml:lang']"
+          ]
+        ]
+      ] .
+
+    ex:ArtistIRIMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+      ].
+
+      ex:ArtistIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ArtistIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/art";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ArtistIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10058']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Screenwriter
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:ScreenwriterLiteralMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+      ].
+
+      ex:ScreenwriterLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ScreenwriterLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/aus";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ScreenwriterLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:ScreenwriterLiteralBNodeMap
+        ]
+      ].
+
+      ex:ScreenwriterLiteralBNodeMap a rr:TriplesMap;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+        ].
+
+        ex:ScreenwriterLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ].
+
+        ex:ScreenwriterLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10203']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10203']/@*[name()='xml:lang']"
+            ]
+          ]
+        ].
+
+    ex:ScreenwriterIRIMap a rr:TriplesMap;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+      ].
+
+      ex:ScreenwriterIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ScreenwriterIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/aus";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ScreenwriterIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10203']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Film Director
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:FilmDirectorLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10013]"
+      ].
+
+      ex:FilmDirectorLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:FilmDirectorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/fmd";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:FilmDirectorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:FilmDirectorLiteralBNodeMap
+        ]
+      ].
+
+      ex:FilmDirectorLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10013]"
+        ].
+
+        ex:FilmDirectorLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:FilmDirectorLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10013']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10013']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:FilmDirectorIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10013]"
+      ].
+
+      ex:FilmDirectorIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:FilmDirectorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/fmd";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:FilmDirectorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10013']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Cartographer
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:CartographerLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
+      ].
+
+      ex:CartographerLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:CartographerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/ctg";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:CartographerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent;
+        rr:objectMap [
+          rr:parentTriplesMap ex:CartographerLiteralBNodeMap
+        ]
+      ].
+
+      ex:CartographerLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
+        ].
+
+        ex:CartographerLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ].
+
+        ex:CartographerLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10052']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10052']/@*[name()='xml:lang']"
+            ]
+          ]
+        ].
+
+    ex:CartographerBNodeMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10052]"
+      ].
+
+      ex:CartographerBNodeMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:CartographerBNodeMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/ctg";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:CartographerBNodeMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10052']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Television Director
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:TelevisionDirectorLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
+      ].
+
+      ex:TelevisionDirectorLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:TelevisionDirectorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/tld";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:TelevisionDirectorLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:TelevisionDirectorLiteralBNodeMap
+        ]
+      ].
+
+      ex:TelevisionDirectorLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
+        ].
+
+        ex:TelevisionDirectorLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:TelevisionDirectorLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10015']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10015']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:TelevisionDirectorIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10015]"
+      ].
+
+      ex:TelevisionDirectorIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:TelevisionDirectorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/tld";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:TelevisionDirectorIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10015']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Compiler
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:CompilerLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+      ].
+
+      ex:CompilerLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:CompilerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/com";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:CompilerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:CompilerLiteralBNodeMap
+        ]
+      ].
+
+      ex:CompilerLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+        ].
+
+        ex:CompilerLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:CompilerLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10055']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10055']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:CompilerIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+      ].
+
+      ex:CompilerIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:CompilerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/com";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:CompilerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10055']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Film Producer
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:FilmProducerLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10073]"
+      ].
+
+      ex:FilmProducerLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:FilmProducerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:FilmProducerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:FilmProducerLiteralBNodeMap
+        ]
+      ].
+
+      ex:FilmProducerLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10073]"
+        ].
+
+        ex:FilmProducerLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:FilmProducerLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10073']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10073']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:FilmProducerIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10073]"
+      ].
+
+      ex:FilmProducerIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:FilmProducerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:FilmProducerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10073']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Television Producer
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:TelevisionProducerLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
+      ].
+
+      ex:TelevisionProducerLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:TelevisionProducerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/tlp";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:TelevisionProducerLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:TelevisionProducerLiteralBNodeMap
+        ]
+      ].
+
+      ex:TelevisionProducerLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
+        ].
+
+        ex:TelevisionProducerLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:TelevisionProducerLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10075']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10075']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:TelevisionProducerIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10075]"
+      ].
+
+      ex:TelevisionProducerIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:TelevisionProducerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/tlp";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:TelevisionProducerIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10075']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Director of Photography
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:DirectorOfPhotographyLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
+      ].
+
+      ex:DirectorOfPhotographyLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:DirectorOfPhotographyLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/cng";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:DirectorOfPhotographyLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:DirectorOfPhotographyLiteralBNodeMap
+        ]
+      ].
+
+      ex:DirectorOfPhotographyLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
+        ].
+
+        ex:DirectorOfPhotographyLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Agent
+        ] .
+
+        ex:DirectorOfPhotographyLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10068']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10068']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:DirectorOfPhotographyIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10068]"
+      ].
+
+      ex:DirectorOfPhotographyIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:DirectorOfPhotographyIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/cng";
+          rr:termType rr:IRI
+        ]
+      ].
+
+    ex:DirectorOfPhotographyIRIMap rr:predicateObjectMap [
+      rr:predicate bf:agent ;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10068']/@*[name()='rdf:resource']";
+        rr:termType rr:IRI
+      ]
+    ].
+
+  # Part Work
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:PartWorkLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147]"
+      ].
+
+      ex:PartWorkLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Work
+      ].
+
+      ex:PartWorkLiteralMap rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10147']";
+          rr:termType rr:Literal;
+          rml:languageMap [
+            rml:reference "*[name()='rdaw:P10147']/@*[name()='xml:lang']"
+          ]
+        ]
+      ].
+
+    ex:PartWorkIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147]"
+      ].
+
+      ex:PartWorkIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Work
+      ].
+
+      ex:PartWorkIRIMap  rr:predicateObjectMap [
+        rr:predicate bf:hasPart ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10147']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Production Company
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:ProductionCompanyLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
+      ].
+
+      ex:ProductionCompanyLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ProductionCompanyLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/prn";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ProductionCompanyLiteralMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rr:parentTriplesMap ex:ProductionCompanyLiteralBNodeMap
+        ]
+      ].
+
+      ex:ProductionCompanyLiteralBNodeMap a rr:TriplesMap ;
+        rml:logicalSource [
+          rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+          rml:referenceFormulation ql:XPath;
+          rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
+        ].
+
+        ex:ProductionCompanyLiteralBNodeMap rr:subjectMap [
+          rr:termType rr:BlankNode ;
+          rr:class bf:Organization
+        ] .
+
+        ex:ProductionCompanyLiteralBNodeMap rr:predicateObjectMap [
+          rr:predicate rdfs:label ;
+          rr:objectMap [
+            rml:reference "*[name()='rdaw:P10008']";
+            rr:termType rr:Literal;
+            rml:languageMap [
+              rml:reference "*[name()='rdaw:P10008']/@*[name()='xml:lang']"
+            ]
+          ]
+        ] .
+
+    ex:ProductionCompanyIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10008]"
+      ].
+
+      ex:ProductionCompanyIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Contribution
+      ] .
+
+      ex:ProductionCompanyIRIMap rr:predicateObjectMap [
+        rr:predicate bf:role ;
+        rr:objectMap [
+          rr:constant "http://id.loc.gov/vocabulary/relators/prn";
+          rr:termType rr:IRI
+        ]
+      ].
+
+      ex:ProductionCompanyIRIMap rr:predicateObjectMap [
+        rr:predicate bf:agent ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10008']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  # Is Motion Picture Adaptation of Work
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:IsMotionPictureAdaptationLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10129]"
+      ].
+
+      ex:IsMotionPictureAdaptationLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Work
+      ].
+
+      ex:IsMotionPictureAdaptationLiteralMap rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10129']";
+          rr:termType rr:Literal;
+          rml:languageMap [
+            rml:reference "*[name()='rdaw:P10129']/@*[name()='xml:lang']"
+          ]
+        ]
+      ].
+
+    ex:IsMotionPictureAdaptationIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10129]"
+      ].
+
+      ex:IsMotionPictureAdaptationIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Work
+      ].
+
+      ex:IsMotionPictureAdaptationIRIMap rr:predicateObjectMap [
+        rr:predicate bf:derivateOf ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10129']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
+
+  ex:IdentifierMap a rr:TriplesMap ;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10002]"
+    ].
+
+    ex:IdentifierMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:Identifier
+    ].
+
+    ex:IdentifierMap rr:predicateObjectMap [
+      rr:predicate rdf:value ;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10002']";
+        rr:termType rr:Literal
+      ]
+    ].
+
+  ex:KeyTitleMap a rr:TriplesMap ;
+    rml:logicalSource [
+      rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10367]"
+    ].
+
+    ex:KeyTitleMap rr:subjectMap [
+      rr:termType rr:BlankNode ;
+      rr:class bf:KeyTitle
+    ].
+
+    ex:KeyTitleMap rr:predicateObjectMap [
+      rr:predicate bf:mainTitle ;
+      rr:objectMap [
+        rml:reference "*[name()='rdaw:P10367']";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "*[name()='rdaw:P10367']/@*[name()='xml:lang']"
+        ]
+      ]
+    ].
+
+  # Coverage of Content
+    #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
+
+    ex:CoverageOfContentLiteralMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10216]"
+      ].
+
+      ex:CoverageOfContentLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Note
+      ].
+
+      ex:CoverageOfContentLiteralMap rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10216']";
+          rr:termType rr:Literal;
+          rml:languageMap [
+            rml:reference "*[name()='rdaw:P10216']/@*[name()='xml:lang']"
+          ]
+        ]
+      ].
+
+    ex:CoverageOfContentIRIMap a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+        rml:referenceFormulation ql:XPath;
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10216]"
+      ].
+
+      ex:CoverageOfContentIRIMap rr:subjectMap [
+        rr:termType rr:BlankNode ;
+        rr:class bf:Note
+      ].
+
+      ex:CoverageOfContentIRIMap rr:predicateObjectMap [
+        rr:predicate bf:note ;
+        rr:objectMap [
+          rml:reference "*[name()='rdaw:P10216']/@*[name()='rdf:resource']";
+          rr:termType rr:IRI
+        ]
+      ].
