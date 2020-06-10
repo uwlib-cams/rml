@@ -1,0 +1,215 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2019-12-14T01:20:34.522Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/14f2132a-0150-4944-89e0-4c8f4516552c"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-14T01:05:10.648Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/14f2132a-0150-4944-89e0-4c8f4516552c"
+  }, {
+    "@id": "_:b2",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "aschiff"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "changeDate": {
+      "@language": "eng",
+      "@value": "2012-12-18"
+    },
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2012-12-13"
+    },
+    "descriptionAuthentication": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2019-12-19T02:08:27.540Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/14f2132a-0150-4944-89e0-4c8f4516552c"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2014026041",
+    "label": "Adaptations"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2015026049",
+    "label": "Prayers"
+  }, {
+    "@id": "http://id.loc.gov/authorities/names/n2007035082",
+    "label": "Gershman, Sarah, 1972-"
+  }, {
+    "@id": "http://id.loc.gov/authorities/subjects/sh85070856",
+    "label": "Judaism--Liturgy--Texts"
+  }, {
+    "@id": "http://id.loc.gov/authorities/subjects/sh95003439",
+    "label": "Jewish families--Prayers and devotions"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "label": "Program for Cooperative Cataloging"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/ebd029ad-b852-4fa2-bba6-abcffeff8e4c",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b2",
+    "P10004": ["http://id.loc.gov/authorities/genreForms/gf2015026049", "http://id.loc.gov/authorities/genreForms/gf2014026041"],
+    "P10061": "http://id.loc.gov/authorities/names/n2007035082",
+    "P10086": [{
+      "@language": "heb",
+      "@value": "לילה טוב"
+    }, {
+      "@language": "heb",
+      "@value": "Lailah ṭov"
+    }],
+    "P10142": "http://id.loc.gov/authorities/names/no2019184664",
+    "P10198": "Bedtime Shema. Selections",
+    "P10219": {
+      "@language": "eng",
+      "@value": "2007"
+    },
+    "P10223": {
+      "@language": "eng",
+      "@value": "Bedtime Sh'ma"
+    },
+    "P10256": ["http://id.loc.gov/authorities/subjects/sh95003439", "http://id.loc.gov/authorities/subjects/sh85070856"],
+    "http://rdaregistry.info/Elements/w/P10256": ["Bedtime prayers--Juvenile literature", "Bedtime Shema--Juvenile literature"],
+    "P10308": "Bedtime Shema. Selections. English",
+    "P10331": {
+      "@language": "eng",
+      "@value": "Gershman, Sarah, 1972- . Bedtime Sh'ma"
+    },
+    "P10332": [{
+      "@language": "heb",
+      "@value": "Gershman, Sarah, 1972- Lailah ṭov"
+    }, {
+      "@language": "heb",
+      "@value": "Gershman, Sarah, 1972- . לילה טוב"
+    }],
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "isIdentifiedByAuthority": "http://id.loc.gov/authorities/names/no2019184675",
+    "wasGeneratedBy": ["_:b0", "_:b3", "_:b1"]
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "changeDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/changeDate"
+    },
+    "descriptionAuthentication": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
+      "@type": "@id"
+    },
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004",
+      "@type": "@id"
+    },
+    "P10308": {
+      "@id": "http://rdaregistry.info/Elements/w/P10308"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "P10332": {
+      "@id": "http://rdaregistry.info/Elements/w/P10332"
+    },
+    "P10256": {
+      "@id": "http://rdaregistry.info/Elements/w/P10256",
+      "@type": "@id"
+    },
+    "P10198": {
+      "@id": "http://rdaregistry.info/Elements/w/P10198"
+    },
+    "P10086": {
+      "@id": "http://rdaregistry.info/Elements/w/P10086"
+    },
+    "P10219": {
+      "@id": "http://rdaregistry.info/Elements/w/P10219"
+    },
+    "isIdentifiedByAuthority": {
+      "@id": "http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority"
+    },
+    "P10142": {
+      "@id": "http://rdaregistry.info/Elements/w/P10142"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

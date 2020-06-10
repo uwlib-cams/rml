@@ -1,0 +1,61 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ex: <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+ex:TitleMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/JSON/individualProperties/titleExampleData.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$"
+  ].
+
+ex:TitleMap rr:subjectMap [
+  rml:reference "@work.@trellis";
+  rr:class bf:Work
+].
+
+ex:TitleMap rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TitleBNodeMap
+  ]
+].
+
+ex:TitleBNodeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/JSON/individualProperties/titleExampleData.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$"
+  ].
+
+ex:TitleBNodeMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Title
+  ].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate rdfs:label ;
+  rr:objectMap [
+    rml:reference "@work.@title"
+  ]
+] .
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle ;
+  rr:objectMap [
+    rml:reference "@work.@title"
+  ]
+] .

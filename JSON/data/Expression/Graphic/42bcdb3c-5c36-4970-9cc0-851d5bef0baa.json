@@ -1,0 +1,153 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "cc83"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2019-12-23"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-23T21:52:57.392Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/a040cb04-5c14-4277-882e-01c25a4cb7a9"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1014",
+    "label": "still image"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/42bcdb3c-5c36-4970-9cc0-851d5bef0baa",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
+    "adminMetadata": "_:b0",
+    "P20001": "http://rdaregistry.info/termList/RDAContentType/1014",
+    "P20003": {
+      "@language": "eng",
+      "@value": "Realia"
+    },
+    "P20065": {
+      "@language": "chi",
+      "@value": "Latin"
+    },
+    "P20214": {
+      "@language": "eng",
+      "@value": "2012"
+    },
+    "P20231": "https://trellis.sinopia.io/repository/washington/d02e409c-bd11-4769-a3b8-b4f2242d4f82",
+    "P20313": {
+      "@language": "eng",
+      "@value": "\"Shui mu qing hua\" yu \"Lei yu\". Chinese"
+    },
+    "P20315": {
+      "@language": "eng",
+      "@value": "\"水木清华\" 与《雷雨》"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:graphic",
+    "wasGeneratedBy": "_:b1"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/d02e409c-bd11-4769-a3b8-b4f2242d4f82",
+    "label": "\"水木清华\" 与《雷雨》"
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P20313": {
+      "@id": "http://rdaregistry.info/Elements/e/P20313"
+    },
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
+      "@type": "@id"
+    },
+    "P20315": {
+      "@id": "http://rdaregistry.info/Elements/e/P20315"
+    },
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
+    },
+    "P20214": {
+      "@id": "http://rdaregistry.info/Elements/e/P20214"
+    },
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P20003": {
+      "@id": "http://rdaregistry.info/Elements/e/P20003"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

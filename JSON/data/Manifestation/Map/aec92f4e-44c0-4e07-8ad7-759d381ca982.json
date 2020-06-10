@@ -1,0 +1,226 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": "cec23",
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": "2019-12-09",
+    "descriptionConventions": ["http://id.loc.gov/vocabulary/descriptionConventions/dcrmc", "https://id.loc.gov/vocabulary/descriptionConventions/rda"],
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2019-12-12T21:47:53.347Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-10T01:59:38.769Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "http://id.loc.gov/rwo/agents/n50043248",
+    "label": "Braun, Georg, 1540 or 1541-1622"
+  }, {
+    "@id": "http://id.loc.gov/rwo/agents/n50043890",
+    "label": "Hogenberg, Frans, approximately 1539-1590"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/descriptionConventions/dcrmc",
+    "label": "Descriptive cataloging of rare materials (Cartographic)"
+  }, {
+    "@id": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "label": "single unit"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDACarrierType/1048",
+    "label": "sheet"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMaterial/1017",
+    "label": "Ink"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMaterial/1025",
+    "label": "paper"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMediaType/1007",
+    "label": "unmediated"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAproductionMethod/1005",
+    "label": "engraving"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": ["WaU", "https://id.loc.gov/vocabulary/organizations/wau"]
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/297230ee-19ed-4ed6-934c-eabe32d07911",
+    "label": "Alten Stettin (Map : 1588). German. 1617"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/aec92f4e-44c0-4e07-8ad7-759d381ca982",
+    "@type": "http://rdaregistry.info/Elements/c/C10007",
+    "adminMetadata": "_:b0",
+    "P30001": "http://rdaregistry.info/termList/RDACarrierType/1048",
+    "P30002": "http://rdaregistry.info/termList/RDAMediaType/1007",
+    "P30003": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "P30011": {
+      "@language": "eng",
+      "@value": "[1617]"
+    },
+    "P30083": ["http://id.loc.gov/rwo/agents/n50043890", "http://id.loc.gov/rwo/agents/n50043248"],
+    "P30084": "http://rdaregistry.info/termList/RDAMaterial/1017",
+    "P30088": {
+      "@language": "eng",
+      "@value": "[Cologne]"
+    },
+    "P30139": "https://trellis.sinopia.io/repository/washington/297230ee-19ed-4ed6-934c-eabe32d07911",
+    "P30156": {
+      "@language": "deu",
+      "@value": "Alten Stettin"
+    },
+    "P30169": {
+      "@language": "eng",
+      "@value": "34 x 47 cm"
+    },
+    "P30176": {
+      "@language": "eng",
+      "@value": "[Braun & Hogenberg]"
+    },
+    "P30182": {
+      "@language": "eng",
+      "@value": "1 view"
+    },
+    "P30187": "http://rdaregistry.info/termList/RDAproductionMethod/1005",
+    "P30208": "http://rdaregistry.info/termList/RDAMaterial/1025",
+    "hasResourceTemplate": "WAU:RT:RDA:Manifestation:map",
+    "wasGeneratedBy": ["_:b1", "_:b2"],
+    "hasLcClassificationPartA": "G6524.S93 1617",
+    "hasLcClassificationPartB": ".A4",
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }],
+  "@context": {
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasLcClassificationPartB": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    },
+    "P30083": {
+      "@id": "http://rdaregistry.info/Elements/m/P30083",
+      "@type": "@id"
+    },
+    "P30169": {
+      "@id": "http://rdaregistry.info/Elements/m/P30169"
+    },
+    "P30003": {
+      "@id": "http://rdaregistry.info/Elements/m/P30003",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
+    },
+    "P30208": {
+      "@id": "http://rdaregistry.info/Elements/m/P30208",
+      "@type": "@id"
+    },
+    "P30139": {
+      "@id": "http://rdaregistry.info/Elements/m/P30139",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P30156": {
+      "@id": "http://rdaregistry.info/Elements/m/P30156"
+    },
+    "P30001": {
+      "@id": "http://rdaregistry.info/Elements/m/P30001",
+      "@type": "@id"
+    },
+    "P30011": {
+      "@id": "http://rdaregistry.info/Elements/m/P30011"
+    },
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
+    },
+    "P30176": {
+      "@id": "http://rdaregistry.info/Elements/m/P30176"
+    },
+    "P30187": {
+      "@id": "http://rdaregistry.info/Elements/m/P30187",
+      "@type": "@id"
+    },
+    "P30002": {
+      "@id": "http://rdaregistry.info/Elements/m/P30002",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P30088": {
+      "@id": "http://rdaregistry.info/Elements/m/P30088"
+    },
+    "P30182": {
+      "@id": "http://rdaregistry.info/Elements/m/P30182"
+    },
+    "P30084": {
+      "@id": "http://rdaregistry.info/Elements/m/P30084",
+      "@type": "@id"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}
