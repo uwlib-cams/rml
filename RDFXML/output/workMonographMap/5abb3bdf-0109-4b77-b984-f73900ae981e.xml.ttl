@@ -1,0 +1,27 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5abb3bdf-0109-4b77-b984-f73900ae981e>
+  a bf:Work;
+  bf:adminMetadata _:1 .
+
+_:1 a bf:AdminMetadata;
+  bflc:catalogerID "cec";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-09-25";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+    <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:2 .
+
+_:2 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/5abb3bdf-0109-4b77-b984-f73900ae981e>
+  bf:hasExpression <http://id.loc.gov/authorities/names/n94102982.html>, _:0 .
+
+_:0 a bf:Work;
+  rdfs:label "" .

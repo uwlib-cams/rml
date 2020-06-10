@@ -1,0 +1,83 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  a bf:Work;
+  bf:adminMetadata _:4 .
+
+_:4 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-19";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:8 .
+
+_:8 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:contribution _:2 .
+
+_:2 a bf:Contribution;
+  bf:agent _:11 .
+
+_:11 a bf:Agent;
+  rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)" .
+
+_:2 bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:contribution _:3 .
+
+_:3 a bf:Contribution;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068>, _:1 .
+
+_:1 a bf:GenreForm;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:identifiedBy _:5 .
+
+_:5 a bf:Identifier;
+  bf:note _:10 .
+
+_:10 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:5 bf:source _:9 .
+
+_:9 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:5 rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:note _:6 .
+
+_:6 a bf:Note;
+  rdfs:label "\"This volume explores the interplay between mathematical and physical research and the interactions of twentieth-century scientists within their academic communities. Beginning with Einstein's general theory of relativity, the authors investigate a series of dramatic discoveries and rival theories in physics that influenced the development of modern differential geometry. Other sections recount the numerous methods, like the resurgence of Weyl geometry, used by geometers to solve the problems revealed by those same innovations in space-time physics. The effect of general relativity on astronomy is also addressed, namely how astronomers worked through new theories like inflationary cosmology and Phoenix models. By including recent historical research and coupling this work with many disciplines' unique perspectives, this text provides a rich picture of general relativity and cosmology over the course of the twentieth century. The increased study on the documentation of Einstein's early scientific work has clarified the history of science for that time and profoundly altered the way scientists view their own work, as this interdisciplinary volume demonstrates\"--Page 4 of cover."@en,
+    "Contents: Part I. Mathematical and physical underpinnings of spacetime: Figures of light in the early history of relativity (1905-1914) / Scott A. Walter -- The behaviour of rods and clocks in general relativity and the meaning of the metric field / Harvey R. Brown -- Hilbert on general covariance and causality / Katherine Brading and Thomas Ryckman -- Part II. Testing general relativity and rival theories: Putting general relativity to the test : twentieth-century highlights and twenty-first century prospects / Clifford M. Will -- Rotating hollow and full spheres : Einstein, Thirring, Lense, and beyond / Herbert Pfister -- Relativistic lighthouses : the role of the binary pulsar in proving the existence of gravitational waves / Daniel Kennefick -- The rise and fall of the fifth force / Allan Franklin -- Part III: Geometry and cosmology, past and present: Cyclic models of the relativistic universe : the early history / Helge Kragh -- Inflation and the origins of structure / Chris Smeenk -- Problems with modified theories of gravity, as alternatives to dark energy / Norbert Straumann -- The unexpected resurgence of Weyl geometry in late 20th-century physics / Erhard Scholz -- Part IV. Mathematical motifs in general relativity and beyond: Matter from space / Domenico Giulini -- The surprising resolution of the Poincaré conjecture / Donal O'Shea -- Unified field theory up to the 1960s : its development and some interactions among research groups / Hubert Goenner -- Part V. Quantum gravity, conformal boundaries, and string theory: The formulation of quantum field theory in curved spacetime / Robert M. Wald -- Conformal infinity : development and applications / Jörg Fraudendiener -- String theory and spacetime geometry / Matthias R. Gaberdiel -- Conference program / Volker Bach and David E. Rowe."@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:originDate "2018";
+  bf:subject _:0 .
+
+_:0 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Cosmology--History--20th century--Congresses", "General relativity (Physics)--History--20th century--Congresses",
+    "Mathematics--History--20th century--Congresses", "Physics--History--20th century--Congresses",
+    "Relativity (Physics)--History--20th century--Congresses" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:7 .
+
+_:7 a bf:Title;
+  bf:mainTitle "Beyond Einstein"@en;
+  rdfs:label "Beyond Einstein"@en .

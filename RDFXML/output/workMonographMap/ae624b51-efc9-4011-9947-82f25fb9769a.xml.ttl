@@ -1,0 +1,60 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  a bf:Work;
+  bf:adminMetadata _:1 .
+
+_:1 a bf:AdminMetadata;
+  bflc:catalogerID "ries07";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-21";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:5 .
+
+_:5 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  bf:identifiedBy _:2 .
+
+_:2 a bf:Identifier;
+  bf:note _:7 .
+
+_:7 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:2 bf:source _:6 .
+
+_:6 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:2 rdf:value "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  bf:note _:3 .
+
+_:3 a bf:Note;
+  rdfs:label "Introduction: A convoluted dinosaur -- Dinomania: Giant sloths, sea snakes, and concrete contraptions -- His majesty notices a drawing: The tradition of copying dinosaurs -- Getting Diplodocus ready for the stage: From Pittsburgh to London -- \"The years of wandering\": Germany -- Visite au Diplodocus: Paris -- \"Properly messy\": Crouching dinosaurs, national competition, and science reform -- Diaspora: From Rio to Madrid -- Conclusion: Diplodocus after Madrid- and after Carnegie."@en .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  bf:originDate "2019";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2013003413>, _:0 .
+
+_:0 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "", "Carnegie, Andrew, 1835-1919 -- Natural history collections",
+    "Dinosaurs -- Catalogs and collections -- Pennsylvania -- Pittsburgh", "Dinosaurs -- Social aspects -- Europe",
+    "Diplodocus -- Exhibitions -- Social aspects", "Fossils -- Collection and preservation -- Political aspects",
+    "Natural history -- Catalogs and collections -- Political aspects", "Paleontology -- Social aspects -- Europe -- History -- 20th century" .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  bf:title _:4 .
+
+_:4 a bf:Title;
+  bf:mainTitle "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en;
+  rdfs:label "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en .

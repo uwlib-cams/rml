@@ -1,0 +1,76 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  a bf:Work;
+  bf:adminMetadata _:3 .
+
+_:3 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-07";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:7 .
+
+_:7 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:contribution _:1 .
+
+_:1 a bf:Contribution;
+  bf:agent _:10 .
+
+_:10 a bf:Agent;
+  rdfs:label "" .
+
+_:1 bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:contribution _:2 .
+
+_:2 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/no2009177518>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:identifiedBy _:4 .
+
+_:4 a bf:Identifier;
+  bf:note _:9 .
+
+_:9 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:4 bf:source _:8 .
+
+_:8 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:4 rdf:value "Cherkasova, Evgenia. Dostoevsky and Kant"@en .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:note _:5 .
+
+_:5 a bf:Note;
+  rdfs:label "\"In this book, Evgenia Cherkasova brings the philosopher Kant and the novelist Dostoevsky together in conversations that probe why duty is central to our moral life. She shows that just as Dostoevsky is indebted to Kant, so Kant would profit from the deeply philosophical narratives of Dostoevsky, which engage the problem of evil and the claims of human community. She not only produces a novel reading of Dostoevsky, but also guides us to later, often neglected Kantian texts. This study is written with scholarly care, penetrating analysis, elegance of style, and moral urgency: Cherkasova writes with both mind and heart.\" Emily Grosholz, Professor of Philosophy, The Pennsylvania State University."@en .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:originDate "2009";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh85045096>, <http://id.loc.gov/authorities/subjects/sh85077524>,
+    _:0 .
+
+_:0 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "", "Dostoyevsky, Fyodor, 1821-1881--Ethics", "Kant, Immanuel, 1724-1804--Ethics" .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:title _:6 .
+
+_:6 a bf:Title;
+  bf:mainTitle "Dostoevsky and Kant"@en;
+  rdfs:label "Dostoevsky and Kant"@en .

@@ -1,0 +1,60 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  a bf:Work;
+  bf:adminMetadata _:1 .
+
+_:1 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-06";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:5 .
+
+_:5 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  bf:hasPart _:2 .
+
+_:2 a bf:Work;
+  rdfs:label "https://doi.org/10.1007/s41061-017-0172-1", "https://doi.org/10.1007/s41061-017-0173-0",
+    "https://doi.org/10.1007/s41061-017-0180-1", "https://doi.org/10.1007/s41061-018-0185-4",
+    "https://doi.org/10.1007/s41061-018-0201-8", "https://doi.org/10.1007/s41061-018-0206-3",
+    "https://doi.org/10.1007/s41061-018-0213-4" .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  bf:identifiedBy _:3 .
+
+_:3 a bf:Identifier;
+  bf:note _:7 .
+
+_:7 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:3 bf:source _:6 .
+
+_:6 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:3 rdf:value "Multidimensional time-resolved spectroscopy"@en .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  bf:originDate "2019";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh91005905>, _:0 .
+
+_:0 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "" .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  bf:title _:4 .
+
+_:4 a bf:Title;
+  bf:mainTitle "Multidimensional time-resolved spectroscopy"@en;
+  rdfs:label "Multidimensional time-resolved spectroscopy"@en .

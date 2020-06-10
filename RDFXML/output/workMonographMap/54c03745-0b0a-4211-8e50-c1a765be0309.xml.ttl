@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  a bf:Work;
+  bf:adminMetadata _:1 .
+
+_:1 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-20";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:5 .
+
+_:5 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  bf:identifiedBy _:2 .
+
+_:2 a bf:Identifier;
+  bf:note _:7 .
+
+_:7 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:2 bf:source _:6 .
+
+_:6 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:2 rdf:value "Agricultural nanobiotechnology"@en .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  bf:note _:3 .
+
+_:3 a bf:Note;
+  rdfs:label "Contents: Part I. Agronanobiotechnology, an introduction to nanoparticles: Use of agronanobiotechnology in the agro-food industry to preserve environmental health and improve the welfare of farmers -- Design and production of nanofertilizers -- Part II. Fertiliszers and plant nutrients on germination, growth and development of crops: Nanofertilizers and their controlled delivery of nutrients -- Incorporation of nanoparticles into plant nutrients : the real benefits -- Effects of nanoparticles on germination, growth, and plant crop development -- Effect of nanoparticles on the growth and development of crops for indoor agriculture applications -- Part III. Improving the soil and water quality: Nanomaterials : new agrotechnology tools to improve soil quality? -- Agronanobiotechnologies to improve the water quality in irrigation systems -- Part IV. Environmental topics: Effects of nanoparticles on plants, earthworms, and microorganisms -- Engineered nanoparticles : are they an inestimable achievement or a health and environmental concern?"@en .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  bf:originDate "2018";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2013000791>, <http://id.loc.gov/authorities/subjects/sh86001792>,
+    _:0 .
+
+_:0 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "" .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  bf:title _:4 .
+
+_:4 a bf:Title;
+  bf:mainTitle "Agricultural nanobiotechnology"@en;
+  rdfs:label "Agricultural nanobiotechnology"@en .

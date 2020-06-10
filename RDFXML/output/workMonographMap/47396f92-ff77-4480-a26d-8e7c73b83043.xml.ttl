@@ -1,0 +1,127 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  a bf:Work;
+  bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+    <http://id.loc.gov/authorities/demographicTerms/dg2015060101>, <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+    _:5 .
+
+_:5 a bflc:CreatorCharacteristic;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:adminMetadata _:6 .
+
+_:6 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-12";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:14 .
+
+_:14 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:contribution _:3 .
+
+_:3 a bf:Contribution;
+  bf:agent _:18 .
+
+_:18 a bf:Agent;
+  rdfs:label "" .
+
+_:3 bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:contribution _:4 .
+
+_:4 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79003304>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020>, _:2 .
+
+_:2 a bf:GenreForm;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:hasPart _:8 .
+
+_:8 a bf:Work;
+  rdfs:label "http://id.loc.gov/authorities/names/n2010050909", "http://id.loc.gov/authorities/names/n80153668",
+    "http://id.worldcat.org/fast/1367787" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:10 .
+
+_:10 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/174446829" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:12 .
+
+_:12 a bf:Identifier;
+  bf:source _:17 .
+
+_:17 a bf:Source;
+  rdfs:label "RDA Variant Access Point"@en .
+
+_:12 rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories"@en .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:identifiedBy _:9 .
+
+_:9 a bf:Identifier;
+  bf:note _:16 .
+
+_:16 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:9 bf:source _:15 .
+
+_:15 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:9 rdf:value "Faulkner, William, 1897-1962. Go down, Moses"@en .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:note _:11 .
+
+_:11 a bf:Note;
+  bf:noteType "Coverage of the work";
+  rdfs:label "", <http://id.loc.gov/authorities/names/n79138969> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:originDate "1942";
+  bf:originPlace <http://id.loc.gov/authorities/names/n78095330>, _:7 .
+
+_:7 a bf:Place;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2008111599>, _:1 .
+
+_:1 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "", "Mississippi--Race relations--Fiction", "Mississippi--Social life and customs--Fiction",
+    "Southern States--Race relations--Fiction", "Yoknapatawpha County (Imaginary place)--Fiction" .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:0 .
+
+_:0 a bf:VariantTitle;
+  bf:mainTitle "Go down, Moses and other stories"@en .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bf:title _:13 .
+
+_:13 a bf:Title;
+  bf:mainTitle "Go down, Moses"@en;
+  rdfs:label "Go down, Moses"@en .

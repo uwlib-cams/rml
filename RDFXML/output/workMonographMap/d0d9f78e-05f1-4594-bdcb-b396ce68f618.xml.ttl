@@ -1,0 +1,126 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  a bf:Work;
+  bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+    <http://id.loc.gov/authorities/demographicTerms/dg2015060359>, _:5 .
+
+_:5 a bflc:CreatorCharacteristic;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:adminMetadata _:6 .
+
+_:6 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-13";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:14 .
+
+_:14 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:contribution _:10 .
+
+_:10 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/art> .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:contribution _:3 .
+
+_:3 a bf:Contribution;
+  bf:agent _:17 .
+
+_:17 a bf:Agent;
+  rdfs:label "" .
+
+_:3 bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:contribution _:4 .
+
+_:4 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:contribution _:9 .
+
+_:9 a bf:Contribution;
+  bf:agent _:18 .
+
+_:18 a bf:Agent;
+  rdfs:label "" .
+
+_:9 bf:role <http://id.loc.gov/vocabulary/relators/art> .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026327>, <http://id.loc.gov/authorities/genreForms/gf2016026096>,
+    _:2 .
+
+_:2 a bf:GenreForm;
+  rdfs:label "", "http://id.loc.gov/authorities/genreForms/gf2014026339" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:hasDerivative _:8 .
+
+_:8 a bf:Work;
+  rdfs:label "http://id.loc.gov/authorities/names/no2012030670" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:identifiedBy _:11 .
+
+_:11 a bf:Identifier;
+  bf:note _:16 .
+
+_:16 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:11 bf:source _:15 .
+
+_:15 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:11 rdf:value "Seuss, Dr. Lorax"@en .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:identifiedBy _:12 .
+
+_:12 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/254992797" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:originDate "1971";
+  bf:originPlace <http://id.loc.gov/authorities/names/n78095330>, _:7 .
+
+_:7 a bf:Place;
+  rdfs:label "" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:subject _:1 .
+
+_:1 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Ecology--Juvenile fiction", "Environmental ethics--Juvenile fiction",
+    "Environmentalism--Juvenile fiction", "Greed--Juvenile fiction", "Pollution--Juvenile fiction" .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:title _:0 .
+
+_:0 a bf:VariantTitle;
+  bf:mainTitle "Driad"@pt, "Loraks"@pt, "Lórax"@pt, "Lórax (Beber)"@pt .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bf:title _:13 .
+
+_:13 a bf:Title;
+  bf:mainTitle "Lorax"@en;
+  rdfs:label "Lorax"@en .
