@@ -1,2 +1,2 @@
-# rda2bfinrml
+# rml
 Using the RML Mapper (https://github.com/RMLio/rmlmapper-java) to convert RDA data to BIBFRAME.
