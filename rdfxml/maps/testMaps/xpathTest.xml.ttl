@@ -25,7 +25,7 @@
 
 ex:WorkMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/54c03745-0b0a-4211-8e50-c1a765be0309.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][type/@resource='http://rdaregistry.info/Elements/c/C10001']"
       # look for data chunks that are typed as an RDA Work
@@ -55,19 +55,11 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
 ex:SubjectLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/54c03745-0b0a-4211-8e50-c1a765be0309.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
-      # look for data chunks that contain the node "P10256"
-      # what it NEEDS to say is to look for data chunks that contain the node "P10256" WITHOUT the attribute "rdf:resource"
-      # first try: [P10256][not(contains('http', @resource))]
-        # so it works, it just doesn't do what I want it to do: if the data chunk contains ANY P10256 nodes with rdf:resource, then this won't generate, even if there are some that don't have rdf:resource...
-      # second try: added it to the objectMap instead
-        # same problem >:( BUT I DON'T GET WHY, it SHOULD be saying to select the value for all nodes P10256 that don't contain @resource=http, but it's doing the opposite where it's only collecting from the ones that don't have a literal value...?
-      # third try: kept it in the objectMap but simplified it to [not(@resource)]
-        # THIS WORKED WAIT WHAT, COOL, WHY DIDN'T IT WORK WHEN IT WAS MORE SPECIFIC, OH WELL I GUESS
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256[not(@resource)]]"
+      # look for data chunks that contain the node P10256 that do not contain a resource attribute
   ].
 
   ex:SubjectLiteralMap rr:subjectMap [
@@ -79,7 +71,7 @@ ex:SubjectLiteralMap a rr:TriplesMap;
     rr:predicate madsrdf:authoritativeLabel;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10256'][not(@resource)]";
-        # within data chunks that contain the node "P10256", find the value for node "P10256"
+        # within data chunks that contain the node "P10256" without @resource, find the value for node "P10256"
       rr:termType rr:Literal
     ]
   ].
