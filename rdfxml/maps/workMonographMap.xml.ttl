@@ -2783,11 +2783,10 @@ ex:VariantTitleMap a rr:TriplesMap;
   ].
 
 ex:SubjectLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10256[not(@resource)]]"
   ].
 
   ex:SubjectLiteralMap rr:subjectMap [
@@ -2798,17 +2797,16 @@ ex:SubjectLiteralMap a rr:TriplesMap;
   ex:SubjectLiteralMap rr:predicateObjectMap [
     rr:predicate madsrdf:authoritativeLabel;
     rr:objectMap [
-      rml:reference "*[name()='rdaw:P10256']";
+      rml:reference "*[name()='rdaw:P10256'][not(@resource)]";
       rr:termType rr:Literal
     ]
   ].
 
 ex:CategoryLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPath so this bnode doesn't generate if the place of origin is an IRI
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10004]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10004[not(@resource)]]"
   ].
 
   ex:CategoryLiteralMap rr:subjectMap [
@@ -2819,19 +2817,18 @@ ex:CategoryLiteralMap a rr:TriplesMap;
   ex:CategoryLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "*[name()='rdaw:P10004']";
+      rml:reference "*[name()='rdaw:P10004'][not(@resource)]";
       rr:termType rr:Literal
     ]
   ].
 
 # Author
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AuthorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061[not(@resource)]]"
     ].
 
     ex:AuthorLiteralMap rr:subjectMap [
@@ -2858,7 +2855,7 @@ ex:CategoryLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061[not(@resource)]]"
       ].
 
 
@@ -2870,7 +2867,7 @@ ex:CategoryLiteralMap a rr:TriplesMap;
       ex:AuthorLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10061']";
+          rml:reference "*[name()='rdaw:P10061'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -2880,6 +2877,7 @@ ex:CategoryLiteralMap a rr:TriplesMap;
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10061]"
+      #NOTE: change these iterators so they only generate if it is an IRI
     ].
 
     ex:AuthorIRIMap rr:subjectMap [
@@ -2904,11 +2902,10 @@ ex:CategoryLiteralMap a rr:TriplesMap;
     ].
 
 ex:creatorCharacteristicLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPath so this bnode doesn't generate if the place of origin is an IRI
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][hasCreatorCharacteristic]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][hasCreatorCharacteristic[not(@resource)]]"
   ].
 
     ex:creatorCharacteristicLiteralMap rr:subjectMap [
@@ -2919,17 +2916,16 @@ ex:creatorCharacteristicLiteralMap a rr:TriplesMap;
     ex:creatorCharacteristicLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "*[name()='uwx:hasCreatorCharacteristic']";
+        rml:reference "*[name()='uwx:hasCreatorCharacteristic'][not(@resource)]";
         rr:termType rr:Literal
       ]
     ].
 
 ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPath so this bnode doesn't generate if the place of origin is an IRI
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10218]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10218[not(@resource)]]"
   ].
 
   ex:PlaceOfOriginLiteralMap rr:subjectMap [
@@ -2940,19 +2936,18 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
   ex:PlaceOfOriginLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "*[name()='rdaw:P10218']";
+        rml:reference "*[name()='rdaw:P10218'][not(@resource)]";
         rr:termType rr:Literal
       ]
     ].
 
 # Artist
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:ArtistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058[not(@resource)]]"
     ].
 
     ex:ArtistLiteralMap rr:subjectMap [
@@ -2979,7 +2974,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10058[not(@resource)]]"
       ].
 
       ex:ArtistLiteralBNodeMap rr:subjectMap [
@@ -2990,7 +2985,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       ex:ArtistLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10058']";
+          rml:reference "*[name()='rdaw:P10058'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3024,13 +3019,12 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
     ].
 
 # Screenwriter
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:ScreenwriterLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203[not(@resource)]]"
     ].
 
     ex:ScreenwriterLiteralMap rr:subjectMap [
@@ -3057,7 +3051,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10203[not(@resource)]]"
       ].
 
       ex:ScreenwriterLiteralBNodeMap rr:subjectMap [
@@ -3068,7 +3062,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       ex:ScreenwriterLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10203']";
+          rml:reference "*[name()='rdaw:P10203'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3102,13 +3096,12 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
     ].
 
 # Compiler
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:CompilerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055[not(@resource)]]"
     ].
 
     ex:CompilerLiteralMap rr:subjectMap [
@@ -3135,7 +3128,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10055[not(@resource)]]"
       ].
 
       ex:CompilerLiteralBNodeMap rr:subjectMap [
@@ -3146,7 +3139,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       ex:CompilerLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10055']";
+          rml:reference "*[name()='rdaw:P10055'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3180,11 +3173,10 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
     ].
 
 ex:PartWorkLiteralMap a rr:TriplesMap;
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147]"
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10147[not(@resource)]]"
   ].
 
   ex:PartWorkLiteralMap rr:subjectMap [
@@ -3195,7 +3187,7 @@ ex:PartWorkLiteralMap a rr:TriplesMap;
   ex:PartWorkLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "*[name()='rdaw:P10147']";
+      rml:reference "*[name()='rdaw:P10147'][not(@resource)]";
       rr:termType rr:Literal
     ]
   ].
@@ -3331,13 +3323,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Sculptor
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:SculptorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10202]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10202[not(@resource)]]"
     ].
 
     ex:SculptorLiteralMap rr:subjectMap [
@@ -3364,7 +3355,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10202]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10202[not(@resource)]]"
       ].
 
       ex:SculptorLiteralBNodeMap rr:subjectMap [
@@ -3375,7 +3366,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:SculptorLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10202']";
+          rml:reference "*[name()='rdaw:P10202'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3409,13 +3400,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Creator
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:CreatorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10065]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10065[not(@resource)]]"
     ].
 
     ex:CreatorLiteralMap rr:subjectMap [
@@ -3442,7 +3432,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10065]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10065[not(@resource)]]"
       ].
 
       ex:CreatorLiteralBNodeMap rr:subjectMap [
@@ -3453,7 +3443,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:CreatorLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10065']";
+          rml:reference "*[name()='rdaw:P10065'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3487,13 +3477,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Architect
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:ArchitectLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10062]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10062[not(@resource)]]"
     ].
 
     ex:ArchitectLiteralMap rr:subjectMap [
@@ -3520,7 +3509,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10062]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10062[not(@resource)]]"
       ].
 
       ex:ArchitectLiteralBNodeMap rr:subjectMap [
@@ -3531,7 +3520,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:ArchitectLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10062']";
+          rml:reference "*[name()='rdaw:P10062'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3565,13 +3554,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # BookArtist
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:BookArtistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10254]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10254[not(@resource)]]"
     ].
 
     ex:BookArtistLiteralMap rr:subjectMap [
@@ -3598,7 +3586,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10254]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10254[not(@resource)]]"
       ].
 
       ex:BookArtistLiteralBNodeMap rr:subjectMap [
@@ -3609,7 +3597,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:BookArtistLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10254']";
+          rml:reference "*[name()='rdaw:P10254'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3643,13 +3631,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Calligrapher
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:CalligrapherLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10253]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10253[not(@resource)]]"
     ].
 
     ex:CalligrapherLiteralMap rr:subjectMap [
@@ -3676,7 +3663,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10253]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10253[not(@resource)]]"
       ].
 
       ex:CalligrapherLiteralBNodeMap rr:subjectMap [
@@ -3687,7 +3674,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:CalligrapherLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10253']";
+          rml:reference "*[name()='rdaw:P10253'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3721,13 +3708,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Librettist
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:LibrettistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10205]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10205[not(@resource)]]"
     ].
 
     ex:LibrettistLiteralMap rr:subjectMap [
@@ -3754,7 +3740,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10205]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10205[not(@resource)]]"
       ].
 
       ex:LibrettistLiteralBNodeMap rr:subjectMap [
@@ -3765,7 +3751,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:LibrettistLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10205']";
+          rml:reference "*[name()='rdaw:P10205'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3799,13 +3785,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Lyricist
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:LyricistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10204]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10204[not(@resource)]]"
     ].
 
     ex:LyricistLiteralMap rr:subjectMap [
@@ -3832,7 +3817,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10204]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10204[not(@resource)]]"
       ].
 
       ex:LyricistLiteralBNodeMap rr:subjectMap [
@@ -3843,7 +3828,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:LyricistLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10204']";
+          rml:reference "*[name()='rdaw:P10204'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3877,13 +3862,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Rapporteur
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:RapporteurLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10255]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10255[not(@resource)]]"
     ].
 
     ex:RapporteurLiteralMap rr:subjectMap [
@@ -3910,7 +3894,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10255]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10255[not(@resource)]]"
       ].
 
       ex:RapporteurLiteralBNodeMap rr:subjectMap [
@@ -3921,7 +3905,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:RapporteurLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10255']";
+          rml:reference "*[name()='rdaw:P10255'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -3955,13 +3939,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Enacting Jurisdiction
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:EnactingJurisdictionLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10017]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10017[not(@resource)]]"
     ].
 
     ex:EnactingJurisdictionLiteralMap rr:subjectMap [
@@ -3988,7 +3971,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10017]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10017[not(@resource)]]"
       ].
 
       ex:EnactingJurisdictionLiteralBNodeMap rr:subjectMap [
@@ -3999,7 +3982,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:EnactingJurisdictionLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10017']";
+          rml:reference "*[name()='rdaw:P10017'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4033,13 +4016,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Interviewee
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:IntervieweeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10059]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10059[not(@resource)]]"
     ].
 
     ex:IntervieweeLiteralMap rr:subjectMap [
@@ -4066,7 +4048,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10059]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10059[not(@resource)]]"
       ].
 
       ex:IntervieweeLiteralBNodeMap rr:subjectMap [
@@ -4077,7 +4059,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:IntervieweeLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10059']";
+          rml:reference "*[name()='rdaw:P10059'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4111,13 +4093,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Interviewer
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:InterviewerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10057]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10057[not(@resource)]]"
     ].
 
     ex:InterviewerLiteralMap rr:subjectMap [
@@ -4144,7 +4125,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10057]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10057[not(@resource)]]"
       ].
 
       ex:InterviewerLiteralBNodeMap rr:subjectMap [
@@ -4155,7 +4136,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:InterviewerLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10057']";
+          rml:reference "*[name()='rdaw:P10057'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4189,13 +4170,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Photographer
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:PhotographerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10056]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10056[not(@resource)]]"
     ].
 
     ex:PhotographerLiteralMap rr:subjectMap [
@@ -4222,7 +4202,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10056]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10056[not(@resource)]]"
       ].
 
       ex:PhotographerLiteralBNodeMap rr:subjectMap [
@@ -4233,7 +4213,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:PhotographerLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10056']";
+          rml:reference "*[name()='rdaw:P10056'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4267,13 +4247,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Respondent
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:RespondentLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10001]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10001[not(@resource)]]"
     ].
 
     ex:RespondentLiteralMap rr:subjectMap [
@@ -4300,7 +4279,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10001]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10001[not(@resource)]]"
       ].
 
       ex:RespondentLiteralBNodeMap rr:subjectMap [
@@ -4311,7 +4290,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:RespondentLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10001']";
+          rml:reference "*[name()='rdaw:P10001'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4345,13 +4324,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Addressee
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AddresseeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10070]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10070[not(@resource)]]"
     ].
 
     ex:AddresseeLiteralMap rr:subjectMap [
@@ -4378,7 +4356,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10070]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10070[not(@resource)]]"
       ].
 
       ex:AddresseeLiteralBNodeMap rr:subjectMap [
@@ -4389,7 +4367,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:AddresseeLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10070']";
+          rml:reference "*[name()='rdaw:P10070'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4423,13 +4401,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Appellant (Corporate Body)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AppellantCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10009]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10009[not(@resource)]]"
     ].
 
     ex:AppellantCorporateBodyLiteralMap rr:subjectMap [
@@ -4456,7 +4433,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10009]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10009[not(@resource)]]"
       ].
 
       ex:AppellantCorporateBodyLiteralBNodeMap rr:subjectMap [
@@ -4467,7 +4444,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:AppellantCorporateBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10009']";
+          rml:reference "*[name()='rdaw:P10009'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4501,13 +4478,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Appellant (Person)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AppellantPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10042]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10042[not(@resource)]]"
     ].
 
     ex:AppellantPersonLiteralMap rr:subjectMap [
@@ -4534,7 +4510,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10042]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10042[not(@resource)]]"
       ].
 
       ex:AppellantPersonLiteralBNodeMap rr:subjectMap [
@@ -4545,7 +4521,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:AppellantPersonLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10042']";
+          rml:reference "*[name()='rdaw:P10042'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4579,13 +4555,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Appellee (Person)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AppelleePersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10035]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10035[not(@resource)]]"
     ].
 
     ex:AppelleePersonLiteralMap rr:subjectMap [
@@ -4612,7 +4587,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10035]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10035[not(@resource)]]"
       ].
 
       ex:AppelleePersonLiteralBNodeMap rr:subjectMap [
@@ -4623,7 +4598,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:AppelleePersonLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10035']";
+          rml:reference "*[name()='rdaw:P10035'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4657,13 +4632,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Appellee (CorporateBody)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:AppelleeCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10005]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10005[not(@resource)]]"
     ].
 
     ex:AppelleeCorporateBodyLiteralMap rr:subjectMap [
@@ -4690,7 +4664,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10005]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10005[not(@resource)]]"
       ].
 
       ex:AppelleeCorporateBodyLiteralBNodeMap rr:subjectMap [
@@ -4701,7 +4675,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:AppelleeCorporateBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10005']";
+          rml:reference "*[name()='rdaw:P10005'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4735,13 +4709,12 @@ ex:UWNoteMap a rr:TriplesMap;
     ].
 
 # Commissioning Body
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:CommissioningBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10287]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10287[not(@resource)]]"
     ].
 
     ex:CommissioningBodyLiteralMap rr:subjectMap [
@@ -4767,7 +4740,7 @@ ex:UWNoteMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10287]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10287[not(@resource)]]"
       ].
 
       ex:CommissioningBodyLiteralBNodeMap rr:subjectMap [
@@ -4778,7 +4751,7 @@ ex:UWNoteMap a rr:TriplesMap;
       ex:CommissioningBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10287']";
+          rml:reference "*[name()='rdaw:P10287'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4852,13 +4825,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
   ].
 
 # Dedicatee
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:DedicateeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10069]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10069[not(@resource)]]"
     ].
 
     ex:DedicateeLiteralMap rr:subjectMap [
@@ -4885,7 +4857,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10069]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10069[not(@resource)]]"
       ].
 
       ex:DedicateeLiteralBNodeMap rr:subjectMap [
@@ -4896,7 +4868,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:DedicateeLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10069']";
+          rml:reference "*[name()='rdaw:P10069'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -4930,13 +4902,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Defendant (Corporate Body)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:DefendantCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10285]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10285[not(@resource)]]"
     ].
 
     ex:DefendantCorporateBodyLiteralMap rr:subjectMap [
@@ -4963,7 +4934,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10285]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10285[not(@resource)]]"
       ].
 
       ex:DefendantCorporateBodyLiteralBNodeMap rr:subjectMap [
@@ -4974,7 +4945,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:DefendantCorporateBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10285']";
+          rml:reference "*[name()='rdaw:P10285'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5008,13 +4979,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Defendant (Person)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:DefendantPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10286]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10286[not(@resource)]]"
     ].
 
     ex:DefendantPersonLiteralMap rr:subjectMap [
@@ -5041,7 +5011,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10286]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10286[not(@resource)]]"
       ].
 
       ex:DefendantPersonLiteralBNodeMap rr:subjectMap [
@@ -5052,7 +5022,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:DefendantPersonLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10286']";
+          rml:reference "*[name()='rdaw:P10286'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5086,13 +5056,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Honouree
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:HonoureeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10049]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10049[not(@resource)]]"
     ].
 
     ex:HonoureeLiteralMap rr:subjectMap [
@@ -5119,7 +5088,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10049]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10049[not(@resource)]]"
       ].
 
       ex:HonoureeLiteralBNodeMap rr:subjectMap [
@@ -5130,7 +5099,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:HonoureeLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10049']";
+          rml:reference "*[name()='rdaw:P10049'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5164,13 +5133,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Hosting Institution
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:HostingInstitutionLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10007]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10007[not(@resource)]]"
     ].
 
     ex:HostingInstitutionLiteralMap rr:subjectMap [
@@ -5197,7 +5165,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10007]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10007[not(@resource)]]"
       ].
 
       ex:HostingInstitutionLiteralBNodeMap rr:subjectMap [
@@ -5208,7 +5176,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:HostingInstitutionLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10007']";
+          rml:reference "*[name()='rdaw:P10007'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5242,13 +5210,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Issuing Body
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:IssuingBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10046]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10046[not(@resource)]]"
     ].
 
     ex:IssuingBodyLiteralMap rr:subjectMap [
@@ -5275,7 +5242,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10046]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10046[not(@resource)]]"
       ].
 
       ex:IssuingBodyLiteralBNodeMap rr:subjectMap [
@@ -5286,7 +5253,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:IssuingBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10046']";
+          rml:reference "*[name()='rdaw:P10046'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5320,13 +5287,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Judge
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:JudgeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10044]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10044[not(@resource)]]"
     ].
 
     ex:JudgeLiteralMap rr:subjectMap [
@@ -5353,7 +5319,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10044]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10044[not(@resource)]]"
       ].
 
       ex:JudgeLiteralBNodeMap rr:subjectMap [
@@ -5364,7 +5330,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:JudgeLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10044']";
+          rml:reference "*[name()='rdaw:P10044'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5398,13 +5364,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Jurisdiction Governed
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:JurisdictionGovernedLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10018]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10018[not(@resource)]]"
     ].
 
     ex:JurisdictionGovernedLiteralMap rr:subjectMap [
@@ -5431,7 +5396,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10018]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10018[not(@resource)]]"
       ].
 
       ex:JurisdictionGovernedLiteralBNodeMap rr:subjectMap [
@@ -5442,7 +5407,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:JurisdictionGovernedLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10018']";
+          rml:reference "*[name()='rdaw:P10018'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5476,13 +5441,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Organizer
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:OrganizerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10297]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10297[not(@resource)]]"
     ].
 
     ex:OrganizerLiteralMap rr:subjectMap [
@@ -5509,7 +5473,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10297]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10297[not(@resource)]]"
       ].
 
       ex:OrganizerLiteralBNodeMap rr:subjectMap [
@@ -5520,7 +5484,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:OrganizerLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10297']";
+          rml:reference "*[name()='rdaw:P10297'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5554,13 +5518,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Participant in Treaty
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:ParticipantInTreatyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10292]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10292[not(@resource)]]"
     ].
 
     ex:ParticipantInTreatyLiteralMap rr:subjectMap [
@@ -5586,7 +5549,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10292]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10292[not(@resource)]]"
       ].
 
       ex:ParticipantInTreatyLiteralBNodeMap rr:subjectMap [
@@ -5597,7 +5560,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:ParticipantInTreatyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10292']";
+          rml:reference "*[name()='rdaw:P10292'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5651,13 +5614,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Plaintiff (Person)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:PlaintiffPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10043]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10043[not(@resource)]]"
     ].
 
     ex:PlaintiffPersonLiteralMap rr:subjectMap [
@@ -5684,7 +5646,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10043]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10043[not(@resource)]]"
       ].
 
       ex:PlaintiffPersonLiteralBNodeMap rr:subjectMap [
@@ -5695,7 +5657,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:PlaintiffPersonLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10043']";
+          rml:reference "*[name()='rdaw:P10043'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5729,13 +5691,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Plaintiff (Corporate Body)
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:PlaintiffCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10010]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10010[not(@resource)]]"
     ].
 
     ex:PlaintiffCorporateBodyLiteralMap rr:subjectMap [
@@ -5762,7 +5723,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10010]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10010[not(@resource)]]"
       ].
 
       ex:PlaintiffCorporateBodyLiteralBNodeMap rr:subjectMap [
@@ -5773,7 +5734,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:PlaintiffCorporateBodyLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10010']";
+          rml:reference "*[name()='rdaw:P10010'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5807,13 +5768,12 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
     ].
 
 # Researcher
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:ResearcherLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10293]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10293[not(@resource)]]"
     ].
 
     ex:ResearcherLiteralMap rr:subjectMap [
@@ -5840,7 +5800,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10293]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10293[not(@resource)]]"
       ].
 
       ex:ResearcherLiteralBNodeMap rr:subjectMap [
@@ -5851,7 +5811,7 @@ ex:CourtGovernedLiteralMap a rr:TriplesMap;
       ex:ResearcherLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10293']";
+          rml:reference "*[name()='rdaw:P10293'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
@@ -5905,13 +5865,12 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
   ].
 
 # Sponsoring Agent
-  #NOTE: fix XPaths so only one bnode generates, depending on whether it's an IRI or a literal
 
   ex:SponsorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10067]"
+      rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10067[not(@resource)]]"
     ].
 
     ex:SponsorLiteralMap rr:subjectMap [
@@ -5938,7 +5897,7 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
       rml:logicalSource [
         rml:source "/home/mcm104/rml/rdfxml/data/work/allWorksCombined.xml";
         rml:referenceFormulation ql:XPath;
-        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10067]"
+        rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10067[not(@resource)]]"
       ].
 
       ex:SponsorLiteralBNodeMap rr:subjectMap [
@@ -5949,7 +5908,7 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
       ex:SponsorLiteralBNodeMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "*[name()='rdaw:P10067']";
+          rml:reference "*[name()='rdaw:P10067'][not(@resource)]";
           rr:termType rr:Literal
         ]
       ].
