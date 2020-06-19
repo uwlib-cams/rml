@@ -2181,7 +2181,14 @@ ex:WorkMap a rr:TriplesMap;
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:AnalysisOfWorkLiteralMap
+      rr:parentTriplesMap ex:AnalysisOfWorkSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnalysisOfWorkRelatedToLiteralMap
     ]
   ].
 
@@ -2194,9 +2201,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10140']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CommentaryOnWorkLiteralMap
+      rr:parentTriplesMap ex:CommentaryOnWorkSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CommentaryOnWorkRelatedToLiteralMap
     ]
   ].
 
@@ -2209,9 +2231,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10187']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CritiqueOfWorkLiteralMap
+      rr:parentTriplesMap ex:CritiqueOfWorkSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CritiqueOfWorkRelatedToLiteralMap
     ]
   ].
 
@@ -2224,9 +2261,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10182']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:EvaluationOfWorkLiteralMap
+      rr:parentTriplesMap ex:EvaluationOfWorkSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:EvaluationOfWorkRelatedToLiteralMap
     ]
   ].
 
@@ -2239,9 +2291,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10153']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReviewOfWorkLiteralMap
+      rr:parentTriplesMap ex:ReviewOfWorkSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReviewOfWorkRelatedToLiteralMap
     ]
   ].
 
@@ -2254,9 +2321,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10178']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:AnalysisOfExpressionLiteralMap
+      rr:parentTriplesMap ex:AnalysisOfExpressionSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnalysisOfExpressionRelatedToLiteralMap
     ]
   ].
 
@@ -2269,9 +2351,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10278']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CommentaryOnExpressionLiteralMap
+      rr:parentTriplesMap ex:CommentaryOnExpressionSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CommentaryOnExpressionRelatedToLiteralMap
     ]
   ].
 
@@ -2284,9 +2381,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10282']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CritiqueOfExpressionLiteralMap
+      rr:parentTriplesMap ex:CritiqueOfExpressionSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CritiqueOfExpressionRelatedToLiteralMap
     ]
   ].
 
@@ -2299,9 +2411,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10281']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:EvaluationOfExpressionLiteralMap
+      rr:parentTriplesMap ex:EvaluationOfExpressionSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:EvaluationOfExpressionRelatedToLiteralMap
     ]
   ].
 
@@ -2314,9 +2441,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10279']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReviewOfExpressionLiteralMap
+      rr:parentTriplesMap ex:ReviewOfExpressionSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReviewOfExpressionRelatedToLiteralMap
     ]
   ].
 
@@ -2329,9 +2471,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10280']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:AnalysisOfManifestationLiteralMap
+      rr:parentTriplesMap ex:AnalysisOfManifestationSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnalysisOfManifestationRelatedToLiteralMap
     ]
   ].
 
@@ -2344,9 +2501,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10272']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CommentaryOnManifestationLiteralMap
+      rr:parentTriplesMap ex:CommentaryOnManifestationSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CommentaryOnManifestationRelatedToLiteralMap
     ]
   ].
 
@@ -2359,9 +2531,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10276']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CritiqueOfManifestationLiteralMap
+      rr:parentTriplesMap ex:CritiqueOfManifestationSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CritiqueOfManifestationRelatedToLiteralMap
     ]
   ].
 
@@ -2374,9 +2561,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10275']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:EvaluationOfManifestationLiteralMap
+      rr:parentTriplesMap ex:EvaluationOfManifestationSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:EvaluationOfManifestationRelatedToLiteralMap
     ]
   ].
 
@@ -2389,9 +2591,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10273']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReviewOfManifestationLiteralMap
+      rr:parentTriplesMap ex:ReviewOfManifestationSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReviewOfManifestationRelatedToLiteralMap
     ]
   ].
 
@@ -2404,9 +2621,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10274']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:AnalysisOfItemLiteralMap
+      rr:parentTriplesMap ex:AnalysisOfItemSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnalysisOfItemRelatedToLiteralMap
     ]
   ].
 
@@ -2419,9 +2651,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10266']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CommentaryOnItemLiteralMap
+      rr:parentTriplesMap ex:CommentaryOnItemSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CommentaryOnItemRelatedToLiteralMap
     ]
   ].
 
@@ -2434,9 +2681,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10270']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:CritiqueOfItemLiteralMap
+      rr:parentTriplesMap ex:CritiqueOfItemSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CritiqueOfItemRelatedToLiteralMap
     ]
   ].
 
@@ -2449,9 +2711,24 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10269']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
     rr:objectMap [
-      rr:parentTriplesMap ex:EvaluationOfItemLiteralMap
+      rr:parentTriplesMap ex:EvaluationOfItemSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:EvaluationOfItemRelatedToLiteralMap
     ]
   ].
 
@@ -2464,14 +2741,37 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:subject;
+    rr:predicate bf:relatedTo;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReviewOfItemLiteralMap
+      rml:reference "*[name()='rdaw:P10267']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
     ]
   ].
 
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:subject;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReviewOfItemSubjectLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReviewOfItemRelatedToLiteralMap
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:subject;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10268']/@*[name()='rdf:resource']";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:WorkMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10268']/@*[name()='rdf:resource']";
       rr:termType rr:IRI
@@ -7865,19 +8165,19 @@ ex:SpecialIssueOfLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AnalysisOfWorkLiteralMap a rr:TriplesMap;
+ex:AnalysisOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10140[not(@resource)]]"
   ].
 
-  ex:AnalysisOfWorkLiteralMap rr:subjectMap [
+  ex:AnalysisOfWorkSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Work
+    rr:class bf:Title
   ].
 
-  ex:AnalysisOfWorkLiteralMap rr:predicateObjectMap [
+  ex:AnalysisOfWorkSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10140'][not(@resource)]";
@@ -7885,19 +8185,39 @@ ex:AnalysisOfWorkLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CommentaryOnWorkLiteralMap a rr:TriplesMap;
+ex:AnalysisOfWorkRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10140[not(@resource)]]"
+  ].
+
+  ex:AnalysisOfWorkRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Work
+  ].
+
+  ex:AnalysisOfWorkRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10140'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CommentaryOnWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10187[not(@resource)]]"
   ].
 
-  ex:CommentaryOnWorkLiteralMap rr:subjectMap [
+  ex:CommentaryOnWorkSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Work
+    rr:class bf:Title
   ].
 
-  ex:CommentaryOnWorkLiteralMap rr:predicateObjectMap [
+  ex:CommentaryOnWorkSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10187'][not(@resource)]";
@@ -7905,19 +8225,39 @@ ex:CommentaryOnWorkLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CritiqueOfWorkLiteralMap a rr:TriplesMap;
+ex:CommentaryOnWorkRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10187[not(@resource)]]"
+  ].
+
+  ex:CommentaryOnWorkRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Work
+  ].
+
+  ex:CommentaryOnWorkRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10187'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CritiqueOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10182[not(@resource)]]"
   ].
 
-  ex:CritiqueOfWorkLiteralMap rr:subjectMap [
+  ex:CritiqueOfWorkSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Work
+    rr:class bf:Title
   ].
 
-  ex:CritiqueOfWorkLiteralMap rr:predicateObjectMap [
+  ex:CritiqueOfWorkSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10182'][not(@resource)]";
@@ -7925,19 +8265,39 @@ ex:CritiqueOfWorkLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:EvaluationOfWorkLiteralMap a rr:TriplesMap;
+ex:CritiqueOfWorkRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10182[not(@resource)]]"
+  ].
+
+  ex:CritiqueOfWorkRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Work
+  ].
+
+  ex:CritiqueOfWorkRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10182'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:EvaluationOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10153[not(@resource)]]"
   ].
 
-  ex:EvaluationOfWorkLiteralMap rr:subjectMap [
+  ex:EvaluationOfWorkSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Work
+    rr:class bf:Title
   ].
 
-  ex:EvaluationOfWorkLiteralMap rr:predicateObjectMap [
+  ex:EvaluationOfWorkSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10153'][not(@resource)]";
@@ -7945,19 +8305,39 @@ ex:EvaluationOfWorkLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReviewOfWorkLiteralMap a rr:TriplesMap;
+ex:EvaluationOfWorkRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10153[not(@resource)]]"
+  ].
+
+  ex:EvaluationOfWorkRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Work
+  ].
+
+  ex:EvaluationOfWorkRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10153'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReviewOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10178[not(@resource)]]"
   ].
 
-  ex:ReviewOfWorkLiteralMap rr:subjectMap [
+  ex:ReviewOfWorkSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:ReviewOfWorkLiteralMap rr:predicateObjectMap [
+  ex:ReviewOfWorkSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10178'][not(@resource)]";
@@ -7965,19 +8345,39 @@ ex:ReviewOfWorkLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AnalysisOfExpressionLiteralMap a rr:TriplesMap;
+ex:ReviewOfWorkRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10178[not(@resource)]]"
+  ].
+
+  ex:ReviewOfWorkRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:ReviewOfWorkRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10178'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:AnalysisOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10278[not(@resource)]]"
   ].
 
-  ex:AnalysisOfExpressionLiteralMap rr:subjectMap [
+  ex:AnalysisOfExpressionSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:AnalysisOfExpressionLiteralMap rr:predicateObjectMap [
+  ex:AnalysisOfExpressionSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10278'][not(@resource)]";
@@ -7985,19 +8385,39 @@ ex:AnalysisOfExpressionLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CommentaryOnExpressionLiteralMap a rr:TriplesMap;
+ex:AnalysisOfExpressionRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10278[not(@resource)]]"
+  ].
+
+  ex:AnalysisOfExpressionRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:AnalysisOfExpressionRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10278'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CommentaryOnExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10282[not(@resource)]]"
   ].
 
-  ex:CommentaryOnExpressionLiteralMap rr:subjectMap [
+  ex:CommentaryOnExpressionSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:CommentaryOnExpressionLiteralMap rr:predicateObjectMap [
+  ex:CommentaryOnExpressionSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10282'][not(@resource)]";
@@ -8005,19 +8425,39 @@ ex:CommentaryOnExpressionLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CritiqueOfExpressionLiteralMap a rr:TriplesMap;
+ex:CommentaryOnExpressionRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10282[not(@resource)]]"
+  ].
+
+  ex:CommentaryOnExpressionRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:CommentaryOnExpressionRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10282'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CritiqueOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10281[not(@resource)]]"
   ].
 
-  ex:CritiqueOfExpressionLiteralMap rr:subjectMap [
+  ex:CritiqueOfExpressionSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:CritiqueOfExpressionLiteralMap rr:predicateObjectMap [
+  ex:CritiqueOfExpressionSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10281'][not(@resource)]";
@@ -8025,19 +8465,39 @@ ex:CritiqueOfExpressionLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:EvaluationOfExpressionLiteralMap a rr:TriplesMap;
+ex:CritiqueOfExpressionRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10281[not(@resource)]]"
+  ].
+
+  ex:CritiqueOfExpressionRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:CritiqueOfExpressionRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10281'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:EvaluationOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10279[not(@resource)]]"
   ].
 
-  ex:EvaluationOfExpressionLiteralMap rr:subjectMap [
+  ex:EvaluationOfExpressionSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:EvaluationOfExpressionLiteralMap rr:predicateObjectMap [
+  ex:EvaluationOfExpressionSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10279'][not(@resource)]";
@@ -8045,19 +8505,39 @@ ex:EvaluationOfExpressionLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReviewOfExpressionLiteralMap a rr:TriplesMap;
+ex:EvaluationOfExpressionRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10279[not(@resource)]]"
+  ].
+
+  ex:EvaluationOfExpressionRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:EvaluationOfExpressionRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10279'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReviewOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10280[not(@resource)]]"
   ].
 
-  ex:ReviewOfExpressionLiteralMap rr:subjectMap [
+  ex:ReviewOfExpressionSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Expression
+    rr:class bf:Title
   ].
 
-  ex:ReviewOfExpressionLiteralMap rr:predicateObjectMap [
+  ex:ReviewOfExpressionSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10280'][not(@resource)]";
@@ -8065,19 +8545,39 @@ ex:ReviewOfExpressionLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AnalysisOfManifestationLiteralMap a rr:TriplesMap;
+ex:ReviewOfExpressionRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10280[not(@resource)]]"
+  ].
+
+  ex:ReviewOfExpressionRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Expression
+  ].
+
+  ex:ReviewOfExpressionRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10280'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:AnalysisOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10272[not(@resource)]]"
   ].
 
-  ex:AnalysisOfManifestationLiteralMap rr:subjectMap [
+  ex:AnalysisOfManifestationSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Manifestation
+    rr:class bf:Title
   ].
 
-  ex:AnalysisOfManifestationLiteralMap rr:predicateObjectMap [
+  ex:AnalysisOfManifestationSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10272'][not(@resource)]";
@@ -8085,19 +8585,39 @@ ex:AnalysisOfManifestationLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CommentaryOnManifestationLiteralMap a rr:TriplesMap;
+ex:AnalysisOfManifestationRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10272[not(@resource)]]"
+  ].
+
+  ex:AnalysisOfManifestationRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Manifestation
+  ].
+
+  ex:AnalysisOfManifestationRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10272'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CommentaryOnManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10276[not(@resource)]]"
   ].
 
-  ex:CommentaryOnManifestationLiteralMap rr:subjectMap [
+  ex:CommentaryOnManifestationSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Manifestation
+    rr:class bf:Title
   ].
 
-  ex:CommentaryOnManifestationLiteralMap rr:predicateObjectMap [
+  ex:CommentaryOnManifestationSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10276'][not(@resource)]";
@@ -8105,19 +8625,39 @@ ex:CommentaryOnManifestationLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CritiqueOfManifestationLiteralMap a rr:TriplesMap;
+ex:CommentaryOnManifestationRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10276[not(@resource)]]"
+  ].
+
+  ex:CommentaryOnManifestationRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Manifestation
+  ].
+
+  ex:CommentaryOnManifestationRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10276'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CritiqueOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10275[not(@resource)]]"
   ].
 
-  ex:CritiqueOfManifestationLiteralMap rr:subjectMap [
+  ex:CritiqueOfManifestationSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Manifestation
+    rr:class bf:Title
   ].
 
-  ex:CritiqueOfManifestationLiteralMap rr:predicateObjectMap [
+  ex:CritiqueOfManifestationSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10275'][not(@resource)]";
@@ -8125,19 +8665,39 @@ ex:CritiqueOfManifestationLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:EvaluationOfManifestationLiteralMap a rr:TriplesMap;
+ex:CritiqueOfManifestationRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10275[not(@resource)]]"
+  ].
+
+  ex:CritiqueOfManifestationRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Manifestation
+  ].
+
+  ex:CritiqueOfManifestationRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10275'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:EvaluationOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10273[not(@resource)]]"
   ].
 
-  ex:EvaluationOfManifestationLiteralMap rr:subjectMap [
+  ex:EvaluationOfManifestationSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Manifestation
+    rr:class bf:Title
   ].
 
-  ex:EvaluationOfManifestationLiteralMap rr:predicateObjectMap [
+  ex:EvaluationOfManifestationSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10273'][not(@resource)]";
@@ -8145,19 +8705,39 @@ ex:EvaluationOfManifestationLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReviewOfManifestationLiteralMap a rr:TriplesMap;
+ex:EvaluationOfManifestationRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10273[not(@resource)]]"
+  ].
+
+  ex:EvaluationOfManifestationRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Manifestation
+  ].
+
+  ex:EvaluationOfManifestationRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10273'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReviewOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10274[not(@resource)]]"
   ].
 
-  ex:ReviewOfManifestationLiteralMap rr:subjectMap [
+  ex:ReviewOfManifestationSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Manifestation
+    rr:class bf:Title
   ].
 
-  ex:ReviewOfManifestationLiteralMap rr:predicateObjectMap [
+  ex:ReviewOfManifestationSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10274'][not(@resource)]";
@@ -8165,19 +8745,39 @@ ex:ReviewOfManifestationLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AnalysisOfItemLiteralMap a rr:TriplesMap;
+ex:ReviewOfManifestationRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10274[not(@resource)]]"
+  ].
+
+  ex:ReviewOfManifestationRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Manifestation
+  ].
+
+  ex:ReviewOfManifestationRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10274'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:AnalysisOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10266[not(@resource)]]"
   ].
 
-  ex:AnalysisOfItemLiteralMap rr:subjectMap [
+  ex:AnalysisOfItemSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Item
+    rr:class bf:Title
   ].
 
-  ex:AnalysisOfItemLiteralMap rr:predicateObjectMap [
+  ex:AnalysisOfItemSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10266'][not(@resource)]";
@@ -8185,19 +8785,39 @@ ex:AnalysisOfItemLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CommentaryOnItemLiteralMap a rr:TriplesMap;
+ex:AnalysisOfItemRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10266[not(@resource)]]"
+  ].
+
+  ex:AnalysisOfItemRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  ex:AnalysisOfItemRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10266'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CommentaryOnItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10270[not(@resource)]]"
   ].
 
-  ex:CommentaryOnItemLiteralMap rr:subjectMap [
+  ex:CommentaryOnItemSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Item
+    rr:class bf:Title
   ].
 
-  ex:CommentaryOnItemLiteralMap rr:predicateObjectMap [
+  ex:CommentaryOnItemSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10270'][not(@resource)]";
@@ -8205,19 +8825,39 @@ ex:CommentaryOnItemLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CritiqueOfItemLiteralMap a rr:TriplesMap;
+ex:CommentaryOnItemRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10270[not(@resource)]]"
+  ].
+
+  ex:CommentaryOnItemRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  ex:CommentaryOnItemRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10270'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CritiqueOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10269[not(@resource)]]"
   ].
 
-  ex:CritiqueOfItemLiteralMap rr:subjectMap [
+  ex:CritiqueOfItemSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Item
+    rr:class bf:Title
   ].
 
-  ex:CritiqueOfItemLiteralMap rr:predicateObjectMap [
+  ex:CritiqueOfItemSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10269'][not(@resource)]";
@@ -8225,19 +8865,39 @@ ex:CritiqueOfItemLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:EvaluationOfItemLiteralMap a rr:TriplesMap;
+ex:CritiqueOfItemRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10269[not(@resource)]]"
+  ].
+
+  ex:CritiqueOfItemRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  ex:CritiqueOfItemRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10269'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:EvaluationOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10267[not(@resource)]]"
   ].
 
-  ex:EvaluationOfItemLiteralMap rr:subjectMap [
+  ex:EvaluationOfItemSubjectLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:Item
+    rr:class bf:Title
   ].
 
-  ex:EvaluationOfItemLiteralMap rr:predicateObjectMap [
+  ex:EvaluationOfItemSubjectLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10267'][not(@resource)]";
@@ -8245,19 +8905,59 @@ ex:EvaluationOfItemLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReviewOfItemLiteralMap a rr:TriplesMap;
+ex:EvaluationOfItemRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10267[not(@resource)]]"
+  ].
+
+  ex:EvaluationOfItemRelatedToLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  ex:EvaluationOfItemRelatedToLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10267'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReviewOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10268[not(@resource)]]"
   ].
 
-  ex:ReviewOfItemLiteralMap rr:subjectMap [
+  ex:ReviewOfItemSubjectLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Title
+  ].
+
+  ex:ReviewOfItemSubjectLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "*[name()='rdaw:P10268'][not(@resource)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReviewOfItemRelatedToLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][P10268[not(@resource)]]"
+  ].
+
+  ex:ReviewOfItemRelatedToLiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Item
   ].
 
-  ex:ReviewOfItemLiteralMap rr:predicateObjectMap [
+  ex:ReviewOfItemRelatedToLiteralMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "*[name()='rdaw:P10268'][not(@resource)]";
