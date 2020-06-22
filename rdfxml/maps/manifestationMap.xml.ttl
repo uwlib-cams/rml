@@ -21,25 +21,48 @@
 @prefix ns12: <http://uw.edu/adaptationProperties/p/w/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
+ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF[Description[contains(creationDate, '2019') or contains(creationDate, '2020-01') or contains(creationDate, '2020-02') or contains(creationDate, '2020-03') or contains(creationDate, '2020-04')]]/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[contains(@resource, 'RDACarrierType/1008') or contains(@resource, 'RDACarrierType/1049') or contains(@resource, 'RDACarrierType/1045') or contains(@resource, 'RDACarrierType/1046') or contains(@resource, 'RDACarrierType/1047') or contains(@resource, 'RDACarrierType/1048') or contains(@resource, 'RDACarrierType/1059')]]"
+  ].
+
+  ex:ManifestationPrintPreAprilMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Print
+  ].
+
+  ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
+    rr:predicate bf:responsibilityStatement;
+    rr:objectMap [
+      rml:reference "P30105";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30105/@lang"
+      ]
+    ]
+  ].
+
 ex:ManifestationPrintMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[contains(@resource, 'RDACarrierType/1049') or contains(@resource, 'RDACarrierType/1045') or contains(@resource, 'RDACarrierType/1046') or contains(@resource, 'RDACarrierType/1047') or contains(@resource, 'RDACarrierType/1048') or contains(@resource, 'RDACarrierType/1059')]]"
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[contains(@resource, 'RDACarrierType/1049') or contains(@resource, 'RDACarrierType/1045') or contains(@resource, 'RDACarrierType/1046') or contains(@resource, 'RDACarrierType/1047') or contains(@resource, 'RDACarrierType/1048') or contains(@resource, 'RDACarrierType/1059')]]"
   ].
 
   ex:ManifestationPrintMap rr:subjectMap [
-    rml:reference "@*[name()='rdf:about']";
+    rml:reference "@about";
     rr:class bf:Print
   ].
 
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
-      rml:reference "*[name()='rdam:P30105']";
+      rml:reference "P30105";
       rr:termType rr:Literal;
       rml:languageMap [
-        rml:reference "*[name()='rdam:P30105']/@*[name()='xml:lang']"
+        rml:reference "P30105/@lang"
       ]
     ]
   ].
