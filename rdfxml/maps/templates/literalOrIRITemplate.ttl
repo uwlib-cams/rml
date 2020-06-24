@@ -1,50 +1,51 @@
 # F + R...
   # {1} --> work, expression, manifestation, or item
   # {2} --> filename
-  # {3} --> RDA property name (all one word, first letter capitalized)
-  # {4} --> BF property name
-  # {5} --> RDA property number
-  # {6} --> BF class name
-  # {7} --> predicate for literal value
+  # {3} --> Work, Expression, Manifestation, or Item
+  # {4} --> RDA property name (all one word, first letter capitalized)
+  # {5} --> BF property name
+  # {6} --> RDA property number
+  # {7} --> BF class name
+  # {8} --> predicate for literal value
 
 # add to Work/Expression/Manifestation/Item map
 
-  ex:ExpressionMap rr:predicateObjectMap [
-    rr:predicate bf:{4};
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:{5};
     rr:objectMap [
-      rr:parentTriplesMap ex:{3}
+      rr:parentTriplesMap ex:{4}
     ]
   ].
 
-  ex:ExpressionMap rr:predicateObjectMap [
-    rr:predicate bf:{4};
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:{5};
     rr:objectMap [
-      rml:reference "P{5}/@resource";
+      rml:reference "P{6}/@resource";
       rr:termType rr:IRI
     ]
   ].
 
 # new triples maps
 
-ex:{3}LiteralMap a rr:TriplesMap;
+ex:{4}LiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P{5}[not(@resource)]]"
+    rml:iterator "/RDF/Description[P{6}[not(@resource)]]"
   ].
 
-  ex:{3}LiteralMap rr:subjectMap [
+  ex:{4}LiteralMap rr:subjectMap [
     rr:termType rr:BlankNode;
-    rr:class bf:{6}
+    rr:class bf:{7}
   ].
 
-  ex:{3}LiteralMap rr:predicateObjectMap [
-    rr:predicate {7};
+  ex:{4}LiteralMap rr:predicateObjectMap [
+    rr:predicate {8};
     rr:objectMap [
-      rml:reference "P{5}[not(@resource)]";
+      rml:reference "P{6}[not(@resource)]";
       rr:termType rr:Literal;
       rml:languageMap [
-        rml:reference "P{5}/@lang"
+        rml:reference "P{6}/@lang"
       ]
     ]
   ].
