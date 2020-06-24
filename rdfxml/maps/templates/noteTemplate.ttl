@@ -21,7 +21,7 @@ ex:{4}NoteMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P2{5}]"
+    rml:iterator "/RDF/Description[P{5}]"
   ].
 
   ex:{4}NoteMap rr:subjectMap [
@@ -32,10 +32,10 @@ ex:{4}NoteMap a rr:TriplesMap;
   ex:{4}NoteMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "P2{5}";
+      rml:reference "P{5}";
       rr:termType rr:Literal;
       rml:languageMap [
-        rml:reference "P2{5}/@lang"
+        rml:reference "P{5}/@lang"
       ]
     ]
   ].
