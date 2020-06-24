@@ -30,7 +30,6 @@ ex:WorkMap a rr:TriplesMap;
 
   ex:WorkMap rr:subjectMap [
     rml:reference "@about";
-# This could be made more specific to look for the trellis URI, but if we're only looking in the block that contains rdf:type rda:Work (see iterator), then this is sufficient to find the trellis URI on its own
     rr:class bf:Work
   ].
 
@@ -6238,10 +6237,6 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
         rr:termType rr:IRI
       ]
     ].
-
-#! work has contributor agent
-
-#! abridger agent
 
 ex:ExpressionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
