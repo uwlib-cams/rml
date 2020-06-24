@@ -1,0 +1,49 @@
+# F + R...
+  # {1} --> work, expression, manifestation, or item
+  # {2} --> filename
+  # {3} --> Work, Expression, Manifestation, or Item
+  # {4} --> RDA property name (all one word, first letter capitalized)
+  # {5} --> RDA property number
+  # {6} --> BF note type
+
+# add to Work/Expression/Manifestation/Item map
+
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:note;
+    rr:objectMap [
+      rr:parentTriplesMap ex:{4}NoteMap
+    ]
+  ].
+
+# new triples maps
+
+ex:{4}NoteMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P2{5}]"
+  ].
+
+  ex:{4}NoteMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Note
+  ].
+
+  ex:{4}NoteMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P2{5}";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P2{5}/@lang"
+      ]
+    ]
+  ].
+
+  ex:{4}NoteMap rr:predicateObjectMap [
+    rr:predicate bf:noteType;
+    rr:objectMap [
+      rr:constant "{6}";
+      rr:termType rr:Literal
+    ]
+  ].
