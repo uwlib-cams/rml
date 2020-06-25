@@ -341,8 +341,61 @@ ex:ExpressionMap a rr:TriplesMap;
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:award;
     rr:objectMap [
-      rml:reference "P20005";
-      rr:termType rr:Literal
+      rml:reference "P20005[@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P20005/@lang"
+      ]
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:award;
+    rr:objectMap [
+      rml:reference "P20005[not(@lang)]"
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:note;
+    rr:objectMap [
+      rr:parentTriplesMap ex:NoteOnExpressionNoteMap
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:note;
+    rr:objectMap [
+      rr:parentTriplesMap ex:OtherDistinguishingCharacteristicNoteMap
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:note;
+    rr:objectMap [
+      rr:parentTriplesMap ex:HasUniversityOfWashingtonNoteNoteMap
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:subject;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ExpressionHasSubjectLiteralMap
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rr:parentTriplesMap ex:RelatedAgentLiteralMap
+    ]
+  ].
+
+  ex:ExpressionMap rr:predicateObjectMap [
+    rr:predicate bf:relatedTo;
+    rr:objectMap [
+      rml:reference "P20301/@resource";
+      rr:termType rr:IRI
     ]
   ].
 
@@ -456,11 +509,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:AuthorizedAccessPointMap rr:predicateObjectMap [
       rr:predicate rdf:value;
       rr:objectMap [
-        rml:reference "P20313";
+        rml:reference "P20313[@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20313/@lang"
         ]
+      ]
+    ].
+
+    ex:AuthorizedAccessPointMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rml:reference "P20313[not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -493,14 +554,18 @@ ex:ExpressionMap a rr:TriplesMap;
       ex:AuthorizedAccessPointNoteMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rr:constant "Authorized access point"
+          rr:constant "Authorized access point";
+          rr:termType rr:Literal;
+          rr:language "en"
         ]
       ].
 
       ex:AuthorizedAccessPointNoteMap rr:predicateObjectMap [
         rr:predicate bf:noteType;
         rr:objectMap [
-          rr:constant "type of identifier"
+          rr:constant "type of identifier";
+          rr:termType rr:Literal;
+          rr:language "en"
         ]
       ].
 
@@ -519,7 +584,9 @@ ex:ExpressionMap a rr:TriplesMap;
       ex:AuthorizedAccessPointSourceMap rr:predicateObjectMap [
         rr:predicate rdf:value;
         rr:objectMap [
-          rr:constant "RDA"
+          rr:constant "RDA";
+          rr:termType rr:Literal;
+          rr:language "en"
         ]
       ].
 
@@ -538,11 +605,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:VariantAccessPointMap rr:predicateObjectMap [
       rr:predicate rdf:value;
       rr:objectMap [
-        rml:reference "P20314";
+        rml:reference "P20314[@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20314/@lang"
         ]
+      ]
+    ].
+
+    ex:VariantAccessPointMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rml:reference "P20314[not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -568,7 +643,9 @@ ex:ExpressionMap a rr:TriplesMap;
       ex:VariantAccessPointSourceMap rr:predicateObjectMap [
         rr:predicate rdf:value;
         rr:objectMap [
-          rr:constant "RDA Variant Access Point"
+          rr:constant "RDA Variant Access Point";
+          rr:termType rr:Literal;
+          rr:language "en"
         ]
       ].
 
@@ -587,11 +664,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:ColourContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20224[not(@resource)]";
+        rml:reference "P20224[not(@resource)][@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20224/@lang"
         ]
+      ]
+    ].
+
+    ex:ColourContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20224[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -610,7 +695,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:LanguageLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20006[not(@resource)]";
+        rml:reference "P20006[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20006/@lang"
+        ]
+      ]
+    ].
+
+    ex:LanguageLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20006[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -630,7 +726,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:ScriptLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20065[not(@resource)]";
+        rml:reference "P20065[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20065/@lang"
+        ]
+      ]
+    ].
+
+    ex:ScriptLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20065[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -650,7 +757,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:IllustrativeContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20207[not(@resource)]";
+        rml:reference "P20207[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20207/@lang"
+        ]
+      ]
+    ].
+
+    ex:IllustrativeContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20207[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -709,6 +827,7 @@ ex:ExpressionMap a rr:TriplesMap;
           rr:termType rr:Literal
         ]
       ].
+      #! language tags?
 
   ex:IllustratorMap a rr:TriplesMap;
     rml:logicalSource [
@@ -764,6 +883,7 @@ ex:ExpressionMap a rr:TriplesMap;
           rr:termType rr:Literal
         ]
       ].
+      #! language tags?
 
   ex:TranslatorMap a rr:TriplesMap;
     rml:logicalSource [
@@ -819,6 +939,7 @@ ex:ExpressionMap a rr:TriplesMap;
           rr:termType rr:Literal
         ]
       ].
+      #! language tags?
 
   ex:ContentTypeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -835,7 +956,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:ContentTypeLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20001[not(@resource)]";
+        rml:reference "P20001[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20001/@lang"
+        ]
+      ]
+    ].
+
+    ex:ContentTypeLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20001[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -855,7 +987,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:IntendedAudienceLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20322[not(@resource)]";
+        rml:reference "P20322[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20322/@lang"
+        ]
+      ]
+    ].
+
+    ex:IntendedAudienceLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20322[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -875,11 +1018,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:SummarizationOfContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20069[not(@resource)]";
+        rml:reference "P20069[not(@resource)][@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20069/@lang"
         ]
+      ]
+    ].
+
+    ex:SummarizationOfContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20069[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -937,6 +1088,7 @@ ex:ExpressionMap a rr:TriplesMap;
           rr:termType rr:Literal
         ]
       ].
+      #! language tags?
 
   ex:RevisionLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -953,7 +1105,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:RevisionLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20189[not(@resource)]";
+        rml:reference "P20189[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20189/@lang"
+        ]
+      ]
+    ].
+
+    ex:RevisionLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20189[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -973,7 +1136,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:TranslationOfLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20141[not(@resource)]";
+        rml:reference "P20141[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20141/@lang"
+        ]
+      ]
+    ].
+
+    ex:TranslationOfLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20141[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -993,7 +1167,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:TranslatedAsLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20171[not(@resource)]";
+        rml:reference "P20171[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20171/@lang"
+        ]
+      ]
+    ].
+
+    ex:TranslatedAsLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20171[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -1013,11 +1198,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:IdentifierLiteralMap rr:predicateObjectMap [
       rr:predicate rdf:value;
       rr:objectMap [
-        rml:reference "P20002[not(@resource)]";
+        rml:reference "P20002[not(@resource)][@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20002/@lang"
         ]
+      ]
+    ].
+
+    ex:IdentifierLiteralMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rml:reference "P20002[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -1065,7 +1258,8 @@ ex:ExpressionMap a rr:TriplesMap;
         rr:predicate rdf:value;
         rr:objectMap [
           rr:constant "LC NAF";
-          rr:termType rr:Literal
+          rr:termType rr:Literal;
+          rr:language "en"
         ]
       ].
 
@@ -1084,7 +1278,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:CategoryLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20331[not(@resource)]";
+        rml:reference "P20331[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20331/@lang"
+        ]
+      ]
+    ].
+
+    ex:CategoryLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20331[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -1104,11 +1309,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:DetailsOfIllustrativeContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20267[not(@resource)]";
+        rml:reference "P20267[not(@resource)][@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20267/@lang"
         ]
+      ]
+    ].
+
+    ex:DetailsOfIllustrativeContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20267[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -1127,7 +1340,7 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:DetailsOfColourContentNoteMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20210";
+        rml:reference "P20210[@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20210/@lang"
@@ -1136,10 +1349,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ].
 
     ex:DetailsOfColourContentNoteMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20210[not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+    ex:DetailsOfColourContentNoteMap rr:predicateObjectMap [
       rr:predicate bf:noteType;
       rr:objectMap [
         rr:constant "details of colour content";
-        rr:termType rr:Literal
+        rr:termType rr:Literal;
+        rr:language "en"
       ]
     ].
 
@@ -1158,7 +1380,7 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:DetailsOfFormOfTactileNotationNoteMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20265";
+        rml:reference "P20265[@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P20265/@lang"
@@ -1167,10 +1389,19 @@ ex:ExpressionMap a rr:TriplesMap;
     ].
 
     ex:DetailsOfFormOfTactileNotationNoteMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20265[not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+    ex:DetailsOfFormOfTactileNotationNoteMap rr:predicateObjectMap [
       rr:predicate bf:noteType;
       rr:objectMap [
         rr:constant "details of form of tactile notation";
-        rr:termType rr:Literal
+        rr:termType rr:Literal;
+        rr:language "en"
       ]
     ].
 
@@ -1189,7 +1420,18 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:AccessibilityContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20208[not(@resource)]";
+        rml:reference "P20208[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20208/@lang"
+        ]
+      ]
+    ].
+
+    ex:AccessibilityContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20208[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
@@ -1209,23 +1451,169 @@ ex:ExpressionMap a rr:TriplesMap;
     ex:SupplementaryContentLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P20206[not(@resource)]";
+        rml:reference "P20206[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20206/@lang"
+        ]
+      ]
+    ].
+
+    ex:SupplementaryContentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20206[not(@resource) and not(@lang)]";
         rr:termType rr:Literal
       ]
     ].
 
+  ex:NoteOnExpressionNoteMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/expression/4a9ec86c-8209-4ac2-8322-bfd27db73edd.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P20071]"
+    ].
 
-#! has award
+    ex:NoteOnExpressionNoteMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Note
+    ].
 
-#! has note on expression
+    ex:NoteOnExpressionNoteMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20071";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20071/@lang"
+        ]
+      ]
+    ].
 
-#! has other distinguishing characteristic of expression
+    ex:NoteOnExpressionNoteMap rr:predicateObjectMap [
+      rr:predicate bf:noteType;
+      rr:objectMap [
+        rr:constant "note on expression";
+        rr:termType rr:Literal;
+        rr:language "en"
+      ]
+    ].
 
-#! has University of Washington-specific note on expression
+  ex:OtherDistinguishingCharacteristicNoteMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/expression/4a9ec86c-8209-4ac2-8322-bfd27db73edd.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P20003]"
+    ].
 
-#! expression has subject
+    ex:OtherDistinguishingCharacteristicNoteMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Note
+    ].
 
-#! has related agent of expression
+    ex:OtherDistinguishingCharacteristicNoteMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20003";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P20003/@lang"
+        ]
+      ]
+    ].
+
+    ex:OtherDistinguishingCharacteristicNoteMap rr:predicateObjectMap [
+      rr:predicate bf:noteType;
+      rr:objectMap [
+        rr:constant "other distinguishing characteristic";
+        rr:termType rr:Literal;
+        rr:language "en"
+      ]
+    ].
+
+  ex:HasUniversityOfWashingtonNoteNoteMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/expression/4a9ec86c-8209-4ac2-8322-bfd27db73edd.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[hasUniversityOfWashingtonNote]"
+    ].
+
+    ex:HasUniversityOfWashingtonNoteNoteMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Note
+    ].
+
+    ex:HasUniversityOfWashingtonNoteNoteMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "hasUniversityOfWashingtonNote";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "hasUniversityOfWashingtonNote/@lang"
+        ]
+      ]
+    ].
+
+    ex:HasUniversityOfWashingtonNoteNoteMap rr:predicateObjectMap [
+      rr:predicate bf:noteType;
+      rr:objectMap [
+        rr:constant "University of Washington-specific note";
+        rr:termType rr:Literal;
+        rr:language "en"
+      ]
+    ].
+
+  ex:ExpressionHasSubjectLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/expression/4a9ec86c-8209-4ac2-8322-bfd27db73edd.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P60001[not(@resource)]]"
+    ].
+
+    ex:ExpressionHasSubjectLiteralMap rr:subjectMap [
+        rr:termType rr:BlankNode;
+        rr:class madsrdf:Authority
+      ].
+
+    ex:ExpressionHasSubjectLiteralMap rr:predicateObjectMap [
+      rr:predicate madsrdf:authoritativeLabel;
+      rr:objectMap [
+        rml:reference "P60001[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P60001/@lang"
+        ]
+      ]
+    ].
+
+    ex:ExpressionHasSubjectLiteralMap rr:predicateObjectMap [
+      rr:predicate madsrdf:authoritativeLabel;
+      rr:objectMap [
+        rml:reference "P60001[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+  ex:RelatedAgentLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/expression/4a9ec86c-8209-4ac2-8322-bfd27db73edd.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P20301[not(@resource)]]"
+    ].
+
+    ex:RelatedAgentLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    ex:RelatedAgentLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P20301[not(@resource)]";
+        rr:termType rr:Literal
+      ]
+    ].
+    #! language tags?
 
 #! expression has contributor agent
 
