@@ -6,7 +6,7 @@
   # {5} --> BF property name
   # {6} --> RDA property number
   # {7} --> BF class name
-  # {8} --> predicate for literal value
+  # rdfs:label --> predicate for literal value
 
 # add to Work/Expression/Manifestation/Item map
 
@@ -40,12 +40,20 @@ ex:{4}LiteralMap a rr:TriplesMap;
   ].
 
   ex:{4}LiteralMap rr:predicateObjectMap [
-    rr:predicate {8};
+    rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "P{6}[not(@resource)]";
+      rml:reference "P{6}[not(@resource)][@lang]";
       rr:termType rr:Literal;
       rml:languageMap [
         rml:reference "P{6}/@lang"
       ]
+    ]
+  ].
+
+  ex:{4}LiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P{6}[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
     ]
   ].
