@@ -221,7 +221,7 @@ ex:WorkMap a rr:TriplesMap;
       rr:termType rr:Literal
     ]
   ].
-#! language tag?
+  #! language tag?
 
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:note;
@@ -2795,7 +2795,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[catalogerID]"
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10001'][catalogerID]"
   ].
 
   ex:AdminMetadataMap rr:subjectMap [
