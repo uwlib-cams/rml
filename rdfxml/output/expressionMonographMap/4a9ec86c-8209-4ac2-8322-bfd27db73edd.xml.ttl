@@ -1,0 +1,75 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  a bf:Work;
+  bf:adminMetadata _:2 .
+
+_:2 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-20";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:7 .
+
+_:7 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>;
+  bf:content <http://rdaregistry.info/termList/RDAContentType/1020>;
+  bf:contribution _:0 .
+
+_:0 a bf:Contribution;
+  bf:agent <http://id.loc.gov/rwo/agents/no2016066525>, <http://id.loc.gov/rwo/agents/no2016066981>;
+  bf:role <http://id.loc.gov/vocabulary/relators/wpr> .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:contribution _:1 .
+
+_:1 a bf:Contribution;
+  bf:agent <http://id.loc.gov/rwo/agents/no2016066525>, <http://id.loc.gov/rwo/agents/no2016066981>;
+  bf:role <http://id.loc.gov/vocabulary/relators/edt> .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:identifiedBy _:4 .
+
+_:4 a bf:Identifier;
+  bf:note _:8 .
+
+_:8 a bf:Note;
+  bf:noteType "type of identifier"@en;
+  rdfs:label "Authorized access point"@en .
+
+_:4 bf:source _:9 .
+
+_:9 a bf:Source;
+  rdf:value "RDA"@en .
+
+_:4 rdf:value "Agricultural nanobiotechnology. English"@en .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:identifiedBy _:5 .
+
+_:5 a bf:Identifier;
+  rdf:value "2018959433"@en .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>;
+  bf:language <http://id.loc.gov/vocabulary/languages/eng>;
+  bf:note _:6 .
+
+_:6 a bf:Note;
+  bf:noteType "note on expression"@en;
+  rdfs:label "Includes bibliographical references and index."@en .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd>
+  bf:originDate "2018";
+  bf:summary _:3 .
+
+_:3 a bf:Summary;
+  rdfs:label "\"Nanobiotechnology in agriculture is a new knowledge area that offers novel possibilities to achieve high productivity levels at manageable costs during the production and merchandising of crops. This book shows us how we can use the cutting-edge knowledge about agriculture, nanotechnology, and biotechnology to increase the agricultural productivity and shape a sustainable future in order to increase the social welfare in rural areas and preserve the environmental health. Specialists from several countries will provide their feedback on a range of relevant topics such as environment-friendly use of nanofertilisers, nanodevices, nano-food packaging, nanocoating and nanocarriers and their relationship with modern agriculture\"--Page 4 of cover."@en .

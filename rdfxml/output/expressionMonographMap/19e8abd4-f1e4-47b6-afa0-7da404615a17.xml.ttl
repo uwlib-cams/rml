@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17>
+  a bf:Work;
+  bf:adminMetadata _:1 .
+
+_:1 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-13";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:4 .
+
+_:4 a bf:Status;
+  bf:code "n" .
+
+<https://trellis.sinopia.io/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17>
+  bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>;
+  bf:content <http://rdaregistry.info/termList/RDAContentType/1020>;
+  bf:contribution _:0 .
+
+_:0 a bf:Contribution;
+  bf:agent <http://id.loc.gov/rwo/agents/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/ill> .
+
+<https://trellis.sinopia.io/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17>
+  bf:identifiedBy _:3 .
+
+_:3 a bf:Identifier;
+  bf:note _:5 .
+
+_:5 a bf:Note;
+  bf:noteType "type of identifier"@en;
+  rdfs:label "Authorized access point"@en .
+
+_:3 bf:source _:6 .
+
+_:6 a bf:Source;
+  rdf:value "RDA"@en .
+
+_:3 rdf:value "Seuss, Dr. Lorax"@en .
+
+<https://trellis.sinopia.io/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17>
+  bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>;
+  bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>;
+  bf:language <http://id.loc.gov/vocabulary/languages/eng>;
+  bf:originDate "1971";
+  bf:summary _:2 .
+
+_:2 a bf:Summary;
+  rdfs:label "\"The Lorax is a children's book written by Dr. Seuss and first published in 1971.[1] It chronicles the plight of the environment and the Lorax is the titular character, who \"speaks for the trees\" and confronts the Once-ler, who causes environmental destruction. As in most Dr. Seuss books, the creatures mentioned are typically unique to the story.  The story is commonly recognized as a fable concerning the danger that corporate greed poses to nature,[not verified in body] using the literary element of personification to create relateable characters for industry (as the Once-ler), the environment (the Truffula trees) and activism (as the Lorax).  It was Dr. Seuss's personal favorite of his books. He was able to create a story addressing industrial/economic and environmental issues without it being dull: \"The Lorax came out of me being angry. In The Lorax I was out to attack what I think are evil things and let the chips fall where they might.\"[2] \"--Wikipedia, November 13, 2019."@en .
