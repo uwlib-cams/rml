@@ -1,0 +1,646 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix ex: <http://example.org/rules/>.
+@prefix schema: <http://schema.org/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdae: <http://rdaregistry.info/Elements/e/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix uwx: <https://doi.org/10.6069/uwlib.55.d.4#>.
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix rdam: <http://rdaregistry.info/Elements/m/>.
+@prefix ns7: <http://rdaregistry.info/Elements/m/datatype/>.
+@prefix rdai: <http://rdaregistry.info/Elements/i/>.
+@prefix rdau: <http://rdaregistry.info/Elements/u/>.
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/>.
+@prefix sin: <http://sinopia.io/vocabulary/>.
+@prefix ns12: <http://uw.edu/adaptationProperties/p/w/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][adminMetadata/@nodeID = /RDF/Description[type/@resource='http://id.loc.gov/ontologies/bibframe/AdminMetadata'][contains(creationDate,'2019') or contains(creationDate, '2020-01') or contains(creationDate, '2020-02') or contains(creationDate, '2020-03') or contains(creationDate, '2020-04')]/@nodeID][P30001[contains(@resource, '1008') or contains(@resource, '1045') or contains(@resource, '1046') or contains(@resource, '1049') or contains(@resource, '1048')]]"
+  ].
+
+  ex:ManifestationPrintPreAprilMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Print
+  ].
+
+ex:ManifestationPrintMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[contains(@resource, '1045') or contains(@resource, '1046') or contains(@resource, '1049') or contains(@resource, '1048')]]"
+  ].
+
+  ex:ManifestationPrintMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Print
+  ].
+
+ex:ManifestationElectronicMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[contains(@resource, '1012') or contains(@resource, '1013') or contains(@resource, '1014') or contains(@resource, '1015') or contains(@resource, '1016') or contains(@resource, '1017') or contains(@resource, '1018')]]"
+  ].
+
+  ex:ManifestationElectronicMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Electronic
+  ].
+
+ex:ManifestationOtherMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][P30001[not(contains(@resource, '1045')) or not(contains(@resource, '1046')) or not(contains(@resource, '1049')) or not(contains(@resource, '1048')) or not(contains(@resource, '1012')) or not(contains(@resource, '1013')) or not(contains(@resource, '1014')) or not(contains(@resource, '1015')) or not(contains(@resource, '1016')) or not(contains(@resource, '1017')) or not(contains(@resource, '1018'))]]"
+  ].
+
+  ex:ManifestationOtherMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Instance
+  ].
+
+###
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:adminMetadata;
+  rr:objectMap [
+    rr:parentTriplesMap ex:AdminMetadataMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:instanceOf;
+  rr:objectMap [
+    rml:reference "P30139/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TitleProperMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P30156/@resource[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30156/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P30156/@resource[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:VariantTitleLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P30128/@resource[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30128/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P30128/@resource[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:responsibilityStatement;
+  rr:objectMap [
+    rml:reference "P30105/@resource[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30105/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:responsibilityStatement;
+  rr:objectMap [
+    rml:reference "P30105/@resource[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:provisionActivity;
+  rr:objectMap [
+    rr:parentTriplesMap ex:PlaceOfPublicationLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:provisionActivity;
+  rr:objectMap [
+    rr:parentTriplesMap ex:PlaceOfPublicationIRIMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:provisionActivityStatement;
+  rr:objectMap [
+    rml:reference "P30111/@resource[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30111/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:provisionActivityStatement;
+  rr:objectMap [
+    rml:reference "P30111/@resource[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+###
+
+ex:AdminMetadataMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][catalogerID]"
+  ].
+
+  ex:AdminMetadataMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:AdminMetadata
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bflc:catalogerID;
+    rr:objectMap [
+      rml:reference "catalogerID";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:status;
+    rr:objectMap [
+      rr:parentTriplesMap ex:StatusMap
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bflc:encodingLevel;
+    rr:objectMap [
+      rml:reference "encodingLevel/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:descriptionConventions;
+    rr:objectMap [
+      rml:reference "descriptionConventions/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:source;
+    rr:objectMap [
+      rml:reference "source/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:descriptionLanguage;
+    rr:objectMap [
+      rml:reference "descriptionLanguage/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:creationDate;
+    rr:objectMap [
+      rml:reference "creationDate";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:changeDate;
+    rr:objectMap [
+      rml:reference "changeDate";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:StatusMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[code]"
+    ].
+
+    ex:StatusMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Status
+    ].
+
+    ex:StatusMap rr:predicateObjectMap [
+      rr:predicate bf:code;
+      rr:objectMap [
+        rml:reference "code"
+      ]
+    ].
+
+ex:TitleProperMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30156[not(@resource)]]"
+  ].
+
+  ex:TitleProperMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Title
+  ].
+
+  ex:TitleProperMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30156[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30156/@lang"
+      ]
+    ]
+  ].
+
+  ex:TitleProperMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30156[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:VariantTitleLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30128[not(@resource)]]"
+  ].
+
+  ex:VariantTitleLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:VariantTitle
+  ].
+
+  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30128[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30128/@lang"
+      ]
+    ]
+  ].
+
+  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30128[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30128[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30128/@lang"
+      ]
+    ]
+  ].
+
+  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30128[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:PlaceOfPublicationLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30088[not(@resource)]]"
+  ].
+
+  ex:PlaceOfPublicationLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Publication
+  ].
+
+  ex:PlaceOfPublicationLiteralMap rr:predicateObjectMap [
+    rr:predicate bf:place;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PlaceOfPublicationLiteralPlaceMap
+    ]
+  ].
+
+  ex:PlaceOfPublicationLiteralPlaceMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P30088[not(@resource)]]"
+    ].
+
+    ex:PlaceOfPublicationLiteralPlaceMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Place
+    ].
+
+    ex:PlaceOfPublicationLiteralPlaceMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P30088[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P30088/@lang"
+        ]
+      ]
+    ].
+
+    ex:PlaceOfPublicationLiteralPlaceMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30088[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:PlaceOfPublicationIRIMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30088[@resource]]"
+  ].
+
+  ex:PlaceOfPublicationIRIMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Publication
+  ].
+
+  ex:PlaceOfPublicationIRIMap rr:predicateObjectMap [
+    rr:predicate bf:place;
+    rr:objectMap [
+      rml:reference "P30088[@resource]";
+      rr:termType rr:IRI
+    ]
+  ].
+
+###
+
+# has publication statement
+
+# has name of publisher
+
+# has identifier for manifestation
+
+# has date of publication
+
+# has designation of edition
+
+# has copyright date
+
+# has extent of manifestation
+
+# has note on manifestation
+
+# has dimensions
+
+# has uniform resource locator
+
+# manifestation has Library of Congress Classification Number Part A
+
+# manifestation has Library of Congress Classification Number Part B
+
+# has other title information
+
+# has title of series
+
+# has numbering within series
+
+# has parallel title proper
+
+# has parallel other title information
+
+# has publisher agent
+
+# has series statement
+
+# has other title information of series
+
+# has mode of issuance
+
+# has media type
+
+# has carrier type
+
+# has category of manifestation
+
+# has intended audience of manifestation
+
+# has parallel statement of responsibility relating to title proper
+
+# has parallel designation of edition
+
+# has statement of responsibility relating to edition
+
+# has parallel statement of responsibility relating to edition
+
+# has designation of named revision of edition
+
+# has parallel designation of named revision of edition
+
+# has statement of responsibility relating to named revision of edition
+
+# has parallel statement of responsibility relating to named revision of edition
+
+# has place of production
+
+# has parallel place of production
+
+# has name of producer
+
+# has parallel name of producer
+
+# has date of production
+
+# has parallel place of publication
+
+# has parallel name of publisher
+
+# has parallel name of distributor
+
+# has place of distribution
+
+# has parallel place of distribution
+
+# has name of distributor
+
+# has date of distribution
+
+# has place of manufacture
+
+# has parallel place of manufacture
+
+# has name of manufacturer
+
+# has parallel name of manufacturer
+
+# has date of manufacture
+
+# has parallel title of series
+
+# has parallel other title information of series
+
+# has statement of responsibility relating to series
+
+# has parallel statement of responsibility relating to series
+
+# has University of Washington-specific note on manifestation
+
+# has note on issue, part, or iteration used as basis for identification of manifestation
+
+# has base material
+
+# has applied material
+
+# has production method
+
+# has layout
+
+# has bibliographic format
+
+# has font size
+
+# has type of binding
+
+# has restriction on use of manifestation
+
+# manifestation has SuDoc Classification Number
+
+# manifestation has National Library of Medicine Classification Number Part A
+
+# manifestation has National Library of Medicine Classification Number Part B
+
+# manifestation has contributor agent
+
+# manifestation has subject
+
+# has related agent of manifestation
+
+# has producer agent of npublished manifestation
+
+# has distributor agent
+
+# has manufacturer agent
+
+# has book designer agent
+
+# has braille embosser agent
+
+# has caster agent
+
+# has collotyper
+
+# has engraver agent
+
+# has etcher agent
+
+# has lithographer agent
+
+# has papermaker agent
+
+# has platemaker agent
+
+# has printer agent
+
+# has printmaker agent
+
+# has exemplar of manifestation
+
+# has related manifestation of manifestation
+
+# has equivalent manifestation
+
+# is also issued as
+
+# is reproduced as manifestation
+
+# has electronic reproduction of manifestation
+
+# is reprinted as manifestation
+
+# is facsimile of manifestation of
+
+# is preservation facsimile of manifestation of
+
+# is facsimile part of
+
+# has insert
+
+# has facsimile part
+
+# is inserted in
+
+# is accompanied by manifestation
+
+# is issued with
+
+# has binding of manifestation
+
+# is facsimile of item of
+
+# is preservation facsimile of item of
+
+# manifestation held by
