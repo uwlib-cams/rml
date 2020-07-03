@@ -272,6 +272,138 @@ ex:ManifestationOtherMap a rr:TriplesMap;
   ]
 ].
 
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30157[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30157/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30157[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesEnumeration;
+  rr:objectMap [
+    rml:reference "P30014";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ParallelTitleMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30106[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30106/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30106[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30143[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P30143/@lang"
+    ]
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:seriesStatement;
+  rr:objectMap [
+    rml:reference "P30143[not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:issuance;
+  rr:objectMap [
+    rr:parentTriplesMap ex:ModeOfIssuanceLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:issuance;
+  rr:objectMap [
+    rml:reference "P30003/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:media;
+  rr:objectMap [
+    rr:parentTriplesMap ex:MediaTypeLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:media;
+  rr:objectMap [
+    rml:reference "P30002/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:carrier;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CarrierTypeLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:carrier;
+  rr:objectMap [
+    rml:reference "P30001/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:genreForm;
+  rr:objectMap [
+    rr:parentTriplesMap ex:CategoryLiteralMap
+  ]
+].
+
+{@} rr:predicateObjectMap [
+  rr:predicate bf:genreForm;
+  rr:objectMap [
+    rml:reference "P30335/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
 ###
 
 ex:AdminMetadataMap a rr:TriplesMap;
@@ -399,6 +531,25 @@ ex:TitleProperMap a rr:TriplesMap;
     ]
   ].
 
+  ex:TitleProperMap rr:predicateObjectMap [
+    rr:predicate bf:subtitle;
+    rr:objectMap [
+      rml:reference "P30142[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30142/@lang"
+      ]
+    ]
+  ].
+
+  ex:TitleProperMap rr:predicateObjectMap [
+    rr:predicate bf:subtitle;
+    rr:objectMap [
+      rml:reference "P30142[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
 ex:VariantTitleLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
@@ -492,6 +643,15 @@ ex:ProvisionActivityMap a rr:TriplesMap;
   ].
 
   ex:ProvisionActivityMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P30083/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+
+  ex:ProvisionActivityMap rr:predicateObjectMap [
     rr:predicate bf:date;
     rr:objectMap [
       rml:reference "P30011";
@@ -503,7 +663,7 @@ ex:ProvisionActivityMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P30088[not(@resource)]]"
+      rml:iterator "/RDF/Description[P30088[not(@resource)]"
     ].
 
     ex:PlaceOfPublicationLiteralMap rr:subjectMap [
@@ -534,7 +694,7 @@ ex:ProvisionActivityMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P30176[not(@resource)]]"
+      rml:iterator "/RDF/Description[P30176[not(@resource)] or P30083[not(@resource)]]]"
     ].
 
     ex:NameOfPublisherLiteralMap rr:subjectMap [
@@ -561,6 +721,25 @@ ex:ProvisionActivityMap a rr:TriplesMap;
       ]
     ].
 
+    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P30083[@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P30083/@lang"
+        ]
+      ]
+    ].
+
+    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P30083[not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
 ex:IdentifiedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
@@ -576,7 +755,7 @@ ex:IdentifiedByLiteralMap a rr:TriplesMap;
   ex:IdentifiedByLiteralMap rr:predicateObjectMap [
     rr:predicate rdf:value;
     rr:objectMap [
-      rml:reference "P30004[@lang]";
+      rml:reference "P30004[not(@resource)][@lang]";
       rr:termType rr:Literal;
       rml:languageMap [
         rml:reference "P30004/@lang"
@@ -587,7 +766,7 @@ ex:IdentifiedByLiteralMap a rr:TriplesMap;
   ex:IdentifiedByLiteralMap rr:predicateObjectMap [
     rr:predicate rdf:value;
     rr:objectMap [
-      rml:reference "P30004[not(@lang)]";
+      rml:reference "P30004[not(@resource) and not(@lang)]";
       rr:termType rr:Literal
     ]
   ].
@@ -723,31 +902,181 @@ ex:LCCNumberMap a rr:TriplesMap;
       ]
     ].
 
+ex:ParallelTitleMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30203]"
+  ].
+
+  ex:ParallelTitleMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:ParallelTitle
+  ].
+
+  ex:ParallelTitleMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30203[@lang]";
+      rr:termType rr:Literal;
+      rr:languageMap [
+        rml:reference "P30203/@lang"
+      ]
+    ]
+  ].
+
+  ex:ParallelTitleMap rr:predicateObjectMap [
+    rr:predicate bf:mainTitle;
+    rr:objectMap [
+      rml:reference "P30203[not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:ParallelTitleMap rr:predicateObjectMap [
+    rr:predicate bf:subtitle;
+    rr:objectMap [
+      rml:reference "P30151[@lang]";
+      rr:termType rr:Literal;
+      rr:languageMap [
+        rml:reference "P30151/@lang"
+      ]
+    ]
+  ].
+
+  ex:ParallelTitleMap rr:predicateObjectMap [
+    rr:predicate bf:subtitle;
+    rr:objectMap [
+      rml:reference "P30151[not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ModeOfIssuanceLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30003[not(@resource)]]"
+  ].
+
+  ex:ModeOfIssuanceLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Issuance
+  ].
+
+  ex:ModeOfIssuanceLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30003[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30003/@lang"
+      ]
+    ]
+  ].
+
+  ex:ModeOfIssuanceLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30003[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:MediaTypeLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30002[not(@resource)]]"
+  ].
+
+  ex:MediaTypeLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Media
+  ].
+
+  ex:MediaTypeLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30002[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30002/@lang"
+      ]
+    ]
+  ].
+
+  ex:MediaTypeLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30002[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CarrierTypeLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30001[not(@resource)]]"
+  ].
+
+  ex:CarrierTypeLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Carrier
+  ].
+
+  ex:CarrierTypeLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30001[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30001/@lang"
+      ]
+    ]
+  ].
+
+  ex:CarrierTypeLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30001[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:CategoryLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30335[not(@resource)]]"
+  ].
+
+  ex:CategoryLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:GenreForm
+  ].
+
+  ex:CategoryLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30335[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30335/@lang"
+      ]
+    ]
+  ].
+
+  ex:CategoryLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30335[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
 ###
-
-# has other title information
-
-# has title of series
-
-# has numbering within series
-
-# has parallel title proper
-
-# has parallel other title information
-
-# has publisher agent
-
-# has series statement
-
-# has other title information of series
-
-# has mode of issuance
-
-# has media type
-
-# has carrier type
-
-# has category of manifestation
 
 # has intended audience of manifestation
 
