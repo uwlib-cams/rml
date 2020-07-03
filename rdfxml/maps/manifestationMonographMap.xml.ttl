@@ -622,7 +622,7 @@ ex:ProvisionActivityMap a rr:TriplesMap;
   ex:ProvisionActivityMap rr:predicateObjectMap [
     rr:predicate bf:place;
     rr:objectMap [
-      rml:reference "P30088[@resource]";
+      rml:reference "P30088/@resource";
       rr:termType rr:IRI
     ]
   ].
@@ -663,7 +663,7 @@ ex:ProvisionActivityMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P30088[not(@resource)]"
+      rml:iterator "/RDF/Description[P30088[not(@resource)]]"
     ].
 
     ex:PlaceOfPublicationLiteralMap rr:subjectMap [
@@ -694,7 +694,7 @@ ex:ProvisionActivityMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/manifestation/0d1f4ee2-ed20-497c-a589-916ab694008b.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P30176[not(@resource)] or P30083[not(@resource)]]]"
+      rml:iterator "/RDF/Description[P30176[not(@resource)] or P30083[not(@resource)]]"
     ].
 
     ex:NameOfPublisherLiteralMap rr:subjectMap [
