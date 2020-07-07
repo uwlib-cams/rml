@@ -32,11 +32,19 @@ ex:{4}NoteMap a rr:TriplesMap;
   ex:{4}NoteMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rml:reference "P2{5}";
+      rml:reference "P2{5}[@lang]";
       rr:termType rr:Literal;
       rml:languageMap [
         rml:reference "P2{5}/@lang"
       ]
+    ]
+  ].
+
+  ex:{4}NoteMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P2{5}[not(@lang)]";
+      rr:termType rr:Literal
     ]
   ].
 
