@@ -1,0 +1,27 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55>
+  a bf:Item;
+  bf:heldBy _:1 .
+
+_:1 a bf:Contribution;
+  bf:agent <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:role _:3 .
+
+_:3 a bf:Role;
+  rdfs:label "holding institution"@en .
+
+<https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55>
+  bf:identifier _:0 .
+
+_:0 a bf:Barcode;
+  rdf:value "39352084182484" .
+
+<https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55>
+  bf:itemOf <https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7>;
+  bf:physicalLocation "Suzzallo and Allen Libraries"@en .
+
+_:2 a bf:Status;
+  bf:code "n" .
