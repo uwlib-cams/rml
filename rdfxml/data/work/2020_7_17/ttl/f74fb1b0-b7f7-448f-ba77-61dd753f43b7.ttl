@@ -1,0 +1,36 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://rdaregistry.info/Elements/w/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f74fb1b0-b7f7-448f-ba77-61dd753f43b7> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "mcm104"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-27"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns3:P10065 <http://id.loc.gov/authorities/names/n2003037952> ;
+    ns3:P10086 "Radical cataloging"@eng ;
+    ns3:P10219 "2008"@eng ;
+    ns3:P10223 "Radical cataloging: essays at the front"@eng ;
+    ns3:P10331 "Roberto, K.R. Radical cataloging: essays at the front"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns1:hasLcClassificationPartA "2008"@eng ;
+    ns1:hasLcClassificationPartB "007084"@eng .
+
+<http://id.loc.gov/authorities/names/n2003037952> rdfs:label "Roberto, K. R. (Keller R.), 1975-" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

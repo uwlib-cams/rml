@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1631ced3-d27e-464f-8f4a-5b10de52106a> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "aschiff"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2012-12-16"@eng ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns2:hasBarcode "39352069698975"@eng ;
+    ns2:hasLcClassificationPartA "BM670.B43"@eng ;
+    ns2:hasLcClassificationPartB "G47 2007"@eng ;
+    ns2:hasPhysicalLocation "suzzallen"@eng ;
+    ns2:hasPhysicalSubLocation "szstx"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> rdfs:label "The Bedtime Sh'ma" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

@@ -1,0 +1,55 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1bec6764-c00c-4f92-a227-4ddac14811e8> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "mcm104"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-11-25"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©2011"@eng ;
+    ns1:P30011 "2011"@eng ;
+    ns1:P30083 "Broadway Books" ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"@eng ;
+    ns1:P30105 "The Countess of Carnarvon"@eng ;
+    ns1:P30128 "Lady Almina and the real Downton Abbey"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> ;
+    ns1:P30156 "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@eng ;
+    ns1:P30169 "5.25 x 8"@eng ;
+    ns1:P30176 "Broadway Books"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> rdfs:label "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

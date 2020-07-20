@@ -1,0 +1,51 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3eb2f65f-7238-4b34-95ff-3fa36b67c667> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "cec23" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-01-28" ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns1:P10002 "http://www.wikidata.org/entity/Q29132"@eng ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026280>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    ns1:P10061 "http://id.loc.gov/authorities/names/n79038407" ;
+    ns1:P10210 "\"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead & co. the following year ... The book features her detective, Miss Marple\"--Wikipedia, January 28, 2020."@eng ;
+    ns1:P10218 <http://id.loc.gov/authorities/names/n79023147> ;
+    ns1:P10219 "1953"@eng ;
+    ns1:P10223 "Pocket full of rye"@eng ;
+    ns1:P10256 "Crime--Fiction",
+        "Marple, Jane (Fictitious character)--Fiction",
+        "Murder--Fiction" ;
+    ns1:P10331 "Christie, Agatha, 1890-1976. Pocket full of rye"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns5:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060386> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060358> rdfs:label "Women" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060386> rdfs:label "English" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026280> rdfs:label "Detective and mystery fiction" .
+
+<http://id.loc.gov/authorities/genreForms/gf2015026020> rdfs:label "Novels" .
+
+<http://id.loc.gov/authorities/names/n79023147> rdfs:label "Great Britain" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

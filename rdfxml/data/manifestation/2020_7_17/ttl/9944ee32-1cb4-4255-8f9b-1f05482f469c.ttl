@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9944ee32-1cb4-4255-8f9b-1f05482f469c> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "lins@uw.edu"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-01"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2019"@zxx ;
+    ns2:P30011 "2019"@zxx ;
+    ns2:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns2:P30088 "[Seattle, Washington]"@eng ;
+    ns2:P30105 "Siobhan Mahorter."@eng ;
+    ns2:P30111 "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    ns2:P30137 "Online resource; title from PDF title page (ResearchWorks Archive, viewed October 11, 2019)."@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/e81fff3a-c7f7-4edc-affb-2130397410b1> ;
+    ns2:P30154 "http://hdl.handle.net/1773/44289"@eng ;
+    ns2:P30156 "Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@eng ;
+    ns2:P30176 "[University of Washington Libraries]"@eng ;
+    ns2:P30182 "1 online resource (25 pages)"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Manifestation:etd" ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/e81fff3a-c7f7-4edc-affb-2130397410b1> rdfs:label "https://trellis.sinopia.io/repository/washington/e81fff3a-c7f7-4edc-affb-2130397410b1" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

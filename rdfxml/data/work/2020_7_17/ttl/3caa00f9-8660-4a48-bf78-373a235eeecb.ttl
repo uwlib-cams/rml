@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3caa00f9-8660-4a48-bf78-373a235eeecb> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "pfreeman"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-06"@eng ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026108> ;
+    ns2:P10061 <http://id.loc.gov/authorities/names/n80034464>,
+        <http://id.loc.gov/authorities/names/n80063227> ;
+    ns2:P10219 "1980"@eng ;
+    ns2:P10223 "A guide to architecture in Washington State"@eng ;
+    ns2:P10256 "Architecture --  Washington (State) -- Guidebooks" ;
+    ns2:P10331 "Woodbridge, Sally Byrne. A guide to architecture in Washington State"@eng ;
+    ns2:P10332 "Montgomery, Roger. A guide to architecture in Washington State"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns3:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060767>,
+        <http://id.loc.gov/authorities/subjects/sh85061091>,
+        <http://id.loc.gov/authorities/subjects/sh85083510>,
+        "women" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060767> rdfs:label "Architects" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026108> rdfs:label "Guidebooks" .
+
+<http://id.loc.gov/authorities/names/n80034464> rdfs:label "Montgomery, Roger" .
+
+<http://id.loc.gov/authorities/names/n80063227> rdfs:label "Woodbridge, Sally Byrne" .
+
+<http://id.loc.gov/authorities/subjects/sh85061091> rdfs:label "Historians" .
+
+<http://id.loc.gov/authorities/subjects/sh85083510> rdfs:label "Men" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

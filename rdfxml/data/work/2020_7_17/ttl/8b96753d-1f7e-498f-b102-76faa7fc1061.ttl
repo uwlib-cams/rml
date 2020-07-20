@@ -1,0 +1,36 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8b96753d-1f7e-498f-b102-76faa7fc1061> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "ries07"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-03-16" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    ns1:P10006 <http://id.loc.gov/authorities/names/n79054596> ;
+    ns1:P10061 "Lance, Yris T." ;
+    ns1:P10209 "Ph.D. University of Washington 2019"@eng ;
+    ns1:P10223 "Equity, humility, and culturally responsive education in health professional schools"@eng ;
+    ns1:P10331 "Equity, humility, and culturally responsive education in health professional schools / Yris T. Lance."@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:etd" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026039> rdfs:label "Academic theses" .
+
+<http://id.loc.gov/authorities/names/n79054596> rdfs:label "University of Washington" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

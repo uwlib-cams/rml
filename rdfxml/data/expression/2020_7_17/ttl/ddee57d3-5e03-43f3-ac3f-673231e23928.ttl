@@ -1,0 +1,40 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/ddee57d3-5e03-43f3-ac3f-673231e23928> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "cec23" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-28" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:P20065 "Latin"@eng ;
+    ns2:P20069 "\"It started with a spot of tea. It ended in tragedy when the wealthy Rex Fortescue sipped his last cup, fell ill, and died. The only clue: a pocketful of rye found on the victim. The murder seemed without rhyme or reason--until the shrewd Miss Marple recalled that delightful nursery rhyme 'Sing a Song of Sixpence.' A playful hint, indeed. But the spinster sleuth knew that murder was anything but child's play...\"--Page 4 of cover."@eng ;
+    ns2:P20214 "1953"@eng ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/3eb2f65f-7238-4b34-95ff-3fa36b67c667> ;
+    ns2:P20313 "Christie, Agatha, 1890-1976. Pocket full of rye. English"@eng ;
+    ns2:P20315 "Pocket full of rye"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/3eb2f65f-7238-4b34-95ff-3fa36b67c667> rdfs:label "Pocket full of rye" .
+

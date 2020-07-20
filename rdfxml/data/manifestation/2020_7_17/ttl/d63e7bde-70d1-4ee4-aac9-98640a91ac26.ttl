@@ -1,0 +1,62 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d63e7bde-70d1-4ee4-aac9-98640a91ac26> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "aschiff"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-04-27"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©"@eng ;
+    ns1:P30011 "1889"@zxx ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/no2008101666> ;
+    ns1:P30088 "London"@eng ;
+    ns1:P30105 "by Sir Julius Vogel, K.C.M.G."@eng ;
+    ns1:P30111 "London : Hutchinson, 1889"@eng ;
+    ns1:P30128 "Anno Domini 2000"@eng,
+        "Woman's destiny"@eng ;
+    ns1:P30136 "Print version: Vogel, Julius, Sir, 1835-1899. Anno Domini 2000. Anno Domini 2000, or, Woman's destiny. London : Hutchinson, 1889 (OCoLC)52848017" ;
+    ns1:P30137 "Electronic reproduction. [S.l.] : HathiTrust Digital Library, 2011. MiAaHDL"@eng,
+        "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. http://purl.oclc.org/DLF/benchrepro0212 MiAaHDL"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/ec0e6f7e-9c40-4c7a-b610-fe949fc8753c> ;
+    ns1:P30154 "http://catalog.hathitrust.org/api/volumes/oclc/4092659.html"@zxx,
+        "https://archive.org/details/annodomini2000or00voge"@zxx ;
+    ns1:P30156 "Anno Domini 2000, or, Woman's destiny"@eng ;
+    ns1:P30176 "Hutchinson"@eng ;
+    ns1:P30182 "1 online resource (viii, 331 pages)"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:eBook" ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/no2008101666> rdfs:label "Hutchinson & Co. (Publishers)" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/ec0e6f7e-9c40-4c7a-b610-fe949fc8753c> rdfs:label "https://trellis.sinopia.io/repository/washington/ec0e6f7e-9c40-4c7a-b610-fe949fc8753c" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

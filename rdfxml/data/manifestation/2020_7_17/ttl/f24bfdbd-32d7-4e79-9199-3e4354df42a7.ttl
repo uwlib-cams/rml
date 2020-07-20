@@ -1,0 +1,57 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix ns6: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f24bfdbd-32d7-4e79-9199-3e4354df42a7> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "ries07" ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-06" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2019"@eng ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "Tokyo"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/95cb73d5-927f-41c2-9546-9b041de95bf0> ;
+    ns2:P30156 "Tsunami generation and progagation"@eng ;
+    ns2:P30169 "25 cm" ;
+    ns2:P30176 "Springer"@eng ;
+    ns2:P30182 "ix, 265 pages"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns3:P30004 "ISBN 978-4-431-56848-3",
+        "ISSN 2364-9119",
+        "https://doi.org/10.1007/978-4-431-56850-6" ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns6:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/95cb73d5-927f-41c2-9546-9b041de95bf0> rdfs:label "Tsunami generation and propagation" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

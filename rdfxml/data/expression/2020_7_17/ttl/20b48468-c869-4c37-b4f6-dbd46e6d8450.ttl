@@ -1,0 +1,42 @@
+@prefix ns1: <http://sinopia.io/vocabulary/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://rdaregistry.info/Elements/u/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/20b48468-c869-4c37-b4f6-dbd46e6d8450> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "cc83"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2019-12-22"@eng ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20002 "sn 85005487"@eng ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:P20065 "Latin"@eng ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/64af3c0e-5fdd-4727-b207-2b7beeaeabf4> ;
+    ns2:P20313 "Taiwania"@eng ;
+    ns2:P20315 "Taiwania"@eng ;
+    ns5:P60001 <http://id.loc.gov/authorities/subjects/sh2007102112>,
+        "Botany--Taiwan--Periodicals" ;
+    ns1:hasResourceTemplate "WAU:RT:RDA:Expression:serial" .
+
+<http://id.loc.gov/authorities/subjects/sh2007102112> rdfs:label "Botany--Periodicals" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+
+<https://trellis.sinopia.io/repository/washington/64af3c0e-5fdd-4727-b207-2b7beeaeabf4> rdfs:label "Taiwania" .
+

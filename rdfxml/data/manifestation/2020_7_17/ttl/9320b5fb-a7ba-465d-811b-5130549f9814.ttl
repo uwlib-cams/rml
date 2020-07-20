@@ -1,0 +1,60 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9320b5fb-a7ba-465d-811b-5130549f9814> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "lins@uw.edu"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P30001 <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1001> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©"@eng ;
+    ns2:P30011 "[1979]"@zxx ;
+    ns2:P30018 <http://rdaregistry.info/termList/fileType/1001> ;
+    ns2:P30086 "[Montreal]"@eng ;
+    ns2:P30088 "[Montreal]"@eng ;
+    ns2:P30111 "[Montreal] : Radio Canada International, [1979]"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> ;
+    ns2:P30156 "French topical disc. FTD 79-123"@eng ;
+    ns2:P30169 "7 in."@eng ;
+    ns2:P30172 <http://rdaregistry.info/termList/typeRec/1001> ;
+    ns2:P30176 "Radio Canada International"@eng ;
+    ns2:P30182 "1 audio disc"@eng ;
+    ns2:P30184 <http://rdaregistry.info/termList/configPlayback/1001> ;
+    ns2:P30201 "33 1/3 rpm"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:soundRecording" ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1004> rdfs:label "audio disc" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1001> rdfs:label "audio" .
+
+<http://rdaregistry.info/termList/configPlayback/1001> rdfs:label "mono" .
+
+<http://rdaregistry.info/termList/fileType/1001> rdfs:label "audio file" .
+
+<http://rdaregistry.info/termList/typeRec/1001> rdfs:label "analog" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> rdfs:label "https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

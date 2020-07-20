@@ -1,0 +1,59 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c83130f0-b914-4db0-979c-67db73330f0c> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns6:catalogerID "cec23" ;
+            ns6:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-15" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    ns2:P10061 <http://id.loc.gov/authorities/names/n79029930> ;
+    ns2:P10086 "Bi︠e︡dnye li︠u︡di"@rus,
+        "Бедные люди"@rus,
+        "Бѣдные люди"@rus ;
+    ns2:P10210 "\"Poor Folk (Russian: Бедные люди, Bednye lyudi), sometimes translated as Poor People,[note] is the first novel by Fyodor Dostoevsky, written over the span of nine months between 1844 and 1845. Dostoevsky was in financial difficulty because of his extravagant lifestyle and his developing gambling addiction; although he had produced some translations of foreign novels, they had little success, and he decided to write a novel of his own to try to raise funds\"--Wikipedia, January 15, 2020."@eng ;
+    ns2:P10218 <http://id.loc.gov/authorities/names/n80001203> ;
+    ns2:P10219 "1846"@eng ;
+    ns2:P10223 "Bednye li︠u︡di"@rus ;
+    ns2:P10256 "Poor--Russia--Fiction",
+        "Poverty--Russia--Fiction" ;
+    ns2:P10331 "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di"@rus ;
+    ns2:P10332 "Dostoyevsky, Fyodor, 1821-1881. Bi︠e︡dnye li︠u︡di"@rus,
+        "Dostoyevsky, Fyodor, 1821-1881. Бедные люди"@rus,
+        "Dostoyevsky, Fyodor, 1821-1881. Бѣдные люди"@rus ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns4:isIdentifiedByAuthority "http://id.loc.gov/authorities/names/n85193661" ;
+    ns3:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060814> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060359> rdfs:label "Men" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060814> rdfs:label "Russians" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026339> rdfs:label "Fiction" .
+
+<http://id.loc.gov/authorities/genreForms/gf2015026020> rdfs:label "Novels" .
+
+<http://id.loc.gov/authorities/names/n79029930> rdfs:label "Dostoyevsky, Fyodor, 1821-1881" .
+
+<http://id.loc.gov/authorities/names/n80001203> rdfs:label "Russia" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

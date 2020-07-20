@@ -1,0 +1,45 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://rdaregistry.info/Elements/w/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fe9935a9-172e-4f4d-bafa-c7cc79894c71> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "aschiff"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-07"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns3:P10061 <http://id.loc.gov/authorities/names/n2017018076> ;
+    ns3:P10086 "Secret lives of color"@eng ;
+    ns3:P10198 "Color vision : how we see -- Simple arithmetic : on light -- Building the palette : artists and their pigments -- Vintage paint charts : mapping color -- Chromophilia, chromophobia : politics of color -- Colorful language : do words shape the shades we see? -- [White] : Lead white ; Ivory ; Silver ; Whitewash ; Isabelline ; Chalk ; Beige -- [Yellow] : Blonde ; Lead-tin yellow ; Indian yellow ; Acid yellow ; Naples yellow ; Chrome yellow ; Gamboge ; Orpiment ; Imperial yellow ; Gold -- [Orange] : Dutch orange ; Saffron ; Amber ; Ginger ; Minium ; Nude -- [Pink] : Baker-Miller pink ; Mountbatten pink ; Puce ; Fuchsia ; Shocking pink ; Fluorescent pink ; Amaranth -- [Red] : Scarlet ; Cochineal ; Vermilion ; Rosso corsa ; Hematite ; Madder ; Dragon's blood -- [Purple] : Tyrian purple ; Archil ; Magenta ; Mauve ; Heliotrope ; Violet -- [Blue] : Ultramarine ; Cobalt ; Indigo ; Prussian blue ; Egypt blue ; Woad ; Electric blue ; Cerulean -- [Green] : Verdigris ; Absinthe ; Emerald ; Kelly green ; Scheele's green ; Terre verte ; Avocado ; Celadon -- Brown : Khaki ; Buff ; Fallow ; Russet ; Sepia ; Umber ; Mummy ; Taupe -- [Black] : Kohl ; Payne's gray ; Obsidian ; Ink ; Charcoal ; Jet ; Melanin ; Pitch black -- Glossary of other interesting colors." ;
+    ns3:P10219 "2016"@zxx ;
+    ns3:P10223 "Secret lives of colour"@eng ;
+    ns3:P10256 "Color--Psychological aspects--History",
+        "Color--Social aspects--History",
+        "Symbolism of colors--History" ;
+    ns3:P10331 "St. Clair, Kassia. Secret lives of colour"@eng ;
+    ns3:P10332 "St. Clair, Kassia. Secret lives of color"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns5:isIdentifiedByAuthority <http://id.loc.gov/authorities/names/no2020058938> .
+
+<http://id.loc.gov/authorities/names/n2017018076> rdfs:label "St. Clair, Kassia" .
+
+<http://id.loc.gov/authorities/names/no2020058938> rdfs:label "http://id.loc.gov/authorities/names/no2020058938" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

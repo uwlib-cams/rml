@@ -1,0 +1,69 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4aa945a6-3fde-44e8-a2b4-bd7eeb7c5266> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns5:catalogerID "pfreeman"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-29"@eng ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©1988"@eng ;
+    ns2:P30009 "1988"@eng ;
+    ns2:P30011 "[1988]"@eng ;
+    ns2:P30083 <http://id.loc.gov/rwo/agents/n87936832> ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30086 "Vancouver, B.C."@eng ;
+    ns2:P30088 "San Francisco"@eng ;
+    ns2:P30105 "Michio Hoshino"@eng ;
+    ns2:P30111 "San Francisco : Chronicle Books, [1988]"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0> ;
+    ns2:P30156 "Moose"@eng ;
+    ns2:P30169 "28 cm"@eng ;
+    ns2:P30174 "Raincoast Books"@eng ;
+    ns2:P30176 "Chronicle Books"@eng ;
+    ns2:P30182 "21 pages, 68 unnumbered pages"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns3:P30004 "ISBN 0877014949"@eng ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns4:hasLcClassificationPartA "QL737.U55"@eng ;
+    ns4:hasLcClassificationPartB "H675 1988"@eng ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/n87936832> rdfs:label "Chronicle Books (Firm)" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0> rdfs:label "https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

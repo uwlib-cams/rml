@@ -1,0 +1,54 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f3a3eba6-545b-4089-a150-df34c6c2b5b5> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "lins@uw.edu"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-06-10"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30011 "2019"@zxx ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:P30088 "[Seattle, Washington]"@eng ;
+    ns1:P30096 "PDF"@eng ;
+    ns1:P30105 "Cathea Marcena Carey"@eng ;
+    ns1:P30111 "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    ns1:P30137 "Online resource; title from PDF title page (ResearchWorks Archive, viewed October 15, 2019)."@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/02c8be46-235a-4bbc-b18d-85065829236d> ;
+    ns1:P30154 "http://hdl.handle.net/1773/44322"@eng ;
+    ns1:P30156 "Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ;
+    ns1:P30176 "[University of Washington Libraries]"@eng ;
+    ns1:P30182 "1 online resource (26 pages)"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:etd" ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/02c8be46-235a-4bbc-b18d-85065829236d> rdfs:label "https://trellis.sinopia.io/repository/washington/02c8be46-235a-4bbc-b18d-85065829236d" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

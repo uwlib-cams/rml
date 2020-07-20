@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0377c12e-91af-43ee-8e04-d2e8f7915be0> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "aschiff"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:changeDate "2020-05-07"@eng ;
+            ns1:creationDate "2020-04-23"@zxx ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2019"@zxx ;
+    ns2:P30011 "[2019]"@zxx ;
+    ns2:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns2:P30088 "[Seattle]"@eng ;
+    ns2:P30105 "Yue Shi"@eng ;
+    ns2:P30111 "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> ;
+    ns2:P30142 "decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings"@eng ;
+    ns2:P30154 "http://hdl.handle.net/1773/44725"@eng ;
+    ns2:P30156 "Species from feces"@eng ;
+    ns2:P30176 "[University of Washington Libraries]"@eng ;
+    ns2:P30182 "1 online resource (125 pages)"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:etd" ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> rdfs:label "https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "https://id.loc.gov/vocabulary/organizations/wau" .
+

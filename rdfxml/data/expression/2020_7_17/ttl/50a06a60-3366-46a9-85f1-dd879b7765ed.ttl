@@ -1,0 +1,39 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "lins@uw.edu"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1013> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/fre> ;
+    ns2:P20065 "Latin" ;
+    ns2:P20069 "Four short segments on Canadian life, originally broadcast on Radio Canada International."@eng ;
+    ns2:P20071 "Side 1. Plage 1. Les droites a la mode (4:49) ;  plage 2. Des petro-dollars pour la posterite (2.22) -- side 2. plage 3. Venus par vauges (3:27) ; plage 4. Un faux chef Indien (3:45)"@fra ;
+    ns2:P20219 "approximately 14 min."@eng ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:soundRecording" .
+
+<http://id.loc.gov/vocabulary/languages/fre> rdfs:label "French" .
+
+<http://rdaregistry.info/termList/RDAContentType/1013> rdfs:label "spoken word" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651> rdfs:label "https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651" .
+

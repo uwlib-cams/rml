@@ -1,0 +1,39 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4ea0c284-f575-4e3e-b2a3-84f1b623f0e8> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "emcotter"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-05-20"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20214 "1990"@zxx ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/0eca0437-74d5-43ee-a46e-f935800fd4a2> ;
+    ns1:P20313 "Willett, Edward F. (Edward Farrand), 1933-. How our laws are made. Text. English"@eng ;
+    ns1:P20314 "Brooks, Jack, 1922-2012. How our laws are made. Text. English"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/0eca0437-74d5-43ee-a46e-f935800fd4a2> rdfs:label "How our laws are made" .
+

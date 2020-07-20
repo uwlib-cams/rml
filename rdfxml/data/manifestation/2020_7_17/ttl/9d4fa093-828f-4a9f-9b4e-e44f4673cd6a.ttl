@@ -1,0 +1,56 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "lins"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-04-17"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©"@eng ;
+    ns1:P30011 "2003"@eng ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1006> ;
+    ns1:P30088 "Santa Monica, CA"@eng ;
+    ns1:P30105 "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray."@eng ;
+    ns1:P30111 "[Santa Monica, CA] Lions Gate Films  [2003]"@eng ;
+    ns1:P30137 "Title from title screen (viewed April 17, 2020)"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
+    ns1:P30156 "Shattered glass"@eng ;
+    ns1:P30172 <http://rdaregistry.info/termList/typeRec/1002> ;
+    ns1:P30176 "Lions Gate Films"@eng ;
+    ns1:P30182 "1 video file"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Manifestation:dvdVideo" ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1006> rdfs:label "video file" .
+
+<http://rdaregistry.info/termList/typeRec/1002> rdfs:label "digital" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> rdfs:label "https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

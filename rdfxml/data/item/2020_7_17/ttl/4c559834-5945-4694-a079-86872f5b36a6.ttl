@@ -1,0 +1,37 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4c559834-5945-4694-a079-86872f5b36a6> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "aschiff"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-12-02"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/64cb5d64-0992-4086-9c10-364ef750186f> ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasBarcode "39352014731939"@eng ;
+    ns1:hasLcClassificationPartA "PZ7.D664"@eng ;
+    ns1:hasLcClassificationPartB "Han 1936b"@eng ;
+    ns1:hasPhysicalLocation "suzzallen"@eng ;
+    ns1:hasPhysicalSubLocation "szstx"@eng ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/64cb5d64-0992-4086-9c10-364ef750186f> rdfs:label "Hans Brinker, or, The silver skates" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

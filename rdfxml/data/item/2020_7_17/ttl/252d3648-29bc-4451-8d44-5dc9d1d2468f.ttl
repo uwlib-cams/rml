@@ -1,0 +1,35 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/252d3648-29bc-4451-8d44-5dc9d1d2468f> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "emcotter"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-06-16"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasPhysicalLocation "suzzallen"@eng ;
+    ns1:hasPhysicalSubLocation "szgus"@eng ;
+    ns1:hasSuDocClassificationNumber "Ju 10.2:F 31"@eng ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> rdfs:label "Report of the federal Courts Study Committee" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

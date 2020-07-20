@@ -1,0 +1,56 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/adb96585-afda-4635-9862-398cca1d633a> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "aentze"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-04-23"@eng ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026329>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026333> ;
+    ns2:P10061 "King, Stephen, 1947" ;
+    ns2:P10219 "1987"@eng ;
+    ns2:P10223 "Eyes of the dragon"@eng ;
+    ns2:P10256 <http://id.loc.gov/authorities/subjects/sh2008102389>,
+        <http://id.loc.gov/authorities/subjects/sh2008104235>,
+        <http://id.loc.gov/authorities/subjects/sh2008105339>,
+        <http://id.loc.gov/authorities/subjects/sh2008109129>,
+        <http://id.loc.gov/authorities/subjects/sh2008113550> ;
+    ns2:P10331 "King, Stephen, 1947- Eyes of the dragon"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns1:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        "Men" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060001> rdfs:label "Americans" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026329> rdfs:label "Fairy tales" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026333> rdfs:label "Fantasy fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh2008102389> rdfs:label "Dragons--Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh2008104235> rdfs:label "Inheritance and succession--Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh2008105339> rdfs:label "Good and evil--Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh2008109129> rdfs:label "Princes--Fiction" .
+
+<http://id.loc.gov/authorities/subjects/sh2008113550> rdfs:label "Wizards--Fiction" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

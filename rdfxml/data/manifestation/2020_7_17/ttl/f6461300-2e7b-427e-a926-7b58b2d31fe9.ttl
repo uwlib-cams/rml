@@ -1,0 +1,67 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns6:catalogerID "dbrookin"@eng ;
+            ns6:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-02-19"@zxx ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@zxx ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1991"@zxx ;
+    ns1:P30011 "1991"@zxx ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Москва"@rus ;
+    ns1:P30105 "Константин Станюкович"@rus,
+        "иллюстрации Р.А. Клочкова"@rus,
+        "составление и послесовие М.А. Соколовой"@rus ;
+    ns1:P30106 "Мир приключений"@rus ;
+    ns1:P30128 "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@rus ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/1b238b17-3bd6-4820-825e-a5fcf0802470>,
+        <https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced> ;
+    ns1:P30156 "Похождения одного матроса ; Рассказы"@rus ;
+    ns1:P30157 "Мир приключений"@rus ;
+    ns1:P30176 "Издательство \"Правда\""@rus ;
+    ns1:P30182 "477 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns3:P30004 "ISBN 525300209X"@zxx,
+        "ISBN 9785253002094"@zxx ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns5:hasLcClassificationPartA "PG3470.S75"@zxx ;
+    ns5:hasLcClassificationPartB "P6 1991"@zxx ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/1b238b17-3bd6-4820-825e-a5fcf0802470> rdfs:label "https://trellis.sinopia.io/repository/washington/1b238b17-3bd6-4820-825e-a5fcf0802470" .
+
+<https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced> rdfs:label "https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

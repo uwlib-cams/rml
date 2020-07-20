@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bbd9f9f1-c3b6-4d91-b9f3-b3298f302aa3> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "aentze"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-23"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/22c4bb2a-2de5-4627-bba2-d618605d9d42> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns2:hasBarcode "39352083767889"@eng ;
+    ns2:hasLcClassificationPartA "PR6005.H66"@eng ;
+    ns2:hasLcClassificationPartB "M88 1983"@eng ;
+    ns2:hasPhysicalLocation "suzzallen"@eng ;
+    ns2:hasPhysicalSubLocation "szstx"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/22c4bb2a-2de5-4627-bba2-d618605d9d42> rdfs:label "Murder on the Orient Express" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

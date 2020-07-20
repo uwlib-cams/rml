@@ -1,0 +1,39 @@
+@prefix ns1: <http://sinopia.io/vocabulary/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a40940e4-7a02-4f19-9129-99be2f03168d> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-04-29"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/2442f2d5-0841-4384-b08e-bd25c3a3d4e9> ;
+    ns1:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns4:hasLcClassificationPartA "QL737.U55"@eng ;
+    ns4:hasLcClassificationPartB "H675 1988"@eng ;
+    ns4:hasPhysicalLocation "natural history books"@eng ;
+    ns4:hasPhysicalSubLocation "Bookshelf"@eng ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/2442f2d5-0841-4384-b08e-bd25c3a3d4e9> rdfs:label "Moose" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

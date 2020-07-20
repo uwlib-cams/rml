@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "aschiff"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-20"@zxx ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:P20065 "Latin"@eng ;
+    ns2:P20069 "This book traces many of the schemes which were familiar across Europe, including national carriers, leisure airlines from the holiday charter boom, and regional airlines feeding our smaller airports. Many airlines in these pages have now been lost forever, and others continue in a completely revised scheme"@eng ;
+    ns2:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:P20214 "2016"@zxx ;
+    ns2:P20224 <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+        "color" ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> ;
+    ns2:P20313 "Falcus, Matt. Lost airline colours of Europe. Text"@eng ;
+    ns2:P20314 "Falcus, Matt. Lost airline colors of Europe. Text"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> rdfs:label "polychrome" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://id.loc.gov/vocabulary/millus/ill> rdfs:label "Illustrations" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> rdfs:label "Lost airline colours of Europe" .
+

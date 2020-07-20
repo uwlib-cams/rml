@@ -1,0 +1,42 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d3e2e595-7bf8-4aa7-a558-c9ef11be8841> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "shadle"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "287-11-2019"@eng ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1003> ;
+    ns1:P30050 "Description based on: Vol. III, no. 1 (September 1929); title from title page."@eng ;
+    ns1:P30088 "Seattle, Washington"@eng ;
+    ns1:P30156 "General news"@eng ;
+    ns1:P30168 "Monthly"@eng ;
+    ns1:P30176 "[General Fruit Corporation]"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:serial" ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1003> rdfs:label "serial" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

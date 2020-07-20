@@ -1,0 +1,41 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3bf67b0a-e76b-4f36-afbe-89933acb89bd> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "pfreeman"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-04-22"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20214 "1914"@eng ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/a81c1113-d17b-46a0-85cc-7704dd582aa1> ;
+    ns1:P20313 "Bridgham, Gladys Ruth. Six times nine"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/a81c1113-d17b-46a0-85cc-7704dd582aa1> rdfs:label "Six times Nine" .
+

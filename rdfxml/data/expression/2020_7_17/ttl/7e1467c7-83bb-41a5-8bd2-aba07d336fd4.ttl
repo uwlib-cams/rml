@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7e1467c7-83bb-41a5-8bd2-aba07d336fd4> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "jlee37"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "04-06-2020"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20002 "9787520137591" ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/chi> ;
+    ns2:P20065 "Han (Simplified)"@eng,
+        "Latin"@eng ;
+    ns2:P20069 "2018年是法学研究所成立60年之际.本文集收集了60年间所有在法学研究所和国际法研究所从事国际私法专业研究的学者的代表性成果.这些成果涉及了国际私法学科的基本问题,法律选择和法律适用,争议解决程序等多个方面,较全面地反映了学者们对国际私法学科研究的全面性和深刻性,展示了学者们对国际私法专业研究的热情和认真的态度,体现了成果所具有的较高学术质量和学者们在国际私法学界较大的学术影响."@chi ;
+    ns2:P20214 "2019" ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/994efbab-6adb-4953-95e8-9a323436829f> ;
+    ns2:P20313 "Guo ji si fa de zhen yang zhi lu. Chinese"@chi ;
+    ns2:P20314 "国际私法的振扬之路. Chinese"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/chi> rdfs:label "Chinese" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/994efbab-6adb-4953-95e8-9a323436829f> rdfs:label "Guo ji si fa de zhen yang zhi lu" .
+

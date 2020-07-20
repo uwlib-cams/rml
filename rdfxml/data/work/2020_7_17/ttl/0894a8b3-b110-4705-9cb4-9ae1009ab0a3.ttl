@@ -1,0 +1,40 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0894a8b3-b110-4705-9cb4-9ae1009ab0a3> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "mcm104"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-25"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P10002 "ISBN-10: 1-59308000X"@eng,
+        "ISBN-13: 9781593080006"@eng,
+        "LC Control Number: 2003103282"@eng ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n79021164> ;
+    ns1:P10086 "Huck Finn"@eng,
+        "Huckleberry Finn"@eng ;
+    ns1:P10218 <http://id.loc.gov/authorities/subjects/sh85004220> ;
+    ns1:P10219 "1885"@eng ;
+    ns1:P10223 "Adventures of Huckleberry Finn"@eng ;
+    ns1:P10331 "Twain, Mark, 1835-1910. Adventures of Huckleberry Finn"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/names/n79021164> rdfs:label "Twain, Mark, 1835-1910" .
+
+<http://id.loc.gov/authorities/subjects/sh85004220> rdfs:label "America" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

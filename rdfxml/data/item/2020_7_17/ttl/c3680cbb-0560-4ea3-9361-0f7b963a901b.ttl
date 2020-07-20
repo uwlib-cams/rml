@@ -1,0 +1,40 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/i/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c3680cbb-0560-4ea3-9361-0f7b963a901b> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns5:catalogerID "pfreeman"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-05-04"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns2:P40049 <https://trellis.sinopia.io/repository/washington/94c8153f-01b0-42ad-b356-70f3bd64e6dc> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasBarcode "39352038595484"@eng ;
+    ns1:hasLcClassificationPartA "PS3503.R2733"@eng ;
+    ns1:hasLcClassificationPartB "H55 1941"@eng ;
+    ns1:hasPhysicalLocation "drama"@eng ;
+    ns1:hasPhysicalSubLocation "drstx"@eng ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/94c8153f-01b0-42ad-b356-70f3bd64e6dc> rdfs:label "Hillbilly Sue" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

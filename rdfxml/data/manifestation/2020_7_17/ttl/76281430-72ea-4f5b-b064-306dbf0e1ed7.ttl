@@ -1,0 +1,55 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/76281430-72ea-4f5b-b064-306dbf0e1ed7> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "lins@uw.edu"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-01"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©2019"@zxx ;
+    ns1:P30011 "2019"@zxx ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:P30088 "[Seattle, Washington]"@eng ;
+    ns1:P30105 "Ketterer, Elizabeth"@eng ;
+    ns1:P30111 "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    ns1:P30137 "Online resource; title from PDF title page (ResearchWorks Archive, viewed October 11, 2019)."@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/23b57fbe-1da9-4703-b6f7-fb30bb8af376> ;
+    ns1:P30142 "a systematic literature review"@eng ;
+    ns1:P30154 "http://hdl.handle.net/1773/44287"@eng ;
+    ns1:P30156 "Mindfulness-based interventions and opioid use disorders"@eng ;
+    ns1:P30176 "[University of Washington Libraries]"@eng ;
+    ns1:P30182 "1 online resource (19 pages)"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:etd" ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/23b57fbe-1da9-4703-b6f7-fb30bb8af376> rdfs:label "https://trellis.sinopia.io/repository/washington/23b57fbe-1da9-4703-b6f7-fb30bb8af376" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

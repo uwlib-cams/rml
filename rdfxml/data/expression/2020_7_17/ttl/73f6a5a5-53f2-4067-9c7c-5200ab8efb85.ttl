@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/73f6a5a5-53f2-4067-9c7c-5200ab8efb85> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "dbrookin"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-26"@zxx ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@zxx ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/bur> ;
+    ns2:P20065 "Burmese"@eng ;
+    ns2:P20069 "Short stories about daily social life of Burmese; in memory of Ranʻ ʼOnʻ."@eng ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/970bb97e-7efe-4ac7-97cf-d00b868ca0d6> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/bur> rdfs:label "Burmese" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/970bb97e-7efe-4ac7-97cf-d00b868ca0d6> rdfs:label "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ" .
+

@@ -1,0 +1,62 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7e1669cb-5498-403e-8bb8-994f191c4d22> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-30"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1979"@eng ;
+    ns1:P30011 "[1979]"@eng ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Seattle"@eng ;
+    ns1:P30105 "text by Harvey Manning ; photos by Bob and Ira Spring"@eng ;
+    ns1:P30111 "Seattle : The Mountaineers, [1979]"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/d21f1469-3e8b-40c9-8d9d-db575649c681> ;
+    ns1:P30156 "Mountain flowers"@eng ;
+    ns1:P30169 "12 x 15 cm"@eng ;
+    ns1:P30174 "Mountaineers"@eng ;
+    ns1:P30176 "The Mountaineers"@eng ;
+    ns1:P30182 "96 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns4:hasLcClassificationPartA "QK192"@eng ;
+    ns4:hasLcClassificationPartB ".M36 1979"@eng ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/d21f1469-3e8b-40c9-8d9d-db575649c681> rdfs:label "https://trellis.sinopia.io/repository/washington/d21f1469-3e8b-40c9-8d9d-db575649c681" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

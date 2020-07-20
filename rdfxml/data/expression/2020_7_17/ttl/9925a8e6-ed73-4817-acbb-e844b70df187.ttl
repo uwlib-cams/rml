@@ -1,0 +1,48 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9925a8e6-ed73-4817-acbb-e844b70df187> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "pfreeman"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-06"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20051 "Strickler, Zoe" ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "Features wildflowers along the roads and highways of the Pacific Northwest."@eng ;
+    ns1:P20206 "Includes bibliographical references (page 261) and index"@eng ;
+    ns1:P20214 "1993"@eng ;
+    ns1:P20224 <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/1204a5b5-49c0-40b0-b7ce-cdee99e8e54b> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" ;
+    ns5:isIdentifiedByAuthority "n  86072799 " .
+
+<file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> rdfs:label "polychrome" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/1204a5b5-49c0-40b0-b7ce-cdee99e8e54b> rdfs:label "Wayside wildflowers of the Pacific Northwest" .
+

@@ -1,0 +1,37 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4068c481-1b0f-4d3d-8c59-cfa4c8dfa124> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "jmoede"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-04-30"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 "English" ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "Demand for law has been recognized as a necessary component of successful legal reform programs. However, the causal variables which support demand for law remain unclear. This dissertation hypothesizes a relationship between the structure of national economies and the demand for law, contending that a strong small and medium sized enterprise sector is necessary for legal demand to develop. Explored through the cases of Russia and Kazakhstan and their respective systems of economic courts, this dissertation depicts how in an economy with a strong SME sector legal demand grows, while in states in which the economy is highly concentrated among a few large firms the concomitant development of the SME sector and ultimately the demand for law is considerably weaker. The final component of this dissertation relates to the role of foreign direct investment (FDI) and the institutions that govern that investment, illustrating the differential impacts as regards the SME sector and legal demand of FDI when directed towards different sectors and how support for FDI by multilateral and bilateral development institutions can work at cross purposes with technical assistance programming seeking to support the development of the rule of law."@eng ;
+    ns1:P20206 "Includes bibliographical references (pages 159-173)"@eng ;
+    ns1:P20214 "2015" ;
+    ns1:P20224 "polychrome " ;
+    ns1:P20231 "Murg, Bradley Jensen. Impetus or impediment" ;
+    ns1:P20261 "chiefly color"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:etd" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

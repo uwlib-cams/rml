@@ -1,0 +1,67 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns5:adminMetadata [ a ns5:AdminMetadata ;
+            ns1:catalogerID "aschiff"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns5:creationDate "2020-05-20"@eng ;
+            ns5:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns5:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns5:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns5:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns5:status [ a ns5:Status ;
+                    ns5:code "n"@eng ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2016"@zxx ;
+    ns2:P30011 "2016"@zxx ;
+    ns2:P30083 "Destinworld Publishing" ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "Darlington, Co. Durham"@eng ;
+    ns2:P30105 "Matt Falcus"@eng ;
+    ns2:P30106 "Timelines"@eng ;
+    ns2:P30111 "Darlington, Co. Durham : Destinworld Publishing, 2016"@eng ;
+    ns2:P30128 "Lost airline colors of Europe"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> ;
+    ns2:P30156 "Lost airline colours of Europe"@eng ;
+    ns2:P30157 "Timelines"@eng ;
+    ns2:P30169 "24 cm"@zxx ;
+    ns2:P30176 "Destinworld Publishing"@eng ;
+    ns2:P30182 "103 pages"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns4:P30004 "ISBN 978-0-9930950-4-7" ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "TL603"@eng ;
+    ns3:hasLcClassificationPartB ".F34 2016"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> rdfs:label "https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

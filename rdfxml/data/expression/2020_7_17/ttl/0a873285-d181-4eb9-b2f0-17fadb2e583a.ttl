@@ -1,0 +1,52 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0a873285-d181-4eb9-b2f0-17fadb2e583a> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "mathiasuw"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-12"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:P20065 "Latin"@eng ;
+    ns2:P20069 "Consists of images of nautiluses with quotes from Oliver Wendell Holmes, Sr., Jacques Yves Cousteau, Jules Verne, and Alistair Hennessey."@eng ;
+    ns2:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:P20214 "2017"@eng ;
+    ns2:P20224 <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/dfd296d8-6760-4d16-809c-cc40b425d06b> ;
+    ns2:P20313 "Waddell, Myra Mae. Nautilus. English"@eng ;
+    ns2:P20315 "Nautilus. English"@eng ;
+    ns2:P20331 <http://id.loc.gov/authorities/genreForms/gf2014026210>,
+        <http://id.loc.gov/authorities/subjects/sh85008302> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> rdfs:label "polychrome" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026210> rdfs:label "Zines" .
+
+<http://id.loc.gov/authorities/subjects/sh85008302> rdfs:label "Artists' books" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/millus/ill> rdfs:label "Illustrations" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/dfd296d8-6760-4d16-809c-cc40b425d06b> rdfs:label "Nautilus" .
+

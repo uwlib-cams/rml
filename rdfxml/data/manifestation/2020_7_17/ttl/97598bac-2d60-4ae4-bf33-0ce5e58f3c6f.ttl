@@ -1,0 +1,59 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "cec23"@en ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-20"@en ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@en ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2018"@en ;
+    ns2:P30011 "[2018]"@en ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "Cham, Switzerland"@en ;
+    ns2:P30105 "Fernando López-Valdez, Fabián Fernández-Luqueño, editors"@en ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd> ;
+    ns2:P30142 "modern agriculture for a sustainable future"@en ;
+    ns2:P30156 "Agricultural nanobiotechnology"@en ;
+    ns2:P30169 "25 cm"@en ;
+    ns2:P30176 "Springer"@en ;
+    ns2:P30182 "xii, 218 pages"@en ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns5:P30004 "9783319967189"@en ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "S494.5.B563"@en ;
+    ns3:hasLcClassificationPartB "A38 2018"@en ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd> rdfs:label "Agricultural nanobiotechnology" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

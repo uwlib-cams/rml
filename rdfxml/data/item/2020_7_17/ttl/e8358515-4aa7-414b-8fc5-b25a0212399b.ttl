@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://rdaregistry.info/Elements/i/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e8358515-4aa7-414b-8fc5-b25a0212399b> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns5:catalogerID "aschiff"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-27"@eng ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source "http://id.loc.gov/vocabulary/organizations/wau" ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns4:P40049 <https://trellis.sinopia.io/repository/washington/4806ea2e-ac6f-4177-8162-20e922436a11> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns2:hasBarcode "39352011831229"@eng ;
+    ns2:hasLcClassificationPartA "PR6013.L46"@eng ;
+    ns2:hasLcClassificationPartB "E55 1945"@eng ;
+    ns2:hasPhysicalLocation "suzzallen"@eng ;
+    ns2:hasPhysicalSubLocation "szstx"@eng ;
+    ns2:heldBy "http://id.loc.gov/vocabulary/organizations/wau" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/4806ea2e-ac6f-4177-8162-20e922436a11> rdfs:label "Emma" .
+

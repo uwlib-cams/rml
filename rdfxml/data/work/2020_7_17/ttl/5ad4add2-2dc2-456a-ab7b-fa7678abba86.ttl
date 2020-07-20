@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5ad4add2-2dc2-456a-ab7b-fa7678abba86> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "jmoede"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10002 "2009033579" ;
+    ns2:P10004 "Monograph" ;
+    ns2:P10061 <http://id.loc.gov/authorities/names/n87943452>,
+        <http://id.loc.gov/authorities/names/no95043417> ;
+    ns2:P10218 <http://id.loc.gov/authorities/names/n79045553> ;
+    ns2:P10219 "2010" ;
+    ns2:P10223 "Sugar changed the world"@eng ;
+    ns2:P10256 "Liberty--History--Juvenile literature",
+        "Passive resistance--History--Juvenile literature ",
+        "Slavery--History--Juvenile literature",
+        "Sugar trade--History--Juvenile literature ",
+        "Sugar--History--Juvenile literature" ;
+    ns2:P10331 "Aronson, Marc. Sugar changed the world"@eng ;
+    ns2:P10332 "Budhos, Marina Tamar. Sugar changed the world"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns5:hasCreatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85004432> .
+
+<http://id.loc.gov/authorities/names/n79045553> rdfs:label "Boston (Mass.)" .
+
+<http://id.loc.gov/authorities/names/n87943452> rdfs:label "Aronson, Marc" .
+
+<http://id.loc.gov/authorities/names/no95043417> rdfs:label "Budhos, Marina Tamar" .
+
+<http://id.loc.gov/authorities/subjects/sh85004432> rdfs:label "Americans" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

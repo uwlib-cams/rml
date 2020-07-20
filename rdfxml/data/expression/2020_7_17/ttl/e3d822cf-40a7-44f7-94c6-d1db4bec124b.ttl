@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://rdaregistry.info/Elements/e/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "lins@uw.edu"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-27"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns3:P20001 <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    ns3:P20006 <http://id.loc.gov/vocabulary/languages/eng>,
+        <http://id.loc.gov/vocabulary/languages/hin> ;
+    ns3:P20065 "Latin"@eng ;
+    ns3:P20069 "In 1965 Yash Pal Suri left India for England. The first thing he did on his arrival is to buy two Super 8 cameras and two tape recorders; one set of equipment he sent to his family in India, the other he kept for himself. For forty years he used it to share his strange new life in the West with those at home. In turn he received their \"cine-letters\" of weddings, festivals, and village life. As time passed, the joy and curiosity of the early exchanges gave way to the darker reality of alienation, racism, and a family falling apart."@eng ;
+    ns3:P20219 "70 min."@eng ;
+    ns3:P20224 "color" ;
+    ns3:P20231 <https://trellis.sinopia.io/repository/washington/f3b38747-4060-445b-9b2c-52408cc16124> ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Expression:dvdVideo" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/languages/hin> rdfs:label "Hindi" .
+
+<http://rdaregistry.info/termList/RDAContentType/1023> rdfs:label "two-dimensional moving image" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/f3b38747-4060-445b-9b2c-52408cc16124> rdfs:label "https://trellis.sinopia.io/repository/washington/f3b38747-4060-445b-9b2c-52408cc16124" .
+

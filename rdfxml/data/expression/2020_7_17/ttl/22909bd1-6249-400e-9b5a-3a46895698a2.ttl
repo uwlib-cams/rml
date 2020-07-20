@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://rdaregistry.info/Elements/e/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/22909bd1-6249-400e-9b5a-3a46895698a2> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jmoede"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-19"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns3:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns3:P20045 "Matar, Marlene" ;
+    ns3:P20065 "Latin"@eng ;
+    ns3:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns3:P20214 "2020" ;
+    ns3:P20231 "2014032555" ;
+    ns3:P20330 <http://id.loc.gov/rwo/agents/no2017164190>,
+        "Fiscella, John",
+        "Moushabeck, Michel",
+        "Moushabek, Ruth Lane" ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/rwo/agents/no2017164190> rdfs:label "Moushabeck, Leyla" .
+
+<http://id.loc.gov/vocabulary/millus/ill> rdfs:label "Illustrations" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

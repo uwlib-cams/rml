@@ -1,0 +1,69 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f0757925-8753-427f-bf6a-5f695a04c999> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns5:catalogerID "jlee37"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-03-09"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30011 "2018" ;
+    ns2:P30083 <http://id.loc.gov/rwo/agents/n81120675> ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "Beijing (China)"@eng ;
+    ns2:P30105 "(西班牙)豪尔赫・卡里翁著 ; 侯建, 张琼译"@eng ;
+    ns2:P30111 "北京 : 生活・读书・新知三联书店, 2018"@eng ;
+    ns2:P30128 "Shu dian man you"@chi,
+        "Yi duan shu dian yu wen xue de xun fang zhi lü"@chi ;
+    ns2:P30133 "第1版"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/638b68df-332d-4ded-9408-9602a8299e71> ;
+    ns2:P30142 "一段书店与文学的寻访之旅"@chi ;
+    ns2:P30156 "书店漫游"@chi ;
+    ns2:P30169 "22 cm"@eng ;
+    ns2:P30176 "Sheng huo, du shu, xin zhi san lian shu dian"@chi ;
+    ns2:P30182 "10 unnmbered pages of plates, 356 pages"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:P30335 <http://id.loc.gov/authorities/subjects/sh85015738> ;
+    ns1:P30004 "9787108060815"@eng ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns4:hasLcClassificationPartA "Z278"@eng ;
+    ns4:hasLcClassificationPartB ".C31126 2018"@eng ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/authorities/subjects/sh85015738> rdfs:label "Books" .
+
+<http://id.loc.gov/rwo/agents/n81120675> rdfs:label "Sheng huo, du shu, xin zhi san lian shu dian" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/638b68df-332d-4ded-9408-9602a8299e71> rdfs:label "https://trellis.sinopia.io/repository/washington/638b68df-332d-4ded-9408-9602a8299e71" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

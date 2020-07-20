@@ -1,0 +1,37 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/ed7c84be-fcce-4553-9b31-00f869919f3b> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "dbrookin"@zxx ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-03-17"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@zxx ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4> ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasBarcode "453489572452704832750"@zxx ;
+    ns1:hasLcClassificationPartA "PH821"@zxx ;
+    ns1:hasLcClassificationPartB ".K95 1994"@zxx ;
+    ns1:hasPhysicalLocation "suzzallen"@zxx ;
+    ns1:hasPhysicalSubLocation "szstx"@zxx ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4> rdfs:label "Кызытсе марий литератур" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

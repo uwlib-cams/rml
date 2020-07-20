@@ -1,0 +1,41 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f95dad1f-f7f3-430e-b817-8fa9f9db8faa> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "emcotter"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-04-29"@zxx ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n80151956> ;
+    ns1:P10219 "[1990]"@zxx ;
+    ns1:P10223 "Skyrocketing prescription drug prices"@eng ;
+    ns1:P10256 <http://id.loc.gov/authorities/subjects/sh2008102459>,
+        <http://id.loc.gov/authorities/subjects/sh2008107281>,
+        <http://id.loc.gov/authorities/subjects/sh2008109174> ;
+    ns1:P10331 "Skyrocketing prescription drug prices"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/names/n80151956> rdfs:label "United States. Congress. Senate. Special Committee on Aging" .
+
+<http://id.loc.gov/authorities/subjects/sh2008102459> rdfs:label "Drugs--Prices--United States" .
+
+<http://id.loc.gov/authorities/subjects/sh2008107281> rdfs:label "Medical care, Cost of--United States" .
+
+<http://id.loc.gov/authorities/subjects/sh2008109174> rdfs:label "Prescription pricing--United States" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

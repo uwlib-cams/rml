@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/eb572713-b9fc-4090-bf89-c8493678f694> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "lins"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-17"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2011026406>,
+        "Feature films.",
+        "Fiction films",
+        "Film adaptations.",
+        "Internet videos" ;
+    ns2:P10008 <http://id.loc.gov/rwo/agents/no2005051688>,
+        <http://id.loc.gov/rwo/agents/no2009078373>,
+        <http://id.loc.gov/rwo/agents/no2011018024>,
+        "Cruise/Wagner Productions (Firm)" ;
+    ns2:P10013 "Ray, Billy" ;
+    ns2:P10068 "Walker, Mandy" ;
+    ns2:P10073 "baumgarten, craig" ;
+    ns2:P10129 "Bissinger, Buzz, 1954-. Shattered glass" ;
+    ns2:P10203 "Ray, Billy" ;
+    ns2:P10219 "2003"@zxx ;
+    ns2:P10223 "Shattered glass"@eng ;
+    ns2:P10256 "Glass, Stephen--Drama",
+        "Journalistic ethics--Drama",
+        "Journalists--Washington (State)--Drama" ;
+    ns2:P10331 "Shattered glass (Motion picture)"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:dvdVideo" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026406> rdfs:label "Motion pictures" .
+
+<http://id.loc.gov/rwo/agents/no2005051688> rdfs:label "Baumgarten Merims Productions (Firm)" .
+
+<http://id.loc.gov/rwo/agents/no2009078373> rdfs:label "Forest Park Pictures (Production Company)" .
+
+<http://id.loc.gov/rwo/agents/no2011018024> rdfs:label "Lions Gate Films" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

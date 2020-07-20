@@ -1,0 +1,64 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e5291657-c073-4cc8-a640-76da110185dd> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns5:catalogerID "tgis"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-02-04"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©"@eng ;
+    ns2:P30009 "2018"@eng ;
+    ns2:P30011 "2018"@eng ;
+    ns2:P30014 "#16"@eng ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "[Williston, VT]"@eng ;
+    ns2:P30105 "Validating RDF data / ǂc Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris Kontokostas"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/0409bd3c-3127-479c-b698-43d31c06546c> ;
+    ns2:P30143 "Theory and technology"@eng ;
+    ns2:P30156 "Validating RDF data"@eng ;
+    ns2:P30157 "Synthesis lectures on semantic web"@eng ;
+    ns2:P30169 "24 cm."@eng ;
+    ns2:P30176 "Morgan & Claypool Publishers"@eng ;
+    ns2:P30182 "xxiv, 304 pages"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns4:P30004 "1681731649"@eng,
+        "9781681731643"@eng ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns1:hasLcClassificationPartA "TK5105.88815"@eng ;
+    ns1:hasLcClassificationPartB "L238"@eng ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/0409bd3c-3127-479c-b698-43d31c06546c> rdfs:label "Validating RDF data" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

@@ -1,0 +1,41 @@
+@prefix ns1: <http://sinopia.io/vocabulary/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3c583cca-5a19-4774-bc93-bdcb63a34e09> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "dbrookin"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-02-07"@eng ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns2:P10061 <http://id.loc.gov/authorities/names/n84208434> ;
+    ns2:P10086 "Словосполучення в сучасній українській літературній мові"@ukr ;
+    ns2:P10223 "Slovospoluchenni︠a︡ v suchasniĭ ukraïnsʹkiĭ literaturniĭ movi"@eng ;
+    ns2:P10256 <http://id.loc.gov/authorities/subjects/sh2010117283>,
+        <http://id.loc.gov/authorities/subjects/sh2010117284>,
+        <http://id.loc.gov/authorities/subjects/sh2010117291> ;
+    ns2:P10331 "Udovychenko, H. M. Slovospoluchenni︠a︡ v suchasniĭ ukraïnsʹkiĭ literaturniĭ movi" ;
+    ns1:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/names/n84208434> rdfs:label "Udovychenko, H. M." .
+
+<http://id.loc.gov/authorities/subjects/sh2010117283> rdfs:label "Ukrainian language--Lexicology" .
+
+<http://id.loc.gov/authorities/subjects/sh2010117284> rdfs:label "Ukrainian language--Semantics" .
+
+<http://id.loc.gov/authorities/subjects/sh2010117291> rdfs:label "Ukrainian language--Syntax" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

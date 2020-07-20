@@ -1,0 +1,56 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns1:catalogerID "dbrookin"@zxx ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-03-04"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@zxx ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20006 <http://id.loc.gov/vocabulary/languages/eng>,
+        <http://id.loc.gov/vocabulary/languages/rus> ;
+    ns2:P20046 <http://id.loc.gov/rwo/agents/no2008011552>,
+        <http://id.loc.gov/rwo/agents/no2009160806> ;
+    ns2:P20065 "Cyrillic"@eng,
+        "Latin"@eng ;
+    ns2:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:P20224 "(some color)" ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/aa768b65-ed37-46f6-bc5d-7608c71abe66> ;
+    ns2:P20330 <http://id.loc.gov/rwo/agents/n2011000865> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/rwo/agents/n2011000865> rdfs:label "Usenko, E." .
+
+<http://id.loc.gov/rwo/agents/no2008011552> rdfs:label "Petrova, Anna Aleksandrovna" .
+
+<http://id.loc.gov/rwo/agents/no2009160806> rdfs:label "Solovʹeva, Karina" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/languages/rus> rdfs:label "Russian" .
+
+<http://id.loc.gov/vocabulary/millus/ill> rdfs:label "Illustrations" .
+
+<http://rdaregistry.info/termList/RDAContentType/1014> rdfs:label "still image" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/aa768b65-ed37-46f6-bc5d-7608c71abe66> rdfs:label "Russkiĭ kosti︠u︡m v fotografii︠a︡kh" .
+

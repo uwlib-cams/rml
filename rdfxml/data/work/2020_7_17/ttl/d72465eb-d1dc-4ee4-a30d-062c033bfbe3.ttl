@@ -1,0 +1,46 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://trellis.sinopia.io/repository/washington/d72465eb-d1dc-4ee4-a30d-062c033bfbe3> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "cec23"@en ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-13"@en ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@en ] ] ;
+    ns1:P10002 "http://viaf.org/viaf/180506435"@en ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026370>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026001> ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n79029930> ;
+    ns1:P10086 "Идиот"@ru ;
+    ns1:P10216 <http://id.loc.gov/authorities/names/n80001203> ;
+    ns1:P10218 <http://id.loc.gov/authorities/names/n80001203> ;
+    ns1:P10219 "1869"@en ;
+    ns1:P10223 "Idiot"@en ;
+    ns1:P10256 <http://id.loc.gov/authorities/subjects/sh2001005716>,
+        <http://id.loc.gov/authorities/subjects/sh2007101961>,
+        <http://id.loc.gov/authorities/subjects/sh85078534>,
+        <http://id.loc.gov/authorities/subjects/sh85101002>,
+        <http://id.loc.gov/authorities/subjects/sh94004075>,
+        <http://id.loc.gov/authorities/subjects/sh94005098>,
+        <http://id.loc.gov/authorities/subjects/sh94006704>,
+        "Russia--History--19th century--Fiction",
+        "Russia--Social conditions--19th century--Fiction" ;
+    ns1:P10331 "Dostoyevsky, Fyodor, 1821-1881. Idiot"@en ;
+    ns1:P10332 "Достоевский, Федор, 1821-1881. Идиот"@ru ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    skos:exactMatch "http://id.loc.gov/authorities/names/no2007049015" ;
+    ns4:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
+    ns4:hasLcClassificationPartA "PG3326"@en ;
+    ns4:hasLcClassificationPartB ".I3"@en .
+

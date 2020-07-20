@@ -1,0 +1,49 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3d6fbc01-b25c-4145-8293-5c4bc68f9ffc> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "jlee37"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-09"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/chi> ;
+    ns1:P20065 "Traditional Chinese"@chi ;
+    ns1:P20207 <http://id.loc.gov/vocabulary/millus/map> ;
+    ns1:P20214 "1909"@eng ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> ;
+    ns1:P20313 "Lei, Zepu. Xinning xiang tu di li. Chinese"@eng ;
+    ns1:P20314 "Lei, Zepu. Xinning xiang tu di li (1909)"@eng,
+        "Lei, Zepu. 新寧鄉土地理. Chinese"@eng ;
+    ns1:P20315 "Xinning xiang tu di li"@eng ;
+    ns1:P20316 "Xinning xiang tu di li : [er juan]"@eng,
+        "新寧鄉土地理 : [二卷]"@eng ;
+    ns1:P20331 <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026191> rdfs:label "Textbooks" .
+
+<http://id.loc.gov/vocabulary/languages/chi> rdfs:label "Chinese" .
+
+<http://id.loc.gov/vocabulary/millus/map> rdfs:label "Maps" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> rdfs:label "Xinning xiang tu di li" .
+

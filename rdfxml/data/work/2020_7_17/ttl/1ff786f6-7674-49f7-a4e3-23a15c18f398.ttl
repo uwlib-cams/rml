@@ -1,0 +1,40 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1ff786f6-7674-49f7-a4e3-23a15c18f398> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "cc83"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns2:P10002 "2018252950"@eng ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026174> ;
+    ns2:P10046 "Guo li Taiwan da xue. Zhi wu xue xi" ;
+    ns2:P10086 "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
+        "國立臺灣大學理學院植物學系研究報告"@chi ;
+    ns2:P10156 "Acta botanica Taiwanica " ;
+    ns2:P10216 "Taiwan"@eng ;
+    ns2:P10218 <http://id.loc.gov/authorities/names/n80022631> ;
+    ns2:P10223 "Taiwania"@eng ;
+    ns2:P10330 "Some issues have subtitles: Sciences reports of plant biology, An International journal of plant science, or An International journal of life science"@eng ;
+    ns2:P10331 "Taiwania"@eng ;
+    ns2:P10366 "0372-333X"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:eSerial" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026174> rdfs:label "Serial publications" .
+
+<http://id.loc.gov/authorities/names/n80022631> rdfs:label "Taiwan" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

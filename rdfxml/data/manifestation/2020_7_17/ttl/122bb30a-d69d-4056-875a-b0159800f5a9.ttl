@@ -1,0 +1,58 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix ns6: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/122bb30a-d69d-4056-875a-b0159800f5a9> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "aschiff"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-27"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©2010"@eng ;
+    ns1:P30011 "[2010]"@zxx ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:P30024 "Print version: European Conference on Product and Process Modelling in the Building and Construction Industry (2010 : Cork, Republic of Ireland). eWork and eBusiness in architecture, engineering and construction. Boca Raton, Fla. : CRC ; London : Taylor & Francis [distributor], 2010. 9780415605076 (OCoLC)664326023" ;
+    ns1:P30088 "Leiden, Netherlands"@eng ;
+    ns1:P30105 "editors, Karsten Menzel, Raimar Scherer"@eng ;
+    ns1:P30111 "Leiden, Netherlands : CRC Press/Balkema, [2010]"@eng ;
+    ns1:P30128 "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/2f419e71-0aef-4924-b284-91a61bc4e953> ;
+    ns1:P30142 "proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ;
+    ns1:P30154 "https://www.taylorfrancis.com/books/9780203833773"@eng ;
+    ns1:P30156 "eWork and eBusiness in architecture, engineering and construction"@eng ;
+    ns1:P30176 "CRC Press/Balkema"@eng ;
+    ns1:P30182 "1 online resource"@eng ;
+    ns4:P30004 "ISBN 9780203833773 (electronic book)"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:eBook" ;
+    ns6:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1002> rdfs:label "text file" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/2f419e71-0aef-4924-b284-91a61bc4e953> rdfs:label "https://trellis.sinopia.io/repository/washington/2f419e71-0aef-4924-b284-91a61bc4e953" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

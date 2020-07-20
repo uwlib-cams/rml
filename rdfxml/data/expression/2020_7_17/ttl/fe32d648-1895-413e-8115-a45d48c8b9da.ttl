@@ -1,0 +1,46 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fe32d648-1895-413e-8115-a45d48c8b9da> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "cec23" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-01-15" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20037 <http://id.loc.gov/rwo/agents/n50015174> ;
+    ns1:P20045 <http://id.loc.gov/rwo/agents/n83209489> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "\"The narrator, Aleksandr Petrovich Goryanchikov, has been sentenced to penalty deportation to Siberia and ten years of hard labour for murdering his wife. Life in prison is particularly hard for Aleksandr Petrovich, since he is a \"gentleman\" and suffers the malice of the other prisoners, nearly all of whom belong to the peasantry. Gradually Goryanchikov overcomes his revulsion at his situation and his fellow convicts, undergoing a spiritual re-awakening that culminates with his release from the camp. It is a work of great humanity; Dostoevsky portrays the inmates of the prison with sympathy for their plight, and also expresses admiration for their energy, ingenuity and talent. He concludes that the existence of the prison, with its absurd practices and savage corporal punishments is a tragic fact, both for the prisoners and for Russia\"--Wikipedia, January 15, 2020."@eng ;
+    ns1:P20214 "1915"@eng ;
+    ns1:P20231 "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9" ;
+    ns1:P20313 "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng ;
+    ns1:P20314 "Dostoyevsky, Fyodor, 1821-1881. House of the dead"@eng ;
+    ns1:P20315 "Zapiski iz mertvogo doma. English (Garnett)"@eng ;
+    ns1:P20316 "House of the dead"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/rwo/agents/n50015174> rdfs:label "Garnett, Constance, 1861-1946" .
+
+<http://id.loc.gov/rwo/agents/n83209489> rdfs:label "Frank, Joseph, 1918-2013" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

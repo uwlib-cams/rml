@@ -1,0 +1,62 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://trellis.sinopia.io/repository/washington/25406ec2-3893-45e6-b857-064fc606657d> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns5:catalogerID "aschiff"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-11-27"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source "http://id.loc.gov/vocabulary/organizations/wau" ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P10002 "http://viaf.org/viaf/316560479"@eng ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026264>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026294>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026369>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026007> ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/no2013022600> ;
+    ns1:P10127 "Austen, Jane, 1775-1817. Emma" ;
+    ns1:P10210 "Gordon Glennon's play Emma, an adaptation of Jane Austen's novel of the same name, was first produced at Rugby Repertory Theatre on August 24, 1943."@eng ;
+    ns1:P10218 <http://id.loc.gov/authorities/names/n79023147> ;
+    ns1:P10219 "1943"@eng ;
+    ns1:P10223 "Emma"@eng ;
+    ns1:P10331 "Glennon, Gordon. Emma"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    skos:exactMatch <http://id.loc.gov/authorities/names/no2015079644> ;
+    ns4:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060373> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060359> rdfs:label "Men" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060373> rdfs:label "Britons" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026264> rdfs:label "Comedy plays" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026294> rdfs:label "Domestic drama" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026369> rdfs:label "Historical drama" .
+
+<http://id.loc.gov/authorities/genreForms/gf2016026007> rdfs:label "Theatrical adaptations" .
+
+<http://id.loc.gov/authorities/names/n79023147> rdfs:label "Great Britain" .
+
+<http://id.loc.gov/authorities/names/no2013022600> rdfs:label "Glennon, Gordon" .
+
+<http://id.loc.gov/authorities/names/no2015079644> rdfs:label "Glennon, Gordon. Emma" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+

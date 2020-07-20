@@ -1,0 +1,34 @@
+@prefix ns1: <http://sinopia.io/vocabulary/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/60b13770-473e-4dc9-bedf-de4e6c5130f5> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "jmoede"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-05-19"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns2:P10086 "Celebrating the legendary cuisine of Syria"@eng ;
+    ns2:P10219 "2017"@eng ;
+    ns2:P10223 "Aleppo cookbook"@eng ;
+    ns2:P10256 "Cooking, Syrian",
+        "Cooking, Syrian--Aleppo " ;
+    ns2:P10331 "Matar, Marlene. Aleppo cookbook : celebrating the legendary cuisine of Syria"@eng ;
+    ns1:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns5:hasCreatorCharacteristic "Women" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

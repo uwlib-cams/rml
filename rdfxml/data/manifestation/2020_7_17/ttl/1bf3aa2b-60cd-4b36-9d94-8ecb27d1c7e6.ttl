@@ -1,0 +1,64 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1bf3aa2b-60cd-4b36-9d94-8ecb27d1c7e6> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-04"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1983"@eng ;
+    ns1:P30011 "1983"@eng ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Seattle"@eng ;
+    ns1:P30105 "by M.S. Kline and G.A. Bayless"@eng ;
+    ns1:P30111 "Seattle : Bayless Books, 1983"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/ad4838ea-b5b7-4cdd-9bab-cf1f5d51217c> ;
+    ns1:P30142 "a legend on Puget Sound"@eng ;
+    ns1:P30156 "Ferryboats"@eng ;
+    ns1:P30169 "27 cm"@eng ;
+    ns1:P30176 "Bayless Books"@eng ;
+    ns1:P30182 "xi, 401 pages, 1 folded leaf"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "ISBN 0914515004" ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns5:hasLcClassificationPartA "HE5783.W3"@eng ;
+    ns5:hasLcClassificationPartB "K54 1983"@eng ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/ad4838ea-b5b7-4cdd-9bab-cf1f5d51217c> rdfs:label "https://trellis.sinopia.io/repository/washington/ad4838ea-b5b7-4cdd-9bab-cf1f5d51217c" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

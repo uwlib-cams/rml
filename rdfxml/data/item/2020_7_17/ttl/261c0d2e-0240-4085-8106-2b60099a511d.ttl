@@ -1,0 +1,41 @@
+@prefix ns1: <http://sinopia.io/vocabulary/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/261c0d2e-0240-4085-8106-2b60099a511d> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:changeDate "2020-04-21"@eng ;
+            ns4:creationDate "2020-04-20"@eng ;
+            ns4:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce> ;
+    ns1:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns3:hasBarcode "39352038581179"@eng ;
+    ns3:hasLcClassificationPartA "PS3503.R2733"@eng ;
+    ns3:hasLcClassificationPartB "D67 1942"@eng ;
+    ns3:hasPhysicalLocation "Drama"@eng ;
+    ns3:hasPhysicalSubLocation "drstx"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce> rdfs:label "Down in the heart of Texas" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

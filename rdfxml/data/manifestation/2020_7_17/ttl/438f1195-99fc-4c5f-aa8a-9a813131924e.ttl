@@ -1,0 +1,53 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/438f1195-99fc-4c5f-aa8a-9a813131924e> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "lins@uw.edu"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-27"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30011 "2005"@zxx ;
+    ns1:P30018 <http://rdaregistry.info/termList/fileType/1006> ;
+    ns1:P30088 "Germany"@eng ;
+    ns1:P30105 "Fandango and Zero West present ; a film by Sandhya Suri ; produced by Carlo Cresto-Dina, Kai Kûnnemann, Thomas Kufus ; directed by Sandhya Suri."@eng ;
+    ns1:P30137 "Description based on DVD record; title from title screen (viewed April 27, 2020)"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b> ;
+    ns1:P30156 "I for India"@eng ;
+    ns1:P30172 <http://rdaregistry.info/termList/typeRec/1002> ;
+    ns1:P30182 "1 online resource"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:dvdVideo" ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1018> rdfs:label "online resource" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1003> rdfs:label "computer" .
+
+<http://rdaregistry.info/termList/fileType/1006> rdfs:label "video file" .
+
+<http://rdaregistry.info/termList/typeRec/1002> rdfs:label "digital" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b> rdfs:label "https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

@@ -1,0 +1,66 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://rdaregistry.info/Elements/m/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ns6: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c18367aa-c65a-4fe1-80ee-cd8b712f0961> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "pfreeman"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-04"@eng ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns3:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns3:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns3:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns3:P30007 "©1977"@eng ;
+    ns3:P30011 "[1977]"@eng ;
+    ns3:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns3:P30087 "Olympia, Washington"@eng ;
+    ns3:P30088 "[Washinhgton]"@eng ;
+    ns3:P30105 "by Charles J. Flora and Eugene Fairbanks"@eng ;
+    ns3:P30111 "[Washington] : [publisher not identified], [1977]  (Olympia : Washington State Department.of Printing)"@eng ;
+    ns3:P30133 "3rd edition"@eng ;
+    ns3:P30139 <https://trellis.sinopia.io/repository/washington/819654ab-832c-4866-8f4d-450f42c7fbc9> ;
+    ns3:P30142 "a guide to northwestern neritic invertebrate zoology"@eng ;
+    ns3:P30156 "Sound and the sea"@eng ;
+    ns3:P30169 "21 cm"@eng ;
+    ns3:P30175 "Washington State Department of Printing"@eng ;
+    ns3:P30182 "xi, 474 pages"@eng ;
+    ns3:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns5:P30004 "LCCN  78103194 " ;
+    ns6:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns2:hasLcClassificationPartA "QL138"@eng ;
+    ns2:hasLcClassificationPartB ".F57 1977"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/819654ab-832c-4866-8f4d-450f42c7fbc9> rdfs:label "https://trellis.sinopia.io/repository/washington/819654ab-832c-4866-8f4d-450f42c7fbc9" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

@@ -1,0 +1,47 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6f37ad8e-93a0-40d2-b43e-1f7cc9e195b6> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "jlee70"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-02-07"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020>,
+        "still image" ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "The young human girl Vijaya finds refuge in a magical sanctuary beyond the Himalaya Mountains, among immortal beings and mystical creatures, but when the sanctuary is threatened, Vijaya must protect her new friends and home from mankind's violence."@eng ;
+    ns1:P20224 <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+        "color" ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/86f61d7c-2742-4716-bb0f-9f2b82111548> ;
+    ns1:P20313 "Vignolli, David Jesus. A girl in the Himalayas. English"@eng ;
+    ns1:P20315 "A girl in the Himalayas"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> rdfs:label "polychrome" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/86f61d7c-2742-4716-bb0f-9f2b82111548> rdfs:label "A girl in the Himalayas" .
+

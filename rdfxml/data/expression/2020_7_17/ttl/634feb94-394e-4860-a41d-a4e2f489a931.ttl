@@ -1,0 +1,34 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://rdaregistry.info/Elements/e/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/634feb94-394e-4860-a41d-a4e2f489a931> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "gerhart"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-07"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns3:P20001 <http://rdaregistry.info/termList/RDAContentType/1012> ;
+    ns3:P20002 "n 2018039031" ;
+    ns3:P20065 "Latin"@eng ;
+    ns3:P20231 <https://trellis.sinopia.io/repository/washington/4488232a-2514-409b-9a5e-95f423f1a1ae> ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Expression:soundRecording" .
+
+<http://rdaregistry.info/termList/RDAContentType/1012> rdfs:label "sounds" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/4488232a-2514-409b-9a5e-95f423f1a1ae> rdfs:label "Histoire du soldat" .
+

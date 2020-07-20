@@ -1,0 +1,47 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2b0e847a-5fad-4150-9612-aec9f9474096> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "jlee70"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "02-21-2020"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2011026091>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026207>,
+        <http://id.loc.gov/authorities/subjects/sh2007006723> ;
+    ns2:P10008 <http://id.loc.gov/rwo/agents/no2012121745> ;
+    ns2:P10015 "Wŏn, Chŏng-sun" ;
+    ns2:P10203 "Kwŏn, Min-hi",
+        "Sin, Min-jung" ;
+    ns2:P10219 "2006"@zxx ;
+    ns2:P10223 "The dancer, Choi Seunghee"@eng ;
+    ns2:P10256 "Ch'oe, Sŭng-hŭi, 1911-1969",
+        "Women dancers--Korea (North)--Biography",
+        "Women dancers--Korea--Biography" ;
+    ns2:P10331 "The dancer, Choi Seunghee"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:dvdVideo" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026091> rdfs:label "Biographical television programs" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026207> rdfs:label "Documentary television programs" .
+
+<http://id.loc.gov/authorities/subjects/sh2007006723> rdfs:label "Nonfiction television programs" .
+
+<http://id.loc.gov/rwo/agents/no2012121745> rdfs:label "Arirang TV" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

@@ -1,0 +1,71 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/37d584c2-5bc1-422b-bbbd-e1226c8e139e> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns3:catalogerID "jlee37"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2020-02-21"@eng ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns4:status [ a ns4:Status ;
+                    ns4:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30011 "2019"@eng ;
+    ns1:P30014 "Di 2 ji"@eng ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/no2015051061> ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Beijing (China)"@eng ;
+    ns1:P30105 "插图绘制Loyal Kids",
+        "北京语言大学对外汉语教材研发中心编著"@chi,
+        "文本撰写李晶晶"@chi,
+        "英语翻译孙玉婷"@chi ;
+    ns1:P30106 "汉语乐园同步阅读. 第2级"@eng ;
+    ns1:P30111 "北京市 : 北京语言大学出版社, 2019"@chi ;
+    ns1:P30133 "第1版"@chi ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e> ;
+    ns1:P30142 "He li you yu" ;
+    ns1:P30156 "河里有鱼"@chi ;
+    ns1:P30157 "Han yu le yuan tong bu yue du"@eng ;
+    ns1:P30169 "23 cm" ;
+    ns1:P30176 "Beijing yu yan da xue chu ban she"@eng ;
+    ns1:P30182 "10 pages"@eng ;
+    ns1:P30203 "There are fish in the river"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "9787561952009"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns2:hasLcClassificationPartA "PL1115"@eng ;
+    ns2:hasLcClassificationPartB ".L55892 2019"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/no2015051061> rdfs:label "Beijing yu yan da xue. Chu ban she" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e> rdfs:label "https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

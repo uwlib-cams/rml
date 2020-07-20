@@ -1,0 +1,48 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f82fcc75-6160-435b-9ca1-03302716319c> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "cc83"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-23"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns2:P30001 <http://rdaregistry.info/termList/RDACarrierType/1047>,
+        <http://rdaregistry.info/termList/RDACarrierType/1059> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/42bcdb3c-5c36-4970-9cc0-851d5bef0baa> ;
+    ns2:P30156 "水木清华\" 与《雷雨》"@eng ;
+    ns2:P30169 "16 x 55 cm, rolled to 16 x 5 cm in diameter, in box 15 x 21 x 9 cm + 1 wooden display stand (4 x 14 x 4 cm)"@eng ;
+    ns2:P30182 "1 bamboo slip"@eng ;
+    ns2:P30304 <http://vocab.getty.edu/aat/300311498> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Manifestation:graphic" ;
+    ns5:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1047> rdfs:label "roll" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1059> rdfs:label "object" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://vocab.getty.edu/aat/300311498> rdfs:label "bamboo work (visual works)" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/42bcdb3c-5c36-4970-9cc0-851d5bef0baa> rdfs:label "\"水木清华\" 与《雷雨》" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

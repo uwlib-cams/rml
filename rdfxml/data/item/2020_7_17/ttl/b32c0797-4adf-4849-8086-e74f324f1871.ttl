@@ -1,0 +1,36 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/i/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b32c0797-4adf-4849-8086-e74f324f1871> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "ries07"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-22"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns5:P40049 <https://trellis.sinopia.io/repository/washington/71f38d30-b08c-421d-ba9d-28fb9d851792> ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns2:hasBarcode "39352084275270"@eng ;
+    ns2:hasLcClassificationPartA "QE862.S3"@eng ;
+    ns2:hasLcClassificationPartB "N54 2019"@eng ;
+    ns2:hasPhysicalLocation "ougl"@eng ;
+    ns2:hasPhysicalSubLocation "ugstx"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/71f38d30-b08c-421d-ba9d-28fb9d851792> rdfs:label "American dinosaur abroad" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

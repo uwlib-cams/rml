@@ -1,0 +1,45 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://sinopia.io/vocabulary/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/53ac989d-d13d-402a-9f6c-03d165f91319> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "jlee70"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-02-24"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@eng ] ] ;
+    ns1:P10004 <http://vocab.getty.edu/aat/300265554>,
+        "Electronic books" ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n2010049080>,
+        <http://id.loc.gov/authorities/names/nb2002066406> ;
+    ns1:P10223 "Information security risk management for ISO 27001/ISO 27002"@eng ;
+    ns1:P10256 <http://id.loc.gov/authorities/subjects/sh2009121243>,
+        <http://id.loc.gov/authorities/subjects/sh99004226>,
+        "Data protection--Standards" ;
+    ns1:P10331 "Caler, Alan, 1957- Information security risk management for ISO 27001/ISO 27002"@eng ;
+    ns2:hasResourceTemplate "WAU:RT:RDA:Work:eBook" .
+
+<http://id.loc.gov/authorities/names/n2010049080> rdfs:label "Watkins, Steve G." .
+
+<http://id.loc.gov/authorities/names/nb2002066406> rdfs:label "Calder, Alan, 1957-" .
+
+<http://id.loc.gov/authorities/subjects/sh2009121243> rdfs:label "Computer security--Management" .
+
+<http://id.loc.gov/authorities/subjects/sh99004226> rdfs:label "Computer security--Standards" .
+
+<http://vocab.getty.edu/aat/300265554> rdfs:label "e-books" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
