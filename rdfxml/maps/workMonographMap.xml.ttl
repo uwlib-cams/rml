@@ -23,7 +23,7 @@
 
 ex:WorkMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10001']"
   ].
@@ -59,7 +59,7 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   # has preferred title of work
-  # last updated: 2020-07-021
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
@@ -68,7 +68,7 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   # has preferred title of work (label, with language tag)
-  # last updated: 2020-07-021
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -81,7 +81,7 @@ ex:WorkMap a rr:TriplesMap;
   ].
 
   # has preferred title of work (label, w/o language tag)
-  # last updated: 2020-07-021
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -404,17 +404,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has enacting jurisdiction
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:EnactingJurisdictionLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:EnactingJurisdictionIRIMap
+      rr:parentTriplesMap ex:EnactingJurisdictionMap
     ]
   ].
 
@@ -658,7 +653,7 @@ ex:WorkMap a rr:TriplesMap;
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:JurisdictionGovernedLiteralMap
+      rr:parentTriplesMap ex:JurisdictionGovernedMap
     ]
   ].
 
@@ -1256,13 +1251,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is adapted as motion picture work (literal)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
-      rr:parentTriplesMap ex:AdaptedAsMotionPictureLiteralMap
+      rr:parentTriplesMap ex:AdaptedAsMotionPictureMap
     ]
   ].
 
+  # is adapted as motion picture work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
@@ -1346,13 +1345,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is dramatized as work (literal)
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
-      rr:parentTriplesMap ex:DramatizedAsLiteralMap
+      rr:parentTriplesMap ex:DramatizedAsMap
     ]
   ].
 
+  # is dramatized as work (IRI)
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
@@ -1811,13 +1814,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is libretto for work (literal)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:accompanies;
     rr:objectMap [
-      rr:parentTriplesMap ex:LibrettoLiteralMap
+      rr:parentTriplesMap ex:LibrettoMap
     ]
   ].
 
+  # is libretto for work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:accompanies;
     rr:objectMap [
@@ -1826,13 +1833,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has incidental music work (literal)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:accompaniedBy;
     rr:objectMap [
-      rr:parentTriplesMap ex:IncidentalMusicLiteralMap
+      rr:parentTriplesMap ex:IncidentalMusicMap
     ]
   ].
 
+  # has incidental music work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:accompaniedBy;
     rr:objectMap [
@@ -2051,13 +2062,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has sequel work
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:succeededBy;
     rr:objectMap [
-      rr:parentTriplesMap ex:SequelLiteralMap
+      rr:parentTriplesMap ex:SequelMap
     ]
   ].
 
+  # has sequel work
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:succeededBy;
     rr:objectMap [
@@ -2126,13 +2141,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is replaced by work
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:replacedBy;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReplacedByLiteralMap
+      rr:parentTriplesMap ex:ReplacedByMap
     ]
   ].
 
+  # is replaced by work
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:replacedBy;
     rr:objectMap [
@@ -2141,13 +2160,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is replaced in part by work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:replacedBy;
     rr:objectMap [
-      rr:parentTriplesMap ex:ReplacedInPartByLiteralMap
+      rr:parentTriplesMap ex:ReplacedInPartByMap
     ]
   ].
 
+  # is replaced in part by work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:replacedBy;
     rr:objectMap [
@@ -2801,13 +2824,17 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is part of work (IRI)
+  # last updated: 2020-07-22
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:partOf;
     rr:objectMap [
-      rr:parentTriplesMap ex:PartOfLiteralMap
+      rr:parentTriplesMap ex:PartOfMap
     ]
   ].
 
+  # is part of work (IRI)
+  # last updated: 2020-07-21
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:partOf;
     rr:objectMap [
@@ -2818,7 +2845,7 @@ ex:WorkMap a rr:TriplesMap;
 
 ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10001'][catalogerID]"
   ].
@@ -2893,7 +2920,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
 
   ex:StatusMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[code]"
     ].
@@ -2913,7 +2940,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
 # has authorized access point for work
 ex:AuthorizedAccessPointMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10331]"
   ].
@@ -2958,7 +2985,7 @@ ex:AuthorizedAccessPointMap a rr:TriplesMap;
 
   ex:AuthorizedAccessPointSourceMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10331]"
     ].
@@ -2979,7 +3006,7 @@ ex:AuthorizedAccessPointMap a rr:TriplesMap;
 
   ex:AuthorizedAccessPointNoteMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10331]"
     ].
@@ -3010,7 +3037,7 @@ ex:AuthorizedAccessPointMap a rr:TriplesMap;
 # has variant access point for work
 ex:VariantAccessPointMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10332]"
   ].
@@ -3055,7 +3082,7 @@ ex:VariantAccessPointMap a rr:TriplesMap;
 
   ex:VariantAccessPointSourceMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10332]"
     ].
@@ -3076,7 +3103,7 @@ ex:VariantAccessPointMap a rr:TriplesMap;
 
   ex:VariantAccessPointNoteMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10332]"
     ].
@@ -3107,7 +3134,7 @@ ex:VariantAccessPointMap a rr:TriplesMap;
 # has preferred title of work
 ex:TitleMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10223]"
   ].
@@ -3147,7 +3174,7 @@ ex:TitleMap a rr:TriplesMap;
 # has variant title of work
 ex:VariantTitleMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10086]"
   ].
@@ -3179,7 +3206,7 @@ ex:VariantTitleMap a rr:TriplesMap;
 # has subject
 ex:SubjectMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10256[not(@resource)]]"
   ].
@@ -3230,7 +3257,7 @@ ex:SubjectMap a rr:TriplesMap;
 # has category of work
 ex:CategoryLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10004[not(@resource)]]"
   ].
@@ -3262,7 +3289,7 @@ ex:CategoryLiteralMap a rr:TriplesMap;
 # has author agent
 ex:AuthorMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10061]"
   ].
@@ -3297,7 +3324,7 @@ ex:AuthorMap a rr:TriplesMap;
 
   ex:AuthorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10061[not(@resource)]]"
     ].
@@ -3329,7 +3356,7 @@ ex:AuthorMap a rr:TriplesMap;
 
 ex:creatorCharacteristicLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasCreatorCharacteristic[not(@resource)]]"
   ].
@@ -3360,7 +3387,7 @@ ex:creatorCharacteristicLiteralMap a rr:TriplesMap;
 
 ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10218[not(@resource)]]"
   ].
@@ -3383,7 +3410,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:ArtistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10058[not(@resource)]]"
     ].
@@ -3410,7 +3437,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
     ex:ArtistLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10058[not(@resource)]]"
       ].
@@ -3431,7 +3458,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:ArtistIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10058[@resource]]"
     ].
@@ -3461,7 +3488,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:ScreenwriterLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10203[not(@resource)]]"
     ].
@@ -3488,7 +3515,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
     ex:ScreenwriterLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10203[not(@resource)]]"
       ].
@@ -3509,7 +3536,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:ScreenwriterIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10203[@resource]]"
     ].
@@ -3539,7 +3566,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:CompilerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10055[not(@resource)]]"
     ].
@@ -3566,7 +3593,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
     ex:CompilerLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10055[not(@resource)]]"
       ].
@@ -3587,7 +3614,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
   ex:CompilerIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10055[@resource]]"
     ].
@@ -3615,7 +3642,7 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
 ex:PartWorkLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10147[not(@resource)]]"
   ].
@@ -3647,7 +3674,7 @@ ex:PartWorkLiteralMap a rr:TriplesMap;
 # has identifier for work (literal)
 ex:IdentifierMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10002[not(@resource)]]"
   ].
@@ -3678,7 +3705,7 @@ ex:IdentifierMap a rr:TriplesMap;
 
 ex:CoverageOfContentMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10216]"
   ].
@@ -3726,7 +3753,7 @@ ex:CoverageOfContentMap a rr:TriplesMap;
 
 ex:NoteMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10330]"
   ].
@@ -3757,7 +3784,7 @@ ex:NoteMap a rr:TriplesMap;
 
 ex:UWNoteMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasUniversityOfWashingtonNote]"
   ].
@@ -3795,7 +3822,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:UWNoteSourceMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[hasUniversityOfWashingtonNote]"
     ].
@@ -3818,7 +3845,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:SculptorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10202[not(@resource)]]"
     ].
@@ -3845,7 +3872,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:SculptorLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10202[not(@resource)]]"
       ].
@@ -3866,7 +3893,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:SculptorIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10202[@resource]]"
     ].
@@ -3887,7 +3914,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:SculptorIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10202/resource";
+        rml:reference "P10202/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -3896,7 +3923,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CreatorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10065[not(@resource)]]"
     ].
@@ -3923,7 +3950,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:CreatorLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10065[not(@resource)]]"
       ].
@@ -3944,7 +3971,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CreatorIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10065[@resource]]"
     ].
@@ -3965,7 +3992,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:CreatorIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10065/resource";
+        rml:reference "P10065/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -3974,7 +4001,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:ArchitectLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10062[not(@resource)]]"
     ].
@@ -4001,7 +4028,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:ArchitectLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10062[not(@resource)]]"
       ].
@@ -4023,7 +4050,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:ArchitectIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10062[@resource]]"
     ].
@@ -4044,7 +4071,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:ArchitectIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10062/resource";
+        rml:reference "P10062/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4053,7 +4080,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:BookArtistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10254[not(@resource)]]"
     ].
@@ -4080,7 +4107,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:BookArtistLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10254[not(@resource)]]"
       ].
@@ -4101,7 +4128,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:BookArtistIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10254[@resource]]"
     ].
@@ -4122,7 +4149,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:BookArtistIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10254/resource";
+        rml:reference "P10254/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4131,7 +4158,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CalligrapherLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10253[not(@resource)]]"
     ].
@@ -4158,7 +4185,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:CalligrapherLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10253[not(@resource)]]"
       ].
@@ -4179,7 +4206,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CalligrapherIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10253[@resource]]"
     ].
@@ -4200,7 +4227,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:CalligrapherIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10253/resource";
+        rml:reference "P10253/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4209,7 +4236,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:LibrettistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10205[not(@resource)]]"
     ].
@@ -4236,7 +4263,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:LibrettistLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10205[not(@resource)]]"
       ].
@@ -4257,7 +4284,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:LibrettistIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10205[@resource]]"
     ].
@@ -4278,7 +4305,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:LibrettistIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10205/resource";
+        rml:reference "P10205/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4287,7 +4314,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:LyricistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10204[not(@resource)]]"
     ].
@@ -4314,7 +4341,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:LyricistLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10204[not(@resource)]]"
       ].
@@ -4335,7 +4362,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:LyricistIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10204[@resource]]"
     ].
@@ -4356,7 +4383,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:LyricistIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10204/resource";
+        rml:reference "P10204/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4365,7 +4392,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:RapporteurLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10255[not(@resource)]]"
     ].
@@ -4392,7 +4419,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:RapporteurLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10255[not(@resource)]]"
       ].
@@ -4413,7 +4440,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:RapporteurIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10255[@resource]]"
     ].
@@ -4434,86 +4461,75 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:RapporteurIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10255/resource";
+        rml:reference "P10255/@resource";
         rr:termType rr:IRI
       ]
     ].
 
-# Enacting Jurisdiction
+# has enacting jurisdiction
+ex:EnactingJurisdictionMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10017]"
+  ].
+
+  ex:EnactingJurisdictionMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:EnactingJurisdictionMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/enj";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:EnactingJurisdictionMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10017/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:EnactingJurisdictionMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:EnactingJurisdictionLiteralMap
+    ]
+  ].
 
   ex:EnactingJurisdictionLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10017[not(@resource)]]"
     ].
 
     ex:EnactingJurisdictionLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Juridiction
     ].
 
     ex:EnactingJurisdictionLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/enj";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:EnactingJurisdictionLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:EnactingJurisdictionLiteralBNodeMap
-      ]
-    ].
-
-    ex:EnactingJurisdictionLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10017[not(@resource)]]"
-      ].
-
-      ex:EnactingJurisdictionLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Juridiction
-      ].
-
-      ex:EnactingJurisdictionLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10017[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10017[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10017/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:EnactingJurisdictionIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10017[@resource]]"
-    ].
-
-    ex:EnactingJurisdictionIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:EnactingJurisdictionIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/enj";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:EnactingJurisdictionIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:EnactingJurisdictionLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10017/resource";
-        rr:termType rr:IRI
+        rml:reference "P10017[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -4521,7 +4537,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:IntervieweeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10059[not(@resource)]]"
     ].
@@ -4548,7 +4564,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:IntervieweeLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10059[not(@resource)]]"
       ].
@@ -4569,7 +4585,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:IntervieweeIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10059[@resource]]"
     ].
@@ -4590,7 +4606,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:IntervieweeIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10059/resource";
+        rml:reference "P10059/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4599,7 +4615,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:InterviewerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10057[not(@resource)]]"
     ].
@@ -4626,7 +4642,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:InterviewerLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10057[not(@resource)]]"
       ].
@@ -4647,7 +4663,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:InterviewerIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10057[@resource]]"
     ].
@@ -4668,7 +4684,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:InterviewerIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10057/resource";
+        rml:reference "P10057/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4677,7 +4693,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:PhotographerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10056[not(@resource)]]"
     ].
@@ -4704,7 +4720,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:PhotographerLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10056[not(@resource)]]"
       ].
@@ -4725,7 +4741,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:PhotographerIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10056[@resource]]"
     ].
@@ -4746,7 +4762,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:PhotographerIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10056/resource";
+        rml:reference "P10056/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4754,7 +4770,7 @@ ex:UWNoteMap a rr:TriplesMap;
   # has respondent
   ex:RespondentMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10001]"
     ].
@@ -4789,7 +4805,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:RespondentLiteralMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10001[not(@resource)]]"
       ].
@@ -4822,7 +4838,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AddresseeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10070[not(@resource)]]"
     ].
@@ -4849,7 +4865,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:AddresseeLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10070[not(@resource)]]"
       ].
@@ -4870,7 +4886,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AddresseeIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10070[@resource]]"
     ].
@@ -4891,7 +4907,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:AddresseeIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10070/resource";
+        rml:reference "P10070/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4899,7 +4915,7 @@ ex:UWNoteMap a rr:TriplesMap;
   # has appellant corporate body
   ex:AppellantCorporateBodyMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10009]"
     ].
@@ -4920,7 +4936,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:AppellantCorporateBodyMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10009/resource";
+        rml:reference "P10009/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -4934,7 +4950,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:AppellantCorporateBodyLiteralMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10009[not(@resource)]]"
       ].
@@ -4967,7 +4983,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AppellantPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10042[not(@resource)]]"
     ].
@@ -4994,7 +5010,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:AppellantPersonLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10042[not(@resource)]]"
       ].
@@ -5015,7 +5031,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AppellantPersonIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10042[@resource]]"
     ].
@@ -5036,7 +5052,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:AppellantPersonIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10042/resource";
+        rml:reference "P10042/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5045,7 +5061,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AppelleePersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10035[not(@resource)]]"
     ].
@@ -5072,7 +5088,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:AppelleePersonLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10035[not(@resource)]]"
       ].
@@ -5093,7 +5109,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:AppelleePersonIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10035[@resource]]"
     ].
@@ -5114,7 +5130,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:AppelleePersonIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10035/resource";
+        rml:reference "P10035/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5122,7 +5138,7 @@ ex:UWNoteMap a rr:TriplesMap;
   # has appellee corporate body
   ex:AppelleeCorporateBodyMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10005]"
     ].
@@ -5143,7 +5159,7 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10005/resource";
+        rml:reference "P10005/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5157,7 +5173,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:AppelleeCorporateBodyLiteralMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10005[not(@resource)]]"
       ].
@@ -5190,7 +5206,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CommissioningBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10287[not(@resource)]]"
     ].
@@ -5216,7 +5232,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:CommissioningBodyLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10287[not(@resource)]]"
       ].
@@ -5237,7 +5253,7 @@ ex:UWNoteMap a rr:TriplesMap;
 
   ex:CommissioningBodyIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10287[@resource]]"
     ].
@@ -5257,14 +5273,14 @@ ex:UWNoteMap a rr:TriplesMap;
     ex:CommissioningBodyIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10287/resource";
+        rml:reference "P10287/@resource";
         rr:termType rr:IRI
       ]
     ].
 
   ex:CommissioningBodyRoleMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10287]"
     ].
@@ -5286,7 +5302,7 @@ ex:UWNoteMap a rr:TriplesMap;
 # has court governed (literal)
 ex:CourtGovernedMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10011[not(@resource)]]"
   ].
@@ -5319,7 +5335,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DedicateeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10069[not(@resource)]]"
     ].
@@ -5346,7 +5362,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:DedicateeLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10069[not(@resource)]]"
       ].
@@ -5367,7 +5383,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DedicateeIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10069[@resource]]"
     ].
@@ -5388,7 +5404,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:DedicateeIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10069/resource";
+        rml:reference "P10069/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5397,7 +5413,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DefendantCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10285[not(@resource)]]"
     ].
@@ -5424,7 +5440,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:DefendantCorporateBodyLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10285[not(@resource)]]"
       ].
@@ -5445,7 +5461,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DefendantCorporateBodyIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10285[@resource]]"
     ].
@@ -5466,7 +5482,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:DefendantCorporateBodyIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10285/resource";
+        rml:reference "P10285/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5475,7 +5491,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DefendantPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10286[not(@resource)]]"
     ].
@@ -5502,7 +5518,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:DefendantPersonLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10286[not(@resource)]]"
       ].
@@ -5523,7 +5539,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:DefendantPersonIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10286[@resource]]"
     ].
@@ -5544,7 +5560,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:DefendantPersonIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10286/resource";
+        rml:reference "P10286/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5553,7 +5569,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:HonoureeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10049[not(@resource)]]"
     ].
@@ -5580,7 +5596,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:HonoureeLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10049[not(@resource)]]"
       ].
@@ -5601,7 +5617,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:HonoureeIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10049[@resource]]"
     ].
@@ -5622,7 +5638,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:HonoureeIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10049/resource";
+        rml:reference "P10049/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5630,7 +5646,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
   # has hosting institution
   ex:HostingInstitutionMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10007]"
     ].
@@ -5651,7 +5667,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:HostingInstitutionMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10007/resource";
+        rml:reference "P10007/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5665,7 +5681,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:HostingInstitutionLiteralMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10007[not(@resource)]]"
       ].
@@ -5698,7 +5714,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:IssuingBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10046[not(@resource)]]"
     ].
@@ -5725,7 +5741,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:IssuingBodyLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10046[not(@resource)]]"
       ].
@@ -5746,7 +5762,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:IssuingBodyIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10046[@resource]]"
     ].
@@ -5767,7 +5783,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:IssuingBodyIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10046/resource";
+        rml:reference "P10046/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -5776,7 +5792,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:JudgeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10044[not(@resource)]]"
     ].
@@ -5803,7 +5819,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:JudgeLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10044[not(@resource)]]"
       ].
@@ -5824,7 +5840,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:JudgeIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10044[@resource]]"
     ].
@@ -5845,86 +5861,75 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:JudgeIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10044/resource";
+        rml:reference "P10044/@resource";
         rr:termType rr:IRI
       ]
     ].
 
-# Jurisdiction Governed
+# has jurisdiction governed
+ex:JurisdictionGovernedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10018]"
+  ].
+
+  ex:JurisdictionGovernedMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:JurisdictionGovernedMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/jug";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:JurisdictionGovernedMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10018/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:JurisdictionGovernedMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:JurisdictionGovernedLiteralMap
+    ]
+  ].
 
   ex:JurisdictionGovernedLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10018[not(@resource)]]"
     ].
 
     ex:JurisdictionGovernedLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Jurisdiction
     ].
 
     ex:JurisdictionGovernedLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/jug";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:JurisdictionGovernedLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:JurisdictionGovernedLiteralBNodeMap
-      ]
-    ].
-
-    ex:JurisdictionGovernedLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10018[not(@resource)]]"
-      ].
-
-      ex:JurisdictionGovernedLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Organization
-      ].
-
-      ex:JurisdictionGovernedLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10018[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10018[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10018/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:JurisdictionGovernedIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10018[@resource]]"
-    ].
-
-    ex:JurisdictionGovernedIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:JurisdictionGovernedIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/jug";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:JurisdictionGovernedIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:JurisdictionGovernedLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10018/resource";
-        rr:termType rr:IRI
+        rml:reference "P10018[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -5932,7 +5937,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:OrganizerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10297[not(@resource)]]"
     ].
@@ -5959,7 +5964,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:OrganizerLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10297[not(@resource)]]"
       ].
@@ -5980,7 +5985,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:OrganizerIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10297[@resource]]"
     ].
@@ -6001,7 +6006,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:OrganizerIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10297/resource";
+        rml:reference "P10297/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -6010,7 +6015,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:ParticipantInTreatyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10292[not(@resource)]]"
     ].
@@ -6036,7 +6041,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:ParticipantInTreatyLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10292[not(@resource)]]"
       ].
@@ -6057,7 +6062,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:ParticipantInTreatyIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10292[@resource]]"
     ].
@@ -6077,14 +6082,14 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:ParticipantInTreatyIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10292/resource";
+        rml:reference "P10292/@resource";
         rr:termType rr:IRI
       ]
     ].
 
   ex:ParticipantInTreatyRoleMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10292]"
     ].
@@ -6107,7 +6112,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:PlaintiffPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10043[not(@resource)]]"
     ].
@@ -6134,7 +6139,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:PlaintiffPersonLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10043[not(@resource)]]"
       ].
@@ -6155,7 +6160,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:PlaintiffPersonIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10043[@resource]]"
     ].
@@ -6176,7 +6181,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:PlaintiffPersonIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10043/resource";
+        rml:reference "P10043/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -6184,7 +6189,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
   # has plaintiff corporate body
   ex:PlaintiffCorporateBodyMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10010]"
     ].
@@ -6205,7 +6210,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:PlaintiffCorporateBodyMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10010/resource";
+        rml:reference "P10010/@resource";
         rr:termType rr:IRI
       ]
     ].
@@ -6219,7 +6224,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:PlaintiffCorporateBodyLiteralMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10010[not(@resource)]]"
       ].
@@ -6252,7 +6257,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:ResearcherLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10293[not(@resource)]]"
     ].
@@ -6279,7 +6284,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:ResearcherLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10293[not(@resource)]]"
       ].
@@ -6300,7 +6305,7 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
   ex:ResearcherIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10293[@resource]]"
     ].
@@ -6321,14 +6326,14 @@ ex:CourtGovernedMap a rr:TriplesMap;
     ex:ResearcherIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10293/resource";
+        rml:reference "P10293/@resource";
         rr:termType rr:IRI
       ]
     ].
 
 ex:RelatedAgentLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10311[not(@resource)]]"
   ].
@@ -6351,7 +6356,7 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
 
   ex:SponsorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10067[not(@resource)]]"
     ].
@@ -6378,7 +6383,7 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
 
     ex:SponsorLiteralBNodeMap a rr:TriplesMap;
       rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
         rml:referenceFormulation ql:XPath;
         rml:iterator "/RDF/Description[P10067[not(@resource)]]"
       ].
@@ -6399,7 +6404,7 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
 
   ex:SponsorIRIMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P10067[@resource]]"
     ].
@@ -6420,14 +6425,14 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
     ex:SponsorIRIMap rr:predicateObjectMap [
       rr:predicate bf:agent;
       rr:objectMap [
-        rml:reference "P10067/resource";
+        rml:reference "P10067/@resource";
         rr:termType rr:IRI
       ]
     ].
 
 ex:ExpressionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10078[not(@resource)]]"
   ].
@@ -6458,7 +6463,7 @@ ex:ExpressionLiteralMap a rr:TriplesMap;
 
 ex:RelatedWorkLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10198[not(@resource)]]"
   ].
@@ -6489,7 +6494,7 @@ ex:RelatedWorkLiteralMap a rr:TriplesMap;
 
 ex:RelatedExpressionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10308[not(@resource)]]"
   ].
@@ -6520,7 +6525,7 @@ ex:RelatedExpressionLiteralMap a rr:TriplesMap;
 
 ex:RelatedManifestationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10309[not(@resource)]]"
   ].
@@ -6551,7 +6556,7 @@ ex:RelatedManifestationLiteralMap a rr:TriplesMap;
 
 ex:RelatedItemLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10310[not(@resource)]]"
   ].
@@ -6582,7 +6587,7 @@ ex:RelatedItemLiteralMap a rr:TriplesMap;
 
 ex:BasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10190[not(@resource)]]"
   ].
@@ -6613,7 +6618,7 @@ ex:BasedOnLiteralMap a rr:TriplesMap;
 
 ex:AbridgementOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10125[not(@resource)]]"
   ].
@@ -6644,7 +6649,7 @@ ex:AbridgementOfLiteralMap a rr:TriplesMap;
 
 ex:AbstractOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10126[not(@resource)]]"
   ].
@@ -6675,7 +6680,7 @@ ex:AbstractOfLiteralMap a rr:TriplesMap;
 
 ex:AdaptationOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10142[not(@resource)]]"
   ].
@@ -6706,7 +6711,7 @@ ex:AdaptationOfLiteralMap a rr:TriplesMap;
 
 ex:DramatizationOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10127[not(@resource)]]"
   ].
@@ -6737,7 +6742,7 @@ ex:DramatizationOfLiteralMap a rr:TriplesMap;
 
 ex:GraphicNovelizationOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10252[not(@resource)]]"
   ].
@@ -6768,7 +6773,7 @@ ex:GraphicNovelizationOfLiteralMap a rr:TriplesMap;
 
 ex:LibrettoBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10189[not(@resource)]]"
   ].
@@ -6799,7 +6804,7 @@ ex:LibrettoBasedOnLiteralMap a rr:TriplesMap;
 
 ex:MusicalTheatreAdaptationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10233[not(@resource)]]"
   ].
@@ -6830,7 +6835,7 @@ ex:MusicalTheatreAdaptationLiteralMap a rr:TriplesMap;
 
 ex:NovelizationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10130[not(@resource)]]"
   ].
@@ -6861,7 +6866,7 @@ ex:NovelizationLiteralMap a rr:TriplesMap;
 
 ex:OperaAdaptationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10234[not(@resource)]]"
   ].
@@ -6892,7 +6897,7 @@ ex:OperaAdaptationLiteralMap a rr:TriplesMap;
 
 ex:RadioScriptBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10137[not(@resource)]]"
   ].
@@ -6923,7 +6928,7 @@ ex:RadioScriptBasedOnLiteralMap a rr:TriplesMap;
 
 ex:ScreenplayBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10133[not(@resource)]]"
   ].
@@ -6954,7 +6959,7 @@ ex:ScreenplayBasedOnLiteralMap a rr:TriplesMap;
 
 ex:MotionPictureScreenplayBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10134[not(@resource)]]"
   ].
@@ -6985,7 +6990,7 @@ ex:MotionPictureScreenplayBasedOnLiteralMap a rr:TriplesMap;
 
 ex:TelevisionScreenplayBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10135[not(@resource)]]"
   ].
@@ -7016,7 +7021,7 @@ ex:TelevisionScreenplayBasedOnLiteralMap a rr:TriplesMap;
 
 ex:VideoScreenplayBasedOnLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10136[not(@resource)]]"
   ].
@@ -7047,7 +7052,7 @@ ex:VideoScreenplayBasedOnLiteralMap a rr:TriplesMap;
 
 ex:VerseAdaptationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10128[not(@resource)]]"
   ].
@@ -7078,7 +7083,7 @@ ex:VerseAdaptationLiteralMap a rr:TriplesMap;
 
 ex:DigestLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10139[not(@resource)]]"
   ].
@@ -7109,7 +7114,7 @@ ex:DigestLiteralMap a rr:TriplesMap;
 
 ex:ExpandedVersionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10184[not(@resource)]]"
   ].
@@ -7140,7 +7145,7 @@ ex:ExpandedVersionLiteralMap a rr:TriplesMap;
 
 ex:FreeTranslationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10143[not(@resource)]]"
   ].
@@ -7171,7 +7176,7 @@ ex:FreeTranslationLiteralMap a rr:TriplesMap;
 
 ex:ImitationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10196[not(@resource)]]"
   ].
@@ -7202,7 +7207,7 @@ ex:ImitationLiteralMap a rr:TriplesMap;
 
 ex:ParodyLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10197[not(@resource)]]"
   ].
@@ -7233,7 +7238,7 @@ ex:ParodyLiteralMap a rr:TriplesMap;
 
 ex:ParaphraseLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10186[not(@resource)]]"
   ].
@@ -7264,7 +7269,7 @@ ex:ParaphraseLiteralMap a rr:TriplesMap;
 
 ex:SummaryLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10179[not(@resource)]]"
   ].
@@ -7295,7 +7300,7 @@ ex:SummaryLiteralMap a rr:TriplesMap;
 
 ex:DerivativeLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10148[not(@resource)]]"
   ].
@@ -7326,7 +7331,7 @@ ex:DerivativeLiteralMap a rr:TriplesMap;
 
 ex:AbridgedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10167[not(@resource)]]"
   ].
@@ -7357,7 +7362,7 @@ ex:AbridgedAsLiteralMap a rr:TriplesMap;
 
 ex:AbstractedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10107[not(@resource)]]"
   ].
@@ -7388,7 +7393,7 @@ ex:AbstractedAsLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsGraphicNovelLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10251[not(@resource)]]"
   ].
@@ -7419,7 +7424,7 @@ ex:AdaptedAsGraphicNovelLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsLibrettoLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10113[not(@resource)]]"
   ].
@@ -7448,19 +7453,20 @@ ex:AdaptedAsLibrettoLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AdaptedAsMotionPictureLiteralMap a rr:TriplesMap;
+# is adapted as motion picture work
+ex:AdaptedAsMotionPictureMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10025[not(@resource)]]"
   ].
 
-  ex:AdaptedAsMotionPictureLiteralMap rr:subjectMap [
+  ex:AdaptedAsMotionPictureMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:AdaptedAsMotionPictureLiteralMap rr:predicateObjectMap [
+  ex:AdaptedAsMotionPictureMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10025[not(@resource)][@lang]";
@@ -7471,7 +7477,7 @@ ex:AdaptedAsMotionPictureLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:AdaptedAsMotionPictureLiteralMap rr:predicateObjectMap [
+  ex:AdaptedAsMotionPictureMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10025[not(@resource) and not(@lang)]";
@@ -7481,7 +7487,7 @@ ex:AdaptedAsMotionPictureLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsMusicalTheatreLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10235[not(@resource)]]"
   ].
@@ -7512,7 +7518,7 @@ ex:AdaptedAsMusicalTheatreLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsOperaLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10236[not(@resource)]]"
   ].
@@ -7543,7 +7549,7 @@ ex:AdaptedAsOperaLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsMotionPictureScreenplayLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10094[not(@resource)]]"
   ].
@@ -7574,7 +7580,7 @@ ex:AdaptedAsMotionPictureScreenplayLiteralMap a rr:TriplesMap;
 
 ex:AdaptedAsScreenplayLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10159[not(@resource)]]"
   ].
@@ -7605,7 +7611,7 @@ ex:AdaptedAsScreenplayLiteralMap a rr:TriplesMap;
 
 ex:ScreenplayForMotionPictureLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10173[not(@resource)]]"
   ].
@@ -7634,19 +7640,20 @@ ex:ScreenplayForMotionPictureLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:DramatizedAsLiteralMap a rr:TriplesMap;
+# is dramatized as work
+ex:DramatizedAsMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10016[not(@resource)]]"
   ].
 
-  ex:DramatizedAsLiteralMap rr:subjectMap [
+  ex:DramatizedAsMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:DramatizedAsLiteralMap rr:predicateObjectMap [
+  ex:DramatizedAsMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10016[not(@resource)][@lang]";
@@ -7657,7 +7664,7 @@ ex:DramatizedAsLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:DramatizedAsLiteralMap rr:predicateObjectMap [
+  ex:DramatizedAsMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10016[not(@resource) and not(@lang)]";
@@ -7667,7 +7674,7 @@ ex:DramatizedAsLiteralMap a rr:TriplesMap;
 
 ex:DigestedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10171[not(@resource)]]"
   ].
@@ -7698,7 +7705,7 @@ ex:DigestedAsLiteralMap a rr:TriplesMap;
 
 ex:ExpandedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10119[not(@resource)]]"
   ].
@@ -7729,7 +7736,7 @@ ex:ExpandedAsLiteralMap a rr:TriplesMap;
 
 ex:FreelyTranslatedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10099[not(@resource)]]"
   ].
@@ -7760,7 +7767,7 @@ ex:FreelyTranslatedAsLiteralMap a rr:TriplesMap;
 
 ex:InspirationForLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10291[not(@resource)]]"
   ].
@@ -7791,7 +7798,7 @@ ex:InspirationForLiteralMap a rr:TriplesMap;
 
 ex:InspiredByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10290[not(@resource)]]"
   ].
@@ -7822,7 +7829,7 @@ ex:InspiredByLiteralMap a rr:TriplesMap;
 
 ex:ParaphrasedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10166[not(@resource)]]"
   ].
@@ -7853,7 +7860,7 @@ ex:ParaphrasedAsLiteralMap a rr:TriplesMap;
 
 ex:SetToMusicAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10033[not(@resource)]]"
   ].
@@ -7884,7 +7891,7 @@ ex:SetToMusicAsLiteralMap a rr:TriplesMap;
 
 ex:SummarizedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10109[not(@resource)]]"
   ].
@@ -7915,7 +7922,7 @@ ex:SummarizedAsLiteralMap a rr:TriplesMap;
 
 ex:CommemorationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10294[not(@resource)]]"
   ].
@@ -7946,7 +7953,7 @@ ex:CommemorationLiteralMap a rr:TriplesMap;
 
 ex:CommemorationOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10295[not(@resource)]]"
   ].
@@ -7977,7 +7984,7 @@ ex:CommemorationOfLiteralMap a rr:TriplesMap;
 
 ex:AugmentationOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10192[not(@resource)]]"
   ].
@@ -8008,7 +8015,7 @@ ex:AugmentationOfLiteralMap a rr:TriplesMap;
 
 ex:AddendaToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10177[not(@resource)]]"
   ].
@@ -8039,7 +8046,7 @@ ex:AddendaToLiteralMap a rr:TriplesMap;
 
 ex:AppendixToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10151[not(@resource)]]"
   ].
@@ -8070,7 +8077,7 @@ ex:AppendixToLiteralMap a rr:TriplesMap;
 
 ex:AppendixLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10123[not(@resource)]]"
   ].
@@ -8101,7 +8108,7 @@ ex:AppendixLiteralMap a rr:TriplesMap;
 
 ex:CatalogueToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10180[not(@resource)]]"
   ].
@@ -8132,7 +8139,7 @@ ex:CatalogueToLiteralMap a rr:TriplesMap;
 
 ex:ConcordanceToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10181[not(@resource)]]"
   ].
@@ -8163,7 +8170,7 @@ ex:ConcordanceToLiteralMap a rr:TriplesMap;
 
 ex:ErrataToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10149[not(@resource)]]"
   ].
@@ -8194,7 +8201,7 @@ ex:ErrataToLiteralMap a rr:TriplesMap;
 
 ex:GuideToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10150[not(@resource)]]"
   ].
@@ -8225,7 +8232,7 @@ ex:GuideToLiteralMap a rr:TriplesMap;
 
 ex:IndexToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10188[not(@resource)]]"
   ].
@@ -8256,7 +8263,7 @@ ex:IndexToLiteralMap a rr:TriplesMap;
 
 ex:IndexLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10158[not(@resource)]]"
   ].
@@ -8287,7 +8294,7 @@ ex:IndexLiteralMap a rr:TriplesMap;
 
 ex:SupplementToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10154[not(@resource)]]"
   ].
@@ -8318,7 +8325,7 @@ ex:SupplementToLiteralMap a rr:TriplesMap;
 
 ex:AugmentedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10108[not(@resource)]]"
   ].
@@ -8349,7 +8356,7 @@ ex:AugmentedByLiteralMap a rr:TriplesMap;
 
 ex:AddendaLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10112[not(@resource)]]"
   ].
@@ -8380,7 +8387,7 @@ ex:AddendaLiteralMap a rr:TriplesMap;
 
 ex:CatalogueLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10110[not(@resource)]]"
   ].
@@ -8411,7 +8418,7 @@ ex:CatalogueLiteralMap a rr:TriplesMap;
 
 ex:ConcordanceLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10111[not(@resource)]]"
   ].
@@ -8442,7 +8449,7 @@ ex:ConcordanceLiteralMap a rr:TriplesMap;
 
 ex:ErrataLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10092[not(@resource)]]"
   ].
@@ -8473,7 +8480,7 @@ ex:ErrataLiteralMap a rr:TriplesMap;
 
 ex:GuideLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10124[not(@resource)]]"
   ].
@@ -8504,7 +8511,7 @@ ex:GuideLiteralMap a rr:TriplesMap;
 
 ex:SupplementLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10172[not(@resource)]]"
   ].
@@ -8535,7 +8542,7 @@ ex:SupplementLiteralMap a rr:TriplesMap;
 
 ex:ComplementedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10103[not(@resource)]]"
   ].
@@ -8566,7 +8573,7 @@ ex:ComplementedByLiteralMap a rr:TriplesMap;
 
 ex:LyricsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10369[not(@resource)]]"
   ].
@@ -8595,19 +8602,20 @@ ex:LyricsLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:LibrettoLiteralMap a rr:TriplesMap;
+# is libretto for work
+ex:LibrettoMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10030[not(@resource)]]"
   ].
 
-  ex:LibrettoLiteralMap rr:subjectMap [
+  ex:LibrettoMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:LibrettoLiteralMap rr:predicateObjectMap [
+  ex:LibrettoMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10030[not(@resource)][@lang]";
@@ -8618,7 +8626,7 @@ ex:LibrettoLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:LibrettoLiteralMap rr:predicateObjectMap [
+  ex:LibrettoMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10030[not(@resource) and not(@lang)]";
@@ -8626,19 +8634,20 @@ ex:LibrettoLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:IncidentalMusicLiteralMap a rr:TriplesMap;
+# has incidental music work
+ex:IncidentalMusicMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10031[not(@resource)]]"
   ].
 
-  ex:IncidentalMusicLiteralMap rr:subjectMap [
+  ex:IncidentalMusicMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:IncidentalMusicLiteralMap rr:predicateObjectMap [
+  ex:IncidentalMusicMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10031[not(@resource)][@lang]";
@@ -8649,7 +8658,7 @@ ex:IncidentalMusicLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:IncidentalMusicLiteralMap rr:predicateObjectMap [
+  ex:IncidentalMusicMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10031[not(@resource) and not(@lang)]";
@@ -8659,7 +8668,7 @@ ex:IncidentalMusicLiteralMap a rr:TriplesMap;
 
 ex:ScreenplayLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10105[not(@resource)]]"
   ].
@@ -8690,7 +8699,7 @@ ex:ScreenplayLiteralMap a rr:TriplesMap;
 
 ex:ScreenplayForTelevisionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10174[not(@resource)]]"
   ].
@@ -8721,7 +8730,7 @@ ex:ScreenplayForTelevisionLiteralMap a rr:TriplesMap;
 
 ex:ScriptForRadioProgramLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10176[not(@resource)]]"
   ].
@@ -8752,7 +8761,7 @@ ex:ScriptForRadioProgramLiteralMap a rr:TriplesMap;
 
 ex:ScreenplayForVideoLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10175[not(@resource)]]"
   ].
@@ -8772,7 +8781,7 @@ ex:ScreenplayForVideoLiteralMap a rr:TriplesMap;
 
 ex:PrecededByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10156[not(@resource)]]"
   ].
@@ -8803,7 +8812,7 @@ ex:PrecededByLiteralMap a rr:TriplesMap;
 
 ex:AbsorptionInPartLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10225[not(@resource)]]"
   ].
@@ -8834,7 +8843,7 @@ ex:AbsorptionInPartLiteralMap a rr:TriplesMap;
 
 ex:AbsorptionLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10224[not(@resource)]]"
   ].
@@ -8865,7 +8874,7 @@ ex:AbsorptionLiteralMap a rr:TriplesMap;
 
 ex:ContinuationLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10226[not(@resource)]]"
   ].
@@ -8896,7 +8905,7 @@ ex:ContinuationLiteralMap a rr:TriplesMap;
 
 ex:MergerLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10213[not(@resource)]]"
   ].
@@ -8927,7 +8936,7 @@ ex:MergerLiteralMap a rr:TriplesMap;
 
 ex:PrequelLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10122[not(@resource)]]"
   ].
@@ -8958,7 +8967,7 @@ ex:PrequelLiteralMap a rr:TriplesMap;
 
 ex:ReplacementInPartLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10206[not(@resource)]]"
   ].
@@ -8989,7 +8998,7 @@ ex:ReplacementInPartLiteralMap a rr:TriplesMap;
 
 ex:ReplacementLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10207[not(@resource)]]"
   ].
@@ -9020,7 +9029,7 @@ ex:ReplacementLiteralMap a rr:TriplesMap;
 
 ex:SeparatedFromLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10169[not(@resource)]]"
   ].
@@ -9051,7 +9060,7 @@ ex:SeparatedFromLiteralMap a rr:TriplesMap;
 
 ex:SplitFromLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10168[not(@resource)]]"
   ].
@@ -9080,19 +9089,20 @@ ex:SplitFromLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:SequelLiteralMap a rr:TriplesMap;
+# has sequel work
+ex:SequelMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10020[not(@resource)]]"
   ].
 
-  ex:SequelLiteralMap rr:subjectMap [
+  ex:SequelMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:SequelLiteralMap rr:predicateObjectMap [
+  ex:SequelMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10020[not(@resource)][@lang]";
@@ -9103,7 +9113,7 @@ ex:SequelLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:SequelLiteralMap rr:predicateObjectMap [
+  ex:SequelMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10020[not(@resource) and not(@lang)]";
@@ -9113,7 +9123,7 @@ ex:SequelLiteralMap a rr:TriplesMap;
 
 ex:SucceededByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10170[not(@resource)]]"
   ].
@@ -9144,7 +9154,7 @@ ex:SucceededByLiteralMap a rr:TriplesMap;
 
 ex:AbsorbedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10145[not(@resource)]]"
   ].
@@ -9175,7 +9185,7 @@ ex:AbsorbedByLiteralMap a rr:TriplesMap;
 
 ex:AbsorbedInPartByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10146[not(@resource)]]"
   ].
@@ -9206,7 +9216,7 @@ ex:AbsorbedInPartByLiteralMap a rr:TriplesMap;
 
 ex:ContinuedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10191[not(@resource)]]"
   ].
@@ -9235,19 +9245,20 @@ ex:ContinuedByLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReplacedByLiteralMap a rr:TriplesMap;
+# is replaced by work
+ex:ReplacedByMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10022[not(@resource)]]"
   ].
 
-  ex:ReplacedByLiteralMap rr:subjectMap [
+  ex:ReplacedByMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:ReplacedByLiteralMap rr:predicateObjectMap [
+  ex:ReplacedByMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10022[not(@resource)][@lang]";
@@ -9258,7 +9269,7 @@ ex:ReplacedByLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:ReplacedByLiteralMap rr:predicateObjectMap [
+  ex:ReplacedByMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10022[not(@resource) and not(@lang)]";
@@ -9266,19 +9277,20 @@ ex:ReplacedByLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ReplacedInPartByLiteralMap a rr:TriplesMap;
+# is replaced in part by work
+ex:ReplacedInPartByMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10021[not(@resource)]]"
   ].
 
-  ex:ReplacedInPartByLiteralMap rr:subjectMap [
+  ex:ReplacedInPartByMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:ReplacedInPartByLiteralMap rr:predicateObjectMap [
+  ex:ReplacedInPartByMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10021[not(@resource)][@lang]";
@@ -9289,7 +9301,7 @@ ex:ReplacedInPartByLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:ReplacedInPartByLiteralMap rr:predicateObjectMap [
+  ex:ReplacedInPartByMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10021[not(@resource) and not(@lang)]";
@@ -9299,7 +9311,7 @@ ex:ReplacedInPartByLiteralMap a rr:TriplesMap;
 
 ex:SplitIntoLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10211[not(@resource)]]"
   ].
@@ -9330,7 +9342,7 @@ ex:SplitIntoLiteralMap a rr:TriplesMap;
 
 ex:ParodiedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10144[not(@resource)]]"
   ].
@@ -9361,7 +9373,7 @@ ex:ParodiedAsLiteralMap a rr:TriplesMap;
 
 ex:SpecialIssueOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10411[not(@resource)]]"
   ].
@@ -9392,7 +9404,7 @@ ex:SpecialIssueOfLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10140[not(@resource)]]"
   ].
@@ -9423,7 +9435,7 @@ ex:AnalysisOfWorkSubjectLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfWorkRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10140[not(@resource)]]"
   ].
@@ -9454,7 +9466,7 @@ ex:AnalysisOfWorkRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10187[not(@resource)]]"
   ].
@@ -9485,7 +9497,7 @@ ex:CommentaryOnWorkSubjectLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnWorkRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10187[not(@resource)]]"
   ].
@@ -9516,7 +9528,7 @@ ex:CommentaryOnWorkRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10182[not(@resource)]]"
   ].
@@ -9547,7 +9559,7 @@ ex:CritiqueOfWorkSubjectLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfWorkRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10182[not(@resource)]]"
   ].
@@ -9578,7 +9590,7 @@ ex:CritiqueOfWorkRelatedToLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10153[not(@resource)]]"
   ].
@@ -9609,7 +9621,7 @@ ex:EvaluationOfWorkSubjectLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfWorkRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10153[not(@resource)]]"
   ].
@@ -9640,7 +9652,7 @@ ex:EvaluationOfWorkRelatedToLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfWorkSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10178[not(@resource)]]"
   ].
@@ -9671,7 +9683,7 @@ ex:ReviewOfWorkSubjectLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfWorkRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10178[not(@resource)]]"
   ].
@@ -9702,7 +9714,7 @@ ex:ReviewOfWorkRelatedToLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10278[not(@resource)]]"
   ].
@@ -9733,7 +9745,7 @@ ex:AnalysisOfExpressionSubjectLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfExpressionRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10278[not(@resource)]]"
   ].
@@ -9764,7 +9776,7 @@ ex:AnalysisOfExpressionRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10282[not(@resource)]]"
   ].
@@ -9795,7 +9807,7 @@ ex:CommentaryOnExpressionSubjectLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnExpressionRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10282[not(@resource)]]"
   ].
@@ -9826,7 +9838,7 @@ ex:CommentaryOnExpressionRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10281[not(@resource)]]"
   ].
@@ -9857,7 +9869,7 @@ ex:CritiqueOfExpressionSubjectLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfExpressionRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10281[not(@resource)]]"
   ].
@@ -9888,7 +9900,7 @@ ex:CritiqueOfExpressionRelatedToLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10279[not(@resource)]]"
   ].
@@ -9919,7 +9931,7 @@ ex:EvaluationOfExpressionSubjectLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfExpressionRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10279[not(@resource)]]"
   ].
@@ -9950,7 +9962,7 @@ ex:EvaluationOfExpressionRelatedToLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfExpressionSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10280[not(@resource)]]"
   ].
@@ -9981,7 +9993,7 @@ ex:ReviewOfExpressionSubjectLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfExpressionRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10280[not(@resource)]]"
   ].
@@ -10012,7 +10024,7 @@ ex:ReviewOfExpressionRelatedToLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10272[not(@resource)]]"
   ].
@@ -10043,7 +10055,7 @@ ex:AnalysisOfManifestationSubjectLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfManifestationRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10272[not(@resource)]]"
   ].
@@ -10074,7 +10086,7 @@ ex:AnalysisOfManifestationRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10276[not(@resource)]]"
   ].
@@ -10105,7 +10117,7 @@ ex:CommentaryOnManifestationSubjectLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnManifestationRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10276[not(@resource)]]"
   ].
@@ -10136,7 +10148,7 @@ ex:CommentaryOnManifestationRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10275[not(@resource)]]"
   ].
@@ -10167,7 +10179,7 @@ ex:CritiqueOfManifestationSubjectLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfManifestationRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10275[not(@resource)]]"
   ].
@@ -10198,7 +10210,7 @@ ex:CritiqueOfManifestationRelatedToLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10273[not(@resource)]]"
   ].
@@ -10229,7 +10241,7 @@ ex:EvaluationOfManifestationSubjectLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfManifestationRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10273[not(@resource)]]"
   ].
@@ -10260,7 +10272,7 @@ ex:EvaluationOfManifestationRelatedToLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfManifestationSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10274[not(@resource)]]"
   ].
@@ -10291,7 +10303,7 @@ ex:ReviewOfManifestationSubjectLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfManifestationRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10274[not(@resource)]]"
   ].
@@ -10322,7 +10334,7 @@ ex:ReviewOfManifestationRelatedToLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10266[not(@resource)]]"
   ].
@@ -10353,7 +10365,7 @@ ex:AnalysisOfItemSubjectLiteralMap a rr:TriplesMap;
 
 ex:AnalysisOfItemRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10266[not(@resource)]]"
   ].
@@ -10384,7 +10396,7 @@ ex:AnalysisOfItemRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10270[not(@resource)]]"
   ].
@@ -10415,7 +10427,7 @@ ex:CommentaryOnItemSubjectLiteralMap a rr:TriplesMap;
 
 ex:CommentaryOnItemRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10270[not(@resource)]]"
   ].
@@ -10446,7 +10458,7 @@ ex:CommentaryOnItemRelatedToLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10269[not(@resource)]]"
   ].
@@ -10477,7 +10489,7 @@ ex:CritiqueOfItemSubjectLiteralMap a rr:TriplesMap;
 
 ex:CritiqueOfItemRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10269[not(@resource)]]"
   ].
@@ -10508,7 +10520,7 @@ ex:CritiqueOfItemRelatedToLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10267[not(@resource)]]"
   ].
@@ -10539,7 +10551,7 @@ ex:EvaluationOfItemSubjectLiteralMap a rr:TriplesMap;
 
 ex:EvaluationOfItemRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10267[not(@resource)]]"
   ].
@@ -10570,7 +10582,7 @@ ex:EvaluationOfItemRelatedToLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfItemSubjectLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10268[not(@resource)]]"
   ].
@@ -10601,7 +10613,7 @@ ex:ReviewOfItemSubjectLiteralMap a rr:TriplesMap;
 
 ex:ReviewOfItemRelatedToLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10268[not(@resource)]]"
   ].
@@ -10630,19 +10642,20 @@ ex:ReviewOfItemRelatedToLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:PartOfLiteralMap a rr:TriplesMap;
+# is part of work
+ex:PartOfMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/work/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P10019[not(@resource)]]"
   ].
 
-  ex:PartOfLiteralMap rr:subjectMap [
+  ex:PartOfMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Work
   ].
 
-  ex:PartOfLiteralMap rr:predicateObjectMap [
+  ex:PartOfMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10019[not(@resource)][@lang]";
@@ -10653,7 +10666,7 @@ ex:PartOfLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:PartOfLiteralMap rr:predicateObjectMap [
+  ex:PartOfMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P10019[not(@resource) and not(@lang)]";
