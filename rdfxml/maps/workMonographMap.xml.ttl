@@ -11,6 +11,7 @@
 @prefix rdam: <http://rdaregistry.info/Elements/m/>.
 @prefix rdau: <http://rdaregistry.info/Elements/u/>.
 @prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdax: <https://doi.org/10.6069/uwlib.55.d.4#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
@@ -19,7 +20,6 @@
 @prefix schema: <http://schema.org/>.
 @prefix sin: <http://sinopia.io/vocabulary/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix uwx: <https://doi.org/10.6069/uwlib.55.d.4#>.
 
 ex:WorkMap a rr:TriplesMap;
   rml:logicalSource [
@@ -654,13 +654,6 @@ ex:WorkMap a rr:TriplesMap;
     rr:predicate bf:contribution;
     rr:objectMap [
       rr:parentTriplesMap ex:JurisdictionGovernedMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:JurisdictionGovernedIRIMap
     ]
   ].
 
@@ -2847,7 +2840,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10001'][catalogerID]"
+    rml:iterator "/RDF/Description[catalogerID]"
   ].
 
   ex:AdminMetadataMap rr:subjectMap [
@@ -3307,7 +3300,7 @@ ex:AuthorMap a rr:TriplesMap;
     ]
   ].
 
-  vex:AuthorMap rr:predicateObjectMap [
+  ex:AuthorMap rr:predicateObjectMap [
     rr:predicate bf:agent;
     rr:objectMap [
       rml:reference "P10061/@resource";

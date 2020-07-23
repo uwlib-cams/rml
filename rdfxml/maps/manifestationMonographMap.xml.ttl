@@ -40,6 +40,17 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has expression manifested (literal)
+  # last updated: 2020-07-23
+  ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
+    rr:predicate bf:instanceOf;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ExpressionManifestedMap
+    ]
+  ].
+
+  # has expression manifested (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:instanceOf;
     rr:objectMap [
@@ -48,6 +59,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
@@ -55,6 +68,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -66,6 +81,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -74,32 +91,17 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has variant title of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
-      rr:parentTriplesMap ex:VariantTitleLiteralMap
+      rr:parentTriplesMap ex:VariantTitleMap
     ]
   ].
 
-  ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[@lang]";
-      rr:termType rr:Literal;
-      rml:languageMap [
-        rml:reference "P30128/@lang"
-      ]
-    ]
-  ].
-
-  ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[not(@lang)]";
-      rr:termType rr:Literal
-    ]
-  ].
-
+  # has statement of responsibility relating to the title proper (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -111,6 +113,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has statement of responsibility relating to the title proper (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -119,6 +123,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -130,6 +136,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -138,6 +146,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -145,6 +155,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -179,6 +191,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has copyright date
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:copyrightDate;
     rr:objectMap [
@@ -187,6 +201,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has extent of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:extent;
     rr:objectMap [
@@ -194,6 +210,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has note on manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:note;
     rr:objectMap [
@@ -201,6 +219,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -212,6 +232,8 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -306,13 +328,17 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has mode of issuance (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
-      rr:parentTriplesMap ex:ModeOfIssuanceLiteralMap
+      rr:parentTriplesMap ex:ModeOfIssuanceMap
     ]
   ].
 
+  # has mode of issuance (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
@@ -321,13 +347,17 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has media type (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
-      rr:parentTriplesMap ex:MediaTypeLiteralMap
+      rr:parentTriplesMap ex:MediaTypeMap
     ]
   ].
 
+  # has media type (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
@@ -336,13 +366,17 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
     ]
   ].
 
+  # has carrier type (literal)
+  # last updated: 2020-07-22
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
-      rr:parentTriplesMap ex:CarrierTypeLiteralMap
+      rr:parentTriplesMap ex:CarrierTypeMap
     ]
   ].
 
+  # has carrier type (IRI)
+  # last updated: 2020-07-22
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
@@ -570,6 +604,7 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
   ].
 
   # has base material (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
@@ -579,15 +614,16 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
   ].
 
   # has base material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:BaseMaterialLiteralMap
+      rr:parentTriplesMap ex:BaseMaterialMap
     ]
   ].
 
   # has applied material (IRI)
-
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
@@ -597,10 +633,11 @@ ex:ManifestationPrintPreAprilMap a rr:TriplesMap;
   ].
 
   # has applied material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintPreAprilMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppliedMaterialLiteralMap
+      rr:parentTriplesMap ex:AppliedMaterialMap
     ]
   ].
 
@@ -1253,6 +1290,17 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has expression manifested (literal)
+  # last updated: 2020-07-23
+  ex:ManifestationPrintMap rr:predicateObjectMap [
+    rr:predicate bf:instanceOf;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ExpressionManifestedMap
+    ]
+  ].
+
+  # has expression manifested (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:instanceOf;
     rr:objectMap [
@@ -1261,6 +1309,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
@@ -1268,6 +1318,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -1279,6 +1331,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -1287,32 +1341,17 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has variant title of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
-      rr:parentTriplesMap ex:VariantTitleLiteralMap
+      rr:parentTriplesMap ex:VariantTitleMap
     ]
   ].
 
-  ex:ManifestationPrintMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[@lang]";
-      rr:termType rr:Literal;
-      rml:languageMap [
-        rml:reference "P30128/@lang"
-      ]
-    ]
-  ].
-
-  ex:ManifestationPrintMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[not(@lang)]";
-      rr:termType rr:Literal
-    ]
-  ].
-
+  # has statement of responsibility relating to the title proper (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -1324,6 +1363,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has statement of responsibility relating to the title proper (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -1332,6 +1373,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -1343,6 +1386,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -1351,6 +1396,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -1358,6 +1405,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -1392,6 +1441,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has copyright date
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:copyrightDate;
     rr:objectMap [
@@ -1400,6 +1451,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has extent of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:extent;
     rr:objectMap [
@@ -1407,6 +1460,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has note on manifestation
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:note;
     rr:objectMap [
@@ -1414,6 +1469,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -1425,6 +1482,8 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -1519,13 +1578,17 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has mode of issuance (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
-      rr:parentTriplesMap ex:ModeOfIssuanceLiteralMap
+      rr:parentTriplesMap ex:ModeOfIssuanceMap
     ]
   ].
 
+  # has mode of issuance (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
@@ -1534,13 +1597,17 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has media type (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
-      rr:parentTriplesMap ex:MediaTypeLiteralMap
+      rr:parentTriplesMap ex:MediaTypeMap
     ]
   ].
 
+  # has media type (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
@@ -1549,13 +1616,17 @@ ex:ManifestationPrintMap a rr:TriplesMap;
     ]
   ].
 
+  # has carrier type (literal)
+  # last updated: 2020-07-22
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
-      rr:parentTriplesMap ex:CarrierTypeLiteralMap
+      rr:parentTriplesMap ex:CarrierTypeMap
     ]
   ].
 
+  # has carrier type (IRI)
+  # last updated: 2020-07-22
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
@@ -1783,6 +1854,7 @@ ex:ManifestationPrintMap a rr:TriplesMap;
   ].
 
   # has base material (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
@@ -1792,15 +1864,16 @@ ex:ManifestationPrintMap a rr:TriplesMap;
   ].
 
   # has base material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:BaseMaterialLiteralMap
+      rr:parentTriplesMap ex:BaseMaterialMap
     ]
   ].
 
   # has applied material (IRI)
-
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
@@ -1810,10 +1883,11 @@ ex:ManifestationPrintMap a rr:TriplesMap;
   ].
 
   # has applied material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationPrintMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppliedMaterialLiteralMap
+      rr:parentTriplesMap ex:AppliedMaterialMap
     ]
   ].
 
@@ -2466,6 +2540,17 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has expression manifested (literal)
+  # last updated: 2020-07-23
+  ex:ManifestationElectronicMap rr:predicateObjectMap [
+    rr:predicate bf:instanceOf;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ExpressionManifestedMap
+    ]
+  ].
+
+  # has expression manifested (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:instanceOf;
     rr:objectMap [
@@ -2474,6 +2559,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
@@ -2481,6 +2568,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -2492,6 +2581,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -2500,32 +2591,17 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has variant title of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
-      rr:parentTriplesMap ex:VariantTitleLiteralMap
+      rr:parentTriplesMap ex:VariantTitleMap
     ]
   ].
 
-  ex:ManifestationElectronicMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[@lang]";
-      rr:termType rr:Literal;
-      rml:languageMap [
-        rml:reference "P30128/@lang"
-      ]
-    ]
-  ].
-
-  ex:ManifestationElectronicMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[not(@lang)]";
-      rr:termType rr:Literal
-    ]
-  ].
-
+  # has statement of responsibility relating to the title proper (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -2537,6 +2613,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has statement of responsibility relating to the title proper (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -2545,6 +2623,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -2556,6 +2636,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -2564,6 +2646,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (literal)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -2571,6 +2655,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -2605,6 +2691,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has copyright date
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:copyrightDate;
     rr:objectMap [
@@ -2613,6 +2701,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has extent of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:extent;
     rr:objectMap [
@@ -2620,6 +2710,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has note on manifestation
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:note;
     rr:objectMap [
@@ -2627,6 +2719,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -2638,6 +2732,8 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -2732,13 +2828,17 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has mode of issuance (literal)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
-      rr:parentTriplesMap ex:ModeOfIssuanceLiteralMap
+      rr:parentTriplesMap ex:ModeOfIssuanceMap
     ]
   ].
 
+  # has mode of issuance (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
@@ -2747,13 +2847,17 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has media type (literal)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
-      rr:parentTriplesMap ex:MediaTypeLiteralMap
+      rr:parentTriplesMap ex:MediaTypeMap
     ]
   ].
 
+  # has media type (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
@@ -2762,13 +2866,17 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
     ]
   ].
 
+  # has carrier type (literal)
+  # last updated: 2020-07-22
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
-      rr:parentTriplesMap ex:CarrierTypeLiteralMap
+      rr:parentTriplesMap ex:CarrierTypeMap
     ]
   ].
 
+  # has carrier type (IRI)
+  # last updated: 2020-07-22
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
@@ -2996,6 +3104,7 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
   ].
 
   # has base material (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
@@ -3005,15 +3114,16 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
   ].
 
   # has base material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:BaseMaterialLiteralMap
+      rr:parentTriplesMap ex:BaseMaterialMap
     ]
   ].
 
   # has applied material (IRI)
-
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
@@ -3023,10 +3133,11 @@ ex:ManifestationElectronicMap a rr:TriplesMap;
   ].
 
   # has applied material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationElectronicMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppliedMaterialLiteralMap
+      rr:parentTriplesMap ex:AppliedMaterialMap
     ]
   ].
 
@@ -3679,6 +3790,17 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has expression manifested (literal)
+  # last updated: 2020-07-23
+  ex:ManifestationOtherMap rr:predicateObjectMap [
+    rr:predicate bf:instanceOf;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ExpressionManifestedMap
+    ]
+  ].
+
+  # has expression manifested (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:instanceOf;
     rr:objectMap [
@@ -3687,6 +3809,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
@@ -3694,6 +3818,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -3705,6 +3831,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has title proper (label) (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
@@ -3713,32 +3841,17 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has variant title of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:title;
     rr:objectMap [
-      rr:parentTriplesMap ex:VariantTitleLiteralMap
+      rr:parentTriplesMap ex:VariantTitleMap
     ]
   ].
 
-  ex:ManifestationOtherMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[@lang]";
-      rr:termType rr:Literal;
-      rml:languageMap [
-        rml:reference "P30128/@lang"
-      ]
-    ]
-  ].
-
-  ex:ManifestationOtherMap rr:predicateObjectMap [
-    rr:predicate rdfs:label;
-    rr:objectMap [
-      rml:reference "P30128/@resource[not(@lang)]";
-      rr:termType rr:Literal
-    ]
-  ].
-
+  # has statement of responsibility relating to the title proper (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -3750,6 +3863,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has statement of responsibility relating to the title proper (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:responsibilityStatement;
     rr:objectMap [
@@ -3758,6 +3873,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -3769,6 +3886,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has publication statement (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:provisionActivityStatement;
     rr:objectMap [
@@ -3777,6 +3896,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (literal)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -3784,6 +3905,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has identifier for manifestation (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -3818,6 +3941,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has copyright date
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:copyrightDate;
     rr:objectMap [
@@ -3826,6 +3951,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has extent of manifestation
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:extent;
     rr:objectMap [
@@ -3833,6 +3960,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has note on manifestation
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:note;
     rr:objectMap [
@@ -3840,6 +3969,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (with language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -3851,6 +3982,8 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has dimensions (w/o language tag)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:dimensions;
     rr:objectMap [
@@ -3945,13 +4078,17 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has mode of issuance (literal)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
-      rr:parentTriplesMap ex:ModeOfIssuanceLiteralMap
+      rr:parentTriplesMap ex:ModeOfIssuanceMap
     ]
   ].
 
+  # has mode of issuance (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:issuance;
     rr:objectMap [
@@ -3960,13 +4097,17 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has media type (literal)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
-      rr:parentTriplesMap ex:MediaTypeLiteralMap
+      rr:parentTriplesMap ex:MediaTypeMap
     ]
   ].
 
+  # has media type (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:media;
     rr:objectMap [
@@ -3975,13 +4116,17 @@ ex:ManifestationOtherMap a rr:TriplesMap;
     ]
   ].
 
+  # has carrier type (literal)
+  # last updated: 2020-07-22
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
-      rr:parentTriplesMap ex:CarrierTypeLiteralMap
+      rr:parentTriplesMap ex:CarrierTypeMap
     ]
   ].
 
+  # has carrier type (IRI)
+  # last updated: 2020-07-22
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:carrier;
     rr:objectMap [
@@ -4209,6 +4354,7 @@ ex:ManifestationOtherMap a rr:TriplesMap;
   ].
 
   # has base material (IRI)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
@@ -4218,15 +4364,16 @@ ex:ManifestationOtherMap a rr:TriplesMap;
   ].
 
   # has base material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:baseMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:BaseMaterialLiteralMap
+      rr:parentTriplesMap ex:BaseMaterialMap
     ]
   ].
 
   # has applied material (IRI)
-
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
@@ -4236,10 +4383,11 @@ ex:ManifestationOtherMap a rr:TriplesMap;
   ].
 
   # has applied material (literal)
+  # last updated: 2020-07-23
   ex:ManifestationOtherMap rr:predicateObjectMap [
     rr:predicate bf:appliedMaterial;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppliedMaterialLiteralMap
+      rr:parentTriplesMap ex:AppliedMaterialMap
     ]
   ].
 
@@ -4881,7 +5029,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007'][catalogerID]"
+    rml:iterator "/RDF/Description[catalogerID]"
   ].
 
   ex:AdminMetadataMap rr:subjectMap [
@@ -4971,11 +5119,12 @@ ex:AdminMetadataMap a rr:TriplesMap;
       ]
     ].
 
+# has title proper
 ex:TitleProperMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P30156[not(@resource)]]"
+    rml:iterator "/RDF/Description[P30156]"
   ].
 
   ex:TitleProperMap rr:subjectMap [
@@ -4986,7 +5135,7 @@ ex:TitleProperMap a rr:TriplesMap;
   ex:TitleProperMap rr:predicateObjectMap [
     rr:predicate bf:mainTitle;
     rr:objectMap [
-      rml:reference "P30156[not(@resource)][@lang]";
+      rml:reference "P30156[@lang]";
       rr:termType rr:Literal;
       rml:languageMap [
         rml:reference "P30156/@lang"
@@ -4997,11 +5146,13 @@ ex:TitleProperMap a rr:TriplesMap;
   ex:TitleProperMap rr:predicateObjectMap [
     rr:predicate bf:mainTitle;
     rr:objectMap [
-      rml:reference "P30156[not(@resource) and not(@lang)]";
+      rml:reference "P30156[not(@lang)]";
       rr:termType rr:Literal
     ]
   ].
 
+  # has other title information (literal without language map)
+  # last updated: 2020-07-23
   ex:TitleProperMap rr:predicateObjectMap [
     rr:predicate bf:subtitle;
     rr:objectMap [
@@ -5013,6 +5164,8 @@ ex:TitleProperMap a rr:TriplesMap;
     ]
   ].
 
+  # has other title information (literal w/o language tag)
+  # last updated: 2020-07-23
   ex:TitleProperMap rr:predicateObjectMap [
     rr:predicate bf:subtitle;
     rr:objectMap [
@@ -5021,19 +5174,20 @@ ex:TitleProperMap a rr:TriplesMap;
     ]
   ].
 
-ex:VariantTitleLiteralMap a rr:TriplesMap;
+# has variant title of manifestation
+ex:VariantTitleMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P30128[not(@resource)]]"
+    rml:iterator "/RDF/Description[P30128]"
   ].
 
-  ex:VariantTitleLiteralMap rr:subjectMap [
+  ex:VariantTitleMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:VariantTitle
   ].
 
-  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+  ex:VariantTitleMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30128[not(@resource)][@lang]";
@@ -5044,7 +5198,7 @@ ex:VariantTitleLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+  ex:VariantTitleMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30128[not(@resource) and not(@lang)]";
@@ -5052,7 +5206,7 @@ ex:VariantTitleLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+  ex:VariantTitleMap rr:predicateObjectMap [
     rr:predicate bf:mainTitle;
     rr:objectMap [
       rml:reference "P30128[not(@resource)][@lang]";
@@ -5063,7 +5217,7 @@ ex:VariantTitleLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:VariantTitleLiteralMap rr:predicateObjectMap [
+  ex:VariantTitleMap rr:predicateObjectMap [
     rr:predicate bf:mainTitle;
     rr:objectMap [
       rml:reference "P30128[not(@resource) and not(@lang)]";
@@ -5075,7 +5229,7 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P30088 or P30176 or P30092 or P30095]"
+    rml:iterator "/RDF/Description[P30088 or P30176 or P30092 or P30095 or P30011 or P30083]"
   ].
 
   ex:ProvisionActivityPublicationMap rr:subjectMap [
@@ -5090,6 +5244,8 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
     ]
   ].
 
+  # has place of publication (IRI)
+  # last updated: 2020-07-23
   ex:ProvisionActivityPublicationMap rr:predicateObjectMap [
     rr:predicate bf:place;
     rr:objectMap [
@@ -5101,18 +5257,12 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
   ex:ProvisionActivityPublicationMap rr:predicateObjectMap [
     rr:predicate bf:agent;
     rr:objectMap [
-      rr:parentTriplesMap ex:NameOfPublisherLiteralMap
+      rr:parentTriplesMap ex:NameOfPublisherMap
     ]
   ].
 
-  ex:ProvisionActivityPublicationMap rr:predicateObjectMap [
-    rr:predicate bf:agent;
-    rr:objectMap [
-      rml:reference "P30176/@resource";
-      rr:termType rr:IRI
-    ]
-  ].
-
+  # has publisher agent (IRI)
+  # last updated: 2020-07-23
   ex:ProvisionActivityPublicationMap rr:predicateObjectMap [
     rr:predicate bf:agent;
     rr:objectMap [
@@ -5121,7 +5271,8 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
     ]
   ].
 
-
+  # has date of publication
+  # last updated: 2020-07-23
   ex:ProvisionActivityPublicationMap rr:predicateObjectMap [
     rr:predicate bf:date;
     rr:objectMap [
@@ -5142,6 +5293,7 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       rr:class bf:Place
     ].
 
+    # has place of publication (literal with language tag)
     ex:PlaceOfPublicationLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
@@ -5153,6 +5305,7 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       ]
     ].
 
+    # has place of publication (literal w/o language tag)
     ex:PlaceOfPublicationLiteralMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
@@ -5182,22 +5335,24 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       ]
     ].
 
-  ex:NameOfPublisherLiteralMap a rr:TriplesMap;
+  ex:NameOfPublisherMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P30176[not(@resource)] or P30083[not(@resource)] or P30095[not(@resource)]]"
+      rml:iterator "/RDF/Description[P30176 or P30083[not(@resource)] or P30095[not(@resource)]]"
     ].
 
-    ex:NameOfPublisherLiteralMap rr:subjectMap [
+    ex:NameOfPublisherMap rr:subjectMap [
       rr:termType rr:BlankNode;
       rr:class bf:Agent
     ].
 
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    # has name of publisher (with language tag)
+    # last updated: 2020-07-23
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P30176[not(@resource)][@lang]";
+        rml:reference "P30176[@lang]";
         rr:termType rr:Literal;
         rml:languageMap [
           rml:reference "P30176/@lang"
@@ -5205,7 +5360,9 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       ]
     ].
 
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    # has name of publisher (w/o language tag)
+    # last updated: 2020-07-23
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
         rml:reference "P30176[not(@resource) and not(@lang)]";
@@ -5213,7 +5370,8 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       ]
     ].
 
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    # has publisher agent (literal with languge tag)
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
         rml:reference "P30083[not(@resource)][@lang]";
@@ -5224,7 +5382,8 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
       ]
     ].
 
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    # has publisher agent (literal w/o language tag)
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
         rml:reference "P30083[not(@resource) and not(@lang)]";
@@ -5233,7 +5392,7 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
     ].
 
     # has parallel name of publisher (literal w language tag)
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
         rml:reference "P30095[@lang]";
@@ -5245,7 +5404,7 @@ ex:ProvisionActivityPublicationMap a rr:TriplesMap;
     ].
 
     # has parallel name of publisher (literal w/o language tag)
-    ex:NameOfPublisherLiteralMap rr:predicateObjectMap [
+    ex:NameOfPublisherMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
         rml:reference "P30095[not(@lang)]";
@@ -5801,6 +5960,7 @@ ex:ProvisionActivityManufactureMap a rr:TriplesMap;
       ]
     ].
 
+# has identifier for manifestation
 ex:IdentifiedByLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
@@ -5832,6 +5992,7 @@ ex:IdentifiedByLiteralMap a rr:TriplesMap;
     ]
   ].
 
+# has extent of manifestation
 ex:ExtentMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
@@ -5863,6 +6024,7 @@ ex:ExtentMap a rr:TriplesMap;
     ]
   ].
 
+# has note on manifestation
 ex:NoteMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
@@ -6084,19 +6246,20 @@ ex:ParallelTitleMap a rr:TriplesMap;
     ]
   ].
 
-ex:ModeOfIssuanceLiteralMap a rr:TriplesMap;
+# has mode of issuance
+ex:ModeOfIssuanceMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P30003[not(@resource)]]"
   ].
 
-  ex:ModeOfIssuanceLiteralMap rr:subjectMap [
+  ex:ModeOfIssuanceMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Issuance
   ].
 
-  ex:ModeOfIssuanceLiteralMap rr:predicateObjectMap [
+  ex:ModeOfIssuanceMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30003[not(@resource)][@lang]";
@@ -6107,7 +6270,7 @@ ex:ModeOfIssuanceLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:ModeOfIssuanceLiteralMap rr:predicateObjectMap [
+  ex:ModeOfIssuanceMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30003[not(@resource) and not(@lang)]";
@@ -6115,19 +6278,20 @@ ex:ModeOfIssuanceLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:MediaTypeLiteralMap a rr:TriplesMap;
+# has media type
+ex:MediaTypeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P30002[not(@resource)]]"
   ].
 
-  ex:MediaTypeLiteralMap rr:subjectMap [
+  ex:MediaTypeMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Media
   ].
 
-  ex:MediaTypeLiteralMap rr:predicateObjectMap [
+  ex:MediaTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30002[not(@resource)][@lang]";
@@ -6138,7 +6302,7 @@ ex:MediaTypeLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:MediaTypeLiteralMap rr:predicateObjectMap [
+  ex:MediaTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30002[not(@resource) and not(@lang)]";
@@ -6146,19 +6310,20 @@ ex:MediaTypeLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:CarrierTypeLiteralMap a rr:TriplesMap;
+# has carrier type
+ex:CarrierTypeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P30001[not(@resource)]]"
   ].
 
-  ex:CarrierTypeLiteralMap rr:subjectMap [
+  ex:CarrierTypeMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Carrier
   ].
 
-  ex:CarrierTypeLiteralMap rr:predicateObjectMap [
+  ex:CarrierTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30001[not(@resource)][@lang]";
@@ -6169,7 +6334,7 @@ ex:CarrierTypeLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:CarrierTypeLiteralMap rr:predicateObjectMap [
+  ex:CarrierTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30001[not(@resource) and not(@lang)]";
@@ -6240,19 +6405,21 @@ ex:IntendedAudienceLiteralMap a rr:TriplesMap;
       ]
     ].
 
-ex:BaseMaterialLiteralMap a rr:TriplesMap;
+# has base material
+# last updated: 2020-07-23
+ex:BaseMaterialMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P30208[not(@resource)]]"
   ].
 
-  ex:BaseMaterialLiteralMap rr:subjectMap [
+  ex:BaseMaterialMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:BaseMaterial
   ].
 
-  ex:BaseMaterialLiteralMap rr:predicateObjectMap [
+  ex:BaseMaterialMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30208[not(@resource)][@lang]";
@@ -6263,7 +6430,7 @@ ex:BaseMaterialLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:BaseMaterialLiteralMap rr:predicateObjectMap [
+  ex:BaseMaterialMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30208[not(@resource) and not(@lang)]";
@@ -6271,19 +6438,20 @@ ex:BaseMaterialLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:AppliedMaterialLiteralMap a rr:TriplesMap;
+# has applied material
+ex:AppliedMaterialMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P30084[not(@resource)]]"
   ].
 
-  ex:AppliedMaterialLiteralMap rr:subjectMap [
+  ex:AppliedMaterialMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:AppliedMaterial
   ].
 
-  ex:AppliedMaterialLiteralMap rr:predicateObjectMap [
+  ex:AppliedMaterialMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30084[not(@resource)][@lang]";
@@ -6294,7 +6462,7 @@ ex:AppliedMaterialLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:AppliedMaterialLiteralMap rr:predicateObjectMap [
+  ex:AppliedMaterialMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30084[not(@resource) and not(@lang)]";
@@ -8729,6 +8897,38 @@ ex:PreservationFacsimileOfItemLiteralMap a rr:TriplesMap;
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P30301[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+# has expression manifested
+ex:ExpressionManifestedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/manifestation/2020_7_17/9849909f-60f8-4b89-81a3-a9c1d686c23e.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P30139[not(@resource)]]"
+  ].
+
+  ex:ExpressionManifestedMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Work
+  ].
+
+  ex:ExpressionManifestedMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30139[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P30139/@lang"
+      ]
+    ]
+  ].
+
+  ex:ExpressionManifestedMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P30139[not(@resource) and not(@lang])";
       rr:termType rr:Literal
     ]
   ].

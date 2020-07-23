@@ -40,6 +40,8 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has authorized access point for expression
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:identifiedBy;
     rr:objectMap [
@@ -61,6 +63,8 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has colour content
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:colorContent;
     rr:objectMap [
@@ -69,13 +73,17 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has language of expression (literal)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:language;
     rr:objectMap [
-      rr:parentTriplesMap ex:LanguageLiteralMap
+      rr:parentTriplesMap ex:LanguageMap
     ]
   ].
 
+  # has language of expression (IRI)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:language;
     rr:objectMap [
@@ -84,13 +92,17 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has script (literal)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:notation;
     rr:objectMap [
-      rr:parentTriplesMap ex:ScriptLiteralMap
+      rr:parentTriplesMap ex:ScriptMap
     ]
   ].
 
+  # has script (IRI)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:notation;
     rr:objectMap [
@@ -99,13 +111,17 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has illustrative content (literal)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:illustrativeContent;
     rr:objectMap [
-      rr:parentTriplesMap ex:IllustrativeContentLiteralMap
+      rr:parentTriplesMap ex:IllustrativeContentMap
     ]
   ].
 
+  # has illustrative content (IRI)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:illustrativeContent;
     rr:objectMap [
@@ -114,6 +130,8 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has date of expression
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:originDate;
     rr:objectMap [
@@ -129,6 +147,8 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has illustrator
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
@@ -143,13 +163,17 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has content type (literal)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:content;
     rr:objectMap [
-      rr:parentTriplesMap ex:ContentTypeLiteralMap
+      rr:parentTriplesMap ex:ContentTypeMap
     ]
   ].
 
+  # has content type (IRI)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:content;
     rr:objectMap [
@@ -323,13 +347,17 @@ ex:ExpressionMap a rr:TriplesMap;
     ]
   ].
 
+  # has supplementary content (literal)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:supplementaryContent;
     rr:objectMap [
-      rr:parentTriplesMap ex:SupplementaryContentLiteralMap
+      rr:parentTriplesMap ex:SupplementaryContentMap
     ]
   ].
 
+  # has supplementary content (IRI)
+  # last updated: 2020-07-22
   ex:ExpressionMap rr:predicateObjectMap [
     rr:predicate bf:supplementaryContent;
     rr:objectMap [
@@ -1826,6 +1854,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
       ]
     ].
 
+# has authorized access point for expression
 ex:AuthorizedAccessPointMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
@@ -1886,7 +1915,7 @@ ex:AuthorizedAccessPointMap a rr:TriplesMap;
     ex:AuthorizedAccessPointNoteMap rr:predicateObjectMap [
       rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "Authorized access point";
+        rr:constant "authorized access point";
         rr:termType rr:Literal;
         rr:language "en"
       ]
@@ -1981,6 +2010,7 @@ ex:VariantAccessPointMap a rr:TriplesMap;
       ]
     ].
 
+# has colour content
 ex:ColourContentLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
@@ -2012,19 +2042,20 @@ ex:ColourContentLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:LanguageLiteralMap a rr:TriplesMap;
+# has language of expression
+ex:LanguageMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P20006[not(@resource)]]"
   ].
 
-  ex:LanguageLiteralMap rr:subjectMap [
+  ex:LanguageMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Language
   ].
 
-  ex:LanguageLiteralMap rr:predicateObjectMap [
+  ex:LanguageMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20006[not(@resource)][@lang]";
@@ -2035,7 +2066,7 @@ ex:LanguageLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:LanguageLiteralMap rr:predicateObjectMap [
+  ex:LanguageMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20006[not(@resource) and not(@lang)]";
@@ -2043,19 +2074,20 @@ ex:LanguageLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:ScriptLiteralMap a rr:TriplesMap;
+# has script
+ex:ScriptMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P20065[not(@resource)]]"
   ].
 
-  ex:ScriptLiteralMap rr:subjectMap [
+  ex:ScriptMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Script
   ].
 
-  ex:ScriptLiteralMap rr:predicateObjectMap [
+  ex:ScriptMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20065[not(@resource)][@lang]";
@@ -2066,7 +2098,7 @@ ex:ScriptLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:ScriptLiteralMap rr:predicateObjectMap [
+  ex:ScriptMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20065[not(@resource) and not(@lang)]";
@@ -2074,19 +2106,20 @@ ex:ScriptLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:IllustrativeContentLiteralMap a rr:TriplesMap;
+# has illustrative content
+ex:IllustrativeContentMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P20207[not(@resource)]]"
   ].
 
-  ex:IllustrativeContentLiteralMap rr:subjectMap [
+  ex:IllustrativeContentMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Illustration
   ].
 
-  ex:IllustrativeContentLiteralMap rr:predicateObjectMap [
+  ex:IllustrativeContentMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20207[not(@resource)][@lang]";
@@ -2097,7 +2130,7 @@ ex:IllustrativeContentLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:IllustrativeContentLiteralMap rr:predicateObjectMap [
+  ex:IllustrativeContentMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20207[not(@resource) and not(@lang)]";
@@ -2161,6 +2194,7 @@ ex:EditorMap a rr:TriplesMap;
     ].
     #! language tags?
 
+# has illustrator
 ex:IllustratorMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
@@ -2273,19 +2307,20 @@ ex:TranslatorMap a rr:TriplesMap;
     ].
     #! language tags?
 
-ex:ContentTypeLiteralMap a rr:TriplesMap;
+# has content type
+ex:ContentTypeMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P20001[not(@resource)]]"
   ].
 
-  ex:ContentTypeLiteralMap rr:subjectMap [
+  ex:ContentTypeMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:Content
   ].
 
-  ex:ContentTypeLiteralMap rr:predicateObjectMap [
+  ex:ContentTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20001[not(@resource)][@lang]";
@@ -2296,7 +2331,7 @@ ex:ContentTypeLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:ContentTypeLiteralMap rr:predicateObjectMap [
+  ex:ContentTypeMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20001[not(@resource) and not(@lang)]";
@@ -2768,19 +2803,19 @@ ex:AccessibilityContentLiteralMap a rr:TriplesMap;
     ]
   ].
 
-ex:SupplementaryContentLiteralMap a rr:TriplesMap;
+ex:SupplementaryContentMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P20206[not(@resource)]]"
   ].
 
-  ex:SupplementaryContentLiteralMap rr:subjectMap [
+  ex:SupplementaryContentMap rr:subjectMap [
     rr:termType rr:BlankNode;
     rr:class bf:SupplementaryContent
   ].
 
-  ex:SupplementaryContentLiteralMap rr:predicateObjectMap [
+  ex:SupplementaryContentMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20206[not(@resource)][@lang]";
@@ -2791,7 +2826,7 @@ ex:SupplementaryContentLiteralMap a rr:TriplesMap;
     ]
   ].
 
-  ex:SupplementaryContentLiteralMap rr:predicateObjectMap [
+  ex:SupplementaryContentMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
       rml:reference "P20206[not(@resource) and not(@lang)]";
@@ -2799,6 +2834,7 @@ ex:SupplementaryContentLiteralMap a rr:TriplesMap;
     ]
   ].
 
+# has supplementary content
 ex:NoteOnExpressionNoteMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/expression/2020_7_17/7b05a65a-8b90-46a2-bc23-4fd434cfb36d.xml";
