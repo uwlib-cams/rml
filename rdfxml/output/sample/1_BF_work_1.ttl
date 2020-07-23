@@ -24,14 +24,18 @@
   # has authorized access point for work
   bf:identifiedBy [ a bf:Identifier ;
     bf:note [ a bf:Note ;
-      rdfs:label "This is an RDA Authorized Access Point"@en ] ;
+      bf:noteType "type of identifier"@en ;
+      rdfs:label "authorized access point"@en ] ;
     bf:source [ a bf:Source ;
-      rdfs:label "RDA Authorized Access Point"@en ] ;
+      rdfs:label "RDA"@en ] ;
     rdf:value "Van Aken, Norman, 1951- . Great exotic fruit book"@eng ] ;
   # has variant access point for work
   bf:identifiedBy [ a bf:Identifier ;
+    bf:source [ a bf:Note ;
+      bf:noteType "type of identifier"@en ;
+      rdfs:label "variant access point"@en ] ;
     bf:source [ a bf:Source ;
-      rdfs:label "RDA Variant Access Point"@en ] ;
+      rdfs:label "RDA"@en ] ;
     rdf:value "Harrisson, John. Great exotic fruit book"@eng, "Van Aken, Norman, 1951- . Exotic fruit"@eng ] ;
   # has date of work
   bf:originDate "1995" ;
@@ -42,5 +46,4 @@
     bf:mainTitle "Exotic fruit"@eng ] ;
   # has preferred title of work
   bf:title [ a bf:Title ;
-    bf:mainTitle "Great exotic fruit book"@eng ;
-    rdfs:label "Great exotic fruit book"@eng ] .
+    bf:mainTitle "Great exotic fruit book"@eng ] .
