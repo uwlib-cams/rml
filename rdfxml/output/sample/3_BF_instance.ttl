@@ -1,0 +1,65 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e>
+  a bf:Instance, bf:Print;
+  bf:adminMetadata [ a bf:AdminMetadata;
+    bflc:catalogerID "aschiff";
+    bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+    bf:creationDate "2020-04-16";
+    bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+    bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+    bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+    bf:status [ a bf:Status;
+      bf:code "n" ] ] ;
+  # has applied material
+  bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017>;
+  # has base material
+  bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025>;
+  # has carrier type
+  bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049>;
+  # has copyright date
+  bf:copyrightDate "©1995";
+  # has dimensions
+  bf:dimensions "26 x 11 cm"@eng;
+  # has extent of manifestation
+  bf:extent [ a bf:Extent;
+    rdfs:label "x, 149 pages"@eng ] ;
+  # has identifier for manifestation
+  bf:identifiedBy [ a bf:Identifier;
+    rdf:value "ISBN 0-89815-688-2"@eng ] ;
+  # has expression manifested
+  bf:instanceOf <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d>;
+  # has mode of issuance
+  bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001>;
+  # has media type
+  bf:media <http://rdaregistry.info/termList/RDAMediaType/1007>;
+  # has note on manifestation
+  bf:note [ a bf:Note;
+    rdfs:label "Subtitle on cover: A handbook with recipes"@eng ] ;
+  bf:provisionActivity [ a bf:Publication;
+    # has publisher agent
+    bf:agent <http://id.loc.gov/rwo/agents/n2017061021>,
+      # has name of publisher
+      [ a bf:Agent;
+      rdfs:label "Ten Speed Press"@eng ] ;
+    # has date of publication
+    bf:date "[1995]";
+    # has place of publication
+    bf:place [ a bf:Place;
+      rdfs:label "Berkeley, California"@eng ] ] ;
+  # has publication statement
+  bf:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1995]"@eng;
+  # has statement of responsibility relating to the title proper
+  bf:responsibilityStatement "Norman Van Aken with John Harrisson"@eng, "photography by Lois Ellen Frank"@eng;
+  # has variant title of manifestation
+  bf:title [ a bf:VariantTitle;
+    bf:mainTitle "Exotic fruit"@eng;
+    rdfs:label "Exotic fruit"@eng ] ;
+  # has title proper
+  bf:title [ a bf:Title;
+    bf:mainTitle "The great exotic fruit book"@eng;
+    # has other title information
+    bf:subtitle "a handbook of tropical and subtropical fruits, with recipes"@eng ] .
