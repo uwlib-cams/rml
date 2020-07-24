@@ -5,16 +5,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> a <http://rdaregistry.info/Elements/c/C10006> ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "aschiff" ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-16" ;
-            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
     # has content type
     rdae:P20001 <http://rdaregistry.info/termList/RDAContentType/1014>,
         <http://rdaregistry.info/termList/RDAContentType/1020> ;
@@ -36,5 +26,4 @@
     # has work expressed
     rdae:P20231 <https://trellis.sinopia.io/repository/washington/018e4c97-fb45-4333-9e8e-6cc0584e49ac> ;
     # has authorized access point for expression
-    rdae:P20313 "Van Aken, Norman, 1951- . Great exotic fruit book. Text. English"@eng ;
-    sin:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+    rdae:P20313 "Van Aken, Norman, 1951- . Great exotic fruit book. Text. English"@eng .

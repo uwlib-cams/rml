@@ -1,0 +1,54 @@
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix sin: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> a <http://rdaregistry.info/Elements/c/C10006> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-16"@eng ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n"@eng ] ] ;
+    rdae:P20001 <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    rdae:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    rdae:P20051 <http://id.loc.gov/rwo/agents/n90677144> ;
+    rdae:P20065 "Latin"@eng ;
+    rdae:P20206 "Includes bibliographical references (page 144) and index."@eng ;
+    rdae:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
+    rdae:P20214 "1995"@eng ;
+    rdae:P20224 <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+        "color" ;
+    rdae:P20231 <https://trellis.sinopia.io/repository/washington/018e4c97-fb45-4333-9e8e-6cc0584e49ac> ;
+    rdae:P20313 "Van Aken, Norman, 1951- . Great exotic fruit book. Text. English"@eng ;
+    sin:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> rdfs:label "polychrome" .
+
+<http://id.loc.gov/rwo/agents/n90677144> rdfs:label "Frank, Lois Ellen" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://id.loc.gov/vocabulary/millus/ill> rdfs:label "Illustrations" .
+
+<http://rdaregistry.info/termList/RDAContentType/1014> rdfs:label "still image" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/018e4c97-fb45-4333-9e8e-6cc0584e49ac> rdfs:label "Great exotic fruit book" .
