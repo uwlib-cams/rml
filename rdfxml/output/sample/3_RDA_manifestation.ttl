@@ -1,21 +1,8 @@
 @prefix rdam: <http://rdaregistry.info/Elements/m/> .
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix rdax: <https://doi.org/10.6069/uwlib.55.d.4#> .
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
-@prefix sin: <http://sinopia.io/vocabulary/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
 
-<https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e> a <http://rdaregistry.info/Elements/c/C10007> ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "aschiff" ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-16" ;
-            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
+<https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e>
+    a rdac:C10007 ;
     # has carrier type
     rdam:P30001 <http://rdaregistry.info/termList/RDACarrierType/1049> ;
     # has media type
@@ -23,7 +10,7 @@
     # has mode of issuance
     rdam:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
     # has identifier for manifestation
-    rdam:P30004 "ISBN 0-89815-688-2"@eng ;
+    rdam:P30004 "ISBN 0-89815-688-2"@en ;
     # has copyright date
     rdam:P30007 "©1995"@zxx ;
     # has date of publication
@@ -33,28 +20,27 @@
     # has applied material
     rdam:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     # has place of publication
-    rdam:P30088 "Berkeley, California"@eng ;
+    rdam:P30088 "Berkeley, California"@en ;
     # has statement of responsibility relating to the title proper
-    rdam:P30105 "Norman Van Aken with John Harrisson"@eng,
-        "photography by Lois Ellen Frank"@eng ;
+    rdam:P30105 "Norman Van Aken with John Harrisson"@en,
+        "photography by Lois Ellen Frank"@en ;
     # has publication statement
-    rdam:P30111 "Berkeley, California : Ten Speed Press, [1995]"@eng ;
+    rdam:P30111 "Berkeley, California : Ten Speed Press, [1995]"@en ;
     # has variant title of manifestation
-    rdam:P30128 "Exotic fruit"@eng ;
+    rdam:P30128 "Exotic fruit"@en ;
     # has note on manifestation
-    rdam:P30137 "Subtitle on cover: A handbook with recipes"@eng ;
+    rdam:P30137 "Subtitle on cover: A handbook with recipes"@en ;
     # has expression manifested
     rdam:P30139 <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> ;
     # has other title information
-    rdam:P30142 "a handbook of tropical and subtropical fruits, with recipes"@eng ;
+    rdam:P30142 "a handbook of tropical and subtropical fruits, with recipes"@en ;
     # has title proper
-    rdam:P30156 "The great exotic fruit book"@eng ;
+    rdam:P30156 "The great exotic fruit book"@en ;
     # has dimensions
-    rdam:P30169 "26 x 11 cm"@eng ;
+    rdam:P30169 "26 x 11 cm"@en ;
     # has name of publisher
-    rdam:P30176 "Ten Speed Press"@eng ;
+    rdam:P30176 "Ten Speed Press"@en ;
     # has extent of manifestation
-    rdam:P30182 "x, 149 pages"@eng ;
+    rdam:P30182 "x, 149 pages"@en ;
     # has base material
-    rdam:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    sin:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" .
+    rdam:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> .

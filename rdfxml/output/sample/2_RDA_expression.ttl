@@ -1,10 +1,8 @@
 @prefix rdae: <http://rdaregistry.info/Elements/e/> .
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
-@prefix sin: <http://sinopia.io/vocabulary/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdac: <http://rdaregistry.info/Elements/c/> .
 
-<https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> a <http://rdaregistry.info/Elements/c/C10006> ;
+<https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d>
+    a rdac:C10006 ;
     # has content type
     rdae:P20001 <http://rdaregistry.info/termList/RDAContentType/1014>,
         <http://rdaregistry.info/termList/RDAContentType/1020> ;
@@ -13,9 +11,9 @@
     # has illustrator
     rdae:P20051 <http://id.loc.gov/rwo/agents/n90677144> ;
     # has script
-    rdae:P20065 "Latin"@eng ;
+    rdae:P20065 "Latin"@en ;
     # has supplementary content
-    rdae:P20206 "Includes bibliographical references (page 144) and index."@eng ;
+    rdae:P20206 "Includes bibliographical references (page 144) and index."@en ;
     # has illustrative content
     rdae:P20207 <http://id.loc.gov/vocabulary/millus/ill> ;
     # has date of expression
@@ -26,4 +24,4 @@
     # has work expressed
     rdae:P20231 <https://trellis.sinopia.io/repository/washington/018e4c97-fb45-4333-9e8e-6cc0584e49ac> ;
     # has authorized access point for expression
-    rdae:P20313 "Van Aken, Norman, 1951- . Great exotic fruit book. Text. English"@eng .
+    rdae:P20313 "Van Aken, Norman, 1951- . Great exotic fruit book. Text. English"@en .
