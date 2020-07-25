@@ -186,17 +186,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has artist agent
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:ArtistLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:ArtistIRIMap
+      rr:parentTriplesMap ex:ArtistMap
     ]
   ].
 
@@ -214,17 +209,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has compiler agent
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:CompilerLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:CompilerIRIMap
+      rr:parentTriplesMap ex:CompilerMap
     ]
   ].
 
@@ -306,31 +296,21 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has creator agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:CreatorLiteralMap
+      rr:parentTriplesMap ex:CreatorMap
     ]
   ].
 
+  # has architect agent
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:CreatorIRIMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:ArchitectLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:ArchitectIRIMap
+      rr:parentTriplesMap ex:ArchitectMap
     ]
   ].
 
@@ -413,45 +393,30 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has interviewee agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:IntervieweeLiteralMap
+      rr:parentTriplesMap ex:IntervieweeMap
     ]
   ].
 
+  # has interviewer agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:IntervieweeIRIMap
+      rr:parentTriplesMap ex:InterviewerMap
     ]
   ].
 
+  # has photographer agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:InterviewerLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:InterviewerIRIMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:PhotographerLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:PhotographerIRIMap
+      rr:parentTriplesMap ex:PhotographerMap
     ]
   ].
 
@@ -487,31 +452,21 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has appellant person
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppellantPersonLiteralMap
+      rr:parentTriplesMap ex:AppellantPersonMap
     ]
   ].
 
+  # has appellee person
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:AppellantPersonIRIMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:AppelleePersonLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:AppelleePersonIRIMap
+      rr:parentTriplesMap ex:AppelleePersonMap
     ]
   ].
 
@@ -599,17 +554,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has honouree agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:HonoureeLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:HonoureeIRIMap
+      rr:parentTriplesMap ex:HonoureeMap
     ]
   ].
 
@@ -622,34 +572,26 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has issuing body agent
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:IssuingBodyLiteralMap
+      rr:parentTriplesMap ex:IssuingBodyMap
     ]
   ].
 
+  # has judge
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:IssuingBodyIRIMap
+      rr:parentTriplesMap ex:JudgeMap
     ]
   ].
 
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:JudgeLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:JudgeIRIMap
-    ]
-  ].
-
+  # has jurisdiction governed
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
@@ -685,17 +627,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has plaintiff person
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:PlaintiffPersonLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:PlaintiffPersonIRIMap
+      rr:parentTriplesMap ex:PlaintiffPersonMap
     ]
   ].
 
@@ -735,17 +672,12 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # has sponsoring agent of work
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:contribution;
     rr:objectMap [
-      rr:parentTriplesMap ex:SponsorLiteralMap
-    ]
-  ].
-
-  ex:WorkMap rr:predicateObjectMap [
-    rr:predicate bf:contribution;
-    rr:objectMap [
-      rr:parentTriplesMap ex:SponsorIRIMap
+      rr:parentTriplesMap ex:SponsorMap
     ]
   ].
 
@@ -1447,6 +1379,8 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is set to music as work (literal)
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
@@ -1454,6 +1388,8 @@ ex:WorkMap a rr:TriplesMap;
     ]
   ].
 
+  # is set to music as work (IRI)
+  # last updated: 2020-07-24
   ex:WorkMap rr:predicateObjectMap [
     rr:predicate bf:hasDerivative;
     rr:objectMap [
@@ -3399,7 +3335,41 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
     ].
     #! language tag?
 
-# Artist
+# has artist agent
+ex:ArtistMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10058]"
+  ].
+
+  ex:ArtistMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:ArtistMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/art";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:ArtistMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10058/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:ArtistMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ArtistLiteralMap
+    ]
+  ].
 
   ex:ArtistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -3410,70 +3380,25 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
     ex:ArtistLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:ArtistLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/art";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:ArtistLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:ArtistLiteralBNodeMap
-      ]
-    ].
-
-    ex:ArtistLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10058[not(@resource)]]"
-      ].
-
-      ex:ArtistLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:ArtistLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10058[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10058[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10058/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:ArtistIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10058[@resource]]"
-    ].
-
-    ex:ArtistIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:ArtistIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/art";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:ArtistIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:ArtistLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10058/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10058[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -3555,7 +3480,41 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
       ]
     ].
 
-# Compiler
+# has compiler agent
+ex:CompilerMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10055]"
+  ].
+
+  ex:CompilerMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:CompilerMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/com";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:CompilerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10055/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:CompilerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CompilerLiteralMap
+    ]
+  ].
 
   ex:CompilerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -3566,72 +3525,28 @@ ex:PlaceOfOriginLiteralMap a rr:TriplesMap;
 
     ex:CompilerLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:CompilerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/com";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:CompilerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:CompilerLiteralBNodeMap
-      ]
-    ].
-
-    ex:CompilerLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10055[not(@resource)]]"
-      ].
-
-      ex:CompilerLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:CompilerLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10055[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10055[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10055/@lang"
         ]
-      ].
-      #! language tags?
-
-  ex:CompilerIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10055[@resource]]"
-    ].
-
-    ex:CompilerIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:CompilerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/com";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:CompilerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:CompilerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10055/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10055[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
+
 
 ex:PartWorkLiteralMap a rr:TriplesMap;
   rml:logicalSource [
@@ -3912,7 +3827,41 @@ ex:UWNoteMap a rr:TriplesMap;
       ]
     ].
 
-# Creator
+# has creator agent of work
+ex:CreatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10065]"
+  ].
+
+  ex:CreatorMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:CreatorMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:CreatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10065/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:CreatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:CreatorLiteralMap
+    ]
+  ].
 
   ex:CreatorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -3923,74 +3872,63 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:CreatorLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:CreatorLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/cre";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:CreatorLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:CreatorLiteralBNodeMap
-      ]
-    ].
-
-    ex:CreatorLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10065[not(@resource)]]"
-      ].
-
-      ex:CreatorLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:CreatorLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10065[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10065[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10065/@lang"
         ]
-      ].
-      #! language tag
-
-  ex:CreatorIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10065[@resource]]"
-    ].
-
-    ex:CreatorIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:CreatorIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/cre";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:CreatorIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:CreatorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10065/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10065[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-# Architect
+# has architect agent
+ex:ArchitectMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10062]"
+  ].
+
+  ex:ArchitectMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:ArchitectMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/arc";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:ArchitectMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10062/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:ArchitectMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ArchitectLiteralMap
+    ]
+  ].
 
   ex:ArchitectLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -4001,71 +3939,25 @@ ex:UWNoteMap a rr:TriplesMap;
 
     ex:ArchitectLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:ArchitectLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/arc";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:ArchitectLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:ArchitectLiteralBNodeMap
-      ]
-    ].
-
-    ex:ArchitectLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10062[not(@resource)]]"
-      ].
-
-      ex:ArchitectLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:ArchitectLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10062[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10062[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10062/@lang"
         ]
-      ].
-
-      #! language tag
-
-  ex:ArchitectIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10062[@resource]]"
-    ].
-
-    ex:ArchitectIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:ArchitectIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/arc";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:ArchitectIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:ArchitectLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10062/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10062[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -4526,7 +4418,41 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
       ]
     ].
 
-# Interviewee
+# has interviewee agent of work
+ex:IntervieweeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10059]"
+  ].
+
+  ex:IntervieweeMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:IntervieweeMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ive";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:IntervieweeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10059/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:IntervieweeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IntervieweeLiteralMap
+    ]
+  ].
 
   ex:IntervieweeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -4537,74 +4463,63 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
 
     ex:IntervieweeLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:IntervieweeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ive";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:IntervieweeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:IntervieweeLiteralBNodeMap
-      ]
-    ].
-
-    ex:IntervieweeLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10059[not(@resource)]]"
-      ].
-
-      ex:IntervieweeLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:IntervieweeLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10059[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10059[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10059/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:IntervieweeIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10059[@resource]]"
-    ].
-
-    ex:IntervieweeIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:IntervieweeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ive";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:IntervieweeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:IntervieweeLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10059/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10059[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-# Interviewer
+# has interviewer agent of work
+ex:InterviewerMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10057]"
+  ].
+
+  ex:InterviewerMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:InterviewerMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ivr";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:InterviewerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10057/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:InterviewerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:InterviewerLiteralMap
+    ]
+  ].
 
   ex:InterviewerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -4615,74 +4530,63 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
 
     ex:InterviewerLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:InterviewerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ivr";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:InterviewerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:InterviewerLiteralBNodeMap
-      ]
-    ].
-
-    ex:InterviewerLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10057[not(@resource)]]"
+        rml:reference "P10057[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10057/@lang"
+          ]
+        ]
       ].
 
-      ex:InterviewerLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:InterviewerLiteralBNodeMap rr:predicateObjectMap [
+      ex:InterviewerLiteralMap rr:predicateObjectMap [
         rr:predicate rdfs:label;
         rr:objectMap [
-          rml:reference "P10057[not(@resource)]";
+          rml:reference "P10057[not(@resource) and not(@lang)]";
           rr:termType rr:Literal
         ]
       ].
-      #! language tag?
 
-  ex:InterviewerIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10057[@resource]]"
-    ].
+# has photographer agent of work
+ex:PhotographerMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10056]"
+  ].
 
-    ex:InterviewerIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
+  ex:PhotographerMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
 
-    ex:InterviewerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ivr";
-        rr:termType rr:IRI
-      ]
-    ].
+  ex:PhotographerMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/pht";
+      rr:termType rr:IRI
+    ]
+  ].
 
-    ex:InterviewerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rml:reference "P10057/@resource";
-        rr:termType rr:IRI
-      ]
-    ].
+  ex:PhotographerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10056/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
 
-# Photographer
+  ex:PhotographerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PhotographerLiteralMap
+    ]
+  ].
 
   ex:PhotographerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -4693,74 +4597,29 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
 
     ex:PhotographerLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:PhotographerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/pht";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:PhotographerLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:PhotographerLiteralBNodeMap
-      ]
-    ].
-
-    ex:PhotographerLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10056[not(@resource)]]"
-      ].
-
-      ex:PhotographerLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:PhotographerLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10056[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10056[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10056/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:PhotographerIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10056[@resource]]"
-    ].
-
-    ex:PhotographerIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:PhotographerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/pht";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:PhotographerIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:PhotographerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10056/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10056[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-  # has respondent
+# has respondent
   ex:RespondentMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
@@ -4972,7 +4831,41 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
         ]
       ].
 
-# Appellant (Person)
+# has appellant person
+ex:AppellantPersonMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10042]"
+  ].
+
+  ex:AppellantPersonMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:AppellantPersonMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/apl";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AppellantPersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10042/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AppellantPersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AppellantPersonLiteralMap
+    ]
+  ].
 
   ex:AppellantPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -4983,74 +4876,63 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
 
     ex:AppellantPersonLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Person
     ].
 
     ex:AppellantPersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/apl";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:AppellantPersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:AppellantPersonLiteralBNodeMap
-      ]
-    ].
-
-    ex:AppellantPersonLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10042[not(@resource)]]"
-      ].
-
-      ex:AppellantPersonLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Person
-      ].
-
-      ex:AppellantPersonLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10042[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10042[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10042/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:AppellantPersonIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10042[@resource]]"
-    ].
-
-    ex:AppellantPersonIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:AppellantPersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/apl";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:AppellantPersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:AppellantPersonLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10042/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10042[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-# Appellee (Person)
+# has appellee person
+ex:AppelleePersonMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10035]"
+  ].
+
+  ex:AppelleePersonMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:AppelleePersonMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ape";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AppelleePersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10035/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AppelleePersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AppelleePersonLiteralMap
+    ]
+  ].
 
   ex:AppelleePersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -5061,139 +4943,94 @@ ex:EnactingJurisdictionMap a rr:TriplesMap;
 
     ex:AppelleePersonLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Person
     ].
 
     ex:AppelleePersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ape";
-        rr:termType rr:IRI
+        rml:reference "P10035[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10035/@lang"
+        ]
       ]
     ].
 
     ex:AppelleePersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:parentTriplesMap ex:AppelleePersonLiteralBNodeMap
+        rml:reference "P10035[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-    ex:AppelleePersonLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10035[not(@resource)]]"
-      ].
+# has appellee corporate body
+ex:AppelleeCorporateBodyMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10005]"
+  ].
 
-      ex:AppelleePersonLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Person
-      ].
+  ex:AppelleeCorporateBodyMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
 
-      ex:AppelleePersonLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10035[not(@resource)]";
-          rr:termType rr:Literal
-        ]
-      ].
-      #! language tag?
+  ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ape";
+      rr:termType rr:IRI
+    ]
+  ].
 
-  ex:AppelleePersonIRIMap a rr:TriplesMap;
+  ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10005/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AppelleeCorporateBodyLiteralMap
+    ]
+  ].
+
+  ex:AppelleeCorporateBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
       rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
       rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10035[@resource]]"
+      rml:iterator "/RDF/Description[P10005[not(@resource)]]"
     ].
 
-    ex:AppelleePersonIRIMap rr:subjectMap [
+    ex:AppelleeCorporateBodyLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Organization
     ].
 
-    ex:AppelleePersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+    ex:AppelleeCorporateBodyLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ape";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:AppelleePersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rml:reference "P10035/@resource";
-        rr:termType rr:IRI
-      ]
-    ].
-
-  # has appellee corporate body
-  ex:AppelleeCorporateBodyMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10005]"
-    ].
-
-    ex:AppelleeCorporateBodyMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ape";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rml:reference "P10005/@resource";
-        rr:termType rr:IRI
-      ]
-    ].
-
-    ex:AppelleeCorporateBodyMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:AppelleeCorporateBodyLiteralMap
-      ]
-    ].
-
-    ex:AppelleeCorporateBodyLiteralMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10005[not(@resource)]]"
-      ].
-
-      ex:AppelleeCorporateBodyLiteralMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Organization
-      ].
-
-      ex:AppelleeCorporateBodyLiteralMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10005[not(@resource)][@lang]";
-          rr:termType rr:Literal;
-          rml:languageMap [
-            rml:reference "P10005/@lang"
-          ]
+        rml:reference "P10005[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10005/@lang"
         ]
-      ].
+      ]
+    ].
 
-      ex:AppelleeCorporateBodyLiteralMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10005[not(@resource) and not(@lang)]";
-          rr:termType rr:Literal
-        ]
-      ].
+    ex:AppelleeCorporateBodyLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P10005[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
 
 # Commissioning Body
 
@@ -5558,7 +5395,41 @@ ex:CourtGovernedMap a rr:TriplesMap;
       ]
     ].
 
-# Honouree
+# has honouree agent of work
+ex:HonoureeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10049]"
+  ].
+
+  ex:HonoureeMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:HonoureeMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/hnr";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:HonoureeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10049/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:HonoureeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:HonoureeLiteralMap
+    ]
+  ].
 
   ex:HonoureeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -5569,70 +5440,25 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:HonoureeLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:HonoureeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/hnr";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:HonoureeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:HonoureeLiteralBNodeMap
-      ]
-    ].
-
-    ex:HonoureeLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10049[not(@resource)]]"
-      ].
-
-      ex:HonoureeLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:HonoureeLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10049[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10049[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10049/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:HonoureeIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10049[@resource]]"
-    ].
-
-    ex:HonoureeIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:HonoureeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/hnr";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:HonoureeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:HonoureeLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10049/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10049[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -5703,7 +5529,41 @@ ex:CourtGovernedMap a rr:TriplesMap;
         ]
       ].
 
-# Issuing Body
+# has issuing body agent
+ex:IssuingBodyMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10046]"
+  ].
+
+  ex:IssuingBodyMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:IssuingBodyMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/isb";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:IssuingBodyMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10046/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:IssuingBodyMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IssuingBodyLiteralMap
+    ]
+  ].
 
   ex:IssuingBodyLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -5714,74 +5574,63 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:IssuingBodyLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:IssuingBodyLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/isb";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:IssuingBodyLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:IssuingBodyLiteralBNodeMap
-      ]
-    ].
-
-    ex:IssuingBodyLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10046[not(@resource)]]"
-      ].
-
-      ex:IssuingBodyLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:IssuingBodyLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10046[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10046[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10046/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:IssuingBodyIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10046[@resource]]"
-    ].
-
-    ex:IssuingBodyIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:IssuingBodyIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/isb";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:IssuingBodyIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:IssuingBodyLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10046/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10046[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
-# Judge
+# has judge
+ex:JudgeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10044]"
+  ].
+
+  ex:JudgeMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:JudgeMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/jud";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:JudgeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10044/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:JudgeMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:JudgeLiteralMap
+    ]
+  ].
 
   ex:JudgeLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -5792,70 +5641,25 @@ ex:CourtGovernedMap a rr:TriplesMap;
 
     ex:JudgeLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:JudgeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/jud";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:JudgeLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:JudgeLiteralBNodeMap
-      ]
-    ].
-
-    ex:JudgeLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10044[not(@resource)]]"
-      ].
-
-      ex:JudgeLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Agent
-      ].
-
-      ex:JudgeLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10044[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10044[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10044/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:JudgeIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10044[@resource]]"
-    ].
-
-    ex:JudgeIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:JudgeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/jud";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:JudgeIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:JudgeLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10044/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10044[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -6101,7 +5905,41 @@ ex:JurisdictionGovernedMap a rr:TriplesMap;
       ]
     ].
 
-# Plaintiff (Person)
+# has plaintiff person
+ex:PlaintiffPersonMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10043]"
+  ].
+
+  ex:PlaintiffPersonMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:PlaintiffPersonMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/ptf";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:PlaintiffPersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10043/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:PlaintiffPersonMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PlaintiffPersonLiteralMap
+    ]
+  ].
 
   ex:PlaintiffPersonLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -6112,70 +5950,25 @@ ex:JurisdictionGovernedMap a rr:TriplesMap;
 
     ex:PlaintiffPersonLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode;
-      rr:class bf:Contribution
+      rr:class bf:Person
     ].
 
     ex:PlaintiffPersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/ptf";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:PlaintiffPersonLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:PlaintiffPersonLiteralBNodeMap
-      ]
-    ].
-
-    ex:PlaintiffPersonLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10043[not(@resource)]]"
-      ].
-
-      ex:PlaintiffPersonLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode;
-        rr:class bf:Person
-      ].
-
-      ex:PlaintiffPersonLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10043[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10043[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10043/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:PlaintiffPersonIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10043[@resource]]"
-    ].
-
-    ex:PlaintiffPersonIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode;
-      rr:class bf:Contribution
-    ].
-
-    ex:PlaintiffPersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/ptf";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:PlaintiffPersonIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:PlaintiffPersonLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10043/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10043[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -6345,7 +6138,41 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
   ].
   #! language tag?
 
-# Sponsoring Agent
+# has sponsoring agent of work
+ex:SponsorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10067]"
+  ].
+
+  ex:SponsorMap rr:subjectMap [
+    rr:termType rr:BlankNode ;
+    rr:class bf:Contribution
+  ].
+
+  ex:SponsorMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/spn";
+    rr:termType rr:IRI
+    ]
+  ].
+
+  ex:SponsorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P10067/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:SponsorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SponsorLiteralMap
+    ]
+  ].
 
   ex:SponsorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
@@ -6356,70 +6183,25 @@ ex:RelatedAgentLiteralMap a rr:TriplesMap;
 
     ex:SponsorLiteralMap rr:subjectMap [
       rr:termType rr:BlankNode ;
-      rr:class bf:Contribution
+      rr:class bf:Agent
     ].
 
     ex:SponsorLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:role;
+      rr:predicate rdfs:label;
       rr:objectMap [
-      rr:constant "http://id.loc.gov/vocabulary/relators/spn";
-      rr:termType rr:IRI
-      ]
-    ].
-
-    ex:SponsorLiteralMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
-      rr:objectMap [
-        rr:parentTriplesMap ex:SponsorLiteralBNodeMap
-      ]
-    ].
-
-    ex:SponsorLiteralBNodeMap a rr:TriplesMap;
-      rml:logicalSource [
-        rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-        rml:referenceFormulation ql:XPath;
-        rml:iterator "/RDF/Description[P10067[not(@resource)]]"
-      ].
-
-      ex:SponsorLiteralBNodeMap rr:subjectMap [
-        rr:termType rr:BlankNode ;
-        rr:class bf:Agent
-      ].
-
-      ex:SponsorLiteralBNodeMap rr:predicateObjectMap [
-        rr:predicate rdfs:label;
-        rr:objectMap [
-          rml:reference "P10067[not(@resource)]";
-          rr:termType rr:Literal
+        rml:reference "P10067[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P10067/@lang"
         ]
-      ].
-      #! language tag?
-
-  ex:SponsorIRIMap a rr:TriplesMap;
-    rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
-      rml:referenceFormulation ql:XPath;
-      rml:iterator "/RDF/Description[P10067[@resource]]"
-    ].
-
-    ex:SponsorIRIMap rr:subjectMap [
-      rr:termType rr:BlankNode ;
-      rr:class bf:Contribution
-    ].
-
-    ex:SponsorIRIMap rr:predicateObjectMap [
-      rr:predicate bf:role;
-      rr:objectMap [
-        rr:constant "http://id.loc.gov/vocabulary/relators/spn";
-        rr:termType rr:IRI
       ]
     ].
 
-    ex:SponsorIRIMap rr:predicateObjectMap [
-      rr:predicate bf:agent;
+    ex:SponsorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
       rr:objectMap [
-        rml:reference "P10067/@resource";
-        rr:termType rr:IRI
+        rml:reference "P10067[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
       ]
     ].
 
@@ -7851,6 +7633,7 @@ ex:ParaphrasedAsLiteralMap a rr:TriplesMap;
     ]
   ].
 
+# is set to music as work
 ex:SetToMusicAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/rdfxml/data/work/2020_7_17/018e4c97-fb45-4333-9e8e-6cc0584e49ac.xml";
