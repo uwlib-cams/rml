@@ -1,0 +1,48 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fbb77272-6393-44bb-9934-e672ca51c4f2> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-03-13" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "PG3948.K55Z68 1972" ] ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "185 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "LCCN    73348247"@zxx ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/7da5a062-e2cb-4c8a-acd4-2e600340dc83> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Includes bibliographical references (pages 183-185)."@eng,
+                "Summary in English."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Наукове товариство імени Шевченка"@ukr ] ;
+            ns1:date "1972" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Торонто"@ukr ] ] ;
+    ns1:responsibilityStatement "Олександра Копач"@ukr ;
+    ns1:seriesEnumeration "ч. 11" ;
+    ns1:seriesStatement "Канадське наукове товариство ім. Шевченка"@ukr ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ;
+            ns1:mainTitle "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ],
+        [ a ns1:ParallelTitle ;
+            ns1:mainTitle "Language and style of Ol'ha Kobylianska" ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Мовостиль Ольги Кобилянської"@ukr ] .
+

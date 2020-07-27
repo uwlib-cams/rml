@@ -1,0 +1,51 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7a1ce84e-ce37-488e-91fc-a21f24f09248> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-20" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status _:N35f75fa6961b4422a7c88cd986173d2b,
+                _:Nc3b57f3989904be4bdc3ce1179e8737b ],
+        [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-20" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status _:N35f75fa6961b4422a7c88cd986173d2b,
+                _:Nc3b57f3989904be4bdc3ce1179e8737b ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:genreForm [ a ns2:GenreForm ;
+            rdfs:label "Comedy plays",
+                "dialect drama" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:source [ a ns2:Source ;
+                    rdf:value "LC NAF"@en ] ],
+        [ a ns2:Identifier ;
+            rdf:value "lccn: 42021317"@eng ] ;
+    ns2:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns2:originDate "1942" ;
+    ns2:subject [ a ns1:Authority ;
+            ns1:authoritativeLabel "Agricultural laborers -- Drama",
+                "Ranchers--Drama",
+                "Widowers -- Drama" ] .
+
+_:N35f75fa6961b4422a7c88cd986173d2b a ns2:Status ;
+    ns2:code "n" .
+
+_:Nc3b57f3989904be4bdc3ce1179e8737b a ns2:Status ;
+    ns2:code "n" .
+

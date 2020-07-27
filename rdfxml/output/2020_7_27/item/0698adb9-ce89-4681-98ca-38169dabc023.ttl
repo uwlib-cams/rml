@@ -1,0 +1,20 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0698adb9-ce89-4681-98ca-38169dabc023> a ns1:Item ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "mcm104" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-25" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:heldBy [ a ns1:Contribution ;
+            ns1:agent <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:role [ a ns1:Role ;
+                    rdfs:label "holding institution"@en ] ] ;
+    ns1:itemOf <https://trellis.sinopia.io/repository/washington/8fa54c8f-8b85-4a7a-8105-12ef37c422b1> .
+

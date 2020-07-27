@@ -1,0 +1,35 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a ns1:Electronic,
+        ns1:Instance ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-17" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©" ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 video file"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Title from title screen (viewed April 17, 2020)"@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Lions Gate Films"@eng ] ;
+            ns1:date "2003" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Santa Monica, CA"@eng ] ] ;
+    ns1:provisionActivityStatement "[Santa Monica, CA] Lions Gate Films  [2003]"@eng ;
+    ns1:responsibilityStatement "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray."@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Shattered glass"@eng ] .
+

@@ -1,0 +1,60 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bd9d343d-229d-49b9-9eb1-34367dcbfada> a ns3:Work ;
+    ns1:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060254>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060316>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060051>,
+        <http://id.loc.gov/authorities/subjects/sh85070496> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns1:catalogerID "aschiff" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:changeDate "2020-05-07" ;
+            ns3:creationDate "2020-05-06" ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n" ] ] ;
+    ns3:contribution [ a ns3:Contribution ;
+            ns3:agent <http://id.loc.gov/authorities/names/n84228230> ;
+            ns3:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns3:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026516>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    ns3:identifiedBy [ a ns3:Identifier ;
+            ns3:note [ a ns3:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns3:noteType "type of identifier"@en ] ;
+            ns3:source [ a ns3:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Amir, Eli. Yasmin"@heb ],
+        [ a ns3:Identifier ;
+            rdf:value "VIAF ID: 302444691" ],
+        [ a ns3:Identifier ;
+            ns3:source [ a ns3:Source ;
+                    rdfs:label "RDA"@en ],
+                [ a ns3:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns3:noteType "type of identifier"@en ] ;
+            rdf:value "Amir, Eli. יסמין",
+                "Ami, Eli. Jasmine"@eng ],
+        <http://viaf.org/viaf/302444691> ;
+    ns3:originDate "2005" ;
+    ns3:originPlace <http://id.loc.gov/authorities/names/n79003285> ;
+    ns3:subject [ a ns2:Authority ;
+            rdfs:label "Arab-Israeli conflict--Social aspects--Fiction",
+                "Israel--History--1967-1993--Fiction ",
+                "Women, Palestinian Arab--Fiction" ;
+            ns2:authoritativeLabel "Arab-Israeli conflict--Social aspects--Fiction",
+                "Israel--History--1967-1993--Fiction ",
+                "Women, Palestinian Arab--Fiction" ] ;
+    ns3:title [ a ns3:Title ;
+            ns3:mainTitle "Yasmin"@heb ],
+        [ a ns3:VariantTitle ;
+            ns3:mainTitle "Jasmine"@heb,
+                "יסמין"@heb ] .
+

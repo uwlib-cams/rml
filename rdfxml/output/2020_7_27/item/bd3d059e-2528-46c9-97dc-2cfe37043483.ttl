@@ -1,0 +1,26 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bd3d059e-2528-46c9-97dc-2cfe37043483> a ns1:Item ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-06" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "F899.S453M397 1980" ] ;
+    ns1:heldBy [ a ns1:Contribution ;
+            ns1:agent <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:role [ a ns1:Role ;
+                    rdfs:label "holding institution"@en ] ] ;
+    ns1:itemOf <https://trellis.sinopia.io/repository/washington/251393a8-33fb-44fd-827e-a75328c3fbaa> ;
+    ns1:physicalLocation "Pacific Northwest collection"@eng ;
+    ns1:sublocation [ a ns1:Sublocation ;
+            rdfs:label "bookshelf"@eng ] .
+

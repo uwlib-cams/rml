@@ -1,0 +1,47 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f71fc6f3-f28c-4d10-a7b1-74379732d815> a ns3:Work ;
+    ns1:creatorCharacteristic [ a ns1:CreatorCharacteristic ;
+            rdfs:label "men" ],
+        <http://id.loc.gov/authorities/subjects/sh00006290> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns1:catalogerID "pfreeman" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:changeDate "2020-04-23" ;
+            ns3:creationDate "2020-04-22" ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n" ] ] ;
+    ns3:contribution [ a ns3:Contribution ;
+            ns3:agent [ a ns3:Agent ;
+                    rdfs:label "Goldfarb, Ben (Environmental journalist)." ],
+                <http://id.loc.gov/authorities/names/n83210826> ;
+            ns3:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns3:identifiedBy [ a ns3:Identifier ;
+            ns3:note [ a ns3:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns3:noteType "type of identifier"@en ] ;
+            ns3:source [ a ns3:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Goldfarb, Ben (Environmental journalist). Eager"@eng ],
+        [ a ns3:Identifier ;
+            ns3:source [ a ns3:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns3:noteType "type of identifier"@en ],
+                [ a ns3:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Flores, Dan L. (Dan Louie), 1948- . Eager"@eng ] ;
+    ns3:originDate "2018" ;
+    ns3:subject [ a ns2:Authority ;
+            rdfs:label "Beavers --Ecology --North America" ;
+            ns2:authoritativeLabel "Beavers --Ecology --North America" ],
+        <http://id.loc.gov/authorities/subjects/sh2010118557> ;
+    ns3:title [ a ns3:Title ;
+            ns3:mainTitle "Eager"@eng ] .
+

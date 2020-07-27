@@ -1,0 +1,38 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fe62d997-66df-4c28-b874-9aa862b1555d> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:changeDate "2020-02-19" ;
+            ns1:creationDate "2020-02-18" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "BD181.7.M35 2011" ] ;
+    ns1:copyrightDate "©2011" ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/2db1659f-9aa2-4315-b4aa-b00a69c4f3f2> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Includes bibliographical references (pages 236-245)."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Издательский дом Санкт-Петербургского государственного университета"@rus ] ;
+            ns1:date "[2011]" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "[Санкт-Петербург]"@rus ] ] ;
+    ns1:responsibilityStatement "Е.В. Малышкин"@rus ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Две метафоры памяти"@rus ] .
+

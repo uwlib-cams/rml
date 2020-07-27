@@ -1,0 +1,47 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/22bd4cca-654d-4df7-8670-c06e6de47ba2> a ns1:Electronic,
+        ns1:Instance ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "jmoede" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©2020" ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 online resource (ix, 247 pages)"@eng ] ;
+    ns1:hasItem [ a ns1:Item ;
+            ns1:electronicLocator <https://www.taylorfrancis.com/books/e/9780429316845> ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "9780429316845 electronic book" ] ;
+    ns1:instanceOf [ a ns1:Work ] ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Routledge"@eng ] ;
+            ns1:date "2020" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Abingdon, Oxon ; New York, NY"@eng ] ] ;
+    ns1:provisionActivityStatement "Abingdon, Oxon ; New York, NY : Routledge, 2020"@eng ;
+    ns1:responsibilityStatement "edited by Pavan Kumar Malreddy, Anindya Sekhar Purakayastha and Birte Heidemann"@eng ;
+    ns1:subject [ a ns2:Authority ;
+            ns2:authoritativeLabel "Political violence--South Asia",
+                "South Asia--Politics and government  ",
+                "South Asia--Social conditions ",
+                "Violence--South Asia" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Violence in South Asia"@eng ],
+        [ a ns1:VariantTitle ;
+            rdfs:label "contemporary perspectives"@eng ;
+            ns1:mainTitle "contemporary perspectives"@eng ] .
+

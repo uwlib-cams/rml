@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/64af3c0e-5fdd-4727-b207-2b7beeaeabf4> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "cc83" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/authorities/names/no2011132310> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/isb> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026139> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Taiwania"@eng ],
+        [ a ns1:Identifier ;
+            rdf:value "sn 85005487"@eng ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Taiwan"@eng ;
+            ns1:noteType "Coverage of the work"@en ] ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n50010973> ;
+    ns1:precededBy [ a ns1:Work ;
+            rdfs:label "Acta botanica Taiwanica " ] ;
+    ns1:subject [ a ns2:Authority ;
+            rdfs:label "Botany--Taiwan--Periodicals" ;
+            ns2:authoritativeLabel "Botany--Taiwan--Periodicals" ],
+        <http://id.loc.gov/authorities/subjects/sh2007102112> ;
+    ns1:succeededBy [ a ns1:Work ;
+            rdfs:label "Taiwania" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Taiwania"@eng ] .
+

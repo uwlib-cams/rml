@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-03-17" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "PH821.K95 1994" ] ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "ISBN 575900591X"@zxx,
+                "ISBN 9785759005919"@zxx ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/d0e83555-868c-4d03-99dc-8ac323bc2c2f> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1005> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "1. кн. Прозо -- Кокымшо книга. Поэзий, драматургий."@eng,
+                "In Mari."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Марий книга савыктыш"@chm ] ;
+            ns1:date "1994-" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Йошкар-Ола"@chm ] ] ;
+    ns1:responsibilityStatement "Р.А. Кудрявцева ямдылен"@chm ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Kyzytse mariĭ literatur"@chm,
+                "Sovremennai︠a︡ mariĭskai︠a︡ literatura"@chm,
+                "Современная марийская литература"@chm ;
+            ns1:mainTitle "Kyzytse mariĭ literatur"@chm,
+                "Sovremennai︠a︡ mariĭskai︠a︡ literatura"@chm,
+                "Современная марийская литература"@chm ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Кызытсе марий литератур"@chm ;
+            ns1:subtitle "11 класслан хрестоматий"@chm ] .
+

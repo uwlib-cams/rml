@@ -1,0 +1,39 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/71f38d30-b08c-421d-ba9d-28fb9d851792> a ns2:Instance,
+        ns2:Print ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "ries07" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-22" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:classification [ a ns2:ClassificationLcc ;
+            rdf:value "QE862.S3N54 2019" ] ;
+    ns2:copyrightDate "©2019" ;
+    ns2:dimensions "24 cm"@eng ;
+    ns2:extent [ a ns2:Extent ;
+            rdfs:label "xvii, 318 pages"@eng ] ;
+    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/cbdf54d0-100c-431c-8278-dc1cc1fcc792> ;
+    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:provisionActivity [ a ns2:Publication ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "University of Pittsburgh Press"@eng ] ;
+            ns2:date "[2019]" ;
+            ns2:place [ a ns2:Place ;
+                    rdfs:label "Pittsburgh, Pa."@eng ] ] ;
+    ns2:responsibilityStatement "Ilja Nieuwland"@eng ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "American dinosaur abroad"@eng ;
+            ns2:subtitle "a cultural history of Carnegie's plaster Diplodocus"@eng ] .
+

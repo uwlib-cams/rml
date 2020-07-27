@@ -1,0 +1,33 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "Shi, Yue, 1988- . Species from feces. Text. English"@eng ] ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:originDate "2019" ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "Effective species recovery plans rely on adequate scientific data, being tailored to the species' natural history and keeping up with rapid socioeconomic changes. My dissertation focuses on two great conservation success stories, Tibetan antelope (Pantholops hodgsonii) on the Tibetan Plateau and gray wolf (Canis lupus) in Washington State. These two species have different needs in terms of recovery. Tibetan antelope have a unique natural history that we need to consider in order to help them recover to their maximal potential. Whereas, for wolves, as apex predators, their recoveries rely on restoring the full suite of trophic interactions in their ecosystem. I used noninvasive fecal sampling and molecular tools to study the natural history of Tibetan antelope and trophic interactions of wolves. Chapter one shed light on how the movement of Tibetan antelope may be the genetic resilience mechanism in the face of dramatic population decline. It is crucial to ensure their migration routes remain unobstructed by growing human disturbances while continuing to enforce anti-poaching law enforcement efforts. Chapter two took a more in-depth look at their seasonal female migration, as it is synchronized with the perinatal period when substantial physiological changes take place. I characterized the maternal gut microbiome of Tibetan antelope and demonstrated its shift in microbiome composition during the transition from late pregnancy to the postpartum period. It is essential to build a baseline for the changes in microbiome during this critical transition period when both the females and offspring are most vulnerable. If increasing human activities disrupt their migration routes and reproductive cycles, we can have a better understanding of the impacts on their reproductive health. Chapter three focused on characterizing the wolf-coyote interactions, how their interactions change over time and space, and how it might affect the local prey populations. I developed a dietary analysis protocol using fecal DNA and DNA metabarcoding to characterize their diet profiles with the fine-grained resolution. This protocol can be applied to other carnivore species to help understand the impacts of recovery of apex predators on the local ecosystems."@eng ] .
+
