@@ -23,7 +23,7 @@
 
 ex:ItemMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10003']"
   ].
@@ -415,7 +415,7 @@ ex:ItemMap a rr:TriplesMap;
 
 ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[catalogerID]"
   ].
@@ -490,7 +490,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
 
   ex:StatusMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[code]"
     ].
@@ -509,7 +509,7 @@ ex:AdminMetadataMap a rr:TriplesMap;
 
 ex:RestrictionOnUseLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40048[not(@resource)]]"
   ].
@@ -540,7 +540,7 @@ ex:RestrictionOnUseLiteralMap a rr:TriplesMap;
 
 ex:SuDocMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
   ].
@@ -567,7 +567,7 @@ ex:SuDocMap a rr:TriplesMap;
 
   ex:SuDocSourceMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
     ].
@@ -588,7 +588,7 @@ ex:SuDocMap a rr:TriplesMap;
 
 ex:LCCNumberMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasLcClassificationPartA and hasLcClassificationPartB]"
   ].
@@ -608,7 +608,7 @@ ex:LCCNumberMap a rr:TriplesMap;
 
 ex:NLMMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasNlmClassificationPartA and hasNlmClassificationPartB]"
   ].
@@ -621,13 +621,14 @@ ex:NLMMap a rr:TriplesMap;
   ex:NLMMap rr:predicateObjectMap [
     rr:predicate rdfs:label;
     rr:objectMap [
-      rr:template "{hasNlmClassificationPartA} {hasNlmClassificationPartB}"
+      rr:template "{hasNlmClassificationPartA} {hasNlmClassificationPartB}";
+      rr:termType rr:Literal
     ]
   ].
 
 ex:NoteMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40028]"
   ].
@@ -658,7 +659,7 @@ ex:NoteMap a rr:TriplesMap;
 
 ex:SublocationMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasPhysicalSubLocation[not(@resource)]]"
   ].
@@ -691,7 +692,7 @@ ex:SublocationMap a rr:TriplesMap;
 
 ex:BarcodeMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasBarcode]"
   ].
@@ -711,7 +712,7 @@ ex:BarcodeMap a rr:TriplesMap;
 
 ex:ImmediateSourceOfAcquisitionMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40050[not(@resource)]]"
   ].
@@ -744,7 +745,7 @@ ex:ImmediateSourceOfAcquisitionMap a rr:TriplesMap;
 
 ex:BoundWithMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40032[not(@resource)]]"
   ].
@@ -777,7 +778,7 @@ ex:BoundWithMap a rr:TriplesMap;
 
 ex:AccompaniedByMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40029[not(@resource)]]"
   ].
@@ -810,7 +811,7 @@ ex:AccompaniedByMap a rr:TriplesMap;
 
 ex:ContainerOfMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40034[not(@resource)]]"
   ].
@@ -843,7 +844,7 @@ ex:ContainerOfMap a rr:TriplesMap;
 
 ex:ContainedInMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40009[not(@resource)]]"
   ].
@@ -876,7 +877,7 @@ ex:ContainedInMap a rr:TriplesMap;
 
 ex:RestrictionOnAccessToMap  a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40047[not(@resource)]]"
   ].
@@ -909,7 +910,7 @@ ex:RestrictionOnAccessToMap  a rr:TriplesMap;
 
 ex:FormerOwnerMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40019]"
   ].
@@ -946,7 +947,7 @@ ex:FormerOwnerMap a rr:TriplesMap;
 
   ex:FormerOwnerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40019[not(@resource)]]"
     ].
@@ -979,7 +980,7 @@ ex:FormerOwnerMap a rr:TriplesMap;
 
 ex:DonorMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40007]"
   ].
@@ -1015,7 +1016,7 @@ ex:DonorMap a rr:TriplesMap;
 
   ex:DonorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40007[not(@resource)]]"
     ].
@@ -1048,7 +1049,7 @@ ex:DonorMap a rr:TriplesMap;
 
 ex:AnnotatorMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40015]"
   ].
@@ -1085,7 +1086,7 @@ ex:AnnotatorMap a rr:TriplesMap;
 
   ex:AnnotatorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40015[not(@resource)]]"
     ].
@@ -1118,7 +1119,7 @@ ex:AnnotatorMap a rr:TriplesMap;
 
 ex:AutographerMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40016]"
   ].
@@ -1155,7 +1156,7 @@ ex:AutographerMap a rr:TriplesMap;
 
   ex:AutographerLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40016[not(@resource)]]"
     ].
@@ -1188,7 +1189,7 @@ ex:AutographerMap a rr:TriplesMap;
 
 ex:BinderMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40013]"
   ].
@@ -1225,7 +1226,7 @@ ex:BinderMap a rr:TriplesMap;
 
   ex:BinderLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40013[not(@resource)]]"
     ].
@@ -1258,7 +1259,7 @@ ex:BinderMap a rr:TriplesMap;
 
 ex:IlluminatorMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40012]"
   ].
@@ -1295,7 +1296,7 @@ ex:IlluminatorMap a rr:TriplesMap;
 
   ex:IlluminatorLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40012[not(@resource)]]"
     ].
@@ -1328,7 +1329,7 @@ ex:IlluminatorMap a rr:TriplesMap;
 
 ex:InscriberMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40014]"
   ].
@@ -1365,7 +1366,7 @@ ex:InscriberMap a rr:TriplesMap;
 
   ex:InscriberLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40014[not(@resource)]]"
     ].
@@ -1398,7 +1399,7 @@ ex:InscriberMap a rr:TriplesMap;
 
 ex:RestorationistMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40024]"
   ].
@@ -1435,7 +1436,7 @@ ex:RestorationistMap a rr:TriplesMap;
 
   ex:RestorationistLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[P40024[not(@resource)]]"
     ].
@@ -1468,7 +1469,7 @@ ex:RestorationistMap a rr:TriplesMap;
 
 ex:ReproducedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40092[not(@resource)]]"
   ].
@@ -1501,7 +1502,7 @@ ex:ReproducedAsLiteralMap a rr:TriplesMap;
 
 ex:PreservationFacsimileOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40090[not(@resource)]]"
   ].
@@ -1534,7 +1535,7 @@ ex:PreservationFacsimileOfLiteralMap a rr:TriplesMap;
 
 ex:ReprintedAsLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40091[not(@resource)]]"
   ].
@@ -1567,7 +1568,7 @@ ex:ReprintedAsLiteralMap a rr:TriplesMap;
 
 ex:ElectronicReproductionOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40088[not(@resource)]]"
   ].
@@ -1600,7 +1601,7 @@ ex:ElectronicReproductionOfLiteralMap a rr:TriplesMap;
 
 ex:FacsimileOfLiteralMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40089[not(@resource)]]"
   ].
@@ -1633,7 +1634,7 @@ ex:FacsimileOfLiteralMap a rr:TriplesMap;
 
 ex:HeldByMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[heldBy]"
   ].
@@ -1669,7 +1670,7 @@ ex:HeldByMap a rr:TriplesMap;
 
   ex:HeldByLiteralMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[heldBy[not(@resource)]]"
     ].
@@ -1702,7 +1703,7 @@ ex:HeldByMap a rr:TriplesMap;
 
   ex:HeldByRoleMap a rr:TriplesMap;
     rml:logicalSource [
-      rml:source "/home/mcm104/rml/rdfxml/data/item/2020_7_17/02175de7-4e6b-4802-8a02-57a0a870f76c.xml";
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
       rml:referenceFormulation ql:XPath;
       rml:iterator "/RDF/Description[heldBy]"
     ].
