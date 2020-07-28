@@ -1,0 +1,35 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b7ef5c30-4e4c-459c-8361-2c371359894f> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "lins@uw.edu" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-06-10" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Carey, Cathea Marcena. Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ] ;
+    ns1:originDate "2019" ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    ns1:subject [ a ns2:Authority ;
+            rdfs:label "Alcohol Drinking--prevention $ control" ;
+            ns2:authoritativeLabel "Alcohol Drinking--prevention $ control" ],
+        <http://id.nlm.nih.gov/mesh/D006297>,
+        <http://id.nlm.nih.gov/mesh/D006630>,
+        <http://id.nlm.nih.gov/mesh/D057545> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ] .
+

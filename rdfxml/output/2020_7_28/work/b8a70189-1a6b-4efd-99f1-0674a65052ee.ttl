@@ -1,0 +1,36 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/subjects/sh85086913>,
+        <http://id.loc.gov/authorities/subjects/sh85120249> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ],
+                [ a ns1:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            rdf:value "Timelines (Middleton St. George, England)"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Timelines (Darlington, England)"@eng ] ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n81082053>,
+        <http://id.loc.gov/authorities/names/n88238062> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Timelines"@eng ] .
+

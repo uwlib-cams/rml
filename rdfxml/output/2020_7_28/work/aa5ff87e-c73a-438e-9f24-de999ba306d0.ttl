@@ -1,0 +1,39 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/aa5ff87e-c73a-438e-9f24-de999ba306d0> a ns2:Work ;
+    ns3:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060078>,
+        <http://id.loc.gov/authorities/subjects/sh2002006249> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-29" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026280> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Smith, Janet L. Sea of troubles"@eng ] ;
+    ns2:originDate "1990" ;
+    ns2:subject [ a ns1:Authority ;
+            rdfs:label "MacPherson, Annie (Fictitious character) -- Fiction",
+                "San Juan Islands (Wash.)-- Fiction",
+                "Seattle (Wash.) -- Fiction" ;
+            ns1:authoritativeLabel "MacPherson, Annie (Fictitious character) -- Fiction",
+                "San Juan Islands (Wash.)-- Fiction",
+                "Seattle (Wash.) -- Fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2008113422>,
+        <http://id.loc.gov/authorities/subjects/sh2008113424> ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Sea of troubles"@eng ] .
+
