@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/921f8702-2492-4296-ba11-c3315f76687d> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50079957> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Critical connections: communication for the future."@eng ] ;
+    bf:originDate "[1990]" ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2008112724>,
+        <http://id.loc.gov/authorities/subjects/sh2008112726>,
+        <http://id.loc.gov/authorities/subjects/sh2010115851>,
+        <http://id.loc.gov/authorities/subjects/sh85133286> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Critical connections."@zxx ] .
+

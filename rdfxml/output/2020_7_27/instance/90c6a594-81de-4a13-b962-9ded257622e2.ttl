@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/90c6a594-81de-4a13-b962-9ded257622e2> a bf:Instance,
+        bf:Print ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "TX725.S9M38 2017" ] ;
+    bf:copyrightDate "©2107" ;
+    bf:dimensions "27 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "352 pages"@eng ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cookbooks" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "9781566569866" ] ;
+    bf:instanceOf [ a bf:Work ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Manufacture ;
+            bf:agent _:N1d62816380144fb595cfe97b49ad44fd ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Book designer"@en ;
+                    bf:noteType "manufacturer’s role"@en ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Interlink Books"@eng ] ;
+            bf:date "2017" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Northampton (Mass.)"@eng ] ],
+        [ a bf:Contribution ;
+            bf:agent _:N1d62816380144fb595cfe97b49ad44fd ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:responsibilityStatement "Marlene Matar"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ;
+            bf:subtitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Celebrating the legendary cuisine of Syria"@eng ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ] .
+
+_:N1d62816380144fb595cfe97b49ad44fd a bf:Agent ;
+    rdfs:label "Moushabeck, Leyla " .
+

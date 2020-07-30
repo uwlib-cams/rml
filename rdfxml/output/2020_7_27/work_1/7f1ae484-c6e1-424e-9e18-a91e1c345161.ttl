@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7f1ae484-c6e1-424e-9e18-a91e1c345161> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50044220> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026165> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Kozloff, Eugene N. Seashore life of the northern Pacific Coast"@eng ] ;
+    bf:originDate "1983" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Marine biology -- North Pacific Ocean",
+                "Seashore biology -- Northwest, Pacific" ;
+            madsrdf:authoritativeLabel "Marine biology -- North Pacific Ocean",
+                "Seashore biology -- Northwest, Pacific" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Seashore life of the northern Pacific coast"@eng ] .
+

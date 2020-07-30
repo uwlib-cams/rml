@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b7ef5c30-4e4c-459c-8361-2c371359894f> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-10" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Carey, Cathea Marcena. Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ] ;
+    bf:originDate "2019" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Alcohol Drinking--prevention $ control" ;
+            madsrdf:authoritativeLabel "Alcohol Drinking--prevention $ control" ],
+        <http://id.nlm.nih.gov/mesh/D006297>,
+        <http://id.nlm.nih.gov/mesh/D006630>,
+        <http://id.nlm.nih.gov/mesh/D057545> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ] .
+

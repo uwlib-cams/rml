@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2f419e71-0aef-4924-b284-91a61bc4e953> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2011078445>,
+                <http://id.loc.gov/rwo/agents/no97004838> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "European Conference on Product and Process Modelling (2010 : Cork, Ireland). eWork and eBusiness in architecture, engineering and construction.Text. English"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2010" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Since 1994, the European Conference on Product and Process Modelling has provided a discussion platform for research and development in Architecture, Engineering, Construction and Facilities Management sectors.  eWork and eBusiness in Architecture, Engineering and Construction 2010 provides strategic knowledge on the achievements and trends in research, development, standardisation and industrial implementation of product and process information technology. The book contains contributions from leading experts, bringing together expertise, knowledge, and ongoing research and visions for the evolution of the expanding world of ICT-based applications that address information, process and project management in the dynamic construction sector. Also included are recent research programmes and the latest results from FP7, E2B, EG-ICE, ERABUILD, the European Construction Technology Platform, Science Foundation Ireland, Enterprise Ireland, Sustainable Energy Ireland and other funding agencies. The book is divided into three main themes: Complex Engineering Systems; Processes and Construction Management; Energy-Efficiency."@eng ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references and index"@eng ] .
+

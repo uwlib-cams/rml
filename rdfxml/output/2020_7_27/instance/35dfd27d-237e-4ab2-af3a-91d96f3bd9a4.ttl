@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/35dfd27d-237e-4ab2-af3a-91d96f3bd9a4> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "N7433.4.W225N38 2017" ] ;
+    bf:dimensions "12 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "12 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/0a873285-d181-4eb9-b2f0-17fadb2e583a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Gal-Pal Zines",
+                        "Gal-Pal Zines"@eng ] ;
+            bf:date "2017" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Honolulu, Hawaii"@eng ] ] ;
+    bf:provisionActivityStatement "[Honolulu, Hawaii] : Gal-Pal Zines, 2017"@eng ;
+    bf:responsibilityStatement "by Myra Mae Waddell"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Nautilus"@eng ] .
+

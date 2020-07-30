@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/22c4bb2a-2de5-4627-bba2-d618605d9d42> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PR6005.H66M88 1983" ] ;
+    bf:copyrightDate "©1960" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "212 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0-553-03000-0"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/5d2884c9-42b4-4236-b855-4b8e1c5e4671> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Bantam Books"@eng ],
+                <http://id.loc.gov/rwo/agents/n83120388> ;
+            bf:date "1983" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Toronto"@eng ] ] ;
+    bf:provisionActivityStatement "Toronto : Bantam Books, 1983"@eng ;
+    bf:responsibilityStatement "Agatha Christie"@eng ;
+    bf:seriesStatement "Agatha Christie hardcover collection"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Murder on the Orient Express"@eng ] .
+

@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f20b0696-86e9-49f4-8ade-fbfafef03e12> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n82040494> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n82040494> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/wpr> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n82040494> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdf:value "RDA Variant Access Point"@en ] ;
+            rdf:value "Historical guide to the architects"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "[1994]" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Since 1880, Seattle has grown from a small town of only 3,500 to a major metropolis. Shaping Seattle Architecture : A Historical Guide to the Architects focuses on those whose designs shaped the physical form of the city and region. Publication of this invaluable reference work marks the one hundredth anniversary of the presence of the American Institute of Architects in Seattle and Washington State."@eng ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references and index"@eng ] .
+

@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8ee9850a-5eb1-41b7-8065-815b424d2670> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PS3561.I483E9 1987" ] ;
+    bf:copyrightDate "©1987" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "326 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/74e37d6f-e45b-4f88-858b-e0f8ffd1937a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Viking Penguin, Inc.",
+                        "Viking Penguin, Inc."@eng ] ;
+            bf:date "1987" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, New York"@eng ] ] ;
+    bf:provisionActivityStatement "New York, New York : Viking Penguin, Inc., 1987."@eng ;
+    bf:responsibilityStatement "a story by Stephen King; with illustrations by David Palladini"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eyes of the dragon"@eng ] .
+

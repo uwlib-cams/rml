@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PS3503.R2733D67 1942" ] ;
+    bf:copyrightDate "©1942" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "50 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French"@eng,
+                        "Samuel French, LTD"@eng ] ;
+            bf:date "1942" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng,
+                        "Los Angeles, Calif."@eng ] ] ;
+    bf:responsibilityStatement "by Ned Albert"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Down in the heart of Texas"@eng ;
+            bf:subtitle "a comedy of the wide open spaces in one act"@eng ] .
+

@@ -1,0 +1,44 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/239f95ad-00ff-4c7c-99b3-18acb567d312> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "QL737.R632G64 2018" ] ;
+    bf:copyrightDate "©2018" ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 286 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 9781603589086"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/0a8385c4-35ad-4640-a702-0e285625eefb> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Chelsea Green Publishing"@eng ],
+                <http://id.loc.gov/rwo/agents/no2011013084> ;
+            bf:date "[2018]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London, UK"@eng,
+                        "White River Junction, Vermont"@eng ] ] ;
+    bf:provisionActivityStatement "Chelsea Green Publishing : White River Junction, Vermont : London, UK,  [2018]"@eng ;
+    bf:responsibilityStatement "Ben Goldfarb ; foreword by Dan Flores"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eager"@eng ;
+            bf:subtitle "the surprising, secret life of beavers and why they matter"@eng ] .
+

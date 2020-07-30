@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> a bf:Instance,
+        bf:Print ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "SF429.B75W362 2011" ] ;
+    bf:copyrightDate "©2012" ;
+    bf:dimensions "21 cm"@eng ;
+    bf:editionStatement "Second edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 164 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "2011018223"@eng,
+                "9780764146008"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/b109860f-1a89-4dda-b922-f06701f448f7> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Barron's"@eng ] ;
+            bf:date "[2011]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Hauppauge, NY"@eng ] ] ;
+    bf:provisionActivityStatement "Hauppauge, NY : Barron's, [2011]"@eng ;
+    bf:responsibilityStatement "Joan Hustace Walker"@eng ;
+    bf:seriesStatement "Barron's training your dog series"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Training your boxer"@eng ] .
+

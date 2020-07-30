@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/dd916f10-1f4f-4477-ab9a-e644aeed88c6> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-15" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n50015174> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n83209489> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di. English (Garnett)"@eng ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdf:value "RDA Variant Access Point"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Poor folk (Garnett)"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "1914" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Poor Folk is written in the form of letters between the two main characters, Makar Devushkin and Varvara Dobroselova, who are poor third cousins twice removed. The novel showcases the life of poor people, their relationship with rich people, and poverty in general, all common themes of literary naturalism. A deep but odd friendship develops between them until Dobroselova loses her interest in literature, and later in communicating with Devushkin after a rich widower Mr. Bykov proposes to her. Devushkin, a prototype of the clerk found in many works of naturalistic literature at that time, retains his sentimental characteristics; Dobroselova abandons art, while Devushkin cannot live without literature\"--Wikipedia, January 15, 2020."@eng ] .
+

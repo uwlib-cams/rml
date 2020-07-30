@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85024235>,
+        <http://id.loc.gov/authorities/subjects/sh85083510> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lei, Zepu" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lei, Zepu. Xinning xiang tu di li"@eng ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ],
+                [ a bf:Note ;
+                    rdfs:label "variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            rdf:value "Lei, Zepu."@eng,
+                "Lei, Zepu. 新宁乡土地理"@eng ] ;
+    bf:originDate "1909",
+        "宣統元年" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Taishan Shi (China)" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Taishan Shi (Guangdong Sheng, China)--Historical geography" ;
+            madsrdf:authoritativeLabel "Taishan Shi (Guangdong Sheng, China)--Historical geography" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu di li"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "新寧鄉土地理"@chi ] .
+
