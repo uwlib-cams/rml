@@ -1,0 +1,33 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a3186ad1-a262-4206-a35d-9598b7f11d27> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "dbrookin"@zxx ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-03-13"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@zxx ] ] ;
+    ns1:P10061 "Kopach, Oleksandra" ;
+    ns1:P10086 "Language and style of Ol'ha Kobylianska"@eng,
+        "Мовостиль Ольги Кобилянської"@ukr ;
+    ns1:P10223 "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ;
+    ns1:P10256 "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language." ;
+    ns1:P10331 "Kopach, Oleksandra. Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ;
+    ns1:P10332 "Копач, Олександра.Мовостиль Ольги Кобилянської"@ukr ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

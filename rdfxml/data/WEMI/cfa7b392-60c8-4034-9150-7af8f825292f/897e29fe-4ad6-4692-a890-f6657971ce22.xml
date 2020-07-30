@@ -1,0 +1,50 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "cec23" ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-12-09" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>,
+                "http://id.loc.gov/vocabulary/descriptionConventions/dcrmc" ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2011026033>,
+        "http://id.loc.gov/authorities/genreForms/gf2017027232" ;
+    ns1:P10019 "http://id.loc.gov/authorities/names/no2015087016" ;
+    ns1:P10024 "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n50043248> ;
+    ns1:P10086 "Alten Stettin"@deu,
+        "Stettin"@deu ;
+    ns1:P10216 "Shows the Oder River, people, animals, boats, fortifications, buildings, hills, trees, and farmland. Shows the Cathedral Basilica of St James the Apostle."@eng ;
+    ns1:P10218 <http://id.loc.gov/authorities/names/n80050882> ;
+    ns1:P10219 "1617" ;
+    ns1:P10222 "An aerial view of the city of Stettin (modern-day Szczecin) from the northwest."@eng ;
+    ns1:P10223 "Alten Stettin (Map : 1588)"@deu ;
+    ns1:P10256 "Szczecin (Poland)--Aerial views--Early works to 1800" ;
+    ns1:P10311 <http://id.loc.gov/authorities/names/n50043890> ;
+    ns1:P10331 "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. Part 4. Plate 41."@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:map" ;
+    ns3:hasLcGeographicClassification "G6524.S93" .
+
+<http://id.loc.gov/authorities/genreForms/gf2011026033> rdfs:label "Aerial views" .
+
+<http://id.loc.gov/authorities/names/n50043248> rdfs:label "Braun, Georg, 1540 or 1541-1622" .
+
+<http://id.loc.gov/authorities/names/n50043890> rdfs:label "Hogenberg, Frans, approximately 1539-1590" .
+
+<http://id.loc.gov/authorities/names/n80050882> rdfs:label "Cologne (Germany)" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

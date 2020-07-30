@@ -1,0 +1,35 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5b20e066-5723-4067-a8e5-799342f90192> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "dbrookin"@zxx ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-07"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@zxx ] ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026094> ;
+    ns1:P10019 "Prager Tagblatt" ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n80009832> ;
+    ns1:P10223 "Heimweh nach Prag"@eng ;
+    ns1:P10331 "Roth, Joseph, 1894-1939. Heimweh nach Prag"@deu ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026094> rdfs:label "Essays" .
+
+<http://id.loc.gov/authorities/names/n80009832> rdfs:label "Roth, Joseph, 1894-1939" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

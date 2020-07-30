@@ -1,0 +1,64 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8846a80b-5fa3-4dfe-8032-1b5dcf42e2e5> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "aentze"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:changeDate "2020-04-23"@eng ;
+            ns2:creationDate "2020-04-23"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1960"@eng ;
+    ns1:P30011 "[1962]"@eng ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/no2017063288> ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "New York"@eng ;
+    ns1:P30105 "Harper Lee"@eng ;
+    ns1:P30111 "New York : Popular Library, [1962]"@eng ;
+    ns1:P30133 "Popular Library edition"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6> ;
+    ns1:P30156 "To kill a mockingbird"@eng ;
+    ns1:P30169 "21 cm"@eng ;
+    ns1:P30176 "Popular Library"@eng ;
+    ns1:P30182 "284 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "LCCN: 60-7847"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "PS3562.E353"@eng ;
+    ns3:hasLcClassificationPartB "T6 1962"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/no2017063288> rdfs:label "Popular Library (New York, N.Y.)" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6> rdfs:label "https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "https://id.loc.gov/vocabulary/organizations/wau" .
+

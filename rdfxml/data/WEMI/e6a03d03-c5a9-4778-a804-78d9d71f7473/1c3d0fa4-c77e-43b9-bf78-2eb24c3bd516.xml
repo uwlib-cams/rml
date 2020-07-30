@@ -1,0 +1,64 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1c3d0fa4-c77e-43b9-bf78-2eb24c3bd516> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "emcotter"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-18"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "© 1990"@zxx ;
+    ns1:P30011 "1990"@zxx ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Washington, D.C."@eng ;
+    ns1:P30105 "David M. Pritzker and Deborah S. Dalton"@eng ;
+    ns1:P30111 "Washington, D.C. : Office of the Chairman, Administrative Conference of the U.S., 1990"@eng ;
+    ns1:P30137 "\"January 1990.\""@eng,
+        "S/N 052-003-01134-4"@eng,
+        "Shipping list no.: 90-191-P"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/4ef39050-3af2-4a3a-8ea6-61a379d7d0e5> ;
+    ns1:P30156 "Negotiated rulemaking sourcebook"@eng ;
+    ns1:P30169 "24 cm"@eng ;
+    ns1:P30176 "Office of the Chairman, Administrative Conference of the U.S."@eng ;
+    ns1:P30182 "xix, 923 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "Y 3.Ad 6:2 R 86" ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "KF5411"@eng ;
+    ns3:hasLcClassificationPartB ".P75 1990"@eng ;
+    ns3:hasSuDocClassificationNumber "Y 3.Ad 6:2 R 86"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/4ef39050-3af2-4a3a-8ea6-61a379d7d0e5> rdfs:label "https://trellis.sinopia.io/repository/washington/4ef39050-3af2-4a3a-8ea6-61a379d7d0e5" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

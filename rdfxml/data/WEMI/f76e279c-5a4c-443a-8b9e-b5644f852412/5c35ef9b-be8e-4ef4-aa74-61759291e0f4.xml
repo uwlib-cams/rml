@@ -1,0 +1,80 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "aschiff"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-11"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1968"@eng ;
+    ns1:P30011 "[1968]"@eng ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/n80020835> ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Boston"@eng,
+        "Toronto"@eng ;
+    ns1:P30105 "by Louisa May Alcott"@eng,
+        "illustrations in color by Jessie Willcox Smith"@eng,
+        "with a new introduction by Cornelia Meigs"@eng ;
+    ns1:P30111 "Boston ; Toronto : Little Brown and Company, [1968]"@eng ;
+    ns1:P30128 "Little women"@eng,
+        "Meg, Jo, Beth, and Amy"@eng ;
+    ns1:P30133 "Centennial edition"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
+    ns1:P30156 "Little women, or, Meg, Jo, Beth, and Amy"@eng ;
+    ns1:P30169 "24 cm"@eng ;
+    ns1:P30176 "Little Brown and Company"@eng ;
+    ns1:P30182 "xvii, 444 pages, 8 unnumbered leaves of plates"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:P30305 <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/subjects/sh85055012> ;
+    ns6:P30004 "ISBN 0-316-030-90-2"@eng,
+        "LCCN 68-0211171"@eng,
+        "OCLC 1157"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "PZ7.A335"@eng ;
+    ns3:hasLcClassificationPartB "Li68"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060010> rdfs:label "Children" .
+
+<http://id.loc.gov/authorities/subjects/sh85055012> rdfs:label "Girls" .
+
+<http://id.loc.gov/rwo/agents/n80020835> rdfs:label "Little, Brown and Company" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> rdfs:label "Little women. English" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

@@ -1,0 +1,41 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/970bb97e-7efe-4ac7-97cf-d00b868ca0d6> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "dbrookin"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-02-26"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@zxx ] ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026542> ;
+    ns1:P10086 "ဆရာကြီးဦးရန်အောင် ရာပြည့်အထိမ်းအမှတ် ရန်အောင်"@bur ;
+    ns1:P10223 "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ"@bur ;
+    ns1:P10256 <http://id.loc.gov/authorities/subjects/sh85121836>,
+        "Burma--Social life and customs--Fiction" ;
+    ns1:P10331 "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ"@bur ;
+    ns1:P10332 "ဆရာကြီးဦးရန်အောင် ရာပြည့်အထိမ်းအမှတ် ရန်အောင်"@bur ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns2:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2016060004> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2016060004> rdfs:label "Burmese" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026542> rdfs:label "Short stories" .
+
+<http://id.loc.gov/authorities/subjects/sh85121836> rdfs:label "Short stories, Burmese" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

@@ -1,0 +1,51 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "cc83"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-12-22"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P30001 <http://rdaregistry.info/termList/RDACarrierType/1047>,
+        <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©"@eng ;
+    ns1:P30011 "乙未 [2015]"@eng ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/no2016169387> ;
+    ns1:P30105 "百蘭"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/bd6c8ad6-677e-4557-8877-cb387e7cbf8a> ;
+    ns1:P30156 "苏小妹"@chi ;
+    ns1:P30169 "103 x 66 cm, on sheet 192 x 79 cm rolled to 79 x 5 cm in diameter"@eng ;
+    ns1:P30176 "秦百蘭"@eng ;
+    ns1:P30182 "1 scroll"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Manifestation:graphic" ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/no2016169387> rdfs:label "Qin, Bailan, 1948-" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1047> rdfs:label "roll" .
+
+<http://rdaregistry.info/termList/RDACarrierType/1048> rdfs:label "sheet" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/bd6c8ad6-677e-4557-8877-cb387e7cbf8a> rdfs:label "苏小妹" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

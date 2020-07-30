@@ -1,0 +1,64 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "emcotter"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-06-16"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©[1990]"@zxx ;
+    ns1:P30011 "[1990]"@zxx ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "[Philadelphia, Pennsylvania?]"@eng ;
+    ns1:P30105 "Judicial Conference of the United States. Federal Courts Study Committee"@eng ;
+    ns1:P30111 "[Philadelphia, Pennsylvania?] : [Federal Courts Study Committee], [1990]"@eng ;
+    ns1:P30137 "\"April 2, 1990.\""@eng,
+        "Item 729"@eng,
+        "Shipping list no.: 90-426-P"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035> ;
+    ns1:P30156 "Report of the federal Courts Study Committee"@eng ;
+    ns1:P30169 "25 cm"@eng ;
+    ns1:P30176 "[Federal Courts Study Committee]"@eng ;
+    ns1:P30182 "xi, 203 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "Ju 10.2:F 31" ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "KF8719"@eng ;
+    ns3:hasLcClassificationPartB ".A345 1990"@eng ;
+    ns3:hasSuDocClassificationNumber "Ju 10.2:F 31"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035> rdfs:label "https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

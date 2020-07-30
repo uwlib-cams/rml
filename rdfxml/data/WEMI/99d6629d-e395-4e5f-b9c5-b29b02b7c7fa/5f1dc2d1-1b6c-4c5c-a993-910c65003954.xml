@@ -1,0 +1,35 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5f1dc2d1-1b6c-4c5c-a993-910c65003954> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "aentze"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-21"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10002 "S 17.38:G 31 tu"@eng ;
+    ns2:P10004 "Itineraries" ;
+    ns2:P10061 "German Methods Used to Increase Productivity Team" ;
+    ns2:P10067 "United States. International Cooperation Administration." ;
+    ns2:P10218 "Washington, D.C." ;
+    ns2:P10219 "[1956]" ;
+    ns2:P10223 "Program and itinerary."@eng ;
+    ns2:P10256 "German Methods Used to Increase Productivity Team." ;
+    ns2:P10331 "German Methods Used to Increase Productivity Team.  Program and itinerary."@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

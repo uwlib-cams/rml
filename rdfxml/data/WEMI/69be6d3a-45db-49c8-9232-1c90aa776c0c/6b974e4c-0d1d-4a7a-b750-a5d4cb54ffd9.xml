@@ -1,0 +1,36 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6b974e4c-0d1d-4a7a-b750-a5d4cb54ffd9> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "dbrookin"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-19"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@zxx ] ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026006> ;
+    ns1:P10061 "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903" ;
+    ns1:P10086 "Похождения одного матроса"@rus ;
+    ns1:P10223 "Pokhozhdenii︠a︡ odnogo matrosa"@rus ;
+    ns1:P10331 "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Pokhozhdenii︠a︡ odnogo matrosa"@rus ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/genreForms/gf2015026020> rdfs:label "Novels" .
+
+<http://id.loc.gov/authorities/genreForms/gf2016026006> rdfs:label "Sea fiction" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
