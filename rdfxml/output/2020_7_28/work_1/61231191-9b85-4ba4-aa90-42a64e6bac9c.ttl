@@ -1,0 +1,52 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/authorities/names/no2016031605> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026111> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Falcus, Matt. Lost airline colours of Europe"@eng ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ],
+                [ a ns1:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            rdf:value "Falcus, Matt. Lost airline colors of Europe"@eng ] ;
+    ns1:originDate "2016" ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    ns1:relatedTo <http://id.loc.gov/authorities/names/no2015137282>,
+        <https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> ;
+    ns1:subject [ a ns3:Authority ;
+            rdfs:label "Airlines--Europe--Identification--Pictorial works",
+                "Airplanes--Markings--Europe--Pictorial works",
+                "Transport planes--Europe--Identification--Pictorial works",
+                "Transport planes--Markings--Europe--Pictorial works" ;
+            ns3:authoritativeLabel "Airlines--Europe--Identification--Pictorial works",
+                "Airplanes--Markings--Europe--Pictorial works",
+                "Transport planes--Europe--Identification--Pictorial works",
+                "Transport planes--Markings--Europe--Pictorial works" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Lost airline colours of Europe"@eng ],
+        [ a ns1:VariantTitle ;
+            ns1:mainTitle "Lost airline colors of Europe"@eng ] .
+

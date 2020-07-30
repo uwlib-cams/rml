@@ -1,0 +1,40 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fb913d0c-e046-454d-ba60-8e4e1bd5fe90> a ns1:Work ;
+    ns2:creatorCharacteristic [ a ns2:CreatorCharacteristic ;
+            rdfs:label "Men" ],
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060212> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Stoker, Bram, ǂd 1847-1912" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026360>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026373> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Stoker, Bram, ǂd 1847-1912. Dracula."@eng ] ;
+    ns1:originDate "1897" ;
+    ns1:subject [ a ns3:Authority ;
+            rdfs:label "Dracula, Count (Fictious character)" ;
+            ns3:authoritativeLabel "Dracula, Count (Fictious character)" ],
+        <http://id.loc.gov/authorities/subjects/sh85141948> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Dracula."@eng ] .
+

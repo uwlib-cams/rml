@@ -1,0 +1,56 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a8592848-3759-4c1e-b37e-e56409254a3d> a ns3:Work ;
+    ns2:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060347> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "CC83" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-11-26" ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns3:contribution [ a ns3:Contribution ;
+            ns3:agent [ a ns3:Agent ;
+                    rdfs:label "今関六也, 1904-1991" ] ;
+            ns3:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns3:identifiedBy [ a ns3:Identifier ;
+            ns3:note [ a ns3:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns3:noteType "type of identifier"@en ] ;
+            ns3:source [ a ns3:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@jpn ],
+        [ a ns3:Identifier ;
+            ns3:source [ a ns3:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns3:noteType "type of identifier"@en ],
+                [ a ns3:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "今関六也, 1904-1991. 原色きのこ"@jpn ] ;
+    ns3:note [ a ns3:Note ;
+            rdfs:label "Japan"@eng ;
+            ns3:noteType "Coverage of the work"@en ] ;
+    ns3:originDate "1942" ;
+    ns3:originPlace <http://id.loc.gov/authorities/names/n79034998> ;
+    ns3:partOf [ a ns3:Work ;
+            rdfs:label "Nature guide" ] ;
+    ns3:subject [ a ns1:Authority ;
+            rdfs:label "Mushrooms, Poisonous--Japan",
+                "Mushrooms, Poisonous--Japan--Identification",
+                "Mushrooms--Japan",
+                "Mushrooms--Japan--Identification" ;
+            ns1:authoritativeLabel "Mushrooms, Poisonous--Japan",
+                "Mushrooms, Poisonous--Japan--Identification",
+                "Mushrooms--Japan",
+                "Mushrooms--Japan--Identification" ],
+        <http://id.loc.gov/authorities/subjects/sh85088751> ;
+    ns3:title [ a ns3:VariantTitle ;
+            ns3:mainTitle "Kinoko no saishū to miwakekata"@jpn,
+                "茸の採集と見分け方"@jpn ],
+        [ a ns3:Title ;
+            ns3:mainTitle "原色きのこ"@jpn ] .
+

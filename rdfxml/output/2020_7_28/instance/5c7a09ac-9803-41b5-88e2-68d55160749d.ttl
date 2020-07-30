@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5c7a09ac-9803-41b5-88e2-68d55160749d> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-07" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "227 pages"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/46865484-c1d1-42ca-9f42-c73a4c546ad9> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "At head of title: Академія наук Української РСР. Інстітут мовознавства ім. О.О. Потебні."@eng,
+                "Includes bibliographical references (pages 213-224)."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "\"Наукова думка\""@ukr ] ;
+            ns1:date "1968" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Київ"@ukr ] ] ;
+    ns1:provisionActivityStatement "Київ : \"Наукова думка\", 1968."@ukr ;
+    ns1:responsibilityStatement "Г.М. Удовиченко"@ukr ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Словосполучення в сучасній українській літературній мові"@ukr ] .
+
