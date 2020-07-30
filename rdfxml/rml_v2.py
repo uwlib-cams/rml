@@ -235,56 +235,56 @@ if not os.path.exists(f'output/{currentDate}'):
     os.makedirs(f'output/{currentDate}')
 
 # create work directory
-if not os.path.exists(f'output/{currentDate}/work'):
-    print(f'...\nCreating work directory')
-    os.makedirs(f'output/{currentDate}/work')
+if not os.path.exists(f'output/{currentDate}/work_1'):
+    print(f'...\nCreating work_1 directory')
+    os.makedirs(f'output/{currentDate}/work_1')
 
-print(f"...\nReserializing {num_of_works} works")
+print(f"...\nTransforming {num_of_works} from RDA Work to BIBFRAME Work")
 
 for work in workList:
     label = work.split('/')[-1] # save trellis identifier as label
-    workID = f"{currentDate}/work/{label}"
-    work_map_replace_to_ID(workID) # use trellis identifier as RML source in work monograph map
+    workID = f"{currentDate}/work/{label}" # use label to make path
+    work_map_replace_to_ID(workID) # use path as RML source in work monograph map
     os.system(f"java -jar mapper.jar -m maps/workMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
     workGraph = Graph()
     workGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-    workGraph.serialize(destination=f'output/{currentDate}/work/' + label + '.ttl', format="turtle") # serialize file in turtle
+    workGraph.serialize(destination=f'output/{currentDate}/work_1/' + label + '.ttl', format="turtle") # serialize file in turtle
     os.system(f"rm {label}.nq") # delete nquad file
     work_map_replace_to_default(workID) # return work monograph map to default
 
 # create expression directory
-if not os.path.exists(f'output/{currentDate}/expression'):
-    print(f'...\nCreating expression directory')
-    os.makedirs(f'output/{currentDate}/expression')
+if not os.path.exists(f'output/{currentDate}/work_2'):
+    print(f'...\nCreating work_2 directory')
+    os.makedirs(f'output/{currentDate}/work_2')
 
-print(f"...\nReserializing {num_of_expressions} expressions")
+print(f"...\nTransforming {num_of_expressions} from RDA Expression to BIBFRAME Work")
 
 for expression in expressionList:
-    label = expression.split('/')[-1]
-    expressionID = f"{currentDate}/expression/{label}"
+    label = expression.split('/')[-1] # save trellis identifier as label
+    expressionID = f"{currentDate}/expression/{label}" # use label to make path
     expression_map_replace_to_ID(expressionID) # use trellis identifier as RML source in expression monograph map
     os.system(f"java -jar mapper.jar -m maps/expressionMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
     expressionGraph = Graph()
     expressionGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-    expressionGraph.serialize(destination=f'output/{currentDate}/expression/' + label + '.ttl', format="turtle") # serialize file in turtle
+    expressionGraph.serialize(destination=f'output/{currentDate}/work_2/' + label + '.ttl', format="turtle") # serialize file in turtle
     os.system(f"rm {label}.nq") # delete nquad file
     expression_map_replace_to_default(expressionID) # return expression monograph map to default
 
 # create manifestation directory
-if not os.path.exists(f'output/{currentDate}/manifestation'):
-    print(f'...\nCreating manifestation directory')
-    os.makedirs(f'output/{currentDate}/manifestation')
+if not os.path.exists(f'output/{currentDate}/instance'):
+    print(f'...\nCreating instance directory')
+    os.makedirs(f'output/{currentDate}/instance')
 
-print(f"...\nReserializing {num_of_manifestations} manifestations")
+print(f"...\nTransforming {num_of_manifestations} from RDA Manifestation to BIBFRAME Instance")
 
 for manifestation in manifestationList:
-    label = manifestation.split('/')[-1]
-    manifestationID = f"{currentDate}/manifestation/{label}"
+    label = manifestation.split('/')[-1] # save trellis identifier as label
+    manifestationID = f"{currentDate}/manifestation/{label}" # use label to make path
     manifestation_map_replace_to_ID(manifestationID) # use trellis identifier as RML source in manifestation monograph map
     os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/maps/manifestationMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
     manifestationGraph = Graph()
     manifestationGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-    manifestationGraph.serialize(destination=f'output/{currentDate}/manifestation/' + label + '.ttl', format="turtle") # serialize file in turtle
+    manifestationGraph.serialize(destination=f'output/{currentDate}/instance/' + label + '.ttl', format="turtle") # serialize file in turtle
     os.system(f"rm {label}.nq") # delete nquad file
     manifestation_map_replace_to_default(manifestationID) # return manifestation monograph map to default
 
@@ -293,11 +293,11 @@ if not os.path.exists(f'output/{currentDate}/item'):
     print(f'...\nCreating item directory')
     os.makedirs(f'output/{currentDate}/item')
 
-print(f"...\nReserializing {num_of_items} items")
+print(f"...\nTransforming {num_of_items} from RDA Item to BIBFRAME Item")
 
 for item in itemList:
-    label = item.split('/')[-1]
-    itemID = f"{currentDate}/item/{label}"
+    label = item.split('/')[-1] # save trellis identifier as label
+    itemID = f"{currentDate}/item/{label}" # use label to make path
     item_map_replace_to_ID(itemID) # use trellis identifier as RML source in item monograph map
     os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/maps/itemMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
     itemGraph = Graph()
