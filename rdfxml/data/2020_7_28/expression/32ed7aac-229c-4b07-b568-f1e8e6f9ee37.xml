@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/e/"
-   xmlns:ns2="http://www.loc.gov/mads/rdf/v1#"
-   xmlns:ns3="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:rdae="http://rdaregistry.info/Elements/e/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -15,29 +15,29 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/32ed7aac-229c-4b07-b568-f1e8e6f9ee37">
-    <ns3:adminMetadata rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b1"/>
-    <ns1:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:P20231 rdf:resource="https://trellis.sinopia.io/repository/washington/aa5ff87e-c73a-438e-9f24-de999ba306d0"/>
-    <ns2:isIdentifiedByAuthority>no 91017070 </ns2:isIdentifiedByAuthority>
-    <ns1:P20065 xml:lang="eng">Latin</ns1:P20065>
+    <bf:adminMetadata rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b1"/>
+    <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <rdae:P20231 rdf:resource="https://trellis.sinopia.io/repository/washington/aa5ff87e-c73a-438e-9f24-de999ba306d0"/>
+    <madsrdf:isIdentifiedByAuthority>no 91017070 </ns2:isIdentifiedByAuthority>
+    <rdae:P20065 xml:lang="eng">Latin</ns1:P20065>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-    <ns1:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</ns5:hasResourceTemplate>
-    <ns1:P20214 xml:lang="eng">1990</ns1:P20214>
+    <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</ns5:hasResourceTemplate>
+    <rdae:P20214 xml:lang="eng">1990</ns1:P20214>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/aa5ff87e-c73a-438e-9f24-de999ba306d0">
     <rdfs:label>Sea of troubles</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns4:catalogerID xml:lang="eng">pfreeman</ns4:catalogerID>
-    <ns3:creationDate xml:lang="eng">2020-04-29</ns3:creationDate>
-    <ns3:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns3:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns3:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns3:status rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</ns4:catalogerID>
+    <bf:creationDate xml:lang="eng">2020-04-29</ns3:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:status rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>
@@ -46,7 +46,7 @@
     <rdfs:label>text</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f41acdac5aed6464781c4ae4ab9bb4e42b2">
-    <ns3:code xml:lang="eng">n</ns3:code>
+    <bf:code xml:lang="eng">n</ns3:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">

@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns3="http://sinopia.io/vocabulary/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="fdf763566e693401099f47816af719bfab1">
-    <ns1:changeDate xml:lang="eng">2020-04-21</ns1:changeDate>
-    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns1:creationDate xml:lang="eng">2020-04-20</ns1:creationDate>
+    <bf:changeDate xml:lang="eng">2020-04-21</ns1:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate xml:lang="eng">2020-04-20</ns1:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:catalogerID xml:lang="eng">pfreeman</ns4:catalogerID>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:status rdf:nodeID="fdf763566e693401099f47816af719bfab2"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</ns4:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="fdf763566e693401099f47816af719bfab2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/261c0d2e-0240-4085-8106-2b60099a511d">
-    <ns2:hasPhysicalSubLocation xml:lang="eng">drstx</ns2:hasPhysicalSubLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">drstx</ns2:hasPhysicalSubLocation>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns3:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns3:hasResourceTemplate>
-    <ns2:hasLcClassificationPartB xml:lang="eng">D67 1942</ns2:hasLcClassificationPartB>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce"/>
-    <ns1:adminMetadata rdf:nodeID="fdf763566e693401099f47816af719bfab1"/>
-    <ns2:hasLcClassificationPartA xml:lang="eng">PS3503.R2733</ns2:hasLcClassificationPartA>
-    <ns2:hasBarcode xml:lang="eng">39352038581179</ns2:hasBarcode>
-    <ns2:hasPhysicalLocation xml:lang="eng">Drama</ns2:hasPhysicalLocation>
-    <ns2:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns3:hasResourceTemplate>
+    <rdax:hasLcClassificationPartB xml:lang="eng">D67 1942</ns2:hasLcClassificationPartB>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce"/>
+    <bf:adminMetadata rdf:nodeID="fdf763566e693401099f47816af719bfab1"/>
+    <rdax:hasLcClassificationPartA xml:lang="eng">PS3503.R2733</ns2:hasLcClassificationPartA>
+    <rdax:hasBarcode xml:lang="eng">39352038581179</ns2:hasBarcode>
+    <rdax:hasPhysicalLocation xml:lang="eng">Drama</ns2:hasPhysicalLocation>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fdf763566e693401099f47816af719bfab2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</ns1:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>https://id.loc.gov/vocabulary/organizations/wau</rdfs:label>

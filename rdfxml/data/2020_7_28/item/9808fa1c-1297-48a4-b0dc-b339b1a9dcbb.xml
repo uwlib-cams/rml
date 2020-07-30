@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns2="http://rdaregistry.info/Elements/i/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
-   xmlns:ns5="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/9808fa1c-1297-48a4-b0dc-b339b1a9dcbb">
-    <ns1:hasLcClassificationPartA xml:lang="eng">G4271.P2 2015</ns1:hasLcClassificationPartA>
-    <ns1:hasBarcode xml:lang="eng">39352084547009</ns1:hasBarcode>
-    <ns1:hasLcClassificationPartB xml:lang="eng">.A2</ns1:hasLcClassificationPartB>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Item:map</ns4:hasResourceTemplate>
-    <ns2:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/28d8851a-0d94-48f5-a7ca-b7584376d16f"/>
-    <ns1:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:hasPhysicalLocation xml:lang="eng">suzzallen</ns1:hasPhysicalLocation>
-    <ns1:hasPhysicalSubLocation xml:lang="eng">mpgen</ns1:hasPhysicalSubLocation>
+    <rdax:hasLcClassificationPartA xml:lang="eng">G4271.P2 2015</ns1:hasLcClassificationPartA>
+    <rdax:hasBarcode xml:lang="eng">39352084547009</ns1:hasBarcode>
+    <rdax:hasLcClassificationPartB xml:lang="eng">.A2</ns1:hasLcClassificationPartB>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:map</ns4:hasResourceTemplate>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/28d8851a-0d94-48f5-a7ca-b7584376d16f"/>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdax:hasPhysicalLocation xml:lang="eng">suzzallen</ns1:hasPhysicalLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">mpgen</ns1:hasPhysicalSubLocation>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns3:adminMetadata rdf:nodeID="f4d355198ee95465a855c1062596a1df2b1"/>
+    <bf:adminMetadata rdf:nodeID="f4d355198ee95465a855c1062596a1df2b1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>
@@ -28,14 +28,14 @@
     <rdfs:label>https://trellis.sinopia.io/repository/washington/28d8851a-0d94-48f5-a7ca-b7584376d16f</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f4d355198ee95465a855c1062596a1df2b1">
-    <ns5:catalogerID xml:lang="eng">lins@uw.edu</ns5:catalogerID>
-    <ns3:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns3:creationDate xml:lang="eng">2020-04-30</ns3:creationDate>
-    <ns3:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns3:status rdf:nodeID="f4d355198ee95465a855c1062596a1df2b2"/>
+    <bflc:catalogerID xml:lang="eng">lins@uw.edu</ns5:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate xml:lang="eng">2020-04-30</ns3:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="f4d355198ee95465a855c1062596a1df2b2"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns5:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
@@ -47,7 +47,7 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f4d355198ee95465a855c1062596a1df2b2">
-    <ns3:code xml:lang="eng">n</ns3:code>
+    <bf:code xml:lang="eng">n</ns3:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
 </rdf:RDF>

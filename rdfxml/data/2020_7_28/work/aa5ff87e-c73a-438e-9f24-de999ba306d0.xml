@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/w/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,15 +12,15 @@
     <rdfs:label>Detective and mystery fiction</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b2">
-    <ns2:status rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b1"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns2:creationDate xml:lang="eng">2020-04-29</ns2:creationDate>
-    <ns2:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b1"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="eng">2020-04-29</ns2:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns3:catalogerID xml:lang="eng">pfreeman</ns3:catalogerID>
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</ns3:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2008113424">
     <rdfs:label>Women detectives--Fiction</rdfs:label>
@@ -29,19 +29,19 @@
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/aa5ff87e-c73a-438e-9f24-de999ba306d0">
-    <ns4:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060078"/>
-    <ns4:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh2002006249"/>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns5:hasResourceTemplate>
-    <ns1:P10219 xml:lang="eng">1990</ns1:P10219>
-    <ns1:P10256>San Juan Islands (Wash.)-- Fiction</ns1:P10256>
-    <ns1:P10331 xml:lang="eng">Smith, Janet L. Sea of troubles</ns1:P10331>
-    <ns1:P10256>Seattle (Wash.) -- Fiction</ns1:P10256>
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
-    <ns2:adminMetadata rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b2"/>
-    <ns1:P10256>MacPherson, Annie (Fictitious character) -- Fiction</ns1:P10256>
-    <ns1:P10223 xml:lang="eng">Sea of troubles</ns1:P10223>
-    <ns1:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113422"/>
-    <ns1:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113424"/>
+    <rdax:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060078"/>
+    <rdax:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh2002006249"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns5:hasResourceTemplate>
+    <rdaw:P10219 xml:lang="eng">1990</ns1:P10219>
+    <rdaw:P10256>San Juan Islands (Wash.)-- Fiction</ns1:P10256>
+    <rdaw:P10331 xml:lang="eng">Smith, Janet L. Sea of troubles</ns1:P10331>
+    <rdaw:P10256>Seattle (Wash.) -- Fiction</ns1:P10256>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
+    <bf:adminMetadata rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b2"/>
+    <rdaw:P10256>MacPherson, Annie (Fictitious character) -- Fiction</ns1:P10256>
+    <rdaw:P10223 xml:lang="eng">Sea of troubles</ns1:P10223>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113422"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113424"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
@@ -55,7 +55,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="f445f033ff1174b7bb35d489e7bce8056b1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns2:code xml:lang="eng">n</ns2:code>
+    <bf:code xml:lang="eng">n</ns2:code>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2008113422">
     <rdfs:label>Women lawyers--Fiction</rdfs:label>

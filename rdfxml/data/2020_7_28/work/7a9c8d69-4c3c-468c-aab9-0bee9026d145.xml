@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/w/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -14,7 +14,7 @@
     <rdfs:label>WAU</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b1">
-    <ns2:code xml:lang="eng">n</ns2:code>
+    <bf:code xml:lang="eng">n</ns2:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2008121119">
@@ -22,28 +22,28 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/7a9c8d69-4c3c-468c-aab9-0bee9026d145">
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns1:P10256>Grandmothers -- Drama</ns1:P10256>
-    <ns1:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008121119"/>
-    <ns1:P10219 xml:lang="eng">1935</ns1:P10219>
-    <ns2:adminMetadata rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b2"/>
-    <ns1:P10061> Braun, Wilbur, 1894-1968</ns1:P10061>
-    <ns1:P10223 xml:lang="eng">He ain't done right by Nell</ns1:P10223>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns4:hasResourceTemplate>
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026432"/>
-    <ns1:P10331 xml:lang="eng">Braun, Wilbur, 1894-1968. He ain't done right by Nell</ns1:P10331>
-    <ns1:P10004>Drama</ns1:P10004>
+    <rdaw:P10256>Grandmothers -- Drama</ns1:P10256>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008121119"/>
+    <rdaw:P10219 xml:lang="eng">1935</ns1:P10219>
+    <bf:adminMetadata rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b2"/>
+    <rdaw:P10061> Braun, Wilbur, 1894-1968</ns1:P10061>
+    <rdaw:P10223 xml:lang="eng">He ain't done right by Nell</ns1:P10223>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns4:hasResourceTemplate>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026432"/>
+    <rdaw:P10331 xml:lang="eng">Braun, Wilbur, 1894-1968. He ain't done right by Nell</ns1:P10331>
+    <rdaw:P10004>Drama</ns1:P10004>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b2">
-    <ns2:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns3:catalogerID xml:lang="eng">pfreeman</ns3:catalogerID>
-    <ns2:status rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b1"/>
-    <ns2:creationDate xml:lang="eng">2020-04-30</ns2:creationDate>
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</ns3:catalogerID>
+    <bf:status rdf:nodeID="fd2a365b381ce464ab5de0ce8e915c8d4b1"/>
+    <bf:creationDate xml:lang="eng">2020-04-30</ns2:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
