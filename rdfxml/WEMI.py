@@ -63,4 +63,4 @@ for item in itemGraph.subjects(predicate=rdai.P40049, object=None): # look for t
         recordGraph = Graph()
         recordGraph.load(f"file:///home/mcm104/rml/rdfxml/data/2020_7_28/{record}", format="xml") # load just these matches into their own graph
         label = record.split('.')[0] # name them according to their identifiers
-        recordGraph.serialize(destination=f"data/WEMI/{dir_label}" + label + ".ttl", format="turtle") # save to directory, serialized as turtle
+        recordGraph.serialize(destination=f"data/WEMI/{dir_label}" + label + ".xml", format="xml") # save to directory, serialized as turtle
