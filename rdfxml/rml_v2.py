@@ -10,16 +10,19 @@ currentDate = f"{today.year}_{today.month}_{today.day}"
 # pull all files from trellis
 print("...\nRetrieving graph URIs", flush=True)
 graph = Graph()
+
+# bind namespaces to graph
 LDP = Namespace('http://www.w3.org/ns/ldp#')
 rdac = Namespace('http://rdaregistry.info/Elements/c/')
 graph.bind('LDP', LDP)
 graph.bind('rdac', rdac)
 graph.load('https://trellis.sinopia.io/repository/washington', format='turtle')
-URIS = [] # list for record uris
-for o in graph.objects(subject=None,predicate=LDP.contains):#records are described in the parent repo using ldp.contains
-    URIS.append(o)
 
-# create lists for each entity
+URIS = [] # list for record URIs
+for o in graph.objects(subject=None,predicate=LDP.contains): # records are described in the parent repo using ldp.contains
+    URIS.append(o) # add records to URI list
+
+# lists for each entity
 workList = []
 expressionList = []
 manifestationList = []
@@ -35,13 +38,13 @@ if not os.path.exists(f'data/{currentDate}'):
 print(f"...\nLocating works")
 for uri in URIS:
     fileGraph = Graph()
-    fileGraph.load(uri,format='turtle')
-    for work in fileGraph.subjects(RDF.type, rdac.C10001): # looks for records typed as an RDA work
-        workList.append(work) # adds to work list
+    fileGraph.load(uri,format='turtle') # load records into graph
+    for work in fileGraph.subjects(RDF.type, rdac.C10001): # look for records typed as an RDA work
+        workList.append(work) # add to work list
 
 num_of_works = len(workList)
 
-if num_of_works == 0:
+if num_of_works == 0: # if no records are found (some issue has occurred)
     print("...\nNo works found.")
 
 elif num_of_works >= 1:
