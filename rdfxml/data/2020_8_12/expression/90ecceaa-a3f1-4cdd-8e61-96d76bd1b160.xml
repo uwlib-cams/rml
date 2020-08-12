@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:rdae="http://rdaregistry.info/Elements/e/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/rus">
+    <rdfs:label>Russian</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+    <rdfs:label>WAU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/3f51c956-0a93-4dc6-b16c-cecee7693db3">
+    <rdfs:label>Makedonsko-russkiĭ slovarʹ</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f88a8462581584df5838c4454b78078f2b1">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="zxx">dbrookin</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="f88a8462581584df5838c4454b78078f2b2"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate xml:lang="zxx">2020-03-04</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/90ecceaa-a3f1-4cdd-8e61-96d76bd1b160">
+    <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/mac"/>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+    <rdae:P20065 xml:lang="eng">Cyrillic</rdae:P20065>
+    <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <rdae:P20330>Tolstoĭ, Nikita, 1923-1996</rdae:P20330>
+    <bf:adminMetadata rdf:nodeID="f88a8462581584df5838c4454b78078f2b1"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</sin:hasResourceTemplate>
+    <rdae:P20231 rdf:resource="https://trellis.sinopia.io/repository/washington/3f51c956-0a93-4dc6-b16c-cecee7693db3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f88a8462581584df5838c4454b78078f2b2">
+    <bf:code xml:lang="zxx">n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>Resource Description and Access</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAContentType/1020">
+    <rdfs:label>text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label>full</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/mac">
+    <rdfs:label>Macedonian</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
