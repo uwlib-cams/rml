@@ -1,0 +1,15 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+<https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9> a bf:Work ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79029930> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ], # empty blank node
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2018026032> ;
+    bf:historyOfWork "\"The House of the Dead (Russian: Записки из Мёртвого дома, Zapiski iz Myortvovo doma) is a semi-autobiographical novel published in 1860–2[1] in the journal Vremya[2] by Russian author Fyodor Dostoevsky, which portrays the life of convicts in a Siberian prison camp. The novel has also been published under the titles Memoirs from the House of The Dead, Notes from the Dead House (or Notes from a Dead House), and Notes from the House of the Dead. The book is a loosely-knit collection of facts, events and philosophical discussion organised by \"theme\" rather than as a continuous story. Dostoevsky himself spent four years in exile in such a camp following his conviction for involvement in the Petrashevsky Circle. This experience allowed him to describe with great authenticity the conditions of prison life and the characters of the convicts\"--Wikipedia, January 15, 2020."@eng ;
+    bf:originDate "1862"@eng ;
+    bf:originPlace [ a bf:Place ], # empty blank node
+        <http://id.loc.gov/authorities/names/n80001203> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ] ; # empty blank node
+    bf:title [ a bf:VariantTitle ] . # empty blank node
