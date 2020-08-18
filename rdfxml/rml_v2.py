@@ -244,6 +244,13 @@ if not os.path.exists(f'output/{currentDate}/work_1'):
 
 print(f"...\nTransforming {num_of_works} from RDA Work to BIBFRAME Work")
 
+# adjust file permissions for map and for data (RML sometimes trips on file permissions)
+os.system("chmod u+rwx maps/workMonographMap.xml.ttl")
+workPermissionList = os.listdir(f'data/{currentDate}/work/')
+
+for work in workPermissionList:
+    os.system(f"chmod u+rwx data/{currentDate}/work/{work}")
+
 for work in workList:
     label = work.split('/')[-1] # save trellis identifier as label
     workID = f"{currentDate}/work/{label}" # use label to make path
@@ -261,6 +268,13 @@ if not os.path.exists(f'output/{currentDate}/work_2'):
     os.makedirs(f'output/{currentDate}/work_2')
 
 print(f"...\nTransforming {num_of_expressions} from RDA Expression to BIBFRAME Work")
+
+# adjust file permissions for map and for data (RML sometimes trips on file permissions)
+os.system("chmod u+rwx maps/expressionMonographMap.xml.ttl")
+expressionPermissionList = os.listdir(f'data/{currentDate}/expression/')
+
+for expression in expressionPermissionList:
+    os.system(f"chmod u+rwx data/{currentDate}/expression/{expression}")
 
 for expression in expressionList:
     label = expression.split('/')[-1] # save trellis identifier as label
@@ -280,6 +294,13 @@ if not os.path.exists(f'output/{currentDate}/instance'):
 
 print(f"...\nTransforming {num_of_manifestations} from RDA Manifestation to BIBFRAME Instance")
 
+# adjust file permissions for map and for data (RML sometimes trips on file permissions)
+os.system("chmod u+rwx maps/manifestationMonographMap.xml.ttl")
+manifestationPermissionList = os.listdir(f'data/{currentDate}/manifestation/')
+
+for manifestation in manifestationPermissionList:
+    os.system(f"chmod u+rwx data/{currentDate}/manifestation/{manifestation}")
+
 for manifestation in manifestationList:
     label = manifestation.split('/')[-1] # save trellis identifier as label
     manifestationID = f"{currentDate}/manifestation/{label}" # use label to make path
@@ -297,6 +318,13 @@ if not os.path.exists(f'output/{currentDate}/item'):
     os.makedirs(f'output/{currentDate}/item')
 
 print(f"...\nTransforming {num_of_items} from RDA Item to BIBFRAME Item")
+
+# adjust file permissions for map and for data (RML sometimes trips on file permissions)
+os.system("chmod u+rwx maps/itemMonographMap.xml.ttl")
+itemPermissionList = os.listdir(f'data/{currentDate}/item/')
+
+for item in itemPermissionList:
+    os.system(f"chmod u+rwx data/{currentDate}/item/{item}")
 
 for item in itemList:
     label = item.split('/')[-1] # save trellis identifier as label
