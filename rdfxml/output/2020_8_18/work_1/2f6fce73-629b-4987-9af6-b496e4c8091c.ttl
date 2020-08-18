@@ -1,0 +1,30 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2f6fce73-629b-4987-9af6-b496e4c8091c> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "ries07" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-06" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:contribution [ a ns2:Contribution ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Saito, Tatsuhiko" ] ;
+            ns2:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Tsunami generation and progagation, Tatsuhiko Saito."@eng ] ;
+    ns2:originDate "2019" ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Tsunami generation and progagation"@eng ] .
+

@@ -1,0 +1,39 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0fdb4413-f1ca-4f14-b60b-06156c4e0c8d> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-26" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Komarova, Natalʹi︠a︡" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/subjects/sh99001576> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "RDA Variant Access Point"@en ] ;
+            rdf:value "Wittkowsky, Andreas. Pi︠a︡tiletka bez plana"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "Wittkowsky, Andreas. Fünf Jahre ohne Plan. Russian"@eng ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Cyrillic"@eng ] ;
+    ns1:originDate "1998" ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "An analysis of the first five years of the Ukrainian national government. The starting point is the thesis that the national consensus reached in the moment of independence was the result of an \"historic compromise\" between three basic forces: the national movement, the Communist Party nomenklatura, and the striking miners of Donbass. This consensus was destroyed by economic crisis and disagreement about the policy of Ukrainianization. Separatist tendencies arose in Donbass and Crimea. Government consolidation became possible only with the appearance in regional elites of Eastern Ukraine of pragmatic interest in the existence of a national goverment."@eng ] .
+

@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3e8e8d5b-d6aa-4050-9470-8dc0f286fa94> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "emcotter" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:classification [ a ns1:Classification ;
+            rdfs:label "Y 1.1/7:101-139" ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "SuDoc"@en ] ],
+        [ a ns1:ClassificationLcc ;
+            rdf:value "KF4945.Z9W54 1990" ] ;
+    ns1:copyrightDate "© 1990" ;
+    ns1:dimensions "23 cm"@eng ;
+    ns1:editionStatement "Revised and updated by Edward F. Willett"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "vi, 70 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "Y 1.1/7:101-139" ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/4ea0c284-f575-4e3e-b2a3-84f1b623f0e8> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "\"Bicentennial edition, 1789-1989\"--Cover"@eng,
+                "\"November 20, 1989.\""@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "United States Government Printing Office"@eng ],
+                <http://id.loc.gov/rwo/agents/n79143109> ;
+            ns1:date "1990" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    ns1:provisionActivityStatement "Washington, D.C. : United States Government Printing Office, 1990"@eng ;
+    ns1:responsibilityStatement "Presented by Mr. Brooks"@eng,
+        "Revised and updated by Edward F. Willett"@eng ;
+    ns1:seriesEnumeration "101-139" ;
+    ns1:seriesStatement "Document / 101st Congress, 2d session, House of Representatives ; no. 101-139"@eng,
+        "House document (United States. Congress. House)"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "How our laws are made"@eng ] .
+

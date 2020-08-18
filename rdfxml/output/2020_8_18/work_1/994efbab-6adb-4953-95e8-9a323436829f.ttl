@@ -1,0 +1,39 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/994efbab-6adb-4953-95e8-9a323436829f> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "jlee37" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "04-06-2020" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Guo ji si fa de zhan yang zhi lu"@chi ],
+        [ a ns2:Identifier ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ],
+                [ a ns2:Note ;
+                    rdfs:label "variant access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            rdf:value "Road to the invigoration of private international law"@chi,
+                "国际私法的振扬之路"@chi ] ;
+    ns2:originDate "2019" ;
+    ns2:originPlace <http://id.loc.gov/authorities/names/n79091151> ;
+    ns2:subject <http://id.loc.gov/authorities/subjects/sh85030965> ;
+    ns2:title [ a ns2:VariantTitle ;
+            ns2:mainTitle "Road to the invigoration of private international law"@eng,
+                "国际私法的振扬之路"@eng ],
+        [ a ns2:Title ;
+            ns2:mainTitle "Guo ji si fa de zhen yang zhi lu"@chi ] .
+

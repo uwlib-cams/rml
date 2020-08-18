@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b5606a57-bf98-46ed-939a-10bed40340bf> a ns2:Instance,
+        ns2:Print ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "pfreeman" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-06" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns2:classification [ a ns2:ClassificationLcc ;
+            rdf:value "F899.S453M397 1978" ] ;
+    ns2:copyrightDate "©1978" ;
+    ns2:dimensions "24 cm"@eng ;
+    ns2:extent [ a ns2:Extent ;
+            rdfs:label "8 unnumbered pages, 275 pages, 1 unnumbered page"@eng ] ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            rdf:value "ISBN 0914890026" ] ;
+    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/4820e1d1-353f-4baa-a1b6-980eaae469e1> ;
+    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:provisionActivity [ a ns2:Publication ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Nettle Creek Publishing Company"@eng ] ;
+            ns2:date "1978" ;
+            ns2:place [ a ns2:Place ;
+                    rdfs:label "Seattle"@eng ] ] ;
+    ns2:provisionActivityStatement "Seattle : Nettle Creek Publishing Company,  1978."@eng ;
+    ns2:responsibilityStatement "by Bill Speidel"@eng ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Doc Maynard"@eng ;
+            ns2:subtitle "the man who invented Seattle"@eng ] .
+

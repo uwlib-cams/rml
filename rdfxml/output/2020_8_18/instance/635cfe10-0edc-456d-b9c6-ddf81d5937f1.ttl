@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/635cfe10-0edc-456d-b9c6-ddf81d5937f1> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:copyrightDate "©" ;
+    ns1:dimensions "22 cm"@eng ;
+    ns1:editionStatement "Fifteenth printing."@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "416 pages."@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/74959199-9271-4353-844f-4819ba4f3f14> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Dell Publishing Co., Inc."@eng ] ;
+            ns1:date "July, 1974." ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    ns1:provisionActivityStatement "New York, N.Y."@eng ;
+    ns1:responsibilityStatement "by Bram Stoker."@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Dracula."@eng ] .
+

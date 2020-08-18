@@ -1,0 +1,58 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-21" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status _:N7c79b7ff3cf9489da0b9a57088b5cbac,
+                _:Na6d47f22eb5647b5b4592a6b10856c34,
+                _:Nbc6836cc30514431ac5f288fbce0f30d ],
+        [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-21" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status _:N7c79b7ff3cf9489da0b9a57088b5cbac,
+                _:Na6d47f22eb5647b5b4592a6b10856c34,
+                _:Nbc6836cc30514431ac5f288fbce0f30d ],
+        [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-21" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status _:N7c79b7ff3cf9489da0b9a57088b5cbac,
+                _:Na6d47f22eb5647b5b4592a6b10856c34,
+                _:Nbc6836cc30514431ac5f288fbce0f30d ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "S 17.38:G 31 tum"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and Itinerary."@eng ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:originDate "[1958]" .
+
+_:N7c79b7ff3cf9489da0b9a57088b5cbac a ns1:Status ;
+    ns1:code "n" .
+
+_:Na6d47f22eb5647b5b4592a6b10856c34 a ns1:Status ;
+    ns1:code "n" .
+
+_:Nbc6836cc30514431ac5f288fbce0f30d a ns1:Status ;
+    ns1:code "n" .
+
