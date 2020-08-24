@@ -154,81 +154,81 @@ elif num_of_items >= 1:
 
 # function to replace all RML sources in the work monograph map from a random string (!!workID!!) to the work's identifier
 def work_map_replace_to_ID(workID):
-    w = open("maps/workMonographMap.xml.ttl", "rt")
+    w = open("generateRML/rmlOutput/workRML.ttl", "rt")
     wm = w.read()
     wm = wm.replace("!!workID!!", workID)
     w.close()
-    w = open("maps/workMonographMap.xml.ttl", "wt")
+    w = open("generateRML/rmlOutput/workRML.ttl", "wt")
     w.write(wm)
     w.close()
 
 # function to replace all RML sources in the work monograph map from the work's identifier back to a random string (!!workID!!)
 def work_map_replace_to_default(workID):
-    w = open("maps/workMonographMap.xml.ttl", "rt")
+    w = open("generateRML/rmlOutput/workRML.ttl", "rt")
     wm = w.read()
     wm = wm.replace(workID, "!!workID!!")
     w.close()
-    w = open("maps/workMonographMap.xml.ttl", "wt")
+    w = open("generateRML/rmlOutput/workRML.ttl", "wt")
     w.write(wm)
     w.close()
 
 # function to replace all RML sources in the expression monograph map from a random string (!!expressionID!!) to the expression's identifier
 def expression_map_replace_to_ID(expressionID):
-    e = open("maps/expressionMonographMap.xml.ttl", "rt")
+    e = open("generateRML/rmlOutput/expressionRML.ttl", "rt")
     em = e.read()
     em = em.replace("!!expressionID!!", expressionID)
     e.close()
-    e = open("maps/expressionMonographMap.xml.ttl", "wt")
+    e = open("generateRML/rmlOutput/expressionRML.ttl", "wt")
     e.write(em)
     e.close()
 
 # function to replace all RML sources in the expression monograph map from the expression's identifier back to a random string (!!expressionID!!)
 def expression_map_replace_to_default(expressionID):
-    e = open("maps/expressionMonographMap.xml.ttl", "rt")
+    e = open("generateRML/rmlOutput/expressionRML.ttl", "rt")
     em = e.read()
     em = em.replace(expressionID, "!!expressionID!!")
     e.close()
-    e = open("maps/expressionMonographMap.xml.ttl", "wt")
+    e = open("generateRML/rmlOutput/expressionRML.ttl", "wt")
     e.write(em)
     e.close()
 
 # function to replace all RML sources in the manifestation monograph map from a random string (!!manifestationID!!) to the manifestation's identifier
 def manifestation_map_replace_to_ID(manifestationID):
-    m = open("maps/manifestationMonographMap.xml.ttl", "rt")
+    m = open("generateRML/rmlOutput/manifestationRML.ttl", "rt")
     mm = m.read()
     mm = mm.replace("!!manifestationID!!", manifestationID)
     m.close()
-    m = open("maps/manifestationMonographMap.xml.ttl", "wt")
+    m = open("generateRML/rmlOutput/manifestationRML.ttl", "wt")
     m.write(mm)
     m.close()
 
 # function to replace all RML sources in the manifestation monograph map from the manifestation's identifier back to a random string (!!manifestationID!!)
 def manifestation_map_replace_to_default(manifestationID):
-    m = open("maps/manifestationMonographMap.xml.ttl", "rt")
+    m = open("generateRML/rmlOutput/manifestationRML.ttl", "rt")
     mm = m.read()
     mm = mm.replace(manifestationID, "!!manifestationID!!")
     m.close()
-    m = open("maps/manifestationMonographMap.xml.ttl", "wt")
+    m = open("generateRML/rmlOutput/manifestationRML.ttl", "wt")
     m.write(mm)
     m.close()
 
 # function to replace all RML sources in the item monograph map from a random string (!!itemID!!) to the item's identifier
 def item_map_replace_to_ID(itemID):
-    i = open("maps/itemMonographMap.xml.ttl", "rt")
+    i = open("generateRML/rmlOutput/itemRML.ttl", "rt")
     im = i.read()
     im = im.replace("!!itemID!!", itemID)
     i.close()
-    i = open("maps/itemMonographMap.xml.ttl", "wt")
+    i = open("generateRML/rmlOutput/itemRML.ttl", "wt")
     i.write(im)
     i.close()
 
 # function to replace all RML sources in the item monograph map from the item's identifier back to a random string (!!itemID!!)
 def item_map_replace_to_default(itemID):
-    i = open("maps/itemMonographMap.xml.ttl", "rt")
+    i = open("generateRML/rmlOutput/itemRML.ttl", "rt")
     im = i.read()
     im = im.replace(itemID, "!!itemID!!")
     i.close()
-    i = open("maps/itemMonographMap.xml.ttl", "wt")
+    i = open("generateRML/rmlOutput/itemRML.ttl", "wt")
     i.write(im)
     i.close()
 
@@ -245,7 +245,7 @@ if not os.path.exists(f'output/{currentDate}/work_1'):
 print(f"...\nTransforming {num_of_works} from RDA Work to BIBFRAME Work")
 
 # adjust file permissions for map and for data (RML sometimes trips on file permissions)
-os.system("chmod u+rwx maps/workMonographMap.xml.ttl")
+os.system("chmod u+rwx generateRML/rmlOutput/workRML.ttl")
 workPermissionList = os.listdir(f'data/{currentDate}/work/')
 
 for work in workPermissionList:
@@ -255,7 +255,7 @@ for work in workList:
     label = work.split('/')[-1] # save trellis identifier as label
     workID = f"{currentDate}/work/{label}" # use label to make path
     work_map_replace_to_ID(workID) # use path as RML source in work monograph map
-    os.system(f"java -jar mapper.jar -m maps/workMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
+    os.system(f"java -jar mapper.jar -m generateRML/rmlOutput/workRML.ttl -o {label}.nq") # run RML, output as nquad file
     workGraph = Graph()
     workGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
     workGraph.serialize(destination=f'output/{currentDate}/work_1/' + label + '.ttl', format="turtle") # serialize file in turtle
@@ -270,7 +270,7 @@ if not os.path.exists(f'output/{currentDate}/work_2'):
 print(f"...\nTransforming {num_of_expressions} from RDA Expression to BIBFRAME Work")
 
 # adjust file permissions for map and for data (RML sometimes trips on file permissions)
-os.system("chmod u+rwx maps/expressionMonographMap.xml.ttl")
+os.system("chmod u+rwx generateRML/rmlOutput/expressionRML.ttl")
 expressionPermissionList = os.listdir(f'data/{currentDate}/expression/')
 
 for expression in expressionPermissionList:
@@ -280,7 +280,7 @@ for expression in expressionList:
     label = expression.split('/')[-1] # save trellis identifier as label
     expressionID = f"{currentDate}/expression/{label}" # use label to make path
     expression_map_replace_to_ID(expressionID) # use trellis identifier as RML source in expression monograph map
-    os.system(f"java -jar mapper.jar -m maps/expressionMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
+    os.system(f"java -jar mapper.jar -m generateRML/rmlOutput/expressionRML.ttl -o {label}.nq") # run RML, output as nquad file
     expressionGraph = Graph()
     expressionGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
     expressionGraph.serialize(destination=f'output/{currentDate}/work_2/' + label + '.ttl', format="turtle") # serialize file in turtle
@@ -295,7 +295,7 @@ if not os.path.exists(f'output/{currentDate}/instance'):
 print(f"...\nTransforming {num_of_manifestations} from RDA Manifestation to BIBFRAME Instance")
 
 # adjust file permissions for map and for data (RML sometimes trips on file permissions)
-os.system("chmod u+rwx maps/manifestationMonographMap.xml.ttl")
+os.system("chmod u+rwx generateRML/rmlOutput/manifestationRML.ttl")
 manifestationPermissionList = os.listdir(f'data/{currentDate}/manifestation/')
 
 for manifestation in manifestationPermissionList:
@@ -305,7 +305,7 @@ for manifestation in manifestationList:
     label = manifestation.split('/')[-1] # save trellis identifier as label
     manifestationID = f"{currentDate}/manifestation/{label}" # use label to make path
     manifestation_map_replace_to_ID(manifestationID) # use trellis identifier as RML source in manifestation monograph map
-    os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/maps/manifestationMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
+    os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/generateRML/rmlOutput/manifestationRML.ttl -o {label}.nq") # run RML, output as nquad file
     manifestationGraph = Graph()
     manifestationGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
     manifestationGraph.serialize(destination=f'output/{currentDate}/instance/' + label + '.ttl', format="turtle") # serialize file in turtle
@@ -320,7 +320,7 @@ if not os.path.exists(f'output/{currentDate}/item'):
 print(f"...\nTransforming {num_of_items} from RDA Item to BIBFRAME Item")
 
 # adjust file permissions for map and for data (RML sometimes trips on file permissions)
-os.system("chmod u+rwx maps/itemMonographMap.xml.ttl")
+os.system("chmod u+rwx generateRML/rmlOutput/itemRML.ttl")
 itemPermissionList = os.listdir(f'data/{currentDate}/item/')
 
 for item in itemPermissionList:
@@ -330,7 +330,7 @@ for item in itemList:
     label = item.split('/')[-1] # save trellis identifier as label
     itemID = f"{currentDate}/item/{label}" # use label to make path
     item_map_replace_to_ID(itemID) # use trellis identifier as RML source in item monograph map
-    os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/maps/itemMonographMap.xml.ttl -o {label}.nq") # run RML, output as nquad file
+    os.system(f"java -jar mapper.jar -m ~/rml/rdfxml/generateRML/rmlOutput/itemRML.ttl -o {label}.nq") # run RML, output as nquad file
     itemGraph = Graph()
     itemGraph.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
     itemGraph.serialize(destination=f'output/{currentDate}/item/' + label + '.ttl', format="turtle") # serialize file in turtle
