@@ -1,0 +1,73 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/16a61969-3b31-4e09-bba0-0319a13895d1> a ns1:Work ;
+    rdfs:label "Lady Susan"@eng ;
+    ns2:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060386>,
+        <http://id.loc.gov/authorities/subjects/sh85016982> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2012-12-10" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/authorities/names/n79032879> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026314>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026019> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "VIAF: 183486135"@eng,
+                        "Wikidata: Q581180"@eng,
+                        "http://viaf.org/viaf/183486135"@eng,
+                        "http://www.wikidata.org/entity/Q581180"@eng ] ;
+            rdf:value "VIAF: 183486135"@eng,
+                "Wikidata: Q581180"@eng,
+                "http://viaf.org/viaf/183486135"@eng,
+                "http://www.wikidata.org/entity/Q581180"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "VIAF: 183486135"@eng,
+                "Wikidata: Q581180"@eng,
+                "http://viaf.org/viaf/183486135"@eng,
+                "http://www.wikidata.org/entity/Q581180"@eng ],
+        [ a ns1:Identifier ;
+            rdf:value "VIAF: 183486135"@eng,
+                "Wikidata: Q581180"@eng,
+                "http://viaf.org/viaf/183486135"@eng,
+                "http://www.wikidata.org/entity/Q581180"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Austen, Jane, 1775-1817. Lady Susan"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Austen, Jane, 1775-1817. Jane Austen's Lady Susan"@eng ] ;
+    ns1:originDate "1794?"@eng,
+        "approximately 1805"@eng ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "England--Fiction",
+                "Vernon, Susan, Lady (Fictitious character)--Fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2008107223>,
+        <http://id.loc.gov/authorities/subjects/sh2008107237>,
+        <http://id.loc.gov/authorities/subjects/sh2008113420> ;
+    ns1:title [ a ns1:VariantTitle ;
+            ns1:mainTitle "Jane Austen's Lady Susan"@eng ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Lady Susan"@eng ] .
+

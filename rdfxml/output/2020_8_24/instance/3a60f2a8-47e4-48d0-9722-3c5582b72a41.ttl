@@ -1,0 +1,38 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> a ns1:Instance ;
+    rdfs:label "苏小妹"@chi ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1047>,
+        <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    ns1:copyrightDate "©"@eng ;
+    ns1:dimensions "103 x 66 cm, on sheet 192 x 79 cm rolled to 79 x 5 cm in diameter"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 scroll"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/bd6c8ad6-677e-4557-8877-cb387e7cbf8a> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ] ],
+        [ a ns1:Publication ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no2016169387> ],
+        [ a ns1:Publication ;
+            ns1:date "乙未 [2015]"@eng ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "秦百蘭"@eng ;
+                    ns1: "秦百蘭"@eng ] ] ;
+    ns1:responsibilityStatement "百蘭"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "苏小妹"@chi ] .
+

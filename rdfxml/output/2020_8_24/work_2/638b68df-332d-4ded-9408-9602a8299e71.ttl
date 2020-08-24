@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/638b68df-332d-4ded-9408-9602a8299e71> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jlee37" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-03-09" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Zhang, Qiong" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n87915411> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/0c687772-a7be-40e6-82c0-f00c4c59a319> ;
+    ns1:genreForm <http://id.loc.gov/authorities/subjects/sh99001576> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Carrión, Jorge, 1976- Librerías. Chinese" ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Carrión, Jorge, 1976- Shu dian man you" ] ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060283> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Han (Simplified variant)"@eng ],
+        [ a ns1:Script ;
+            rdfs:label "Han (Simplified variant)"@eng ] ;
+    ns1:originDate "2018"@zxx ;
+    ns1:translationOf <https://trellis.sinopia.io/repository/washington/0c687772-a7be-40e6-82c0-f00c4c59a319> .
+

@@ -1,0 +1,23 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/02c8be46-235a-4bbc-b18d-85065829236d> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins@uw.edu" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-06-10" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/b7ef5c30-4e4c-459c-8361-2c371359894f> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ],
+        [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "Background: Latino immigrant men have high rates of unhealthy alcohol use, yet we know little about their help-seeking patterns and barriers to care. Methods: We described the help-seeking patterns and perceived barriers to care of a sample of Latino immigrant men (N=121) recruited to a pilot randomized trial of a brief alcohol intervention (the Vida PURA study). All men were Latino, immigrant, spoke Spanish, and had an Alcohol Use Disorder Identification Test (AUDIT) score equal/greater than 6. Interviewer-administered survey data were used to describe help-seeking and barriers to care across alcohol use severity. Results: AUDIT scores ranged from 6 -40 (M = 20, SD = 10); 49% (n=60) of men screened positive for severe unhealthy alcohol use (AUDIT score equal 20, and 30% (n=36) reported having sought help for drinking. 61% of men who had sought help for drinking (n-36) reported attending Alcoholics Anonymous (AA). All men reported perceived barriers to care, especially stigma and health care system related. Conclusion: Findings suggest further investigation of interventions based on severity level to address stigma and health care system barriers."@eng ] .
+

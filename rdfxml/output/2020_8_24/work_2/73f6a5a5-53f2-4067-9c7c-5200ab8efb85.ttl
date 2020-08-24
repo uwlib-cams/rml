@@ -1,0 +1,24 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/73f6a5a5-53f2-4067-9c7c-5200ab8efb85> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "dbrookin" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-26" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/970bb97e-7efe-4ac7-97cf-d00b868ca0d6> ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/bur> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Burmese"@eng ],
+        [ a ns2:Script ;
+            rdfs:label "Burmese"@eng ] ;
+    ns2:summary [ a ns2:Summary ;
+            rdfs:label "Short stories about daily social life of Burmese; in memory of Ranʻ ʼOnʻ."@eng ] .
+

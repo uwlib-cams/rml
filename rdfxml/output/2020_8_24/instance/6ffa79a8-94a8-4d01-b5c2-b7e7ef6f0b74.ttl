@@ -1,0 +1,77 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> a ns1:Instance ;
+    rdfs:label "The Bedtime Sh'ma"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:changeDate "2019-12-18" ;
+            ns1:creationDate "2019-12-16" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©2007"@eng ;
+    ns1:dimensions "24 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "39 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "ISBN 9780939144549 (pbk.)"@eng,
+                "ISBN 9780939144556"@eng ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "ISBN 9780939144549 (pbk.)"@eng,
+                        "ISBN 9780939144556"@eng ] ;
+            rdf:value "ISBN 9780939144549 (pbk.)"@eng,
+                "ISBN 9780939144556"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 9780939144549 (pbk.)"@eng,
+                "ISBN 9780939144556"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> ;
+    ns1:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "EKS Publishing Co."@eng ;
+                    ns1: "EKS Publishing Co."@eng ] ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:date "[2007]"@eng ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "EKS Publishing Co." ;
+                    ns1: "EKS Publishing Co." ] ],
+        [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Oakland, California"@eng ;
+                    ns1: "Oakland, California"@eng ] ] ;
+    ns1:provisionActivityStatement "Oakland, California : EKS Publishing Co., [2007]"@eng ;
+    ns1:responsibilityStatement "adapted by Sarah Gershman"@eng,
+        "illustrated by Kristina Swarner"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The Bedtime Sh'ma"@eng ],
+        [ a ns1:ParallelTitle ;
+            ns1:mainTitle "Lailah ṭov"@heb,
+                "לילה טוב"@heb ],
+        [ a ns1:VariantTitle ;
+            rdfs:label "Bedtime Shema"@heb,
+                "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+                "לילה טוב : קריאת שמע על המטה"@heb ;
+            ns1:mainTitle "Bedtime Shema"@heb,
+                "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+                "לילה טוב : קריאת שמע על המטה"@heb ],
+        [ a ns1:Title ;
+            ns1:subtitle "a good night book"@eng ],
+        [ a ns1:ParallelTitle ;
+            ns1:subtitle "Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+                "קריאת שמע על המטה"@heb ] .
+

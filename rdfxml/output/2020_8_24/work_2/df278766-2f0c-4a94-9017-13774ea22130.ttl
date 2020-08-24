@@ -1,0 +1,33 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/df278766-2f0c-4a94-9017-13774ea22130> a ns1:Work ;
+    rdfs:label "苏小妹"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:colorContent [ a ns1:ColorContent ;
+            rdfs:label "color" ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1014> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/bd6c8ad6-677e-4557-8877-cb387e7cbf8a> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Qin, Bailian, 1948- . Su Xiaomei"@eng ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ],
+        [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "苏小妹"@eng ] .
+

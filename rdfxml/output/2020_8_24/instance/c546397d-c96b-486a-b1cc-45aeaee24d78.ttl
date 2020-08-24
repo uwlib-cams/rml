@@ -1,0 +1,60 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c546397d-c96b-486a-b1cc-45aeaee24d78> a ns1:Instance ;
+    rdfs:label "原色きのこ"@jpn ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "CC83" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-26" ;
+            ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "11 x 15 cm"@eng ;
+    ns1:editionStatement "Shohan"@jpn,
+        "初版"@jpn ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "2, 104 pages, 72 pages of color plates"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Sanseidō (Chiyoda-ku, Tokyo, Japan)" ;
+                    ns1: "Sanseidō (Chiyoda-ku, Tokyo, Japan)" ] ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Tōkyō"@jpn,
+                        "東京"@jpn ;
+                    ns1: "Tōkyō"@jpn,
+                        "東京"@jpn ] ],
+        [ a ns1:Publication ;
+            ns1:date "Shōwa 17 [1942]"@jpn,
+                "昭和17 [1942]"@jpn ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Sanseidō"@jpn,
+                        "三省堂"@jpn ;
+                    ns1: "Sanseidō"@jpn,
+                        "三省堂"@jpn ] ],
+        [ a ns1:Publication ] ;
+    ns1:responsibilityStatement "Imazeki Rokuya cho"@jpn,
+        "今關六也著"@jpn ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:seriesStatement "Nature guide"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:subtitle "茸の採集と見分け方"@jpn ],
+        [ a ns1:ParallelTitle ;
+            ns1:mainTitle "Genshoku kinoko"@jpn ],
+        [ a ns1:ParallelTitle ;
+            ns1:subtitle "Kinoko no saishū to miwakekata"@jpn ],
+        [ a ns1:Title ;
+            ns1:mainTitle "原色きのこ"@jpn ] .
+
