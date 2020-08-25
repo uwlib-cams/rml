@@ -1,9 +1,12 @@
 import os
+from sys import argv
 
-work_1List = os.listdir('output/2020_7_27/work_1')
-work_2List = os.listdir('output/2020_7_27/work_2')
-instanceList = os.listdir('output/2020_7_27/instance')
-itemList = os.listdir('output/2020_7_27/item')
+script, data_directory = argv
+
+work_1List = os.listdir(f'output/{data_directory}/work_1')
+work_2List = os.listdir(f'output/{data_directory}/work_2')
+instanceList = os.listdir(f'output/{data_directory}/instance')
+itemList = os.listdir(f'output/{data_directory}/item')
 
 prefix_list = [
 "ns1",
@@ -48,11 +51,11 @@ new_prefix_list = [
 ]
 
 def find_and_replace(entity, file, find, replace):
-    open_file = open(f"output/2020_7_27/{entity}/{file}", "rt")
+    open_file = open(f"output/{data_directory}/{entity}/{file}", "rt")
     file_replacement = open_file.read()
     file_replacement = file_replacement.replace(find, replace)
     open_file.close()
-    open_file = open(f"output/2020_7_27/{entity}/{file}", "wt")
+    open_file = open(f"output/{data_directory}/{entity}/{file}", "wt")
     open_file.write(file_replacement)
     open_file.close()
 
@@ -60,7 +63,7 @@ for work in work_1List:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"output/2020_7_27/work_1/{work}") as f:
+            with open(f"output/{data_directory}/work_1/{work}") as f:
                 if f"@prefix {prefix}: <{namespace_list[i]}> ." in f.read():
                     old_namespace = f"@prefix {prefix}: <{namespace_list[i]}> ."
                     new_namespace = f"@prefix {new_prefix_list[i]}: <{namespace_list[i]}> ."
@@ -74,7 +77,7 @@ for work in work_2List:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"output/2020_7_27/work_2/{work}") as f:
+            with open(f"output/{data_directory}/work_2/{work}") as f:
                 if f"@prefix {prefix}: <{namespace_list[i]}> ." in f.read():
                     old_namespace = f"@prefix {prefix}: <{namespace_list[i]}> ."
                     new_namespace = f"@prefix {new_prefix_list[i]}: <{namespace_list[i]}> ."
@@ -88,7 +91,7 @@ for instance in instanceList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"output/2020_7_27/instance/{instance}") as f:
+            with open(f"output/{data_directory}/instance/{instance}") as f:
                 if f"@prefix {prefix}: <{namespace_list[i]}> ." in f.read():
                     old_namespace = f"@prefix {prefix}: <{namespace_list[i]}> ."
                     new_namespace = f"@prefix {new_prefix_list[i]}: <{namespace_list[i]}> ."
@@ -102,7 +105,7 @@ for item in itemList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"output/2020_7_27/item/{item}") as f:
+            with open(f"output/{data_directory}/item/{item}") as f:
                 if f"@prefix {prefix}: <{namespace_list[i]}> ." in f.read():
                     old_namespace = f"@prefix {prefix}: <{namespace_list[i]}> ."
                     new_namespace = f"@prefix {new_prefix_list[i]}: <{namespace_list[i]}> ."
