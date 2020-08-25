@@ -282,20 +282,21 @@ notation >> Script > rdfs:label"""]
                 kiegel_mapping_list.append(kiegel)
             line_count = line_count + 1
 
-    with open(f"{csv_dir}/{csv_ext_files[index_number]}") as file:
-        csv_reader = csv.reader(file, delimiter=',')
-        line_count = 0
-        for line in csv_reader:
-            if line_count == 0: # ignore header row
-                pass
-            else:
-                prop_IRI = line[1]
-                prop_num = "h" + prop_IRI.lstrip('https://doi.org/10.6069/uwlib.55.d.4#') # it takes off the h for some reason
-                property_number_list.append(prop_num)
+    if len(csv_ext_files) > 0:
+        with open(f"{csv_dir}/{csv_ext_files[index_number]}") as file:
+            csv_reader = csv.reader(file, delimiter=',')
+            line_count = 0
+            for line in csv_reader:
+                if line_count == 0: # ignore header row
+                    pass
+                else:
+                    prop_IRI = line[1]
+                    prop_num = "h" + prop_IRI.lstrip('https://doi.org/10.6069/uwlib.55.d.4#') # it takes off the h for some reason
+                    property_number_list.append(prop_num)
 
-                kiegel = line[3]
-                kiegel_mapping_list.append(kiegel)
-            line_count = line_count + 1
+                    kiegel = line[3]
+                    kiegel_mapping_list.append(kiegel)
+                line_count = line_count + 1
 
     """Start main RML map"""
 
