@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc>
+  a bf:Instance, bf:Print;
+  bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017>;
+  bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025>;
+  bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008>;
+  bf:classification _:3 .
+
+_:3 a bf:ClassificationLcc;
+  rdf:value "PS3511.A86G6 1955" .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc>
+  bf:copyrightDate "©1942";
+  bf:dimensions "19 cm"@en;
+  bf:extent _:2 .
+
+_:2 a bf:Extent;
+  rdfs:label "383 pages"@en .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc>
+  bf:identifiedBy _:0 .
+
+_:0 a bf:Identifier;
+  rdf:value "556391"@en .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc>
+  bf:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3>;
+  bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001>;
+  bf:media <http://rdaregistry.info/termList/RDAMediaType/1007>;
+  bf:provisionActivity _:1 .
+
+_:1 a bf:Publication;
+  bf:agent <http://id.loc.gov/rwo/agents/nr92033481>, _:7 .
+
+_:7 a bf:Agent;
+  rdfs:label "", "The Modern Library"@en .
+
+_:1 bf:date "[1955]";
+  bf:place _:6 .
+
+_:6 a bf:Place;
+  rdfs:label "New York"@en .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc>
+  bf:seriesStatement "The modern library of the world's best books"@en;
+  bf:title _:4 .
+
+_:4 a bf:Title;
+  bf:mainTitle "Go down, Moses"@en .
+
+_:5 a bf:Status;
+  bf:code "n" .

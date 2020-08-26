@@ -1,0 +1,56 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ex: <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+ex:WorkMonographMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/languageTagData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
+  ].
+
+ex:WorkMonographMap rr:subjectMap [
+  rml:reference "@*[name()='rdf:about']";
+  rr:class bf:Work
+].
+
+ex:WorkMonographMap rr:predicateObjectMap [
+  rr:predicate bf:title;
+  rr:objectMap [
+    rr:parentTriplesMap ex:TitleBNodeMap
+  ]
+].
+
+ex:TitleBNodeMap a rr:TriplesMap;
+rml:logicalSource [
+  rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/languageTagData.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description']"
+].
+
+ex:TitleBNodeMap rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Title
+].
+
+ex:TitleBNodeMap rr:predicateObjectMap [
+  rr:predicate bf:mainTitle;
+  rr:objectMap [
+    rml:reference "*[name()='ns1:P10223']";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "*[name()='ns1:P10223']/@*[name()='xml:lang']"
+    ]
+  ]
+].

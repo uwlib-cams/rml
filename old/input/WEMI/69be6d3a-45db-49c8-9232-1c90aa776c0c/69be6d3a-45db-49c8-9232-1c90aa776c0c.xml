@@ -1,0 +1,35 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/i/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/69be6d3a-45db-49c8-9232-1c90aa776c0c> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "dbrookin"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2020-02-19"@zxx ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns3:status [ a ns3:Status ;
+                    ns3:code "n"@zxx ] ] ;
+    ns2:P40049 <https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9> ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasBarcode "39352078101300"@zxx ;
+    ns1:hasPhysicalLocation "suzzallen"@zxx ;
+    ns1:hasPhysicalSubLocation "szstx"@zxx ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9> rdfs:label "Похождения одного матроса ; Рассказы" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

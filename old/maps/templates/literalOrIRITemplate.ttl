@@ -1,0 +1,59 @@
+# F + R...
+  # {1} --> work, expression, manifestation, or item
+  # {2} --> filename
+  # {3} --> Work, Expression, Manifestation, or Item
+  # {4} --> RDA property name (all one word, first letter capitalized)
+  # {5} --> BF property name
+  # {6} --> RDA property number
+  # {7} --> BF class name
+  # rdfs:label --> predicate for literal value
+
+# add to Work/Expression/Manifestation/Item map
+
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:{5};
+    rr:objectMap [
+      rr:parentTriplesMap ex:{4}LiteralMap
+    ]
+  ].
+
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:{5};
+    rr:objectMap [
+      rml:reference "P{6}/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+# new triples maps
+
+ex:{4}LiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P{6}[not(@resource)]]"
+  ].
+
+  ex:{4}LiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:{7}
+  ].
+
+  ex:{4}LiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P{6}[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P{6}/@lang"
+      ]
+    ]
+  ].
+
+  ex:{4}LiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P{6}[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].

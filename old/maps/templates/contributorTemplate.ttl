@@ -1,0 +1,73 @@
+# F + R...
+  # {1} -- > work, expression, manifestation, or item
+  # {2} --> filename
+  # {3} --> Work, Expression, Manifestation, or Item
+  # {4} --> RDA property name (all one word, first letter capitalized)
+  # {5} --> RDA property number
+  # {6} --> relator code
+
+# add to Work/Expression/Manifestation/Item map
+
+  ex:{3}Map rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:{4}Map
+    ]
+  ].
+
+# new triples maps
+
+ex:{4}Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P{5}]"
+  ].
+
+  ex:{4}Map rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:{4}Map rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/{6}";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:{4}Map rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:{4}LiteralMap
+    ]
+  ].
+
+  ex:{4}Map rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P{5}/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:{4}LiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/{1}/{2}.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P{5}[not(@resource)]]"
+    ].
+
+    ex:{4}LiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    ex:{4}LiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P{5}[not(@resource)]";
+        rr:termType rr:Literal
+      ]
+    ].

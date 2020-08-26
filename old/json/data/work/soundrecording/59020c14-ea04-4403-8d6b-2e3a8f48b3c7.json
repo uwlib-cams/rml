@@ -1,0 +1,149 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-21T19:43:29.287Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/8925ddc3-9f36-4f5d-9ec7-9c766ad8da8b"
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-21T19:41:03.817Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/8925ddc3-9f36-4f5d-9ec7-9c766ad8da8b"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-21T19:43:21.036Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/8925ddc3-9f36-4f5d-9ec7-9c766ad8da8b"
+  }, {
+    "@id": "_:b4",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "gerhart"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2020-02-21"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b1"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2014027099",
+    "label": "Sonatas"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/59020c14-ea04-4403-8d6b-2e3a8f48b3c7",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b4",
+    "P10004": "http://id.loc.gov/authorities/genreForms/gf2014027099",
+    "P10223": {
+      "@language": "eng",
+      "@value": "Sonatinas, violin, piano"
+    },
+    "P10331": {
+      "@language": "eng",
+      "@value": "http://id.loc.gov/authorities/names/n81140245"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Work:soundRecording",
+    "wasGeneratedBy": ["_:b2", "_:b3", "_:b0"]
+  }],
+  "@context": {
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

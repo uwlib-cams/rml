@@ -1,0 +1,158 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "aschiff"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2012-12-10"
+    },
+    "descriptionAuthentication": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-10T22:52:05.910Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/14f2132a-0150-4944-89e0-4c8f4516552c"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "label": "Program for Cooperative Cataloging"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/33ffa488-a769-4430-8b54-489c0c4d2b7e",
+    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "adminMetadata": "_:b0",
+    "P40049": "https://trellis.sinopia.io/repository/washington/467afd22-6682-45b9-8ba7-a0e87b0c09e7",
+    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
+    "wasGeneratedBy": "_:b1",
+    "hasBarcode": {
+      "@language": "eng",
+      "@value": "39352010758886"
+    },
+    "hasLcClassificationPartA": {
+      "@language": "eng",
+      "@value": "PR4034"
+    },
+    "hasLcClassificationPartB": {
+      "@language": "eng",
+      "@value": ".L3 1925"
+    },
+    "hasPhysicalLocation": {
+      "@language": "eng",
+      "@value": "suzzallen"
+    },
+    "hasPhysicalSubLocation": {
+      "@language": "eng",
+      "@value": "szstx"
+    },
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/467afd22-6682-45b9-8ba7-a0e87b0c09e7",
+    "label": "Lady Susan"
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "descriptionAuthentication": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P40049": {
+      "@id": "http://rdaregistry.info/Elements/i/P40049",
+      "@type": "@id"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
+    },
+    "hasBarcode": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
+    },
+    "hasLcClassificationPartB": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
+    },
+    "hasPhysicalLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
+    },
+    "hasPhysicalSubLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

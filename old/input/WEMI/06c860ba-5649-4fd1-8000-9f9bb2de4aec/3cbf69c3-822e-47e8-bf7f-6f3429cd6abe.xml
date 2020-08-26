@@ -1,0 +1,60 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://trellis.sinopia.io/repository/washington/3cbf69c3-822e-47e8-bf7f-6f3429cd6abe> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "aschiff"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-12-02"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20002 "LCCN no2019176268"@eng ;
+    ns1:P20003 "Butcher"@eng ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20037 <http://id.loc.gov/rwo/agents/n90666327> ;
+    ns1:P20045 <http://id.loc.gov/rwo/agents/n90666327> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "In 1872 Phileas Fogg wins a bet by traveling around the world in seventy-nine days, twenty-three hours, and fifty-seven minutes."@eng ;
+    ns1:P20141 <https://trellis.sinopia.io/repository/washington/da71d823-03f2-4122-8d5d-3e38df134370> ;
+    ns1:P20206 "Includes bibliographical references (pages xxxvii-xli) and chronology of Jules Verne (pages xlii-xlv)" ;
+    ns1:P20214 "1995"@eng ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/da71d823-03f2-4122-8d5d-3e38df134370> ;
+    ns1:P20313 "Verne, Jules, 1828-1905. Tour du monde en quatre-vingts jours. English (Butcher)"@eng ;
+    ns1:P20314 "Verne, Jules, 1828-1905. Around the world in eighty days"@eng ;
+    ns1:P20315 "Tour du monde en quatre-vingts jours"@eng ;
+    ns1:P20316 "Around the world in 80 days"@eng,
+        "Around the world in eighty days"@eng ;
+    ns1:P20330 <http://id.loc.gov/rwo/agents/n90666327> ;
+    ns1:P20331 <http://id.loc.gov/authorities/subjects/sh85136967> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" ;
+    skos:exactMatch "http://id.loc.gov/authorities/names/no2019176268" .
+
+<http://id.loc.gov/authorities/subjects/sh85136967> rdfs:label "Translations" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+
+<https://trellis.sinopia.io/repository/washington/da71d823-03f2-4122-8d5d-3e38df134370> rdfs:label "Tour du monde en quatre-vingts jours",
+        "https://trellis.sinopia.io/repository/washington/da71d823-03f2-4122-8d5d-3e38df134370" .
+
+<http://id.loc.gov/rwo/agents/n90666327> rdfs:label "Butcher, William, 1951-",
+        "http://id.loc.gov/rwo/agents/n90666327" .
+

@@ -1,0 +1,48 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/71b26abb-43ba-412e-a965-67e06fefedc2> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "emcotter"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-18"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/no90007764>,
+        <http://id.loc.gov/authorities/names/no90007768> ;
+    ns1:P10065 <http://id.loc.gov/authorities/names/n77014227> ;
+    ns1:P10219 "1990"@zxx ;
+    ns1:P10223 "Negotiated rulemaking sourcebook"@eng ;
+    ns1:P10256 <http://id.loc.gov/authorities/subjects/sh2007100596>,
+        <http://id.loc.gov/authorities/subjects/sh2007100597>,
+        <http://id.loc.gov/authorities/subjects/sh85090650> ;
+    ns1:P10331 "Pritzker, David M. Negotiated rulemaking sourcebook"@eng ;
+    ns1:P10332 "Dalton, Deborah S. Negotiated rulemaking sourcebook"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/names/n77014227> rdfs:label "Administrative Conference of the United States. Office of the Chairman" .
+
+<http://id.loc.gov/authorities/names/no90007764> rdfs:label "Pritzker, David M." .
+
+<http://id.loc.gov/authorities/names/no90007768> rdfs:label "Dalton, Deborah S." .
+
+<http://id.loc.gov/authorities/subjects/sh2007100596> rdfs:label "Administrative agencies--United States" .
+
+<http://id.loc.gov/authorities/subjects/sh2007100597> rdfs:label "Administrative procedure--United States" .
+
+<http://id.loc.gov/authorities/subjects/sh85090650> rdfs:label "Negotiation" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

@@ -1,0 +1,184 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": "cec23",
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": "2020-01-28",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b1"
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-01-28T21:34:17.256Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060358",
+    "label": "Women"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060386",
+    "label": "English"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2014026280",
+    "label": "Detective and mystery fiction"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2015026020",
+    "label": "Novels"
+  }, {
+    "@id": "http://id.loc.gov/authorities/names/n79023147",
+    "label": "Great Britain"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/3eb2f65f-7238-4b34-95ff-3fa36b67c667",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b0",
+    "P10002": {
+      "@language": "eng",
+      "@value": "http://www.wikidata.org/entity/Q29132"
+    },
+    "P10004": ["http://id.loc.gov/authorities/genreForms/gf2014026280", "http://id.loc.gov/authorities/genreForms/gf2015026020"],
+    "P10061": "http://id.loc.gov/authorities/names/n79038407",
+    "P10210": {
+      "@language": "eng",
+      "@value": "\"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead & co. the following year ... The book features her detective, Miss Marple\"--Wikipedia, January 28, 2020."
+    },
+    "P10218": "http://id.loc.gov/authorities/names/n79023147",
+    "P10219": {
+      "@language": "eng",
+      "@value": "1953"
+    },
+    "P10223": {
+      "@language": "eng",
+      "@value": "Pocket full of rye"
+    },
+    "P10256": ["Murder--Fiction", "Marple, Jane (Fictitious character)--Fiction", "Crime--Fiction"],
+    "P10331": {
+      "@language": "eng",
+      "@value": "Christie, Agatha, 1890-1976. Pocket full of rye"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "wasGeneratedBy": "_:b2",
+    "hasCreatorCharacteristic": ["http://id.loc.gov/authorities/demographicTerms/dg2015060358", "http://id.loc.gov/authorities/demographicTerms/dg2015060386"]
+  }],
+  "@context": {
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "P10210": {
+      "@id": "http://rdaregistry.info/Elements/w/P10210"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061"
+    },
+    "P10256": {
+      "@id": "http://rdaregistry.info/Elements/w/P10256"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004",
+      "@type": "@id"
+    },
+    "P10002": {
+      "@id": "http://rdaregistry.info/Elements/w/P10002"
+    },
+    "hasCreatorCharacteristic": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10218": {
+      "@id": "http://rdaregistry.info/Elements/w/P10218",
+      "@type": "@id"
+    },
+    "P10219": {
+      "@id": "http://rdaregistry.info/Elements/w/P10219"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

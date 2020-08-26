@@ -1,0 +1,62 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d81ded4c-4502-4ba8-abc3-d0b9586d5169> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "aentze"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:changeDate "2020-04-23"@eng ;
+            ns2:creationDate "2020-04-23"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1993"@eng ;
+    ns1:P30011 "1993"@eng ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Boulder"@eng ;
+    ns1:P30105 "He Liyi with Claire Anne Chik"@eng ;
+    ns1:P30111 "Boulder: Westview Press, 1993"@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/f935a8b4-b9f3-4a2d-85d1-532284ce9a5c> ;
+    ns1:P30142 "a villager's life"@eng ;
+    ns1:P30156 "Mr. China's son"@eng ;
+    ns1:P30169 "24 cm"@eng ;
+    ns1:P30176 "Westview Press"@eng ;
+    ns1:P30182 "xvi, 271 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "ISBN 0-8133-1730-4"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "PL2861.E26"@eng ;
+    ns3:hasLcClassificationPartB "Z473 1993"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/f935a8b4-b9f3-4a2d-85d1-532284ce9a5c> rdfs:label "https://trellis.sinopia.io/repository/washington/f935a8b4-b9f3-4a2d-85d1-532284ce9a5c" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

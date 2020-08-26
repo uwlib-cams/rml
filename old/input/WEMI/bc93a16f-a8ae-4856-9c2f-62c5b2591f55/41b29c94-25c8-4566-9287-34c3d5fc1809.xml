@@ -1,0 +1,35 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/e/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/41b29c94-25c8-4566-9287-34c3d5fc1809> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "ries07"@en ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-20"@en ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@en ] ] ;
+    ns2:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:P20231 <https://trellis.sinopia.io/repository/washington/877155d9-bc9f-437f-991a-8a232932f580> ;
+    ns2:P20330 "S.P. Sinha Ray" ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" ;
+    ns5:hasLcClassificationPartA "TD419-428"@en .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/877155d9-bc9f-437f-991a-8a232932f580> rdfs:label "Ground water development - issues and sustainable solutions" .
+

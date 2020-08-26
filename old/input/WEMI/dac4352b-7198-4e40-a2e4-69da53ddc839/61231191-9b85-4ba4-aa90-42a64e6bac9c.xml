@@ -1,0 +1,53 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/w/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns4:catalogerID "aschiff"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-20"@zxx ;
+            ns1:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026111> ;
+    ns2:P10061 <http://id.loc.gov/authorities/names/no2016031605> ;
+    ns2:P10086 "Lost airline colors of Europe"@eng ;
+    ns2:P10198 <http://id.loc.gov/authorities/names/no2015137282>,
+        <https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> ;
+    ns2:P10218 <http://id.loc.gov/authorities/names/n79023147> ;
+    ns2:P10219 "2016"@zxx ;
+    ns2:P10223 "Lost airline colours of Europe"@eng ;
+    ns2:P10256 "Airlines--Europe--Identification--Pictorial works",
+        "Airplanes--Markings--Europe--Pictorial works",
+        "Transport planes--Europe--Identification--Pictorial works",
+        "Transport planes--Markings--Europe--Pictorial works" ;
+    ns2:P10331 "Falcus, Matt. Lost airline colours of Europe"@eng ;
+    ns2:P10332 "Falcus, Matt. Lost airline colors of Europe"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Work:monograph" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026111> rdfs:label "Illustrated works" .
+
+<http://id.loc.gov/authorities/names/n79023147> rdfs:label "Great Britain" .
+
+<http://id.loc.gov/authorities/names/no2015137282> rdfs:label "http://id.loc.gov/authorities/names/no2015137282" .
+
+<http://id.loc.gov/authorities/names/no2016031605> rdfs:label "Falcus, Matt" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> rdfs:label "Timelines" .
+

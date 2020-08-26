@@ -1,0 +1,1723 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix ex: <http://example.org/rules/>.
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix ns5: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix ns7: <http://rdaregistry.info/Elements/m/datatype/>.
+@prefix ns12: <http://uw.edu/adaptationProperties/p/w/>.
+@prefix rdae: <http://rdaregistry.info/Elements/e/>.
+@prefix rdai: <http://rdaregistry.info/Elements/i/>.
+@prefix rdam: <http://rdaregistry.info/Elements/m/>.
+@prefix rdau: <http://rdaregistry.info/Elements/u/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix schema: <http://schema.org/>.
+@prefix sin: <http://sinopia.io/vocabulary/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix uwx: <https://doi.org/10.6069/uwlib.55.d.4#>.
+
+ex:ItemMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10003']"
+  ].
+
+  ex:ItemMap rr:subjectMap [
+    rml:reference "@about";
+    rr:class bf:Item
+  ].
+
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:adminMetadata;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AdminMetadataMap
+    ]
+  ].
+
+  # has manifestation exemplified (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:itemOf;
+    rr:objectMap [
+      rml:reference "P40049/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has restriction on use of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:usageAndAccessPolicy;
+    rr:objectMap [
+      rml:reference "P40048/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has restriction on use of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:usageAndAccessPolicy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:RestrictionOnUseLiteralMap
+    ]
+  ].
+
+  # item has SuDoc Classification Number
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:classification;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SuDocMap
+    ]
+  ].
+
+  # item has LCC Number Part A & B
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:classification;
+    rr:objectMap [
+      rr:parentTriplesMap ex:LCCNumberMap
+    ]
+  ].
+
+  # item has NLM Classification Number Part A & B
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:classification;
+    rr:objectMap [
+      rr:parentTriplesMap ex:NLMMap
+    ]
+  ].
+
+  # has note on item
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:classification;
+    rr:objectMap [
+      rr:parentTriplesMap ex:NoteMap
+    ]
+  ].
+
+  # item has physical location (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:physicalLocation;
+    rr:objectMap [
+      rml:reference "hasPhysicalLocation/@resource"
+    ]
+  ].
+
+  # item has physical location (literal w language tag)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:physicalLocation;
+    rr:objectMap [
+      rml:reference "hasPhysicalLocation[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "hasPhysicalLocation/@lang"
+      ]
+    ]
+  ].
+
+  # item has physical location (literal w/o language tag)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:physicalLocation;
+    rr:objectMap [
+      rml:reference "hasPhysicalLocation[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  # item has physical sublocation (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:sublocation;
+    rr:objectMap [
+      rml:reference "hasPhysicalSubLocation/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # item has physical sublocation (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:sublocation;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SublocationMap
+    ]
+  ].
+
+  # item has barcode
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:identifier;
+    rr:objectMap [
+      rr:parentTriplesMap ex:BarcodeMap
+    ]
+  ].
+
+  # has immediate source of acquisition of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:acquisitionSource;
+    rr:objectMap [
+      rml:reference "P40050/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has immediate source of acquisition of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:acquisitionSource;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ImmediateSourceOfAcquisitionMap
+    ]
+  ].
+
+  # is bound with (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:accompaniedBy;
+    rr:objectMap [
+      rml:reference "P40032/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # is bound with (Literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:accompaniedBy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:BoundWithMap
+    ]
+  ].
+
+  # is accompanied by item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:accompaniedBy;
+    rr:objectMap [
+      rml:reference "P40029/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # is accompanied by item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:accompaniedBy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AccompaniedByMap
+    ]
+  ].
+
+  # is container of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart;
+    rr:objectMap [
+      rml:reference "P40034/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # is container of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ContainerOfMap
+    ]
+  ].
+
+  # is contained in item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart;
+    rr:objectMap [
+      rml:reference "P40009/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # is contained in item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasPart;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ContainedInMap
+    ]
+  ].
+
+  # has restriction on access to item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:usageAndAccessPolicy;
+    rr:objectMap [
+      rml:reference "P40047/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has restriction on access to item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:usageAndAccessPolicy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:RestrictionOnAccessToMap
+    ]
+  ].
+
+  # has former owner agent
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FormerOwnerMap
+    ]
+  ].
+
+  # has donor agent
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DonorMap
+    ]
+  ].
+
+  # has annotator
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnnotatorMap
+    ]
+  ].
+
+  # has autographer
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AutographerMap
+    ]
+  ].
+
+  # has binder agent
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:BinderMap
+    ]
+  ].
+
+  # has illuminator agent
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IlluminatorMap
+    ]
+  ].
+
+  # has inscriber
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:InscriberMap
+    ]
+  ].
+
+  # has restorationist agent of item
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:contribution;
+    rr:objectMap [
+      rr:parentTriplesMap ex:RestorationistMap
+    ]
+  ].
+
+  # is reproduced as item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReproducedAsLiteralMap
+    ]
+  ].
+
+  # is reproduced as item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rml:reference "P40092/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has preservation facsimile of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rr:parentTriplesMap ex:PreservationFacsimileOfLiteralMap
+    ]
+  ].
+
+  # has preservation facsimile of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rml:reference "P40090/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # is reprinted as item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ReprintedAsLiteralMap
+    ]
+  ].
+
+  # is reprinted as item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rml:reference "P40091/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has electronic reproduction of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rr:parentTriplesMap ex:ElectronicReproductionOfLiteralMap
+    ]
+  ].
+
+  # has electronic reproduction of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rml:reference "P40088/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has facsimile of item (literal)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FacsimileOfLiteralMap
+    ]
+  ].
+
+  # has facsimile of item (IRI)
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:hasReproduction;
+    rr:objectMap [
+      rml:reference "P40089/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # item held by
+  ex:ItemMap rr:predicateObjectMap [
+    rr:predicate bf:heldBy;
+    rr:objectMap [
+      rr:parentTriplesMap ex:HeldByMap
+    ]
+  ].
+
+###
+
+ex:AdminMetadataMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[catalogerID]"
+  ].
+
+  ex:AdminMetadataMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:AdminMetadata
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bflc:catalogerID;
+    rr:objectMap [
+      rml:reference "catalogerID";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:status;
+    rr:objectMap [
+      rr:parentTriplesMap ex:StatusMap
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bflc:encodingLevel;
+    rr:objectMap [
+      rml:reference "encodingLevel/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:descriptionConventions;
+    rr:objectMap [
+      rml:reference "descriptionConventions/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:source;
+    rr:objectMap [
+      rml:reference "source/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:descriptionLanguage;
+    rr:objectMap [
+      rml:reference "descriptionLanguage/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:creationDate;
+    rr:objectMap [
+      rml:reference "creationDate";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:AdminMetadataMap rr:predicateObjectMap [
+    rr:predicate bf:changeDate;
+    rr:objectMap [
+      rml:reference "changeDate";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:StatusMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[code]"
+    ].
+
+    ex:StatusMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Status
+    ].
+
+    ex:StatusMap rr:predicateObjectMap [
+      rr:predicate bf:code;
+      rr:objectMap [
+        rml:reference "code"
+      ]
+    ].
+
+ex:RestrictionOnUseLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40048[not(@resource)]]"
+  ].
+
+  ex:RestrictionOnUseLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:UsageAndAccessPolicy
+  ].
+
+  ex:RestrictionOnUseLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40048[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40048/@lang"
+      ]
+    ]
+  ].
+
+  ex:RestrictionOnUseLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40048[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:SuDocMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
+  ].
+
+  ex:SuDocMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Classification
+  ].
+
+  ex:SuDocMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "hasSuDocClassificationNumber";
+      rr:termType rr:Literal
+    ]
+  ].
+
+  ex:SuDocMap rr:predicateObjectMap [
+    rr:predicate bf:source;
+    rr:objectMap [
+      rr:parentTriplesMap ex:SuDocSourceMap
+    ]
+  ].
+
+  ex:SuDocSourceMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
+    ].
+
+    ex:SuDocSourceMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Source
+    ].
+
+    ex:SuDocSourceMap rr:predicateObjectMap [
+      rr:predicate rdf:value;
+      rr:objectMap [
+        rr:constant "SuDoc";
+        rr:termType rr:Literal;
+        rr:language "en"
+      ]
+    ].
+
+ex:LCCNumberMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[hasLcClassificationPartA and hasLcClassificationPartB]"
+  ].
+
+  ex:LCCNumberMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:ClassificationLcc
+  ].
+
+  ex:LCCNumberMap rr:predicateObjectMap [
+    rr:predicate rdf:value;
+    rr:objectMap [
+      rr:template "{hasLcClassificationPartA}{hasLcClassificationPartB}";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:NLMMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[hasNlmClassificationPartA and hasNlmClassificationPartB]"
+  ].
+
+  ex:NLMMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:ClassificationNlm
+  ].
+
+  ex:NLMMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rr:template "{hasNlmClassificationPartA} {hasNlmClassificationPartB}";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:NoteMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40028]"
+  ].
+
+  ex:NoteMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Note
+  ].
+
+  ex:NoteMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40028[@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40028/@lang"
+      ]
+    ]
+  ].
+
+  ex:NoteMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40028[not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:SublocationMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[hasPhysicalSubLocation[not(@resource)]]"
+  ].
+
+  ex:SublocationMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Sublocation
+  ].
+
+  # item has physical sublocation (literal w language tag)
+  ex:SublocationMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "hasPhysicalSubLocation[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "hasPhysicalSubLocation/@lang"
+      ]
+    ]
+  ].
+
+  # item has physical sublocation (literal w/o language tag)
+  ex:SublocationMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "hasPhysicalSubLocation[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:BarcodeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[hasBarcode]"
+  ].
+
+  ex:BarcodeMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Barcode
+  ].
+
+  ex:BarcodeMap rr:predicateObjectMap [
+    rr:predicate rdf:value;
+    rr:objectMap [
+      rml:reference "hasBarcode";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ImmediateSourceOfAcquisitionMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40050[not(@resource)]]"
+  ].
+
+  ex:ImmediateSourceOfAcquisitionMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:AcquisitionSource
+  ].
+
+  # has immediate source of acquisition of item (literal w language map)
+  ex:ImmediateSourceOfAcquisitionMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40050[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40050/@lang"
+      ]
+    ]
+  ].
+
+  # has immediate source of acquisition of item (literal w/o language map)
+  ex:ImmediateSourceOfAcquisitionMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40050[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:BoundWithMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40032[not(@resource)]]"
+  ].
+
+  ex:BoundWithMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is bound with (Literal w language tag)
+  ex:BoundWithMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40032[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40032/@lang"
+      ]
+    ]
+  ].
+
+  # is bound with (Literal w/o language tag)
+  ex:BoundWithMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40032[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:AccompaniedByMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40029[not(@resource)]]"
+  ].
+
+  ex:AccompaniedByMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is accompanied by item (Literal w language tag)
+  ex:AccompaniedByMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40029[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40029/@lang"
+      ]
+    ]
+  ].
+
+  # is accompanied by item (Literal w/o language tag)
+  ex:AccompaniedByMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40029[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ContainerOfMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40034[not(@resource)]]"
+  ].
+
+  ex:ContainerOfMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is container of item (literal w language tag)
+  ex:ContainerOfMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40034[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:language [
+        rml:reference "P40034/@lang"
+      ]
+    ]
+  ].
+
+  # is container of item (literal w/o language tag)
+  ex:ContainerOfMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40034[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ContainedInMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40009[not(@resource)]]"
+  ].
+
+  ex:ContainedInMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is contained in item (literal w language tag)
+  ex:ContainedInMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40009[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:language [
+        rml:reference "P40009/@lang"
+      ]
+    ]
+  ].
+
+  # is contained in item (literal w/o language tag)
+  ex:ContainedInMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40009[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:RestrictionOnAccessToMap  a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40047[not(@resource)]]"
+  ].
+
+  ex:RestrictionOnAccessToMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:UsageAndAccessPolicy
+  ].
+
+  # has restriction on access to item (literal w language tag)
+  ex:RestrictionOnAccessToMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40047[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:language [
+        rml:reference "P40047/@lang"
+      ]
+    ]
+  ].
+
+  # has restriction on access to item (literal w/o language tag)
+  ex:RestrictionOnAccessToMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40047[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:FormerOwnerMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40019]"
+  ].
+
+  ex:FormerOwnerMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:FormerOwnerMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/fmo";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has former owner agent (literal)
+  ex:FormerOwnerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:FormerOwnerLiteralMap
+    ]
+  ].
+
+  # has former owner agent (IRI)
+  ex:FormerOwnerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40019/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:FormerOwnerLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40019[not(@resource)]]"
+    ].
+
+    ex:FormerOwnerLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has former owner agent (literal w language tag)
+    ex:FormerOwnerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40019[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40019/@lang"
+        ]
+      ]
+    ].
+
+    # has former owner agent (literal w/o language tag)
+    ex:FormerOwnerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40019[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:DonorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40007]"
+  ].
+
+  ex:DonorMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:DonorMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/dnr";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:DonorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:DonorLiteralMap
+    ]
+  ].
+
+  # has donor agent (IRI)
+  ex:DonorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40007/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:DonorLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40007[not(@resource)]]"
+    ].
+
+    ex:DonorLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has donor agent (literal w language tag)
+    ex:DonorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40007[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40007/@lang"
+        ]
+      ]
+    ].
+
+    # has donor agent (literal w/o language tag)
+    ex:DonorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40007[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:AnnotatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40015]"
+  ].
+
+  ex:AnnotatorMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:AnnotatorMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ann";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has annotator (literal)
+  ex:AnnotatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AnnotatorLiteralMap
+    ]
+  ].
+
+  # has annotator (IRI)
+  ex:AnnotatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40015/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AnnotatorLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40015[not(@resource)]]"
+    ].
+
+    ex:AnnotatorLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has annotator (literal w language tag)
+    ex:AnnotatorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40015[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40015/@lang"
+        ]
+      ]
+    ].
+
+    # has annotator (literal w/o language tag)
+    ex:AnnotatorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40015[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:AutographerMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40016]"
+  ].
+
+  ex:AutographerMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:AutographerMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ato";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has autographer (literal)
+  ex:AutographerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:AutographerLiteralMap
+    ]
+  ].
+
+  # has autographer (IRI)
+  ex:AutographerMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40016/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:AutographerLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40016[not(@resource)]]"
+    ].
+
+    ex:AutographerLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has autographer (literal w language tag)
+    ex:AutographerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40016[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40016/@lang"
+        ]
+      ]
+    ].
+
+    # has autographer (literal w/o language tag)
+    ex:AutographerLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40016[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:BinderMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40013]"
+  ].
+
+  ex:BinderMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:BinderMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/bnd";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has binder agent (literal)
+  ex:BinderMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:BinderLiteralMap
+    ]
+  ].
+
+  # has binder agent (IRI)
+  ex:BinderMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40013/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:BinderLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40013[not(@resource)]]"
+    ].
+
+    ex:BinderLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has binder agent (literal w language tag)
+    ex:BinderLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40013[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40013/@lang"
+        ]
+      ]
+    ].
+
+    # has binder agent (literal w/o language tag)
+    ex:BinderLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40013[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:IlluminatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40012]"
+  ].
+
+  ex:IlluminatorMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:IlluminatorMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ilu";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has illuminator agent (literal)
+  ex:IlluminatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:IlluminatorLiteralMap
+    ]
+  ].
+
+  # has illuminator agent (IRI)
+  ex:IlluminatorMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40012/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:IlluminatorLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40012[not(@resource)]]"
+    ].
+
+    ex:IlluminatorLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has illuminator agent (literal w language tag)
+    ex:IlluminatorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40012[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40012/@lang"
+        ]
+      ]
+    ].
+
+    # has illuminator agent (literal w/o language tag)
+    ex:IlluminatorLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40012[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:InscriberMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40014]"
+  ].
+
+  ex:InscriberMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:InscriberMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/ins";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has inscriber (literal)
+  ex:InscriberMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:InscriberLiteralMap
+    ]
+  ].
+
+  # has inscriber (IRI)
+  ex:InscriberMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40014/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:InscriberLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40014[not(@resource)]]"
+    ].
+
+    ex:InscriberLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has inscriber (literal w language tag)
+    ex:InscriberLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40014[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40014/@lang"
+        ]
+      ]
+    ].
+
+    # has inscriber (literal w/o language tag)
+    ex:InscriberLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40014[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:RestorationistMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40024]"
+  ].
+
+  ex:RestorationistMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:RestorationistMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:constant "http://id.loc.gov/vocabulary/relators/rsr";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  # has restorationist agent of item (literal)
+  ex:RestorationistMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:RestorationistLiteralMap
+    ]
+  ].
+
+  # has restorationist agent of item (IRI)
+  ex:RestorationistMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "P40024/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:RestorationistLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[P40024[not(@resource)]]"
+    ].
+
+    ex:RestorationistLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Agent
+    ].
+
+    # has restorationist agent of item (literal w language tag)
+    ex:RestorationistLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40024[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "P40024/@lang"
+        ]
+      ]
+    ].
+
+    # has restorationist agent of item (literal w/o language tag)
+    ex:RestorationistLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "P40024[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+ex:ReproducedAsLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40092[not(@resource)]]"
+  ].
+
+  ex:ReproducedAsLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is reproduced as item (literal w language tag)
+  ex:ReproducedAsLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40092[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40092/@lang"
+      ]
+    ]
+  ].
+
+  # is reproduced as item (literal w/o language tag)
+  ex:ReproducedAsLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40092[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:PreservationFacsimileOfLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40090[not(@resource)]]"
+  ].
+
+  ex:PreservationFacsimileOfLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # has preservation facsimile of item (literal w language tag)
+  ex:PreservationFacsimileOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40090[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40090/@lang"
+      ]
+    ]
+  ].
+
+  # has preservation facsimile of item (literal w/o language tag)
+  ex:PreservationFacsimileOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40090[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ReprintedAsLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40091[not(@resource)]]"
+  ].
+
+  ex:ReprintedAsLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # is reprinted as item (literal w language tag)
+  ex:ReprintedAsLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40091[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40091/@lang"
+      ]
+    ]
+  ].
+
+  # is reprinted as item (literal w/o language tag)
+  ex:ReprintedAsLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40091[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:ElectronicReproductionOfLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40088[not(@resource)]]"
+  ].
+
+  ex:ElectronicReproductionOfLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # has electronic reproduction of item (literal w language tag)
+  ex:ElectronicReproductionOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40088[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40088/@lang"
+      ]
+    ]
+  ].
+
+  # has electronic reproduction of item (literal w/o language tag)
+  ex:ElectronicReproductionOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40088[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:FacsimileOfLiteralMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P40089[not(@resource)]]"
+  ].
+
+  ex:FacsimileOfLiteralMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Item
+  ].
+
+  # has facsimile of item (literal w language tag)
+  ex:FacsimileOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40089[not(@resource)][@lang]";
+      rr:termType rr:Literal;
+      rml:languageMap [
+        rml:reference "P40089/@lang"
+      ]
+    ]
+  ].
+
+  # has facsimile of item (literal w/o language tag)
+  ex:FacsimileOfLiteralMap rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "P40089[not(@resource) and not(@lang)]";
+      rr:termType rr:Literal
+    ]
+  ].
+
+ex:HeldByMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[heldBy]"
+  ].
+
+  ex:HeldByMap rr:subjectMap [
+    rr:termType rr:BlankNode;
+    rr:class bf:Contribution
+  ].
+
+  ex:HeldByMap rr:predicateObjectMap [
+    rr:predicate bf:role;
+    rr:objectMap [
+      rr:parentTriplesMap ex:HeldByRoleMap
+    ]
+  ].
+
+  # item held by (literal)
+  ex:HeldByMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rr:parentTriplesMap ex:HeldByLiteralMap
+    ]
+  ].
+
+  # item held by (IRI)
+  ex:HeldByMap rr:predicateObjectMap [
+    rr:predicate bf:agent;
+    rr:objectMap [
+      rml:reference "heldBy/@resource";
+      rr:termType rr:IRI
+    ]
+  ].
+
+  ex:HeldByLiteralMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[heldBy[not(@resource)]]"
+    ].
+
+    ex:HeldByLiteralMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Organization
+    ].
+
+    # item held by (literal w language tag)
+    ex:HeldByLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "heldBy[not(@resource)][@lang]";
+        rr:termType rr:Literal;
+        rml:languageMap [
+          rml:reference "heldBy/@lang"
+        ]
+      ]
+    ].
+
+    # item held by (literal w/o language tag)
+    ex:HeldByLiteralMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rml:reference "heldBy[not(@resource) and not(@lang)]";
+        rr:termType rr:Literal
+      ]
+    ].
+
+  ex:HeldByRoleMap a rr:TriplesMap;
+    rml:logicalSource [
+      rml:source "/home/mcm104/rml/rdfxml/data/!!itemID!!.xml";
+      rml:referenceFormulation ql:XPath;
+      rml:iterator "/RDF/Description[heldBy]"
+    ].
+
+    ex:HeldByRoleMap rr:subjectMap [
+      rr:termType rr:BlankNode;
+      rr:class bf:Role
+    ].
+
+    ex:HeldByRoleMap rr:predicateObjectMap [
+      rr:predicate rdfs:label;
+      rr:objectMap [
+        rr:constant "holding institution";
+        rr:termType rr:Literal;
+        rr:language "en"
+      ]
+    ].

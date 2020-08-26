@@ -1,0 +1,59 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://rdaregistry.info/Elements/m/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8fa54c8f-8b85-4a7a-8105-12ef37c422b1> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns5:catalogerID "mcm104"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-25"@eng ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n"@eng ] ] ;
+    ns2:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:P30007 "©2003"@eng ;
+    ns2:P30011 "2003"@eng ;
+    ns2:P30083 <http://id.loc.gov/rwo/agents/n81058143> ;
+    ns2:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:P30088 "http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"@eng ;
+    ns2:P30105 "Introduction and notes by Robert O'Meally"@eng,
+        "Mark Twain"@eng ;
+    ns2:P30128 "Huck Finn"@eng,
+        "Huckleberry Finn"@eng ;
+    ns2:P30139 <https://trellis.sinopia.io/repository/washington/acd98131-e252-4adf-8000-84758282ea95> ;
+    ns2:P30156 "Adventures of Huckleberry Finn"@eng ;
+    ns2:P30169 "4.25 x 6.87"@eng ;
+    ns2:P30176 "Barnes & Noble Books"@eng ;
+    ns2:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/n81058143> rdfs:label "Barnes & Noble Books" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/acd98131-e252-4adf-8000-84758282ea95> rdfs:label "Adventures of Huckleberry Finn" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+

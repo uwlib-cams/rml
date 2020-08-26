@@ -1,0 +1,61 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "dbrookin"@zxx ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-03-04"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@zxx ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30011 "2010"@zxx ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Москва"@rus ;
+    ns1:P30095 "Slovo"@eng ;
+    ns1:P30105 "редактор, Е. Усенко"@rus,
+        "тексты А. Петрова, К. Соловьева"@rus ;
+    ns1:P30137 "Contents and summary also in English."@eng,
+        "Includes bibliographical references."@eng,
+        "Published to accompany an exhibit held April-May, 2009 as part of the Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii.\""@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee> ;
+    ns1:P30142 "метаморфозы"@rus ;
+    ns1:P30151 "metamorphoses"@eng ;
+    ns1:P30156 "Русский костюм в фотографиях"@rus ;
+    ns1:P30176 "Слово"@rus ;
+    ns1:P30182 "319 pages"@eng ;
+    ns1:P30203 "Russian costume in photographs"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns4:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee> rdfs:label "https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

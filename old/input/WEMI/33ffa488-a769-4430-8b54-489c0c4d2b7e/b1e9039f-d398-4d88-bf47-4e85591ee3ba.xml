@@ -1,0 +1,43 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b1e9039f-d398-4d88-bf47-4e85591ee3ba> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns4:catalogerID "aschiff"@eng ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2012-12-10"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20069 "Flirtatious and recently widowed, Lady Susan Vernon seeks a new and advantageous marriage for herself, and at the same time attempts to push her daughter into marriage with a man she detests. The plot unfolds through letters exchanged among Lady Susan, her family, friends, and enemies."@eng ;
+    ns1:P20071 "\"Written about 1805. First published in 1871. Now reprinted from the manuscript.\""@eng ;
+    ns1:P20206 "Notes on \"Variations, &c., in the manuscript\" and \"Variations in the edition of 1871\": 14 unnumbered pages at end."@eng ;
+    ns1:P20214 "1925"@eng ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/16a61969-3b31-4e09-bba0-0319a13895d1> ;
+    ns1:P20313 "Austen, Jane, 1775-1817. Lady Susan. English. 1925"@eng ;
+    ns1:P20315 "Lady Susan"@eng ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+
+<https://trellis.sinopia.io/repository/washington/16a61969-3b31-4e09-bba0-0319a13895d1> rdfs:label "Lady Susan" .
+

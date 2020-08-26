@@ -1,0 +1,38 @@
+@prefix ns1: <http://rdaregistry.info/Elements/e/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/97fe31f3-dcc8-40d3-9f70-508a03abd48a> a <http://rdaregistry.info/Elements/c/C10006> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "emcotter"@eng ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-06-16"@zxx ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P20001 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:P20006 <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:P20065 "Latin"@eng ;
+    ns1:P20214 "1990"@zxx ;
+    ns1:P20231 <https://trellis.sinopia.io/repository/washington/fbd8619d-f725-4991-8c72-8e47101489d8> ;
+    ns1:P20313 "United States. Patent Documentation Organizations. Concordance, United States patent classification to international patent classification. Text. English"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Expression:monograph" .
+
+<http://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<http://rdaregistry.info/termList/RDAContentType/1020> rdfs:label "text" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU" .
+
+<https://trellis.sinopia.io/repository/washington/fbd8619d-f725-4991-8c72-8e47101489d8> rdfs:label "Concordance, United States patent classification to international patent classification" .
+

@@ -1,0 +1,188 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "jlee70"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2020-02-24"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b1"
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-24T18:13:47.411Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9d0ab634-d409-4945-84c4-9fd2aa4f9ec4"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-24T17:28:48.491Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9d0ab634-d409-4945-84c4-9fd2aa4f9ec4"
+  }, {
+    "@id": "_:b4",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-24T17:30:17.039Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9d0ab634-d409-4945-84c4-9fd2aa4f9ec4"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/millus/ill",
+    "label": "Illustrations"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAColourContent/1002",
+    "label": "monochrome"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "label": "text"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/53ac989d-d13d-402a-9f6c-03d165f91319",
+    "label": "Information security risk management for ISO 27001/ISO 27002"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/e60cf078-d569-4c6f-912a-c4eacc848a4b",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
+    "adminMetadata": "_:b0",
+    "P20001": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "P20065": {
+      "@language": "eng",
+      "@value": "Latin"
+    },
+    "P20069": {
+      "@language": "eng",
+      "@value": "Ideal for risk managers, information security managers, lead implementers, compliance managers and consultants, as well as providing useful background material for auditors, this book will enable readers to develop an ISO 27001-compliant risk assessment framework for their organisation and deliver real, bottom-line business benefits."
+    },
+    "P20207": "http://id.loc.gov/vocabulary/millus/ill",
+    "P20224": "http://rdaregistry.info/termList/RDAColourContent/1002",
+    "http://rdaregistry.info/Elements/e/P20224": "black and white",
+    "P20231": "https://trellis.sinopia.io/repository/washington/53ac989d-d13d-402a-9f6c-03d165f91319",
+    "P20313": {
+      "@language": "eng",
+      "@value": "Calder, Alan, 1957- Information security risk management for ISO 27001/ISO 27002. English"
+    },
+    "P20315": {
+      "@language": "eng",
+      "@value": "Information security risk management for ISO 27001/ISO 27002"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:eBook",
+    "wasGeneratedBy": ["_:b2", "_:b4", "_:b3"]
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P20207": {
+      "@id": "http://rdaregistry.info/Elements/e/P20207",
+      "@type": "@id"
+    },
+    "P20315": {
+      "@id": "http://rdaregistry.info/Elements/e/P20315"
+    },
+    "P20069": {
+      "@id": "http://rdaregistry.info/Elements/e/P20069"
+    },
+    "P20224": {
+      "@id": "http://rdaregistry.info/Elements/e/P20224",
+      "@type": "@id"
+    },
+    "P20313": {
+      "@id": "http://rdaregistry.info/Elements/e/P20313"
+    },
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
+    },
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
+    },
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
+      "@type": "@id"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

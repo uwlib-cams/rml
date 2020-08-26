@@ -1,0 +1,140 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-07T01:06:07.409Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9ff64a8a-8d2b-45f5-b934-6aa7d355c5e4"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-07T00:51:53.778Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9ff64a8a-8d2b-45f5-b934-6aa7d355c5e4"
+  }, {
+    "@id": "_:b2",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": "ries07",
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": "2020-02-06",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b3"
+  }, {
+    "@id": "_:b3",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": "n"
+  }, {
+    "@id": "_:b4",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-07T00:38:36.477Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/9ff64a8a-8d2b-45f5-b934-6aa7d355c5e4"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/2f6fce73-629b-4987-9af6-b496e4c8091c",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b2",
+    "P10061": "Saito, Tatsuhiko",
+    "P10219": "2019",
+    "P10223": {
+      "@language": "eng",
+      "@value": "Tsunami generation and progagation"
+    },
+    "P10331": {
+      "@language": "eng",
+      "@value": "Tsunami generation and progagation, Tatsuhiko Saito."
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "wasGeneratedBy": ["_:b4", "_:b0", "_:b1"]
+  }],
+  "@context": {
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P10219": {
+      "@id": "http://rdaregistry.info/Elements/w/P10219"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

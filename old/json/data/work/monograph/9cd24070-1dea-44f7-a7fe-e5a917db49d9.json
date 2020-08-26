@@ -1,0 +1,197 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-10T18:55:04.562Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/14f2132a-0150-4944-89e0-4c8f4516552c"
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "aschiff"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2019-12-10"
+    },
+    "descriptionAuthentication": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/marcauthen/pcc",
+    "label": "Program for Cooperative Cataloging"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b1",
+    "P10002": [{
+      "@language": "eng",
+      "@value": "VIAF: 175982694"
+    }, {
+      "@language": "eng",
+      "@value": "Wikidata: Q477508"
+    }],
+    "P10004": ["http://id.loc.gov/authorities/genreForms/gf2014026360", "http://id.loc.gov/authorities/subjects/sh85048050", "http://id.loc.gov/authorities/genreForms/gf2015026020", "http://id.loc.gov/authorities/genreForms/gf2018026115", "http://id.loc.gov/authorities/genreForms/gf2014026516"],
+    "P10016": ["http://id.loc.gov/authorities/names/no2015084066", "http://id.loc.gov/authorities/names/no2015084096", "http://id.loc.gov/authorities/names/no2015082081"],
+    "P10061": "http://id.loc.gov/authorities/names/n79032879",
+    "P10086": [{
+      "@language": "eng",
+      "@value": "Susan"
+    }, {
+      "@language": "eng",
+      "@value": "Jane Austen's Northanger Abbey"
+    }],
+    "P10148": "http://id.loc.gov/authorities/names/no2015083846",
+    "P10155": "http://id.loc.gov/authorities/names/no2015083789",
+    "P10218": "http://id.loc.gov/authorities/names/n79023147",
+    "P10219": {
+      "@language": "eng",
+      "@value": "approximately 1798 or approximately 1799"
+    },
+    "P10223": {
+      "@language": "eng",
+      "@value": "Northanger Abbey"
+    },
+    "P10256": ["Morland, Catherine (Fictitious character)--Fiction", "Young women--England--Fiction", "England--Social life and customs--18th century--Fiction"],
+    "P10331": {
+      "@language": "eng",
+      "@value": "Austen, Jane, 1775-1817. Northanger Abbey"
+    },
+    "P10332": [{
+      "@language": "eng",
+      "@value": "Austen, Jane, 1775-1817. Jane Austen's Northanger Abbey"
+    }, {
+      "@language": "eng",
+      "@value": "Austen, Jane, 1775-1817. Susan"
+    }],
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "exactMatch": "http://id.loc.gov/authorities/names/no00002948",
+    "wasGeneratedBy": "_:b0",
+    "hasCreatorCharacteristic": ["http://id.loc.gov/authorities/demographicTerms/dg2015060358", "http://id.loc.gov/authorities/demographicTerms/dg2015060373", "http://id.loc.gov/authorities/demographicTerms/dg2015060386"]
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "descriptionAuthentication": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionAuthentication",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "P10219": {
+      "@id": "http://rdaregistry.info/Elements/w/P10219"
+    },
+    "P10332": {
+      "@id": "http://rdaregistry.info/Elements/w/P10332"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P10148": {
+      "@id": "http://rdaregistry.info/Elements/w/P10148"
+    },
+    "P10256": {
+      "@id": "http://rdaregistry.info/Elements/w/P10256"
+    },
+    "P10218": {
+      "@id": "http://rdaregistry.info/Elements/w/P10218"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P10002": {
+      "@id": "http://rdaregistry.info/Elements/w/P10002"
+    },
+    "P10016": {
+      "@id": "http://rdaregistry.info/Elements/w/P10016"
+    },
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004"
+    },
+    "P10155": {
+      "@id": "http://rdaregistry.info/Elements/w/P10155"
+    },
+    "hasCreatorCharacteristic": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic"
+    },
+    "exactMatch": {
+      "@id": "http://www.w3.org/2004/02/skos/core#exactMatch"
+    },
+    "P10086": {
+      "@id": "http://rdaregistry.info/Elements/w/P10086"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

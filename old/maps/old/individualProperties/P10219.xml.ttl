@@ -1,0 +1,36 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ex: <http://example.org/rules/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix ns6: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+
+ex:WorkMonographMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/RDA2BFinRML/sampleData/RDFXML/testData/frankenData.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/*[name()='rdf:RDF']/*[name()='rdf:Description'][1]"
+  ].
+
+  ex:WorkMonographMap rr:subjectMap [
+    rml:reference "@*[name()='rdf:about']";
+    rr:class bf:Work
+  ].
+
+  ex:WorkMonographMap rr:predicateObjectMap [
+    rr:predicate bf:originDate ;
+    rr:objectMap [
+      rml:reference "*[name()='ns1:P10219']";
+      rr:termType rr:Literal
+    ]
+  ].

@@ -1,0 +1,199 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "mathiasuw"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2020-02-25"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b0"
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-25T18:43:33.558Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/977809ed-19c8-49e4-8179-9130511f7e8d"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-25T19:22:57.321Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/977809ed-19c8-49e4-8179-9130511f7e8d"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060188",
+    "label": "Ontarians"
+  }, {
+    "@id": "http://id.loc.gov/authorities/demographicTerms/dg2015060358",
+    "label": "Women"
+  }, {
+    "@id": "http://id.loc.gov/authorities/names/n78074810",
+    "label": "Crozier, Lorna, 1948-"
+  }, {
+    "@id": "http://id.loc.gov/authorities/names/n79100813",
+    "label": "Kingston (Ont.)"
+  }, {
+    "@id": "http://id.loc.gov/authorities/subjects/sh85029624",
+    "label": "Conceptual art"
+  }, {
+    "@id": "http://id.loc.gov/rwo/agents/nr94023259",
+    "label": "Melhorn-Boe, Lise, 1955-"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/5112fda2-2a63-4d0a-8b02-1e7da4ebd85b",
+    "@type": "http://rdaregistry.info/Elements/c/C10001",
+    "adminMetadata": "_:b1",
+    "P10004": "conceptual art (general art genre)",
+    "P10061": "http://id.loc.gov/authorities/names/n78074810",
+    "P10198": "Melhorn-Boe, Lise, 1955- Button.",
+    "P10218": "http://id.loc.gov/authorities/names/n79100813",
+    "P10219": {
+      "@language": "eng",
+      "@value": "2018"
+    },
+    "P10223": {
+      "@language": "eng",
+      "@value": "Zipper"
+    },
+    "P10254": "http://id.loc.gov/rwo/agents/nr94023259",
+    "P10256": "http://id.loc.gov/authorities/subjects/sh85029624",
+    "http://rdaregistry.info/Elements/w/P10256": "Zippers in art",
+    "P10308": "Melhorn-Boe, Lise, 1955- Button. English",
+    "P10331": {
+      "@language": "eng",
+      "@value": "Melhorn-Boe, Lisa, 1955- Zipper"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Work:monograph",
+    "wasGeneratedBy": ["_:b2", "_:b3"],
+    "hasCreatorCharacteristic": ["http://id.loc.gov/authorities/demographicTerms/dg2015060188", "http://id.loc.gov/authorities/demographicTerms/dg2015060358"]
+  }],
+  "@context": {
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P10061": {
+      "@id": "http://rdaregistry.info/Elements/w/P10061",
+      "@type": "@id"
+    },
+    "P10254": {
+      "@id": "http://rdaregistry.info/Elements/w/P10254",
+      "@type": "@id"
+    },
+    "P10223": {
+      "@id": "http://rdaregistry.info/Elements/w/P10223"
+    },
+    "hasCreatorCharacteristic": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasCreatorCharacteristic",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P10004": {
+      "@id": "http://rdaregistry.info/Elements/w/P10004"
+    },
+    "P10256": {
+      "@id": "http://rdaregistry.info/Elements/w/P10256",
+      "@type": "@id"
+    },
+    "P10308": {
+      "@id": "http://rdaregistry.info/Elements/w/P10308"
+    },
+    "P10219": {
+      "@id": "http://rdaregistry.info/Elements/w/P10219"
+    },
+    "P10218": {
+      "@id": "http://rdaregistry.info/Elements/w/P10218",
+      "@type": "@id"
+    },
+    "P10198": {
+      "@id": "http://rdaregistry.info/Elements/w/P10198"
+    },
+    "P10331": {
+      "@id": "http://rdaregistry.info/Elements/w/P10331"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

@@ -1,0 +1,34 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/i/> .
+@prefix ns3: <http://sinopia.io/vocabulary/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/01246523-73e6-4c3a-9eb0-1f8aa338dd7d> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns4:adminMetadata [ a ns4:AdminMetadata ;
+            ns5:catalogerID "cec23" ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns4:creationDate "2019-12-04" ;
+            ns4:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns4:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns4:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns2:P40049 <https://trellis.sinopia.io/repository/washington/83337200-3e1f-4a11-8177-de83111d67bc> ;
+    ns3:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:hasBarcode "39352084161363" ;
+    ns1:hasLcClassificationPartA "Q175.4" ;
+    ns1:hasLcClassificationPartB ".P76 2016" ;
+    ns1:hasPhysicalLocation "suzzallen" ;
+    ns1:hasPhysicalSubLocation "szstx" ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/83337200-3e1f-4a11-8177-de83111d67bc> rdfs:label "Progress in science, progress in society" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

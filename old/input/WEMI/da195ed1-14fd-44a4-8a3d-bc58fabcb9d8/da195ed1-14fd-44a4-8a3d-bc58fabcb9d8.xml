@@ -1,0 +1,30 @@
+@prefix ns1: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns2: <http://rdaregistry.info/Elements/i/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8> a <http://rdaregistry.info/Elements/c/C10003> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns4:catalogerID "cec23" ;
+            ns4:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-12-16"@eng ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns2:P40048 "Requires key to Yragui house"@eng ;
+    ns2:P40049 <https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Item:monograph" ;
+    ns1:heldBy "Crystal's bookshelf" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+
+<https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> rdfs:label "Training your boxer" .
+

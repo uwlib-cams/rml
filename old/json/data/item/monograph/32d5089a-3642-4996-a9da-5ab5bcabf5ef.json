@@ -1,0 +1,96 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-02-06T00:44:04.361Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/977809ed-19c8-49e4-8179-9130511f7e8d"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-06T00:43:26.934Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/977809ed-19c8-49e4-8179-9130511f7e8d"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/32d5089a-3642-4996-a9da-5ab5bcabf5ef",
+    "@type": "http://rdaregistry.info/Elements/c/C10003",
+    "hasResourceTemplate": "WAU:RT:RDA:Item:monograph",
+    "wasGeneratedBy": ["_:b1", "_:b0"],
+    "hasBarcode": {
+      "@language": "eng",
+      "@value": "39352084716331"
+    },
+    "hasLcClassificationPartA": {
+      "@language": "eng",
+      "@value": "N7433.4.W225"
+    },
+    "hasLcClassificationPartB": {
+      "@language": "eng",
+      "@value": "C66 2018"
+    },
+    "hasPhysicalLocation": {
+      "@language": "eng",
+      "@value": "bothell"
+    },
+    "hasPhysicalSubLocation": {
+      "@language": "eng",
+      "@value": "boart"
+    },
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }],
+  "@context": {
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "hasPhysicalLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalLocation"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "hasLcClassificationPartB": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    },
+    "hasPhysicalSubLocation": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasPhysicalSubLocation"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
+    },
+    "hasBarcode": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasBarcode"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

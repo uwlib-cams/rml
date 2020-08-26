@@ -1,0 +1,211 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2020-01-14T19:52:39.210Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "_:b2",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": "cec23",
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": "2020-01-14",
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b0"
+  }, {
+    "@id": "_:b3",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-01-14T19:51:38.770Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "label": "single unit"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDACarrierType/1018",
+    "label": "online resource"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMediaType/1003",
+    "label": "computer"
+  }, {
+    "@id": "http://rdaregistry.info/termList/fileType/1002",
+    "label": "text file"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": ["WAU", "WaU"]
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/3921a728-e4d6-4d88-9dfd-cf17b1768ebd",
+    "@type": "http://rdaregistry.info/Elements/c/C10007",
+    "adminMetadata": "_:b2",
+    "P30001": "http://rdaregistry.info/termList/RDACarrierType/1018",
+    "P30002": "http://rdaregistry.info/termList/RDAMediaType/1003",
+    "P30003": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "P30007": {
+      "@language": "eng",
+      "@value": "©2019"
+    },
+    "P30011": {
+      "@language": "eng",
+      "@value": "[2019]"
+    },
+    "P30018": "http://rdaregistry.info/termList/fileType/1002",
+    "http://rdaregistry.info/Elements/m/P30018": "PDF",
+    "P30088": {
+      "@language": "eng",
+      "@value": "[Seattle, Washington]"
+    },
+    "P30105": {
+      "@language": "eng",
+      "@value": "Ashley Bagley"
+    },
+    "P30111": {
+      "@language": "eng",
+      "@value": "[Seattle, Washington] : [University of Washington Libraries], [2019]"
+    },
+    "P30139": "https://trellis.sinopia.io/repository/washington/95cf5ef7-0942-4efc-af5e-b9301d3280d0",
+    "P30154": "http://hdl.handle.net/1773/44348",
+    "P30156": {
+      "@language": "eng",
+      "@value": "Evaluating temperature buffering capacity of floodplain side channels to promote refugia for salmonids in the Stillaguamish River basin"
+    },
+    "P30176": {
+      "@language": "eng",
+      "@value": "[University of Washington Libraries]"
+    },
+    "hasResourceTemplate": "WAU:RT:RDA:Manifestation:etd",
+    "wasGeneratedBy": ["_:b3", "_:b1"],
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "P30011": {
+      "@id": "http://rdaregistry.info/Elements/m/P30011"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P30111": {
+      "@id": "http://rdaregistry.info/Elements/m/P30111"
+    },
+    "P30003": {
+      "@id": "http://rdaregistry.info/Elements/m/P30003",
+      "@type": "@id"
+    },
+    "P30007": {
+      "@id": "http://rdaregistry.info/Elements/m/P30007"
+    },
+    "P30088": {
+      "@id": "http://rdaregistry.info/Elements/m/P30088"
+    },
+    "P30154": {
+      "@id": "http://rdaregistry.info/Elements/m/P30154"
+    },
+    "P30156": {
+      "@id": "http://rdaregistry.info/Elements/m/P30156"
+    },
+    "P30176": {
+      "@id": "http://rdaregistry.info/Elements/m/P30176"
+    },
+    "P30018": {
+      "@id": "http://rdaregistry.info/Elements/m/P30018",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P30139": {
+      "@id": "http://rdaregistry.info/Elements/m/P30139"
+    },
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
+    },
+    "P30002": {
+      "@id": "http://rdaregistry.info/Elements/m/P30002",
+      "@type": "@id"
+    },
+    "P30105": {
+      "@id": "http://rdaregistry.info/Elements/m/P30105"
+    },
+    "P30001": {
+      "@id": "http://rdaregistry.info/Elements/m/P30001",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

@@ -1,0 +1,42 @@
+@prefix ns1: <http://rdaregistry.info/Elements/w/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns5: <http://sinopia.io/vocabulary/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c6edd386-5262-4bac-b6db-e1641879ed06> a <http://rdaregistry.info/Elements/c/C10001> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:creationDate "2019-12-16" ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P10004 <http://id.loc.gov/authorities/genreForms/gf2014026109> ;
+    ns1:P10061 <http://id.loc.gov/authorities/names/n96113448> ;
+    ns1:P10219 "2001" ;
+    ns1:P10223 "Training your boxer"@eng ;
+    ns1:P10256 "Boxer (Dog breed)--Training" ;
+    ns1:P10330 "Contents: Why train your boxer? -- Understanding the boxer -- How the boxer learns -- House training -- Socialization -- Habituation -- Beginning command training -- Seven basic commands -- Seven more commands -- Five boxer tricks -- Looking for trouble -- Activities."@eng ;
+    ns1:P10331 "Walker, Joan Hustace, 1962-. Training your boxer"@eng ;
+    ns5:hasResourceTemplate "WAU:RT:RDA:Work:monograph" ;
+    ns4:hasCreatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060358> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060001> rdfs:label "Americans" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060358> rdfs:label "Women" .
+
+<http://id.loc.gov/authorities/genreForms/gf2014026109> rdfs:label "Handbooks and manuals" .
+
+<http://id.loc.gov/authorities/names/n96113448> rdfs:label "Walker, Joan Hustace, 1962-" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+

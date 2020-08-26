@@ -1,0 +1,70 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  a bf:Item;
+  bf:acquisitionSource _:3 .
+
+_:3 a bf:AcquisitionSource;
+  rdfs:label "Amazon"@en .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:classification _:0 .
+
+_:0 a bf:ClassificationLcc;
+  rdf:value "PG3326.I3 1998" .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:contribution _:5 .
+
+_:5 a bf:Contribution;
+  bf:agent _:9 .
+
+_:9 a bf:Agent;
+  rdfs:label "Clements, Crystal, 1987-" .
+
+_:5 bf:role <http://id.loc.gov/vocabulary/relators/ann> .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:heldBy _:7 .
+
+_:7 a bf:Contribution;
+  bf:agent _:11 .
+
+_:11 a bf:Organization;
+  rdfs:label "Crystal Clements" .
+
+_:7 bf:role _:10 .
+
+_:10 a bf:Role;
+  rdfs:label "holding institution"@en .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:identifier _:2 .
+
+_:2 a bf:Barcode;
+  rdf:value "12345" .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:itemOf <https://trellis.sinopia.io/repository/washington/repository/washington/0d1f4ee2-ed20-497c-a589-916ab694008b>;
+  bf:physicalLocation "Yragui bookshelf"@en;
+  bf:sublocation _:1 .
+
+_:1 a bf:Sublocation;
+  rdfs:label "Russian literature"@en .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:usageAndAccessPolicy _:4 .
+
+_:4 a bf:UsageAndAccessPolicy;
+  rdfs:label "Need keys to Yragui house or delivery from Crystal Clements" .
+
+<https://trellis.sinopia.io/repository/washington/b0527c0a-d03d-4515-be85-fa1ffad8891b>
+  bf:usageAndAccessPolicy _:6 .
+
+_:6 a bf:UsageAndAccessPolicy;
+  rdfs:label "Need Crystal's permission, which is unlikely to be given."@en .
+
+_:8 a bf:Status;
+  bf:code "n" .

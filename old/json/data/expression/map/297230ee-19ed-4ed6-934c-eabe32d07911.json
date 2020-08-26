@@ -1,0 +1,202 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": "cec23",
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": "2019-12-09",
+    "descriptionConventions": ["http://id.loc.gov/vocabulary/descriptionConventions/dcrmc", "https://id.loc.gov/vocabulary/descriptionConventions/rda"],
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau"
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Update", "prov:Activity"],
+    "atTime": "2019-12-12T21:47:18.236Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "_:b2",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2019-12-10T01:53:45.811Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/718080a8-0f24-44d3-9924-aea230591f00"
+  }, {
+    "@id": "file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003",
+    "label": "polychrome"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/descriptionConventions/dcrmc",
+    "label": "Descriptive cataloging of rare materials (Cartographic)"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/mrelief/pict",
+    "label": "Pictorially"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1002",
+    "label": "cartographic image"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1014",
+    "label": "still image"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "label": "text"
+  }, {
+    "@id": "http://rdaregistry.info/termList/scale/1002",
+    "label": "scale not given"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WaU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/297230ee-19ed-4ed6-934c-eabe32d07911",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
+    "adminMetadata": "_:b0",
+    "P20001": ["http://rdaregistry.info/termList/RDAContentType/1020", "http://rdaregistry.info/termList/RDAContentType/1002", "http://rdaregistry.info/termList/RDAContentType/1014"],
+    "P20065": {
+      "@language": "eng",
+      "@value": "Latin"
+    },
+    "P20071": [{
+      "@language": "eng",
+      "@value": "Separated from Part 4 of the 1617 German edition of Braun & Hogenberg's \"Civitates orbis terrarum\"."
+    }, {
+      "@language": "eng",
+      "@value": "Map in Latin. Text on verso in German, translated from original Latin."
+    }, {
+      "@language": "eng",
+      "@value": "Text on verso begins with decorative initial \"P\". Has plate number \"41\" in lower right. Last line of text \"schafft ... erkendt\" (followed by geographical position). First line ends \"des\"."
+    }],
+    "P20214": "1617",
+    "P20224": "file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003",
+    "P20231": "https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22",
+    "P20261": {
+      "@language": "eng",
+      "@value": "hand colored"
+    },
+    "P20291": "http://rdaregistry.info/termList/scale/1002",
+    "P20313": {
+      "@language": "eng",
+      "@value": "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. German. 1617. Part 4. Plate 41."
+    },
+    "P20315": {
+      "@language": "eng",
+      "@value": "Alten Stettin (Map : 1588). German. 1617"
+    },
+    "P20316": {
+      "@language": "deu",
+      "@value": "Alten Stettin"
+    },
+    "P20318": "http://id.loc.gov/vocabulary/mrelief/pict",
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:map",
+    "wasGeneratedBy": ["_:b1", "_:b2"]
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22",
+    "label": "Alten Stettin (Map : 1588)"
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "P20316": {
+      "@id": "http://rdaregistry.info/Elements/e/P20316"
+    },
+    "P20224": {
+      "@id": "http://rdaregistry.info/Elements/e/P20224",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
+    },
+    "P20291": {
+      "@id": "http://rdaregistry.info/Elements/e/P20291",
+      "@type": "@id"
+    },
+    "P20071": {
+      "@id": "http://rdaregistry.info/Elements/e/P20071"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P20214": {
+      "@id": "http://rdaregistry.info/Elements/e/P20214"
+    },
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
+    },
+    "P20315": {
+      "@id": "http://rdaregistry.info/Elements/e/P20315"
+    },
+    "P20313": {
+      "@id": "http://rdaregistry.info/Elements/e/P20313"
+    },
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
+      "@type": "@id"
+    },
+    "P20261": {
+      "@id": "http://rdaregistry.info/Elements/e/P20261"
+    },
+    "P20318": {
+      "@id": "http://rdaregistry.info/Elements/e/P20318",
+      "@type": "@id"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

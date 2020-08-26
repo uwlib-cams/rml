@@ -1,0 +1,76 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns3:adminMetadata [ a ns3:AdminMetadata ;
+            ns5:catalogerID "aschiff"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns3:changeDate "2019-12-18"@eng ;
+            ns3:creationDate "2019-12-16"@eng ;
+            ns3:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns3:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns3:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns3:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©2007"@eng ;
+    ns1:P30011 "[2007]"@eng ;
+    ns1:P30083 "EKS Publishing Co." ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "Oakland, California"@eng ;
+    ns1:P30105 "adapted by Sarah Gershman"@eng,
+        "illustrated by Kristina Swarner"@eng ;
+    ns1:P30111 "Oakland, California : EKS Publishing Co., [2007]"@eng ;
+    ns1:P30128 "Bedtime Shema"@eng,
+        "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+        "לילה טוב : קריאת שמע על המטה"@heb ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> ;
+    ns1:P30142 "a good night book"@eng ;
+    ns1:P30151 "Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+        "קריאת שמע על המטה"@heb ;
+    ns1:P30156 "The Bedtime Sh'ma"@eng ;
+    ns1:P30169 "24 cm"@eng ;
+    ns1:P30176 "EKS Publishing Co."@eng ;
+    ns1:P30182 "39 pages"@eng ;
+    ns1:P30203 "Lailah ṭov"@heb,
+        "לילה טוב"@heb ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:P30305 <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    ns6:P30004 "ISBN 9780939144549 (pbk.)"@eng,
+        "ISBN 9780939144556"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns2:hasLcClassificationPartA "BM670.B43"@eng ;
+    ns2:hasLcClassificationPartB "G47 2007"@eng ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060010> rdfs:label "Children" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> rdfs:label "Bedtime Sh'ma" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .
+

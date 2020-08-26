@@ -1,0 +1,197 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b1",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-16T06:49:14.858Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/7f10a20b-05f6-4586-a26e-430fde8deabe"
+  }, {
+    "@id": "_:b2",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "jlee37"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2020-02-15"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b0"
+  }, {
+    "@id": "http://id.loc.gov/authorities/genreForms/gf2014026191",
+    "label": "Textbooks"
+  }, {
+    "@id": "http://id.loc.gov/vocabulary/languages/chi",
+    "label": "Chinese"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "label": "text"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": "WAU"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/22ea168e-2587-4838-838c-bc2f8ce53103",
+    "@type": "http://rdaregistry.info/Elements/c/C10006",
+    "adminMetadata": "_:b2",
+    "P20001": "http://rdaregistry.info/termList/RDAContentType/1020",
+    "P20006": "http://id.loc.gov/vocabulary/languages/chi",
+    "P20065": {
+      "@language": "eng",
+      "@value": "Traditional Chinese"
+    },
+    "P20214": {
+      "@language": "eng",
+      "@value": "1909"
+    },
+    "P20231": "https://trellis.sinopia.io/repository/washington/7e72cdce-2517-4bd5-be85-5836273f0e31",
+    "P20313": {
+      "@language": "eng",
+      "@value": "Lei, Zepu. Xinning xiang tu li shi. Chinese"
+    },
+    "P20314": [{
+      "@language": "eng",
+      "@value": "Lei, Zepu. 新寧鄉土歷史. Chinese"
+    }, {
+      "@language": "eng",
+      "@value": "Lei, Zepu. Xinning xiang tu li shi (1909)"
+    }],
+    "P20315": {
+      "@language": "eng",
+      "@value": "Xinning xiang tu li shi"
+    },
+    "P20316": [{
+      "@language": "eng",
+      "@value": "Xinning xiang tu li shi : [er juan]"
+    }, {
+      "@language": "eng",
+      "@value": "新寧鄉土歷史 : [二卷]"
+    }],
+    "P20331": "http://id.loc.gov/authorities/genreForms/gf2014026191",
+    "hasResourceTemplate": "WAU:RT:RDA:Expression:monograph",
+    "wasGeneratedBy": "_:b1"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/7e72cdce-2517-4bd5-be85-5836273f0e31",
+    "label": "Xinning xiang tu li shi"
+  }],
+  "@context": {
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "P20331": {
+      "@id": "http://rdaregistry.info/Elements/e/P20331",
+      "@type": "@id"
+    },
+    "P20006": {
+      "@id": "http://rdaregistry.info/Elements/e/P20006",
+      "@type": "@id"
+    },
+    "P20065": {
+      "@id": "http://rdaregistry.info/Elements/e/P20065"
+    },
+    "P20314": {
+      "@id": "http://rdaregistry.info/Elements/e/P20314"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P20316": {
+      "@id": "http://rdaregistry.info/Elements/e/P20316"
+    },
+    "P20315": {
+      "@id": "http://rdaregistry.info/Elements/e/P20315"
+    },
+    "P20001": {
+      "@id": "http://rdaregistry.info/Elements/e/P20001",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "P20214": {
+      "@id": "http://rdaregistry.info/Elements/e/P20214"
+    },
+    "P20231": {
+      "@id": "http://rdaregistry.info/Elements/e/P20231",
+      "@type": "@id"
+    },
+    "P20313": {
+      "@id": "http://rdaregistry.info/Elements/e/P20313"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

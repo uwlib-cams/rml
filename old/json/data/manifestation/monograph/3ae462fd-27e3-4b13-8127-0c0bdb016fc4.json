@@ -1,0 +1,233 @@
+{
+  "@graph": [{
+    "@id": "_:b0",
+    "@type": ["as:Create", "prov:Activity"],
+    "atTime": "2020-02-25T20:15:54.022Z",
+    "wasAssociatedWith": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_JLxtCILIV/977809ed-19c8-49e4-8179-9130511f7e8d"
+  }, {
+    "@id": "_:b1",
+    "@type": "http://id.loc.gov/ontologies/bibframe/Status",
+    "code": {
+      "@language": "eng",
+      "@value": "n"
+    }
+  }, {
+    "@id": "_:b2",
+    "@type": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "catalogerID": {
+      "@language": "eng",
+      "@value": "mathiasuw"
+    },
+    "encodingLevel": "https://id.loc.gov/vocabulary/menclvl/f",
+    "creationDate": {
+      "@language": "eng",
+      "@value": "2020-02-25"
+    },
+    "descriptionConventions": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "descriptionLanguage": "https://id.loc.gov/vocabulary/languages/eng",
+    "source": "https://id.loc.gov/vocabulary/organizations/wau",
+    "status": "_:b1"
+  }, {
+    "@id": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "label": "single unit"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMaterial/1017",
+    "label": "Ink"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMaterial/1039",
+    "label": "textile"
+  }, {
+    "@id": "http://rdaregistry.info/termList/RDAMediaType/1007",
+    "label": "unmediated"
+  }, {
+    "@id": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
+    "label": "volume"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/descriptionConventions/rda",
+    "label": "Resource Description and Access"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/languages/eng",
+    "label": "English"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/menclvl/f",
+    "label": "full"
+  }, {
+    "@id": "https://id.loc.gov/vocabulary/organizations/wau",
+    "label": ["WAU", "WaU"]
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd",
+    "label": "Zipper. English"
+  }, {
+    "@id": "https://trellis.sinopia.io/repository/washington/3ae462fd-27e3-4b13-8127-0c0bdb016fc4",
+    "@type": "http://rdaregistry.info/Elements/c/C10007",
+    "adminMetadata": "_:b2",
+    "P30001": "http://www.rdaregistry.info/termList/RDACarrierType/1008",
+    "P30002": "http://rdaregistry.info/termList/RDAMediaType/1007",
+    "P30003": "http://rdaregistry.info/termList/ModeIssue/1001",
+    "P30007": {
+      "@language": "eng",
+      "@value": "©"
+    },
+    "P30011": {
+      "@language": "eng",
+      "@value": "2018"
+    },
+    "P30084": "http://rdaregistry.info/termList/RDAMaterial/1017",
+    "P30088": {
+      "@language": "eng",
+      "@value": "Kingston (Ont.)"
+    },
+    "P30111": {
+      "@language": "eng",
+      "@value": "[Kingston, Ontario] : Transformer Press, 2018"
+    },
+    "P30139": "https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd",
+    "P30156": {
+      "@language": "eng",
+      "@value": "Zipper"
+    },
+    "P30176": {
+      "@language": "eng",
+      "@value": "Transformer Press"
+    },
+    "P30208": "http://rdaregistry.info/termList/RDAMaterial/1039",
+    "hasResourceTemplate": "WAU:RT:RDA:Manifestation:monograph",
+    "wasGeneratedBy": "_:b0",
+    "hasLcClassificationPartA": {
+      "@language": "eng",
+      "@value": "N7433.4.M445"
+    },
+    "hasLcClassificationPartB": {
+      "@language": "eng",
+      "@value": "Z57 2018"
+    },
+    "hasUniversityOfWashingtonNote": {
+      "@language": "eng",
+      "@value": "UW Libraries has limited edition copy 4/10"
+    },
+    "heldBy": "https://id.loc.gov/vocabulary/organizations/wau"
+  }],
+  "@context": {
+    "label": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "atTime": {
+      "@id": "http://www.w3.org/ns/prov#atTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id"
+    },
+    "code": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/code"
+    },
+    "catalogerID": {
+      "@id": "http://id.loc.gov/ontologies/bflc/catalogerID"
+    },
+    "status": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/status",
+      "@type": "@id"
+    },
+    "encodingLevel": {
+      "@id": "http://id.loc.gov/ontologies/bflc/encodingLevel",
+      "@type": "@id"
+    },
+    "descriptionConventions": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionConventions",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/source",
+      "@type": "@id"
+    },
+    "descriptionLanguage": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/descriptionLanguage",
+      "@type": "@id"
+    },
+    "creationDate": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/creationDate"
+    },
+    "hasResourceTemplate": {
+      "@id": "http://sinopia.io/vocabulary/hasResourceTemplate"
+    },
+    "P30011": {
+      "@id": "http://rdaregistry.info/Elements/m/P30011"
+    },
+    "heldBy": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#heldBy",
+      "@type": "@id"
+    },
+    "adminMetadata": {
+      "@id": "http://id.loc.gov/ontologies/bibframe/adminMetadata",
+      "@type": "@id"
+    },
+    "P30088": {
+      "@id": "http://rdaregistry.info/Elements/m/P30088"
+    },
+    "P30139": {
+      "@id": "http://rdaregistry.info/Elements/m/P30139",
+      "@type": "@id"
+    },
+    "P30001": {
+      "@id": "http://rdaregistry.info/Elements/m/P30001",
+      "@type": "@id"
+    },
+    "hasUniversityOfWashingtonNote": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote"
+    },
+    "P30003": {
+      "@id": "http://rdaregistry.info/Elements/m/P30003",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type": "@id"
+    },
+    "hasLcClassificationPartA": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA"
+    },
+    "P30002": {
+      "@id": "http://rdaregistry.info/Elements/m/P30002",
+      "@type": "@id"
+    },
+    "P30208": {
+      "@id": "http://rdaregistry.info/Elements/m/P30208",
+      "@type": "@id"
+    },
+    "P30084": {
+      "@id": "http://rdaregistry.info/Elements/m/P30084",
+      "@type": "@id"
+    },
+    "P30111": {
+      "@id": "http://rdaregistry.info/Elements/m/P30111"
+    },
+    "P30007": {
+      "@id": "http://rdaregistry.info/Elements/m/P30007"
+    },
+    "P30176": {
+      "@id": "http://rdaregistry.info/Elements/m/P30176"
+    },
+    "hasLcClassificationPartB": {
+      "@id": "https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB"
+    },
+    "P30156": {
+      "@id": "http://rdaregistry.info/Elements/m/P30156"
+    },
+    "schema": "http://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "memento": "http://mementoweb.org/ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dc": "http://purl.org/dc/terms/"
+  }
+}

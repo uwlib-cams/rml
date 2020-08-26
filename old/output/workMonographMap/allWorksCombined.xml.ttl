@@ -1,0 +1,613 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix ex: <http://example.org/rules/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns12: <http://uw.edu/adaptationProperties/p/w/> .
+@prefix ns7: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdae: <http://rdaregistry.info/Elements/e/> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <http://schema.org/> .
+@prefix sin: <http://sinopia.io/vocabulary/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uwx: <https://doi.org/10.6069/uwlib.55.d.4#> .
+
+_:0 a bf:VariantTitle;
+  bf:mainTitle "Go down, Moses and other stories"@en .
+
+_:1 a bf:VariantTitle;
+  bf:mainTitle "Driad"@pt, "Loraks"@pt, "Lórax"@pt, "Lórax (Beber)"@pt .
+
+_:10 a bf:Work;
+  rdfs:label "" .
+
+_:11 a bf:Contribution;
+  bf:agent _:90;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:12 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79003304>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:13 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:14 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79029930>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:15 a bf:Contribution;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:16 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/no2009177518>;
+  bf:role <http://id.loc.gov/vocabulary/relators/aut> .
+
+_:17 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-12";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:18 a bf:AdminMetadata;
+  bflc:catalogerID "ries07";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-20";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:19 a bf:AdminMetadata;
+  bflc:catalogerID "ries07";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-21";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:2 a bf:VariantTitle;
+  bf:mainTitle "Идиот"@ru .
+
+_:20 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-13";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:21 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-13";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:22 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-19";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:23 a bf:AdminMetadata;
+  bflc:catalogerID "cec";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-09-25";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+    <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:24 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-07";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:25 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-20";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:26 a bf:AdminMetadata;
+  bflc:catalogerID "cec23";
+  bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f>;
+  bf:creationDate "2019-11-06";
+  bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda>;
+  bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng>;
+  bf:source <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:status _:60, _:61, _:62, _:63, _:64, _:65, _:66, _:67, _:68, _:69 .
+
+_:27 a bf:Work;
+  rdfs:label "http://id.loc.gov/authorities/names/no2012030670" .
+
+_:28 a bf:Contribution;
+  bf:agent <http://id.loc.gov/authorities/names/n79053201>;
+  bf:role <http://id.loc.gov/vocabulary/relators/art> .
+
+_:29 a bf:Work;
+  rdfs:label "http://id.loc.gov/authorities/names/n2010050909", "http://id.loc.gov/authorities/names/n80153668",
+    "http://id.worldcat.org/fast/1367787" .
+
+_:3 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Mississippi--Race relations--Fiction", "Mississippi--Social life and customs--Fiction",
+    "Southern States--Race relations--Fiction", "Yoknapatawpha County (Imaginary place)--Fiction" .
+
+_:30 a bf:Work;
+  rdfs:label "https://doi.org/10.1007/s41061-017-0172-1", "https://doi.org/10.1007/s41061-017-0173-0",
+    "https://doi.org/10.1007/s41061-017-0180-1", "https://doi.org/10.1007/s41061-018-0185-4",
+    "https://doi.org/10.1007/s41061-018-0201-8", "https://doi.org/10.1007/s41061-018-0206-3",
+    "https://doi.org/10.1007/s41061-018-0213-4" .
+
+_:31 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Faulkner, William, 1897-1962. Go down, Moses"@en .
+
+_:32 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Ray, Sinha. Ground water development - issues and sustainable solutions"@en .
+
+_:33 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en .
+
+_:34 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Seuss, Dr. Lorax"@en .
+
+_:35 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Dostoyevsky, Fyodor, 1821-1881. Idiot"@en .
+
+_:36 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein"@en .
+
+_:37 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Cherkasova, Evgenia. Dostoevsky and Kant"@en .
+
+_:38 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Agricultural nanobiotechnology"@en .
+
+_:39 a bf:Identifier;
+  bf:note _:79, _:80, _:81, _:82, _:83, _:84, _:85, _:86, _:87;
+  bf:source _:70, _:71, _:72, _:73, _:74, _:75, _:76, _:77, _:78;
+  rdf:value "Multidimensional time-resolved spectroscopy"@en .
+
+_:4 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Carnegie, Andrew, 1835-1919 -- Natural history collections",
+    "Dinosaurs -- Catalogs and collections -- Pennsylvania -- Pittsburgh", "Dinosaurs -- Social aspects -- Europe",
+    "Diplodocus -- Exhibitions -- Social aspects", "Fossils -- Collection and preservation -- Political aspects",
+    "Natural history -- Catalogs and collections -- Political aspects", "Paleontology -- Social aspects -- Europe -- History -- 20th century" .
+
+_:40 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/174446829" .
+
+_:41 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/254992797" .
+
+_:42 a bf:Identifier;
+  rdf:value "http://viaf.org/viaf/180506435" .
+
+_:43 a bf:Note;
+  bf:noteType "Coverage of the work";
+  rdfs:label <http://id.loc.gov/authorities/names/n79138969> .
+
+_:44 a bf:Note;
+  bf:noteType "Coverage of the work";
+  rdfs:label <http://id.loc.gov/authorities/names/n80001203> .
+
+_:45 a bf:Note;
+  rdfs:label "Introduction: A convoluted dinosaur -- Dinomania: Giant sloths, sea snakes, and concrete contraptions -- His majesty notices a drawing: The tradition of copying dinosaurs -- Getting Diplodocus ready for the stage: From Pittsburgh to London -- \"The years of wandering\": Germany -- Visite au Diplodocus: Paris -- \"Properly messy\": Crouching dinosaurs, national competition, and science reform -- Diaspora: From Rio to Madrid -- Conclusion: Diplodocus after Madrid- and after Carnegie."@en .
+
+_:46 a bf:Note;
+  rdfs:label "\"This volume explores the interplay between mathematical and physical research and the interactions of twentieth-century scientists within their academic communities. Beginning with Einstein's general theory of relativity, the authors investigate a series of dramatic discoveries and rival theories in physics that influenced the development of modern differential geometry. Other sections recount the numerous methods, like the resurgence of Weyl geometry, used by geometers to solve the problems revealed by those same innovations in space-time physics. The effect of general relativity on astronomy is also addressed, namely how astronomers worked through new theories like inflationary cosmology and Phoenix models. By including recent historical research and coupling this work with many disciplines' unique perspectives, this text provides a rich picture of general relativity and cosmology over the course of the twentieth century. The increased study on the documentation of Einstein's early scientific work has clarified the history of science for that time and profoundly altered the way scientists view their own work, as this interdisciplinary volume demonstrates\"--Page 4 of cover."@en,
+    "Contents: Part I. Mathematical and physical underpinnings of spacetime: Figures of light in the early history of relativity (1905-1914) / Scott A. Walter -- The behaviour of rods and clocks in general relativity and the meaning of the metric field / Harvey R. Brown -- Hilbert on general covariance and causality / Katherine Brading and Thomas Ryckman -- Part II. Testing general relativity and rival theories: Putting general relativity to the test : twentieth-century highlights and twenty-first century prospects / Clifford M. Will -- Rotating hollow and full spheres : Einstein, Thirring, Lense, and beyond / Herbert Pfister -- Relativistic lighthouses : the role of the binary pulsar in proving the existence of gravitational waves / Daniel Kennefick -- The rise and fall of the fifth force / Allan Franklin -- Part III: Geometry and cosmology, past and present: Cyclic models of the relativistic universe : the early history / Helge Kragh -- Inflation and the origins of structure / Chris Smeenk -- Problems with modified theories of gravity, as alternatives to dark energy / Norbert Straumann -- The unexpected resurgence of Weyl geometry in late 20th-century physics / Erhard Scholz -- Part IV. Mathematical motifs in general relativity and beyond: Matter from space / Domenico Giulini -- The surprising resolution of the Poincaré conjecture / Donal O'Shea -- Unified field theory up to the 1960s : its development and some interactions among research groups / Hubert Goenner -- Part V. Quantum gravity, conformal boundaries, and string theory: The formulation of quantum field theory in curved spacetime / Robert M. Wald -- Conformal infinity : development and applications / Jörg Fraudendiener -- String theory and spacetime geometry / Matthias R. Gaberdiel -- Conference program / Volker Bach and David E. Rowe."@en .
+
+_:47 a bf:Note;
+  rdfs:label "\"In this book, Evgenia Cherkasova brings the philosopher Kant and the novelist Dostoevsky together in conversations that probe why duty is central to our moral life. She shows that just as Dostoevsky is indebted to Kant, so Kant would profit from the deeply philosophical narratives of Dostoevsky, which engage the problem of evil and the claims of human community. She not only produces a novel reading of Dostoevsky, but also guides us to later, often neglected Kantian texts. This study is written with scholarly care, penetrating analysis, elegance of style, and moral urgency: Cherkasova writes with both mind and heart.\" Emily Grosholz, Professor of Philosophy, The Pennsylvania State University."@en .
+
+_:48 a bf:Note;
+  rdfs:label "Contents: Part I. Agronanobiotechnology, an introduction to nanoparticles: Use of agronanobiotechnology in the agro-food industry to preserve environmental health and improve the welfare of farmers -- Design and production of nanofertilizers -- Part II. Fertiliszers and plant nutrients on germination, growth and development of crops: Nanofertilizers and their controlled delivery of nutrients -- Incorporation of nanoparticles into plant nutrients : the real benefits -- Effects of nanoparticles on germination, growth, and plant crop development -- Effect of nanoparticles on the growth and development of crops for indoor agriculture applications -- Part III. Improving the soil and water quality: Nanomaterials : new agrotechnology tools to improve soil quality? -- Agronanobiotechnologies to improve the water quality in irrigation systems -- Part IV. Environmental topics: Effects of nanoparticles on plants, earthworms, and microorganisms -- Engineered nanoparticles : are they an inestimable achievement or a health and environmental concern?"@en .
+
+_:49 a bf:Identifier;
+  bf:source _:88, _:89;
+  rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories"@en .
+
+_:5 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Ecology--Juvenile fiction", "Environmental ethics--Juvenile fiction",
+    "Environmentalism--Juvenile fiction", "Greed--Juvenile fiction", "Pollution--Juvenile fiction" .
+
+_:50 a bf:Identifier;
+  bf:source _:88 .
+
+_:88 a bf:Source;
+  rdfs:label "RDA Variant Access Point"@en .
+
+_:50 bf:source _:89 .
+
+_:89 a bf:Source;
+  rdfs:label "RDA Variant Access Point"@en .
+
+_:50 rdf:value "Достоевский, Федор, 1821-1881. Идиот"@ru .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068>, _:9 .
+
+_:9 a bf:GenreForm;
+  rdfs:label "http://id.loc.gov/authorities/genreForms/gf2014026339" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2018";
+  bf:subject _:3, _:4, _:5, _:6 .
+
+_:6 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Russia--History--19th century--Fiction", "Russia--Social conditions--19th century--Fiction" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:subject _:7 .
+
+_:7 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Cosmology--History--20th century--Congresses", "General relativity (Physics)--History--20th century--Congresses",
+    "Mathematics--History--20th century--Congresses", "Physics--History--20th century--Congresses",
+    "Relativity (Physics)--History--20th century--Congresses" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:subject _:8 .
+
+_:8 a madsrdf:Authority;
+  madsrdf:authoritativeLabel "Dostoyevsky, Fyodor, 1821-1881--Ethics", "Kant, Immanuel, 1724-1804--Ethics" .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  a bf:Work;
+  bf:title _:0, _:1, _:2, _:51 .
+
+_:51 a bf:Title;
+  bf:mainTitle "Go down, Moses"@en;
+  rdfs:label "Go down, Moses"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:52 .
+
+_:52 a bf:Title;
+  bf:mainTitle "Ground water development - issues and sustainable solutions"@en;
+  rdfs:label "Ground water development - issues and sustainable solutions"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:53 .
+
+_:53 a bf:Title;
+  bf:mainTitle "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en;
+  rdfs:label "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:54 .
+
+_:54 a bf:Title;
+  bf:mainTitle "Lorax"@en;
+  rdfs:label "Lorax"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:55 .
+
+_:55 a bf:Title;
+  bf:mainTitle "Idiot"@en;
+  rdfs:label "Idiot"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:56 .
+
+_:56 a bf:Title;
+  bf:mainTitle "Beyond Einstein"@en;
+  rdfs:label "Beyond Einstein"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:57 .
+
+_:57 a bf:Title;
+  bf:mainTitle "Dostoevsky and Kant"@en;
+  rdfs:label "Dostoevsky and Kant"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:58 .
+
+_:58 a bf:Title;
+  bf:mainTitle "Agricultural nanobiotechnology"@en;
+  rdfs:label "Agricultural nanobiotechnology"@en .
+
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b>
+  bf:title _:59 .
+
+_:59 a bf:Title;
+  bf:mainTitle "Multidimensional time-resolved spectroscopy"@en;
+  rdfs:label "Multidimensional time-resolved spectroscopy"@en .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043>
+  bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+    <http://id.loc.gov/authorities/demographicTerms/dg2015060101>, <http://id.loc.gov/authorities/demographicTerms/dg2015060359>;
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020>, _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  bf:hasPart _:29;
+  a bf:Work;
+  bf:hasPart _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "1942";
+  bf:originPlace <http://id.loc.gov/authorities/names/n78095330>;
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2008111599>, _:3, _:4, _:5, _:6,
+    _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/54c03745-0b0a-4211-8e50-c1a765be0309>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  bf:hasPart _:29;
+  a bf:Work;
+  bf:hasPart _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2018";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2013000791>, <http://id.loc.gov/authorities/subjects/sh86001792>,
+    _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/563cdff1-ce5d-417e-a282-a98d710c1b14>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  a bf:Work;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2019";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh91005905>, _:3, _:4, _:5, _:6,
+    _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/5abb3bdf-0109-4b77-b984-f73900ae981e>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  a bf:Work;
+  bf:hasExpression <http://id.loc.gov/authorities/names/n94102982.html>, _:10;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:subject _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/877155d9-bc9f-437f-991a-8a232932f580>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  a bf:Work;
+  bf:hasExpression _:10;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2019";
+  bf:subject _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  bf:hasPart _:29;
+  a bf:Work;
+  bf:hasPart _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2009";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh85045096>, <http://id.loc.gov/authorities/subjects/sh85077524>,
+    _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/ae624b51-efc9-4011-9947-82f25fb9769a>
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  a bf:Work;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "2019";
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2013003413>, _:3, _:4, _:5, _:6,
+    _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618>
+  bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+    <http://id.loc.gov/authorities/demographicTerms/dg2015060359>;
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026327>, <http://id.loc.gov/authorities/genreForms/gf2016026096>,
+    _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  a bf:Work;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35, _:36, _:37, _:38, _:39, _:40, _:41,
+    _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "1971";
+  bf:originPlace <http://id.loc.gov/authorities/names/n78095330>;
+  bf:subject _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+<https://trellis.sinopia.io/repository/washington/d72465eb-d1dc-4ee4-a30d-062c033bfbe3>
+  bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+    <http://id.loc.gov/authorities/demographicTerms/dg2015060814>;
+  bf:adminMetadata _:17, _:18, _:19, _:20, _:21, _:22, _:23, _:24, _:25, _:26;
+  bf:contribution _:11, _:12, _:13, _:14, _:15, _:16, _:28;
+  bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339>, <http://id.loc.gov/authorities/genreForms/gf2014026370>,
+    <http://id.loc.gov/authorities/genreForms/gf2015026020>, <http://id.loc.gov/authorities/genreForms/gf2016026001>,
+    _:9;
+  bf:hasDerivative _:27;
+  bf:hasExpression _:10;
+  bf:hasPart _:29, _:30;
+  bf:identifiedBy _:31, _:32, _:33, _:34, _:35;
+  a bf:Work;
+  bf:identifiedBy _:36, _:37, _:38, _:39, _:40, _:41, _:42, _:49, _:50;
+  bf:note _:43, _:44, _:45, _:46, _:47, _:48;
+  bf:originDate "1869";
+  bf:originPlace <http://id.loc.gov/authorities/names/n80001203>;
+  bf:subject <http://id.loc.gov/authorities/subjects/sh2001005716>, <http://id.loc.gov/authorities/subjects/sh2007101961>,
+    <http://id.loc.gov/authorities/subjects/sh85078534>, <http://id.loc.gov/authorities/subjects/sh85101002>,
+    <http://id.loc.gov/authorities/subjects/sh94004075>, <http://id.loc.gov/authorities/subjects/sh94005098>,
+    <http://id.loc.gov/authorities/subjects/sh94006704>, _:3, _:4, _:5, _:6, _:7, _:8;
+  bf:title _:0, _:1, _:2, _:51, _:52, _:53, _:54, _:55, _:56, _:57, _:58, _:59 .
+
+_:60 a bf:Status;
+  bf:code "n" .
+
+_:61 a bf:Status;
+  bf:code "n" .
+
+_:62 a bf:Status;
+  bf:code "n" .
+
+_:63 a bf:Status;
+  bf:code "n" .
+
+_:64 a bf:Status;
+  bf:code "n" .
+
+_:65 a bf:Status;
+  bf:code "n" .
+
+_:66 a bf:Status;
+  bf:code "n" .
+
+_:67 a bf:Status;
+  bf:code "n" .
+
+_:68 a bf:Status;
+  bf:code "n" .
+
+_:69 a bf:Status;
+  bf:code "n" .
+
+_:70 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:71 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:72 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:73 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:74 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:75 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:76 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:77 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:78 a bf:Source;
+  rdfs:label "RDA Authorized Access Point"@en .
+
+_:79 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:80 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:81 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:82 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:83 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:84 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:85 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:86 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:87 a bf:Note;
+  rdfs:label "This is an RDA Authorized Access Point"@en .
+
+_:90 a bf:Agent;
+  rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)" .

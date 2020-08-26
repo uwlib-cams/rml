@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6a297eb6-b29d-4771-8750-8f4486d6b9dd>
+  a bf:Item;
+  bf:classification _:0 .
+
+_:0 a bf:ClassificationLcc;
+  rdf:value "S494.5.B563A38 2018" .
+
+<https://trellis.sinopia.io/repository/washington/6a297eb6-b29d-4771-8750-8f4486d6b9dd>
+  bf:heldBy _:3 .
+
+_:3 a bf:Contribution;
+  bf:agent <https://id.loc.gov/vocabulary/organizations/wau>;
+  bf:role _:5 .
+
+_:5 a bf:Role;
+  rdfs:label "holding institution"@en .
+
+<https://trellis.sinopia.io/repository/washington/6a297eb6-b29d-4771-8750-8f4486d6b9dd>
+  bf:identifier _:2 .
+
+_:2 a bf:Barcode;
+  rdf:value "39352084158153" .
+
+<https://trellis.sinopia.io/repository/washington/6a297eb6-b29d-4771-8750-8f4486d6b9dd>
+  bf:itemOf <https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f>;
+  bf:physicalLocation "suzzallen"@en;
+  bf:sublocation _:1 .
+
+_:1 a bf:Sublocation;
+  rdfs:label "szstx"@en .
+
+_:4 a bf:Status;
+  bf:code "n" .

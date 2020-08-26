@@ -1,0 +1,67 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/40145a5f-2c0a-4a6a-924c-af9efd105615> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "jlee37"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "04-08-2020"@eng ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30011 "2018"@eng ;
+    ns1:P30083 <http://id.loc.gov/rwo/agents/no2001101420> ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "北京"@chi ;
+    ns1:P30105 "尹铁超著"@chi ;
+    ns1:P30106 "满-通古斯语言文化研究文库"@chi ;
+    ns1:P30111 "北京 : 社会科学文献出版社, 2018"@chi ;
+    ns1:P30128 "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@chi,
+        "Comparative study of Korean and Tungusic languages"@eng ;
+    ns1:P30133 "第1版"@chi ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> ;
+    ns1:P30156 "朝鲜语与通古斯语关系研究"@chi ;
+    ns1:P30157 "Man--Tonggusi yu yan wen hua yan jiu wen ku"@chi ;
+    ns1:P30169 "24 cm"@eng ;
+    ns1:P30176 "社会科学文献出版社"@chi ;
+    ns1:P30182 "6, 5, 2, 248 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns6:P30004 "ISBN 978-7-5201-3814-7"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "PL912"@eng ;
+    ns3:hasLcClassificationPartB ".Y56 2018"@eng ;
+    ns3:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/rwo/agents/no2001101420> rdfs:label "She hui ke xue wen xian chu ban she" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> rdfs:label "https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
+

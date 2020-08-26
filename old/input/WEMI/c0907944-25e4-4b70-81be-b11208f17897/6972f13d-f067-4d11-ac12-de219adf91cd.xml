@@ -1,0 +1,73 @@
+@prefix ns1: <http://rdaregistry.info/Elements/m/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix ns4: <http://sinopia.io/vocabulary/> .
+@prefix ns5: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns6: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6972f13d-f067-4d11-ac12-de219adf91cd> a <http://rdaregistry.info/Elements/c/C10007> ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns5:catalogerID "aschiff"@eng ;
+            ns5:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-27"@eng ;
+            ns2:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n"@eng ] ] ;
+    ns1:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:P30007 "©1896"@eng ;
+    ns1:P30011 "1903"@eng ;
+    ns1:P30069 <http://id.loc.gov/rwo/agents/n84226647> ;
+    ns1:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:P30088 "New York"@eng ;
+    ns1:P30105 "by Mary Mapes Dodge"@eng ;
+    ns1:P30121 "illustrated by Allen B. Doggett"@eng ;
+    ns1:P30128 "Hans Brinker"@eng,
+        "Silver skates"@eng ;
+    ns1:P30133 "New Amsterdam edition"@eng ;
+    ns1:P30137 "Cloth cover signed by the designer: M.A. [Margaret Armstrong]."@eng ;
+    ns1:P30139 <https://trellis.sinopia.io/repository/washington/cfd5e301-ed10-44a6-94a0-3173e60a1bf6> ;
+    ns1:P30142 "a story of life in Holland"@eng ;
+    ns1:P30156 "Hans Brinker, or, The silver skates"@eng ;
+    ns1:P30169 "25 cm"@eng ;
+    ns1:P30176 "Charles Scribner's Sons"@eng ;
+    ns1:P30182 "xiv, 393 pages"@eng ;
+    ns1:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:P30305 <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    ns6:P30004 "LCCN 2009439765"@eng ;
+    ns4:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    ns3:hasLcClassificationPartA "PZ7.D664"@eng ;
+    ns3:hasLcClassificationPartB "Han 1903"@eng ;
+    ns3:heldBy "http://id.loc.gov/vocabulary/organizations/wau" .
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060010> rdfs:label "Children" .
+
+<http://id.loc.gov/rwo/agents/n84226647> rdfs:label "Armstrong, Margaret, 1867-1944" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU" .
+
+<https://trellis.sinopia.io/repository/washington/cfd5e301-ed10-44a6-94a0-3173e60a1bf6> rdfs:label "Hans Brinker" .
+
