@@ -8,11 +8,11 @@ The RDA-to-BF transform (rml.py) is a script that pulls RDA data from [Trellis](
 
 ### Prerequisites
  - [RML Mapper](https://github.com/RMLio/rmlmapper-java)
-  - [Instructions for downloading RML Mapper](https://docs.google.com/document/d/1ufe8nBblVOsVX0HGARHVScPS8arS7cnT0pGPumetdU4/edit?usp=sharing)
+    - [Instructions for downloading RML Mapper](https://docs.google.com/document/d/1ufe8nBblVOsVX0HGARHVScPS8arS7cnT0pGPumetdU4/edit?usp=sharing)
  - [rdflib](https://rdflib.readthedocs.io/en/stable/)
-  - `$ pip install rdflib`
+    - `$ pip install rdflib`
  - UW Libraries' [RML repository](https://github.com/uwlib-cams/rml)
-  - `$ git clone https://github.com/uwlib-cams/rml.git`
+    - `$ git clone https://github.com/uwlib-cams/rml.git`
 
 ### Running the script
 The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar`) must be in the `rdfxml` directory of the UW RML repository (`rml/rdfxml/`).
