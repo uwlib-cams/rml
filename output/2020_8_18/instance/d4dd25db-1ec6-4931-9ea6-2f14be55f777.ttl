@@ -1,0 +1,49 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "emcotter" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-06-16" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:classification [ a ns1:Classification ;
+            rdfs:label "Ju 10.2:F 31" ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "SuDoc"@en ] ],
+        [ a ns1:ClassificationLcc ;
+            rdf:value "KF8719.A345 1990" ] ;
+    ns1:copyrightDate "©[1990]" ;
+    ns1:dimensions "25 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "xi, 203 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "Ju 10.2:F 31" ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "\"April 2, 1990.\""@eng,
+                "Item 729"@eng,
+                "Shipping list no.: 90-426-P"@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "[Federal Courts Study Committee]"@eng ] ;
+            ns1:date "[1990]" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "[Philadelphia, Pennsylvania?]"@eng ] ] ;
+    ns1:provisionActivityStatement "[Philadelphia, Pennsylvania?] : [Federal Courts Study Committee], [1990]"@eng ;
+    ns1:responsibilityStatement "Judicial Conference of the United States. Federal Courts Study Committee"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Report of the federal Courts Study Committee"@eng ] .
+

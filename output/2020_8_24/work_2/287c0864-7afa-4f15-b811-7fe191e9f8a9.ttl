@@ -1,0 +1,44 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "aschiff" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-20" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:colorContent [ a ns2:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Falcus, Matt. Lost airline colours of Europe. Text"@eng ],
+        [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Falcus, Matt. Lost airline colors of Europe. Text"@eng ] ;
+    ns2:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Latin"@eng ],
+        [ a ns2:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns2:originDate "2016"@zxx ;
+    ns2:summary [ a ns2:Summary ;
+            rdfs:label "This book traces many of the schemes which were familiar across Europe, including national carriers, leisure airlines from the holiday charter boom, and regional airlines feeding our smaller airports. Many airlines in these pages have now been lost forever, and others continue in a completely revised scheme"@eng ] .
+

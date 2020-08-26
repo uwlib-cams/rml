@@ -1,0 +1,35 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a832adb8-e349-49f9-a19b-f5aabac4b58c> a ns1:Instance ;
+    rdfs:label "The soldier's tale"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "gerhart" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-07" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    ns1:copyrightDate "℗1986"@eng ;
+    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1001> ;
+    ns1:dimensions "4 3/4 in."@eng ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1001> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:date "[1986]" ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Nimbus Records"@eng ;
+                    ns1: "Nimbus Records"@eng ] ] ;
+    ns1:responsibilityStatement "Stravinsky/Ramuz"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:soundCharacteristic <http://rdaregistry.info/termList/configPlayback/1002>,
+        <http://rdaregistry.info/termList/typeRec/1002> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The soldier's tale"@eng ] .
+

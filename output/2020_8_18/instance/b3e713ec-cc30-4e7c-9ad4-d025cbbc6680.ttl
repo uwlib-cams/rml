@@ -1,0 +1,41 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "PS3503.R2733D67 1942" ] ;
+    ns1:copyrightDate "©1942" ;
+    ns1:dimensions "19 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "50 pages"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Samuel French"@eng,
+                        "Samuel French, LTD"@eng ] ;
+            ns1:date "1942" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "London"@eng,
+                        "Los Angeles, Calif."@eng ] ] ;
+    ns1:responsibilityStatement "by Ned Albert"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Down in the heart of Texas"@eng ;
+            ns1:subtitle "a comedy of the wide open spaces in one act"@eng ] .
+

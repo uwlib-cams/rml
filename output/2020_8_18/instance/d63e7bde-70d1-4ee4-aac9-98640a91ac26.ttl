@@ -1,0 +1,45 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d63e7bde-70d1-4ee4-aac9-98640a91ac26> a ns1:Electronic,
+        ns1:Instance ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-27" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©" ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 online resource (viii, 331 pages)"@eng ] ;
+    ns1:hasItem [ a ns1:Item ;
+            ns1:electronicLocator <http://catalog.hathitrust.org/api/volumes/oclc/4092659.html>,
+                <https://archive.org/details/annodomini2000or00voge> ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/ec0e6f7e-9c40-4c7a-b610-fe949fc8753c> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Electronic reproduction. [S.l.] : HathiTrust Digital Library, 2011. MiAaHDL"@eng,
+                "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. http://purl.oclc.org/DLF/benchrepro0212 MiAaHDL"@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Hutchinson"@eng ],
+                <http://id.loc.gov/rwo/agents/no2008101666> ;
+            ns1:date "1889" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    ns1:provisionActivityStatement "London : Hutchinson, 1889"@eng ;
+    ns1:responsibilityStatement "by Sir Julius Vogel, K.C.M.G."@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Anno Domini 2000, or, Woman's destiny"@eng ],
+        [ a ns1:VariantTitle ;
+            rdfs:label "Anno Domini 2000"@eng,
+                "Woman's destiny"@eng ;
+            ns1:mainTitle "Anno Domini 2000"@eng,
+                "Woman's destiny"@eng ] .
+

@@ -1,0 +1,27 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e0319987-d987-44bd-b2a8-ef01507ad6a3> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins@uw.edu" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-06-10" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:colorContent [ a ns1:ColorContent ;
+            rdfs:label "color" ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/beda6563-6c55-4732-b383-713deafcfc73> ;
+    ns1:illustrativeContent [ a ns1:Illustration ;
+            rdfs:label " illustrations (chiefly color)" ] ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ],
+        [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "Understanding the genetic causes of human diseases and traits has long been of interest in the scientific community. However, the large majority of research in this area has been conducted in European populations. This dissertation focuses on developing statistical methods for genetic studies in admixed populations, such as African Americans and Hispanics/Latinos, that have been historically underrepresented in genetics research. The diverse, mixed ancestry of admixed populations presents unique opportunities for statistical inference, many of which are explored in this work. Here, we focus in particular on two important tasks: inferring genetic ancestry from genotype and sequence data, and identifying genetic variants associated with complex traits and diseases. We propose and evaluate methods for inferring local ancestry on chromosome X, correcting for multiple testing in genome-wide admixture mapping studies, and controlling for confounding by global ancestry in admixture mapping and genome-wide association studies in admixed populations. We motivate our proposed methods with theoretical results, simulation studies, and applications to genotype and whole genome sequence data from large studies of African American and Hispanic/Latino individuals. Our work provides solutions to a number of the statistical challenges posed by genetic studies in admixed populations, and we hope that our results will help guide future studies in these populations."@eng ] .
+

@@ -1,0 +1,45 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/702c94e2-54c7-4f6b-b88a-6653830f8de7> a ns1:Electronic,
+        ns1:Instance ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns3:catalogerID "cc83" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©" ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 online resource"@eng ] ;
+    ns1:hasItem [ a ns1:Item ;
+            ns1:electronicLocator <http://tai2.ntu.edu.tw/taiwania/> ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "0372-333X"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/bf2d6519-6dd3-4726-bd7b-78dfdb76e746> ;
+    ns1:issuance [ a ns1:Issuance ;
+            rdfs:label "Periodicals" ] ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Dept. of Botany, College of Science, National Taiwan University"@eng ],
+                <http://id.loc.gov/rwo/agents/n88005780> ;
+            ns1:date "1948-" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Taipei"@eng ] ] ;
+    ns1:subject [ a ns2:Authority ;
+            ns2:authoritativeLabel "Botany--Taiwan--Periodicals" ],
+        <http://id.loc.gov/authorities/subjects/sh2007102112> ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
+                "國立臺灣大學理學院植物學系研究報告"@chi ;
+            ns1:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
+                "國立臺灣大學理學院植物學系研究報告"@chi ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Taiwania"@eng ] .
+

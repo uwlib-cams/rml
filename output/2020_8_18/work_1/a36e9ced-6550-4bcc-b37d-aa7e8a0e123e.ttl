@@ -1,0 +1,42 @@
+@prefix ns1: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns3: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a36e9ced-6550-4bcc-b37d-aa7e8a0e123e> a ns2:Work ;
+    ns3:creatorCharacteristic [ a ns3:CreatorCharacteristic ;
+            rdfs:label "men" ] ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns3:catalogerID "pfreeman" ;
+            ns3:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-30" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:contribution [ a ns2:Contribution ;
+            ns2:agent <http://id.loc.gov/authorities/names/n79045409> ;
+            ns2:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns2:genreForm <http://vocab.getty.edu/aat/300048725> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Manning, Harvey. Mountain flowers"@eng ] ;
+    ns2:originDate "1979" ;
+    ns2:subject [ a ns1:Authority ;
+            rdfs:label "Mountain plants  -- Washington (State) -- Olympic Mountains -- Identification",
+                "Mountain plants -- Cascade Range -- Identification",
+                "Wild flowers -- Cascade Range -- Identification.",
+                "Wild flowers -- Washington (State) -- Olympic Mountains -- Identification" ;
+            ns1:authoritativeLabel "Mountain plants  -- Washington (State) -- Olympic Mountains -- Identification",
+                "Mountain plants -- Cascade Range -- Identification",
+                "Wild flowers -- Cascade Range -- Identification.",
+                "Wild flowers -- Washington (State) -- Olympic Mountains -- Identification" ] ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Mountain flowers"@eng ] .
+

@@ -1,0 +1,26 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/df0a069e-f03d-44e6-abf5-ec9fb1f4a0d1> a ns1:Item ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "QK1"@eng ] ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    ns1:identifier [ a ns1:Barcode ;
+            rdf:value "39352071651012"@eng ] ;
+    ns1:itemOf <https://trellis.sinopia.io/repository/washington/db307413-697e-4e64-b972-ace8b150ed74> ;
+    ns1:mapping ".T13 v.55"@eng ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "note on item"@en ] ;
+    ns1:physicalLocation "Suzzallo and Allen Libraries"@eng ;
+    ns1:sublocation [ a ns1:Sublocation ;
+            rdfs:label "Stacks"@eng ] .
+

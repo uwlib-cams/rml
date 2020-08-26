@@ -1,0 +1,56 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2c54c399-b393-4c4c-a79c-9f2ac5a31b0b> a ns1:Instance ;
+    rdfs:label "Twilight"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "emcotter" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-25" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:copyrightDate "©2005"@zxx ;
+    ns1:dimensions "22 cm"@eng ;
+    ns1:editionStatement "1st ed."@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "viii, 498, [34] pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "ISBN 0-316-01584-9" ] ;
+            rdf:value "ISBN 0-316-01584-9" ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 0-316-01584-9" ],
+        [ a ns1:Identifier ;
+            rdf:value "ISBN 0-316-01584-9" ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/f967ac1b-60c5-4fa5-99ca-6aa04ec6d0d3> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Little, Brown and Company"@eng ;
+                    ns1: "Little, Brown and Company"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:date "2005"@zxx ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "New York, New York"@eng ;
+                    ns1: "New York, New York"@eng ] ] ;
+    ns1:provisionActivityStatement "New York, New York : Little, Brown and Company, 2005"@eng ;
+    ns1:responsibilityStatement "Stephenie Meyer"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:seriesEnumeration "1"@eng ;
+    ns1:seriesStatement "Twilight Saga"@eng,
+        "Twilight Saga ; 1"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Twilight"@eng ] .
+

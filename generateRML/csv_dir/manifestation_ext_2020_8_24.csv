@@ -1,0 +1,71 @@
+_ - propertyLabel,_ - propertyURI,mapping.turtle,mapping.kiegel,uwFormOrder,usedInProfile,Notes,sinopiaNotes,CHECKED BY,_ - type,_ - mandatory,_ - repeatable,_ - remark,_ - noteUw,_ - valueConstraint - defaults - _ - defaultLiteral,_ - valueConstraint - defaults - _ - defaultURI,_ - valueConstraint - valueDataType - dataTypeURI,_ - valueConstraint - useValuesFrom - useValuesFrom,_ - valueConstraint - valueTemplateRefs - valueTemplateRefs
+manifestation has contributor agent (RDA 18.5),https://doi.org/10.6069/uwlib.55.d.4#hasContributorAgent,"bf:contribution [ a bf:Contribution ;
+   bf:agent <value> ] .
+# with literal value
+bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""value"" ] ] .","contribution >> Contribution > agent*
+or
+contribution >> Contribution > agent >> Agent > rdfs:label",233.2,"""monograph"",
+""graphic""","(BMR) W/E/I has contributor props do not include a bf:role statement, this one did. I deleted it here instead of adding it to the other mappings. When using the relator term ""Contributor"" with a Contribution it seems kind of redundant/meaningless?",,,lookup,FALSE,TRUE,http://access.rdatoolkit.org/18.5.html,,,,,,
+has University of Washington-specific note on manifestation (RDA 2.17),https://doi.org/10.6069/uwlib.55.d.4#hasUniversityOfWashingtonNote,"bf:note [ a bf:Note ;
+   rdfs:label ""value"" ;
+   bf:noteType ""University of Washington note"" ] .","note >> Note > rdfs:label ; > noteType=""University of Washington note""",85.1,"""etd"",
+""map"",
+""eMap"",
+""eBook"",
+""serial"",
+""eSerial"",
+""graphic"",
+""eGraphic"",
+""dvdVideo"",
+""monograph"",
+""soundRecording""",,,,literal,FALSE,TRUE,http://access.rdatoolkit.org/7.29.html,,,,,,
+manifestation held by (*),https://doi.org/10.6069/uwlib.55.d.4#heldBy,,not mapped,747,"""etd"",
+""map"",
+""eMap"",
+""eBook"",
+""serial"",
+""eSerial"",
+""graphic"",
+""eGraphic"",
+""dvdVideo"",
+""monograph"",
+""soundRecording""","Left out of transformation as per note on extension property: ""This property is expected to be used to describe RDA Manifestations and Items only. The domain and range of the BIBFRAME property created for this purpose was judged too restrictive.""",,,lookup,TRUE,TRUE,,,WaU,https://id.loc.gov/vocabulary/organizations/wau,,,
+manifestation has Library of Congress Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA,"bf:classification [
+  a bf:ClassificationLcc;
+  rdf:value ""{partA}{partB}""
+].",not mapped,0.0171,"""map"",
+""serial"",
+""graphic"",
+""monograph""",,,,literal,FALSE,TRUE,,,,,,,
+manifestation has Library of Congress Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB,"bf:classification [
+  a bf:ClassificationLcc;
+  rdf:value ""{partA}{partB}""
+].",not mapped,0.0172,"""map"",
+""serial"",
+""graphic"",
+""monograph""",,,,literal,FALSE,TRUE,,,,,,,
+manifestation has National Library of Medicine Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA,"bf:classification [
+  a bf:ClassificationNlm;
+  rdfs:label ""{partA}{partB}""
+].",not mapped,119.4,"""serial"",
+""graphic"",
+""monograph""",,,,literal,FALSE,TRUE,,,,,,,
+manifestation has National Library of Medicine Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB,"bf:classification [
+  a bf:ClassificationNlm;
+  rdfs:label ""{partA}{partB}""
+].",not mapped,119.5,"""serial"",
+""graphic"",
+""monograph""",,,,literal,FALSE,TRUE,,,,,,,
+manifestation has SuDoc Classification Number,https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber,"bf:classification [
+  a bf:Classification;
+  rdfs:label ""value"";
+  bf:source [
+    a bf:Source;
+    rdf:value ""SuDoc""@en
+  ]
+].",not mapped,118.52,"""map"",
+""serial"",
+""graphic"",
+""monograph""",,,,literal,FALSE,TRUE,,,,,,,

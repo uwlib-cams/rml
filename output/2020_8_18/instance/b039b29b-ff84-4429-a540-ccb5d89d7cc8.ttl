@@ -1,0 +1,51 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b039b29b-ff84-4429-a540-ccb5d89d7cc8> a ns2:Instance,
+        ns2:Print ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "emcotter" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-06-02" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns2:classification [ a ns2:Classification ;
+            rdfs:label "Y 3.T 22/2:2 SP 1/3" ;
+            ns2:source [ a ns2:Source ;
+                    rdf:value "SuDoc"@en ] ],
+        [ a ns2:ClassificationLcc ;
+            rdf:value "TL795.A23 1990" ] ;
+    ns2:copyrightDate "© [1990]" ;
+    ns2:dimensions "27 cm"@eng ;
+    ns2:extent [ a ns2:Extent ;
+            rdfs:label "xii, 92 pages"@eng ] ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            rdf:value "Y 3.T 22/2:2 SP 1/3" ] ;
+    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/930a9778-6a1a-4980-bed8-caa3ca055775> ;
+    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:note [ a ns2:Note ;
+            rdfs:label "\"April 1990\"--Page 4 of cover"@eng,
+                "\"OTA-ISC-415\"--Page 4 of cover"@eng,
+                "Item 1070-M"@eng,
+                "Shipping list no.: 90-372-P"@eng ] ;
+    ns2:provisionActivity [ a ns2:Publication ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Congress of the U.S., Office of Technology Assessment"@eng ],
+                <http://id.loc.gov/rwo/agents/n79006671> ;
+            ns2:date "[1990]" ;
+            ns2:place [ a ns2:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    ns2:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@eng ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Access to space"@eng ;
+            ns2:subtitle "the future of U.S. space transportation systems"@eng ] .
+

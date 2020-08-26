@@ -1,0 +1,24 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "lins@uw.edu" ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-05" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1013> ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/fre> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Latin" ] ;
+    ns2:note [ a ns2:Note ;
+            rdfs:label "Side 1. Plage 1. Les droites a la mode (4:49) ;  plage 2. Des petro-dollars pour la posterite (2.22) -- side 2. plage 3. Venus par vauges (3:27) ; plage 4. Un faux chef Indien (3:45)"@fra ;
+            ns2:noteType "note on expression"@en ] ;
+    ns2:summary [ a ns2:Summary ;
+            rdfs:label "Four short segments on Canadian life, originally broadcast on Radio Canada International."@eng ] .
+

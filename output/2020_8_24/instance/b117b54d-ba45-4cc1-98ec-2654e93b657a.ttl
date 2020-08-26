@@ -1,0 +1,65 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b117b54d-ba45-4cc1-98ec-2654e93b657a> a ns1:Instance ;
+    rdfs:label "The Child Support Enforcement program"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "emcotter" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-30" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:copyrightDate "©1989"@zxx ;
+    ns1:dimensions "27 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "vii, 175 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "Y 4.W 36:WMCP 101-19"@eng ] ;
+            rdf:value "Y 4.W 36:WMCP 101-19"@eng ],
+        [ a ns1:Identifier ;
+            rdf:value "Y 4.W 36:WMCP 101-19"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "Y 4.W 36:WMCP 101-19"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/d21e9509-d5ce-42b7-95b3-25042867d2e1> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "\"December 5, 1989.\""@eng,
+                "\"WMCP:101-19.\""@eng,
+                "At head of title: 101st Congress, 1st session. Committee print"@eng,
+                "Item 1028-A, 1028-B (MF)"@eng,
+                "Shipping list no.: 90-079-P"@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "United States Government Printing Office"@eng ;
+                    ns1: "United States Government Printing Office"@eng ] ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:agent <http://id.loc.gov/rwo/agents/no89014710> ],
+        [ a ns1:Publication ;
+            ns1:date "1989"@zxx ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ] ],
+        [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Washington, D.C."@eng ;
+                    ns1: "Washington, D.C."@eng ] ] ;
+    ns1:provisionActivityStatement "Washington, D.C. : United States Government Printing Office, 1989"@eng ;
+    ns1:responsibilityStatement "Carmen Solomon-Fears"@eng,
+        "prepared by the Congressional Research Service for the Subcommittee on Human Resources, Committee on Ways and Means"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:subtitle "policy and practice : a report"@eng ],
+        [ a ns1:Title ;
+            ns1:mainTitle "The Child Support Enforcement program"@eng ] .
+

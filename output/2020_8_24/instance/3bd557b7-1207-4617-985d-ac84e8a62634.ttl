@@ -1,0 +1,53 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3bd557b7-1207-4617-985d-ac84e8a62634> a ns1:Instance ;
+    rdfs:label "Validating RDF data"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "tgis" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-04" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:hasItem [ a ns1:Item ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "10.2200/S00786ED1V01Y201707WBE016"@eng,
+                        "9781681731650"@eng ] ;
+            rdf:value "10.2200/S00786ED1V01Y201707WBE016"@eng,
+                "9781681731650"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "10.2200/S00786ED1V01Y201707WBE016"@eng,
+                "9781681731650"@eng ],
+        [ a ns1:Identifier ;
+            rdf:value "10.2200/S00786ED1V01Y201707WBE016"@eng,
+                "9781681731650"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/0409bd3c-3127-479c-b698-43d31c06546c> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:date "2017"@eng ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Morgan & Claypool Publishers"@eng ;
+                    ns1: "Morgan & Claypool Publishers"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "[Williston, Vermont]"@eng ;
+                    ns1: "[Williston, Vermont]"@eng ] ] ;
+    ns1:responsibilityStatement "Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris Kontokostas"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:seriesStatement "Synthesis Lectures on the Semantic Web"@eng,
+        "Theory and Technology"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Validating RDF data"@eng ] .
+

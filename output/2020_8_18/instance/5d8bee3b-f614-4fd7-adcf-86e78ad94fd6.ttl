@@ -1,0 +1,38 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5d8bee3b-f614-4fd7-adcf-86e78ad94fd6> a ns1:Instance,
+        ns1:Print ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "mathiasuw" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-12" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "N7433.4.W225C66 2018" ] ;
+    ns1:copyrightDate "©" ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/58d212a6-6925-4152-952a-380261985a88> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:productionMethod <http://rdaregistry.info/termList/RDAproductionMethod/1008> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Gal-Pal Zines",
+                        "Gal-Pal Zines"@eng ] ;
+            ns1:date "2018" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Honolulu, Hawaii"@eng ] ] ;
+    ns1:responsibilityStatement "by Myra Mae Waddell"@eng ;
+    ns1:subject <http://id.loc.gov/authorities/subjects/sh85121311> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Conchology haiku"@eng ] .
+

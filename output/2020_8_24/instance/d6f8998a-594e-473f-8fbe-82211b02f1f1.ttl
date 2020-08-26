@@ -1,0 +1,54 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d6f8998a-594e-473f-8fbe-82211b02f1f1> a ns1:Instance ;
+    rdfs:label "The house of the dead ; and, Poor folk"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-15" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©2004"@eng ;
+    ns1:dimensions "23 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "xxxiv, 446 pages"@eng ] ;
+    ns1:instanceOf [ a ns1:Work.subclass ;
+            rdfs:label "https://trellis.sinopia.io/repository/washington/dd916f10-1f4f-4477-ab9a-e644aeed88c6",
+                "https://trellis.sinopia.io/repository/washington/fe32d648-1895-413e-8115-a45d48c8b9da" ],
+        [ a ns1:Work ;
+            rdfs:label "https://trellis.sinopia.io/repository/washington/dd916f10-1f4f-4477-ab9a-e644aeed88c6",
+                "https://trellis.sinopia.io/repository/washington/fe32d648-1895-413e-8115-a45d48c8b9da" ] ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "\"Arrested in 1849 for belonging to a secret group of radical utopians, Fyodor Dostoevsky was sentenced to four years in a Siberian labor camp--a terrible mental, spiritual, and physical ordeal that inspired him to write the novel 'The house of the dead'. Told from the point of view of a fictitious narrator--a convict serving a ten-year sentence for murdering his wife--'The house of the dead' describes in vivid detail the horrors that Dostoevsky himself witnessed while in prison: the brutality of guards who relish cruelty for its own sake; the evil of criminals who enjoy murdering children; and the existence of decent souls amid filth and degradation. Also included in this volume is Dostoevsky's first published work, 'Poor folk', a novel written in the form of letters that brought him immediate critical and public recognition\"--Page 4 of cover."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "New York, NY"@eng ;
+                    ns1: "New York, NY"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:date "2004"@eng ],
+        [ a ns1:Publication ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Barnes & Noble Classics"@eng ;
+                    ns1: "Barnes & Noble Classics"@eng ] ] ;
+    ns1:provisionActivityStatement "New York, NY : Barnes & Noble Classics, 2004."@eng ;
+    ns1:responsibilityStatement "Fyodor Dostoevsky"@eng,
+        "George Stade, consulting editorial director"@eng,
+        "notes by Elina Yuffa"@eng,
+        "translated by Constance Garnett"@eng,
+        "with an introduction by Joseph Frank"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "The house of the dead ; and, Poor folk"@eng ] .
+

@@ -1,0 +1,26 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/95cb73d5-927f-41c2-9546-9b041de95bf0> a ns1:Work ;
+    rdfs:label "Tsunami generation and propagation"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "ries07" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-06" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/2f6fce73-629b-4987-9af6-b496e4c8091c> ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ],
+        [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Tsunami generation and propagation"@eng ] .
+

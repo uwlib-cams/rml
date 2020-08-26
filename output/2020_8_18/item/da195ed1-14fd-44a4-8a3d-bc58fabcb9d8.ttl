@@ -1,0 +1,21 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8> a ns1:Item ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-16" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:heldBy [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Organization ;
+                    rdfs:label "Crystal's bookshelf" ] ;
+            ns1:role [ a ns1:Role ;
+                    rdfs:label "holding institution"@en ] ] ;
+    ns1:itemOf <https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> ;
+    ns1:usageAndAccessPolicy [ a ns1:UsageAndAccessPolicy ;
+            rdfs:label "Requires key to Yragui house"@eng ] .
+

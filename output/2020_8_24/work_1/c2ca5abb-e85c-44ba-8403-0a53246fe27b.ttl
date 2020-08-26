@@ -1,0 +1,47 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c2ca5abb-e85c-44ba-8403-0a53246fe27b> a ns1:Work ;
+    rdfs:label "To kill a mockingbird"@eng ;
+    ns2:creatorCharacteristic [ a ns2:CreatorCharacteristic ;
+            rdfs:label "Women" ],
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060016> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aentze" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Lee, Harper" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026406> ;
+    ns1:hasDerivative [ a ns1:Work ;
+            rdfs:label "To kill a mockingbird (Motion picture : 1962)" ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lee, Harper. To kill a mockingbird"@eng ] ;
+    ns1:originDate "1960"@eng ;
+    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Fathers and daughters--Alabama--Fiction",
+                "Race relations--Alabama--Fiction",
+                "Trials (Rape)--Alabama--Fiction" ] ;
+    ns1:succeededBy [ a ns1:Work ;
+            rdfs:label "Lee, Harper. Go set a watchman" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "To kill a mockingbird"@eng ] .
+

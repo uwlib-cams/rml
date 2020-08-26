@@ -1,0 +1,28 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins@uw.edu" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1013> ;
+    ns1:duration "approximately 14 min."@eng ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/fre> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin" ],
+        [ a ns1:Script ;
+            rdfs:label "Latin" ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Side 1. Plage 1. Les droites a la mode (4:49) ;  plage 2. Des petro-dollars pour la posterite (2.22) -- side 2. plage 3. Venus par vauges (3:27) ; plage 4. Un faux chef Indien (3:45)"@fra ;
+            ns1:noteType "note on expression"@en ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "Four short segments on Canadian life, originally broadcast on Radio Canada International."@eng ] .
+
