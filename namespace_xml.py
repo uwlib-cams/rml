@@ -3,10 +3,10 @@ from sys import argv
 
 script, data_directory = argv
 
-workList = os.listdir(f'data/{data_directory}/work/')
-expressionList = os.listdir(f'data/{data_directory}/expression')
-manifestationList = os.listdir(f'data/{data_directory}/manifestation')
-itemList = os.listdir(f'data/{data_directory}/item')
+workList = os.listdir(f'input/{data_directory}/work/')
+expressionList = os.listdir(f'input/{data_directory}/expression')
+manifestationList = os.listdir(f'input/{data_directory}/manifestation')
+itemList = os.listdir(f'input/{data_directory}/item')
 
 prefix_list = [
 "ns1",
@@ -51,11 +51,11 @@ new_prefix_list = [
 ]
 
 def find_and_replace(entity, file, find, replace):
-    open_file = open(f"data/{data_directory}/{entity}/{file}", "rt")
+    open_file = open(f"input/{data_directory}/{entity}/{file}", "rt")
     file_replacement = open_file.read()
     file_replacement = file_replacement.replace(find, replace)
     open_file.close()
-    open_file = open(f"data/{data_directory}/{entity}/{file}", "wt")
+    open_file = open(f"input/{data_directory}/{entity}/{file}", "wt")
     open_file.write(file_replacement)
     open_file.close()
 
@@ -63,7 +63,7 @@ for work in workList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"data/{data_directory}/work/{work}") as f:
+            with open(f"input/{data_directory}/work/{work}") as f:
                 if f'xmlns:{prefix}="{namespace_list[i]}"' in f.read():
                     old_namespace = f'xmlns:{prefix}="{namespace_list[i]}"'
                     new_namespace = f'xmlns:{new_prefix_list[i]}="{namespace_list[i]}"'
@@ -78,7 +78,7 @@ for expression in expressionList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"data/{data_directory}/expression/{expression}") as f:
+            with open(f"input/{data_directory}/expression/{expression}") as f:
                 if f'xmlns:{prefix}="{namespace_list[i]}"' in f.read():
                     old_namespace = f'xmlns:{prefix}="{namespace_list[i]}"'
                     new_namespace = f'xmlns:{new_prefix_list[i]}="{namespace_list[i]}"'
@@ -93,7 +93,7 @@ for manifestation in manifestationList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"data/{data_directory}/manifestation/{manifestation}") as f:
+            with open(f"input/{data_directory}/manifestation/{manifestation}") as f:
                 if f'xmlns:{prefix}="{namespace_list[i]}"' in f.read():
                     old_namespace = f'xmlns:{prefix}="{namespace_list[i]}"'
                     new_namespace = f'xmlns:{new_prefix_list[i]}="{namespace_list[i]}"'
@@ -108,7 +108,7 @@ for item in itemList:
     for prefix in prefix_list:
         i = 0
         while i <= 11:
-            with open(f"data/{data_directory}/item/{item}") as f:
+            with open(f"input/{data_directory}/item/{item}") as f:
                 if f'xmlns:{prefix}="{namespace_list[i]}"' in f.read():
                     old_namespace = f'xmlns:{prefix}="{namespace_list[i]}"'
                     new_namespace = f'xmlns:{new_prefix_list[i]}="{namespace_list[i]}"'
