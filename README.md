@@ -15,14 +15,14 @@ The RDA-to-BF transform (rml.py) is a script that pulls RDA data from [Trellis](
     - `$ git clone https://github.com/uwlib-cams/rml.git`
 
 ### Running the script
-The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar`) must be in the `rdfxml` directory of the UW RML repository (`rml/rdfxml/`).
+The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar`) must be in the `rml` directory.
 
-From the `rdfxml` directory, run the script:
+From the `rml` directory, run the script:
 ```python3.6 rml.py```
 
 Be warned: this script does run slowly. It will take a while to complete.
 
-When the script is complete, the input RDA files will be in the directory `rml/rdfxml/input` in a new directory named after the current date (e.g. `2020_8_25`). The output BIBFRAME will be in the directory `rml/rdfxml/output` also in a directory named after the date.
+When the script is complete, the input RDA files will be in the directory `rml/input` in a new directory named after the current date (e.g. `2020_8_25`). The output BIBFRAME will be in the directory `rml/output` also in a directory named after the date.
 
 # namespace_ttl.py and namespace_xml.py
 
