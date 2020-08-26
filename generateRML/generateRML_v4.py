@@ -19,7 +19,7 @@ def generate_logical_source(map_name, file_path):
         entity_number = "3"
     logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/rdfxml/data/{file_path}.xml";
+    rml:source "/home/mcm104/rml/input/{file_path}.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C1000{entity_number}']"
   ].\n"""
@@ -29,14 +29,14 @@ def generate_bnode_logical_source(property_number, map_name, not_resource, file_
     if not_resource == False:
         bnode_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/rdfxml/data/{file_path}.xml\";
+    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_number}]\"
   ].\n"""
     else:
         bnode_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/rdfxml/data/{file_path}.xml\";
+    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_number}[not(@resource)]]\"
   ].\n"""
@@ -361,7 +361,7 @@ notation >> Script > rdfs:label"""]
     "].\n",
     "ex:AdminMetadataMap a rr:TriplesMap;",
     "  rml:logicalSource [",
-    f"    rml:source \"/home/mcm104/rml/rdfxml/data/{default_path}.xml\";",
+    f"    rml:source \"/home/mcm104/rml/input/{default_path}.xml\";",
     "    rml:referenceFormulation ql:XPath;",
     "    rml:iterator \"/RDF/Description[catalogerID]\"",
     "  ].\n",
@@ -426,7 +426,7 @@ notation >> Script > rdfs:label"""]
     "].\n",
     "ex:StatusMap a rr:TriplesMap;",
     "  rml:logicalSource [",
-    f"    rml:source \"/home/mcm104/rml/rdfxml/data/{default_path}.xml\";",
+    f"    rml:source \"/home/mcm104/rml/input/{default_path}.xml\";",
     "    rml:referenceFormulation ql:XPath;",
     "    rml:iterator \"/RDF/Description[code]\"",
     "  ].\n",
