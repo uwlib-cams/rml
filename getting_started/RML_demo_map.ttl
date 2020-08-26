@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ex: <http://example.org/rules/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+
+# Let's create a triples map!
+
+ex:ExampleMap a rr:TriplesMap;
+
+# First, we need a "logical source"
+
+  rml:logicalSource [
+    rml:source "RML_demo_data.xml"; # file path to our data
+    rml:referenceFormulation ql:XPath; # what format our source data is in
+    rml:iterator "/RDF/Description" # our parent properties
+  ];
+
+# Next, we need a subject map
+
+  rr:subjectMap [
+    rml:reference "@about"; # "reference" means we're referencing a value that exists in our data
+    rr:class bf:Work # optional: add a class
+  ];
+
+# Finally, we need at least one predicate-object map
+
+  rr:predicateObjectMap [
+    rr:predicate bf:title; # determine predicate
+    rr:objectMap [
+      rml:reference "P10223"; # again using "reference" to locate an existing value
+      rr:termType rr:Literal # type as a literal, IRI, or blank node
+    ]
+  ].
