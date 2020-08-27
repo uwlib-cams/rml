@@ -1,48 +1,48 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1bec6764-c00c-4f92-a227-4ddac14811e8> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/1bec6764-c00c-4f92-a227-4ddac14811e8> a bf:Instance ;
     rdfs:label "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "mcm104" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-25" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©2011"@eng ;
-    ns1:dimensions "5.25 x 8"@eng ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2011"@eng ;
+    bf:dimensions "5.25 x 8"@eng ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Broadway Books" ;
-                    ns1: "Broadway Books" ] ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Broadway Books" ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"@eng ;
-                    ns1: "http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "2011"@eng ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "2011"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Broadway Books"@eng ;
-                    ns1: "Broadway Books"@eng ] ],
-        [ a ns1:Publication ] ;
-    ns1:responsibilityStatement "The Countess of Carnarvon"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "Broadway Books"@eng ] ],
+        [ a bf:Publication ] ;
+    bf:responsibilityStatement "The Countess of Carnarvon"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Lady Almina and the real Downton Abbey"@eng ;
-            ns1:mainTitle "Lady Almina and the real Downton Abbey"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@eng ] .
+            bf:mainTitle "Lady Almina and the real Downton Abbey"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@eng ] .
 

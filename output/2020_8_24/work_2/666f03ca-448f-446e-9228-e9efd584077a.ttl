@@ -1,36 +1,36 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/666f03ca-448f-446e-9228-e9efd584077a> a ns2:Work ;
+<https://trellis.sinopia.io/repository/washington/666f03ca-448f-446e-9228-e9efd584077a> a bf:Work ;
     rdfs:label "Tajdīd wa-al-taḥrīm wa-al-taʼwīl"@eng ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aschiff" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2019-12-18" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/ded38c40-6e3e-4069-9849-2c29e769e8cf> ;
-    ns2:identifiedBy [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-18" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/ded38c40-6e3e-4069-9849-2c29e769e8cf> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Abū Zayd, Naṣr Ḥāmid. Tajdīd wa-al-taḥrīm wa-al-taʼwīl. Arabic"@eng ] ;
-    ns2:language <http://id.loc.gov/vocabulary/languages/ara> ;
-    ns2:notation [ a ns2:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/ara> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Arabic"@eng ],
-        [ a ns2:Script ;
+        [ a bf:Script ;
             rdfs:label "Arabic"@eng ] ;
-    ns2:originDate "2017"@eng ;
-    ns2:supplementaryContent [ a ns2:SupplementaryContent ;
+    bf:originDate "2017"@eng ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
             rdfs:label "Includes bibliographical references."@eng ] ;
-    ns2:title [ a ns2:Title ;
-            ns2:mainTitle "Tajdīd wa-al-taḥrīm wa-al-taʼwīl"@eng ],
-        [ a ns2:VariantTitle ;
-            ns2:mainTitle "تجديد والتحريم والتأويل"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Tajdīd wa-al-taḥrīm wa-al-taʼwīl"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "تجديد والتحريم والتأويل"@eng ] .
 

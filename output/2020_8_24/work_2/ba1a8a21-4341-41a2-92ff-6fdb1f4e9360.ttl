@@ -1,31 +1,31 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/ba1a8a21-4341-41a2-92ff-6fdb1f4e9360> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/ba1a8a21-4341-41a2-92ff-6fdb1f4e9360> a bf:Work ;
     rdfs:label "Acta botanica Taiwanica"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cc83" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-23" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/ba22d3e6-96c1-4538-ad95-ed3f3e3d8fdc> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/ba22d3e6-96c1-4538-ad95-ed3f3e3d8fdc> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Acta botanica Taiwanica. English"@eng ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ],
-        [ a ns1:Script ;
+        [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Acta botanica Taiwanica"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Acta botanica Taiwanica"@eng ] .
 

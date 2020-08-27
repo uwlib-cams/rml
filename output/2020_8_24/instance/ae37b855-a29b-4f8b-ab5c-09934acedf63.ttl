@@ -1,61 +1,61 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/ae37b855-a29b-4f8b-ab5c-09934acedf63> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/ae37b855-a29b-4f8b-ab5c-09934acedf63> a bf:Instance ;
     rdfs:label "Critical connections"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "emcotter" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-22" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:copyrightDate "© [1990]"@zxx ;
-    ns1:dimensions "26 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "© [1990]"@zxx ;
+    bf:dimensions "26 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "vii, 395 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "Y 3.T 22/2:2 C 73/13"@eng ] ;
             rdf:value "Y 3.T 22/2:2 C 73/13"@eng ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "Y 3.T 22/2:2 C 73/13"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "Y 3.T 22/2:2 C 73/13"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/51f63541-0493-4fcf-8320-2dba1ad3fd0c> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/51f63541-0493-4fcf-8320-2dba1ad3fd0c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "\"January 1990\"--Page 4 of cover."@eng,
                 "\"OTA-CIT-407\"--Page 4 of cover."@eng,
                 "Item 1070-M."@eng ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Congress of the U.S., Office of Technology Assessment"@eng ;
-                    ns1: "Congress of the U.S., Office of Technology Assessment"@eng ] ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:agent <http://id.loc.gov/rwo/agents/n50079957> ],
-        [ a ns1:Publication ;
-            ns1:date "[1990]"@zxx ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Congress of the U.S., Office of Technology Assessment"@eng ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n50079957> ],
+        [ a bf:Publication ;
+            bf:date "[1990]"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Washington, D.C."@eng ;
-                    ns1: "Washington, D.C."@eng ] ] ;
-    ns1:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "Washington, D.C."@eng ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:subtitle "Communication for the future"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Critical connections"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:subtitle "Communication for the future"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Critical connections"@eng ] .
 

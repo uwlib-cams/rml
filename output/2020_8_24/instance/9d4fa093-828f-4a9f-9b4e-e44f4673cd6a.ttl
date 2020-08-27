@@ -1,44 +1,44 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a bf:Instance ;
     rdfs:label "Shattered glass"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "lins" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-17" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:copyrightDate "©"@eng ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1006> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©"@eng ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1006> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "1 video file"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:note [ a ns1:Note ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Title from title screen (viewed April 17, 2020)"@eng ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Lions Gate Films"@eng ;
-                    ns1: "Lions Gate Films"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Lions Gate Films"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Santa Monica, CA"@eng ;
-                    ns1: "Santa Monica, CA"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "2003"@eng ],
-        [ a ns1:Publication ] ;
-    ns1:provisionActivityStatement "[Santa Monica, CA] Lions Gate Films  [2003]"@eng ;
-    ns1:responsibilityStatement "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray."@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "Santa Monica, CA"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "2003"@eng ],
+        [ a bf:Publication ] ;
+    bf:provisionActivityStatement "[Santa Monica, CA] Lions Gate Films  [2003]"@eng ;
+    bf:responsibilityStatement "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray."@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:soundCharacteristic <http://rdaregistry.info/termList/typeRec/1002> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Shattered glass"@eng ] .
+    bf:soundCharacteristic <http://rdaregistry.info/termList/typeRec/1002> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Shattered glass"@eng ] .
 

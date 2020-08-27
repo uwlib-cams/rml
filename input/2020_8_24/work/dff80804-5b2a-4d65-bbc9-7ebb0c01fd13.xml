@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://rdaregistry.info/Elements/w/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -11,24 +11,24 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/dff80804-5b2a-4d65-bbc9-7ebb0c01fd13">
-    <ns2:P10223 xml:lang="rus">Skachi, dobryĭ edinorog</ns2:P10223>
-    <ns1:adminMetadata rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b2"/>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns4:hasResourceTemplate>
-    <ns2:P10331 xml:lang="rus">Milovskiĭ, Aleksandr. Skachi, dobryĭ edinorog</ns2:P10331>
+    <rdaw:P10223 xml:lang="rus">Skachi, dobryĭ edinorog</rdaw:P10223>
+    <bf:adminMetadata rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b2"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
+    <rdaw:P10331 xml:lang="rus">Milovskiĭ, Aleksandr. Skachi, dobryĭ edinorog</rdaw:P10331>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns2:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008120754"/>
-    <ns2:P10061>Milovskiĭ, Aleksandr</ns2:P10061>
-    <ns2:P10056>Milovskiĭ, Aleksandr</ns2:P10056>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008120754"/>
+    <rdaw:P10061>Milovskiĭ, Aleksandr</rdaw:P10061>
+    <rdaw:P10056>Milovskiĭ, Aleksandr</rdaw:P10056>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b2">
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:status rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b1"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:catalogerID xml:lang="eng">dbrookin</ns3:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b1"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID xml:lang="eng">dbrookin</bflc:catalogerID>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns1:creationDate xml:lang="eng">2020-02-18</ns1:creationDate>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="eng">2020-02-18</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>
@@ -41,7 +41,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa3fb62e11ad641b3bfd7a9976037f4d9b1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2008120754">
     <rdfs:label>Folk art--Soviet Union</rdfs:label>

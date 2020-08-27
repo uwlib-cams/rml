@@ -1,16 +1,16 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1c611ed4-bfd1-4c57-b1c5-114a4bfc1425> a ns1:Item ;
-    ns1:classification [ a ns1:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/1c611ed4-bfd1-4c57-b1c5-114a4bfc1425> a bf:Item ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "GT1050"@zxx ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:identifier [ a ns1:Barcode ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "832958432905893425823-4"@zxx ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> ;
-    ns1:mapping ".R885 2010"@zxx ;
-    ns1:physicalLocation "suzzallen"@zxx ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> ;
+    bf:mapping ".R885 2010"@zxx ;
+    bf:physicalLocation "suzzallen"@zxx ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "szstx"@zxx ] .
 

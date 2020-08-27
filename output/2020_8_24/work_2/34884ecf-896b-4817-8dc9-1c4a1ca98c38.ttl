@@ -1,35 +1,35 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/34884ecf-896b-4817-8dc9-1c4a1ca98c38> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/34884ecf-896b-4817-8dc9-1c4a1ca98c38> a bf:Work ;
     rdfs:label "Emma"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-27" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:derivativeOf [ a ns1:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:derivativeOf [ a bf:Work ;
             rdfs:label "Austen, Jane, 1775-1817. Emma. English" ] ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/25406ec2-3893-45e6-b857-064fc606657d> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/25406ec2-3893-45e6-b857-064fc606657d> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Glennon, Gordon. Emma. English"@eng ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ],
-        [ a ns1:Script ;
+        [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "1943"@eng ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Emma"@eng ] .
+    bf:originDate "1943"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Emma"@eng ] .
 

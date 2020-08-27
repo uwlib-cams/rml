@@ -1,66 +1,66 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/37d584c2-5bc1-422b-bbbd-e1226c8e139e> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/37d584c2-5bc1-422b-bbbd-e1226c8e139e> a bf:Instance ;
     rdfs:label "河里有鱼"@chi ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee37" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-21" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:dimensions "23 cm" ;
-    ns1:editionStatement "第1版"@chi ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "23 cm" ;
+    bf:editionStatement "第1版"@chi ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "10 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "9787561952009"@eng ] ;
             rdf:value "9787561952009"@eng ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "9787561952009"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "9787561952009"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:agent <http://id.loc.gov/rwo/agents/no2015051061> ],
-        [ a ns1:Publication ;
-            ns1:date "2019"@eng ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ] ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2015051061> ],
+        [ a bf:Publication ;
+            bf:date "2019"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Beijing yu yan da xue chu ban she"@eng ;
-                    ns1: "Beijing yu yan da xue chu ban she"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Beijing yu yan da xue chu ban she"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Beijing (China)"@eng ;
-                    ns1: "Beijing (China)"@eng ] ] ;
-    ns1:provisionActivityStatement "北京市 : 北京语言大学出版社, 2019"@chi ;
-    ns1:responsibilityStatement "插图绘制Loyal Kids",
+                    bf: "Beijing (China)"@eng ] ] ;
+    bf:provisionActivityStatement "北京市 : 北京语言大学出版社, 2019"@chi ;
+    bf:responsibilityStatement "插图绘制Loyal Kids",
         "北京语言大学对外汉语教材研发中心编著"@chi,
         "文本撰写李晶晶"@chi,
         "英语翻译孙玉婷"@chi ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:seriesEnumeration "Di 2 ji"@eng ;
-    ns1:seriesStatement "Han yu le yuan tong bu yue du"@eng,
+    bf:seriesEnumeration "Di 2 ji"@eng ;
+    bf:seriesStatement "Han yu le yuan tong bu yue du"@eng,
         "汉语乐园同步阅读. 第2级"@eng ;
-    ns1:title [ a ns1:ParallelTitle ;
-            ns1:mainTitle "There are fish in the river"@eng ],
-        [ a ns1:Title ;
-            ns1:subtitle "He li you yu" ],
-        [ a ns1:Title ;
-            ns1:mainTitle "河里有鱼"@chi ] .
+    bf:title [ a bf:ParallelTitle ;
+            bf:mainTitle "There are fish in the river"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "He li you yu" ],
+        [ a bf:Title ;
+            bf:mainTitle "河里有鱼"@chi ] .
 

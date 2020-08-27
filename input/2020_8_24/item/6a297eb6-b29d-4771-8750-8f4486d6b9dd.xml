@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="http://rdaregistry.info/Elements/i/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb1">
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns4:catalogerID xml:lang="en">cec23</ns4:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID xml:lang="en">cec23</bflc:catalogerID>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns2:status rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb2"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns2:creationDate xml:lang="en">2019-11-20</ns2:creationDate>
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="en">2019-11-20</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns2:code xml:lang="en">n</ns2:code>
+    <bf:code xml:lang="en">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>
@@ -32,16 +32,16 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/6a297eb6-b29d-4771-8750-8f4486d6b9dd">
-    <ns1:hasLcClassificationPartA xml:lang="en">S494.5.B563</ns1:hasLcClassificationPartA>
+    <rdax:hasLcClassificationPartA xml:lang="en">S494.5.B563</rdax:hasLcClassificationPartA>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns2:adminMetadata rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb1"/>
-    <ns1:hasPhysicalSubLocation xml:lang="en">szstx</ns1:hasPhysicalSubLocation>
-    <ns1:hasPhysicalLocation xml:lang="en">suzzallen</ns1:hasPhysicalLocation>
-    <ns3:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f"/>
-    <ns1:hasBarcode xml:lang="en">39352084158153</ns1:hasBarcode>
-    <ns1:hasLcClassificationPartB xml:lang="en">A38 2018</ns1:hasLcClassificationPartB>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns5:hasResourceTemplate>
-    <ns1:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="f23565f6171b0463f803368e9c2d2bcddb1"/>
+    <rdax:hasPhysicalSubLocation xml:lang="en">szstx</rdax:hasPhysicalSubLocation>
+    <rdax:hasPhysicalLocation xml:lang="en">suzzallen</rdax:hasPhysicalLocation>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f"/>
+    <rdax:hasBarcode xml:lang="en">39352084158153</rdax:hasBarcode>
+    <rdax:hasLcClassificationPartB xml:lang="en">A38 2018</rdax:hasLcClassificationPartB>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f">
     <rdfs:label>Agricultural nanobiotechnology</rdfs:label>

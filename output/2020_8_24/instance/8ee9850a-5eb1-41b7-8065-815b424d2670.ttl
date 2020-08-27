@@ -1,49 +1,49 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/8ee9850a-5eb1-41b7-8065-815b424d2670> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/8ee9850a-5eb1-41b7-8065-815b424d2670> a bf:Instance ;
     rdfs:label "Eyes of the dragon"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aentze" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:changeDate "2020-04-23" ;
-            ns1:creationDate "2020-04-23" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:copyrightDate "©1987"@eng ;
-    ns1:dimensions "24 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1987"@eng ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "326 pages"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/74e37d6f-e45b-4f88-858b-e0f8ffd1937a> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/74e37d6f-e45b-4f88-858b-e0f8ffd1937a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Viking Penguin, Inc." ;
-                    ns1: "Viking Penguin, Inc." ] ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Viking Penguin, Inc." ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "New York, New York"@eng ;
-                    ns1: "New York, New York"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "New York, New York"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Viking Penguin, Inc."@eng ;
-                    ns1: "Viking Penguin, Inc."@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "1987"@eng ],
-        [ a ns1:Publication ] ;
-    ns1:provisionActivityStatement "New York, New York : Viking Penguin, Inc., 1987."@eng ;
-    ns1:responsibilityStatement "a story by Stephen King; with illustrations by David Palladini"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "Viking Penguin, Inc."@eng ] ],
+        [ a bf:Publication ;
+            bf:date "1987"@eng ],
+        [ a bf:Publication ] ;
+    bf:provisionActivityStatement "New York, New York : Viking Penguin, Inc., 1987."@eng ;
+    bf:responsibilityStatement "a story by Stephen King; with illustrations by David Palladini"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Eyes of the dragon"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eyes of the dragon"@eng ] .
 

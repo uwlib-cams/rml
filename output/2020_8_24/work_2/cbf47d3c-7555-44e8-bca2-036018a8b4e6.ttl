@@ -1,33 +1,33 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6> a ns2:Work ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aentze" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:changeDate "2020-04-23" ;
-            ns2:creationDate "2020-04-23" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:awards "Pulitzer Prize for fiction, 1961"@eng ;
-    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/c2ca5abb-e85c-44ba-8403-0a53246fe27b> ;
-    ns2:identifiedBy [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+<https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:awards "Pulitzer Prize for fiction, 1961"@eng ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/c2ca5abb-e85c-44ba-8403-0a53246fe27b> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Lee, Harper. To kill a mockingbird. Text. English"@eng ] ;
-    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns2:notation [ a ns2:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ],
-        [ a ns2:Script ;
+        [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns2:originDate "1962"@eng .
+    bf:originDate "1962"@eng .
 

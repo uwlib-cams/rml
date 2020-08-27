@@ -1,23 +1,23 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/ea697eb6-2c07-460d-82e6-9f8de4f10755> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee70" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "03-02-2020" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:identifier [ a ns1:Barcode ;
+<https://trellis.sinopia.io/repository/washington/ea697eb6-2c07-460d-82e6-9f8de4f10755> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "03-02-2020" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352084783232"@eng ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/71b34bef-f4d6-4ce9-a541-579a2f6186da> ;
-    ns1:physicalLocation "suzzallen"@eng ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/71b34bef-f4d6-4ce9-a541-579a2f6186da> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "szmed"@eng ] .
 

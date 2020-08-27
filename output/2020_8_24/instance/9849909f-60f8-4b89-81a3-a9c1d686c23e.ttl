@@ -1,64 +1,64 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e> a bf:Instance ;
     rdfs:label "The great exotic fruit book"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-16" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:copyrightDate "©1995"@zxx ;
-    ns1:dimensions "26 x 11 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1995"@zxx ;
+    bf:dimensions "26 x 11 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "x, 149 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "ISBN 0-89815-688-2"@eng ] ;
             rdf:value "ISBN 0-89815-688-2"@eng ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "ISBN 0-89815-688-2"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "ISBN 0-89815-688-2"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Subtitle on cover: A handbook with recipes"@eng ] ;
-    ns1:provisionActivity [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:provisionActivity [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Ten Speed Press"@eng ;
-                    ns1: "Ten Speed Press"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:agent <http://id.loc.gov/rwo/agents/n2017061021> ],
-        [ a ns1:Publication ;
-            ns1:date "[1995]"@zxx ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "Ten Speed Press"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2017061021> ],
+        [ a bf:Publication ;
+            bf:date "[1995]"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Berkeley, California"@eng ;
-                    ns1: "Berkeley, California"@eng ] ] ;
-    ns1:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1995]"@eng ;
-    ns1:responsibilityStatement "Norman Van Aken with John Harrisson"@eng,
+                    bf: "Berkeley, California"@eng ] ] ;
+    bf:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1995]"@eng ;
+    bf:responsibilityStatement "Norman Van Aken with John Harrisson"@eng,
         "photography by Lois Ellen Frank"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "The great exotic fruit book"@eng ],
-        [ a ns1:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The great exotic fruit book"@eng ],
+        [ a bf:VariantTitle ;
             rdfs:label "Exotic fruit"@eng ;
-            ns1:mainTitle "Exotic fruit"@eng ],
-        [ a ns1:Title ;
-            ns1:subtitle "a handbook of tropical and subtropical fruits, with recipes"@eng ] .
+            bf:mainTitle "Exotic fruit"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "a handbook of tropical and subtropical fruits, with recipes"@eng ] .
 

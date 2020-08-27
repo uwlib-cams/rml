@@ -1,24 +1,24 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/e39ee2b0-063c-4d7b-87d5-a90ae4124e1d> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee37" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-09" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:classification [ a ns1:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/e39ee2b0-063c-4d7b-87d5-a90ae4124e1d> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-09" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "DS797.32.T37"@eng ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/97f93137-d706-4c9e-9a3c-d6759df9e7ea> ;
-    ns1:mapping "L45 1909"@eng ;
-    ns1:physicalLocation "eastasia"@eng ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/97f93137-d706-4c9e-9a3c-d6759df9e7ea> ;
+    bf:mapping "L45 1909"@eng ;
+    bf:physicalLocation "eastasia"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "eaaux"@eng ] .
 

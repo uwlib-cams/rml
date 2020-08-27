@@ -1,42 +1,42 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/4806ea2e-ac6f-4177-8162-20e922436a11> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/4806ea2e-ac6f-4177-8162-20e922436a11> a bf:Instance ;
     rdfs:label "Emma"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-27" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©"@eng ;
-    ns1:dimensions "20 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©"@eng ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "vi, 122 pages"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/34884ecf-896b-4817-8dc9-1c4a1ca98c38> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/34884ecf-896b-4817-8dc9-1c4a1ca98c38> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "London"@eng ;
-                    ns1: "London"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "1945"@eng ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "London"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "1945"@eng ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Macmillan & Co. Ltd"@eng ;
-                    ns1: "Macmillan & Co. Ltd"@eng ] ] ;
-    ns1:responsibilityStatement "a play by Gordon Glennon"@eng,
+                    bf: "Macmillan & Co. Ltd"@eng ] ] ;
+    bf:responsibilityStatement "a play by Gordon Glennon"@eng,
         "from the novel by Jane Austen"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Emma"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Emma"@eng ] .
 

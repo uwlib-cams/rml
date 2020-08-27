@@ -1,52 +1,52 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/7a1ce84e-ce37-488e-91fc-a21f24f09248> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "pfreeman" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-20" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status _:N40b2212fa204446aa1f88b1095f6df30,
+<https://trellis.sinopia.io/repository/washington/7a1ce84e-ce37-488e-91fc-a21f24f09248> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N40b2212fa204446aa1f88b1095f6df30,
                 _:Nef171e15c6c242578f008bbc98176f11 ],
-        [ a ns1:AdminMetadata ;
-            ns2:catalogerID "pfreeman" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-20" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status _:N40b2212fa204446aa1f88b1095f6df30,
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N40b2212fa204446aa1f88b1095f6df30,
                 _:Nef171e15c6c242578f008bbc98176f11 ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> ;
-    ns1:genreForm [ a ns1:GenreForm ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> ;
+    bf:genreForm [ a bf:GenreForm ;
             rdfs:label "Comedy plays",
                 "dialect drama" ],
         <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "lccn: 42021317"@eng ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "lccn: 42021317"@eng ] ;
             rdf:value "lccn: 42021317"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "lccn: 42021317"@eng ] ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ],
-        [ a ns1:Script ;
+        [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "1942"@eng .
+    bf:originDate "1942"@eng .
 
-_:N40b2212fa204446aa1f88b1095f6df30 a ns1:Status ;
-    ns1:code "n" .
+_:N40b2212fa204446aa1f88b1095f6df30 a bf:Status ;
+    bf:code "n" .
 
-_:Nef171e15c6c242578f008bbc98176f11 a ns1:Status ;
-    ns1:code "n" .
+_:Nef171e15c6c242578f008bbc98176f11 a bf:Status ;
+    bf:code "n" .
 

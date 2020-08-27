@@ -1,36 +1,36 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/4068c481-1b0f-4d3d-8c59-cfa4c8dfa124> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jmoede" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-30" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent [ a ns1:ColorContent ;
+<https://trellis.sinopia.io/repository/washington/4068c481-1b0f-4d3d-8c59-cfa4c8dfa124> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
             rdfs:label "polychrome " ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf [ a ns1:Work ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf [ a bf:Work ;
             rdfs:label "Murg, Bradley Jensen. Impetus or impediment" ],
-        [ a ns1:Work.subclass ;
+        [ a bf:Work.subclass ;
             rdfs:label "Murg, Bradley Jensen. Impetus or impediment" ] ;
-    ns1:language [ a ns1:Language ;
+    bf:language [ a bf:Language ;
             rdfs:label "English" ] ;
-    ns1:notation [ a ns1:Script ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ],
-        [ a ns1:Script ;
+        [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:note [ a ns1:Note ;
+    bf:note [ a bf:Note ;
             rdfs:label "chiefly color"@eng ;
-            ns1:noteType "has details of colour content"@en ] ;
-    ns1:originDate "2015" ;
-    ns1:summary [ a ns1:Summary ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "2015" ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "Demand for law has been recognized as a necessary component of successful legal reform programs. However, the causal variables which support demand for law remain unclear. This dissertation hypothesizes a relationship between the structure of national economies and the demand for law, contending that a strong small and medium sized enterprise sector is necessary for legal demand to develop. Explored through the cases of Russia and Kazakhstan and their respective systems of economic courts, this dissertation depicts how in an economy with a strong SME sector legal demand grows, while in states in which the economy is highly concentrated among a few large firms the concomitant development of the SME sector and ultimately the demand for law is considerably weaker. The final component of this dissertation relates to the role of foreign direct investment (FDI) and the institutions that govern that investment, illustrating the differential impacts as regards the SME sector and legal demand of FDI when directed towards different sectors and how support for FDI by multilateral and bilateral development institutions can work at cross purposes with technical assistance programming seeking to support the development of the rule of law."@eng ] ;
-    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
             rdfs:label "Includes bibliographical references (pages 159-173)"@eng ] .
 

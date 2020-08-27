@@ -1,44 +1,44 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/a3186ad1-a262-4206-a35d-9598b7f11d27> a ns2:Work ;
+<https://trellis.sinopia.io/repository/washington/a3186ad1-a262-4206-a35d-9598b7f11d27> a bf:Work ;
     rdfs:label "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "dbrookin" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-03-13" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:contribution [ a ns2:Contribution ;
-            ns2:role <http://id.loc.gov/vocabulary/relators/aut> ],
-        [ a ns2:Contribution ;
-            ns2:agent [ a ns2:Agent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-13" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Kopach, Oleksandra" ] ;
-            ns2:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns2:identifiedBy [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Kopach, Oleksandra. Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ],
-        [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Копач, Олександра.Мовостиль Ольги Кобилянської"@ukr ] ;
-    ns2:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language." ] ;
-    ns2:title [ a ns2:VariantTitle ;
-            ns2:mainTitle "Language and style of Ol'ha Kobylianska"@ukr,
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Language and style of Ol'ha Kobylianska"@ukr,
                 "Мовостиль Ольги Кобилянської"@ukr ],
-        [ a ns2:Title ;
-            ns2:mainTitle "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ] .
+        [ a bf:Title ;
+            bf:mainTitle "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ] .
 

@@ -1,55 +1,55 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5> a bf:Instance ;
     rdfs:label "Игрушки и зверушки"@rus ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-25" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:dimensions "20 x 23 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 x 23 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "12 unnumbered pages"@eng ] ;
-    ns1:hasReproduction <https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec> ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:hasReproduction <https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Also available electronically."@eng,
                 "Chromolithographs. Stapled into self-wraps."@eng,
                 "Cover title."@eng,
                 "Publisher's white color-printed pictorial self wrappers."@eng ] ;
-    ns1:productionMethod [ a ns1:ProductionMethod ;
+    bf:productionMethod [ a bf:ProductionMethod ;
             rdfs:label "Chromolithography" ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "[Leningrad]"@eng ;
-                    ns1: "[Leningrad]"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "1939"@eng ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "[Leningrad]"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "1939"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "ДЕТИЗДАТ ЦК ВЛКСМ"@rus ;
-                    ns1: "ДЕТИЗДАТ ЦК ВЛКСМ"@rus ] ],
-        [ a ns1:Publication ] ;
-    ns1:responsibilityStatement "V. Lebedev"@rus,
+                    bf: "ДЕТИЗДАТ ЦК ВЛКСМ"@rus ] ],
+        [ a bf:Publication ] ;
+    bf:responsibilityStatement "V. Lebedev"@rus,
         "В. Лебедев"@rus ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:seriesStatement "Bibliotechka detskogo sada"@rus,
+    bf:seriesStatement "Bibliotechka detskogo sada"@rus,
         "Библиотечка детского сада"@rus ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Игрушки и зверушки"@rus ],
-        [ a ns1:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Игрушки и зверушки"@rus ],
+        [ a bf:VariantTitle ;
             rdfs:label "Igrushki i zverushki"@rus ;
-            ns1:mainTitle "Igrushki i zverushki"@rus ] .
+            bf:mainTitle "Igrushki i zverushki"@rus ] .
 

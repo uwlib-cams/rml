@@ -1,65 +1,65 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> a ns2:Work ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aentze" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-04-21" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status _:N40b2212fa204446aa1f88b1095f6df30,
+<https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N40b2212fa204446aa1f88b1095f6df30,
                 _:Nde784ad16cf34b36b93befe9eeb12384,
                 _:Nef171e15c6c242578f008bbc98176f11 ],
-        [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aentze" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-04-21" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status _:N40b2212fa204446aa1f88b1095f6df30,
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N40b2212fa204446aa1f88b1095f6df30,
                 _:Nde784ad16cf34b36b93befe9eeb12384,
                 _:Nef171e15c6c242578f008bbc98176f11 ],
-        [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aentze" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-04-21" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status _:N40b2212fa204446aa1f88b1095f6df30,
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N40b2212fa204446aa1f88b1095f6df30,
                 _:Nde784ad16cf34b36b93befe9eeb12384,
                 _:Nef171e15c6c242578f008bbc98176f11 ] ;
-    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/e01ddea9-54f1-4835-a049-f70e64c888fc> ;
-    ns2:identifiedBy [ a ns2:Identifier ;
-            ns2:source [ a ns2:Source ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/e01ddea9-54f1-4835-a049-f70e64c888fc> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "S 17.38:G 31 tum"@eng ] ;
             rdf:value "S 17.38:G 31 tum"@eng ],
-        [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and Itinerary."@eng ],
-        [ a ns2:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "S 17.38:G 31 tum"@eng ],
-        [ a ns2:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "S 17.38:G 31 tum"@eng ] ;
-    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns2:originDate "[1958]"@eng .
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "[1958]"@eng .
 
-_:N40b2212fa204446aa1f88b1095f6df30 a ns2:Status ;
-    ns2:code "n" .
+_:N40b2212fa204446aa1f88b1095f6df30 a bf:Status ;
+    bf:code "n" .
 
-_:Nde784ad16cf34b36b93befe9eeb12384 a ns2:Status ;
-    ns2:code "n" .
+_:Nde784ad16cf34b36b93befe9eeb12384 a bf:Status ;
+    bf:code "n" .
 
-_:Nef171e15c6c242578f008bbc98176f11 a ns2:Status ;
-    ns2:code "n" .
+_:Nef171e15c6c242578f008bbc98176f11 a bf:Status ;
+    bf:code "n" .
 

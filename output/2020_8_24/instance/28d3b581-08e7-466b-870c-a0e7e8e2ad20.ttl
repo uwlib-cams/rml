@@ -1,42 +1,42 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/28d3b581-08e7-466b-870c-a0e7e8e2ad20> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/28d3b581-08e7-466b-870c-a0e7e8e2ad20> a bf:Instance ;
     rdfs:label "Targeting mTOR to reverse age-associated periodontal disease"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "lins@uw.edu" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-05-05" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:copyrightDate "©2019"@zxx ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-05" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019"@zxx ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "x, 51 pages"@eng ] ;
-    ns1:hasItem [ a ns1:Item ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/1b711e5c-66ac-4298-ae7e-0f8ac6016dec> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:note [ a ns1:Note ;
+    bf:hasItem [ a bf:Item ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/1b711e5c-66ac-4298-ae7e-0f8ac6016dec> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed November 19, 2019)."@eng ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "[University of Washington Libraries]"@eng ;
-                    ns1: "[University of Washington Libraries]"@eng ] ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "[University of Washington Libraries]"@eng ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "[Seattle, Washington]"@eng ;
-                    ns1: "[Seattle, Washington]"@eng ] ] ;
-    ns1:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
-    ns1:responsibilityStatement "Jonathan Y. An"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "[Seattle, Washington]"@eng ] ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    bf:responsibilityStatement "Jonathan Y. An"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Targeting mTOR to reverse age-associated periodontal disease"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Targeting mTOR to reverse age-associated periodontal disease"@eng ] .
 

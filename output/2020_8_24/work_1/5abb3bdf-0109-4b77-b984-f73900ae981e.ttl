@@ -1,16 +1,16 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 
-<https://trellis.sinopia.io/repository/washington/5abb3bdf-0109-4b77-b984-f73900ae981e> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-09-25" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+<https://trellis.sinopia.io/repository/washington/5abb3bdf-0109-4b77-b984-f73900ae981e> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-09-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/isbd>,
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:hasExpression <http://id.loc.gov/authorities/names/n94102982.html> .
+            bf:descriptionLanguage <http://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:hasExpression <http://id.loc.gov/authorities/names/n94102982.html> .
 

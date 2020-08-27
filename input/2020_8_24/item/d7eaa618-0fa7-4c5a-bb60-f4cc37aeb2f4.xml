@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns3="http://rdaregistry.info/Elements/i/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,15 +12,15 @@
     <rdfs:label>Flotsametrics and the floating world</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f9739d33799c0457fb1eead0136006c35b1">
-    <ns1:status rdf:nodeID="f9739d33799c0457fb1eead0136006c35b2"/>
-    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns1:creationDate xml:lang="eng">2020-04-24</ns1:creationDate>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="f9739d33799c0457fb1eead0136006c35b2"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate xml:lang="eng">2020-04-24</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns4:catalogerID xml:lang="eng">pfreeman</ns4:catalogerID>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>
@@ -31,14 +31,14 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/d7eaa618-0fa7-4c5a-bb60-f4cc37aeb2f4">
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns2:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:adminMetadata rdf:nodeID="f9739d33799c0457fb1eead0136006c35b1"/>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns5:hasResourceTemplate>
-    <ns3:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/3fc91d7c-c5b9-413d-a0c0-4734672b5602"/>
-    <ns2:hasLcClassificationPartA xml:lang="eng">GC231.2</ns2:hasLcClassificationPartA>
-    <ns2:hasPhysicalLocation xml:lang="eng">Marine biology books</ns2:hasPhysicalLocation>
-    <ns2:hasPhysicalSubLocation xml:lang="eng">with Washington State books</ns2:hasPhysicalSubLocation>
-    <ns2:hasLcClassificationPartB xml:lang="eng">.E23 2009</ns2:hasLcClassificationPartB>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="f9739d33799c0457fb1eead0136006c35b1"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/3fc91d7c-c5b9-413d-a0c0-4734672b5602"/>
+    <rdax:hasLcClassificationPartA xml:lang="eng">GC231.2</rdax:hasLcClassificationPartA>
+    <rdax:hasPhysicalLocation xml:lang="eng">Marine biology books</rdax:hasPhysicalLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">with Washington State books</rdax:hasPhysicalSubLocation>
+    <rdax:hasLcClassificationPartB xml:lang="eng">.E23 2009</rdax:hasLcClassificationPartB>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
@@ -50,7 +50,7 @@
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f9739d33799c0457fb1eead0136006c35b2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
 </rdf:RDF>

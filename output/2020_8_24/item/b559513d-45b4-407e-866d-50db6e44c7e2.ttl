@@ -1,29 +1,29 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/b559513d-45b4-407e-866d-50db6e44c7e2> a ns2:Item ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "cec23" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-01-15" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:classification [ a ns2:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/b559513d-45b4-407e-866d-50db6e44c7e2> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-15" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "PG3326" ] ;
-    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns2:identifier [ a ns2:Barcode ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352067924332" ] ;
-    ns2:itemOf [ a ns2:Instance.subclass ;
+    bf:itemOf [ a bf:Instance.subclass ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/d6f8998a-594e-473f-8fbe-82211b02f1f1" ],
-        [ a ns2:Instance ;
+        [ a bf:Instance ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/d6f8998a-594e-473f-8fbe-82211b02f1f1" ] ;
-    ns2:mapping ".Z3 2004" ;
-    ns2:physicalLocation "suzzallen" ;
-    ns2:sublocation [ a ns2:Sublocation ;
+    bf:mapping ".Z3 2004" ;
+    bf:physicalLocation "suzzallen" ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "szstx" ] .
 

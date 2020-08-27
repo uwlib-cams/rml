@@ -1,18 +1,18 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-16" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:heldBy [ a ns1:Agent ;
+<https://trellis.sinopia.io/repository/washington/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:heldBy [ a bf:Agent ;
             rdfs:label "Crystal's bookshelf" ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> ;
-    ns1:usageAndAccessPolicy [ a ns1:UsePolicy ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/28838fda-3a72-4237-9c6d-ae11188b241e> ;
+    bf:usageAndAccessPolicy [ a bf:UsePolicy ;
             rdfs:label "Requires key to Yragui house"@eng ] .
 

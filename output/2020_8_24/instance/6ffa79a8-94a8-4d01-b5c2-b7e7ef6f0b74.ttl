@@ -1,77 +1,77 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> a bf:Instance ;
     rdfs:label "The Bedtime Sh'ma"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:changeDate "2019-12-18" ;
-            ns1:creationDate "2019-12-16" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©2007"@eng ;
-    ns1:dimensions "24 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-18" ;
+            bf:creationDate "2019-12-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2007"@eng ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "39 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "ISBN 9780939144549 (pbk.)"@eng,
                 "ISBN 9780939144556"@eng ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "ISBN 9780939144549 (pbk.)"@eng,
                         "ISBN 9780939144556"@eng ] ;
             rdf:value "ISBN 9780939144549 (pbk.)"@eng,
                 "ISBN 9780939144556"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "ISBN 9780939144549 (pbk.)"@eng,
                 "ISBN 9780939144556"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> ;
-    ns1:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "EKS Publishing Co."@eng ;
-                    ns1: "EKS Publishing Co."@eng ] ],
-        [ a ns1:Publication ],
-        [ a ns1:Publication ;
-            ns1:date "[2007]"@eng ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "EKS Publishing Co."@eng ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:date "[2007]"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "EKS Publishing Co." ;
-                    ns1: "EKS Publishing Co." ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+                    bf: "EKS Publishing Co." ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Oakland, California"@eng ;
-                    ns1: "Oakland, California"@eng ] ] ;
-    ns1:provisionActivityStatement "Oakland, California : EKS Publishing Co., [2007]"@eng ;
-    ns1:responsibilityStatement "adapted by Sarah Gershman"@eng,
+                    bf: "Oakland, California"@eng ] ] ;
+    bf:provisionActivityStatement "Oakland, California : EKS Publishing Co., [2007]"@eng ;
+    bf:responsibilityStatement "adapted by Sarah Gershman"@eng,
         "illustrated by Kristina Swarner"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "The Bedtime Sh'ma"@eng ],
-        [ a ns1:ParallelTitle ;
-            ns1:mainTitle "Lailah ṭov"@heb,
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The Bedtime Sh'ma"@eng ],
+        [ a bf:ParallelTitle ;
+            bf:mainTitle "Lailah ṭov"@heb,
                 "לילה טוב"@heb ],
-        [ a ns1:VariantTitle ;
+        [ a bf:VariantTitle ;
             rdfs:label "Bedtime Shema"@heb,
                 "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
                 "לילה טוב : קריאת שמע על המטה"@heb ;
-            ns1:mainTitle "Bedtime Shema"@heb,
+            bf:mainTitle "Bedtime Shema"@heb,
                 "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
                 "לילה טוב : קריאת שמע על המטה"@heb ],
-        [ a ns1:Title ;
-            ns1:subtitle "a good night book"@eng ],
-        [ a ns1:ParallelTitle ;
-            ns1:subtitle "Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
+        [ a bf:Title ;
+            bf:subtitle "a good night book"@eng ],
+        [ a bf:ParallelTitle ;
+            bf:subtitle "Ḳeriʼat Shemaʻ ʻal ha-miṭah"@heb,
                 "קריאת שמע על המטה"@heb ] .
 

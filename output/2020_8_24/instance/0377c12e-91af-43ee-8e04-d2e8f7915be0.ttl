@@ -1,45 +1,45 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/0377c12e-91af-43ee-8e04-d2e8f7915be0> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/0377c12e-91af-43ee-8e04-d2e8f7915be0> a bf:Instance ;
     rdfs:label "Species from feces"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:changeDate "2020-05-07" ;
-            ns1:creationDate "2020-04-23" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:copyrightDate "©2019"@zxx ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-07" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019"@zxx ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource (125 pages)"@eng ] ;
-    ns1:hasItem [ a ns1:Item ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+    bf:hasItem [ a bf:Item ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "[Seattle]"@eng ;
-                    ns1: "[Seattle]"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:date "[2019]"@zxx ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+                    bf: "[Seattle]"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[2019]"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "[University of Washington Libraries]"@eng ;
-                    ns1: "[University of Washington Libraries]"@eng ] ],
-        [ a ns1:Publication ] ;
-    ns1:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
-    ns1:responsibilityStatement "Yue Shi"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "[University of Washington Libraries]"@eng ] ],
+        [ a bf:Publication ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    bf:responsibilityStatement "Yue Shi"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Species from feces"@eng ],
-        [ a ns1:Title ;
-            ns1:subtitle "decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Species from feces"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings"@eng ] .
 

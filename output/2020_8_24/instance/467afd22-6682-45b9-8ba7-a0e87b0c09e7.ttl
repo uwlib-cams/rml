@@ -1,55 +1,55 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/467afd22-6682-45b9-8ba7-a0e87b0c09e7> a ns2:Instance ;
+<https://trellis.sinopia.io/repository/washington/467afd22-6682-45b9-8ba7-a0e87b0c09e7> a bf:Instance ;
     rdfs:label "Lady Susan"@eng ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "aschiff" ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2012-12-10" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns2:dimensions "20 cm"@eng ;
-    ns2:extent [ a ns2:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2012-12-10" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "173 pages, 14 unnumbered pages"@eng ] ;
-    ns2:identifiedBy [ a ns2:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "LCCN 26003380"@eng ],
-        [ a ns2:Identifier ;
-            ns2:source [ a ns2:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "LCCN 26003380"@eng ] ;
             rdf:value "LCCN 26003380"@eng ],
-        [ a ns2:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "LCCN 26003380"@eng ] ;
-    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/b1e9039f-d398-4d88-bf47-4e85591ee3ba> ;
-    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns2:note [ a ns2:Note ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/b1e9039f-d398-4d88-bf47-4e85591ee3ba> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Notes on \"Variations, &c., in the manuscript\" and \"Variations in the edition of 1871\": 14 unnumberred pages at end."@eng ] ;
-    ns2:provisionActivity [ a ns2:Publication ],
-        [ a ns2:Publication ;
-            ns2:agent <http://id.loc.gov/rwo/agents/n80126136> ],
-        [ a ns2:Publication ;
-            ns2:date "1925"@eng ],
-        [ a ns2:Publication ;
-            ns2:agent [ a ns2:Agent ] ],
-        [ a ns2:Publication ;
-            ns2:agent [ a ns2:Agent ;
+    bf:provisionActivity [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80126136> ],
+        [ a bf:Publication ;
+            bf:date "1925"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Clarendon Press"@eng ;
-                    ns2: "Clarendon Press"@eng ] ],
-        [ a ns2:Publication ;
-            ns2:place [ a ns2:Place ;
+                    bf: "Clarendon Press"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Oxford"@eng ;
-                    ns2: "Oxford"@eng ] ] ;
-    ns2:provisionActivityStatement "Oxford : At the Clarendon Press, 1925"@eng ;
-    ns2:responsibilityStatement "by Jane Austen"@eng ;
-    ns2:role <http://id.loc.gov/vocabulary/relators/chr>,
+                    bf: "Oxford"@eng ] ] ;
+    bf:provisionActivityStatement "Oxford : At the Clarendon Press, 1925"@eng ;
+    bf:responsibilityStatement "by Jane Austen"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns2:title [ a ns2:Title ;
-            ns2:mainTitle "Lady Susan"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Lady Susan"@eng ] .
 
