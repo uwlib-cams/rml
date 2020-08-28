@@ -3,36 +3,46 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/7cffe198-f453-409b-b985-9d5660c7272c> a bf:Work ;
-    rdfs:label "Twilight"@eng ;
+<https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef> a bf:Work ;
+    rdfs:label "Short stories. Selections"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "emcotter" ;
+            bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-20" ;
+            bf:creationDate "2020-02-19" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
         [ a bf:Contribution ;
-            bf:agent <http://id.loc.gov/authorities/names/n2004030792> ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    bf:genreForm <http://id.loc.gov/authorities/subjects/sh94000084> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026542>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026006> ;
+    bf:hasPart [ a bf:Work ;
+            rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Dva mori︠a︡ka",
+                "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Kut︠s︡yĭ",
+                "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Maksimka",
+                "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Pobeg" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
-            rdf:value "Meyer, Stephenie, 1973-. Twilight"@eng ] ;
-    bf:originDate "2005"@zxx ;
-    bf:subject <http://id.loc.gov/authorities/subjects/sh2008111268>,
-        <http://id.loc.gov/authorities/subjects/sh2008113166>,
-        <http://id.loc.gov/authorities/subjects/sh2008113494>,
-        <http://id.loc.gov/authorities/subjects/sh2008121577> ;
+            rdf:value "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Short stories. Selections"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Rasskazy"@rus ] ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "Twilight"@eng ] .
+            bf:mainTitle "Short stories. Selections"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Рассказы"@rus ] .
 
