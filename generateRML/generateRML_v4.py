@@ -145,6 +145,19 @@ def generate_constant(node, map_name):
 
     return po_map
 
+def generate_template_po_map(predicate, part_a, part_b, map_name, format=""):
+    open_curly_brace = "{"
+    close_curly_brace = "}"
+
+    po_map = f"""ex:{map_name}Map rr:predicateObjectMap [
+  rr:predicate {predicate};
+  rr:objectMap [
+    rr:template \"{open_curly_brace}{part_a}{close_curly_brace}{format}{open_curly_brace}{part_b}{close_curly_brace}\";
+    rr:termType rr:Literal
+  ]
+]."""
+    return po_map
+
 """Functions to parse kiegel"""
 
 def not_resource_test(kiegel_list): # test to see if any blank nodes generated need to have not(@resource) in their XPath expressions
@@ -254,11 +267,9 @@ for csv_file in csv_files:
     elif "item" in csv_file:
         entity_number = 4
 
-    property_number_list = ["P20065"]
+    property_number_list = []
 
-    kiegel_mapping_list = ["""notation*
-or
-notation >> Script > rdfs:label"""]
+    kiegel_mapping_list = []
 
     with open(f"{csv_dir}/{csv_file}") as file:
         csv_reader = csv.reader(file, delimiter=',')
@@ -521,6 +532,16 @@ notation >> Script > rdfs:label"""]
                     elif node == "mapped":
                         pass
 
+                    elif "See" in node:
+                        pass
+
+                    elif "{" in node:
+                        part_a = property_number
+                        part_b = property_number_list[number+1]
+                        node = node.strip("{")
+                        node = node.strip("}")
+                        po_map = generate_template_po_map(node, part_a, part_b, map_name)
+                        RML_list.append(po_map + "\n")
                     else: # node takes a literal value or blank node
                         if num == num_of_nodes - 1: # it's the last node and cannot be a blank node, takes a literal
                             po_map = generate_literal_po_map(property_number, node, map_name)
