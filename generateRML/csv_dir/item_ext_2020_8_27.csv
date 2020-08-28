@@ -21,19 +21,19 @@ heldBy >> Agent > rdfs:label",747.1,"""map"",
 I'd like to confirm use of bf:heldBy, but as property definition gives expected value of Agent this seems like the way to go.
 ",,,lookup,FALSE,TRUE,,,,,,,
 item has Library of Congress Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA,"bf:classification [ a bf:ClassificationLcc ;
-   rdf:value ""{partA}{partB}"" ] .",classification >> ClassificationLcc > rdf:value,118.6,"""map"",
+   rdf:value ""{partA}{partB}"" ] .",classification >> ClassificationLcc > {rdf:value},118.6,"""map"",
 ""serial"",
 ""graphic"",
 ""monograph""",NOTE mapping calls for combining values for two UW RDA extension properties,,,literal,FALSE,TRUE,,,,,,,
-item has Library of Congress Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB,See #hasLccClassificationPartA mapping,See #hasLccClassificationPartA mapping,118.7,"""map"",
+item has Library of Congress Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB,not mapped,not mapped,118.7,"""map"",
 ""serial"",
 ""graphic"",
 ""monograph""",NOTE mapping calls for combining values for two UW RDA extension properties,,,literal,FALSE,TRUE,,,,,,,
 item has National Library of Medicine Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA,"bf:classification [ a bf:ClassificationNlm ;
-   rdf:value ""{partA}{partB}"" ] .",classification >> ClassificationNlm > rdf:value,119.6,"""monograph"",
+   rdf:value ""{partA}{partB}"" ] .",classification >> ClassificationNlm > {rdf:value},119.6,"""monograph"",
 ""serial"",
 ""graphic""",NOTE mapping calls for combining values for two UW RDA extension properties,,,literal,FALSE,TRUE,,,,,,,
-item has National Library of Medicine Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB,See #hasNlmClassificationPartA mapping,See #hasNlmClassificationPartA mapping,119.7,"""monograph"",
+item has National Library of Medicine Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB,not mapped,not mapped,119.7,"""monograph"",
 ""serial"",
 ""graphic""",NOTE mapping calls for combining values for two UW RDA extension properties,,,literal,FALSE,TRUE,,,,,,,
 item has SuDoc Classification Number,https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber,"bf:classification [ a bf:Classification ;
