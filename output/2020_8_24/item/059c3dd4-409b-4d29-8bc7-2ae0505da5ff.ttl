@@ -3,24 +3,25 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/059c3dd4-409b-4d29-8bc7-2ae0505da5ff> a bf:Item ;
+<https://trellis.sinopia.io/repository/washington/05ecd0f7-2baa-4782-b0d7-f45e3a5e652a> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "jmoede" ;
+            bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-05" ;
+            bf:creationDate "2019-12-16" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PG3476.C355R39 1931" ] ;
     bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
     bf:identifier [ a bf:Barcode ;
-            rdf:value "39352073991234"@eng ] ;
-    bf:itemOf [ a bf:Instance ;
-            rdfs:label "9780618574926" ],
-        [ a bf:Instance.subclass ;
-            rdfs:label "9780618574926" ] ;
-    bf:physicalLocation "suzzallen"@eng ;
+            rdf:value "39352080020381" ] ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/5a6b2877-a6a8-4529-a9dc-827b0e5c4123> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "note on item"@en ] ;
+    bf:physicalLocation "suzzallen" ;
     bf:sublocation [ a bf:Sublocation ;
-            rdfs:label "szstx"@eng ] .
+            rdfs:label "scr" ] ;
+    bf:usageAndAccessPolicy [ a bf:UsePolicy ;
+            rdfs:label "This item is fragile and requires an appointment for use. Please contact Special Collections."@eng ] .
 

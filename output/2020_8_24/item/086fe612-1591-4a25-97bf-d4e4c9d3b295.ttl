@@ -12,12 +12,12 @@
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:classification [ a bf:ClassificationLcc ;
-            rdf:value "ND1049.Q2"@eng ] ;
+            rdf:value "ND1049.Q2A72 2015" ] ;
     bf:contribution [ a bf:Contribution ;
-            bf:agent <http://id.loc.gov/rwo/agents/no2016169387> ;
+            bf:agent [ a bf:Agent ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/dnr> ],
         [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ] ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2016169387> ;
             bf:role <http://id.loc.gov/vocabulary/relators/dnr> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ] ;
@@ -31,7 +31,6 @@
     bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
             rdfs:label "Gift of Qin Bailan"@eng ] ;
     bf:itemOf <https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> ;
-    bf:mapping "A72 2015"@eng ;
     bf:physicalLocation "East Asia Library"@eng ;
     bf:sublocation [ a bf:Sublocation ;
             rdfs:label "Special Coll Oversize"@eng ] ;
