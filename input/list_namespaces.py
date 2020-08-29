@@ -3,13 +3,21 @@ from sys import argv
 
 script, data_dir = argv # input requires file path to directory with files to analyze
 
-list_of_files = os.listdir(data_dir) # make list containing files in directory
+"""Make list containing files in directory"""
+
+list_of_directories = os.listdir(data_dir)
+list_of_files = []
+
+for directory in list_of_directories:
+    new_list = os.listdir(f"{data_dir}/{directory}")
+    for item in new_list:
+        list_of_files.append(f"{data_dir}/{directory}/{item}")
 
 """Add all lines of code in data directory to a list"""
 big_data_list = []
 
 for file_name in list_of_files:
-    with open(f'{data_dir}/{file_name}', 'r') as data_file:
+    with open(f'{file_name}', 'r') as data_file:
         for line in data_file:
             big_data_list.append(line)
 
