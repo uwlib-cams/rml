@@ -8,3 +8,7 @@ Python script that takes in a directory of RDA data and outputs a text file list
 
 Example:
 `python3.6 list_namespaces.py 2020_8_24`
+
+# namespaces.txt
+
+Output of `list_namespaces.py`.
