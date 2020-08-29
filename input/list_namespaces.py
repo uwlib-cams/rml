@@ -60,6 +60,7 @@ for namespace in property_dict.keys():
     for property in property_list:
         if property not in new_property_list:
             new_property_list.append(property)
+    new_property_list = sorted(new_property_list)
     property_dict[namespace] = new_property_list
 
 
