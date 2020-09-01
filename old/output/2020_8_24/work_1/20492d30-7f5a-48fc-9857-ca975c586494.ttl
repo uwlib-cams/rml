@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/20492d30-7f5a-48fc-9857-ca975c586494> a bf:Work ;
+    rdfs:label "Impetus or impediment"@eng ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85004432> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n99273876> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Person ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2015" ],
+        [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
+        [ a bf:Dissertation ;
+            bf:degree "Ph. D."@eng ],
+        [ a bf:Dissertation ;
+            rdfs:label "Ph. D.  University of Washington  2015"@eng ],
+        [ a bf:Dissertation ;
+            bf:grantingInstitution [ a bf:Organization ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Murg, Bradley Jensen. Impetus or impediment"@eng ] ;
+    bf:originDate "2015"@eng ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Investments, Foreign--Law and legislation--Kazakhstan",
+                "Investments, Foreign--Law and legislation--Russia (Federation)",
+                "Law reform--Kazakhstan",
+                "Law reform--Russia (Federation)",
+                "Marketing--Law and legislation--Kazakhstan",
+                "Marketing--Law and legislation--Russia (Federation)" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@eng ] .
+

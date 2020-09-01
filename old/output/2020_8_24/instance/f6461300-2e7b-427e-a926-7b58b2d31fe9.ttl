@@ -1,0 +1,61 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9> a bf:Instance ;
+    rdfs:label "Похождения одного матроса ; Рассказы"@rus ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-19" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1991"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "477 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 525300209X"@zxx,
+                        "ISBN 9785253002094"@zxx ] ;
+            rdf:value "ISBN 525300209X"@zxx,
+                "ISBN 9785253002094"@zxx ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 525300209X"@zxx,
+                "ISBN 9785253002094"@zxx ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 525300209X"@zxx,
+                "ISBN 9785253002094"@zxx ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/1b238b17-3bd6-4820-825e-a5fcf0802470>,
+        <https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Издательство \"Правда\""@rus ;
+                    bf: "Издательство \"Правда\""@rus ] ],
+        [ a bf:Publication ;
+            bf:date "1991"@zxx ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Москва"@rus ;
+                    bf: "Москва"@rus ] ] ;
+    bf:responsibilityStatement "Константин Станюкович"@rus,
+        "иллюстрации Р.А. Клочкова"@rus,
+        "составление и послесовие М.А. Соколовой"@rus ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Мир приключений"@rus ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@rus ;
+            bf:mainTitle "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@rus ],
+        [ a bf:Title ;
+            bf:mainTitle "Похождения одного матроса ; Рассказы"@rus ] .
+

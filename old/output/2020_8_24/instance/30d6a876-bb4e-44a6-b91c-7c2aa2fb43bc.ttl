@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc> a bf:Instance ;
+    rdfs:label "Go down, Moses"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1942"@en ;
+    bf:dimensions "19 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "383 pages"@en ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "556391"@en ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "556391"@en ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "556391"@en ] ;
+            rdf:value "556391"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The Modern Library"@en ;
+                    bf: "The Modern Library"@en ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ;
+                    bf: "New York"@en ] ],
+        [ a bf:Publication ;
+            bf:date "[1955]"@en ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/nr92033481> ] ;
+    bf:responsibilityStatement "William Faulkner"@en ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "The modern library of the world's best books"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Go down, Moses"@en ] .
+

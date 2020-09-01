@@ -1,0 +1,90 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fdc17c27-063f-4fd2-ad34-b4ecea9279ad> a bf:Instance ;
+    rdfs:label "Sugar changed the world"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-05" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:contribution [ a bf:Contribution ;
+            bf: "Watts, Trish Parcell" ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:copyrightDate "©2010"@eng ;
+    bf:dimensions "25 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 166 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "9780618574926" ] ;
+            rdf:value "9780618574926" ],
+        [ a bf:Identifier ;
+            rdf:value "9780618574926" ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "9780618574926" ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "Aronson, Marc. Sugar changed the world " ],
+        [ a bf:Work.subclass ;
+            rdfs:label "Aronson, Marc. Sugar changed the world " ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Hardback"@eng ;
+            bf:noteType "type of binding"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston (Mass.)"@eng ;
+                    bf: "Boston (Mass.)"@eng ] ],
+        [ a bf:Manufacture ;
+            bf:agent _:Nde4d7156520449899bddb25f0fcf2d48 ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ],
+        [ a bf:Manufacture ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "book designer"@en ;
+                    bf:noteType "role in manufacture"@en ] ],
+        [ a bf:Publication ;
+            bf:date "2010"@eng ],
+        [ a bf:Manufacture ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Clarion Books"@eng ;
+                    bf: "Clarion Books"@eng ] ],
+        [ a bf:Publication ],
+        [ a bf:Manufacture ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "China"@eng ;
+                    bf: "China"@eng ] ] ;
+    bf:provisionActivityStatement "Boston [Mass.] : Clarion Books, 2010"@eng ;
+    bf:responsibilityStatement "by Marc Aronson and Marina Budhos"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Sugar changed the world"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Story of magic, spice, slavery, freedom, and science"@eng ;
+            bf:mainTitle "Story of magic, spice, slavery, freedom, and science"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "Story of magic, spice, slavery, freedom, and science"@eng ] .
+
+_:Na8a2917c6c624ccd97123dff6e4e12ce a bf:Note ;
+    rdfs:label "book designer"@en ;
+    bf: "Watts, Trish Parcell" ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent _:Nde4d7156520449899bddb25f0fcf2d48 ] ;
+    bf:noteType "role in manufacture"@en .
+
+_:Nde4d7156520449899bddb25f0fcf2d48 a bf:Agent ;
+    rdfs:label "Watts, Trish Parcell" ;
+    bf: "Watts, Trish Parcell" ;
+    bf:note _:Na8a2917c6c624ccd97123dff6e4e12ce .
+

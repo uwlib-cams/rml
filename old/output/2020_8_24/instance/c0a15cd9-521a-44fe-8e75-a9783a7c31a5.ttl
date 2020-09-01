@@ -1,0 +1,56 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c0a15cd9-521a-44fe-8e75-a9783a7c31a5> a bf:Instance ;
+    rdfs:label "Hans Brinker, or, The silver skates"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1946"@eng ;
+    bf:dimensions "22 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "335 pages, 4 unnumbered leaves of plates"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "LCCN 46025118"@eng ] ;
+            rdf:value "LCCN 46025118"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "LCCN 46025118"@eng ],
+        [ a bf:Identifier ;
+            rdf:value "LCCN 46025118"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/2d2cdef9-c690-4537-b2a4-f0da15e57d77> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[1946]"@eng ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The World Publishing Company"@eng ;
+                    bf: "The World Publishing Company"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cleveland"@eng,
+                        "New York"@eng ;
+                    bf: "Cleveland"@eng,
+                        "New York"@eng ] ] ;
+    bf:relatedTo [ a bf:Work ;
+            rdfs:label "http://id.loc.gov/authorities/names/no00049285" ] ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng,
+        "illustrated by Hilda van Stockum"@eng,
+        "with an introduction by May Lamberton Becker"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Rainbow classics"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ] .
+

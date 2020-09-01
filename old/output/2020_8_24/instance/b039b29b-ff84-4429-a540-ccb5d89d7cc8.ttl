@@ -1,0 +1,62 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b039b29b-ff84-4429-a540-ccb5d89d7cc8> a bf:Instance ;
+    rdfs:label "Access to space"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "© [1990]"@zxx ;
+    bf:dimensions "27 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 92 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
+            rdf:value "Y 3.T 22/2:2 SP 1/3" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "Y 3.T 22/2:2 SP 1/3" ] ;
+            rdf:value "Y 3.T 22/2:2 SP 1/3" ],
+        [ a bf:Identifier ;
+            rdf:value "Y 3.T 22/2:2 SP 1/3" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/930a9778-6a1a-4980-bed8-caa3ca055775> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"April 1990\"--Page 4 of cover"@eng,
+                "\"OTA-ISC-415\"--Page 4 of cover"@eng,
+                "Item 1070-M"@eng,
+                "Shipping list no.: 90-372-P"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ;
+                    bf: "Washington, D.C."@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[1990]"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79006671> ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Congress of the U.S., Office of Technology Assessment"@eng ;
+                    bf: "Congress of the U.S., Office of Technology Assessment"@eng ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:subtitle "the future of U.S. space transportation systems"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Access to space"@eng ] .
+

@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7a40589e-0828-4eb0-90fb-a7e1a828fa74> a bf:Instance ;
+    rdfs:label "Виде киге"@zxx ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:editionStatement "2-це издания"@mdf ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "110 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 5759503502"@zxx,
+                        "ISBN 9785759503507"@zxx ] ;
+            rdf:value "ISBN 5759503502"@zxx,
+                "ISBN 9785759503507"@zxx ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 5759503502"@zxx,
+                "ISBN 9785759503507"@zxx ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 5759503502"@zxx,
+                "ISBN 9785759503507"@zxx ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/4fc5c2d4-ec52-43b5-8721-58047a602802> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Мордовскяй книжнай издательствась"@mdf ;
+                    bf: "Мордовскяй книжнай издательствась"@mdf ] ],
+        [ a bf:Publication ;
+            bf:date "1990"@zxx ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Саранск"@mdf ;
+                    bf: "Саранск"@mdf ] ] ;
+    bf:responsibilityStatement "А.И. Мокшони"@mdf ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Школьнай библиотека"@mdf ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Vide kige"@mdf ;
+            bf:mainTitle "Vide kige"@mdf ],
+        [ a bf:Title ;
+            bf:mainTitle "Виде киге"@zxx ] .
+

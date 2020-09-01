@@ -1,0 +1,15 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d39d7225-64cc-4adf-a160-51d8be486dfa> a bf:Item ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PR6037.T617D7 1974" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "XXXX"@eng ] ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/635cfe10-0edc-456d-b9c6-ddf81d5937f1> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "szstx"@eng ] .
+

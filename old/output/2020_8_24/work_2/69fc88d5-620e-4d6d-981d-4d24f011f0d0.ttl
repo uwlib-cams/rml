@@ -1,0 +1,67 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n86117349> ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword"@en ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword"@en ] ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n88617211> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Attla, Catherine" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79103884> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ] ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/2442f2d5-0841-4384-b08e-bd25c3a3d4e9> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "LCCN 88011466"@eng ] ;
+            rdf:value "LCCN 88011466"@eng ],
+        [ a bf:Identifier ;
+            rdf:value "LCCN 88011466"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "LCCN 88011466"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Hoshino, Michio, 1952-1996. Moose. English"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language [ a bf:Language ;
+            rdfs:label "Athapaskan" ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Chiefly color"@eng ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "1988"@eng ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Text about life cycle of moose and its place in Athapaskan culture"@eng ] .
+

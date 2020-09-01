@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/512a903e-0856-44d2-83d1-ee0512df8e90> a bf:Instance ;
+    rdfs:label "I grant you three wishes"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1919"@eng ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "18 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/454c764e-7531-4d0e-9b40-568860445626> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@eng ;
+                    bf: "Boston"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[1919]"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker Company" ;
+                    bf: "Walter H. Baker Company" ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker Company"@eng ;
+                    bf: "Walter H. Baker Company"@eng ] ],
+        [ a bf:Publication ],
+        [ a bf:Publication ] ;
+    bf:provisionActivityStatement "Boston : Walter H. Baker Company,  [1919]"@eng ;
+    bf:responsibilityStatement "by Gladys Ruth Bridgham"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Baker's edition of plays"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I grant you three wishes"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "a fantasy in one act ; composed of prologue, three scenes and an epilogue"@eng ] .
+

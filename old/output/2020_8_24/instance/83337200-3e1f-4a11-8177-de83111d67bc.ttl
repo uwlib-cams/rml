@@ -1,0 +1,53 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/83337200-3e1f-4a11-8177-de83111d67bc> a bf:Instance ;
+    rdfs:label "Progress in science, progress in society"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2018"@eng ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 108 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
+            rdf:value "3319699733",
+                "9783319699738" ],
+        [ a bf:Identifier ;
+            rdf:value "3319699733",
+                "9783319699738" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "3319699733",
+                        "9783319699738" ] ;
+            rdf:value "3319699733",
+                "9783319699738" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/055719b8-ddee-48b8-aad0-3553d0752168> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[2018]"@eng ],
+        [ a bf:Publication ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Springer"@eng ;
+                    bf: "Springer"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cham, Switzerland"@eng ;
+                    bf: "Cham, Switzerland"@eng ] ] ;
+    bf:responsibilityStatement "Alain Tressaud, editor"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Progress in science, progress in society"@eng ] .
+
