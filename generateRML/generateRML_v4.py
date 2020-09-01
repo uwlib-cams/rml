@@ -25,20 +25,27 @@ def generate_logical_source(map_name, file_path):
   ].\n"""
     return logical_source
 
-def generate_bnode_logical_source(property_number, map_name, not_resource, file_path):
-    if not_resource == False:
+def generate_bnode_logical_source(property_number, map_name, not_resource, yes_resource, file_path):
+    if not_resource == True:
         bnode_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
-    rml:iterator \"/RDF/Description[{property_number}]\"
+    rml:iterator \"/RDF/Description[{property_number}[not(@resource)]]\"
+  ].\n"""
+    elif yes_resource == True:
+        bnode_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator \"/RDF/Description[{property_number}[@resource]]\"
   ].\n"""
     else:
         bnode_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
-    rml:iterator \"/RDF/Description[{property_number}[not(@resource)]]\"
+    rml:iterator \"/RDF/Description[{property_number}]\"
   ].\n"""
     return bnode_logical_source
 
@@ -164,24 +171,26 @@ def not_resource_test(kiegel_list): # test to see if any blank nodes generated n
     if len(kiegel_list) == 1: # there is only one map, i.e. only one kind of input value type; no differentiation needed
         not_resource = False
     else: # there are different maps for IRIs and literals; differentiation may be needed
-        if ">>" in kiegel_list[0]: # there is a blank node in the first map
-            first_map_bnode = True
-        else:
-            first_map_bnode = False
-
-        if ">>" in kiegel_list[1]: # there is a blank node in the second map
-            second_map_bnode = True
-        else:
-            second_map_bnode = False
-
-        if first_map_bnode and second_map_bnode: # both maps have blank nodes in them; differentiation not needed
-            not_resource = False
-        elif not first_map_bnode and not second_map_bnode:  # neither maps have blank nodes in them; differentiation not needed
-            not_resource = False
-        else: # only one map has a blank node, and therefore differentiation is needed
+        join_format = " "
+        kiegel = join_format.join(kiegel_list)
+        not_resource = False
+        if "*" not in kiegel:
             not_resource = True
 
     return not_resource
+
+def yes_resource_test(kiegel_list): # test to see if any blank nodes generated need to have not(@resource) in their XPath expressions
+    if len(kiegel_list) == 1: # there is only one map, i.e. only one kind of input value type; no differentiation needed
+        yes_resource = False
+    else: # there are different maps for IRIs and literals; differentiation may be needed
+        join_format = " "
+        kiegel = join_format.join(kiegel_list)
+        yes_resource = False
+        if "*" in kiegel:
+            if ">>" in kiegel:
+                yes_resource = True
+
+    return yes_resource
 
 def replace_semicolons(map):
     if ";" in map:
@@ -302,7 +311,8 @@ for csv_file in csv_files:
                     pass
                 else:
                     prop_IRI = line[1]
-                    prop_num = "h" + prop_IRI.lstrip('https://doi.org/10.6069/uwlib.55.d.4#') # it takes off the h for some reason
+                    prop_num = prop_IRI.lstrip(f'https://doi.org/10.6069/uwlib.55.d.4')
+                    prop_num = prop_num.strip('#')
                     property_number_list.append(prop_num)
 
                     kiegel = line[3]
@@ -383,7 +393,17 @@ for csv_file in csv_files:
     "ex:AdminMetadataMap rr:predicateObjectMap [",
     "  rr:predicate bflc:catalogerID;",
     "  rr:objectMap [",
-    "    rml:reference \"catalogerID\";",
+    "    rml:reference \"catalogerID[@lang]\";",
+    "    rr:termType rr:Literal;",
+    "    rml:languageMap [",
+    "      rml:reference \"catalogerID/@lang\"",
+    "    ]",
+    "  ]",
+    "].\n",
+    "ex:AdminMetadataMap rr:predicateObjectMap [",
+    "  rr:predicate bflc:catalogerID;",
+    "  rr:objectMap [",
+    "    rml:reference \"catalogerID[not(@lang)]\";",
     "    rr:termType rr:Literal",
     "  ]",
     "].\n",
@@ -473,8 +493,6 @@ for csv_file in csv_files:
 
         kiegel_list = kiegel.split("\nor\n") # for properties that have different mapping options
 
-        not_resource = not_resource_test(kiegel_list)
-
         for map in kiegel_list:
             map = replace_semicolons(map) # replaces shorthand ; with full kiegel maps separated with "and"
 
@@ -482,6 +500,13 @@ for csv_file in csv_files:
 
             for map in map_list:
                 node_list = split_by_space(map)
+
+                not_resource = not_resource_test(node_list)
+
+                if not_resource == False:
+                    yes_resource = yes_resource_test(node_list)
+                else:
+                    yes_resource = False
 
                 num_of_nodes = len(node_list)
 
@@ -516,7 +541,7 @@ for csv_file in csv_files:
                                 generate_new_bnode = False
 
                         if generate_new_bnode == True:
-                            logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, default_path)
+                            logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
                             RML_list.append(logical_source + "\n")
 
                             class_name = node_list[num + 1]
