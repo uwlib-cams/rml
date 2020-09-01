@@ -54,7 +54,18 @@ ex:AdminMetadataMap rr:subjectMap [
 ex:AdminMetadataMap rr:predicateObjectMap [
   rr:predicate bflc:catalogerID;
   rr:objectMap [
-    rml:reference "catalogerID";
+    rml:reference "catalogerID[@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "catalogerID/@lang"
+    ]
+  ]
+].
+
+ex:AdminMetadataMap rr:predicateObjectMap [
+  rr:predicate bflc:catalogerID;
+  rr:objectMap [
+    rml:reference "catalogerID[not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
@@ -304,7 +315,7 @@ ex:Note_5_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40003]"
+    rml:iterator "/RDF/Description[P40003[not(@resource)]]"
   ].
 
 ex:Note_5_Map rr:subjectMap [
@@ -351,7 +362,7 @@ ex:Contribution_6_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40004]"
+    rml:iterator "/RDF/Description[P40004[not(@resource)]]"
   ].
 
 ex:Contribution_6_Map rr:subjectMap [
@@ -370,7 +381,7 @@ ex:Agent_6_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40004]"
+    rml:iterator "/RDF/Description[P40004[not(@resource)]]"
   ].
 
 ex:Agent_6_Map rr:subjectMap [
@@ -423,7 +434,7 @@ ex:Contribution_7_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40004]"
+    rml:iterator "/RDF/Description[P40004[@resource]]"
   ].
 
 ex:Contribution_7_Map rr:subjectMap [
@@ -458,7 +469,7 @@ ex:Contribution_8_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40005]"
+    rml:iterator "/RDF/Description[P40005[not(@resource)]]"
   ].
 
 ex:Contribution_8_Map rr:subjectMap [
@@ -477,7 +488,7 @@ ex:Agent_8_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40005]"
+    rml:iterator "/RDF/Description[P40005[not(@resource)]]"
   ].
 
 ex:Agent_8_Map rr:subjectMap [
@@ -530,7 +541,7 @@ ex:Contribution_9_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40005]"
+    rml:iterator "/RDF/Description[P40005[@resource]]"
   ].
 
 ex:Contribution_9_Map rr:subjectMap [
@@ -565,7 +576,7 @@ ex:Contribution_10_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40006]"
+    rml:iterator "/RDF/Description[P40006[not(@resource)]]"
   ].
 
 ex:Contribution_10_Map rr:subjectMap [
@@ -592,7 +603,7 @@ ex:Agent_10_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40006]"
+    rml:iterator "/RDF/Description[P40006[not(@resource)]]"
   ].
 
 ex:Agent_10_Map rr:subjectMap [
@@ -630,7 +641,7 @@ ex:Contribution_11_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40006]"
+    rml:iterator "/RDF/Description[P40006[@resource]]"
   ].
 
 ex:Contribution_11_Map rr:subjectMap [
@@ -665,7 +676,7 @@ ex:Contribution_12_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40007]"
+    rml:iterator "/RDF/Description[P40007[not(@resource)]]"
   ].
 
 ex:Contribution_12_Map rr:subjectMap [
@@ -692,7 +703,7 @@ ex:Agent_12_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40007]"
+    rml:iterator "/RDF/Description[P40007[not(@resource)]]"
   ].
 
 ex:Agent_12_Map rr:subjectMap [
@@ -730,7 +741,7 @@ ex:Contribution_13_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40007]"
+    rml:iterator "/RDF/Description[P40007[@resource]]"
   ].
 
 ex:Contribution_13_Map rr:subjectMap [
@@ -765,7 +776,7 @@ ex:Contribution_14_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40008]"
+    rml:iterator "/RDF/Description[P40008[not(@resource)]]"
   ].
 
 ex:Contribution_14_Map rr:subjectMap [
@@ -792,7 +803,7 @@ ex:Agent_14_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40008]"
+    rml:iterator "/RDF/Description[P40008[not(@resource)]]"
   ].
 
 ex:Agent_14_Map rr:subjectMap [
@@ -830,7 +841,7 @@ ex:Contribution_15_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40008]"
+    rml:iterator "/RDF/Description[P40008[@resource]]"
   ].
 
 ex:Contribution_15_Map rr:subjectMap [
@@ -911,7 +922,7 @@ ex:Note_18_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40010]"
+    rml:iterator "/RDF/Description[P40010[not(@resource)]]"
   ].
 
 ex:Note_18_Map rr:subjectMap [
@@ -958,7 +969,7 @@ ex:Note_19_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40011]"
+    rml:iterator "/RDF/Description[P40011[not(@resource)]]"
   ].
 
 ex:Note_19_Map rr:subjectMap [
@@ -1005,7 +1016,7 @@ ex:Contribution_20_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40012]"
+    rml:iterator "/RDF/Description[P40012[not(@resource)]]"
   ].
 
 ex:Contribution_20_Map rr:subjectMap [
@@ -1032,7 +1043,7 @@ ex:Agent_20_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40012]"
+    rml:iterator "/RDF/Description[P40012[not(@resource)]]"
   ].
 
 ex:Agent_20_Map rr:subjectMap [
@@ -1070,7 +1081,7 @@ ex:Contribution_21_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40012]"
+    rml:iterator "/RDF/Description[P40012[@resource]]"
   ].
 
 ex:Contribution_21_Map rr:subjectMap [
@@ -1105,7 +1116,7 @@ ex:Contribution_22_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40013]"
+    rml:iterator "/RDF/Description[P40013[not(@resource)]]"
   ].
 
 ex:Contribution_22_Map rr:subjectMap [
@@ -1132,7 +1143,7 @@ ex:Agent_22_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40013]"
+    rml:iterator "/RDF/Description[P40013[not(@resource)]]"
   ].
 
 ex:Agent_22_Map rr:subjectMap [
@@ -1170,7 +1181,7 @@ ex:Contribution_23_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40013]"
+    rml:iterator "/RDF/Description[P40013[@resource]]"
   ].
 
 ex:Contribution_23_Map rr:subjectMap [
@@ -1205,7 +1216,7 @@ ex:Contribution_24_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40014]"
+    rml:iterator "/RDF/Description[P40014[not(@resource)]]"
   ].
 
 ex:Contribution_24_Map rr:subjectMap [
@@ -1232,7 +1243,7 @@ ex:Agent_24_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40014]"
+    rml:iterator "/RDF/Description[P40014[not(@resource)]]"
   ].
 
 ex:Agent_24_Map rr:subjectMap [
@@ -1270,7 +1281,7 @@ ex:Contribution_25_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40014]"
+    rml:iterator "/RDF/Description[P40014[@resource]]"
   ].
 
 ex:Contribution_25_Map rr:subjectMap [
@@ -1305,7 +1316,7 @@ ex:Contribution_26_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40015]"
+    rml:iterator "/RDF/Description[P40015[not(@resource)]]"
   ].
 
 ex:Contribution_26_Map rr:subjectMap [
@@ -1332,7 +1343,7 @@ ex:Agent_26_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40015]"
+    rml:iterator "/RDF/Description[P40015[not(@resource)]]"
   ].
 
 ex:Agent_26_Map rr:subjectMap [
@@ -1370,7 +1381,7 @@ ex:Contribution_27_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40015]"
+    rml:iterator "/RDF/Description[P40015[@resource]]"
   ].
 
 ex:Contribution_27_Map rr:subjectMap [
@@ -1405,7 +1416,7 @@ ex:Contribution_28_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40016]"
+    rml:iterator "/RDF/Description[P40016[not(@resource)]]"
   ].
 
 ex:Contribution_28_Map rr:subjectMap [
@@ -1432,7 +1443,7 @@ ex:Agent_28_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40016]"
+    rml:iterator "/RDF/Description[P40016[not(@resource)]]"
   ].
 
 ex:Agent_28_Map rr:subjectMap [
@@ -1470,7 +1481,7 @@ ex:Contribution_29_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40016]"
+    rml:iterator "/RDF/Description[P40016[@resource]]"
   ].
 
 ex:Contribution_29_Map rr:subjectMap [
@@ -1505,7 +1516,7 @@ ex:Contribution_30_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40017]"
+    rml:iterator "/RDF/Description[P40017[not(@resource)]]"
   ].
 
 ex:Contribution_30_Map rr:subjectMap [
@@ -1524,7 +1535,7 @@ ex:Agent_30_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40017]"
+    rml:iterator "/RDF/Description[P40017[not(@resource)]]"
   ].
 
 ex:Agent_30_Map rr:subjectMap [
@@ -1577,7 +1588,7 @@ ex:Contribution_31_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40017]"
+    rml:iterator "/RDF/Description[P40017[@resource]]"
   ].
 
 ex:Contribution_31_Map rr:subjectMap [
@@ -1612,7 +1623,7 @@ ex:Contribution_32_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40018]"
+    rml:iterator "/RDF/Description[P40018[not(@resource)]]"
   ].
 
 ex:Contribution_32_Map rr:subjectMap [
@@ -1631,7 +1642,7 @@ ex:Agent_32_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40018]"
+    rml:iterator "/RDF/Description[P40018[not(@resource)]]"
   ].
 
 ex:Agent_32_Map rr:subjectMap [
@@ -1684,7 +1695,7 @@ ex:Contribution_33_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40018]"
+    rml:iterator "/RDF/Description[P40018[@resource]]"
   ].
 
 ex:Contribution_33_Map rr:subjectMap [
@@ -1719,7 +1730,7 @@ ex:Contribution_34_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40019]"
+    rml:iterator "/RDF/Description[P40019[not(@resource)]]"
   ].
 
 ex:Contribution_34_Map rr:subjectMap [
@@ -1746,7 +1757,7 @@ ex:Agent_34_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40019]"
+    rml:iterator "/RDF/Description[P40019[not(@resource)]]"
   ].
 
 ex:Agent_34_Map rr:subjectMap [
@@ -1784,7 +1795,7 @@ ex:Contribution_35_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40019]"
+    rml:iterator "/RDF/Description[P40019[@resource]]"
   ].
 
 ex:Contribution_35_Map rr:subjectMap [
@@ -1819,7 +1830,7 @@ ex:Contribution_36_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40020]"
+    rml:iterator "/RDF/Description[P40020[not(@resource)]]"
   ].
 
 ex:Contribution_36_Map rr:subjectMap [
@@ -1838,7 +1849,7 @@ ex:Agent_36_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40020]"
+    rml:iterator "/RDF/Description[P40020[not(@resource)]]"
   ].
 
 ex:Agent_36_Map rr:subjectMap [
@@ -1883,7 +1894,7 @@ ex:Role_36_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40020]"
+    rml:iterator "/RDF/Description[P40020[not(@resource)]]"
   ].
 
 ex:Role_36_Map rr:subjectMap [
@@ -1911,7 +1922,7 @@ ex:Contribution_37_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40020]"
+    rml:iterator "/RDF/Description[P40020[@resource]]"
   ].
 
 ex:Contribution_37_Map rr:subjectMap [
@@ -1938,7 +1949,7 @@ ex:Role_37_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40020]"
+    rml:iterator "/RDF/Description[P40020[@resource]]"
   ].
 
 ex:Role_37_Map rr:subjectMap [
@@ -1966,7 +1977,7 @@ ex:Contribution_38_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40021]"
+    rml:iterator "/RDF/Description[P40021[not(@resource)]]"
   ].
 
 ex:Contribution_38_Map rr:subjectMap [
@@ -1985,7 +1996,7 @@ ex:Agent_38_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40021]"
+    rml:iterator "/RDF/Description[P40021[not(@resource)]]"
   ].
 
 ex:Agent_38_Map rr:subjectMap [
@@ -2030,7 +2041,7 @@ ex:Role_38_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40021]"
+    rml:iterator "/RDF/Description[P40021[not(@resource)]]"
   ].
 
 ex:Role_38_Map rr:subjectMap [
@@ -2058,7 +2069,7 @@ ex:Contribution_39_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40021]"
+    rml:iterator "/RDF/Description[P40021[@resource]]"
   ].
 
 ex:Contribution_39_Map rr:subjectMap [
@@ -2085,7 +2096,7 @@ ex:Role_39_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40021]"
+    rml:iterator "/RDF/Description[P40021[@resource]]"
   ].
 
 ex:Role_39_Map rr:subjectMap [
@@ -2113,7 +2124,7 @@ ex:Contribution_40_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40022]"
+    rml:iterator "/RDF/Description[P40022[not(@resource)]]"
   ].
 
 ex:Contribution_40_Map rr:subjectMap [
@@ -2132,7 +2143,7 @@ ex:Agent_40_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40022]"
+    rml:iterator "/RDF/Description[P40022[not(@resource)]]"
   ].
 
 ex:Agent_40_Map rr:subjectMap [
@@ -2185,7 +2196,7 @@ ex:Contribution_41_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40022]"
+    rml:iterator "/RDF/Description[P40022[@resource]]"
   ].
 
 ex:Contribution_41_Map rr:subjectMap [
@@ -2220,7 +2231,7 @@ ex:Contribution_42_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40024]"
+    rml:iterator "/RDF/Description[P40024[not(@resource)]]"
   ].
 
 ex:Contribution_42_Map rr:subjectMap [
@@ -2247,7 +2258,7 @@ ex:Agent_42_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40024]"
+    rml:iterator "/RDF/Description[P40024[not(@resource)]]"
   ].
 
 ex:Agent_42_Map rr:subjectMap [
@@ -2285,7 +2296,7 @@ ex:Contribution_43_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40024]"
+    rml:iterator "/RDF/Description[P40024[@resource]]"
   ].
 
 ex:Contribution_43_Map rr:subjectMap [
@@ -2320,7 +2331,7 @@ ex:Contribution_44_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40025]"
+    rml:iterator "/RDF/Description[P40025[not(@resource)]]"
   ].
 
 ex:Contribution_44_Map rr:subjectMap [
@@ -2339,7 +2350,7 @@ ex:Agent_44_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40025]"
+    rml:iterator "/RDF/Description[P40025[not(@resource)]]"
   ].
 
 ex:Agent_44_Map rr:subjectMap [
@@ -2392,7 +2403,7 @@ ex:Contribution_45_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40025]"
+    rml:iterator "/RDF/Description[P40025[@resource]]"
   ].
 
 ex:Contribution_45_Map rr:subjectMap [
@@ -2446,7 +2457,7 @@ ex:Note_47_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40028]"
+    rml:iterator "/RDF/Description[P40028[not(@resource)]]"
   ].
 
 ex:Note_47_Map rr:subjectMap [
@@ -3511,7 +3522,7 @@ ex:Contribution_92_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40072]"
+    rml:iterator "/RDF/Description[P40072[not(@resource)]]"
   ].
 
 ex:Contribution_92_Map rr:subjectMap [
@@ -3530,7 +3541,7 @@ ex:Agent_92_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40072]"
+    rml:iterator "/RDF/Description[P40072[not(@resource)]]"
   ].
 
 ex:Agent_92_Map rr:subjectMap [
@@ -3568,7 +3579,7 @@ ex:Contribution_93_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40072]"
+    rml:iterator "/RDF/Description[P40072[@resource]]"
   ].
 
 ex:Contribution_93_Map rr:subjectMap [
@@ -3595,7 +3606,7 @@ ex:Contribution_94_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40073]"
+    rml:iterator "/RDF/Description[P40073[not(@resource)]]"
   ].
 
 ex:Contribution_94_Map rr:subjectMap [
@@ -3614,7 +3625,7 @@ ex:Agent_94_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40073]"
+    rml:iterator "/RDF/Description[P40073[not(@resource)]]"
   ].
 
 ex:Agent_94_Map rr:subjectMap [
@@ -3652,7 +3663,7 @@ ex:Contribution_95_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40073]"
+    rml:iterator "/RDF/Description[P40073[@resource]]"
   ].
 
 ex:Contribution_95_Map rr:subjectMap [
@@ -3679,7 +3690,7 @@ ex:Contribution_96_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40074]"
+    rml:iterator "/RDF/Description[P40074[not(@resource)]]"
   ].
 
 ex:Contribution_96_Map rr:subjectMap [
@@ -3698,7 +3709,7 @@ ex:Agent_96_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40074]"
+    rml:iterator "/RDF/Description[P40074[not(@resource)]]"
   ].
 
 ex:Agent_96_Map rr:subjectMap [
@@ -3736,7 +3747,7 @@ ex:Contribution_97_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40074]"
+    rml:iterator "/RDF/Description[P40074[@resource]]"
   ].
 
 ex:Contribution_97_Map rr:subjectMap [
@@ -3763,7 +3774,7 @@ ex:Contribution_98_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40075]"
+    rml:iterator "/RDF/Description[P40075[not(@resource)]]"
   ].
 
 ex:Contribution_98_Map rr:subjectMap [
@@ -3782,7 +3793,7 @@ ex:Agent_98_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40075]"
+    rml:iterator "/RDF/Description[P40075[not(@resource)]]"
   ].
 
 ex:Agent_98_Map rr:subjectMap [
@@ -3820,7 +3831,7 @@ ex:Contribution_99_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40075]"
+    rml:iterator "/RDF/Description[P40075[@resource]]"
   ].
 
 ex:Contribution_99_Map rr:subjectMap [
@@ -3847,7 +3858,7 @@ ex:Contribution_100_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40076]"
+    rml:iterator "/RDF/Description[P40076[not(@resource)]]"
   ].
 
 ex:Contribution_100_Map rr:subjectMap [
@@ -3866,7 +3877,7 @@ ex:Agent_100_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40076]"
+    rml:iterator "/RDF/Description[P40076[not(@resource)]]"
   ].
 
 ex:Agent_100_Map rr:subjectMap [
@@ -3904,7 +3915,7 @@ ex:Contribution_101_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40076]"
+    rml:iterator "/RDF/Description[P40076[@resource]]"
   ].
 
 ex:Contribution_101_Map rr:subjectMap [
@@ -3977,7 +3988,7 @@ ex:Identifiedby_106_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40080]"
+    rml:iterator "/RDF/Description[P40080[not(@resource)]]"
   ].
 
 ex:Identifiedby_106_Map rr:subjectMap [
@@ -4015,7 +4026,7 @@ ex:Note_106_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40080]"
+    rml:iterator "/RDF/Description[P40080[not(@resource)]]"
   ].
 
 ex:Note_106_Map rr:subjectMap [
@@ -4059,7 +4070,7 @@ ex:Source_106_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40080]"
+    rml:iterator "/RDF/Description[P40080[not(@resource)]]"
   ].
 
 ex:Source_106_Map rr:subjectMap [
@@ -4125,7 +4136,7 @@ ex:Title_108_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40082]"
+    rml:iterator "/RDF/Description[P40082[not(@resource)]]"
   ].
 
 ex:Title_108_Map rr:subjectMap [
@@ -4163,7 +4174,7 @@ ex:Identifiedby_109_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40083]"
+    rml:iterator "/RDF/Description[P40083[not(@resource)]]"
   ].
 
 ex:Identifiedby_109_Map rr:subjectMap [
@@ -4201,7 +4212,7 @@ ex:Note_109_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40083]"
+    rml:iterator "/RDF/Description[P40083[not(@resource)]]"
   ].
 
 ex:Note_109_Map rr:subjectMap [
@@ -4245,7 +4256,7 @@ ex:Source_109_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40083]"
+    rml:iterator "/RDF/Description[P40083[not(@resource)]]"
   ].
 
 ex:Source_109_Map rr:subjectMap [
@@ -4273,7 +4284,7 @@ ex:Identifiedby_110_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40084]"
+    rml:iterator "/RDF/Description[P40084[not(@resource)]]"
   ].
 
 ex:Identifiedby_110_Map rr:subjectMap [
@@ -4311,7 +4322,7 @@ ex:Note_110_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40084]"
+    rml:iterator "/RDF/Description[P40084[not(@resource)]]"
   ].
 
 ex:Note_110_Map rr:subjectMap [
@@ -4355,7 +4366,7 @@ ex:Source_110_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40084]"
+    rml:iterator "/RDF/Description[P40084[not(@resource)]]"
   ].
 
 ex:Source_110_Map rr:subjectMap [
@@ -4402,7 +4413,7 @@ ex:Title_111_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40085]"
+    rml:iterator "/RDF/Description[P40085[not(@resource)]]"
   ].
 
 ex:Title_111_Map rr:subjectMap [
@@ -4440,7 +4451,7 @@ ex:Title_112_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40086]"
+    rml:iterator "/RDF/Description[P40086[not(@resource)]]"
   ].
 
 ex:Title_112_Map rr:subjectMap [
@@ -4754,7 +4765,7 @@ ex:Contribution_125_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40093]"
+    rml:iterator "/RDF/Description[P40093[not(@resource)]]"
   ].
 
 ex:Contribution_125_Map rr:subjectMap [
@@ -4773,7 +4784,7 @@ ex:Agent_125_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40093]"
+    rml:iterator "/RDF/Description[P40093[not(@resource)]]"
   ].
 
 ex:Agent_125_Map rr:subjectMap [
@@ -4818,7 +4829,7 @@ ex:Role_125_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40093]"
+    rml:iterator "/RDF/Description[P40093[not(@resource)]]"
   ].
 
 ex:Role_125_Map rr:subjectMap [
@@ -4846,7 +4857,7 @@ ex:Contribution_126_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40093]"
+    rml:iterator "/RDF/Description[P40093[@resource]]"
   ].
 
 ex:Contribution_126_Map rr:subjectMap [
@@ -4873,7 +4884,7 @@ ex:Role_126_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40093]"
+    rml:iterator "/RDF/Description[P40093[@resource]]"
   ].
 
 ex:Role_126_Map rr:subjectMap [
@@ -4901,7 +4912,7 @@ ex:Note_127_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40094]"
+    rml:iterator "/RDF/Description[P40094[not(@resource)]]"
   ].
 
 ex:Note_127_Map rr:subjectMap [
@@ -5013,7 +5024,7 @@ ex:Contribution_131_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40097]"
+    rml:iterator "/RDF/Description[P40097[not(@resource)]]"
   ].
 
 ex:Contribution_131_Map rr:subjectMap [
@@ -5032,7 +5043,7 @@ ex:Agent_131_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40097]"
+    rml:iterator "/RDF/Description[P40097[not(@resource)]]"
   ].
 
 ex:Agent_131_Map rr:subjectMap [
@@ -5085,7 +5096,7 @@ ex:Contribution_132_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40097]"
+    rml:iterator "/RDF/Description[P40097[@resource]]"
   ].
 
 ex:Contribution_132_Map rr:subjectMap [
@@ -5120,7 +5131,7 @@ ex:Contribution_133_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40098]"
+    rml:iterator "/RDF/Description[P40098[not(@resource)]]"
   ].
 
 ex:Contribution_133_Map rr:subjectMap [
@@ -5147,7 +5158,7 @@ ex:Agent_133_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40098]"
+    rml:iterator "/RDF/Description[P40098[not(@resource)]]"
   ].
 
 ex:Agent_133_Map rr:subjectMap [
@@ -5185,7 +5196,7 @@ ex:Contribution_134_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40098]"
+    rml:iterator "/RDF/Description[P40098[@resource]]"
   ].
 
 ex:Contribution_134_Map rr:subjectMap [
@@ -5220,7 +5231,7 @@ ex:Contribution_135_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40099]"
+    rml:iterator "/RDF/Description[P40099[not(@resource)]]"
   ].
 
 ex:Contribution_135_Map rr:subjectMap [
@@ -5239,7 +5250,7 @@ ex:Agent_135_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40099]"
+    rml:iterator "/RDF/Description[P40099[not(@resource)]]"
   ].
 
 ex:Agent_135_Map rr:subjectMap [
@@ -5292,7 +5303,7 @@ ex:Contribution_136_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40099]"
+    rml:iterator "/RDF/Description[P40099[@resource]]"
   ].
 
 ex:Contribution_136_Map rr:subjectMap [
@@ -5327,7 +5338,7 @@ ex:Contribution_137_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40100]"
+    rml:iterator "/RDF/Description[P40100[not(@resource)]]"
   ].
 
 ex:Contribution_137_Map rr:subjectMap [
@@ -5354,7 +5365,7 @@ ex:Agent_137_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40100]"
+    rml:iterator "/RDF/Description[P40100[not(@resource)]]"
   ].
 
 ex:Agent_137_Map rr:subjectMap [
@@ -5392,7 +5403,7 @@ ex:Contribution_138_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40100]"
+    rml:iterator "/RDF/Description[P40100[@resource]]"
   ].
 
 ex:Contribution_138_Map rr:subjectMap [
@@ -5427,7 +5438,7 @@ ex:Contribution_139_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40101]"
+    rml:iterator "/RDF/Description[P40101[not(@resource)]]"
   ].
 
 ex:Contribution_139_Map rr:subjectMap [
@@ -5446,7 +5457,7 @@ ex:Agent_139_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40101]"
+    rml:iterator "/RDF/Description[P40101[not(@resource)]]"
   ].
 
 ex:Agent_139_Map rr:subjectMap [
@@ -5499,7 +5510,7 @@ ex:Contribution_140_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40101]"
+    rml:iterator "/RDF/Description[P40101[@resource]]"
   ].
 
 ex:Contribution_140_Map rr:subjectMap [
@@ -5534,7 +5545,7 @@ ex:Contribution_141_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40102]"
+    rml:iterator "/RDF/Description[P40102[not(@resource)]]"
   ].
 
 ex:Contribution_141_Map rr:subjectMap [
@@ -5561,7 +5572,7 @@ ex:Agent_141_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40102]"
+    rml:iterator "/RDF/Description[P40102[not(@resource)]]"
   ].
 
 ex:Agent_141_Map rr:subjectMap [
@@ -5599,7 +5610,7 @@ ex:Contribution_142_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40102]"
+    rml:iterator "/RDF/Description[P40102[@resource]]"
   ].
 
 ex:Contribution_142_Map rr:subjectMap [
@@ -5634,7 +5645,7 @@ ex:Contribution_143_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40103]"
+    rml:iterator "/RDF/Description[P40103[not(@resource)]]"
   ].
 
 ex:Contribution_143_Map rr:subjectMap [
@@ -5653,7 +5664,7 @@ ex:Agent_143_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40103]"
+    rml:iterator "/RDF/Description[P40103[not(@resource)]]"
   ].
 
 ex:Agent_143_Map rr:subjectMap [
@@ -5698,7 +5709,7 @@ ex:Role_143_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40103]"
+    rml:iterator "/RDF/Description[P40103[not(@resource)]]"
   ].
 
 ex:Role_143_Map rr:subjectMap [
@@ -5726,7 +5737,7 @@ ex:Contribution_144_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40103]"
+    rml:iterator "/RDF/Description[P40103[@resource]]"
   ].
 
 ex:Contribution_144_Map rr:subjectMap [
@@ -5753,7 +5764,7 @@ ex:Role_144_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40103]"
+    rml:iterator "/RDF/Description[P40103[@resource]]"
   ].
 
 ex:Role_144_Map rr:subjectMap [
@@ -5781,7 +5792,7 @@ ex:Contribution_145_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40104]"
+    rml:iterator "/RDF/Description[P40104[not(@resource)]]"
   ].
 
 ex:Contribution_145_Map rr:subjectMap [
@@ -5800,7 +5811,7 @@ ex:Agent_145_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40104]"
+    rml:iterator "/RDF/Description[P40104[not(@resource)]]"
   ].
 
 ex:Agent_145_Map rr:subjectMap [
@@ -5845,7 +5856,7 @@ ex:Role_145_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40104]"
+    rml:iterator "/RDF/Description[P40104[not(@resource)]]"
   ].
 
 ex:Role_145_Map rr:subjectMap [
@@ -5873,7 +5884,7 @@ ex:Contribution_146_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40104]"
+    rml:iterator "/RDF/Description[P40104[@resource]]"
   ].
 
 ex:Contribution_146_Map rr:subjectMap [
@@ -5900,7 +5911,7 @@ ex:Role_146_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40104]"
+    rml:iterator "/RDF/Description[P40104[@resource]]"
   ].
 
 ex:Role_146_Map rr:subjectMap [
@@ -5928,7 +5939,7 @@ ex:Contribution_147_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40105]"
+    rml:iterator "/RDF/Description[P40105[not(@resource)]]"
   ].
 
 ex:Contribution_147_Map rr:subjectMap [
@@ -5947,7 +5958,7 @@ ex:Agent_147_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40105]"
+    rml:iterator "/RDF/Description[P40105[not(@resource)]]"
   ].
 
 ex:Agent_147_Map rr:subjectMap [
@@ -6000,7 +6011,7 @@ ex:Contribution_148_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40105]"
+    rml:iterator "/RDF/Description[P40105[@resource]]"
   ].
 
 ex:Contribution_148_Map rr:subjectMap [
@@ -6035,7 +6046,7 @@ ex:Contribution_149_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40106]"
+    rml:iterator "/RDF/Description[P40106[not(@resource)]]"
   ].
 
 ex:Contribution_149_Map rr:subjectMap [
@@ -6054,7 +6065,7 @@ ex:Agent_149_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40106]"
+    rml:iterator "/RDF/Description[P40106[not(@resource)]]"
   ].
 
 ex:Agent_149_Map rr:subjectMap [
@@ -6107,7 +6118,7 @@ ex:Contribution_150_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40106]"
+    rml:iterator "/RDF/Description[P40106[@resource]]"
   ].
 
 ex:Contribution_150_Map rr:subjectMap [
@@ -6142,7 +6153,7 @@ ex:Contribution_151_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40107]"
+    rml:iterator "/RDF/Description[P40107[not(@resource)]]"
   ].
 
 ex:Contribution_151_Map rr:subjectMap [
@@ -6169,7 +6180,7 @@ ex:Agent_151_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40107]"
+    rml:iterator "/RDF/Description[P40107[not(@resource)]]"
   ].
 
 ex:Agent_151_Map rr:subjectMap [
@@ -6207,7 +6218,7 @@ ex:Contribution_152_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40107]"
+    rml:iterator "/RDF/Description[P40107[@resource]]"
   ].
 
 ex:Contribution_152_Map rr:subjectMap [
@@ -6242,7 +6253,7 @@ ex:Contribution_153_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40108]"
+    rml:iterator "/RDF/Description[P40108[not(@resource)]]"
   ].
 
 ex:Contribution_153_Map rr:subjectMap [
@@ -6269,7 +6280,7 @@ ex:Agent_153_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40108]"
+    rml:iterator "/RDF/Description[P40108[not(@resource)]]"
   ].
 
 ex:Agent_153_Map rr:subjectMap [
@@ -6307,7 +6318,7 @@ ex:Contribution_154_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40108]"
+    rml:iterator "/RDF/Description[P40108[@resource]]"
   ].
 
 ex:Contribution_154_Map rr:subjectMap [
@@ -6342,7 +6353,7 @@ ex:Contribution_155_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40109]"
+    rml:iterator "/RDF/Description[P40109[not(@resource)]]"
   ].
 
 ex:Contribution_155_Map rr:subjectMap [
@@ -6369,7 +6380,7 @@ ex:Agent_155_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40109]"
+    rml:iterator "/RDF/Description[P40109[not(@resource)]]"
   ].
 
 ex:Agent_155_Map rr:subjectMap [
@@ -6407,7 +6418,7 @@ ex:Contribution_156_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40109]"
+    rml:iterator "/RDF/Description[P40109[@resource]]"
   ].
 
 ex:Contribution_156_Map rr:subjectMap [
@@ -6442,7 +6453,7 @@ ex:Contribution_157_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40110]"
+    rml:iterator "/RDF/Description[P40110[not(@resource)]]"
   ].
 
 ex:Contribution_157_Map rr:subjectMap [
@@ -6461,7 +6472,7 @@ ex:Agent_157_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40110]"
+    rml:iterator "/RDF/Description[P40110[not(@resource)]]"
   ].
 
 ex:Agent_157_Map rr:subjectMap [
@@ -6514,7 +6525,7 @@ ex:Contribution_158_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40110]"
+    rml:iterator "/RDF/Description[P40110[@resource]]"
   ].
 
 ex:Contribution_158_Map rr:subjectMap [
@@ -6549,7 +6560,7 @@ ex:Contribution_159_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40111]"
+    rml:iterator "/RDF/Description[P40111[not(@resource)]]"
   ].
 
 ex:Contribution_159_Map rr:subjectMap [
@@ -6576,7 +6587,7 @@ ex:Agent_159_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40111]"
+    rml:iterator "/RDF/Description[P40111[not(@resource)]]"
   ].
 
 ex:Agent_159_Map rr:subjectMap [
@@ -6614,7 +6625,7 @@ ex:Contribution_160_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40111]"
+    rml:iterator "/RDF/Description[P40111[@resource]]"
   ].
 
 ex:Contribution_160_Map rr:subjectMap [
@@ -6649,7 +6660,7 @@ ex:Contribution_161_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40112]"
+    rml:iterator "/RDF/Description[P40112[not(@resource)]]"
   ].
 
 ex:Contribution_161_Map rr:subjectMap [
@@ -6668,7 +6679,7 @@ ex:Agent_161_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40112]"
+    rml:iterator "/RDF/Description[P40112[not(@resource)]]"
   ].
 
 ex:Agent_161_Map rr:subjectMap [
@@ -6713,7 +6724,7 @@ ex:Role_161_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40112]"
+    rml:iterator "/RDF/Description[P40112[not(@resource)]]"
   ].
 
 ex:Role_161_Map rr:subjectMap [
@@ -6741,7 +6752,7 @@ ex:Contribution_162_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40112]"
+    rml:iterator "/RDF/Description[P40112[@resource]]"
   ].
 
 ex:Contribution_162_Map rr:subjectMap [
@@ -6768,7 +6779,7 @@ ex:Role_162_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40112]"
+    rml:iterator "/RDF/Description[P40112[@resource]]"
   ].
 
 ex:Role_162_Map rr:subjectMap [
@@ -6796,7 +6807,7 @@ ex:Contribution_163_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40113]"
+    rml:iterator "/RDF/Description[P40113[not(@resource)]]"
   ].
 
 ex:Contribution_163_Map rr:subjectMap [
@@ -6815,7 +6826,7 @@ ex:Agent_163_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40113]"
+    rml:iterator "/RDF/Description[P40113[not(@resource)]]"
   ].
 
 ex:Agent_163_Map rr:subjectMap [
@@ -6868,7 +6879,7 @@ ex:Contribution_164_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40113]"
+    rml:iterator "/RDF/Description[P40113[@resource]]"
   ].
 
 ex:Contribution_164_Map rr:subjectMap [
@@ -6903,7 +6914,7 @@ ex:Contribution_165_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40114]"
+    rml:iterator "/RDF/Description[P40114[not(@resource)]]"
   ].
 
 ex:Contribution_165_Map rr:subjectMap [
@@ -6930,7 +6941,7 @@ ex:Agent_165_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40114]"
+    rml:iterator "/RDF/Description[P40114[not(@resource)]]"
   ].
 
 ex:Agent_165_Map rr:subjectMap [
@@ -6968,7 +6979,7 @@ ex:Contribution_166_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40114]"
+    rml:iterator "/RDF/Description[P40114[@resource]]"
   ].
 
 ex:Contribution_166_Map rr:subjectMap [
@@ -7003,7 +7014,7 @@ ex:Contribution_167_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40115]"
+    rml:iterator "/RDF/Description[P40115[not(@resource)]]"
   ].
 
 ex:Contribution_167_Map rr:subjectMap [
@@ -7022,7 +7033,7 @@ ex:Agent_167_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40115]"
+    rml:iterator "/RDF/Description[P40115[not(@resource)]]"
   ].
 
 ex:Agent_167_Map rr:subjectMap [
@@ -7075,7 +7086,7 @@ ex:Contribution_168_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40115]"
+    rml:iterator "/RDF/Description[P40115[@resource]]"
   ].
 
 ex:Contribution_168_Map rr:subjectMap [
@@ -7110,7 +7121,7 @@ ex:Contribution_169_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40116]"
+    rml:iterator "/RDF/Description[P40116[not(@resource)]]"
   ].
 
 ex:Contribution_169_Map rr:subjectMap [
@@ -7137,7 +7148,7 @@ ex:Agent_169_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40116]"
+    rml:iterator "/RDF/Description[P40116[not(@resource)]]"
   ].
 
 ex:Agent_169_Map rr:subjectMap [
@@ -7175,7 +7186,7 @@ ex:Contribution_170_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40116]"
+    rml:iterator "/RDF/Description[P40116[@resource]]"
   ].
 
 ex:Contribution_170_Map rr:subjectMap [
@@ -7210,7 +7221,7 @@ ex:Contribution_171_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40117]"
+    rml:iterator "/RDF/Description[P40117[not(@resource)]]"
   ].
 
 ex:Contribution_171_Map rr:subjectMap [
@@ -7229,7 +7240,7 @@ ex:Agent_171_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40117]"
+    rml:iterator "/RDF/Description[P40117[not(@resource)]]"
   ].
 
 ex:Agent_171_Map rr:subjectMap [
@@ -7282,7 +7293,7 @@ ex:Contribution_172_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40117]"
+    rml:iterator "/RDF/Description[P40117[@resource]]"
   ].
 
 ex:Contribution_172_Map rr:subjectMap [
@@ -7317,7 +7328,7 @@ ex:Contribution_173_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40118]"
+    rml:iterator "/RDF/Description[P40118[not(@resource)]]"
   ].
 
 ex:Contribution_173_Map rr:subjectMap [
@@ -7344,7 +7355,7 @@ ex:Agent_173_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40118]"
+    rml:iterator "/RDF/Description[P40118[not(@resource)]]"
   ].
 
 ex:Agent_173_Map rr:subjectMap [
@@ -7382,7 +7393,7 @@ ex:Contribution_174_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40118]"
+    rml:iterator "/RDF/Description[P40118[@resource]]"
   ].
 
 ex:Contribution_174_Map rr:subjectMap [
@@ -7417,7 +7428,7 @@ ex:Contribution_175_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40119]"
+    rml:iterator "/RDF/Description[P40119[not(@resource)]]"
   ].
 
 ex:Contribution_175_Map rr:subjectMap [
@@ -7436,7 +7447,7 @@ ex:Agent_175_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40119]"
+    rml:iterator "/RDF/Description[P40119[not(@resource)]]"
   ].
 
 ex:Agent_175_Map rr:subjectMap [
@@ -7481,7 +7492,7 @@ ex:Role_175_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40119]"
+    rml:iterator "/RDF/Description[P40119[not(@resource)]]"
   ].
 
 ex:Role_175_Map rr:subjectMap [
@@ -7509,7 +7520,7 @@ ex:Contribution_176_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40119]"
+    rml:iterator "/RDF/Description[P40119[@resource]]"
   ].
 
 ex:Contribution_176_Map rr:subjectMap [
@@ -7536,7 +7547,7 @@ ex:Role_176_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40119]"
+    rml:iterator "/RDF/Description[P40119[@resource]]"
   ].
 
 ex:Role_176_Map rr:subjectMap [
@@ -7564,7 +7575,7 @@ ex:Contribution_177_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40120]"
+    rml:iterator "/RDF/Description[P40120[not(@resource)]]"
   ].
 
 ex:Contribution_177_Map rr:subjectMap [
@@ -7583,7 +7594,7 @@ ex:Agent_177_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40120]"
+    rml:iterator "/RDF/Description[P40120[not(@resource)]]"
   ].
 
 ex:Agent_177_Map rr:subjectMap [
@@ -7628,7 +7639,7 @@ ex:Role_177_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40120]"
+    rml:iterator "/RDF/Description[P40120[not(@resource)]]"
   ].
 
 ex:Role_177_Map rr:subjectMap [
@@ -7656,7 +7667,7 @@ ex:Contribution_178_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40120]"
+    rml:iterator "/RDF/Description[P40120[@resource]]"
   ].
 
 ex:Contribution_178_Map rr:subjectMap [
@@ -7683,7 +7694,7 @@ ex:Role_178_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40120]"
+    rml:iterator "/RDF/Description[P40120[@resource]]"
   ].
 
 ex:Role_178_Map rr:subjectMap [
@@ -7711,7 +7722,7 @@ ex:Contribution_179_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40121]"
+    rml:iterator "/RDF/Description[P40121[not(@resource)]]"
   ].
 
 ex:Contribution_179_Map rr:subjectMap [
@@ -7730,7 +7741,7 @@ ex:Agent_179_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40121]"
+    rml:iterator "/RDF/Description[P40121[not(@resource)]]"
   ].
 
 ex:Agent_179_Map rr:subjectMap [
@@ -7783,7 +7794,7 @@ ex:Contribution_180_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40121]"
+    rml:iterator "/RDF/Description[P40121[@resource]]"
   ].
 
 ex:Contribution_180_Map rr:subjectMap [
@@ -7818,7 +7829,7 @@ ex:Contribution_181_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40122]"
+    rml:iterator "/RDF/Description[P40122[not(@resource)]]"
   ].
 
 ex:Contribution_181_Map rr:subjectMap [
@@ -7837,7 +7848,7 @@ ex:Agent_181_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40122]"
+    rml:iterator "/RDF/Description[P40122[not(@resource)]]"
   ].
 
 ex:Agent_181_Map rr:subjectMap [
@@ -7890,7 +7901,7 @@ ex:Contribution_182_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40122]"
+    rml:iterator "/RDF/Description[P40122[@resource]]"
   ].
 
 ex:Contribution_182_Map rr:subjectMap [
@@ -7925,7 +7936,7 @@ ex:Contribution_183_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40123]"
+    rml:iterator "/RDF/Description[P40123[not(@resource)]]"
   ].
 
 ex:Contribution_183_Map rr:subjectMap [
@@ -7952,7 +7963,7 @@ ex:Agent_183_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40123]"
+    rml:iterator "/RDF/Description[P40123[not(@resource)]]"
   ].
 
 ex:Agent_183_Map rr:subjectMap [
@@ -7990,7 +8001,7 @@ ex:Contribution_184_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40123]"
+    rml:iterator "/RDF/Description[P40123[@resource]]"
   ].
 
 ex:Contribution_184_Map rr:subjectMap [
@@ -8025,7 +8036,7 @@ ex:Contribution_185_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40124]"
+    rml:iterator "/RDF/Description[P40124[not(@resource)]]"
   ].
 
 ex:Contribution_185_Map rr:subjectMap [
@@ -8052,7 +8063,7 @@ ex:Agent_185_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40124]"
+    rml:iterator "/RDF/Description[P40124[not(@resource)]]"
   ].
 
 ex:Agent_185_Map rr:subjectMap [
@@ -8090,7 +8101,7 @@ ex:Contribution_186_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40124]"
+    rml:iterator "/RDF/Description[P40124[@resource]]"
   ].
 
 ex:Contribution_186_Map rr:subjectMap [
@@ -8125,7 +8136,7 @@ ex:Contribution_187_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40125]"
+    rml:iterator "/RDF/Description[P40125[not(@resource)]]"
   ].
 
 ex:Contribution_187_Map rr:subjectMap [
@@ -8152,7 +8163,7 @@ ex:Agent_187_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40125]"
+    rml:iterator "/RDF/Description[P40125[not(@resource)]]"
   ].
 
 ex:Agent_187_Map rr:subjectMap [
@@ -8190,7 +8201,7 @@ ex:Contribution_188_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40125]"
+    rml:iterator "/RDF/Description[P40125[@resource]]"
   ].
 
 ex:Contribution_188_Map rr:subjectMap [
@@ -8225,7 +8236,7 @@ ex:Contribution_189_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40126]"
+    rml:iterator "/RDF/Description[P40126[not(@resource)]]"
   ].
 
 ex:Contribution_189_Map rr:subjectMap [
@@ -8244,7 +8255,7 @@ ex:Agent_189_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40126]"
+    rml:iterator "/RDF/Description[P40126[not(@resource)]]"
   ].
 
 ex:Agent_189_Map rr:subjectMap [
@@ -8297,7 +8308,7 @@ ex:Contribution_190_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40126]"
+    rml:iterator "/RDF/Description[P40126[@resource]]"
   ].
 
 ex:Contribution_190_Map rr:subjectMap [
@@ -8332,7 +8343,7 @@ ex:Contribution_191_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40127]"
+    rml:iterator "/RDF/Description[P40127[not(@resource)]]"
   ].
 
 ex:Contribution_191_Map rr:subjectMap [
@@ -8359,7 +8370,7 @@ ex:Agent_191_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40127]"
+    rml:iterator "/RDF/Description[P40127[not(@resource)]]"
   ].
 
 ex:Agent_191_Map rr:subjectMap [
@@ -8397,7 +8408,7 @@ ex:Contribution_192_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40127]"
+    rml:iterator "/RDF/Description[P40127[@resource]]"
   ].
 
 ex:Contribution_192_Map rr:subjectMap [
@@ -8432,7 +8443,7 @@ ex:Contribution_193_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40128]"
+    rml:iterator "/RDF/Description[P40128[not(@resource)]]"
   ].
 
 ex:Contribution_193_Map rr:subjectMap [
@@ -8451,7 +8462,7 @@ ex:Agent_193_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40128]"
+    rml:iterator "/RDF/Description[P40128[not(@resource)]]"
   ].
 
 ex:Agent_193_Map rr:subjectMap [
@@ -8496,7 +8507,7 @@ ex:Role_193_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40128]"
+    rml:iterator "/RDF/Description[P40128[not(@resource)]]"
   ].
 
 ex:Role_193_Map rr:subjectMap [
@@ -8524,7 +8535,7 @@ ex:Contribution_194_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40128]"
+    rml:iterator "/RDF/Description[P40128[@resource]]"
   ].
 
 ex:Contribution_194_Map rr:subjectMap [
@@ -8551,7 +8562,7 @@ ex:Role_194_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40128]"
+    rml:iterator "/RDF/Description[P40128[@resource]]"
   ].
 
 ex:Role_194_Map rr:subjectMap [
@@ -8579,7 +8590,7 @@ ex:Contribution_195_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40129]"
+    rml:iterator "/RDF/Description[P40129[not(@resource)]]"
   ].
 
 ex:Contribution_195_Map rr:subjectMap [
@@ -8598,7 +8609,7 @@ ex:Agent_195_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40129]"
+    rml:iterator "/RDF/Description[P40129[not(@resource)]]"
   ].
 
 ex:Agent_195_Map rr:subjectMap [
@@ -8651,7 +8662,7 @@ ex:Contribution_196_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40129]"
+    rml:iterator "/RDF/Description[P40129[@resource]]"
   ].
 
 ex:Contribution_196_Map rr:subjectMap [
@@ -8686,7 +8697,7 @@ ex:Contribution_197_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40130]"
+    rml:iterator "/RDF/Description[P40130[not(@resource)]]"
   ].
 
 ex:Contribution_197_Map rr:subjectMap [
@@ -8713,7 +8724,7 @@ ex:Agent_197_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40130]"
+    rml:iterator "/RDF/Description[P40130[not(@resource)]]"
   ].
 
 ex:Agent_197_Map rr:subjectMap [
@@ -8751,7 +8762,7 @@ ex:Contribution_198_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40130]"
+    rml:iterator "/RDF/Description[P40130[@resource]]"
   ].
 
 ex:Contribution_198_Map rr:subjectMap [
@@ -8786,7 +8797,7 @@ ex:Contribution_199_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40131]"
+    rml:iterator "/RDF/Description[P40131[not(@resource)]]"
   ].
 
 ex:Contribution_199_Map rr:subjectMap [
@@ -8805,7 +8816,7 @@ ex:Agent_199_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40131]"
+    rml:iterator "/RDF/Description[P40131[not(@resource)]]"
   ].
 
 ex:Agent_199_Map rr:subjectMap [
@@ -8858,7 +8869,7 @@ ex:Contribution_200_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40131]"
+    rml:iterator "/RDF/Description[P40131[@resource]]"
   ].
 
 ex:Contribution_200_Map rr:subjectMap [
@@ -8893,7 +8904,7 @@ ex:Contribution_201_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40132]"
+    rml:iterator "/RDF/Description[P40132[not(@resource)]]"
   ].
 
 ex:Contribution_201_Map rr:subjectMap [
@@ -8920,7 +8931,7 @@ ex:Agent_201_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40132]"
+    rml:iterator "/RDF/Description[P40132[not(@resource)]]"
   ].
 
 ex:Agent_201_Map rr:subjectMap [
@@ -8958,7 +8969,7 @@ ex:Contribution_202_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40132]"
+    rml:iterator "/RDF/Description[P40132[@resource]]"
   ].
 
 ex:Contribution_202_Map rr:subjectMap [
@@ -8993,7 +9004,7 @@ ex:Contribution_203_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40133]"
+    rml:iterator "/RDF/Description[P40133[not(@resource)]]"
   ].
 
 ex:Contribution_203_Map rr:subjectMap [
@@ -9012,7 +9023,7 @@ ex:Agent_203_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40133]"
+    rml:iterator "/RDF/Description[P40133[not(@resource)]]"
   ].
 
 ex:Agent_203_Map rr:subjectMap [
@@ -9065,7 +9076,7 @@ ex:Contribution_204_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40133]"
+    rml:iterator "/RDF/Description[P40133[@resource]]"
   ].
 
 ex:Contribution_204_Map rr:subjectMap [
@@ -9100,7 +9111,7 @@ ex:Contribution_205_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40134]"
+    rml:iterator "/RDF/Description[P40134[not(@resource)]]"
   ].
 
 ex:Contribution_205_Map rr:subjectMap [
@@ -9127,7 +9138,7 @@ ex:Agent_205_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40134]"
+    rml:iterator "/RDF/Description[P40134[not(@resource)]]"
   ].
 
 ex:Agent_205_Map rr:subjectMap [
@@ -9165,7 +9176,7 @@ ex:Contribution_206_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40134]"
+    rml:iterator "/RDF/Description[P40134[@resource]]"
   ].
 
 ex:Contribution_206_Map rr:subjectMap [
@@ -9200,7 +9211,7 @@ ex:Contribution_207_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40135]"
+    rml:iterator "/RDF/Description[P40135[not(@resource)]]"
   ].
 
 ex:Contribution_207_Map rr:subjectMap [
@@ -9219,7 +9230,7 @@ ex:Agent_207_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40135]"
+    rml:iterator "/RDF/Description[P40135[not(@resource)]]"
   ].
 
 ex:Agent_207_Map rr:subjectMap [
@@ -9264,7 +9275,7 @@ ex:Role_207_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40135]"
+    rml:iterator "/RDF/Description[P40135[not(@resource)]]"
   ].
 
 ex:Role_207_Map rr:subjectMap [
@@ -9292,7 +9303,7 @@ ex:Contribution_208_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40135]"
+    rml:iterator "/RDF/Description[P40135[@resource]]"
   ].
 
 ex:Contribution_208_Map rr:subjectMap [
@@ -9319,7 +9330,7 @@ ex:Role_208_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40135]"
+    rml:iterator "/RDF/Description[P40135[@resource]]"
   ].
 
 ex:Role_208_Map rr:subjectMap [
@@ -9347,7 +9358,7 @@ ex:Contribution_209_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40136]"
+    rml:iterator "/RDF/Description[P40136[not(@resource)]]"
   ].
 
 ex:Contribution_209_Map rr:subjectMap [
@@ -9366,7 +9377,7 @@ ex:Agent_209_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40136]"
+    rml:iterator "/RDF/Description[P40136[not(@resource)]]"
   ].
 
 ex:Agent_209_Map rr:subjectMap [
@@ -9411,7 +9422,7 @@ ex:Role_209_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40136]"
+    rml:iterator "/RDF/Description[P40136[not(@resource)]]"
   ].
 
 ex:Role_209_Map rr:subjectMap [
@@ -9439,7 +9450,7 @@ ex:Contribution_210_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40136]"
+    rml:iterator "/RDF/Description[P40136[@resource]]"
   ].
 
 ex:Contribution_210_Map rr:subjectMap [
@@ -9466,7 +9477,7 @@ ex:Role_210_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40136]"
+    rml:iterator "/RDF/Description[P40136[@resource]]"
   ].
 
 ex:Role_210_Map rr:subjectMap [
@@ -9494,7 +9505,7 @@ ex:Contribution_211_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40137]"
+    rml:iterator "/RDF/Description[P40137[not(@resource)]]"
   ].
 
 ex:Contribution_211_Map rr:subjectMap [
@@ -9513,7 +9524,7 @@ ex:Agent_211_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40137]"
+    rml:iterator "/RDF/Description[P40137[not(@resource)]]"
   ].
 
 ex:Agent_211_Map rr:subjectMap [
@@ -9566,7 +9577,7 @@ ex:Contribution_212_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40137]"
+    rml:iterator "/RDF/Description[P40137[@resource]]"
   ].
 
 ex:Contribution_212_Map rr:subjectMap [
@@ -9601,7 +9612,7 @@ ex:Contribution_213_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40138]"
+    rml:iterator "/RDF/Description[P40138[not(@resource)]]"
   ].
 
 ex:Contribution_213_Map rr:subjectMap [
@@ -9620,7 +9631,7 @@ ex:Agent_213_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40138]"
+    rml:iterator "/RDF/Description[P40138[not(@resource)]]"
   ].
 
 ex:Agent_213_Map rr:subjectMap [
@@ -9673,7 +9684,7 @@ ex:Contribution_214_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40138]"
+    rml:iterator "/RDF/Description[P40138[@resource]]"
   ].
 
 ex:Contribution_214_Map rr:subjectMap [
@@ -9708,7 +9719,7 @@ ex:Contribution_215_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40139]"
+    rml:iterator "/RDF/Description[P40139[not(@resource)]]"
   ].
 
 ex:Contribution_215_Map rr:subjectMap [
@@ -9735,7 +9746,7 @@ ex:Agent_215_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40139]"
+    rml:iterator "/RDF/Description[P40139[not(@resource)]]"
   ].
 
 ex:Agent_215_Map rr:subjectMap [
@@ -9773,7 +9784,7 @@ ex:Contribution_216_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40139]"
+    rml:iterator "/RDF/Description[P40139[@resource]]"
   ].
 
 ex:Contribution_216_Map rr:subjectMap [
@@ -9808,7 +9819,7 @@ ex:Contribution_217_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40140]"
+    rml:iterator "/RDF/Description[P40140[not(@resource)]]"
   ].
 
 ex:Contribution_217_Map rr:subjectMap [
@@ -9835,7 +9846,7 @@ ex:Agent_217_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40140]"
+    rml:iterator "/RDF/Description[P40140[not(@resource)]]"
   ].
 
 ex:Agent_217_Map rr:subjectMap [
@@ -9873,7 +9884,7 @@ ex:Contribution_218_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40140]"
+    rml:iterator "/RDF/Description[P40140[@resource]]"
   ].
 
 ex:Contribution_218_Map rr:subjectMap [
@@ -9908,7 +9919,7 @@ ex:Contribution_219_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40141]"
+    rml:iterator "/RDF/Description[P40141[not(@resource)]]"
   ].
 
 ex:Contribution_219_Map rr:subjectMap [
@@ -9935,7 +9946,7 @@ ex:Agent_219_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40141]"
+    rml:iterator "/RDF/Description[P40141[not(@resource)]]"
   ].
 
 ex:Agent_219_Map rr:subjectMap [
@@ -9973,7 +9984,7 @@ ex:Contribution_220_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40141]"
+    rml:iterator "/RDF/Description[P40141[@resource]]"
   ].
 
 ex:Contribution_220_Map rr:subjectMap [
@@ -10008,7 +10019,7 @@ ex:Contribution_221_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40142]"
+    rml:iterator "/RDF/Description[P40142[not(@resource)]]"
   ].
 
 ex:Contribution_221_Map rr:subjectMap [
@@ -10027,7 +10038,7 @@ ex:Agent_221_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40142]"
+    rml:iterator "/RDF/Description[P40142[not(@resource)]]"
   ].
 
 ex:Agent_221_Map rr:subjectMap [
@@ -10080,7 +10091,7 @@ ex:Contribution_222_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40142]"
+    rml:iterator "/RDF/Description[P40142[@resource]]"
   ].
 
 ex:Contribution_222_Map rr:subjectMap [
@@ -10115,7 +10126,7 @@ ex:Contribution_223_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40143]"
+    rml:iterator "/RDF/Description[P40143[not(@resource)]]"
   ].
 
 ex:Contribution_223_Map rr:subjectMap [
@@ -10142,7 +10153,7 @@ ex:Agent_223_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40143]"
+    rml:iterator "/RDF/Description[P40143[not(@resource)]]"
   ].
 
 ex:Agent_223_Map rr:subjectMap [
@@ -10180,7 +10191,7 @@ ex:Contribution_224_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40143]"
+    rml:iterator "/RDF/Description[P40143[@resource]]"
   ].
 
 ex:Contribution_224_Map rr:subjectMap [
@@ -10215,7 +10226,7 @@ ex:Contribution_225_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40144]"
+    rml:iterator "/RDF/Description[P40144[not(@resource)]]"
   ].
 
 ex:Contribution_225_Map rr:subjectMap [
@@ -10234,7 +10245,7 @@ ex:Agent_225_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40144]"
+    rml:iterator "/RDF/Description[P40144[not(@resource)]]"
   ].
 
 ex:Agent_225_Map rr:subjectMap [
@@ -10279,7 +10290,7 @@ ex:Role_225_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40144]"
+    rml:iterator "/RDF/Description[P40144[not(@resource)]]"
   ].
 
 ex:Role_225_Map rr:subjectMap [
@@ -10307,7 +10318,7 @@ ex:Contribution_226_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40144]"
+    rml:iterator "/RDF/Description[P40144[@resource]]"
   ].
 
 ex:Contribution_226_Map rr:subjectMap [
@@ -10334,7 +10345,7 @@ ex:Role_226_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40144]"
+    rml:iterator "/RDF/Description[P40144[@resource]]"
   ].
 
 ex:Role_226_Map rr:subjectMap [
@@ -10362,7 +10373,7 @@ ex:Contribution_227_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40145]"
+    rml:iterator "/RDF/Description[P40145[not(@resource)]]"
   ].
 
 ex:Contribution_227_Map rr:subjectMap [
@@ -10381,7 +10392,7 @@ ex:Agent_227_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40145]"
+    rml:iterator "/RDF/Description[P40145[not(@resource)]]"
   ].
 
 ex:Agent_227_Map rr:subjectMap [
@@ -10434,7 +10445,7 @@ ex:Contribution_228_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40145]"
+    rml:iterator "/RDF/Description[P40145[@resource]]"
   ].
 
 ex:Contribution_228_Map rr:subjectMap [
@@ -10469,7 +10480,7 @@ ex:Contribution_229_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40146]"
+    rml:iterator "/RDF/Description[P40146[not(@resource)]]"
   ].
 
 ex:Contribution_229_Map rr:subjectMap [
@@ -10496,7 +10507,7 @@ ex:Agent_229_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40146]"
+    rml:iterator "/RDF/Description[P40146[not(@resource)]]"
   ].
 
 ex:Agent_229_Map rr:subjectMap [
@@ -10534,7 +10545,7 @@ ex:Contribution_230_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40146]"
+    rml:iterator "/RDF/Description[P40146[@resource]]"
   ].
 
 ex:Contribution_230_Map rr:subjectMap [
@@ -10569,7 +10580,7 @@ ex:Contribution_231_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40147]"
+    rml:iterator "/RDF/Description[P40147[not(@resource)]]"
   ].
 
 ex:Contribution_231_Map rr:subjectMap [
@@ -10588,7 +10599,7 @@ ex:Agent_231_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40147]"
+    rml:iterator "/RDF/Description[P40147[not(@resource)]]"
   ].
 
 ex:Agent_231_Map rr:subjectMap [
@@ -10641,7 +10652,7 @@ ex:Contribution_232_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40147]"
+    rml:iterator "/RDF/Description[P40147[@resource]]"
   ].
 
 ex:Contribution_232_Map rr:subjectMap [
@@ -10676,7 +10687,7 @@ ex:Contribution_233_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40148]"
+    rml:iterator "/RDF/Description[P40148[not(@resource)]]"
   ].
 
 ex:Contribution_233_Map rr:subjectMap [
@@ -10703,7 +10714,7 @@ ex:Agent_233_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40148]"
+    rml:iterator "/RDF/Description[P40148[not(@resource)]]"
   ].
 
 ex:Agent_233_Map rr:subjectMap [
@@ -10741,7 +10752,7 @@ ex:Contribution_234_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40148]"
+    rml:iterator "/RDF/Description[P40148[@resource]]"
   ].
 
 ex:Contribution_234_Map rr:subjectMap [
@@ -10776,7 +10787,7 @@ ex:Contribution_235_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40149]"
+    rml:iterator "/RDF/Description[P40149[not(@resource)]]"
   ].
 
 ex:Contribution_235_Map rr:subjectMap [
@@ -10795,7 +10806,7 @@ ex:Agent_235_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40149]"
+    rml:iterator "/RDF/Description[P40149[not(@resource)]]"
   ].
 
 ex:Agent_235_Map rr:subjectMap [
@@ -10848,7 +10859,7 @@ ex:Contribution_236_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40149]"
+    rml:iterator "/RDF/Description[P40149[@resource]]"
   ].
 
 ex:Contribution_236_Map rr:subjectMap [
@@ -10883,7 +10894,7 @@ ex:Contribution_237_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40150]"
+    rml:iterator "/RDF/Description[P40150[not(@resource)]]"
   ].
 
 ex:Contribution_237_Map rr:subjectMap [
@@ -10910,7 +10921,7 @@ ex:Agent_237_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40150]"
+    rml:iterator "/RDF/Description[P40150[not(@resource)]]"
   ].
 
 ex:Agent_237_Map rr:subjectMap [
@@ -10948,7 +10959,7 @@ ex:Contribution_238_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40150]"
+    rml:iterator "/RDF/Description[P40150[@resource]]"
   ].
 
 ex:Contribution_238_Map rr:subjectMap [
@@ -10983,7 +10994,7 @@ ex:Contribution_239_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40151]"
+    rml:iterator "/RDF/Description[P40151[not(@resource)]]"
   ].
 
 ex:Contribution_239_Map rr:subjectMap [
@@ -11002,7 +11013,7 @@ ex:Agent_239_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40151]"
+    rml:iterator "/RDF/Description[P40151[not(@resource)]]"
   ].
 
 ex:Agent_239_Map rr:subjectMap [
@@ -11047,7 +11058,7 @@ ex:Role_239_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40151]"
+    rml:iterator "/RDF/Description[P40151[not(@resource)]]"
   ].
 
 ex:Role_239_Map rr:subjectMap [
@@ -11075,7 +11086,7 @@ ex:Contribution_240_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40151]"
+    rml:iterator "/RDF/Description[P40151[@resource]]"
   ].
 
 ex:Contribution_240_Map rr:subjectMap [
@@ -11102,7 +11113,7 @@ ex:Role_240_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40151]"
+    rml:iterator "/RDF/Description[P40151[@resource]]"
   ].
 
 ex:Role_240_Map rr:subjectMap [
@@ -11130,7 +11141,7 @@ ex:Contribution_241_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40152]"
+    rml:iterator "/RDF/Description[P40152[not(@resource)]]"
   ].
 
 ex:Contribution_241_Map rr:subjectMap [
@@ -11149,7 +11160,7 @@ ex:Agent_241_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40152]"
+    rml:iterator "/RDF/Description[P40152[not(@resource)]]"
   ].
 
 ex:Agent_241_Map rr:subjectMap [
@@ -11194,7 +11205,7 @@ ex:Role_241_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40152]"
+    rml:iterator "/RDF/Description[P40152[not(@resource)]]"
   ].
 
 ex:Role_241_Map rr:subjectMap [
@@ -11222,7 +11233,7 @@ ex:Contribution_242_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40152]"
+    rml:iterator "/RDF/Description[P40152[@resource]]"
   ].
 
 ex:Contribution_242_Map rr:subjectMap [
@@ -11249,7 +11260,7 @@ ex:Role_242_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40152]"
+    rml:iterator "/RDF/Description[P40152[@resource]]"
   ].
 
 ex:Role_242_Map rr:subjectMap [
@@ -11277,7 +11288,7 @@ ex:Contribution_243_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40153]"
+    rml:iterator "/RDF/Description[P40153[not(@resource)]]"
   ].
 
 ex:Contribution_243_Map rr:subjectMap [
@@ -11296,7 +11307,7 @@ ex:Agent_243_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40153]"
+    rml:iterator "/RDF/Description[P40153[not(@resource)]]"
   ].
 
 ex:Agent_243_Map rr:subjectMap [
@@ -11349,7 +11360,7 @@ ex:Contribution_244_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40153]"
+    rml:iterator "/RDF/Description[P40153[@resource]]"
   ].
 
 ex:Contribution_244_Map rr:subjectMap [
@@ -11384,7 +11395,7 @@ ex:Contribution_245_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40154]"
+    rml:iterator "/RDF/Description[P40154[not(@resource)]]"
   ].
 
 ex:Contribution_245_Map rr:subjectMap [
@@ -11403,7 +11414,7 @@ ex:Agent_245_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40154]"
+    rml:iterator "/RDF/Description[P40154[not(@resource)]]"
   ].
 
 ex:Agent_245_Map rr:subjectMap [
@@ -11456,7 +11467,7 @@ ex:Contribution_246_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40154]"
+    rml:iterator "/RDF/Description[P40154[@resource]]"
   ].
 
 ex:Contribution_246_Map rr:subjectMap [
@@ -11491,7 +11502,7 @@ ex:Contribution_247_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40155]"
+    rml:iterator "/RDF/Description[P40155[not(@resource)]]"
   ].
 
 ex:Contribution_247_Map rr:subjectMap [
@@ -11518,7 +11529,7 @@ ex:Agent_247_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40155]"
+    rml:iterator "/RDF/Description[P40155[not(@resource)]]"
   ].
 
 ex:Agent_247_Map rr:subjectMap [
@@ -11556,7 +11567,7 @@ ex:Contribution_248_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40155]"
+    rml:iterator "/RDF/Description[P40155[@resource]]"
   ].
 
 ex:Contribution_248_Map rr:subjectMap [
@@ -11591,7 +11602,7 @@ ex:Contribution_249_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40156]"
+    rml:iterator "/RDF/Description[P40156[not(@resource)]]"
   ].
 
 ex:Contribution_249_Map rr:subjectMap [
@@ -11618,7 +11629,7 @@ ex:Agent_249_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40156]"
+    rml:iterator "/RDF/Description[P40156[not(@resource)]]"
   ].
 
 ex:Agent_249_Map rr:subjectMap [
@@ -11656,7 +11667,7 @@ ex:Contribution_250_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40156]"
+    rml:iterator "/RDF/Description[P40156[@resource]]"
   ].
 
 ex:Contribution_250_Map rr:subjectMap [
@@ -11691,7 +11702,7 @@ ex:Contribution_251_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40157]"
+    rml:iterator "/RDF/Description[P40157[not(@resource)]]"
   ].
 
 ex:Contribution_251_Map rr:subjectMap [
@@ -11718,7 +11729,7 @@ ex:Agent_251_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40157]"
+    rml:iterator "/RDF/Description[P40157[not(@resource)]]"
   ].
 
 ex:Agent_251_Map rr:subjectMap [
@@ -11756,7 +11767,7 @@ ex:Contribution_252_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40157]"
+    rml:iterator "/RDF/Description[P40157[@resource]]"
   ].
 
 ex:Contribution_252_Map rr:subjectMap [
@@ -11791,7 +11802,7 @@ ex:Contribution_253_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40158]"
+    rml:iterator "/RDF/Description[P40158[not(@resource)]]"
   ].
 
 ex:Contribution_253_Map rr:subjectMap [
@@ -11810,7 +11821,7 @@ ex:Agent_253_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40158]"
+    rml:iterator "/RDF/Description[P40158[not(@resource)]]"
   ].
 
 ex:Agent_253_Map rr:subjectMap [
@@ -11863,7 +11874,7 @@ ex:Contribution_254_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40158]"
+    rml:iterator "/RDF/Description[P40158[@resource]]"
   ].
 
 ex:Contribution_254_Map rr:subjectMap [
@@ -11898,7 +11909,7 @@ ex:Contribution_255_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40159]"
+    rml:iterator "/RDF/Description[P40159[not(@resource)]]"
   ].
 
 ex:Contribution_255_Map rr:subjectMap [
@@ -11925,7 +11936,7 @@ ex:Agent_255_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40159]"
+    rml:iterator "/RDF/Description[P40159[not(@resource)]]"
   ].
 
 ex:Agent_255_Map rr:subjectMap [
@@ -11963,7 +11974,7 @@ ex:Contribution_256_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40159]"
+    rml:iterator "/RDF/Description[P40159[@resource]]"
   ].
 
 ex:Contribution_256_Map rr:subjectMap [
@@ -11998,7 +12009,7 @@ ex:Contribution_257_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40160]"
+    rml:iterator "/RDF/Description[P40160[not(@resource)]]"
   ].
 
 ex:Contribution_257_Map rr:subjectMap [
@@ -12017,7 +12028,7 @@ ex:Agent_257_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40160]"
+    rml:iterator "/RDF/Description[P40160[not(@resource)]]"
   ].
 
 ex:Agent_257_Map rr:subjectMap [
@@ -12062,7 +12073,7 @@ ex:Role_257_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40160]"
+    rml:iterator "/RDF/Description[P40160[not(@resource)]]"
   ].
 
 ex:Role_257_Map rr:subjectMap [
@@ -12090,7 +12101,7 @@ ex:Contribution_258_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40160]"
+    rml:iterator "/RDF/Description[P40160[@resource]]"
   ].
 
 ex:Contribution_258_Map rr:subjectMap [
@@ -12117,7 +12128,7 @@ ex:Role_258_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40160]"
+    rml:iterator "/RDF/Description[P40160[@resource]]"
   ].
 
 ex:Role_258_Map rr:subjectMap [
@@ -12145,7 +12156,7 @@ ex:Contribution_259_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasContributorAgent]"
+    rml:iterator "/RDF/Description[hasContributorAgent[@resource]]"
   ].
 
 ex:Contribution_259_Map rr:subjectMap [
@@ -12172,7 +12183,7 @@ ex:Contribution_260_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasContributorAgent]"
+    rml:iterator "/RDF/Description[hasContributorAgent[not(@resource)]]"
   ].
 
 ex:Contribution_260_Map rr:subjectMap [
@@ -12191,7 +12202,7 @@ ex:Agent_260_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasContributorAgent]"
+    rml:iterator "/RDF/Description[hasContributorAgent[not(@resource)]]"
   ].
 
 ex:Agent_260_Map rr:subjectMap [
@@ -12275,7 +12286,7 @@ ex:Classification_263_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasLcClassificationPartA]"
+    rml:iterator "/RDF/Description[hasLcClassificationPartA[not(@resource)]]"
   ].
 
 ex:Classification_263_Map rr:subjectMap [
@@ -12301,7 +12312,7 @@ ex:Classification_265_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasNlmClassificationPartA]"
+    rml:iterator "/RDF/Description[hasNlmClassificationPartA[not(@resource)]]"
   ].
 
 ex:Classification_265_Map rr:subjectMap [
@@ -12327,7 +12338,7 @@ ex:Classification_267_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
+    rml:iterator "/RDF/Description[hasSuDocClassificationNumber[not(@resource)]]"
   ].
 
 ex:Classification_267_Map rr:subjectMap [
@@ -12365,7 +12376,7 @@ ex:Source_267_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasSuDocClassificationNumber]"
+    rml:iterator "/RDF/Description[hasSuDocClassificationNumber[not(@resource)]]"
   ].
 
 ex:Source_267_Map rr:subjectMap [
@@ -12466,7 +12477,7 @@ ex:Identifier_273_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[hasBarcode]"
+    rml:iterator "/RDF/Description[hasBarcode[not(@resource)]]"
   ].
 
 ex:Identifier_273_Map rr:subjectMap [
