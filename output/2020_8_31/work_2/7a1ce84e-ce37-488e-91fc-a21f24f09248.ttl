@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7a1ce84e-ce37-488e-91fc-a21f24f09248> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status _:N31802d70b4854b969666848781da8df5,
+                _:N43b33c6aafc149fb871e431864c3db86 ],
+        [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-20" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status _:N31802d70b4854b969666848781da8df5,
+                _:N43b33c6aafc149fb871e431864c3db86 ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> ;
+    ns1:genreForm [ a ns1:GenreForm ;
+            rdfs:label "Comedy plays",
+                "dialect drama" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "lccn: 42021317"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "lccn: 42021317"@eng ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "lccn: 42021317"@eng ] ;
+            rdf:value "lccn: 42021317"@eng ] ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:originDate "1942"@eng .
+
+_:N31802d70b4854b969666848781da8df5 a ns1:Status ;
+    ns1:code "n" .
+
+_:N43b33c6aafc149fb871e431864c3db86 a ns1:Status ;
+    ns1:code "n" .
+

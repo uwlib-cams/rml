@@ -1,0 +1,25 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2494050f-4c0a-4357-a601-2d590a216a24> a ns1:Item ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-30" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:classification [ a ns1:ClassificationLcc ;
+            rdf:value "PS3503.R2743M5 1922" ] ;
+    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    ns1:identifier [ a ns1:Barcode ;
+            rdf:value "39352038787230"@eng ] ;
+    ns1:itemOf <https://trellis.sinopia.io/repository/washington/a76ab4e2-10f9-4310-9b08-fdd89441355e> ;
+    ns1:physicalLocation "drama"@eng ;
+    ns1:sublocation [ a ns1:Sublocation ;
+            rdfs:label "drstx"@eng ] .
+

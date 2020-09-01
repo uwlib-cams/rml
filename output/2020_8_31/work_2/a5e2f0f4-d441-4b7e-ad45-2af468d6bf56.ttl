@@ -1,0 +1,26 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a5e2f0f4-d441-4b7e-ad45-2af468d6bf56> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-21" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1002> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/2370edaa-0c6e-4d0c-baef-994235d4f86c> ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "advertisements, and color illustrations."@eng ;
+            ns1:noteType "details of illustrative content"@en ] ;
+    ns1:scale [ a ns1:Scale ;
+            rdfs:label "approximately 1:130,000"@eng ] .
+

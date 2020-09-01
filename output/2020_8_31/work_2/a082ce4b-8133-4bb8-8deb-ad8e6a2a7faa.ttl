@@ -1,0 +1,44 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> a ns1:Work ;
+    rdfs:label "原色きのこ"@jpn ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "CC83"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-27" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:colorContent [ a ns1:ColorContent ;
+            rdfs:label "color" ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/a8592848-3759-4c1e-b37e-e56409254a3d> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "今関六也, 1904-1991. 原色きのこ"@jpn ] ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:index [ a ns1:Work ;
+            rdfs:label "Includes index" ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/jpn>,
+        <http://id.loc.gov/vocabulary/languages/lat> ;
+    ns1:title [ a ns1:VariantTitle ;
+            ns1:mainTitle "Kinoko no saishū to miwakekata"@jpn,
+                "茸の採集と見分け方"@jpn ],
+        [ a ns1:Title ;
+            ns1:mainTitle "原色きのこ"@jpn ] .
+

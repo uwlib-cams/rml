@@ -1,0 +1,29 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3707b060-c28f-4361-88a0-f2854890bd85> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "emcotter"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-29" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/f95dad1f-f7f3-430e-b817-8fa9f9db8faa> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "United States. Congress. Senate. Special Committee on Aging. Skyrocketing prescription drug prices. Text. English."@eng ] ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns2:originDate "1990"@zxx .
+
