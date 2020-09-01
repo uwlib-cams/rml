@@ -1,25 +1,25 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/bdbd9de4-e201-4f5c-9113-ce5eb6a30500> a ns2:Item ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "emcotter"@eng ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-04-20" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:classification [ a ns2:Classification ;
+<https://trellis.sinopia.io/repository/washington/bdbd9de4-e201-4f5c-9113-ce5eb6a30500> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:Classification ;
             rdfs:label "Y 3.T 22/2:2 C 73/13"@eng ] ;
-    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns2:itemOf <https://trellis.sinopia.io/repository/washington/ae37b855-a29b-4f8b-ab5c-09934acedf63> ;
-    ns2:physicalLocation "suzzallen"@eng ;
-    ns2:source [ a ns2:Source ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/ae37b855-a29b-4f8b-ab5c-09934acedf63> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:source [ a bf:Source ;
             rdf:value "SuDocs classification number"@en ] ;
-    ns2:sublocation [ a ns2:Sublocation ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "szgus"@eng ] .
 

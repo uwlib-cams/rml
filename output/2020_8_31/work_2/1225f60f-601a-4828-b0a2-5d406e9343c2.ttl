@@ -1,22 +1,22 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1225f60f-601a-4828-b0a2-5d406e9343c2> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "pfreeman"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-05-04" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/94c8153f-01b0-42ad-b356-70f3bd64e6dc> ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns1:notation [ a ns1:Script ;
+<https://trellis.sinopia.io/repository/washington/1225f60f-601a-4828-b0a2-5d406e9343c2> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/94c8153f-01b0-42ad-b356-70f3bd64e6dc> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "1941"@eng .
+    bf:originDate "1941"@eng .
 

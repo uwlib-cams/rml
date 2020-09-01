@@ -1,27 +1,27 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/bd941aa0-25fe-42f2-b8e5-fca14aece262> a ns2:Work ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "dbrookin"@zxx ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-03-24" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns2:contribution [ a ns2:Contribution ;
-            ns2:agent [ a ns2:Agent ;
+<https://trellis.sinopia.io/repository/washington/bd941aa0-25fe-42f2-b8e5-fca14aece262> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Maĭmon, Moiseĭ Lʹvovich, 1863-1924" ] ;
-            ns2:role <http://id.loc.gov/vocabulary/relators/ill> ] ;
-    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/199fd36d-eb47-4a1a-849b-2de1549e24ea> ;
-    ns2:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns2:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+            bf:role <http://id.loc.gov/vocabulary/relators/ill> ] ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/199fd36d-eb47-4a1a-849b-2de1549e24ea> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
         <http://id.loc.gov/authorities/demographicTerms/dg2015060254> ;
-    ns2:language <http://id.loc.gov/vocabulary/languages/rus> ;
-    ns2:notation [ a ns2:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] .
 

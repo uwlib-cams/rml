@@ -1,35 +1,35 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd> a ns2:Work ;
+<https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd> a bf:Work ;
     rdfs:label "Zipper. English"@eng ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "mathiasuw"@eng ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-02-25" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
-    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/5112fda2-2a63-4d0a-8b02-1e7da4ebd85b> ;
-    ns2:genreForm [ a ns2:GenreForm ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/5112fda2-2a63-4d0a-8b02-1e7da4ebd85b> ;
+    bf:genreForm [ a bf:GenreForm ;
             rdfs:label "Artists books" ] ;
-    ns2:identifiedBy [ a ns2:Identifier ;
-            ns2:note [ a ns2:Note ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns2:noteType "type of identifier"@en ] ;
-            ns2:source [ a ns2:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Melhor-Boe, Lise, 1955- Zipper. English"@eng ] ;
-    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns2:notation [ a ns2:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns2:originDate "2018"@eng ;
-    ns2:title [ a ns2:Title ;
-            ns2:mainTitle "Zipper. English"@eng ] .
+    bf:originDate "2018"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Zipper. English"@eng ] .
 

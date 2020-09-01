@@ -1,32 +1,32 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331> a bf:Work ;
     rdfs:label "Northanger Abbey"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2012-12-10" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2012-12-10" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Northanger Abbey. English"@eng ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "approximately 1798 or approximately 1799"@eng ;
-    ns1:summary [ a ns1:Summary ;
+    bf:originDate "approximately 1798 or approximately 1799"@eng ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "Catherine Morland falls in love with Henry Tilney, the owner of a medieval mansion. But she becomes darkly suspicious of the abbey after she visits there."@eng ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Northanger Abbey"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Northanger Abbey"@eng ] .
 

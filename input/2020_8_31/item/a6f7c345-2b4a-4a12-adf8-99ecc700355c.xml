@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,29 +12,29 @@
     <rdfs:label>full</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/a6f7c345-2b4a-4a12-adf8-99ecc700355c">
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns2:hasResourceTemplate>
-    <ns4:hasBarcode xml:lang="eng">Barcode 39352083989533</ns4:hasBarcode>
-    <ns4:hasPhysicalLocation xml:lang="eng">bothell</ns4:hasPhysicalLocation>
-    <ns4:hasLcClassificationPartA xml:lang="eng">PN6737.V54</ns4:hasLcClassificationPartA>
-    <ns1:adminMetadata rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b1"/>
-    <ns4:hasPhysicalSubLocation xml:lang="eng">bogph</ns4:hasPhysicalSubLocation>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdax:hasBarcode xml:lang="eng">Barcode 39352083989533</rdax:hasBarcode>
+    <rdax:hasPhysicalLocation xml:lang="eng">bothell</rdax:hasPhysicalLocation>
+    <rdax:hasLcClassificationPartA xml:lang="eng">PN6737.V54</rdax:hasLcClassificationPartA>
+    <bf:adminMetadata rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b1"/>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">bogph</rdax:hasPhysicalSubLocation>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns4:hasLcClassificationPartB xml:lang="eng">G57 2018</ns4:hasLcClassificationPartB>
-    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdax:hasLcClassificationPartB xml:lang="eng">G57 2018</rdax:hasLcClassificationPartB>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b1">
-    <ns3:catalogerID xml:lang="eng">jlee70</ns3:catalogerID>
-    <ns1:creationDate xml:lang="eng">2020-02-07</ns1:creationDate>
-    <ns1:status rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b2"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">jlee70</bflc:catalogerID>
+    <bf:creationDate xml:lang="eng">2020-02-07</bf:creationDate>
+    <bf:status rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b2"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f0d7dac0770074d01be32254cd0c38ff2b2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa">

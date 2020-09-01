@@ -1,45 +1,45 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/3d6fbc01-b25c-4145-8293-5c4bc68f9ffc> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/3d6fbc01-b25c-4145-8293-5c4bc68f9ffc> a bf:Work ;
     rdfs:label "Xinning xiang tu di li"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee37"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-09" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> ;
-    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-09" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Lei, Zepu. Xinning xiang tu di li. Chinese"@eng ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Lei, Zepu. Xinning xiang tu di li (1909)"@eng,
                 "Lei, Zepu. 新寧鄉土地理. Chinese"@eng ] ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/map> ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/chi> ;
-    ns1:notation [ a ns1:Script ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Traditional Chinese"@chi ] ;
-    ns1:originDate "1909"@eng ;
-    ns1:title [ a ns1:VariantTitle ;
-            ns1:mainTitle "Xinning xiang tu di li : [er juan]"@eng,
+    bf:originDate "1909"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Xinning xiang tu di li : [er juan]"@eng,
                 "新寧鄉土地理 : [二卷]"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Xinning xiang tu di li"@eng ] .
+        [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu di li"@eng ] .
 

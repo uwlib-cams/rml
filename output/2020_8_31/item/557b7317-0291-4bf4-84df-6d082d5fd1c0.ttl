@@ -1,23 +1,23 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/557b7317-0291-4bf4-84df-6d082d5fd1c0> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "gerhart"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-07" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:identifier [ a ns1:Barcode ;
+<https://trellis.sinopia.io/repository/washington/557b7317-0291-4bf4-84df-6d082d5fd1c0> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "gerhart"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352080893449"@eng ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/a832adb8-e349-49f9-a19b-f5aabac4b58c> ;
-    ns1:physicalLocation "music"@eng ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/a832adb8-e349-49f9-a19b-f5aabac4b58c> ;
+    bf:physicalLocation "music"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "mulc"@eng ] .
 

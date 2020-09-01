@@ -1,51 +1,51 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> a bf:Work ;
     rdfs:label "Alten Stettin (Map : 1588)"@deu ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-09" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:cartographicAttributes [ a ns1:Cartographic ;
-            ns1:coordinates "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ] ;
-    ns1:classification [ a ns1:Classification ;
-            ns1:source [ a ns1:Source ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-09" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ] ;
+    bf:classification [ a bf:Classification ;
+            bf:source [ a bf:Source ;
                     rdfs:label "Library of Congress Geographic Classification"@en ] ;
             rdf:value "G6524.S93" ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/authorities/names/n50043890> ],
-        [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/authorities/names/n50043248> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns1:genreForm [ a ns1:GenreForm ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50043890> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50043248> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ;
             rdfs:label "http://id.loc.gov/authorities/genreForms/gf2017027232" ],
         <http://id.loc.gov/authorities/genreForms/gf2011026033> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. Part 4. Plate 41."@eng ] ;
-    ns1:natureOfContent "An aerial view of the city of Stettin (modern-day Szczecin) from the northwest."@eng ;
-    ns1:note [ a ns1:Note ;
+    bf:natureOfContent "An aerial view of the city of Stettin (modern-day Szczecin) from the northwest."@eng ;
+    bf:note [ a bf:Note ;
             rdfs:label "Shows the Oder River, people, animals, boats, fortifications, buildings, hills, trees, and farmland. Shows the Cathedral Basilica of St James the Apostle."@eng ;
-            ns1:noteType "coverage of content"@en ] ;
-    ns1:originDate "1617" ;
-    ns1:originPlace <http://id.loc.gov/authorities/names/n80050882> ;
-    ns1:partOf [ a ns1:Work ;
+            bf:noteType "coverage of content"@en ] ;
+    bf:originDate "1617" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80050882> ;
+    bf:partOf [ a bf:Work ;
             rdfs:label "http://id.loc.gov/authorities/names/no2015087016" ] ;
-    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Szczecin (Poland)--Aerial views--Early works to 1800" ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Alten Stettin (Map : 1588)"@deu ],
-        [ a ns1:VariantTitle ;
-            ns1:mainTitle "Alten Stettin"@deu,
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Alten Stettin (Map : 1588)"@deu ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Alten Stettin"@deu,
                 "Stettin"@deu ] .
 

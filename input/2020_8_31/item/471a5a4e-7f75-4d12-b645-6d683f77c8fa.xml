@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -19,24 +19,24 @@
     <rdfs:label>Resource Description and Access</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/471a5a4e-7f75-4d12-b645-6d683f77c8fa">
-    <ns4:hasPhysicalSubLocation xml:lang="eng">szgus</ns4:hasPhysicalSubLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">szgus</rdax:hasPhysicalSubLocation>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns2:hasResourceTemplate>
-    <ns4:hasPhysicalLocation xml:lang="eng">suzzallen</ns4:hasPhysicalLocation>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/c7718302-7c8d-424d-bc61-4cb134ce4e5e"/>
-    <ns1:adminMetadata rdf:nodeID="fa559527404c2437497e9ac45caa3df68b1"/>
-    <ns4:hasSuDocClassificationNumber xml:lang="eng">Y 4.Ag 4:S.prt.101-69</ns4:hasSuDocClassificationNumber>
-    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdax:hasPhysicalLocation xml:lang="eng">suzzallen</rdax:hasPhysicalLocation>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/c7718302-7c8d-424d-bc61-4cb134ce4e5e"/>
+    <bf:adminMetadata rdf:nodeID="fa559527404c2437497e9ac45caa3df68b1"/>
+    <rdax:hasSuDocClassificationNumber xml:lang="eng">Y 4.Ag 4:S.prt.101-69</rdax:hasSuDocClassificationNumber>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa559527404c2437497e9ac45caa3df68b1">
-    <ns1:creationDate xml:lang="zxx">2020-04-29</ns1:creationDate>
+    <bf:creationDate xml:lang="zxx">2020-04-29</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns3:catalogerID xml:lang="eng">emcotter</ns3:catalogerID>
-    <ns1:status rdf:nodeID="fa559527404c2437497e9ac45caa3df68b2"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
+    <bf:status rdf:nodeID="fa559527404c2437497e9ac45caa3df68b2"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>
@@ -46,6 +46,6 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa559527404c2437497e9ac45caa3df68b2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
 </rdf:RDF>

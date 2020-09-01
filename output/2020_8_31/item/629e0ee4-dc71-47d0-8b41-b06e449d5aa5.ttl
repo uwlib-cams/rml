@@ -1,25 +1,25 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/629e0ee4-dc71-47d0-8b41-b06e449d5aa5> a ns2:Item ;
-    ns2:adminMetadata [ a ns2:AdminMetadata ;
-            ns1:catalogerID "pfreeman"@eng ;
-            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns2:creationDate "2020-04-29" ;
-            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns2:status [ a ns2:Status ;
-                    ns2:code "n" ] ] ;
-    ns2:classification [ a ns2:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/629e0ee4-dc71-47d0-8b41-b06e449d5aa5> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "PS3503.R2733E7 1933" ] ;
-    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns2:identifier [ a ns2:Barcode ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352038568143"@eng ] ;
-    ns2:itemOf <https://trellis.sinopia.io/repository/washington/081097d8-27b7-4fb8-a6ca-fb280d818f11> ;
-    ns2:physicalLocation "drama"@eng ;
-    ns2:sublocation [ a ns2:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/081097d8-27b7-4fb8-a6ca-fb280d818f11> ;
+    bf:physicalLocation "drama"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "drstx"@eng ] .
 

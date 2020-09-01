@@ -1,27 +1,27 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/d00407d3-ab18-449b-8288-27cbb9f85ce0> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23"@en ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-06" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:classification [ a ns1:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/d00407d3-ab18-449b-8288-27cbb9f85ce0> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-06" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "QC451.M8 2019" ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:identifier [ a ns1:Barcode ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352084161926"@en ] ;
-    ns1:immediateAcquisition [ a ns1:ImmediateAcquisition ;
+    bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
             rdfs:label "POL-675281"@en ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/repository/washington/3f90ecf0-f15b-4426-8d85-23c3d2ce341c> ;
-    ns1:physicalLocation "suzzallen"@en ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/repository/washington/3f90ecf0-f15b-4426-8d85-23c3d2ce341c> ;
+    bf:physicalLocation "suzzallen"@en ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "szstx"@en ] .
 

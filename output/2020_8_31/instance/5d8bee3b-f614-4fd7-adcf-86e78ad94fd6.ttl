@@ -1,55 +1,55 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/0b5f373d-a838-49d1-9f92-b65522c741a5> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/0b5f373d-a838-49d1-9f92-b65522c741a5> a bf:Instance ;
     rdfs:label "Concordance, United States patent classification to international patent classification"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "emcotter"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-06-16" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:copyrightDate "©1990"@zxx ;
-    ns1:dimensions "28 cm"@eng ;
-    ns1:editionStatement "1990 ed."@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1990"@zxx ;
+    bf:dimensions "28 cm"@eng ;
+    bf:editionStatement "1990 ed."@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "184 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "C 21.14/2:C 74/990" ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "C 21.14/2:C 74/990" ] ;
             rdf:value "C 21.14/2:C 74/990" ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "C 21.14/2:C 74/990" ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/97fe31f3-dcc8-40d3-9f70-508a03abd48a> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/97fe31f3-dcc8-40d3-9f70-508a03abd48a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Cover title: United States patent classification to international patent classification"@eng,
                 "Item 254-A"@eng,
                 "S/N 003-004-00643-9"@eng,
                 "Shipping list no.: 90-290-P"@eng ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:date "1990"@zxx ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "1990"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations"@eng ] ],
-        [ a ns1:Publication ;
-            ns1:place [ a ns1:Place ;
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
                     rdfs:label "[Washington, D.C.]"@eng ] ] ;
-    ns1:provisionActivityStatement "[Washington, D.C.] : U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations, 1990"@eng ;
-    ns1:responsibilityStatement "United States. Patent Documentation Organizations"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:provisionActivityStatement "[Washington, D.C.] : U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations, 1990"@eng ;
+    bf:responsibilityStatement "United States. Patent Documentation Organizations"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Concordance, United States patent classification to international patent classification"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Concordance, United States patent classification to international patent classification"@eng ] .
 

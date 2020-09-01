@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/32851ffe-fc92-4148-81ab-7ebe31d8cfd4">
-    <ns4:hasLcClassificationPartA xml:lang="zxx">PZ70.S42</ns4:hasLcClassificationPartA>
-    <ns4:hasPhysicalSubLocation xml:lang="zxx">szstx</ns4:hasPhysicalSubLocation>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/0010d9b0-ec29-4ab0-b25a-9a1a87108dd2"/>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns2:hasResourceTemplate>
+    <rdax:hasLcClassificationPartA xml:lang="zxx">PZ70.S42</rdax:hasLcClassificationPartA>
+    <rdax:hasPhysicalSubLocation xml:lang="zxx">szstx</rdax:hasPhysicalSubLocation>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/0010d9b0-ec29-4ab0-b25a-9a1a87108dd2"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns4:hasBarcode xml:lang="zxx">3948857245205743209875203</ns4:hasBarcode>
-    <ns4:hasPhysicalLocation xml:lang="zxx">suzzallen</ns4:hasPhysicalLocation>
-    <ns1:adminMetadata rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db1"/>
-    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns4:hasLcClassificationPartB xml:lang="zxx">L356 2003</ns4:hasLcClassificationPartB>
+    <rdax:hasBarcode xml:lang="zxx">3948857245205743209875203</rdax:hasBarcode>
+    <rdax:hasPhysicalLocation xml:lang="zxx">suzzallen</rdax:hasPhysicalLocation>
+    <bf:adminMetadata rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db1"/>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdax:hasLcClassificationPartB xml:lang="zxx">L356 2003</rdax:hasLcClassificationPartB>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db1">
-    <ns1:creationDate xml:lang="zxx">2020-03-03</ns1:creationDate>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:status rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db2"/>
+    <bf:creationDate xml:lang="zxx">2020-03-03</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db2"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns3:catalogerID xml:lang="eng">dbrookin</ns3:catalogerID>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">dbrookin</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f7595d4a8e3674035b385eb21ea1b328db2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="zxx">n</ns1:code>
+    <bf:code xml:lang="zxx">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>

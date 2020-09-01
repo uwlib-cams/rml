@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://rdaregistry.info/Elements/w/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -17,28 +17,28 @@
     <rdfs:label>Documentary radio programs</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651">
-    <ns1:adminMetadata rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b1"/>
-    <ns4:P10223 xml:lang="eng">French topical disc. FTD 79-123</ns4:P10223>
-    <ns4:P10256>Biculturalism--Canada--20th century.</ns4:P10256>
-    <ns4:P10004 rdf:resource="http://id.loc.gov/authorities/subjects/sh2009000115"/>
-    <ns4:P10256> 	Canada--Civilization--20th century.</ns4:P10256>
-    <ns4:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026206"/>
-    <ns4:P10219 xml:lang="eng">[1979]</ns4:P10219>
-    <ns4:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85019345"/>
+    <bf:adminMetadata rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b1"/>
+    <rdaw:P10223 xml:lang="eng">French topical disc. FTD 79-123</rdaw:P10223>
+    <rdaw:P10256>Biculturalism--Canada--20th century.</rdaw:P10256>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/subjects/sh2009000115"/>
+    <rdaw:P10256> 	Canada--Civilization--20th century.</rdaw:P10256>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026206"/>
+    <rdaw:P10219 xml:lang="eng">[1979]</rdaw:P10219>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85019345"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns4:P10008 rdf:resource="http://id.loc.gov/rwo/agents/n79026959"/>
-    <ns4:P10256>Canada--Social life and customs--20th century.</ns4:P10256>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Work:soundRecording</ns2:hasResourceTemplate>
-    <ns4:P10331 xml:lang="eng">French topical disc.  FTD 79-123</ns4:P10331>
+    <rdaw:P10008 rdf:resource="http://id.loc.gov/rwo/agents/n79026959"/>
+    <rdaw:P10256>Canada--Social life and customs--20th century.</rdaw:P10256>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:soundRecording</sin:hasResourceTemplate>
+    <rdaw:P10331 xml:lang="eng">French topical disc.  FTD 79-123</rdaw:P10331>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b1">
-    <ns3:catalogerID xml:lang="eng">lins@uw.edu</ns3:catalogerID>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:status rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b2"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:creationDate xml:lang="eng">2020-05-05</ns1:creationDate>
+    <bflc:catalogerID xml:lang="eng">lins@uw.edu</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate xml:lang="eng">2020-05-05</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
@@ -48,7 +48,7 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fcb734a529112406185d5dc0602ede0b5b2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh2009000115">

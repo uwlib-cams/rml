@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b2">
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:catalogerID xml:lang="eng">dbrookin</ns3:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID xml:lang="eng">dbrookin</bflc:catalogerID>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:creationDate xml:lang="zxx">2020-02-19</ns1:creationDate>
-    <ns1:status rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b1"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="zxx">2020-02-19</bf:creationDate>
+    <bf:status rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/69be6d3a-45db-49c8-9232-1c90aa776c0c">
-    <ns4:hasPhysicalSubLocation xml:lang="zxx">szstx</ns4:hasPhysicalSubLocation>
-    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns2:hasResourceTemplate>
-    <ns1:adminMetadata rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b2"/>
-    <ns4:hasBarcode xml:lang="zxx">39352078101300</ns4:hasBarcode>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9"/>
-    <ns4:hasPhysicalLocation xml:lang="zxx">suzzallen</ns4:hasPhysicalLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="zxx">szstx</rdax:hasPhysicalSubLocation>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <bf:adminMetadata rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b2"/>
+    <rdax:hasBarcode xml:lang="zxx">39352078101300</rdax:hasBarcode>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/f6461300-2e7b-427e-a926-7b58b2d31fe9"/>
+    <rdax:hasPhysicalLocation xml:lang="zxx">suzzallen</rdax:hasPhysicalLocation>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
@@ -43,7 +43,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="f50436061a6204f05a2ddbce75f6e7bf7b1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="zxx">n</ns1:code>
+    <bf:code xml:lang="zxx">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>

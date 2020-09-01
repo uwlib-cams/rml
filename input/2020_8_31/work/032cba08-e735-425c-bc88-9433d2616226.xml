@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="http://rdaregistry.info/Elements/w/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,15 +12,15 @@
     <rdfs:label>Resource Description and Access</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b1">
-    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:creationDate xml:lang="eng">2020-04-13</ns1:creationDate>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:status rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b2"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="eng">2020-04-13</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b2"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:catalogerID xml:lang="eng">aschiff</ns4:catalogerID>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
@@ -32,17 +32,17 @@
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/032cba08-e735-425c-bc88-9433d2616226">
-    <ns3:P10219 xml:lang="zxx">1997</ns3:P10219>
-    <ns3:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026169"/>
-    <ns3:P10223 xml:lang="eng">Great citrus book</ns3:P10223>
-    <ns1:adminMetadata rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b1"/>
+    <rdaw:P10219 xml:lang="zxx">1997</rdaw:P10219>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026169"/>
+    <rdaw:P10223 xml:lang="eng">Great citrus book</rdaw:P10223>
+    <bf:adminMetadata rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b1"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns5:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh85032173"/>
-    <ns3:P10061 rdf:resource="http://id.loc.gov/authorities/names/n94050249"/>
-    <ns3:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85031979"/>
-    <ns3:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85026231"/>
-    <ns3:P10331 xml:lang="eng">Susser, Allen. Great citrus book</ns3:P10331>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns2:hasResourceTemplate>
+    <rdax:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh85032173"/>
+    <rdaw:P10061 rdf:resource="http://id.loc.gov/authorities/names/n94050249"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85031979"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85026231"/>
+    <rdaw:P10331 xml:lang="eng">Susser, Allen. Great citrus book</rdaw:P10331>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85031979">
     <rdfs:label>http://id.loc.gov/authorities/subjects/sh85031979</rdfs:label>
@@ -55,7 +55,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="f0d1d2d381d684ac4aadc85c985491291b2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85026231">
     <rdfs:label>Citrus fruits</rdfs:label>

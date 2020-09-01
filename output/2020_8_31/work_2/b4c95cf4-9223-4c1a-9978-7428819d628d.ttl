@@ -1,44 +1,44 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/b4c95cf4-9223-4c1a-9978-7428819d628d> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/b4c95cf4-9223-4c1a-9978-7428819d628d> a bf:Work ;
     rdfs:label "The dancer, Choi Seunghee"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee70"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "03-02-2020" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent [ a ns1:ColorContent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "03-02-2020" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
             rdfs:label "black and white",
                 "color" ],
         <http://rdaregistry.info/termList/RDAColourContent/1002>,
         <http://rdaregistry.info/termList/RDAColourContent/1003> ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/2b0e847a-5fad-4150-9612-aec9f9474096> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/2b0e847a-5fad-4150-9612-aec9f9474096> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "The dancer, Choi Seunghee. English"@eng ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:note [ a ns1:Note ;
+    bf:note [ a bf:Note ;
             rdfs:label "color and black and white sequences"@eng ;
-            ns1:noteType "has details of colour content"@en ] ;
-    ns1:originDate "2006"@zxx ;
-    ns1:summary [ a ns1:Summary ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "2006"@zxx ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "Documentary on the life of Korean dancer Choi Seunghee."@eng ] ;
-    ns1:title [ a ns1:VariantTitle ;
-            ns1:mainTitle "Choi Seunghee : the story of a dancer"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "The dancer, Choi Seunghee"@eng ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Choi Seunghee : the story of a dancer"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "The dancer, Choi Seunghee"@eng ] .
 
