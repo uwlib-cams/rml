@@ -71,7 +71,7 @@ or
 hasReproduction*"
 has parallel name of distributor (RDA 2.9.5),http://rdaregistry.info/Elements/m/P30017,"bf:provisionActivity [ a bf:Distribution ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30017value"" ] ] .",provisionActivity >> Distribution > agent >> Agent >  rdfs:label
+      rdfs:label ""P30017value"" ] ] .",provisionActivity >> Distribution > agent >> Agent > rdfs:label
 has file type (RDA 3.19.2),http://rdaregistry.info/Elements/m/P30018,"bf:digitalCharacteristic [ a bf:FileType ;
    rdfs:label ""P30018value"" ] .
 # with IRI value
@@ -294,7 +294,7 @@ bf:provisionActivity [ a bf:Distribution ;
         bf:noteType “role in publication” ] ;
 bf:contribution [ a bf:Contribution ;
     bf:agent <P30067value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/brd> ] .","provisionActivity >> Publication > agent >> Agent > rdfs:label ; note >> Note > rdfs:label=""broadcaster"" > noteType=""role in publication"" ; contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/brd>
+    bf:role <http://id.loc.gov/vocabulary/relators/brd> ] .","provisionActivity >> Publication > agent >> Agent > rdfs:label ; > note >> Note > rdfs:label=""broadcaster"" > noteType=""role in publication"" ; contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/brd>
 or
 provisionActivity >> Publication > agent* > note >> Note > rdfs:label=""broadcaster"" > noteType=""role in publication"" ; contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/brd> "
 has film distributor agent (RDA 18.5),http://rdaregistry.info/Elements/m/P30068,"bf:provisionActivity [ a bf:Distribution ;
@@ -533,7 +533,7 @@ has distributor agent (RDA 21.4),http://rdaregistry.info/Elements/m/P30080,"bf:p
       rdfs:label ""P30080value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
-   bf:agent <P30080value> ] .","provisionActivity >> Distribution > agent >> Agent >  rdfs:label
+   bf:agent <P30080value> ] .","provisionActivity >> Distribution > agent >> Agent > rdfs:label
 or
 provisionActivity >> Distribution > agent*"
 has producer agent of unpublished manifestation (RDA 21.2),http://rdaregistry.info/Elements/m/P30081,"bf:provisionActivity [ a bf:Production ;
@@ -552,13 +552,13 @@ bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
-provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role >  rdfs:label=""producer of unpublished manifestation"""
+provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer agent (RDA 21.5),http://rdaregistry.info/Elements/m/P30082,"bf:provisionActivity [ a bf:Manufacture ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P30082value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Manufacture ;
-   bf:agent <P30082value> ] .","provisionActivity >> Manufacture > agent >> Agent >  rdfs:label
+   bf:agent <P30082value> ] .","provisionActivity >> Manufacture > agent >> Agent > rdfs:label
 or
 provisionActivity >> Manufacture > agent*"
 has publisher agent (RDA 21.3),http://rdaregistry.info/Elements/m/P30083,"bf:provisionActivity [ a bf:Publication ;
@@ -568,7 +568,7 @@ bf:provisionActivity [ a bf:Publication ;
    bf: agent [ a bf:Agent ;
       rdfs:label ""P30083value"" ] ] .","provisionActivity >> Publication > agent*
 or
-provisionActivity >> Publication > agent >> Agent >  rdfs:label "
+provisionActivity >> Publication > agent >> Agent > rdfs:label "
 has applied material (RDA 3.7),http://rdaregistry.info/Elements/m/P30084,"bf:appliedMaterial [ a bf:AppliedMaterial ;
    rdfs:label ""P30084value"" ] .
 # with IRI value
@@ -580,7 +580,7 @@ has place of distribution (RDA 2.9.2),http://rdaregistry.info/Elements/m/P30085,
       rdfs:label ""P30085value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
-   bf:place <P30085value> ] .","provisionActivity >> Distribution > place >> Place >  rdfs:label
+   bf:place <P30085value> ] .","provisionActivity >> Distribution > place >> Place > rdfs:label
 or
 provisionActivity >> Distribution > place*"
 has place of production (RDA 2.7.2),http://rdaregistry.info/Elements/m/P30086,"bf:provisionActivity [ a bf:Production ;
@@ -596,7 +596,7 @@ has place of manufacture (RDA 2.10.2),http://rdaregistry.info/Elements/m/P30087,
       rdfs:label ""P30087value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Manufacture ;
-   bf:place <P30087value> ] .","provisionActivity >> Manufacture > place >> Place >  rdfs:label
+   bf:place <P30087value> ] .","provisionActivity >> Manufacture > place >> Place > rdfs:label
 or
 provisionActivity >> Manufacture > place*"
 has place of publication (RDA 2.8.2),http://rdaregistry.info/Elements/m/P30088,"bf:provisionActivity [ a bf:Publication ;
@@ -604,21 +604,21 @@ has place of publication (RDA 2.8.2),http://rdaregistry.info/Elements/m/P30088,"
       rdfs:label ""P30088value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Publication ;
-   bf:place <P30088value> ] .","provisionActivity >> Publication > place >> Place >  rdfs:label
+   bf:place <P30088value> ] .","provisionActivity >> Publication > place >> Place > rdfs:label
 or
 provisionActivity >> Publication > place*"
 has parallel place of distribution (RDA 2.9.3),http://rdaregistry.info/Elements/m/P30089,"bf:provisionActivity [ a bf:Distribution ;
    bf:place [ a bf:Place ;
-      rdfs:label ""P30089value"" ] ] .",provisionActivity >> Distribution > place >> Place >  rdfs:label
+      rdfs:label ""P30089value"" ] ] .",provisionActivity >> Distribution > place >> Place > rdfs:label
 has parallel place of manufacture (RDA 2.10.3),http://rdaregistry.info/Elements/m/P30090,"bf:provisionActivity [ a bf:Manufacture ;
    bf:place [ a bf:Place ;
-      rdfs:label ""P30090value"" ] ] .",provisionActivity >> Manufacture > place >> Place >  rdfs:label
+      rdfs:label ""P30090value"" ] ] .",provisionActivity >> Manufacture > place >> Place > rdfs:label
 has parallel place of production (RDA 2.7.3),http://rdaregistry.info/Elements/m/P30091,"bf:provisionActivity [ a bf:Production ;
    bf:place [ a bf:Place ;
-      rdfs:label ""P30091value"" ] ] .",provisionActivity >> Production > place >> Place >  rdfs:label
+      rdfs:label ""P30091value"" ] ] .",provisionActivity >> Production > place >> Place > rdfs:label
 has parallel place of publication (RDA 2.8.3),http://rdaregistry.info/Elements/m/P30092,"bf:provisionActivity [ a bf:Publication ;
    bf:place [ a bf:Place ;
-      rdfs:label ""P30092value"" ] ] .",provisionActivity >> Publication > place >> Place >  rdfs:label
+      rdfs:label ""P30092value"" ] ] .",provisionActivity >> Publication > place >> Place > rdfs:label
 is reprint of manifestation of (RDA 24.5),http://rdaregistry.info/Elements/m/P30093,"bf:reproductionOf <P30093value>.
 # with literal value
 bf:reproductionOf [ a bf:Instance ;
@@ -627,10 +627,10 @@ or
 reproductionOf >> Instance > rdfs:label"
 has parallel name of producer (RDA 2.7.5),http://rdaregistry.info/Elements/m/P30094,"bf:provisionActivity [ a bf:Production ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30194value"" ] ] .",provisionActivity >> Production > agent >> Agent >  rdfs:label
+      rdfs:label ""P30194value"" ] ] .",provisionActivity >> Production > agent >> Agent > rdfs:label
 has parallel name of publisher (RDA 2.8.5),http://rdaregistry.info/Elements/m/P30095,"bf:provisionActivity [ a bf:Publication ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30095value"" ] ] .",provisionActivity >> Publication > agent >> Agent >  rdfs:label
+      rdfs:label ""P30095value"" ] ] .",provisionActivity >> Publication > agent >> Agent > rdfs:label
 has encoding format (RDA 3.19.3),http://rdaregistry.info/Elements/m/P30096,"bf:digitalCharacteristic [ a bf:EncodingFormat ;
    rdfs:label ""P30096value"" ] .
 # with IRI value
@@ -856,12 +856,12 @@ or
 soundCharacteristic*"
 has name of distributor (RDA 2.9.4),http://rdaregistry.info/Elements/m/P30173,"bf:provisionActivity [ a bf:Distribution ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30173value"" ] ] .","provisionActivity >> Distribution > agent >> Agent >  rdfs:label
+      rdfs:label ""P30173value"" ] ] .","provisionActivity >> Distribution > agent >> Agent > rdfs:label
 "
 has name of producer (RDA 2.7.4),http://rdaregistry.info/Elements/m/P30174,"
 bf:provisionActivity [ a bf:Production ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30174value"" ] ] .","provisionActivity >> Production > agent >> Agent >  rdfs:label
+      rdfs:label ""P30174value"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label
 "
 has name of manufacturer (RDA 2.10.4),http://rdaregistry.info/Elements/m/P30175,"
 bf:provisionActivity [ a bf:Manufacture ;
@@ -871,7 +871,7 @@ bf:provisionActivity [ a bf:Manufacture ;
 has name of publisher (RDA 2.8.4),http://rdaregistry.info/Elements/m/P30176,"
 bf:provisionActivity [ a bf:Publication ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P30176value"" ] ] .","provisionActivity >> Publication > agent >> Agent >  rdfs:label
+      rdfs:label ""P30176value"" ] ] .","provisionActivity >> Publication > agent >> Agent > rdfs:label
 "
 has extent of manifestation (RDA 3.4),http://rdaregistry.info/Elements/m/P30182,"bf:extent [ a bf:Extent ;
    rdfs:label ""P30182value"" ] .",extent >> Extent > rdfs:label
@@ -1920,13 +1920,13 @@ bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Person > rdfs:label ; contribution >> Contribution > agent >> Person > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
-provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role >  rdfs:label=""producer of unpublished manifestation"""
+provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer person,http://rdaregistry.info/Elements/m/P30361,"bf:provisionActivity [ a bf:Manufacture ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P30361value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Manufacture ;
-   bf:agent <P30361value> ] .","provisionActivity >> Manufacture > agent >> Agent >  rdfs:label
+   bf:agent <P30361value> ] .","provisionActivity >> Manufacture > agent >> Agent > rdfs:label
 or
 provisionActivity >> Manufacture > agent*"
 has publisher person,http://rdaregistry.info/Elements/m/P30362,"bf:provisionActivity [ a bf:Publication ;
@@ -1936,7 +1936,7 @@ bf:provisionActivity [ a bf:Publication ;
    bf: agent [ a bf:Person ;
       rdfs:label ""P30362value"" ] ] .","provisionActivity >> Publication > agent*
 or
-provisionActivity >> Publication > agent >> Person >  rdfs:label "
+provisionActivity >> Publication > agent >> Person > rdfs:label "
 has creator person of manifestation,http://rdaregistry.info/Elements/m/P30363,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P30363value"" ] ;
@@ -2379,7 +2379,7 @@ has distributor collective agent,http://rdaregistry.info/Elements/m/P30388,"bf:p
       rdfs:label ""P30388value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
-   bf:agent <P30388value> ] .","provisionActivity >> Distribution > agent >> Agent >  rdfs:label
+   bf:agent <P30388value> ] .","provisionActivity >> Distribution > agent >> Agent > rdfs:label
 or
 provisionActivity >> Distribution > agent*"
 has producer collective agent of unpublished manifestation,http://rdaregistry.info/Elements/m/P30389,"bf:provisionActivity [ a bf:Production ;
@@ -2398,13 +2398,13 @@ bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
-provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role >  rdfs:label=""producer of unpublished manifestation"""
+provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer collective agent,http://rdaregistry.info/Elements/m/P30390,"bf:provisionActivity [ a bf:Manufacture ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P30390value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Manufacture ;
-   bf:agent <P30390value> ] .","provisionActivity >> Manufacture > agent >> Agent >  rdfs:label
+   bf:agent <P30390value> ] .","provisionActivity >> Manufacture > agent >> Agent > rdfs:label
 or
 provisionActivity >> Manufacture > agent*"
 has publisher collective agent,http://rdaregistry.info/Elements/m/P30391,"bf:provisionActivity [ a bf:Publication ;
@@ -2414,7 +2414,7 @@ bf:provisionActivity [ a bf:Publication ;
    bf: agent [ a bf:Agent ;
       rdfs:label ""P30391value"" ] ] .","provisionActivity >> Publication > agent*
 or
-provisionActivity >> Publication > agent >> Agent >  rdfs:label "
+provisionActivity >> Publication > agent >> Agent > rdfs:label "
 has creator collective agent of manifestation,http://rdaregistry.info/Elements/m/P30392,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P30392value"" ] ;
@@ -2857,7 +2857,7 @@ has distributor corporate body,http://rdaregistry.info/Elements/m/P30417,"bf:pro
       rdfs:label ""P30417value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
-   bf:agent <P30417value> ] .","provisionActivity >> Distribution > agent >> Organization >  rdfs:label
+   bf:agent <P30417value> ] .","provisionActivity >> Distribution > agent >> Organization > rdfs:label
 or
 provisionActivity >> Distribution > agent*"
 has producer corporate body of unpublished manifestation,http://rdaregistry.info/Elements/m/P30418,"bf:provisionActivity [ a bf:Production ;
@@ -2876,7 +2876,7 @@ bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Organization > rdfs:label ; contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
-provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role >  rdfs:label=""producer of unpublished manifestation"""
+provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer corporate body,http://rdaregistry.info/Elements/m/P30419,"bf:provisionActivity [ a bf:Manufacture ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P30419value"" ] ] .
@@ -3335,7 +3335,7 @@ has distributor family,http://rdaregistry.info/Elements/m/P30446,"bf:provisionAc
       rdfs:label ""P30446value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
-   bf:agent <P30446value> ] .","provisionActivity >> Distribution > agent >> Family >  rdfs:label
+   bf:agent <P30446value> ] .","provisionActivity >> Distribution > agent >> Family > rdfs:label
 or
 provisionActivity >> Distribution > agent*"
 has producer family of unpublished manifestation,http://rdaregistry.info/Elements/m/P30447,"bf:provisionActivity [ a bf:Production ;
@@ -3354,13 +3354,13 @@ bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Family > rdfs:label ; contribution >> Contribution > agent >> Family > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
-provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role >  rdfs:label=""producer of unpublished manifestation"""
+provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer family,http://rdaregistry.info/Elements/m/P30448,"bf:provisionActivity [ a bf:Manufacture ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P30448value"" ] ] .
 # with IRI value
 bf:provisionActivity [ a bf:Manufacture ;
-   bf:agent <P30448value> ] .","provisionActivity >> Manufacture > agent >> Family >  rdfs:label
+   bf:agent <P30448value> ] .","provisionActivity >> Manufacture > agent >> Family > rdfs:label
 or
 provisionActivity >> Manufacture > agent*"
 has publisher family,http://rdaregistry.info/Elements/m/P30449,"bf:provisionActivity [ a bf:Publication ;
@@ -3370,7 +3370,7 @@ bf:provisionActivity [ a bf:Publication ;
    bf: agent [ a bf:Family ;
       rdfs:label ""P30449value"" ] ] .","provisionActivity >> Publication > agent*
 or
-provisionActivity >> Publication > agent >> Family >  rdfs:label "
+provisionActivity >> Publication > agent >> Family > rdfs:label "
 has creator family of manifestation,http://rdaregistry.info/Elements/m/P30450,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P30450value"" ] ;
