@@ -1,0 +1,41 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/de21bb62-ae6f-4ee5-a0c6-2465e5a2b491> a ns2:Instance ;
+    rdfs:label "Program and itinerary."@eng ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "aentze"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-04-21" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns2:copyrightDate "©"@eng ;
+    ns2:dimensions "27 cm"@eng ;
+    ns2:extent [ a ns2:Extent ;
+            rdfs:label "1 volume"@eng ] ;
+    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> ;
+    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:note [ a ns2:Note ;
+            rdfs:label "Cover title."@eng ] ;
+    ns2:provisionActivity [ a ns2:Publication ;
+            ns2:place [ a ns2:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ],
+        [ a ns2:Publication ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "International Cooperation Administration"@eng ] ],
+        [ a ns2:Publication ;
+            ns2:date "[1958]" ] ;
+    ns2:responsibilityStatement "Germany T.U. Methods to Increase Productivity, TE 09-374-70013."@eng ;
+    ns2:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Program and itinerary."@eng ] .
+

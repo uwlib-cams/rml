@@ -1,0 +1,34 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bf2d6519-6dd3-4726-bd7b-78dfdb76e746> a ns1:Work ;
+    rdfs:label "Taiwania"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-22" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/1ff786f6-7674-49f7-a4e3-23a15c18f398> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Taiwania"@eng ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:precededBy [ a ns1:Work ;
+            rdfs:label "Acta botanica Taiwanica " ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Taiwania"@eng ],
+        [ a ns1:VariantTitle ;
+            ns1:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
+                "國立臺灣大學理學院植物學系研究報告"@chi ] .
+

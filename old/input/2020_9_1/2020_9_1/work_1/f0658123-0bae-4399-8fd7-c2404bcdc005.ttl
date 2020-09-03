@@ -1,0 +1,44 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f0658123-0bae-4399-8fd7-c2404bcdc005> a ns1:Work ;
+    rdfs:label "Targeting mTOR to reverse age-associated periodontal disease"@eng ;
+    ns2:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85083510> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins@uw.edu"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Person ;
+                    rdfs:label "Kaeberlein, Matt" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    ns1:dissertation [ a ns1:Dissertation ;
+            ns1:date "2019"@zxx ],
+        [ a ns1:Dissertation ;
+            ns1:degree "M.P.H."@eng ],
+        [ a ns1:Dissertation ;
+            ns1:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "An, Jonathan Y. Targeting mTOR to reverse age-associated periodontal disease"@eng ] ;
+    ns1:originDate "2019"@zxx ;
+    ns1:originPlace [ a ns1:Place ;
+            rdfs:label "[Seattle]" ] ;
+    ns1:subject <http://id.nlm.nih.gov/mesh/D000375>,
+        <http://id.nlm.nih.gov/mesh/D009059>,
+        <http://id.nlm.nih.gov/mesh/D020123> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Targeting mTOR to reverse age-associated periodontal disease"@eng ] .
+

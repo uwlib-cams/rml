@@ -1,0 +1,27 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f82fcc75-6160-435b-9ca1-03302716319c> a ns1:Instance ;
+    rdfs:label "水木清华\" 与《雷雨》"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1047>,
+        <http://rdaregistry.info/termList/RDACarrierType/1059> ;
+    ns1:copyrightDate "©"@eng ;
+    ns1:dimensions "16 x 55 cm, rolled to 16 x 5 cm in diameter, in box 15 x 21 x 9 cm + 1 wooden display stand (4 x 14 x 4 cm)"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 bamboo slip"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/42bcdb3c-5c36-4970-9cc0-851d5bef0baa> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "水木清华\" 与《雷雨》"@eng ] .
+

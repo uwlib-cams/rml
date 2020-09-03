@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/ba22d3e6-96c1-4538-ad95-ed3f3e3d8fdc> a ns1:Work ;
+    rdfs:label "Acta botanica Taiwanica"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026174> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "2018252951"@eng ] ;
+            rdf:value "2018252951"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "2018252951"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Acta botanica Taiwanica"@eng ],
+        [ a ns1:Identifier ;
+            rdf:value "2018252951"@eng ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Taiwan"@eng ;
+            ns1:noteType "coverage of content"@en ] ;
+    ns1:originPlace [ a ns1:Place ;
+            rdfs:label "Taipei, Taiwan" ] ;
+    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Botany--Taiwan--Periodicals" ],
+        <http://id.loc.gov/authorities/subjects/sh2007102112> ;
+    ns1:succeededBy <https://trellis.sinopia.io/repository/washington/1ff786f6-7674-49f7-a4e3-23a15c18f398> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Acta botanica Taiwanica"@eng ] .
+

@@ -1,0 +1,49 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3eb2f65f-7238-4b34-95ff-3fa36b67c667> a ns1:Work ;
+    rdfs:label "Pocket full of rye"@eng ;
+    ns2:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060386> ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-28" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "http://id.loc.gov/authorities/names/n79038407" ] ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026280>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    ns1:historyOfWork "\"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead & co. the following year ... The book features her detective, Miss Marple\"--Wikipedia, January 28, 2020."@eng ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "http://www.wikidata.org/entity/Q29132"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Christie, Agatha, 1890-1976. Pocket full of rye"@eng ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "http://www.wikidata.org/entity/Q29132"@eng ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "http://www.wikidata.org/entity/Q29132"@eng ] ;
+            rdf:value "http://www.wikidata.org/entity/Q29132"@eng ] ;
+    ns1:originDate "1953"@eng ;
+    ns1:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Crime--Fiction",
+                "Marple, Jane (Fictitious character)--Fiction",
+                "Murder--Fiction" ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Pocket full of rye"@eng ] .
+

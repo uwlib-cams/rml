@@ -1,0 +1,47 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2364b9e2-5c7b-4bb6-81f1-219a045ad614> a ns1:Instance ;
+    rdfs:label "Hans Brinker, or, The silver skates"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-02" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©1929"@eng ;
+    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 online resource (320 pages)"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b> ;
+    ns1:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Chicago"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n78059801> ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Albert Whitman & Company, Publishers"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:date "1929"@eng ] ;
+    ns1:reproductionOf [ a ns1:Instance ;
+            rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman & Company, Publishers, [1929] (DLC)   29024738 (OCoLC)6194975" ] ;
+    ns1:responsibilityStatement "by Mary Mapes Dodge"@eng,
+        "illustrated by Violet Moore Higgins"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:seriesStatement "Albert Whitman's classics fully illustrated"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Hans Brinker, or, The silver skates"@eng ],
+        [ a ns1:VariantTitle ;
+            rdfs:label "Hans Brinker"@eng,
+                "Silver skates"@eng ;
+            ns1:mainTitle "Hans Brinker"@eng,
+                "Silver skates"@eng ] .
+

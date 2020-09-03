@@ -1,0 +1,32 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/121557a5-5cf7-40a0-9b02-8779f201df38> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "lins@uw.edu"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-30" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:cartographicAttributes [ a ns1:Catographic ;
+            ns1:projection <http://id.loc.gov/vocabulary/mprojection/cc> ],
+        [ a ns1:Cartographic ;
+            rdfs:label "Relief shown by shading and spot heights." ] ;
+    ns1:colorContent [ a ns1:ColorContent ;
+            rdfs:label "color" ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1002> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/420d9d87-de67-45fd-8367-e1c451ef725a> ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:originDate "2015"@zxx ;
+    ns1:scale [ a ns1:Scale ;
+            rdfs:label "Scale 1:1,425,600. one in. equals approximately 22.5 miles or 36.21 km"@eng ] ;
+    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+            rdfs:label "indexes"@eng ] .
+

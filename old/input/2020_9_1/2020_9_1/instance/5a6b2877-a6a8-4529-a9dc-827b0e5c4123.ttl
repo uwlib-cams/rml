@@ -1,0 +1,50 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5a6b2877-a6a8-4529-a9dc-827b0e5c4123> a ns1:Instance ;
+    rdfs:label "Raznye zveri"@rus,
+        "Разные звери"@rus ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-16" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "20 cm"@eng ;
+    ns1:editionStatement "2 izd."@rus,
+        "2 изд."@rus ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "8 unnumbered pages"@eng ] ;
+    ns1:hasReproduction <https://trellis.sinopia.io/repository/washington/326cdf4f-38dc-450c-8fb4-2156ce6a6b20> ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/270f4eb6-8148-4bbd-9910-09475340cffb> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Also available online."@eng,
+                "Cover title."@eng,
+                "Single signature stapled into publisher's color printed pictorial paper wrappers. Chromolithographs."@eng ] ;
+    ns1:productionMethod <http://rdaregistry.info/termList/RDAproductionMethod/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "[Leningrad]"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "OGIZ--Molodai︠a︡ gvardii︠a︡"@rus,
+                        "ОГИЗ--Молодая гвардия"@rus ] ],
+        [ a ns1:Publication ;
+            ns1:date "1931"@rus ] ;
+    ns1:provisionActivityStatement "[Leningrad] : OGIZ--Molodai︠a︡ gvardii︠a︡, 1931."@rus,
+        "[Ленинград] : ОГИЗ--Молодая гвардия, 1931."@rus ;
+    ns1:responsibilityStatement "ris. E. Charushin"@rus,
+        "рис. Е. Чарушин"@rus ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Raznye zveri"@rus,
+                "Разные звери"@rus ] .
+

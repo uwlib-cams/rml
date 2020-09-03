@@ -1,0 +1,42 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/aa768b65-ed37-46f6-bc5d-7608c71abe66> a ns2:Work ;
+    rdfs:label "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "dbrookin"@zxx ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-03-04" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:contribution [ a ns2:Contribution ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label " Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii\"" ] ] ;
+    ns2:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026098> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Russian costume in photographs"@eng ],
+        [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ] ;
+    ns2:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Clothing and dress--Russia (Federation)--Exhibitions.",
+                "Clothing and dress--Russia--Exhibitions" ] ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ],
+        [ a ns2:VariantTitle ;
+            ns2:mainTitle "Russian costume in photographs"@eng ] .
+

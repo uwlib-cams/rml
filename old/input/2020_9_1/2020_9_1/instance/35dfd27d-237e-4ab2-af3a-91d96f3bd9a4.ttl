@@ -1,0 +1,43 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/35dfd27d-237e-4ab2-af3a-91d96f3bd9a4> a ns1:Instance ;
+    rdfs:label "Nautilus"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "mathiasuw"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-12" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "12 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "12 pages"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/0a873285-d181-4eb9-b2f0-17fadb2e583a> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Honolulu, Hawaii"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Gal-Pal Zines" ;
+                    ns1: "Gal-Pal Zines" ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Gal-Pal Zines"@eng ] ],
+        [ a ns1:Publication ;
+            ns1:date "2017"@eng ] ;
+    ns1:provisionActivityStatement "[Honolulu, Hawaii] : Gal-Pal Zines, 2017"@eng ;
+    ns1:responsibilityStatement "by Myra Mae Waddell"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Nautilus"@eng ] .
+

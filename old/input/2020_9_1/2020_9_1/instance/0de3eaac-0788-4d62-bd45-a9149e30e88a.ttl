@@ -1,0 +1,56 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0de3eaac-0788-4d62-bd45-a9149e30e88a> a ns1:Instance ;
+    rdfs:label "Пятилетка без плана"@rus ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin"@zxx ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-26" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "240 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 9789667267278"@zxx ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "ISBN 9789667267278"@zxx ] ;
+            rdf:value "ISBN 9789667267278"@zxx ],
+        [ a ns1:Identifier ;
+            rdf:value "ISBN 9789667267278"@zxx ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/0fdb4413-f1ca-4f14-b60b-06156c4e0c8d> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "At head of title: DIE, Deutsches Institut für Entwicklungspolitik = НИСР, Немецкий институт сотрудничества и развития."@eng,
+                "Includes bibliographical references (pages 220-240) and index."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Киев"@rus ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Издательство Сфера"@rus ] ],
+        [ a ns1:Publication ;
+            ns1:date "1998"@zxx ] ;
+    ns1:responsibilityStatement "Андреас Виттковски"@rus,
+        "перевод с немецкого, Наталья Комарова"@rus ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Pi︠a︡tiletka bez plana : Ukraina: 1991-1996 : formirovanie nat︠s︡ionalʹnogo gosudarstva, ekonomika, elity"@rus ;
+            ns1:mainTitle "Pi︠a︡tiletka bez plana : Ukraina: 1991-1996 : formirovanie nat︠s︡ionalʹnogo gosudarstva, ekonomika, elity"@rus ],
+        [ a ns1:Title ;
+            ns1:subtitle "Украина: 1991-1996 : формирование национального государства, економика, елиты"@rus ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Пятилетка без плана"@rus ] .
+

@@ -1,0 +1,25 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e8358515-4aa7-414b-8fc5-b25a0212399b> a ns2:Item ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "aschiff"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2019-11-27" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:classification [ a ns2:ClassificationLcc ;
+            rdf:value "PR6013.L46E55 1945" ] ;
+    ns2:heldBy [ a ns2:Agent ;
+            rdfs:label "http://id.loc.gov/vocabulary/organizations/wau" ] ;
+    ns2:identifier [ a ns2:Barcode ;
+            rdf:value "39352011831229"@eng ] ;
+    ns2:itemOf <https://trellis.sinopia.io/repository/washington/4806ea2e-ac6f-4177-8162-20e922436a11> ;
+    ns2:physicalLocation "suzzallen"@eng ;
+    ns2:sublocation [ a ns2:Sublocation ;
+            rdfs:label "szstx"@eng ] .
+

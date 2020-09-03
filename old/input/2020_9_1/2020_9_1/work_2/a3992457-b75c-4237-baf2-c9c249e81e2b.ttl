@@ -1,0 +1,48 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a3992457-b75c-4237-baf2-c9c249e81e2b> a ns1:Work ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jmoede"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-05" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:awards "Excellence in Young Adult Nonfiction Finalist, 2012"@eng,
+        "School Library Journal Best Books, 2010"@eng ;
+    ns1:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf [ a ns1:Work ;
+            rdfs:label "Aronson, Marc. Sugar changed the world : a story of magic, spice, slavery, freedom, and science " ],
+        [ a ns1:Work.subclass ;
+            rdfs:label "Aronson, Marc. Sugar changed the world : a story of magic, spice, slavery, freedom, and science " ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "2009033579" ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "2009033579" ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Story of magic, spice, slavery, freedom, and science"@eng ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "2009033579" ] ;
+            rdf:value "2009033579" ] ;
+    ns1:language [ a ns1:Language ;
+            rdfs:label "English " ] ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:originDate "2010" ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "Sugar has left a bloody trail through human history. Cane--not cotton or tobacco--drove the bloody Atlantic slave trade and took the lives of countless Africans who toiled on vast sugar plantations under cruel overseers. And yet the very popularity of sugar gave abolitionists in England the one tool that could finally end the slave trade. This book traces the history of sugar from its origins in New Guinea around 7000 B.C. to its use in the 21st century to produce ethanol."@eng ] ;
+    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references and index"@eng ] .
+

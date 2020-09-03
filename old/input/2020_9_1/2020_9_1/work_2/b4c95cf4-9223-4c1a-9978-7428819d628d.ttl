@@ -1,0 +1,44 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b4c95cf4-9223-4c1a-9978-7428819d628d> a ns2:Work ;
+    rdfs:label "The dancer, Choi Seunghee"@eng ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "jlee70"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "03-02-2020" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:colorContent [ a ns2:ColorContent ;
+            rdfs:label "black and white",
+                "color" ],
+        <http://rdaregistry.info/termList/RDAColourContent/1002>,
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/2b0e847a-5fad-4150-9612-aec9f9474096> ;
+    ns2:identifiedBy [ a ns2:Identifier ;
+            ns2:note [ a ns2:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns2:noteType "type of identifier"@en ] ;
+            ns2:source [ a ns2:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "The dancer, Choi Seunghee. English"@eng ] ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns2:note [ a ns2:Note ;
+            rdfs:label "color and black and white sequences"@eng ;
+            ns2:noteType "has details of colour content"@en ] ;
+    ns2:originDate "2006"@zxx ;
+    ns2:summary [ a ns2:Summary ;
+            rdfs:label "Documentary on the life of Korean dancer Choi Seunghee."@eng ] ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "The dancer, Choi Seunghee"@eng ],
+        [ a ns2:VariantTitle ;
+            ns2:mainTitle "Choi Seunghee : the story of a dancer"@eng ] .
+

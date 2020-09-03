@@ -1,0 +1,49 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5082630b-c92d-492b-9e5a-5419d26d6dca> a ns1:Instance ;
+    rdfs:label "He ain't done right by Nell"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-30" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:copyrightDate "©1935"@eng ;
+    ns1:dimensions "19 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "43 pages,  1 unnumbered page"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/45df3fee-8071-4e32-8de7-b2dbf0a492f9> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "London"@eng,
+                        "Los Angeles, Calif."@eng,
+                        "New York, N.Y."@eng ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Samuel French" ;
+                    ns1: "Samuel French" ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Samuel French, Inc."@eng,
+                        "Samuel French, Ltd."@eng ] ],
+        [ a ns1:Publication ;
+            ns1:date "[1935]"@eng ] ;
+    ns1:provisionActivityStatement "New York, N.Y. ; Los Angeles, Calif. : Samuel French, Inc. ;  London, Samuel French, Ltd., [1935]"@eng ;
+    ns1:responsibilityStatement "by Wilbur Braun"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "He ain't done right by Nell"@eng ],
+        [ a ns1:Title ;
+            ns1:subtitle "an old-fashioned melodrama in one act"@eng ] .
+

@@ -1,0 +1,22 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/700dcd07-2ba5-4360-80a0-75339178addf> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "dbrookin"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-18" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:colorContent [ a ns2:ColorContent ;
+            rdfs:label "color" ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/dff80804-5b2a-4d65-bbc9-7ebb0c01fd13> ;
+    ns2:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Cyrillic"@eng ] .
+

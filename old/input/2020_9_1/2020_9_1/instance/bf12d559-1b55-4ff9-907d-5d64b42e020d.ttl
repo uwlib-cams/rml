@@ -1,0 +1,43 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bf12d559-1b55-4ff9-907d-5d64b42e020d> a ns1:Instance ;
+    rdfs:label "大阪市案内圖"@jpn ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jlee70"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-12" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    ns1:dimensions "49 x 33 cm"@zxx ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "1 map"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/4076d7bd-e965-461e-b213-483f0a14ea6c> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Includes three diagrams and text on verso."@eng ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Ōsaka"@jpn ] ],
+        [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha"@jpn ] ],
+        [ a ns1:Publication ;
+            ns1:date "[1950]"@zxx ] ;
+    ns1:provisionActivityStatement "Ōsaka : Nihon Chizu Kabushiki Kaisha, Shōwa 25 [1950]"@jpn ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Ōsaka-shi annaizu"@jpn ;
+            ns1:mainTitle "Ōsaka-shi annaizu"@jpn ],
+        [ a ns1:Title ;
+            ns1:mainTitle "大阪市案内圖"@jpn ] .
+
