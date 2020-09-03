@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Girard, Simone-Elise",
+                        "Sevigny, Chloë",
+                        "Zahn, Steve, 1968-" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/act> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n82007098> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cmp> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2009080456> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edm> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2001025456>,
+                <http://id.loc.gov/rwo/agents/n96074192>,
+                <http://id.loc.gov/rwo/agents/no00051499>,
+                <http://id.loc.gov/rwo/agents/no2003087817>,
+                <http://id.loc.gov/rwo/agents/no98082146>,
+                <http://id.loc.gov/rwo/agents/no98129197> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/act> ] ;
+    bf:duration "93 min."@eng ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/eb572713-b9fc-4090-bf89-c8493678f694> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Shattered glass (Motion picture). English"@eng ] ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "A biographical drama based on the career of Stephen Glass, a popular writer for such magazines as 'Rolling Stone', 'Harper's Bazaar' and 'George'. But by the mid 1990's, at the height of his career as staff writer for 'The new republic' under lead editor Chuck Lane, strange inconsistencies in his stories began to surface that called into question his professionalism."@eng ] .
+

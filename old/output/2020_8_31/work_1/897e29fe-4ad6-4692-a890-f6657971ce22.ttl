@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> a bf:Work ;
+    rdfs:label "Alten Stettin (Map : 1588)"@deu ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-09" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ] ;
+    bf:classification [ a bf:Classification ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "Library of Congress Geographic Classification"@en ] ;
+            rdf:value "G6524.S93" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50043890> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n50043248> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "http://id.loc.gov/authorities/genreForms/gf2017027232" ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026033> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. Part 4. Plate 41."@eng ] ;
+    bf:natureOfContent "An aerial view of the city of Stettin (modern-day Szczecin) from the northwest."@eng ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Shows the Oder River, people, animals, boats, fortifications, buildings, hills, trees, and farmland. Shows the Cathedral Basilica of St James the Apostle."@eng ;
+            bf:noteType "coverage of content"@en ] ;
+    bf:originDate "1617" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80050882> ;
+    bf:partOf [ a bf:Work ;
+            rdfs:label "http://id.loc.gov/authorities/names/no2015087016" ] ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Szczecin (Poland)--Aerial views--Early works to 1800" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Alten Stettin (Map : 1588)"@deu ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Alten Stettin"@deu,
+                "Stettin"@deu ] .
+

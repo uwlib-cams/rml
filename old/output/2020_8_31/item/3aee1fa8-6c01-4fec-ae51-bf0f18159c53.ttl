@@ -1,0 +1,34 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3aee1fa8-6c01-4fec-ae51-bf0f18159c53> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-28" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            rdf:value "PR6005.H66P63 1991" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Klein, Gail" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+    bf:heldBy [ a bf:Agent ;
+            rdfs:label "CeC" ] ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "123456789" ] ;
+    bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
+            rdfs:label "Inherited from grandma."@eng ] ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/06362edc-8f38-449b-a23e-2fffc0374ac8> ;
+    bf:physicalLocation "crystalshouse" ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "crystalsbookshelfmysteryfiction" ] ;
+    bf:usageAndAccessPolicy [ a bf:UsePolicy ;
+            rdfs:label "Requires access to Crystal's bookshelf at home."@eng ] .
+

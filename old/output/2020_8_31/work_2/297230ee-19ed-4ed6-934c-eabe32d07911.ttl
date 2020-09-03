@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/297230ee-19ed-4ed6-934c-eabe32d07911> a bf:Work ;
+    rdfs:label "Alten Stettin (Map : 1588). German. 1617"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-09" ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:cartographicAttributes <http://id.loc.gov/vocabulary/mrelief/pict> ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1002>,
+        <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. German. 1617. Part 4. Plate 41."@eng ] ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "hand colored"@eng ;
+            bf:noteType "has details of colour content"@en ],
+        [ a bf:Note ;
+            rdfs:label "Map in Latin. Text on verso in German, translated from original Latin."@eng,
+                "Separated from Part 4 of the 1617 German edition of Braun & Hogenberg's \"Civitates orbis terrarum\"."@eng,
+                "Text on verso begins with decorative initial \"P\". Has plate number \"41\" in lower right. Last line of text \"schafft ... erkendt\" (followed by geographical position). First line ends \"des\"."@eng ;
+            bf:noteType "note on expression"@en ] ;
+    bf:originDate "1617" ;
+    bf:scale <http://rdaregistry.info/termList/scale/1002> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Alten Stettin"@deu ],
+        [ a bf:Title ;
+            bf:mainTitle "Alten Stettin (Map : 1588). German. 1617"@eng ] .
+

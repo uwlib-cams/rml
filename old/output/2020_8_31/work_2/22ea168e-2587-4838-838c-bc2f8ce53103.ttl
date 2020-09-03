@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/22ea168e-2587-4838-838c-bc2f8ce53103> a bf:Work ;
+    rdfs:label "Xinning xiang tu li shi"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-15" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/7e72cdce-2517-4bd5-be85-5836273f0e31> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lei, Zepu. Xinning xiang tu li shi. Chinese"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lei, Zepu. Xinning xiang tu li shi (1909)"@eng,
+                "Lei, Zepu. 新寧鄉土歷史. Chinese"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Traditional Chinese"@eng ] ;
+    bf:originDate "1909"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Xinning xiang tu li shi : [er juan]"@eng,
+                "新寧鄉土歷史 : [二卷]"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu li shi"@eng ] .
+
