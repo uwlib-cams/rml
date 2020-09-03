@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3f51c956-0a93-4dc6-b16c-cecee7693db3> a bf:Work ;
+    rdfs:label "Makedonsko-russkiĭ slovarʹ"@rus ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84143926>,
+                <http://id.loc.gov/rwo/agents/no00037560> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/com> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026086> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Tolovski, D. (Dime). Makedonsko-ruski rečnik"@mac ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Tolovski, D. (Dime). Makedonsko-russkiĭ slovarʹ"@rus ] ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Macedonian language--Dictionaries--Russian" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Makedonsko-russkiĭ slovarʹ"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Makedonsko-ruski rečnik"@mac ] .
+

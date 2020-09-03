@@ -1,0 +1,68 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6972f13d-f067-4d11-ac12-de219adf91cd> a bf:Instance ;
+    rdfs:label "Hans Brinker, or, The silver skates"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84226647> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:copyrightDate "©1896"@eng ;
+    bf:dimensions "25 cm"@eng ;
+    bf:editionStatement "New Amsterdam edition"@eng,
+        "illustrated by Allen B. Doggett"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiv, 393 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "LCCN 2009439765"@eng ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "LCCN 2009439765"@eng ] ;
+            rdf:value "LCCN 2009439765"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "LCCN 2009439765"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/cfd5e301-ed10-44a6-94a0-3173e60a1bf6> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Cloth cover signed by the designer: M.A. [Margaret Armstrong]."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "1903"@eng ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Charles Scribner's Sons"@eng ] ],
+        [ a bf:Manufacture ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84226647> ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "book designer"@en ;
+                    bf:noteType "role in manufacture"@en ] ] ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:subtitle "a story of life in Holland"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Hans Brinker"@eng,
+                "Silver skates"@eng ;
+            bf:mainTitle "Hans Brinker"@eng,
+                "Silver skates"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ] .
+

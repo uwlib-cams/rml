@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f74fb1b0-b7f7-448f-ba77-61dd753f43b7> a bf:Work ;
+    rdfs:label "Radical cataloging: essays at the front"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n2003037952> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Roberto, K.R. Radical cataloging: essays at the front"@eng ] ;
+    bf:originDate "2008"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Radical cataloging: essays at the front"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Radical cataloging"@eng ] .
+

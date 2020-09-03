@@ -1,0 +1,62 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> a bf:Work ;
+    rdfs:label "Go down, Moses"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060101>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79003304> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    bf:hasPart [ a bf:Work ;
+            rdfs:label "http://id.loc.gov/authorities/names/n2010050909",
+                "http://id.loc.gov/authorities/names/n80153668",
+                "http://id.worldcat.org/fast/1367787" ] ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
+            rdf:value "http://viaf.org/viaf/174446829"@en ],
+        [ a bf:Identifier ;
+            rdf:value "http://viaf.org/viaf/174446829"@en ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "http://viaf.org/viaf/174446829"@en ] ;
+            rdf:value "http://viaf.org/viaf/174446829"@en ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories"@en ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Faulkner, William, 1897-1962. Go down, Moses"@en ] ;
+    bf:originDate "1942"@en ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Mississippi--Race relations--Fiction",
+                "Mississippi--Social life and customs--Fiction",
+                "Southern States--Race relations--Fiction",
+                "Yoknapatawpha County (Imaginary place)--Fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2008111599> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Go down, Moses and other stories"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Go down, Moses"@en ] .
+

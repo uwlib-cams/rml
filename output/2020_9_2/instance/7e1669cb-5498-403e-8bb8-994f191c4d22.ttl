@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7e1669cb-5498-403e-8bb8-994f191c4d22> a bf:Instance ;
+    rdfs:label "Mountain flowers"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1979"@eng ;
+    bf:dimensions "12 x 15 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "96 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/d21f1469-3e8b-40c9-8d9d-db575649c681> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[1979]"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The Mountaineers"@eng ] ],
+        [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Mountaineers"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle"@eng ] ] ;
+    bf:provisionActivityStatement "Seattle : The Mountaineers, [1979]"@eng ;
+    bf:responsibilityStatement "text by Harvey Manning ; photos by Bob and Ira Spring"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mountain flowers"@eng ] .
+

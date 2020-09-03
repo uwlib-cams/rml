@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/9320b5fb-a7ba-465d-811b-5130549f9814> a bf:Instance ;
+    rdfs:label "French topical disc. FTD 79-123"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-05" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    bf:copyrightDate "©"@eng ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1001> ;
+    bf:dimensions "7 in."@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1001> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[1979]"@zxx ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Radio Canada International"@eng ] ],
+        [ a bf:Production ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Montreal]"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Montreal]"@eng ] ] ;
+    bf:provisionActivityStatement "[Montreal] : Radio Canada International, [1979]"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:soundCharacteristic [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@eng ],
+        <http://rdaregistry.info/termList/configPlayback/1001>,
+        <http://rdaregistry.info/termList/typeRec/1001> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "French topical disc. FTD 79-123"@eng ] .
+

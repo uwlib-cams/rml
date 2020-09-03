@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c18367aa-c65a-4fe1-80ee-cd8b712f0961> a bf:Instance ;
+    rdfs:label "Sound and the sea"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1977"@eng ;
+    bf:dimensions "21 cm"@eng ;
+    bf:editionStatement "3rd edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 474 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "LCCN  78103194 " ] ;
+            rdf:value "LCCN  78103194 " ],
+        [ a bf:Identifier ;
+            rdf:value "LCCN  78103194 " ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "LCCN  78103194 " ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/819654ab-832c-4866-8f4d-450f42c7fbc9> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[1977]"@eng ],
+        [ a bf:Manufacture ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Olympia, Washington"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Washinhgton]"@eng ] ],
+        [ a bf:Manufacture ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Washington State Department of Printing"@eng ] ] ;
+    bf:provisionActivityStatement "[Washington] : [publisher not identified], [1977]  (Olympia : Washington State Department.of Printing)"@eng ;
+    bf:responsibilityStatement "by Charles J. Flora and Eugene Fairbanks"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Sound and the sea"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "a guide to northwestern neritic invertebrate zoology"@eng ] .
+

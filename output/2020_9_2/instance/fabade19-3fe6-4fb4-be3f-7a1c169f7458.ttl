@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fabade19-3fe6-4fb4-be3f-7a1c169f7458> a bf:Instance ;
+    rdfs:label "Impetus or impediment"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2015" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (174 pages)"@eng ] ;
+    bf:instanceOf [ a bf:Work.subclass ;
+            rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ],
+        [ a bf:Work ;
+            rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "2015" ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2015]"@eng ;
+    bf:responsibilityStatement "Bradley Jensen Murg"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ;
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@eng ] .
+

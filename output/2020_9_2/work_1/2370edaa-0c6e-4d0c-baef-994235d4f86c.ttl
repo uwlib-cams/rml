@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2370edaa-0c6e-4d0c-baef-994235d4f86c> a bf:Work ;
+    rdfs:label "Visit Spokane map"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "202004-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:Classification ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "Library of Congress Geographic Classification"@en ] ;
+            rdf:value "G4284.S4E635 2015"@eng ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2014046807> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026441>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026536>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026699> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Visit Spokane (Organization). Visit Spokane map"@eng ] ;
+    bf:originDate "2015"@zxx ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Spokane, Washington" ] ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "CCentral business districts--Washington (State)--Spokane--Maps",
+                "Spokane (Wash.)--Maps",
+                "Spokane Valley (Wash.)--Maps" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Visit Spokane map"@eng ] .
+
