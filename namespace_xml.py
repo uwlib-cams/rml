@@ -40,7 +40,7 @@ new_prefix_list = [
 "bflc",
 "dbo",
 "madsrdf",
-"rdam",
+"rdamdt",
 "rdae",
 "rdai",
 "rdam",
