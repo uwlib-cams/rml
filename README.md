@@ -42,6 +42,7 @@ The output for this command is:
 Bad input files: 0
 Bad output files: 0
 
-***```
+***
+```
 
 For an example with a flawed dataset, a full report for the 2020_8_31 output can be viewed [here](https://github.com/uwlib-cams/rml/blob/master/old/badFileReport.txt).
