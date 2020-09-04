@@ -1,43 +1,43 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/1a09069d-8165-42ae-bfc0-f6b269b4d34b> a bf:Work ;
     rdfs:label "Beyond Einstein"@en ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23"@en ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-19" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent [ a ns1:Agent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-19" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany)" ] ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein"@en ],
-        [ a ns1:Issn ;
+        [ a bf:Issn ;
             rdf:value "2381-5833"@en ] ;
-    ns1:note [ a ns1:Note ;
+    bf:note [ a bf:Note ;
             rdfs:label "\"This volume explores the interplay between mathematical and physical research and the interactions of twentieth-century scientists within their academic communities. Beginning with Einstein's general theory of relativity, the authors investigate a series of dramatic discoveries and rival theories in physics that influenced the development of modern differential geometry. Other sections recount the numerous methods, like the resurgence of Weyl geometry, used by geometers to solve the problems revealed by those same innovations in space-time physics. The effect of general relativity on astronomy is also addressed, namely how astronomers worked through new theories like inflationary cosmology and Phoenix models. By including recent historical research and coupling this work with many disciplines' unique perspectives, this text provides a rich picture of general relativity and cosmology over the course of the twentieth century. The increased study on the documentation of Einstein's early scientific work has clarified the history of science for that time and profoundly altered the way scientists view their own work, as this interdisciplinary volume demonstrates\"--Page 4 of cover."@en,
                 "Contents: Part I. Mathematical and physical underpinnings of spacetime: Figures of light in the early history of relativity (1905-1914) / Scott A. Walter -- The behaviour of rods and clocks in general relativity and the meaning of the metric field / Harvey R. Brown -- Hilbert on general covariance and causality / Katherine Brading and Thomas Ryckman -- Part II. Testing general relativity and rival theories: Putting general relativity to the test : twentieth-century highlights and twenty-first century prospects / Clifford M. Will -- Rotating hollow and full spheres : Einstein, Thirring, Lense, and beyond / Herbert Pfister -- Relativistic lighthouses : the role of the binary pulsar in proving the existence of gravitational waves / Daniel Kennefick -- The rise and fall of the fifth force / Allan Franklin -- Part III: Geometry and cosmology, past and present: Cyclic models of the relativistic universe : the early history / Helge Kragh -- Inflation and the origins of structure / Chris Smeenk -- Problems with modified theories of gravity, as alternatives to dark energy / Norbert Straumann -- The unexpected resurgence of Weyl geometry in late 20th-century physics / Erhard Scholz -- Part IV. Mathematical motifs in general relativity and beyond: Matter from space / Domenico Giulini -- The surprising resolution of the Poincaré conjecture / Donal O'Shea -- Unified field theory up to the 1960s : its development and some interactions among research groups / Hubert Goenner -- Part V. Quantum gravity, conformal boundaries, and string theory: The formulation of quantum field theory in curved spacetime / Robert M. Wald -- Conformal infinity : development and applications / Jörg Fraudendiener -- String theory and spacetime geometry / Matthias R. Gaberdiel -- Conference program / Volker Bach and David E. Rowe."@en ] ;
-    ns1:originDate "2018"@en ;
-    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+    bf:originDate "2018"@en ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Cosmology--History--20th century--Congresses",
                 "General relativity (Physics)--History--20th century--Congresses",
                 "Mathematics--History--20th century--Congresses",
                 "Physics--History--20th century--Congresses",
                 "Relativity (Physics)--History--20th century--Congresses" ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Beyond Einstein"@en ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Beyond Einstein"@en ] .
 
