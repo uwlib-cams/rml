@@ -38,7 +38,8 @@ This error has been addressed in newer versions of rml.py, but this script can b
 `python3.6 findBadFiles.py 2020_9_2`
 
 The output for this command is:
-```Total number of bad files: 0
+```
+Total number of bad files: 0
 Bad input files: 0
 Bad output files: 0
 
