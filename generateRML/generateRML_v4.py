@@ -298,7 +298,7 @@ for csv_file in csv_files:
         for line in csv_reader:
             if line_count == 0: # ignore header row
                 pass
-            elif line[1] == "P10002": # mapping for this property too complex; writing it in manually
+            elif line[1].lstrip('http://rdaregistry.info/Elements/w/') == "P10002": # mapping for this property too complex; writing it in manually
                 pass
             else:
                 prop_IRI = line[1]
