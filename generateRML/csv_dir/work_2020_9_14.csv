@@ -317,17 +317,15 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/jud>"
 has praeses (RDA 18.5),http://rdaregistry.info/Elements/w/P10045,"bf:contribution [ a bf:Contribution ;
-   bf:role [ a bf:Role ;
-      rdfs:label ""praeses"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/pra>;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10045value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role [ a bf:Role ;
-      rdfs:label ""praeses"" ] ;
-   bf:agent <P10045value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""praeses"" ; > agent >> Person > rdfs:label
+   bf:role <http://id.loc.gov/vocabulary/relators/pra> ;
+   bf:agent <P10045value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/pra> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""praeses"" "
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/pra> "
 has issuing body agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10046,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/isb> ;
    bf:agent [ a bf:Agent ;
@@ -637,10 +635,9 @@ or
 hasExpression >> Work > rdfs:label
 or
 hasExpression >> Work.subclass > rdfs:label"
-has numeric designation of musical work (RDA 6.16),http://rdaregistry.info/Elements/w/P10079,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P10079value"" ;
-   bf:source [ a bf:Source ;
-      rdfs:label ""numeric designation for musical work"" ] ] .","identifiedBy >> Identifier > rdf:value > source >> Source > rdfs:label=""numeric designation for musical work"""
+has numeric designation of musical work (RDA 6.16),http://rdaregistry.info/Elements/w/P10079,"bf:note [ a bf:Note ;
+   rdfs:label ""P10079value"" ;
+   bf:noteType ""numeric designation for musical work"" ] .","note >> Note > rdfs:label > noteType=""numeric designation for musical work"""
 has subseries (RDA 24.5),http://rdaregistry.info/Elements/w/P10080,"bf:hasSubseries <P10080value> .
 # with literal value
 bf:hasSubseries [ a bf:Work ;
@@ -696,16 +693,13 @@ rdfs:label ""P10092value"" ] .","accompaniedBy*
 or
 accompaniedBy >> Work > rdfs:label
 "
-has illustrations work (RDA 24.5),http://rdaregistry.info/Elements/w/P10093,"bf:accompaniedBy <P10093value> ;
-  bf:illustrativeContent <P10093value> .
+has illustrations work (RDA 24.5),http://rdaregistry.info/Elements/w/P10093,"bf:accompaniedBy <P10093value> .
 # with literal value
 bf:accompaniedBy [ a bf:Work ;
-    rdfs:label ""P10093value"" ] ;
-  bf:illustrativeContent [ a bf:Illustration;
     rdfs:label ""P10093value"" ] .
-","accompaniedBy* ; illustrativeContent*
+","accompaniedBy*
 or
-accompaniedBy >> Work > rdfs:label ; > illustrativeContent >> Illustration > rdfs:label
+accompaniedBy >> Work > rdfs:label
 "
 is adapted as motion picture screenplay work (RDA 24.5),http://rdaregistry.info/Elements/w/P10094,"bf:hasDerivative <P10094value> .
 # with literal value
