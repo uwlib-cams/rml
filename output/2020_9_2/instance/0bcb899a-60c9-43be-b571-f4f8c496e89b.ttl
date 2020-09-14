@@ -2,8 +2,11 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/0bcb899a-60c9-43be-b571-f4f8c496e89b> a bf:Instance ;
-    rdfs:label "Македонско-русский словарь"@rus ;
+# RML data review 2020-09-09 BMR
+# Comparing with input > 2020_9_2 > manifestation > 0bcb899a-60c9-43be-b571-f4f8c496e89b.ttl
+
+<https://trellis.sinopia.io/repository/washington/0bcb899a-60c9-43be-b571-f4f8c496e89b> a bf:Instance ; # resource typing ok
+    rdfs:label "Македонско-русский словарь"@rus ; # P303156 / has title proper: literal value output with lang tag ok (see also below)
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "dbrookin"@zxx ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
@@ -13,34 +16,37 @@
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
-    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©"@eng ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ; # P30084 / applied material: IRI output OK
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ; # P30208 / has base material: IRI output OK
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ; # has carrier type / P30001: IRI value output OK
+    bf:copyrightDate "©"@eng ; # P30007 / copyright date: Literal output with lang tag OK - (NOTE no value seems to have been entered in Sinopia, so the default has come through as-is)
     bf:extent [ a bf:Extent ;
-            rdfs:label "576 pages"@eng ] ;
-    bf:instanceOf <https://trellis.sinopia.io/repository/washington/90ecceaa-a3f1-4cdd-8e61-96d76bd1b160> ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    bf:note [ a bf:Note ;
-            rdfs:label "Includes bibliographical references (page 5)"@eng ] ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:date "1963"@zxx ],
+            rdfs:label "576 pages"@eng ] ; # P30182 / has extent of manifestation: literal output with lang tag OK
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/90ecceaa-a3f1-4cdd-8e61-96d76bd1b160> ; # P30139 / expression manifested: IRI value output OK
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ; # P30003 / has mode of issuance: IRI value output OK
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ; # P30002 / has media type: IRI value output OK
+    bf:note [ a bf:Note ; # P30137 / note on manifestation: literal value output with lang tags ok
+            rdfs:label "Includes bibliographical references (page 5)"@eng ] ; # P30137 / note on manifestation: literal value output with lang tags ok
+    bf:provisionActivity
+        [ a bf:Publication ;
+            bf:date "1963"@zxx ], # P30011 / date of publication: Literal value output with lang tag OK BUT...
         [ a bf:Publication ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Москва"@rus ] ],
+                    rdfs:label "Москва"@rus ] ], # P30088 / place of publication: literal value output with lang tag OK BUT...
         [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Государственное издатеальство иностранных и национальных словарей"@rus ] ] ;
+                    rdfs:label "Государственное издатеальство иностранных и национальных словарей"@rus ] ] ; # P30176 / has name of publisher: literal value output with lang tag OK BUT...
+                    # BUT should these three bnodes be one bnode?? Ideally, yes, right? This one manifestation has one publication.
     bf:responsibilityStatement "под редакцией Н.И. Толстого"@rus,
         "с приложением краткого грамматического справочника, составленного В.М. Иллич-Свитычем"@rus,
-        "составили Д. Толовски и В.М. Иллич-Свитыч"@rus ;
+        "составили Д. Толовски и В.М. Иллич-Свитыч"@rus ; # P30105 / statement of resp. relating to title proper: Literal value output ok
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre> ;
-    bf:title [ a bf:Title ;
-            bf:subtitle "30000 слов"@rus ],
+    bf:title
         [ a bf:Title ;
-            bf:mainTitle "Македонско-русский словарь"@rus ],
+            bf:subtitle "30000 слов"@rus ], # P30142 / has other title information: literal value output with lang tag ok BUT...
+        [ a bf:Title ;
+            bf:mainTitle "Македонско-русский словарь"@rus ], # P303156 / has title proper: literal value output with lang tag ok (see also above) BUT...
+            # BUT should these bnodes (as bf:Publication above) be one bnode, with maintitle and subtitle statements
         [ a bf:ParallelTitle ;
-            bf:mainTitle "Македонско-руски речник"@mac ] .
-
+            bf:mainTitle "Македонско-руски речник"@mac ] . # P30203 / has parallel title proper: literal value output with lang tags OK
