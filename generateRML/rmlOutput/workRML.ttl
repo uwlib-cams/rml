@@ -145,6 +145,52 @@ ex:StatusMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:identifiedBy;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IdentifierMap
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:identifiedBy;
+  rr:objectMap [
+    rml:reference "P10002/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IdentifierMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/rdfxml/data/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10002[not(@resource)]]"
+  ].
+
+ex:IdentifierMap rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Identifier
+].
+
+ex:IdentifierMap rr:predicateObjectMap [
+  rr:predicate rdf:value;
+  rr:objectMap [
+    rml:reference "P10002[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P10002/@lang"
+    ]
+  ]
+].
+
+ex:IdentifierMap rr:predicateObjectMap [
+  rr:predicate rdf:value;
+  rr:objectMap [
+    rml:reference "P10002[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:;
   rr:objectMap [
     rml:reference "P10001[not(@resource)][@lang]";
