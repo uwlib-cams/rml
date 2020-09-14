@@ -11990,17 +11990,6 @@ ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:originDate;
   rr:objectMap [
     rml:reference "P20214[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P20214/@lang"
-    ]
-  ]
-].
-
-ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate bf:originDate;
-  rr:objectMap [
-    rml:reference "P20214[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].

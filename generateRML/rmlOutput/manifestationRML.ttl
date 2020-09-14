@@ -511,17 +511,6 @@ ex:ManifestationMap rr:predicateObjectMap [
   rr:predicate bf:copyrightDate;
   rr:objectMap [
     rml:reference "P30007[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P30007/@lang"
-    ]
-  ]
-].
-
-ex:ManifestationMap rr:predicateObjectMap [
-  rr:predicate bf:copyrightDate;
-  rr:objectMap [
-    rml:reference "P30007[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
@@ -701,17 +690,6 @@ ex:Provisionactivity_18_Map rr:predicateObjectMap [
   rr:predicate bf:date;
   rr:objectMap [
     rml:reference "P30011[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P30011/@lang"
-    ]
-  ]
-].
-
-ex:Provisionactivity_18_Map rr:predicateObjectMap [
-  rr:predicate bf:date;
-  rr:objectMap [
-    rml:reference "P30011[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
