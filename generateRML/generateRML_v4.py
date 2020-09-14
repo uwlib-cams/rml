@@ -77,10 +77,11 @@ def generate_IRI_po_map(property, predicate, map_name):
 ].\n"""
     return IRI_po_map
 
-def generate_literal_po_map(property, predicate, map_name):
+def generate_literal_po_map(property, predicate, map_name, langtag):
     if ":" not in predicate:
         predicate = f"bf:{predicate}"
-    literal_po_map = f"""ex:{map_name}Map rr:predicateObjectMap [
+    if langtag == True:
+        literal_po_map = f"""ex:{map_name}Map rr:predicateObjectMap [
   rr:predicate {predicate};
   rr:objectMap [
     rml:reference \"{property}[not(@resource)][@lang]\";
@@ -95,6 +96,14 @@ ex:{map_name}Map rr:predicateObjectMap [
   rr:predicate {predicate};
   rr:objectMap [
     rml:reference \"{property}[not(@resource) and not(@lang)]\";
+    rr:termType rr:Literal
+  ]
+].\n"""
+    elif langtag == False:
+        literal_po_map = f"""ex:{map_name}Map rr:predicateObjectMap [
+  rr:predicate {predicate};
+  rr:objectMap [
+    rml:reference \"{property}[not(@resource)][@lang]\";
     rr:termType rr:Literal
   ]
 ].\n"""
@@ -222,6 +231,7 @@ def fix_broken_constants(constant_list):
 
 def split_by_space(map):
     """Takes in a kiegel map as a string, and returns the elements in the map separated as a list"""
+    map = map.strip()
     map_list = map.split(" ")
 
     # some constant literal values will have spaces in them that shouldn't be split; the following code will look for these instances and fix them
@@ -266,6 +276,8 @@ for file in csv_file_list:
 
 index_number = 0
 
+no_language_tag_list = ["P10219"]
+
 for csv_file in csv_files:
     if "work" in csv_file:
         entity_number = 1
@@ -285,6 +297,8 @@ for csv_file in csv_files:
         line_count = 0
         for line in csv_reader:
             if line_count == 0: # ignore header row
+                pass
+            elif line[1] == "P10002": # mapping for this property too complex; writing it in manually
                 pass
             else:
                 prop_IRI = line[1]
@@ -476,6 +490,53 @@ for csv_file in csv_files:
     for line in admin_metadata_list:
         RML_list.append(line + "\n")
 
+    if entity_number == 1:
+        P10002_list = [
+        f"ex:{default_map}Map rr:predicateObjectMap [",
+        "  rr:predicate bf:identifiedBy;",
+        "  rr:objectMap [",
+        "    rr:parentTriplesMap ex:IdentifierMap",
+        "  ]",
+        "].\n",
+        f"ex:{default_map}Map rr:predicateObjectMap [",
+        "  rr:predicate bf:identifiedBy;",
+        "  rr:objectMap [",
+        "    rml:reference \"P10002/@resource\";",
+        "    rr:termType rr:IRI",
+        "  ]",
+        "].\n",
+        "ex:IdentifierMap a rr:TriplesMap;",
+        "  rml:logicalSource [",
+        "    rml:source \"/home/mcm104/rml/rdfxml/data/!!workID!!.xml\";",
+        "    rml:referenceFormulation ql:XPath;",
+        "    rml:iterator \"/RDF/Description[P10002[not(@resource)]]\"",
+        "  ].\n",
+        "ex:IdentifierMap rr:subjectMap [",
+        "  rr:termType rr:BlankNode;",
+        "  rr:class bf:Identifier",
+        "].\n",
+        "ex:IdentifierMap rr:predicateObjectMap [",
+        "  rr:predicate rdf:value;",
+        "  rr:objectMap [",
+        "    rml:reference \"P10002[not(@resource)][@lang]\";",
+        "    rr:termType rr:Literal;",
+        "    rml:languageMap [",
+        "      rml:reference \"P10002/@lang\"",
+        "    ]",
+        "  ]",
+        "].\n",
+        "ex:IdentifierMap rr:predicateObjectMap [",
+        "  rr:predicate rdf:value;",
+        "  rr:objectMap [",
+        "    rml:reference \"P10002[not(@resource) and not(@lang)]\";",
+        "    rr:termType rr:Literal",
+        "  ]",
+        "].\n"
+        ]
+
+        for line in P10002_list:
+            RML_list.append(line + "\n")
+
     """Iterate through kiegel mappings and generate RML"""
 
     num_of_properties = len(property_number_list)
@@ -569,7 +630,12 @@ for csv_file in csv_files:
                         RML_list.append(po_map + "\n")
                     else: # node takes a literal value or blank node
                         if num == num_of_nodes - 1: # it's the last node and cannot be a blank node, takes a literal
-                            po_map = generate_literal_po_map(property_number, node, map_name)
+                            if property_number in no_language_tag_list:
+                                langtag = False
+                            else:
+                                langtag = True
+
+                            po_map = generate_literal_po_map(property_number, node, map_name, langtag)
                             RML_list.append(po_map + "\n")
                         elif node_list[num + 1] == ">>": # it takes a blank node...
                             pass
@@ -582,7 +648,12 @@ for csv_file in csv_files:
                             if is_class == True:
                                 pass
                             else:# it takes a literal
-                                po_map = generate_literal_po_map(property_number, node, map_name)
+                                if property_number in no_language_tag_list:
+                                    langtag = False
+                                else:
+                                    langtag = True
+
+                                po_map = generate_literal_po_map(property_number, node, map_name, langtag)
                                 RML_list.append(po_map + "\n")
 
             map_number = map_number + 1
