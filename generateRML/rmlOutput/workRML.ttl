@@ -12785,17 +12785,6 @@ ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:originDate;
   rr:objectMap [
     rml:reference "P10219[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P10219/@lang"
-    ]
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:originDate;
-  rr:objectMap [
-    rml:reference "P10219[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
