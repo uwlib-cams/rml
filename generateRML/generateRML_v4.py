@@ -276,7 +276,7 @@ for file in csv_file_list:
 
 index_number = 0
 
-no_language_tag_list = ["P10219"]
+no_language_tag_list = ["P10219", "P20214", "P30007", "P30011"]
 
 for csv_file in csv_files:
     if "work" in csv_file:
