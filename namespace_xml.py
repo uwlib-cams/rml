@@ -3,7 +3,7 @@ from sys import argv
 
 script, data_directory = argv
 
-workList = os.listdir(f'input/{data_directory}/work/')
+workList = os.listdir(f'input/{data_directory}/work')
 expressionList = os.listdir(f'input/{data_directory}/expression')
 manifestationList = os.listdir(f'input/{data_directory}/manifestation')
 itemList = os.listdir(f'input/{data_directory}/item')
