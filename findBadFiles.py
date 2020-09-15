@@ -28,12 +28,15 @@ for work in workList:
             if item == workID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][0].append(f'work/{work}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: input/{fileDate}/work/" + workID + ".ttl")
             else:
-                bad_files[identifier] = ([f'work/{work}'], [])
-            bad_input_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][0].append(f'work/{work}')
+                else:
+                    bad_files[identifier] = ([f'work/{work}'], [])
+                bad_input_file_count += 1
 
 for expression in expressionList:
     expressionID = expression.split(".")[0]
@@ -50,12 +53,15 @@ for expression in expressionList:
             if item == expressionID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][0].append(f'expression/{expression}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: input/{fileDate}/expression/" + expressionID + ".ttl")
             else:
-                bad_files[identifier] = ([f'expression/{expression}'], [])
-            bad_input_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][0].append(f'expression/{expression}')
+                else:
+                    bad_files[identifier] = ([f'expression/{expression}'], [])
+                bad_input_file_count += 1
 
 for manifestation in manifestationList:
     manifestationID = manifestation.split(".")[0]
@@ -72,12 +78,15 @@ for manifestation in manifestationList:
             if item == manifestationID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][0].append(f'manifestation/{manifestation}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: input/{fileDate}/manifestation/" + manifestationID + ".ttl")
             else:
-                bad_files[identifier] = ([f'manifestation/{manifestation}'], [])
-            bad_input_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][0].append(f'manifestation/{manifestation}')
+                else:
+                    bad_files[identifier] = ([f'manifestation/{manifestation}'], [])
+                bad_input_file_count += 1
 
 for item in itemList:
     itemID = item.split(".")[0]
@@ -93,12 +102,15 @@ for item in itemList:
             if item == itemID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][0].append(f'item/{item}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: input/{fileDate}/item/" + itemID + ".ttl")
             else:
-                bad_files[identifier] = ([f'item/{item}'], [])
-            bad_input_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][0].append(f'item/{item}')
+                else:
+                    bad_files[identifier] = ([f'item/{item}'], [])
+                bad_input_file_count += 1
 
 """For output files"""
 
@@ -123,12 +135,15 @@ for work_1 in work1List:
             if item == work1ID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][1].append(f'work_1/{work_1}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: output/{fileDate}/work_1/" + work1ID + ".ttl")
             else:
-                bad_files[identifier] = ([], [f'work_1/{work_1}'])
-            bad_output_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][1].append(f'work_1/{work_1}')
+                else:
+                    bad_files[identifier] = ([], [f'work_1/{work_1}'])
+                bad_output_file_count += 1
 
 for work_2 in work2List:
     work2ID = work_2.split(".")[0]
@@ -144,12 +159,15 @@ for work_2 in work2List:
             if item == work2ID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][1].append(f'work_2/{work_2}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: output/{fileDate}/work_2/" + work2ID + ".ttl")
             else:
-                bad_files[identifier] = ([], [f'work_2/{work_2}'])
-            bad_output_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][1].append(f'work_2/{work_2}')
+                else:
+                    bad_files[identifier] = ([], [f'work_2/{work_2}'])
+                bad_output_file_count += 1
 
 for instance in instanceList:
     instanceID = instance.split(".")[0]
@@ -165,12 +183,15 @@ for instance in instanceList:
             if item == instanceID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][1].append(f'instance/{instance}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: output/{fileDate}/instance/" + instanceID + ".ttl")
             else:
-                bad_files[identifier] = ([], [f'instance/{instance}'])
-            bad_output_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][1].append(f'instance/{instance}')
+                else:
+                    bad_files[identifier] = ([], [f'instance/{instance}'])
+                bad_output_file_count += 1
 
 for item in itemList:
     itemID = item.split(".")[0]
@@ -186,12 +207,15 @@ for item in itemList:
             if item_ == itemID:
                 no_match = False
         if no_match == True:
-            identifier = identifier_list[0]
-            if identifier in bad_files.keys():
-                bad_files[identifier][1].append(f'item/{item}')
+            if len(identifier_list) == 0:
+                print(f"ERROR: output/{fileDate}/item/" + itemID + ".ttl")
             else:
-                bad_files[identifier] = ([], [f'item/{item}'])
-            bad_output_file_count += 1
+                identifier = identifier_list[0]
+                if identifier in bad_files.keys():
+                    bad_files[identifier][1].append(f'item/{item}')
+                else:
+                    bad_files[identifier] = ([], [f'item/{item}'])
+                bad_output_file_count += 1
 
 with open('badFileReport.txt', 'w') as output_file:
     output_file.write(f"Total number of bad files: {bad_input_file_count + bad_output_file_count}\nBad input files: {bad_input_file_count}\nBad output files: {bad_output_file_count}\n\n***\n\n")
