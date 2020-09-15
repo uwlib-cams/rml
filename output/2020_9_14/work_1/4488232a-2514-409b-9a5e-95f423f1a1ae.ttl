@@ -1,0 +1,43 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4488232a-2514-409b-9a5e-95f423f1a1ae> a bf:Work ;
+    rdfs:label "Histoire du soldat"@fra ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "gerhart"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79070061> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cmp> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79076651> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/lbt> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026650> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Stravinsky, Igor, 1882-1971. Soldier's tale."@eng,
+                "Stravinsky, Igor, 1882-1971. The soldier's tale"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Stravinsky, Igor,1882-1971. Histoire du soldat" ] ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85011293> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Histoire du soldat"@fra ] .
+

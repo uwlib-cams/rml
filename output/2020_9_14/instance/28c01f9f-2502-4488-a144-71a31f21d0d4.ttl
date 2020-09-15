@@ -1,0 +1,62 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/28c01f9f-2502-4488-a144-71a31f21d0d4> a bf:Instance ;
+    rdfs:label "Кызытсе марий литератур"@chm ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 575900591X"@zxx,
+                "ISBN 9785759005919"@zxx ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 575900591X"@zxx,
+                        "ISBN 9785759005919"@zxx ] ;
+            rdf:value "ISBN 575900591X"@zxx,
+                "ISBN 9785759005919"@zxx ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 575900591X"@zxx,
+                "ISBN 9785759005919"@zxx ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/d0e83555-868c-4d03-99dc-8ac323bc2c2f> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1005> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "1. кн. Прозо -- Кокымшо книга. Поэзий, драматургий."@eng,
+                "In Mari."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Марий книга савыктыш"@chm ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Йошкар-Ола"@chm ] ],
+        [ a bf:Publication ;
+            bf:date "1994-" ] ;
+    bf:responsibilityStatement "Р.А. Кудрявцева ямдылен"@chm ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Кызытсе марий литератур"@chm ],
+        [ a bf:Title ;
+            bf:subtitle "11 класслан хрестоматий"@chm ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Kyzytse mariĭ literatur"@rus,
+                "Sovremennai︠a︡ mariĭskai︠a︡ literatura"@rus,
+                "Современная марийская литература"@rus ;
+            bf:mainTitle "Kyzytse mariĭ literatur"@rus,
+                "Sovremennai︠a︡ mariĭskai︠a︡ literatura"@rus,
+                "Современная марийская литература"@rus ] .
+

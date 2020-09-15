@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9> a bf:Work ;
+    rdfs:label "Zapiski iz mertvogo doma"@rus ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-08" ;
+            bf:creationDate "2020-01-15" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79029930> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2018026032> ;
+    bf:historyOfWork "\"The House of the Dead (Russian: Записки из Мёртвого дома, Zapiski iz Myortvovo doma) is a semi-autobiographical novel published in 1860–2[1] in the journal Vremya[2] by Russian author Fyodor Dostoevsky, which portrays the life of convicts in a Siberian prison camp. The novel has also been published under the titles Memoirs from the House of The Dead, Notes from the Dead House (or Notes from a Dead House), and Notes from the House of the Dead. The book is a loosely-knit collection of facts, events and philosophical discussion organised by \"theme\" rather than as a continuous story. Dostoevsky himself spent four years in exile in such a camp following his conviction for involvement in the Petrashevsky Circle. This experience allowed him to describe with great authenticity the conditions of prison life and the characters of the convicts\"--Wikipedia, January 15, 2020."@eng ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma"@rus ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Zapiski izʺ mertvago doma"@rus,
+                "Dostoyevsky, Fyodor, 1821-1881. Записки из мертвого дома"@rus,
+                "Dostoyevsky, Fyodor, 1821-1881. Записки изъ мертваго дома"@rus ] ;
+    bf:originDate "1862" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80001203> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Exiles--Russia (Federation)--Siberia--Fiction",
+                "Prisoners--Russia (Federation)--Siberia--Fiction",
+                "Prisons--Russia (Federation)--Siberia--Fiction",
+                "Siberia (Russia)--Fiction" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Zapiski izʺ mertvago doma"@rus,
+                "Записки из мертвого дома"@rus,
+                "Записки изъ мертваго дома"@rus ],
+        [ a bf:Title ;
+            bf:mainTitle "Zapiski iz mertvogo doma"@rus ] .
+

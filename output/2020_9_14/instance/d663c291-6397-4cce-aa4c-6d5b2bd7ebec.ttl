@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec> a bf:Instance ;
+    rdfs:label "Игрушки и зверушки"@rus ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n79056337> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (12 unnumbered pages)"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Chromolithographs. Stapled into self-wraps."@eng,
+                "Cover title."@eng,
+                "Publisher's white color-printed pictorial self wrappers."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Description based on print version."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ],
+        [ a bf:Note ;
+            rdfs:label "Original University of Washington Libraries Special Collections copy is a gift of Pamela K. Harer."@eng ;
+            bf:noteType "University of Washington note"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "ДЕТИЗДАТ ЦК ВЛКСМ"@rus ] ],
+        [ a bf:Publication ;
+            bf:date "1939" ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Leningrad]"@eng ] ] ;
+    bf:responsibilityStatement "V. Lebedev"@rus,
+        "В. Лебедев"@rus ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Bibliotechka detskogo sada"@rus,
+        "Библиотечка детского сада"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Игрушки и зверушки"@rus ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Igrushki i zverushki"@rus ;
+            bf:mainTitle "Igrushki i zverushki"@rus ] .
+

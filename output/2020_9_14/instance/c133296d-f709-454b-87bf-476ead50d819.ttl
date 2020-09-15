@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c133296d-f709-454b-87bf-476ead50d819> a bf:Instance ;
+    rdfs:label "The host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-08-05" ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019" ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "PDF"@eng ],
+        <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (xix, 20-189 pages)"@eng ] ;
+    bf:identifierBy <http://hdl.handle.net/1773/44816> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/51ec4ece-0d37-4d3b-8334-61b8ecd8eea6> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed December 2, 2019)."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[2019]" ] ;
+    bf:responsibilityStatement "Daniel G. Hernandez"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ;
+            bf:mainTitle "Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ] .
+

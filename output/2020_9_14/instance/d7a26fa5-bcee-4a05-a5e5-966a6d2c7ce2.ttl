@@ -1,0 +1,66 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d7a26fa5-bcee-4a05-a5e5-966a6d2c7ce2> a bf:Instance ;
+    rdfs:label "Around the world in eighty days"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02" ;
+            bf:creationDate "2019-12-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1995" ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xlv, 247 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 978-0-19-955251-1"@eng,
+                        "LCCN 2008482138"@eng ] ;
+            rdf:value "ISBN 978-0-19-955251-1"@eng,
+                "LCCN 2008482138"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 978-0-19-955251-1"@eng,
+                "LCCN 2008482138"@eng ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 978-0-19-955251-1"@eng,
+                "LCCN 2008482138"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/3cbf69c3-822e-47e8-bf7f-6f3429cd6abe> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Oxford University Press"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80126136> ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@eng,
+                        "Oxford"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[2008]" ] ;
+    bf:relatedTo [ a bf:Work ;
+            rdfs:label "http://id.loc.gov/authorities/names/n97075954" ],
+        [ a bf:Instance ;
+            rdfs:label "\"First published as a World's Classics paperback 1995\"--Title page verso" ],
+        [ a bf:Work ;
+            rdfs:label "http://id.loc.gov/authorities/names/n97072225" ] ;
+    bf:responsibilityStatement "Jules Verne"@eng,
+        "translated with an introduction and notes by William Butcher"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Oxford world's classics"@eng,
+        "The extraordinary journeys"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Around the world in eighty days"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Around the world in 80 days"@eng ;
+            bf:mainTitle "Around the world in 80 days"@eng ] .
+

@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2616e60e-7a10-4141-b516-174173a1bde4> a bf:Instance ;
+    rdfs:label "Нашимъ дѣтям"@rus ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:editionStatement "Изданіе третье"@rus ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/bd941aa0-25fe-42f2-b8e5-fca14aece262> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1005> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Типо-Литографія Commercial Press"@rus ] ],
+        [ a bf:Production ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Шанхай, Китай"@rus ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Изданіе Национальнаго Совѣта Евреевъ Сибири и Урала"@rus ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Иркутскъ"@rus ] ],
+        [ a bf:Publication ;
+            bf:date "[1917?]-" ] ;
+    bf:responsibilityStatement "М.Г. Айзенштадтъ и М.И. Дайхесъ"@rus,
+        "съ участіемъ художника академика М.Л. Маймона"@rus ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Нашимъ дѣтям"@rus ],
+        [ a bf:Title ;
+            bf:subtitle "хрестоматія на русскомъ языкѣ для еврейскихъ дѣтей въ школѣ и семьѣ"@rus ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Nashim deti︠a︡m"@rus,
+                "Nashimʺ di︠e︡ti︠a︡m"@rus,
+                "Нашим детям"@rus ;
+            bf:mainTitle "Nashim deti︠a︡m"@rus,
+                "Nashimʺ di︠e︡ti︠a︡m"@rus,
+                "Нашим детям"@rus ] .
+

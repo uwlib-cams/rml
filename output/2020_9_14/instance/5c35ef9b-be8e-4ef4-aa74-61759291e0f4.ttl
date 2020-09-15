@@ -1,0 +1,70 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a bf:Instance ;
+    rdfs:label "Little women, or, Meg, Jo, Beth, and Amy"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-11" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1968" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:editionStatement "Centennial edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 444 pages, 8 unnumbered leaves of plates"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0-316-030-90-2"@eng,
+                "LCCN 68-0211171"@eng,
+                "OCLC 1157"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 0-316-030-90-2"@eng,
+                "LCCN 68-0211171"@eng,
+                "OCLC 1157"@eng ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 0-316-030-90-2"@eng,
+                        "LCCN 68-0211171"@eng,
+                        "OCLC 1157"@eng ] ;
+            rdf:value "ISBN 0-316-030-90-2"@eng,
+                "LCCN 68-0211171"@eng,
+                "OCLC 1157"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/subjects/sh85055012> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Little Brown and Company"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80020835> ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@eng,
+                        "Toronto"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[1968]" ] ;
+    bf:provisionActivityStatement "Boston ; Toronto : Little Brown and Company, [1968]"@eng ;
+    bf:responsibilityStatement "by Louisa May Alcott"@eng,
+        "illustrations in color by Jessie Willcox Smith"@eng,
+        "with a new introduction by Cornelia Meigs"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Little women, or, Meg, Jo, Beth, and Amy"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Little women"@eng,
+                "Meg, Jo, Beth, and Amy"@eng ;
+            bf:mainTitle "Little women"@eng,
+                "Meg, Jo, Beth, and Amy"@eng ] .
+

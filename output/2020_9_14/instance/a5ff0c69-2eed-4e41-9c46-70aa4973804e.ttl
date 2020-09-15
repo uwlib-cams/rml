@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a5ff0c69-2eed-4e41-9c46-70aa4973804e> a bf:Instance ;
+    rdfs:label "Wayside wildflowers of the Pacific Northwest"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©" ;
+    bf:dimensions "23 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "272 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 1560441852" ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 1560441852" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 1560441852" ] ;
+            rdf:value "ISBN 1560441852" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/9925a8e6-ed73-4817-acbb-e844b70df18> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Flower Press"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Columbia Falls, Mont."@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[1993]" ] ;
+    bf:provisionActivityStatement "Columbia Falls, Mont. : Flower Press, [1993]"@eng ;
+    bf:responsibilityStatement "photography and text by Dee Strickler ; illustration and graphic design by Zoe Strickler"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Wayside wildflowers of the Pacific Northwest"@eng ] .
+

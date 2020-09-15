@@ -1,0 +1,55 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/6d434754-fcb3-4cfc-9a80-78d1a5ab9691> a bf:Instance ;
+    rdfs:label "Sea of troubles"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1990" ;
+    bf:dimensions "22 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "197 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN: 0960267697"@eng ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "ISBN: 0960267697"@eng ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN: 0960267697"@eng ] ;
+            rdf:value "ISBN: 0960267697"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/32ed7aac-229c-4b07-b568-f1e8e6f9ee37> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Perseverance Press"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Perserverance Press" ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Menlo Park, California"@eng ] ],
+        [ a bf:Publication ;
+            bf:date "[1990]" ] ;
+    bf:provisionActivityStatement "Menlo Park, California : Perseverance Press,  [1990]"@eng ;
+    bf:responsibilityStatement "by Janet L. Smith"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Sea of troubles"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Murder in the Pacific Northwest : Sea of troubles"@eng ;
+            bf:mainTitle "Murder in the Pacific Northwest : Sea of troubles"@eng ] .
+

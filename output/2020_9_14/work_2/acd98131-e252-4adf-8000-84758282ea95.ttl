@@ -1,0 +1,41 @@
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/acd98131-e252-4adf-8000-84758282ea95> a bf:Work ;
+    rdfs:label "Adventures of Huckleberry Finn"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80027800> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79021164> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/0894a8b3-b110-4705-9cb4-9ae1009ab0a3> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Twain, Mark, 1835-1910. Adventures of Huckleberry Finn"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "2003" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Huckleberry Finn, rebel against school and church, casual inheritor of gold treasure, rafter of the Mississippi, and savior of Jim the runaway slave, is the archetypal American maverick. Fleeing the respectable society that wants to \"sivilize\" him, Huck Finn shoves off with Jim on a rhapsodic raft journey down the Mississippi River. As Huck learns about love, responsibility, and how to make moral choices, the trip becomes a metaphoric voyage through his own soul, culminating in the glorious moment when he decides to \"go to hell\" rather than return Jim to slavery. Mark Twain defined \"classic\" as \"a book which people praise and don't read.\" Huckleberry Finn is a happy exception to this rule. Twain's mastery of dialect, coupled with his famous wit, makes Adventures of Huckleberry Finn one of the most enjoyable and distinctly American classics ever written."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Huck Finn"@eng,
+                "Huckleberry Finn"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Adventures of Huckleberry Finn"@eng ] .
+

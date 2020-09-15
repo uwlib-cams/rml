@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/420d9d87-de67-45fd-8367-e1c451ef725a> a bf:Work ;
+    rdfs:label "Idaho Montana"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            bf:coordinates "W 117°--W 103°/N 49°--N 45°"@eng,
+                "W 117°--W 110°/N 49°--N 42°"@eng ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "AAA (Organization : U.S.)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026536> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Idaho Montana"@eng ] ;
+    bf:originDate "2015" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Heathrow, FL" ] ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2008110917>,
+        <http://id.loc.gov/authorities/subjects/sh2008110918> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Idaho Montana"@eng ] .
+
