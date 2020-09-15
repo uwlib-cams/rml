@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/15381424-2eda-4d58-ad47-b1029e784398> a bf:Work ;
+    rdfs:label "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-03" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2004003994> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            rdfs:label "Doctor of Philosophy University of Washington 2019"@eng ],
+        [ a bf:Dissertation ;
+            bf:degree "Ph. D."@eng ],
+        [ a bf:Dissertation ;
+            bf:grantingInstitution [ a bf:Organization ;
+                    rdfs:label "http://id.loc.gov/authorities/names/n79054596" ] ],
+        [ a bf:Dissertation ;
+            bf:date "2019"@eng ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Arostegui, Martin C. (Martin Christopher). Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] ;
+    bf:originDate "2019"@eng ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+            rdfs:label "Rainbow trout--Ecology",
+                "Rainbow trout--Habitat",
+                "Rainbow trout--Life cycles",
+                "Rainbow trout--Migration" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] .
+

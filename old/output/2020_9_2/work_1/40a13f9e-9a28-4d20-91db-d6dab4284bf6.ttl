@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/40a13f9e-9a28-4d20-91db-d6dab4284bf6> a bf:Work ;
+    rdfs:label "William Brumfield Russian Architecture Digital Collection"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n82034404> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/pht> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79056337> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Photographs" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Brumfield, William C., 1944- William Brumfield Russian Architecture Digital Collection"@eng ] ;
+    bf:originDate "2016"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "William Brumfield Russian Architecture Digital Collection"@eng ] .
+

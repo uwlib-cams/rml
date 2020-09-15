@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a42814da-e980-4324-ba0a-0f4299f439af> a bf:Instance ;
+    rdfs:label "The secret lives of color"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2016"@eng ;
+    bf:dimensions "21 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "320 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
+            rdf:value "ISBN 9780143131144 (hardback)" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 9780143131144 (hardback)" ] ;
+            rdf:value "ISBN 9780143131144 (hardback)" ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 9780143131144 (hardback)" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/fca1c8b8-03aa-4e09-ad2d-5df26c54baaf> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally published in UK under title: The secret lives of colour."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "2017"@eng ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Penguin Books"@eng ] ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, New York"@eng ] ] ;
+    bf:provisionActivityStatement "New York, New York : Penguin Books, 2017"@eng ;
+    bf:responsibilityStatement "Kassia St. Clair"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The secret lives of color"@eng ] .
+

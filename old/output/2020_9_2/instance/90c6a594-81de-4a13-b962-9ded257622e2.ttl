@@ -1,0 +1,64 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/90c6a594-81de-4a13-b962-9ded257622e2> a bf:Instance ;
+    rdfs:label "Aleppo cookbook"@eng ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2107" ;
+    bf:dimensions "27 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "352 pages"@eng ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cookbooks" ;
+            bf: "Cookbooks" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "9781566569866" ] ;
+            rdf:value "9781566569866" ],
+        [ a bf:Identifier ;
+            rdf:value "9781566569866" ],
+        [ a bf:Identifier.subclass ;
+            rdf:value "9781566569866" ] ;
+    bf:instanceOf [ a bf:Work.subclass ;
+            rdfs:label "2014032555" ],
+        [ a bf:Work ;
+            rdfs:label "2014032555" ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "2017" ],
+        [ a bf:Manufacture ;
+            bf:agent _:Nf6c1c613638a43488fe430d5f10d89d7 ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ],
+        [ a bf:Publication ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Northampton (Mass.)"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Interlink Books"@eng ] ] ;
+    bf:responsibilityStatement "Marlene Matar"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Celebrating the legendary cuisine of Syria"@eng ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ] .
+
+_:N13000be7dfa44b249bd3922b23518a95 a bf:Note ;
+    rdfs:label "book designer"@en ;
+    bf: "Moushabeck, Leyla " ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent _:Nf6c1c613638a43488fe430d5f10d89d7 ] ;
+    bf:noteType "role in manufacture"@en .
+
+_:Nf6c1c613638a43488fe430d5f10d89d7 a bf:Agent ;
+    rdfs:label "Moushabeck, Leyla " ;
+    bf: "Moushabeck, Leyla " ;
+    bf:note _:N13000be7dfa44b249bd3922b23518a95 .
+
