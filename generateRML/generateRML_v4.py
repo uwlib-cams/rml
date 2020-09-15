@@ -507,7 +507,7 @@ for csv_file in csv_files:
         "].\n",
         "ex:IdentifierMap a rr:TriplesMap;",
         "  rml:logicalSource [",
-        "    rml:source \"/home/mcm104/rml/rdfxml/data/!!workID!!.xml\";",
+        f"    rml:source \"/home/mcm104/rml/input/{default_path}.xml\";",
         "    rml:referenceFormulation ql:XPath;",
         "    rml:iterator \"/RDF/Description[P10002[not(@resource)]]\"",
         "  ].\n",
