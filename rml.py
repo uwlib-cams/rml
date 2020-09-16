@@ -278,37 +278,92 @@ def item_map_replace_to_default(itemID):
 
 # format for naming folder according to date
 today = date.today()
-currentDate = f"{today.year}_{today.month}_{today.day}"
+currentDate = str(today).replace('-', '_')
+print(currentDate)
 
 ###
 
-URI_list = create_URI_list()
+#URI_list = create_URI_list()
 
 # create directory with today's date for RDA-in-RDF/XML data
-if not os.path.exists(f'input/{currentDate}'):
-    print('...\nCreating input folder')
-    os.system(f'mkdir input/{currentDate}')
+#if not os.path.exists(f'input/{currentDate}'):
+#    print('...\nCreating input folder')
+#    os.system(f'mkdir input/{currentDate}')
 
-workURIList = save_works(URI_list, currentDate)
-workList = os.listdir(f'input/{currentDate}/work') # add RDA-in-RDF/XML works to new list
+#workURIList = save_works(URI_list, currentDate)
+#workList = os.listdir(f'input/{currentDate}/work') # add RDA-in-RDF/XML works to new list
 
-expressionURIList = save_expressions(URI_list, currentDate, workURIList)
-expressionList = os.listdir(f'input/{currentDate}/expression') # add RDA-in-RDF/XML expressions to new list
+#expressionURIList = save_expressions(URI_list, currentDate, workURIList)
+#expressionList = os.listdir(f'input/{currentDate}/expression') # add RDA-in-RDF/XML expressions to new list
 
-manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
-manifestationList = os.listdir(f'input/{currentDate}/manifestation') # add RDA-in-RDF/XML manifestations to new list
+#manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
+#manifestationList = os.listdir(f'input/{currentDate}/manifestation') # add RDA-in-RDF/XML manifestations to new list
 
-save_items(URI_list, currentDate, manifestationURIList)
-itemList = os.listdir(f'input/{currentDate}/item') # add RDA-in-RDF/XML items to new list
+#save_items(URI_list, currentDate, manifestationURIList)
+#itemList = os.listdir(f'input/{currentDate}/item') # add RDA-in-RDF/XML items to new list
 
 # create directory with today's date for BF-in-turtle data
-if not os.path.exists(f'output/{currentDate}'):
-    print('...\nCreating output folder')
-    os.makedirs(f'output/{currentDate}')
+#if not os.path.exists(f'output/{currentDate}'):
+#    print('...\nCreating output folder')
+#    os.makedirs(f'output/{currentDate}')
 
-transform_works(workList, currentDate)
-transform_expressions(expressionList, currentDate)
-transform_manifestations(manifestationList, currentDate)
-transform_items(itemList, currentDate)
+#transform_works(workList, currentDate)
+#transform_expressions(expressionList, currentDate)
+#transform_manifestations(manifestationList, currentDate)
+#transform_items(itemList, currentDate)
+
+# temporary code to fix lang tags until permanent solution is found
+def fix_english_lang_tags(filepath):
+    """Find instances of @eng in Turtle, replace with @en"""
+    eng = open(filepath, "rt")
+    en = eng.read()
+    en = en.replace("@eng", "@en")
+    eng.close()
+    eng = open(filepath, "wt")
+    eng.write(en)
+    eng.close()
+
+def fix_russian_lang_tags(filepath):
+    """Find instances of @rus in Turtle, replace with @ru"""
+    rus = open(filepath, "rt")
+    ru = rus.read()
+    ru = ru.replace("@rus", "@ru")
+    rus.close()
+    rus = open(filepath, "wt")
+    rus.write(ru)
+    rus.close()
+
+def fix_no_ling_content_lang_tags(filepath):
+    """Find instances of @zxx in Turtle, delete"""
+    zxx = open(filepath, "rt")
+    no_tag = zxx.read()
+    no_tag = no_tag.replace("@zxx", "")
+    zxx.close()
+    zxx = open(filepath, "wt")
+    zxx.write(no_tag)
+    zxx.close()
+
+currentDate = '2020_09_14'
+
+work1List = os.listdir(f"output/{currentDate}/work_1")
+for work in work1List:
+    filepath = f"output/{currentDate}/work_1/{work}"
+    fix_english_lang_tags(filepath)
+    fix_russian_lang_tags(filepath)
+work2List = os.listdir(f"output/{currentDate}/work_2")
+for work in work2List:
+    filepath = f"output/{currentDate}/work_2/{work}"
+    fix_english_lang_tags(filepath)
+    fix_russian_lang_tags(filepath)
+instanceList = os.listdir(f"output/{currentDate}/instance")
+for instance in instanceList:
+    filepath = f"output/{currentDate}/instance/{instance}"
+    fix_english_lang_tags(filepath)
+    fix_russian_lang_tags(filepath)
+itemList = os.listdir(f"output/{currentDate}/item")
+for item in itemList:
+    filepath = f"output/{currentDate}/item/{item}"
+    fix_english_lang_tags(filepath)
+    fix_russian_lang_tags(filepath)
 
 print("...\nDone!")
