@@ -49,6 +49,23 @@ def generate_bnode_logical_source(property_number, map_name, not_resource, yes_r
   ].\n"""
     return bnode_logical_source
 
+def generate_provact_logical_source(provact_class, map_name, file_path):
+    if provact_class == "Distribution":
+        property_numbers = " or ".join(provisionActivityDistributionList)
+    elif provact_class == "Manufacture":
+        property_numbers = " or ".join(provisionActivityManufactureList)
+    elif provact_class == "Production":
+        property_numbers = " or ".join(provisionActivityProductionList)
+    elif provact_class == "Publication":
+        property_numbers = " or ".join(provisionActivityPublicationList)
+    provact_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator \"/RDF/Description[{property_numbers}]\"
+  ].\n"""
+    return provact_logical_source
+
 def generate_subject_map(map_name, class_name, subject_type="main"):
     if ":" not in class_name:
         class_name = f"bf:{class_name}"
@@ -277,6 +294,125 @@ for file in csv_file_list:
 index_number = 0
 
 no_language_tag_list = ["P10219", "P20214", "P30007", "P30011"]
+
+provisionActivityDistributionList = [
+	"P30008",
+	"P30017",
+	"P30068",
+	"P30080",
+	"P30085",
+	"P30089",
+	"P30173",
+	"P30348",
+	"P30359",
+	"P30377",
+	"P30388",
+	"P30406",
+	"P30417",
+	"P30435",
+	"P30446"
+]
+
+provisionActivityManufactureList = [
+	"P30010",
+	"P30049",
+	"P30069",
+	"P30070",
+	"P30071",
+	"P30072",
+	"P30073",
+	"P30074",
+	"P30075",
+	"P30076",
+	"P30077",
+	"P30078",
+	"P30082",
+	"P30087",
+	"P30090",
+	"P30175",
+	"P30215",
+	"P30349",
+	"P30350",
+	"P30351",
+	"P30352",
+	"P30353",
+	"P30354",
+	"P30355",
+	"P30356",
+	"P30357",
+	"P30358",
+	"P30361",
+	"P30364",
+	"P30378",
+	"P30379",
+	"P30380",
+	"P30381",
+	"P30382",
+	"P30383",
+	"P30384",
+	"P30385",
+	"P30386",
+	"P30387",
+	"P30390",
+	"P30393",
+	"P30407",
+	"P30408",
+	"P30409",
+	"P30410",
+	"P30411",
+	"P30412",
+	"P30413",
+	"P30414",
+	"P30415",
+	"P30416",
+	"P30419",
+	"P30422",
+	"P30436",
+	"P30437",
+	"P30438",
+	"P30439",
+	"P30440",
+	"P30441",
+	"P30442",
+	"P30443",
+	"P30444",
+	"P30445",
+	"P30448",
+	"P30451"
+]
+
+provisionActivityProductionList = [
+	"P30009",
+	"P30081",
+	"P30086",
+	"P30091",
+	"P30094",
+	"P30174",
+	"P30360",
+	"P30389",
+	"P30418",
+	"P30447"
+]
+
+provisionActivityPublicationList = [
+	"P30011",
+	"P30067",
+	"P30083",
+	"P30088",
+	"P30092",
+	"P30095",
+	"P30176",
+	"P30347",
+	"P30362",
+	"P30376",
+	"P30391",
+	"P30405",
+	"P30420",
+	"P30434",
+	"P30449"
+]
+
+provisionActivityList = provisionActivityDistributionList + provisionActivityManufactureList + provisionActivityProductionList + provisionActivityPublicationList
 
 for csv_file in csv_files:
     if "work" in csv_file:
@@ -592,6 +728,9 @@ for csv_file in csv_files:
                     elif node == ">>":
                         predicate_name = node_list[num - 1]
                         bnode_map_name = predicate_name.capitalize() + "_" + str(map_number) + "_"
+                        if "Provisionactivity" in bnode_map_name:
+                            class_name = node_list[num + 1]
+                            bnode_map_name = "Provisionactivity_" + class_name + "_"
                         po_map = generate_bnode_po_map(predicate_name, bnode_map_name, map_name)
                         RML_list.append(po_map + "\n")
 
@@ -602,15 +741,20 @@ for csv_file in csv_files:
                                 generate_new_bnode = False
 
                         if generate_new_bnode == True:
-                            logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
-                            RML_list.append(logical_source + "\n")
+                            if "Provisionactivity" in bnode_map_name:
+                                logical_source = generate_provact_logical_source(class_name, bnode_map_name, default_path)
+                                RML_list.append(logical_source + "\n")
+                            else:
+                                logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
+                                RML_list.append(logical_source + "\n")
 
                             class_name = node_list[num + 1]
                             subject_map = generate_subject_map(bnode_map_name, class_name, "bnode")
                             RML_list.append(subject_map + "\n")
 
                         map_name = bnode_map_name
-                        bnode_list.append(bnode_map_name)
+                        if bnode_map_name not in bnode_list:
+                            bnode_list.append(bnode_map_name)
 
                     elif node == "not":
                         pass
