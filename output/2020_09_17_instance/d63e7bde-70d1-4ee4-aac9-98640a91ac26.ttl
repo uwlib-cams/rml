@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/d63e7bde-70d1-4ee4-aac9-98640a91ac26> a bf:Instance ;
+    rdfs:label "Anno Domini 2000, or, Woman's destiny"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (viii, 331 pages)"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/ec0e6f7e-9c40-4c7a-b610-fe949fc8753c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Electronic reproduction. [S.l.] : HathiTrust Digital Library, 2011. MiAaHDL"@eng,
+                "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. http://purl.oclc.org/DLF/benchrepro0212 MiAaHDL"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Hutchinson"@eng ],
+                <http://id.loc.gov/rwo/agents/no2008101666> ;
+            bf:date "1889" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:provisionActivityStatement "London : Hutchinson, 1889"@eng ;
+    bf:reproductionOf [ a bf:Instance ;
+            rdfs:label "Print version: Vogel, Julius, Sir, 1835-1899. Anno Domini 2000. Anno Domini 2000, or, Woman's destiny. London : Hutchinson, 1889 (OCoLC)52848017" ] ;
+    bf:responsibilityStatement "by Sir Julius Vogel, K.C.M.G."@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Anno Domini 2000"@eng,
+                "Woman's destiny"@eng ;
+            bf:mainTitle "Anno Domini 2000"@eng,
+                "Woman's destiny"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Anno Domini 2000, or, Woman's destiny"@eng ] .
+

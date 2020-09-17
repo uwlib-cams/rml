@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c546397d-c96b-486a-b1cc-45aeaee24d78> a bf:Instance ;
+    rdfs:label "原色きのこ"@jpn ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "CC83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-26" ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "11 x 15 cm"@eng ;
+    bf:editionStatement "Shohan"@jpn,
+        "初版"@jpn ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2, 104 pages, 72 pages of color plates"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sanseidō (Chiyoda-ku, Tokyo, Japan)" ],
+                [ a bf:Agent ;
+                    rdfs:label "Sanseidō"@jpn,
+                        "三省堂"@jpn ] ;
+            bf:date "Shōwa 17 [1942]",
+                "昭和17 [1942]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Tōkyō"@jpn,
+                        "東京"@jpn ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:responsibilityStatement "Imazeki Rokuya cho"@jpn,
+        "今關六也著"@jpn ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:seriesStatement "Nature guide"@eng ;
+    bf:title [ a bf:ParallelTitle ;
+            bf:subtitle "Kinoko no saishū to miwakekata"@jpn ],
+        [ a bf:Title ;
+            bf:mainTitle "原色きのこ"@jpn ],
+        [ a bf:Title ;
+            bf:subtitle "茸の採集と見分け方"@jpn ],
+        [ a bf:ParallelTitle ;
+            bf:mainTitle "Genshoku kinoko"@jpn ] .
+

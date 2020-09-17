@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/71f38d30-b08c-421d-ba9d-28fb9d851792> a bf:Instance ;
+    rdfs:label "American dinosaur abroad"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "ries07"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2019" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 318 pages"@eng ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/cbdf54d0-100c-431c-8278-dc1cc1fcc792> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University of Pittsburgh Press"@eng ] ;
+            bf:date "[2019]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Pittsburgh, Pa."@eng ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:responsibilityStatement "Ilja Nieuwland"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "American dinosaur abroad"@eng ],
+        [ a bf:Title ;
+            bf:subtitle "a cultural history of Carnegie's plaster Diplodocus"@eng ] .
+
