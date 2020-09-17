@@ -1,0 +1,65 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamdt: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdax: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sin: <http://sinopia.io/vocabulary/> .
+
+# Data review 2020-09-16
+# Compare with output > 2020_09_14 > instance > a5ff0c69-2eed-4e41-9c46-70aa4973804e.ttl
+
+<https://trellis.sinopia.io/repository/washington/a5ff0c69-2eed-4e41-9c46-70aa4973804e> a <http://rdaregistry.info/Elements/c/C10007> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06"@eng ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n"@eng ] ] ;
+    rdam:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1049> ; # has carrier type
+    rdam:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ; # has media type
+    rdam:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ; # has mode of issuance
+    rdam:P30007 "©"@eng ; # has copyright date
+    rdam:P30011 "[1993]"@eng ; # has date of publication
+    rdam:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    rdam:P30088 "Columbia Falls, Mont."@eng ; # has place of publication
+    rdam:P30105 "photography and text by Dee Strickler ; illustration and graphic design by Zoe Strickler"@eng ;
+    rdam:P30111 "Columbia Falls, Mont. : Flower Press, [1993]"@eng ;
+    rdam:P30139 <https://trellis.sinopia.io/repository/washington/9925a8e6-ed73-4817-acbb-e844b70df18> ;
+    rdam:P30156 "Wayside wildflowers of the Pacific Northwest"@eng ;
+    rdam:P30169 "23 cm"@eng ;
+    rdam:P30176 "Flower Press"@eng ; # has name of Publisher
+    rdam:P30182 "272 pages"@eng ;
+    rdam:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    rdamdt:P30004 "ISBN 1560441852" ;
+    sin:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ;
+    rdax:hasLcClassificationPartA "QK144"@eng ;
+    rdax:hasLcClassificationPartB ".S75 1993"@eng ;
+    rdax:heldBy <https://id.loc.gov/vocabulary/organizations/wau> .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1049> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/9925a8e6-ed73-4817-acbb-e844b70df18> rdfs:label "https://trellis.sinopia.io/repository/washington/9925a8e6-ed73-4817-acbb-e844b70df18" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WAU",
+        "WaU" .
