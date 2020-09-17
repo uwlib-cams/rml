@@ -49,13 +49,11 @@ bf:copyrightDate ""P30007value"" .",copyrightDate
 has date of distribution (RDA 2.9.6),http://rdaregistry.info/Elements/m/P30008,"
 bf:provisionActivity [ a bf:Distribution ;
    bf:date ""P30008value"" ] .",provisionActivity >> Distribution > date
-has date of production (RDA 2.7.6),http://rdaregistry.info/Elements/m/P30009,"bf:provision activity [ a bf:Production ;
-   bf:date ""P30009value"" ] .
-","provision activity >> Production > date
-"
+has date of production (RDA 2.7.6),http://rdaregistry.info/Elements/m/P30009,"bf:provisionActivity [ a bf:Production ;
+   bf:date ""P30009value"" ] .",provisionActivity >> Production > date
 has date of manufacture (RDA 2.10.6),http://rdaregistry.info/Elements/m/P30010,"bf:provisionActivity [ a bf:Manufacture ;
    bf:date ""P30010value"" ] .
-",provision activity >> Manufacture > date
+",provisionActivity >> Manufacture > date
 has date of publication (RDA 2.8.6),http://rdaregistry.info/Elements/m/P30011,"
 bf:provisionActivity [ a bf:Publication ;
    bf:date ""P30011value"" ] .",provisionActivity >> Publication > date
@@ -284,7 +282,7 @@ has broadcaster agent (RDA 18.5),http://rdaregistry.info/Elements/m/P30067,"bf:p
         bf:noteType “role in publication” ] ] ;
 bf:contribution [ a bf:Contribution ;
     bf:agent  [  a bf:Agent ;
-        rdfs:label “P30067value”] ;
+        rdfs:label “P30067value” ] ;
     bf:role <http://id.loc.gov/vocabulary/relators/brd> ] .
 # with IRI value
 bf:provisionActivity [ a bf:Distribution ;
