@@ -1,46 +1,46 @@
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/8e41795c-591d-43fc-ab0a-26aee67c7c5e> a bf:Instance ;
+<https://trellis.sinopia.io/repository/washington/8e41795c-591d-43fc-ab0a-26aee67c7c5e> a ns1:Instance ;
     rdfs:label "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "cec23"@eng ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-03" ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©2019" ;
-    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    bf:extent [ a bf:Extent ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-03" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    ns1:copyrightDate "©2019" ;
+    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    ns1:extent [ a ns1:Extent ;
             rdfs:label "viii, 189 pages"@eng ] ;
-    bf:identifiedBy [ a bf:Identifier.subclass ;
+    ns1:identifiedBy [ a ns1:Identifier.subclass ;
             rdf:value "http://hdl.handle.net/1773/44258" ],
-        [ a bf:Identifier ;
-            rdf:value "http://hdl.handle.net/1773/44258" ],
-        [ a bf:Identifier ;
-            bf:source [ a bf:Source ;
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
                     rdfs:label "http://hdl.handle.net/1773/44258" ] ;
+            rdf:value "http://hdl.handle.net/1773/44258" ],
+        [ a ns1:Identifier ;
             rdf:value "http://hdl.handle.net/1773/44258" ] ;
-    bf:instanceOf <https://trellis.sinopia.io/repository/washington/17d556c7-3b45-4903-ac30-d74ddc57718a> ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    bf:note [ a bf:Note ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/17d556c7-3b45-4903-ac30-d74ddc57718a> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    ns1:note [ a ns1:Note ;
             rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed October 8, 2019)."@eng ;
-            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
+            ns1:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
                     rdfs:label "[University of Washington Libraries]"@eng ] ;
-            bf:date "2019" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "[Seattle, Washington]"@eng ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
-    bf:responsibilityStatement "Martin C. Arostegui"@eng ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
-        <http://id.loc.gov/vocabulary/relators/cre> ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] .
+            ns1:date "2019" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ] ;
+    ns1:responsibilityStatement "Martin C. Arostegui"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] .
 

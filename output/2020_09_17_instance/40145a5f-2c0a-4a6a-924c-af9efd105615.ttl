@@ -1,56 +1,56 @@
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/40145a5f-2c0a-4a6a-924c-af9efd105615> a bf:Instance ;
+<https://trellis.sinopia.io/repository/washington/40145a5f-2c0a-4a6a-924c-af9efd105615> a ns1:Instance ;
     rdfs:label "朝鲜语与通古斯语关系研究"@chi ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "jlee37"@eng ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "04-08-2020" ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
-    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:dimensions "24 cm"@eng ;
-    bf:editionStatement "第1版"@chi ;
-    bf:extent [ a bf:Extent ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jlee37"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "04-08-2020" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "24 cm"@eng ;
+    ns1:editionStatement "第1版"@chi ;
+    ns1:extent [ a ns1:Extent ;
             rdfs:label "6, 5, 2, 248 pages"@eng ] ;
-    bf:identifiedBy [ a bf:Identifier.subclass ;
+    ns1:identifiedBy [ a ns1:Identifier.subclass ;
             rdf:value "ISBN 978-7-5201-3814-7"@eng ],
-        [ a bf:Identifier ;
-            rdf:value "ISBN 978-7-5201-3814-7"@eng ],
-        [ a bf:Identifier ;
-            bf:source [ a bf:Source ;
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
                     rdfs:label "ISBN 978-7-5201-3814-7"@eng ] ;
+            rdf:value "ISBN 978-7-5201-3814-7"@eng ],
+        [ a ns1:Identifier ;
             rdf:value "ISBN 978-7-5201-3814-7"@eng ] ;
-    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
                     rdfs:label "社会科学文献出版社"@chi ],
                 <http://id.loc.gov/rwo/agents/no2001101420> ;
-            bf:date "2018" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "北京"@chi ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
-    bf:provisionActivityStatement "北京 : 社会科学文献出版社, 2018"@chi ;
-    bf:responsibilityStatement "尹铁超著"@chi ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
-        <http://id.loc.gov/vocabulary/relators/cre> ;
-    bf:seriesStatement "Man--Tonggusi yu yan wen hua yan jiu wen ku"@chi,
+            ns1:date "2018" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "北京"@chi ] ] ;
+    ns1:provisionActivityStatement "北京 : 社会科学文献出版社, 2018"@chi ;
+    ns1:responsibilityStatement "尹铁超著"@chi ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:seriesStatement "Man--Tonggusi yu yan wen hua yan jiu wen ku"@chi,
         "满-通古斯语言文化研究文库"@chi ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "朝鲜语与通古斯语关系研究"@chi ],
-        [ a bf:VariantTitle ;
-            rdfs:label "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@eng,
-                "Comparative study of Korean and Tungusic languages"@eng ;
-            bf:mainTitle "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@eng,
-                "Comparative study of Korean and Tungusic languages"@eng ] .
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "朝鲜语与通古斯语关系研究"@chi ],
+        [ a ns1:VariantTitle ;
+            rdfs:label "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@chi,
+                "Comparative study of Korean and Tungusic languages"@chi ;
+            ns1:mainTitle "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@chi,
+                "Comparative study of Korean and Tungusic languages"@chi ] .
 

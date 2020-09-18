@@ -1,50 +1,50 @@
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/fb0f8c8f-7b41-4049-b859-b2abfec66d1a> a bf:Instance ;
+<https://trellis.sinopia.io/repository/washington/fb0f8c8f-7b41-4049-b859-b2abfec66d1a> a ns1:Instance ;
     rdfs:label "Heimweh nach Prag"@deu ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "dbrookin"@zxx ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-07" ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
-    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:extent [ a bf:Extent ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin"@zxx ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-04-07" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:extent [ a ns1:Extent ;
             rdfs:label "640 pages"@eng ] ;
-    bf:identifiedBy [ a bf:Identifier.subclass ;
-            rdf:value "ISBN 9783835311688"@zxx ],
-        [ a bf:Identifier ;
-            bf:source [ a bf:Source ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
                     rdfs:label "ISBN 9783835311688"@zxx ] ;
             rdf:value "ISBN 9783835311688"@zxx ],
-        [ a bf:Identifier ;
+        [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 9783835311688"@zxx ],
+        [ a ns1:Identifier ;
             rdf:value "ISBN 9783835311688"@zxx ] ;
-    bf:instanceOf <https://trellis.sinopia.io/repository/washington/203252f2-2591-43d7-91f4-f6f60535576c> ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    bf:note [ a bf:Note ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/203252f2-2591-43d7-91f4-f6f60535576c> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:note [ a ns1:Note ;
             rdfs:label "Includes bibliographical references."@eng ] ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
                     rdfs:label "Wallstein Verlag"@deu ] ;
-            bf:date "2012" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "Göttingen"@deu ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
-    bf:responsibilityStatement "Joseph Roth"@deu,
+            ns1:date "2012" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Göttingen"@deu ] ] ;
+    ns1:responsibilityStatement "Joseph Roth"@deu,
         "herausgegeben und kommentiert von Helmuth Nürnberger"@deu ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
-        <http://id.loc.gov/vocabulary/relators/cre> ;
-    bf:title [ a bf:Title ;
-            bf:subtitle "Feuilletons, Glossen, Reportagen für das \"Prager Tagblatt\""@eng ],
-        [ a bf:Title ;
-            bf:mainTitle "Heimweh nach Prag"@deu ] .
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:title [ a ns1:Title ;
+            ns1:subtitle "Feuilletons, Glossen, Reportagen für das \"Prager Tagblatt\""@eng ],
+        [ a ns1:Title ;
+            ns1:mainTitle "Heimweh nach Prag"@deu ] .
 

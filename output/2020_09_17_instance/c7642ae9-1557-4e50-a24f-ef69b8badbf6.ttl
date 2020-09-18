@@ -1,62 +1,62 @@
-@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
-@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/c7642ae9-1557-4e50-a24f-ef69b8badbf6> a bf:Instance ;
+<https://trellis.sinopia.io/repository/washington/c7642ae9-1557-4e50-a24f-ef69b8badbf6> a ns1:Instance ;
     rdfs:label "Current directions in ostracism, social exclusion, and rejection research"@eng ;
-    bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "aschiff"@eng ;
-            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-01-17" ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            bf:status [ a bf:Status ;
-                    bf:code "n" ] ] ;
-    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©2019" ;
-    bf:dimensions "24 cm"@eng ;
-    bf:extent [ a bf:Extent ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "aschiff"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-17" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©2019" ;
+    ns1:dimensions "24 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
             rdfs:label "viii, 211 pages"@eng ] ;
-    bf:identifiedBy [ a bf:Identifier.subclass ;
-            rdf:value "ISBN 978-0-8153-6813-7 (hbk)"@eng,
-                "ISBN 978-0-8153-6814-4 (pbk)"@eng,
-                "ISBN 978-1-351-25591-2 (ebk)"@eng ],
-        [ a bf:Identifier ;
-            bf:source [ a bf:Source ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
                     rdfs:label "ISBN 978-0-8153-6813-7 (hbk)"@eng,
                         "ISBN 978-0-8153-6814-4 (pbk)"@eng,
                         "ISBN 978-1-351-25591-2 (ebk)"@eng ] ;
             rdf:value "ISBN 978-0-8153-6813-7 (hbk)"@eng,
                 "ISBN 978-0-8153-6814-4 (pbk)"@eng,
                 "ISBN 978-1-351-25591-2 (ebk)"@eng ],
-        [ a bf:Identifier ;
+        [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 978-0-8153-6813-7 (hbk)"@eng,
+                "ISBN 978-0-8153-6814-4 (pbk)"@eng,
+                "ISBN 978-1-351-25591-2 (ebk)"@eng ],
+        [ a ns1:Identifier ;
             rdf:value "ISBN 978-0-8153-6813-7 (hbk)"@eng,
                 "ISBN 978-0-8153-6814-4 (pbk)"@eng,
                 "ISBN 978-1-351-25591-2 (ebk)"@eng ] ;
-    bf:instanceOf [ a bf:Work.subclass ;
+    ns1:instanceOf [ a ns1:Work.subclass ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/6b8dac8d-bcad-4af9-b3a4-bbe4b0886d2d" ],
-        [ a bf:Work ;
+        [ a ns1:Work ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/6b8dac8d-bcad-4af9-b3a4-bbe4b0886d2d" ] ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
                     rdfs:label "Routledge, Taylor & Francis Group"@eng ],
                 <http://id.loc.gov/rwo/agents/n87840882> ;
-            bf:date "2019" ;
-            bf:place [ a bf:Place ;
+            ns1:date "2019" ;
+            ns1:place [ a ns1:Place ;
                     rdfs:label "London"@eng,
-                        "New York"@eng ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
-    bf:provisionActivityStatement "London ; New York : Routledge, Taylor & Francis Group, 2019"@eng ;
-    bf:responsibilityStatement "edited by Selma C. Rudert, Rainer Greifeneder, and Kipling D. Williams"@eng ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
-        <http://id.loc.gov/vocabulary/relators/cre> ;
-    bf:seriesStatement "Current issues in social psychology"@eng ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "Current directions in ostracism, social exclusion, and rejection research"@eng ] .
+                        "New York"@eng ] ] ;
+    ns1:provisionActivityStatement "London ; New York : Routledge, Taylor & Francis Group, 2019"@eng ;
+    ns1:responsibilityStatement "edited by Selma C. Rudert, Rainer Greifeneder, and Kipling D. Williams"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:seriesStatement "Current issues in social psychology"@eng ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Current directions in ostracism, social exclusion, and rejection research"@eng ] .
 

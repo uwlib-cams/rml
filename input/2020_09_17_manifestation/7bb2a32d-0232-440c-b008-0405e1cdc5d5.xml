@@ -1,78 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:rdam="http://rdaregistry.info/Elements/m/"
-   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns2="http://rdaregistry.info/Elements/m/"
+   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:ns5="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5">
-    <rdam:P30137 xml:lang="eng">Cover title.</rdam:P30137>
-    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-    <rdam:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
-    <rdam:P30105 xml:lang="rus">В. Лебедев</rdam:P30105>
-    <rdam:P30128 xml:lang="rus">Igrushki i zverushki</rdam:P30128>
-    <rdam:P30137 xml:lang="eng">Chromolithographs. Stapled into self-wraps.</rdam:P30137>
-    <rdax:hasLcClassificationPartB>I35 1939</rdax:hasLcClassificationPartB>
-    <rdam:P30088 xml:lang="eng">[Leningrad]</rdam:P30088>
-    <rdam:P30176 xml:lang="rus">ДЕТИЗДАТ ЦК ВЛКСМ</rdam:P30176>
-    <rdam:P30137 xml:lang="eng">Also available electronically.</rdam:P30137>
-    <rdam:P30105 xml:lang="rus">V. Lebedev</rdam:P30105>
-    <rdam:P30182 xml:lang="eng">12 unnumbered pages</rdam:P30182>
-    <rdam:P30011 xml:lang="eng">1939</rdam:P30011>
-    <rdam:P30169 xml:lang="eng">20 x 23 cm</rdam:P30169>
-    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
-    <bf:adminMetadata rdf:nodeID="fa920c0b0e6784647a55e14b1d3c60d29b1"/>
-    <rdam:P30106 xml:lang="rus">Библиотечка детского сада</rdam:P30106>
-    <rdam:P30187>Chromolithography</rdam:P30187>
-    <rdam:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
-    <rdam:P30157 xml:lang="rus">Bibliotechka detskogo sada</rdam:P30157>
-    <sin:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</sin:hasResourceTemplate>
-    <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-    <rdam:P30016 rdf:resource="https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec"/>
-    <rdam:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
-    <rdax:hasLcClassificationPartA>PG3476.L447</rdax:hasLcClassificationPartA>
-    <rdam:P30156 xml:lang="rus">Игрушки и зверушки</rdam:P30156>
-    <rdam:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a"/>
-    <rdam:P30137 xml:lang="eng">Publisher's white color-printed pictorial self wrappers.</rdam:P30137>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec">
+    <rdfs:label>Игрушки и зверушки</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
-    <rdfs:label>full</rdfs:label>
+  <rdf:Description rdf:nodeID="f1bf03aebb973431ca13432b12288377bb1">
+    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <ns1:creationDate xml:lang="eng">2019-11-25</ns1:creationDate>
+    <ns1:status rdf:nodeID="f1bf03aebb973431ca13432b12288377bb2"/>
+    <ns3:catalogerID xml:lang="eng">cec23</ns3:catalogerID>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5">
+    <ns2:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <ns5:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</ns5:hasResourceTemplate>
+    <ns2:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a"/>
+    <ns2:P30088 xml:lang="eng">[Leningrad]</ns2:P30088>
+    <ns4:hasLcClassificationPartA>PG3476.L447</ns4:hasLcClassificationPartA>
+    <ns2:P30016 rdf:resource="https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec"/>
+    <ns2:P30106 xml:lang="rus">Библиотечка детского сада</ns2:P30106>
+    <ns2:P30011 xml:lang="eng">1939</ns2:P30011>
+    <ns2:P30169 xml:lang="eng">20 x 23 cm</ns2:P30169>
+    <ns2:P30182 xml:lang="eng">12 unnumbered pages</ns2:P30182>
+    <ns2:P30176 xml:lang="rus">ДЕТИЗДАТ ЦК ВЛКСМ</ns2:P30176>
+    <ns2:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <ns2:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <ns2:P30187>Chromolithography</ns2:P30187>
+    <ns1:adminMetadata rdf:nodeID="f1bf03aebb973431ca13432b12288377bb1"/>
+    <ns2:P30157 xml:lang="rus">Bibliotechka detskogo sada</ns2:P30157>
+    <ns2:P30137 xml:lang="eng">Publisher's white color-printed pictorial self wrappers.</ns2:P30137>
+    <ns2:P30128 xml:lang="rus">Igrushki i zverushki</ns2:P30128>
+    <ns2:P30137 xml:lang="eng">Cover title.</ns2:P30137>
+    <ns2:P30105 xml:lang="rus">V. Lebedev</ns2:P30105>
+    <ns2:P30105 xml:lang="rus">В. Лебедев</ns2:P30105>
+    <ns2:P30156 xml:lang="rus">Игрушки и зверушки</ns2:P30156>
+    <ns2:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns2:P30137 xml:lang="eng">Chromolithographs. Stapled into self-wraps.</ns2:P30137>
+    <ns2:P30137 xml:lang="eng">Also available electronically.</ns2:P30137>
+    <ns4:hasLcClassificationPartB>I35 1939</ns4:hasLcClassificationPartB>
+    <ns2:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/ModeIssue/1001">
     <rdfs:label>single unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="fa920c0b0e6784647a55e14b1d3c60d29b1">
-    <bflc:catalogerID xml:lang="eng">cec23</bflc:catalogerID>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:status rdf:nodeID="fa920c0b0e6784647a55e14b1d3c60d29b2"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:creationDate xml:lang="eng">2019-11-25</bf:creationDate>
+  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a">
+    <rdfs:label>Igrushki i zverushki</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec">
-    <rdfs:label>Игрушки и зверушки</rdfs:label>
+  <rdf:Description rdf:nodeID="f1bf03aebb973431ca13432b12288377bb2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <ns1:code xml:lang="eng">n</ns1:code>
   </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
-    <rdfs:label>WAU</rdfs:label>
+  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1008">
+    <rdfs:label>volume</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
-    <rdfs:label>English</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fa920c0b0e6784647a55e14b1d3c60d29b2">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <bf:code xml:lang="eng">n</bf:code>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a">
-    <rdfs:label>Igrushki i zverushki</rdfs:label>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+    <rdfs:label>WAU</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1025">
     <rdfs:label>paper</rdfs:label>
@@ -80,10 +77,13 @@
   <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1017">
     <rdfs:label>Ink</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label>full</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMediaType/1007">
     <rdfs:label>unmediated</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1008">
-    <rdfs:label>volume</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

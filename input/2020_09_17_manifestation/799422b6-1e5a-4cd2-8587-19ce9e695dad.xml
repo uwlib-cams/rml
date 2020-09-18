@@ -1,69 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:rdam="http://rdaregistry.info/Elements/m/"
-   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns2="http://rdaregistry.info/Elements/m/"
+   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:ns5="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://id.loc.gov/authorities/demographicTerms/dg2015060010">
-    <rdfs:label>Children</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/799422b6-1e5a-4cd2-8587-19ce9e695dad">
-    <rdam:P30176 xml:lang="eng">Albert Whitman &amp; Company, Publishers</rdam:P30176>
-    <rdam:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
-    <rdam:P30011 xml:lang="eng">1929</rdam:P30011>
-    <rdam:P30156 xml:lang="eng">Hans Brinker, or, The silver skates</rdam:P30156>
-    <rdam:P30265>http://id.loc.gov/authorities/names/no2019178337</rdam:P30265>
+    <ns2:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <ns5:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</ns5:hasResourceTemplate>
+    <ns2:P30176 xml:lang="eng">Albert Whitman &amp; Company, Publishers</ns2:P30176>
+    <ns4:hasLcClassificationPartB xml:lang="eng">Han 1929</ns4:hasLcClassificationPartB>
+    <ns2:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <ns2:P30105 xml:lang="eng">by Mary Mapes Dodge</ns2:P30105>
+    <ns2:P30011 xml:lang="eng">1929</ns2:P30011>
+    <ns1:adminMetadata rdf:nodeID="f68f419d05ec34757a457d4f0f483c76ab1"/>
+    <ns2:P30083 rdf:resource="http://id.loc.gov/rwo/agents/n78059801"/>
+    <ns2:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-    <rdam:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
-    <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-    <rdam:P30182 xml:lang="eng">320 pages</rdam:P30182>
-    <rdam:P30105 xml:lang="eng">by Mary Mapes Dodge</rdam:P30105>
-    <rdam:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
-    <rdam:P30007 xml:lang="eng">©1929</rdam:P30007>
-    <rdam:P30128 xml:lang="eng">Silver skates</rdam:P30128>
-    <rdam:P30157 xml:lang="eng">Albert Whitman's classics fully illustrated</rdam:P30157>
-    <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
-    <rdam:P30128 xml:lang="eng">Hans Brinker</rdam:P30128>
-    <rdam:P30016>Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman &amp; Company, Publishers, [1929] (OCoLC)1129260725</rdam:P30016>
-    <rdam:P30169 xml:lang="eng">23 cm</rdam:P30169>
-    <rdax:hasLcClassificationPartB xml:lang="eng">Han 1929</rdax:hasLcClassificationPartB>
-    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <sin:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</sin:hasResourceTemplate>
-    <bf:adminMetadata rdf:nodeID="f4c789c326c7f4a0e8861f2a39053185eb1"/>
-    <rdam:P30088 xml:lang="eng">Chicago</rdam:P30088>
-    <rdax:hasLcClassificationPartA xml:lang="eng">PZ7.D664</rdax:hasLcClassificationPartA>
-    <rdam:P30105 xml:lang="eng">illustrated by Violet Moore Higgins</rdam:P30105>
-    <rdam:P30083 rdf:resource="http://id.loc.gov/rwo/agents/n78059801"/>
-    <rdam:P30106 xml:lang="eng">Albert Whitman's classics fully illustrated</rdam:P30106>
-    <rdam:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b"/>
-    <rdam:P30305 rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060010"/>
+    <ns2:P30007 xml:lang="eng">©1929</ns2:P30007>
+    <ns2:P30182 xml:lang="eng">320 pages</ns2:P30182>
+    <ns2:P30105 xml:lang="eng">illustrated by Violet Moore Higgins</ns2:P30105>
+    <ns2:P30128 xml:lang="eng">Hans Brinker</ns2:P30128>
+    <ns2:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <ns2:P30106 xml:lang="eng">Albert Whitman's classics fully illustrated</ns2:P30106>
+    <ns2:P30265>http://id.loc.gov/authorities/names/no2019178337</ns2:P30265>
+    <ns2:P30016>Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman &amp; Company, Publishers, [1929] (OCoLC)1129260725</ns2:P30016>
+    <ns2:P30128 xml:lang="eng">Silver skates</ns2:P30128>
+    <ns2:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns2:P30157 xml:lang="eng">Albert Whitman's classics fully illustrated</ns2:P30157>
+    <ns2:P30088 xml:lang="eng">Chicago</ns2:P30088>
+    <ns2:P30169 xml:lang="eng">23 cm</ns2:P30169>
+    <ns2:P30305 rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060010"/>
+    <ns4:hasLcClassificationPartA xml:lang="eng">PZ7.D664</ns4:hasLcClassificationPartA>
+    <ns2:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b"/>
+    <ns2:P30156 xml:lang="eng">Hans Brinker, or, The silver skates</ns2:P30156>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
-    <rdfs:label>English</rdfs:label>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/demographicTerms/dg2015060010">
+    <rdfs:label>Children</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
-    <rdfs:label>full</rdfs:label>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1025">
+    <rdfs:label>paper</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="f4c789c326c7f4a0e8861f2a39053185eb1">
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:creationDate xml:lang="eng">2019-12-02</bf:creationDate>
+  <rdf:Description rdf:nodeID="f68f419d05ec34757a457d4f0f483c76ab1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:changeDate xml:lang="eng">2019-12-02</bf:changeDate>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <ns3:catalogerID xml:lang="eng">aschiff</ns3:catalogerID>
+    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <ns1:changeDate xml:lang="eng">2019-12-02</ns1:changeDate>
+    <ns1:creationDate xml:lang="eng">2019-12-02</ns1:creationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/ModeIssue/1001">
     <rdfs:label>single unit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMediaType/1007">
+    <rdfs:label>unmediated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>Resource Description and Access</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1017">
+    <rdfs:label>Ink</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label>full</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>https://id.loc.gov/vocabulary/organizations/wau</rdfs:label>
@@ -71,22 +83,10 @@
   <rdf:Description rdf:about="http://id.loc.gov/rwo/agents/n78059801">
     <rdfs:label>Albert Whitman &amp; Company</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1017">
-    <rdfs:label>Ink</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
-    <rdfs:label>Resource Description and Access</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1025">
-    <rdfs:label>paper</rdfs:label>
+  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1008">
+    <rdfs:label>volume</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b">
     <rdfs:label>Hans Brinker</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMediaType/1007">
-    <rdfs:label>unmediated</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1008">
-    <rdfs:label>volume</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

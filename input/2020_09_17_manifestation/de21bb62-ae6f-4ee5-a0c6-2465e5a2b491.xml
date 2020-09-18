@@ -1,47 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:rdam="http://rdaregistry.info/Elements/m/"
-   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns2="http://rdaregistry.info/Elements/m/"
+   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:ns5="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1017">
-    <rdfs:label>Ink</rdfs:label>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+    <rdfs:label>WAU</rdfs:label>
+    <rdfs:label>WaU</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="fa356ec97fce140a6bda9becc8d7a6d86b1">
-    <bflc:catalogerID xml:lang="eng">aentze</bflc:catalogerID>
-    <bf:status rdf:nodeID="fa356ec97fce140a6bda9becc8d7a6d86b2"/>
+  <rdf:Description rdf:nodeID="f66b0ed8417fa43bb90d6cb25892194e6b2">
+    <ns1:code xml:lang="eng">n</ns1:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMediaType/1007">
+    <rdfs:label>unmediated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="f66b0ed8417fa43bb90d6cb25892194e6b1">
+    <ns1:creationDate xml:lang="eng">2020-04-21</ns1:creationDate>
+    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns1:status rdf:nodeID="f66b0ed8417fa43bb90d6cb25892194e6b2"/>
+    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <ns3:catalogerID xml:lang="eng">aentze</ns3:catalogerID>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:creationDate xml:lang="eng">2020-04-21</bf:creationDate>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/de21bb62-ae6f-4ee5-a0c6-2465e5a2b491">
-    <rdam:P30182 xml:lang="eng">1 volume</rdam:P30182>
-    <rdam:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
-    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns2:P30088 xml:lang="eng">Washington, D.C.</ns2:P30088>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-    <rdam:P30169 xml:lang="eng">27 cm</rdam:P30169>
-    <rdax:hasSuDocClassificationNumber xml:lang="eng">S 17.38:G 31 tum</rdax:hasSuDocClassificationNumber>
-    <rdam:P30011>[1958]</rdam:P30011>
-    <rdam:P30156 xml:lang="eng">Program and itinerary.</rdam:P30156>
-    <rdam:P30176 xml:lang="eng">International Cooperation Administration</rdam:P30176>
-    <rdam:P30088 xml:lang="eng">Washington, D.C.</rdam:P30088>
-    <rdam:P30137 xml:lang="eng">Cover title.</rdam:P30137>
-    <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
-    <rdam:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
-    <rdam:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
-    <rdam:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5"/>
-    <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-    <bf:adminMetadata rdf:nodeID="fa356ec97fce140a6bda9becc8d7a6d86b1"/>
-    <rdam:P30007 xml:lang="eng">©</rdam:P30007>
-    <rdam:P30105 xml:lang="eng">Germany T.U. Methods to Increase Productivity, TE 09-374-70013.</rdam:P30105>
-    <sin:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</sin:hasResourceTemplate>
+    <ns2:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <ns2:P30182 xml:lang="eng">1 volume</ns2:P30182>
+    <ns2:P30007 xml:lang="eng">©</ns2:P30007>
+    <ns2:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <ns2:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns2:P30176 xml:lang="eng">International Cooperation Administration</ns2:P30176>
+    <ns1:adminMetadata rdf:nodeID="f66b0ed8417fa43bb90d6cb25892194e6b1"/>
+    <ns2:P30011>[1958]</ns2:P30011>
+    <ns2:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <ns2:P30156 xml:lang="eng">Program and itinerary.</ns2:P30156>
+    <ns2:P30137 xml:lang="eng">Cover title.</ns2:P30137>
+    <ns2:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <ns5:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</ns5:hasResourceTemplate>
+    <ns2:P30105 xml:lang="eng">Germany T.U. Methods to Increase Productivity, TE 09-374-70013.</ns2:P30105>
+    <ns4:hasSuDocClassificationNumber xml:lang="eng">S 17.38:G 31 tum</ns4:hasSuDocClassificationNumber>
+    <ns2:P30169 xml:lang="eng">27 cm</ns2:P30169>
+    <ns2:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1017">
+    <rdfs:label>Ink</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
@@ -49,22 +60,8 @@
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1049">
-    <rdfs:label>volume</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1025">
-    <rdfs:label>paper</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
-    <rdfs:label>WAU</rdfs:label>
-    <rdfs:label>WaU</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/ModeIssue/1001">
     <rdfs:label>single unit</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="fa356ec97fce140a6bda9becc8d7a6d86b2">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>
@@ -72,7 +69,10 @@
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5">
     <rdfs:label>https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMediaType/1007">
-    <rdfs:label>unmediated</rdfs:label>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAMaterial/1025">
+    <rdfs:label>paper</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.rdaregistry.info/termList/RDACarrierType/1049">
+    <rdfs:label>volume</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
