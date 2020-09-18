@@ -895,23 +895,23 @@ ex:WorkMap rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_18_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_18_Map a rr:TriplesMap;
+ex:Title_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10012[not(@resource)]]"
+    rml:iterator "/RDF/Description[P10012 or P10088 or P10223]"
   ].
 
-ex:Title_18_Map rr:subjectMap [
+ex:Title_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Title
 ].
 
-ex:Title_18_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:partNumber;
   rr:objectMap [
     rml:reference "P10012[not(@resource)][@lang]";
@@ -922,7 +922,7 @@ ex:Title_18_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_18_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:partNumber;
   rr:objectMap [
     rml:reference "P10012[not(@resource) and not(@lang)]";
@@ -6184,13 +6184,6 @@ ex:WorkMap rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_150_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10086[not(@resource)]]"
-  ].
-
 ex:Title_150_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:VariantTitle
@@ -6283,23 +6276,11 @@ ex:WorkMap rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_153_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_153_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10088[not(@resource)]]"
-  ].
-
-ex:Title_153_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Title
-].
-
-ex:Title_153_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10088[not(@resource)][@lang]";
@@ -6310,7 +6291,7 @@ ex:Title_153_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_153_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10088[not(@resource) and not(@lang)]";
@@ -12716,23 +12697,11 @@ ex:WorkMap rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_407_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_407_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10223[not(@resource)]]"
-  ].
-
-ex:Title_407_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Title
-].
-
-ex:Title_407_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10223[not(@resource)][@lang]";
@@ -12743,7 +12712,7 @@ ex:Title_407_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_407_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10223[not(@resource) and not(@lang)]";
@@ -20937,23 +20906,11 @@ ex:Identifiedby_641_Map rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_642_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_642_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10367[not(@resource)]]"
-  ].
-
-ex:Title_642_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:KeyTitle
-].
-
-ex:Title_642_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10367[not(@resource)][@lang]";
@@ -20964,7 +20921,7 @@ ex:Title_642_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_642_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P10367[not(@resource) and not(@lang)]";

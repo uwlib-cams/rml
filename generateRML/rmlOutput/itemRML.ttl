@@ -1685,6 +1685,25 @@ ex:Contribution_32_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40018[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40018/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40018[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_33_Map
@@ -1912,6 +1931,25 @@ ex:Role_36_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40020[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40020/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40020[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_37_Map
@@ -2055,6 +2093,25 @@ ex:Role_38_Map rr:predicateObjectMap [
     rr:constant "custodian";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40021[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40021/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40021[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
   ]
 ].
 
@@ -4128,23 +4185,23 @@ ex:ItemMap rr:predicateObjectMap [
 ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_108_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_108_Map a rr:TriplesMap;
+ex:Title_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40082[not(@resource)]]"
+    rml:iterator "/RDF/Description[P40082 or P40085]"
   ].
 
-ex:Title_108_Map rr:subjectMap [
+ex:Title_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Title
 ].
 
-ex:Title_108_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P40082[not(@resource)][@lang]";
@@ -4155,7 +4212,7 @@ ex:Title_108_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_108_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P40082[not(@resource) and not(@lang)]";
@@ -4405,23 +4462,11 @@ ex:ItemMap rr:predicateObjectMap [
 ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:title;
   rr:objectMap [
-    rr:parentTriplesMap ex:Title_111_Map
+    rr:parentTriplesMap ex:Title_Map
   ]
 ].
 
-ex:Title_111_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40085[not(@resource)]]"
-  ].
-
-ex:Title_111_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Title
-].
-
-ex:Title_111_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P40085[not(@resource)][@lang]";
@@ -4432,7 +4477,7 @@ ex:Title_111_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Title_111_Map rr:predicateObjectMap [
+ex:Title_Map rr:predicateObjectMap [
   rr:predicate bf:mainTitle;
   rr:objectMap [
     rml:reference "P40085[not(@resource) and not(@lang)]";
@@ -4446,13 +4491,6 @@ ex:ItemMap rr:predicateObjectMap [
     rr:parentTriplesMap ex:Title_112_Map
   ]
 ].
-
-ex:Title_112_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!itemID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P40086[not(@resource)]]"
-  ].
 
 ex:Title_112_Map rr:subjectMap [
   rr:termType rr:BlankNode;
@@ -5481,6 +5519,25 @@ ex:Contribution_139_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40101[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40101/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40101[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_140_Map
@@ -5708,6 +5765,25 @@ ex:Role_143_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40103[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40103/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40103[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_144_Map
@@ -5851,6 +5927,25 @@ ex:Role_145_Map rr:predicateObjectMap [
     rr:constant "custodian";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40104[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40104/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40104[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
   ]
 ].
 
@@ -7264,6 +7359,25 @@ ex:Contribution_171_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40117[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40117/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40117[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_172_Map
@@ -7491,6 +7605,25 @@ ex:Role_175_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40119[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40119/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40119[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_176_Map
@@ -7634,6 +7767,25 @@ ex:Role_177_Map rr:predicateObjectMap [
     rr:constant "custodian";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40120[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40120/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40120[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
   ]
 ].
 
@@ -9047,6 +9199,25 @@ ex:Contribution_203_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40133[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40133/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40133[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_204_Map
@@ -9274,6 +9445,25 @@ ex:Role_207_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40135[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40135/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40135[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_208_Map
@@ -9417,6 +9607,25 @@ ex:Role_209_Map rr:predicateObjectMap [
     rr:constant "custodian";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40136[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40136/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40136[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
   ]
 ].
 
@@ -10830,6 +11039,25 @@ ex:Contribution_235_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40149[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40149/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40149[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_236_Map
@@ -11057,6 +11285,25 @@ ex:Role_239_Map rr:predicateObjectMap [
 ].
 
 ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40151[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40151/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40151[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Contribution_240_Map
@@ -11200,6 +11447,25 @@ ex:Role_241_Map rr:predicateObjectMap [
     rr:constant "owner";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40152[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P40152/@lang"
+    ]
+  ]
+].
+
+ex:ItemMap rr:predicateObjectMap [
+  rr:predicate bf:custodialHistory;
+  rr:objectMap [
+    rml:reference "P40152[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
   ]
 ].
 
