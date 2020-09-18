@@ -66,6 +66,23 @@ def generate_provact_logical_source(provact_class, map_name, file_path):
   ].\n"""
     return provact_logical_source
 
+def generate_title_logical_source(map_name, file_path):
+    if "work" in file_path.lower():
+        property_numbers = " or ".join(work_title_props)
+    elif "exp" in file_path.lower():
+        property_numbers = " or ".join(expression_title_props)
+    elif "mani" in file_path.lower():
+        property_numbers = " or ".join(manifestation_title_props)
+    elif "item" in file_path.lower():
+        property_numbers = " or ".join(item_title_props)
+    title_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator \"/RDF/Description[{property_numbers}]\"
+  ].\n"""
+    return title_logical_source
+
 def generate_subject_map(map_name, class_name, subject_type="main"):
     if ":" not in class_name:
         class_name = f"bf:{class_name}"
@@ -218,32 +235,40 @@ def yes_resource_test(kiegel_list): # test to see if any blank nodes generated n
 
     return yes_resource
 
-def replace_semicolons(map):
-    if ";" in map:
-        if "; >" in map: # it goes in the first blank node
-            map_list = map.split(" ; > ")
-            first_map = map_list[0].split(" ")
-            predicate_name = first_map[0]
-            class_name = first_map[2]
-            new_map = f"""{map_list[0]}
-and
-{predicate_name} >> {class_name} > {map_list[1]}"""
-            return new_map
-
-        else: # it does not go in the first blank node
-            map_list = map.split(" ; ")
-            new_map = f"""{map_list[0]}
-and
-{map_list[1]}"""
-            return new_map
-    else: # no semicolons to replace
-        return map
 
 def fix_broken_constants(constant_list):
     """Takes in a list of values that ought to be one literal, and outputs them as a single literal"""
     space = " "
     new_literal = space.join(constant_list)
     return new_literal
+
+def replace_semicolons(kiegel_map):
+    """Replace shorthand semicolons in kiegel map with "long-hand" map that is more easily parsed"""
+    if ";" in kiegel_map:
+        map_list = kiegel_map.split(" ; ")
+
+        num_of_nodes = len(map_list)
+
+        node_range = range(0, num_of_nodes)
+
+        new_map_list = []
+
+        for num in node_range:
+            map = map_list[num]
+            if map[0] == ">": # if the first character is >, i.e. it was "; >"
+                predicate_class_map = map_list[num-1]
+                predicate_name = predicate_class_map.split(" ")[0]
+                class_name = predicate_class_map.split(" ")[2]
+                new_map = f"{predicate_name} >> {class_name} {map}"
+                new_map_list.append(new_map)
+            else:
+                new_map_list.append(map)
+
+        new_kiegel = "\nand\n".join(new_map_list)
+        return new_kiegel
+
+    else: # no semicolons to replace
+        return kiegel_map
 
 
 def split_by_space(map):
@@ -413,6 +438,28 @@ provisionActivityPublicationList = [
 ]
 
 provisionActivityList = provisionActivityDistributionList + provisionActivityManufactureList + provisionActivityProductionList + provisionActivityPublicationList
+
+work_title_props = [
+	"P10012",
+	"P10088",
+	"P10223"
+]
+
+expression_title_props = [
+	"P20312",
+	"P20315"
+]
+
+manifestation_title_props = [
+	"P30134",
+	"P30142",
+	"P30156"
+]
+
+item_title_props = [
+	"P40082",
+	"P40085"
+]
 
 for csv_file in csv_files:
     if "work" in csv_file:
@@ -731,6 +778,14 @@ for csv_file in csv_files:
                         if "Provisionactivity" in bnode_map_name:
                             class_name = node_list[num + 1]
                             bnode_map_name = "Provisionactivity_" + class_name + "_"
+                        if "Title" in bnode_map_name:
+                            class_name = node_list[num + 1]
+                            if "Variant" in class_name:
+                                pass
+                            elif "Abbreviated" in class_name:
+                                pass
+                            else:
+                                bnode_map_name = "Title_"
                         po_map = generate_bnode_po_map(predicate_name, bnode_map_name, map_name)
                         RML_list.append(po_map + "\n")
 
@@ -744,6 +799,14 @@ for csv_file in csv_files:
                             if "Provisionactivity" in bnode_map_name:
                                 logical_source = generate_provact_logical_source(class_name, bnode_map_name, default_path)
                                 RML_list.append(logical_source + "\n")
+                            elif "Title" in bnode_map_name:
+                                if "Variant" in class_name:
+                                    pass
+                                elif "Abbreviated" in class_name:
+                                    pass
+                                else:
+                                    logical_source = generate_title_logical_source(bnode_map_name, default_path)
+                                    RML_list.append(logical_source + "\n")
                             else:
                                 logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
                                 RML_list.append(logical_source + "\n")
