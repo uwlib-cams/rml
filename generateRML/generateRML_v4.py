@@ -801,9 +801,11 @@ for csv_file in csv_files:
                                 RML_list.append(logical_source + "\n")
                             elif "Title" in bnode_map_name:
                                 if "Variant" in class_name:
-                                    pass
+                                    logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
+                                    RML_list.append(logical_source + "\n")
                                 elif "Abbreviated" in class_name:
-                                    pass
+                                    logical_source = generate_bnode_logical_source(property_number, bnode_map_name, not_resource, yes_resource, default_path)
+                                    RML_list.append(logical_source + "\n")
                                 else:
                                     logical_source = generate_title_logical_source(bnode_map_name, default_path)
                                     RML_list.append(logical_source + "\n")
