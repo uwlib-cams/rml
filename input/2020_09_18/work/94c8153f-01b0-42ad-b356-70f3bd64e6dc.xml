@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/w/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/94c8153f-01b0-42ad-b356-70f3bd64e6dc">
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026282"/>
-    <ns1:P10061>Albert, Ned, 1894-1968</ns1:P10061>
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
-    <ns1:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85122849"/>
-    <ns1:P10219 xml:lang="eng">1941</ns1:P10219>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026282"/>
+    <rdaw:P10061>Albert, Ned, 1894-1968</rdaw:P10061>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85122849"/>
+    <rdaw:P10219 xml:lang="eng">1941</rdaw:P10219>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns1:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026264"/>
-    <ns1:P10223 xml:lang="eng">Hillbilly Sue</ns1:P10223>
-    <ns1:P10256>Ozark Mountains -- Drama</ns1:P10256>
-    <ns1:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008107215"/>
-    <ns1:P10256>Mountain people -- Drama</ns1:P10256>
-    <ns2:adminMetadata rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b1"/>
-    <ns1:P10331 xml:lang="eng">Albert, Ned, 1894-1968. Hillbilly Sue</ns1:P10331>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns4:hasResourceTemplate>
+    <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026264"/>
+    <rdaw:P10223 xml:lang="eng">Hillbilly Sue</rdaw:P10223>
+    <rdaw:P10256>Ozark Mountains -- Drama</rdaw:P10256>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2008107215"/>
+    <rdaw:P10256>Mountain people -- Drama</rdaw:P10256>
+    <bf:adminMetadata rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b1"/>
+    <rdaw:P10331 xml:lang="eng">Albert, Ned, 1894-1968. Hillbilly Sue</rdaw:P10331>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85122849">
     <rdfs:label>Single people</rdfs:label>
@@ -30,15 +30,15 @@
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b1">
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns2:status rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b2"/>
-    <ns3:catalogerID xml:lang="eng">pfreeman</ns3:catalogerID>
-    <ns2:creationDate xml:lang="eng">2020-05-04</ns2:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b2"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:creationDate xml:lang="eng">2020-05-04</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns2:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026264">
     <rdfs:label>Comedy plays</rdfs:label>
@@ -57,7 +57,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="fef043645e5d046d9af304ffa38a5bf23b2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns2:code xml:lang="eng">n</ns2:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026282">
     <rdfs:label>Dialect drama</rdfs:label>

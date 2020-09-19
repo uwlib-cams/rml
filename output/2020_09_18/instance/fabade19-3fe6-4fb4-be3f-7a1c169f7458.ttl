@@ -1,41 +1,41 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/fabade19-3fe6-4fb4-be3f-7a1c169f7458> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/fabade19-3fe6-4fb4-be3f-7a1c169f7458> a bf:Instance ;
     rdfs:label "Impetus or impediment"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jmoede"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-30" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource (174 pages)"@eng ] ;
-    ns1:instanceOf [ a ns1:Work.subclass ;
+    bf:instanceOf [ a bf:Work.subclass ;
             rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ],
-        [ a ns1:Work ;
+        [ a bf:Work ;
             rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ] ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "[University of Washington Libraries]"@eng ] ;
-            ns1:place [ a ns1:Place ;
+            bf:place [ a bf:Place ;
                     rdfs:label "[Seattle, Washington]"@eng ] ] ;
-    ns1:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2015]"@eng ;
-    ns1:responsibilityStatement "Bradley Jensen Murg"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2015]"@eng ;
+    bf:responsibilityStatement "Bradley Jensen Murg"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ;
-            ns1:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Impetus or impediment"@eng ] .
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@eng ] .
 

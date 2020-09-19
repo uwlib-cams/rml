@@ -1,43 +1,43 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/d74aea53-c6ae-4a7d-ba68-68d102b13294> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jmoede"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-23" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/rwo/agents/n2014213567>,
+<https://trellis.sinopia.io/repository/washington/d74aea53-c6ae-4a7d-ba68-68d102b13294> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2014213567>,
                 <http://id.loc.gov/rwo/agents/n2015003031>,
                 <http://id.loc.gov/rwo/agents/nb2013027571> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
-    ns1:expressionOf [ a ns1:Work.subclass ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:expressionOf [ a bf:Work.subclass ;
             rdfs:label "2019032287" ],
-        [ a ns1:Work ;
+        [ a bf:Work ;
             rdfs:label "2019032287" ] ;
-    ns1:genreForm [ a ns1:GenreForm ;
+    bf:genreForm [ a bf:GenreForm ;
             rdfs:label "monograph" ] ;
-    ns1:identifiedBy [ a ns1:Identifier.subclass ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
             rdf:value "9780367135119 hardcover" ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "9780367135119 hardcover" ] ;
             rdf:value "9780367135119 hardcover" ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "9780367135119 hardcover" ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:summary [ a ns1:Summary ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "This volume explores new perspectives on contemporary forms of violence in South Asia. Drawing on extensive fieldwork and case studies, it examines the infiltration of violence at the societal level and affords a comparative regional analysis of its historical, cultural and geopolitical origins in South Asia. Featuring essays from Sri Lanka to Nepal, and from Afghanistan to Burma, it sheds light on issues as wide-ranging as lynching and mob justice, hate speech, caste violence, gender-based violence, and the plight of the Rohingyas, among others. Lucid and engaging, this book will be an invaluable source of reference as well as scholarship to students and researchers of postcolonial studies, anthropology, sociology, cultural geography, minority studies, politics and gender studies."@eng ] ;
-    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
             rdfs:label "Includes bibliographical references and index"@eng ] .
 

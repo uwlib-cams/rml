@@ -1,33 +1,33 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/086fe612-1591-4a25-97bf-d4e4c9d3b295> a ns1:Item ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cc83"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-22" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:classification [ a ns1:ClassificationLcc ;
+<https://trellis.sinopia.io/repository/washington/086fe612-1591-4a25-97bf-d4e4c9d3b295> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
             rdf:value "ND1049.Q2A72 2015" ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/authorities/names/no2016169387> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/fmo> ],
-        [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/rwo/agents/no2016169387> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/dnr> ] ;
-    ns1:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
-    ns1:identifier [ a ns1:Barcode ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/no2016169387> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmo> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2016169387> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
             rdf:value "39352078280773"@eng ] ;
-    ns1:immediateAcquisition [ a ns1:ImmediateAcquisition ;
+    bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
             rdfs:label "Gift of Qin Bailan"@eng ] ;
-    ns1:itemOf <https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> ;
-    ns1:physicalLocation "East Asia Library"@eng ;
-    ns1:sublocation [ a ns1:Sublocation ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> ;
+    bf:physicalLocation "East Asia Library"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
             rdfs:label "Special Coll Oversize"@eng ] ;
-    ns1:usageAndAccessPolicy [ a ns1:AccessPolicy ;
+    bf:usageAndAccessPolicy [ a bf:AccessPolicy ;
             rdfs:label "Access is restricted; on site use only"@eng ] .
 

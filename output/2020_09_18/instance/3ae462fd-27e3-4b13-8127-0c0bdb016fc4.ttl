@@ -1,38 +1,38 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/3ae462fd-27e3-4b13-8127-0c0bdb016fc4> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/3ae462fd-27e3-4b13-8127-0c0bdb016fc4> a bf:Instance ;
     rdfs:label "Zipper"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "mathiasuw"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-25" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1039> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©" ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1039> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©" ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "UW Libraries has limited edition copy 4/10"@eng ;
-            ns1:noteType "University of Washington note"@en ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+            bf:noteType "University of Washington note"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Transformer Press"@eng ] ;
-            ns1:date "2018" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "2018" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Kingston (Ont.)"@eng ] ] ;
-    ns1:provisionActivityStatement "[Kingston, Ontario] : Transformer Press, 2018"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:provisionActivityStatement "[Kingston, Ontario] : Transformer Press, 2018"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Zipper"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Zipper"@eng ] .
 

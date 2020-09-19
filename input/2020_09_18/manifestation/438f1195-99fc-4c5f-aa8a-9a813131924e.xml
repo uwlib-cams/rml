@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://rdaregistry.info/Elements/m/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
-   xmlns:ns5="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdam="http://rdaregistry.info/Elements/m/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -15,40 +15,40 @@
     <rdfs:label>digital</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab1">
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns3:catalogerID xml:lang="eng">lins@uw.edu</ns3:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">lins@uw.edu</bflc:catalogerID>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:status rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab2"/>
-    <ns1:creationDate xml:lang="eng">2020-04-27</ns1:creationDate>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab2"/>
+    <bf:creationDate xml:lang="eng">2020-04-27</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WAU</rdfs:label>
     <rdfs:label>WaU</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/438f1195-99fc-4c5f-aa8a-9a813131924e">
-    <ns2:P30018 rdf:resource="http://rdaregistry.info/termList/fileType/1006"/>
-    <ns5:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns2:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
-    <ns2:P30182 xml:lang="eng">1 online resource</ns2:P30182>
-    <ns2:P30011 xml:lang="zxx">2005</ns2:P30011>
-    <ns2:P30156 xml:lang="eng">I for India</ns2:P30156>
-    <ns2:P30088 xml:lang="eng">Germany</ns2:P30088>
-    <ns2:P30105 xml:lang="eng">Fandango and Zero West present ; a film by Sandhya Suri ; produced by Carlo Cresto-Dina, Kai Kûnnemann, Thomas Kufus ; directed by Sandhya Suri.</ns2:P30105>
-    <ns2:P30172 rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/>
-    <ns2:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
-    <ns2:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <rdam:P30018 rdf:resource="http://rdaregistry.info/termList/fileType/1006"/>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <rdam:P30182 xml:lang="eng">1 online resource</rdam:P30182>
+    <rdam:P30011 xml:lang="zxx">2005</rdam:P30011>
+    <rdam:P30156 xml:lang="eng">I for India</rdam:P30156>
+    <rdam:P30088 xml:lang="eng">Germany</rdam:P30088>
+    <rdam:P30105 xml:lang="eng">Fandango and Zero West present ; a film by Sandhya Suri ; produced by Carlo Cresto-Dina, Kai Kûnnemann, Thomas Kufus ; directed by Sandhya Suri.</rdam:P30105>
+    <rdam:P30172 rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/>
+    <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Manifestation:dvdVideo</ns4:hasResourceTemplate>
-    <ns2:P30137 xml:lang="eng">Description based on DVD record; title from title screen (viewed April 27, 2020)</ns2:P30137>
-    <ns2:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b"/>
-    <ns1:adminMetadata rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab1"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Manifestation:dvdVideo</sin:hasResourceTemplate>
+    <rdam:P30137 xml:lang="eng">Description based on DVD record; title from title screen (viewed April 27, 2020)</rdam:P30137>
+    <rdam:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/e3d822cf-40a7-44f7-94c6-d1db4bec124b"/>
+    <bf:adminMetadata rdf:nodeID="fecf3cf0e83974f6d87ca1b430312cdcab1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>

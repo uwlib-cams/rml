@@ -1,44 +1,44 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1fcacdb5-8245-4f0e-9900-0b080d38d8a2> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/1fcacdb5-8245-4f0e-9900-0b080d38d8a2> a bf:Work ;
     rdfs:label "Metadata"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "leemihwa"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-04" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/authorities/names/n2008026840>,
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "leemihwa"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n2008026840>,
                 <http://id.loc.gov/authorities/names/n2008026841> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ],
-        [ a ns1:Contribution ;
-            ns1:agent [ a ns1:Agent ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Zeng, Macia Lei, 1956-" ] ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "http://id.loc.gov/resources/works/18713336.html"@eng ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Zeng, Marcia Lei, 1956- . Metadata"@eng ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Qin, Jian, 1956-. Metadata"@eng ] ;
-    ns1:originDate "2016" ;
-    ns1:originPlace [ a ns1:Place ;
+    bf:originDate "2016" ;
+    bf:originPlace [ a bf:Place ;
             rdfs:label "Chicago" ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Metadata"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Metadata"@eng ] .
 

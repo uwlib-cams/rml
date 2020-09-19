@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://rdaregistry.info/Elements/m/"
-   xmlns:ns3="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
-   xmlns:ns6="http://rdaregistry.info/Elements/m/datatype/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdam="http://rdaregistry.info/Elements/m/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:rdamdt="http://rdaregistry.info/Elements/m/datatype/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -13,29 +13,29 @@
     <rdfs:label>unmediated</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/1a91cb54-3b13-42b7-8cef-bb8310760a91">
-    <ns2:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331"/>
-    <ns3:hasLcClassificationPartA xml:lang="eng">PR4034</ns3:hasLcClassificationPartA>
-    <ns2:P30011 xml:lang="eng">[1950]</ns2:P30011>
-    <ns2:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
-    <ns2:P30083>http://id.loc.gov/entities/providers/74c75a2bf3f8dbd4c393d0bf9894d7d4</ns2:P30083>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</ns5:hasResourceTemplate>
-    <ns2:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
-    <ns2:P30176 xml:lang="eng">Doric Books</ns2:P30176>
-    <ns2:P30182 xml:lang="eng">243 pages</ns2:P30182>
-    <ns2:P30169 xml:lang="eng">19 cm</ns2:P30169>
-    <ns2:P30156 xml:lang="eng">Northanger Abbey</ns2:P30156>
-    <ns2:P30111 xml:lang="eng">[New York] : Doric Books, [1950]</ns2:P30111>
-    <ns3:hasLcClassificationPartB xml:lang="eng">.N7 1950</ns3:hasLcClassificationPartB>
-    <ns2:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
-    <ns2:P30007 xml:lang="eng">©1950</ns2:P30007>
-    <ns2:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <rdam:P30139 rdf:resource="https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331"/>
+    <rdax:hasLcClassificationPartA xml:lang="eng">PR4034</rdax:hasLcClassificationPartA>
+    <rdam:P30011 xml:lang="eng">[1950]</rdam:P30011>
+    <rdam:P30001 rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <rdam:P30083>http://id.loc.gov/entities/providers/74c75a2bf3f8dbd4c393d0bf9894d7d4</rdam:P30083>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Manifestation:monograph</sin:hasResourceTemplate>
+    <rdam:P30084 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <rdam:P30176 xml:lang="eng">Doric Books</rdam:P30176>
+    <rdam:P30182 xml:lang="eng">243 pages</rdam:P30182>
+    <rdam:P30169 xml:lang="eng">19 cm</rdam:P30169>
+    <rdam:P30156 xml:lang="eng">Northanger Abbey</rdam:P30156>
+    <rdam:P30111 xml:lang="eng">[New York] : Doric Books, [1950]</rdam:P30111>
+    <rdax:hasLcClassificationPartB xml:lang="eng">.N7 1950</rdax:hasLcClassificationPartB>
+    <rdam:P30208 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <rdam:P30007 xml:lang="eng">©1950</rdam:P30007>
+    <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-    <ns2:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
-    <ns3:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:adminMetadata rdf:nodeID="f6528f1eb972a44fcaa375b588845c7d2b1"/>
-    <ns2:P30105 xml:lang="eng">by Jane Austen</ns2:P30105>
-    <ns2:P30088 xml:lang="eng">[New York]</ns2:P30088>
-    <ns6:P30004 xml:lang="eng">LCCN 50001514</ns6:P30004>
+    <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="f6528f1eb972a44fcaa375b588845c7d2b1"/>
+    <rdam:P30105 xml:lang="eng">by Jane Austen</rdam:P30105>
+    <rdam:P30088 xml:lang="eng">[New York]</rdam:P30088>
+    <rdamdt:P30004 xml:lang="eng">LCCN 50001514</rdamdt:P30004>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WaU</rdfs:label>
@@ -44,14 +44,14 @@
     <rdfs:label>paper</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f6528f1eb972a44fcaa375b588845c7d2b1">
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
-    <ns4:catalogerID xml:lang="eng">aschiff</ns4:catalogerID>
-    <ns1:creationDate xml:lang="eng">2012-12-10</ns1:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:creationDate xml:lang="eng">2012-12-10</bf:creationDate>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
     <rdfs:label>Program for Cooperative Cataloging</rdfs:label>

@@ -1,41 +1,41 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3> a bf:Work ;
     rdfs:label "Go down, Moses"@en ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23"@en ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-12" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories"@en ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses"@en ] ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:originDate "1942" ;
-    ns1:summary [ a ns1:Summary ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "1942" ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "\"Go Down, Moses is a collection of short stories (and two longer stories, \"The Fire and the Hearth\" and \"The Bear\") that, together, tell the composite history of the McCaslin family, of the descendents of Carothers McCaslin and the residents of the plantation he founded. The complete histories emerge gradually over the course of the book, with bits of information appearing in successive stories to clarify, complete, and sometimes controvert the information given in previous stories. But each story has its own plot, as well, independent of the other stories\"--Spark Notes website, November 12, 2019."@en ] ;
-    ns1:title [ a ns1:VariantTitle ;
-            ns1:mainTitle "Go down, Moses and other stories"@en ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Go down, Moses"@en ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Go down, Moses and other stories"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Go down, Moses"@en ] .
 

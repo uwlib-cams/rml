@@ -1,46 +1,46 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/6b8dac8d-bcad-4af9-b3a4-bbe4b0886d2d> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/6b8dac8d-bcad-4af9-b3a4-bbe4b0886d2d> a bf:Work ;
     rdfs:label "Current directions in ostracism, social exclusion, and rejection research"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-01-17" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent [ a ns1:ColorContent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
             rdfs:label "black and white" ],
         <http://rdaregistry.info/termList/RDAColourContent/1002> ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent <http://id.loc.gov/rwo/agents/n00093905>,
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n00093905>,
                 <http://id.loc.gov/rwo/agents/n2012036677>,
                 <http://id.loc.gov/rwo/agents/no2019165180> ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
-    ns1:expressionOf [ a ns1:Work.subclass ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:expressionOf [ a bf:Work.subclass ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/29aae6bc-a3e0-4dcd-8ef7-5340615690a2" ],
-        [ a ns1:Work ;
+        [ a bf:Work ;
             rdfs:label "https://trellis.sinopia.io/repository/washington/29aae6bc-a3e0-4dcd-8ef7-5340615690a2" ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Current directions in ostracism, social exclusion, and rejection research. English"@eng ] ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "2019" ;
-    ns1:summary [ a ns1:Summary ;
+    bf:originDate "2019" ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "This edited volume provides an up-to-date review of current research on ostracism, social exclusion, and rejection. The book shows why exclusion and rejection occur, how they affect the excluded individuals, and the consequences they might have for individuals and organizations. Ostracism, social exclusion, and rejection are common phenomena, both at the individual level, such as ostracism in the classroom or at the workplace, as well as on a societal or even global scale, such as immigration or asylum policies. Examining key concepts such as the long-term effects of ostracism, the developmental and cultural perspective on ostracism, and the detrimental impact that social exclusion may have on individuals and societies, the authors provide an up-to-date overview of the research field and present new conceptual models and methodological approaches. Featuring discussion of promising areas, novel pathways for research, and cutting-edge developments, this is the most comprehensive bringing-together of research on this topic. The book gives both a broad state-of-the-art overview of the field as well as discussing cutting-edge ideas and promising areas for future research; it is essential for students, researchers of social psychology, and policy makers interested in this field."@eng ] ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Current directions in ostracism, social exclusion, and rejection research"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Current directions in ostracism, social exclusion, and rejection research"@eng ] .
 

@@ -1,50 +1,50 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/799422b6-1e5a-4cd2-8587-19ce9e695dad> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/799422b6-1e5a-4cd2-8587-19ce9e695dad> a bf:Instance ;
     rdfs:label "Hans Brinker, or, The silver skates"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:changeDate "2019-12-02" ;
-            ns1:creationDate "2019-12-02" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©1929" ;
-    ns1:dimensions "23 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02" ;
+            bf:creationDate "2019-12-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1929" ;
+    bf:dimensions "23 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "320 pages"@eng ] ;
-    ns1:hasReproduction [ a ns1:Electronic ;
+    bf:hasReproduction [ a bf:Electronic ;
             rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman & Company, Publishers, [1929] (OCoLC)1129260725" ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b> ;
-    ns1:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Albert Whitman & Company, Publishers"@eng ],
                 <http://id.loc.gov/rwo/agents/n78059801> ;
-            ns1:date "1929" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "1929" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Chicago"@eng ] ] ;
-    ns1:relatedTo [ a ns1:Work ;
+    bf:relatedTo [ a bf:Work ;
             rdfs:label "http://id.loc.gov/authorities/names/no2019178337" ] ;
-    ns1:responsibilityStatement "by Mary Mapes Dodge"@eng,
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng,
         "illustrated by Violet Moore Higgins"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:seriesStatement "Albert Whitman's classics fully illustrated"@eng ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:seriesStatement "Albert Whitman's classics fully illustrated"@eng ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Hans Brinker"@eng,
                 "Silver skates"@eng ;
-            ns1:mainTitle "Hans Brinker"@eng,
+            bf:mainTitle "Hans Brinker"@eng,
                 "Silver skates"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Hans Brinker, or, The silver skates"@eng ] .
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ] .
 

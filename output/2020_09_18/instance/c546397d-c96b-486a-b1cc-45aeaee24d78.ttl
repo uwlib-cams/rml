@@ -1,48 +1,48 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/c546397d-c96b-486a-b1cc-45aeaee24d78> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/c546397d-c96b-486a-b1cc-45aeaee24d78> a bf:Instance ;
     rdfs:label "原色きのこ"@jpn ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "CC83"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-26" ;
-            ns1:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "CC83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-26" ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:dimensions "11 x 15 cm"@eng ;
-    ns1:editionStatement "Shohan"@jpn,
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "11 x 15 cm"@eng ;
+    bf:editionStatement "Shohan"@jpn,
         "初版"@jpn ;
-    ns1:extent [ a ns1:Extent ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "2, 104 pages, 72 pages of color plates"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Sanseidō"@jpn,
                         "三省堂"@jpn ],
-                [ a ns1:Agent ;
+                [ a bf:Agent ;
                     rdfs:label "Sanseidō (Chiyoda-ku, Tokyo, Japan)" ] ;
-            ns1:date "Shōwa 17 [1942]",
+            bf:date "Shōwa 17 [1942]",
                 "昭和17 [1942]" ;
-            ns1:place [ a ns1:Place ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Tōkyō"@jpn,
                         "東京"@jpn ] ] ;
-    ns1:responsibilityStatement "Imazeki Rokuya cho"@jpn,
+    bf:responsibilityStatement "Imazeki Rokuya cho"@jpn,
         "今關六也著"@jpn ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:seriesStatement "Nature guide"@eng ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Genshoku kinoko"@jpn,
+    bf:seriesStatement "Nature guide"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Genshoku kinoko"@jpn,
                 "原色きのこ"@jpn ;
-            ns1:subtitle "Kinoko no saishū to miwakekata"@jpn,
+            bf:subtitle "Kinoko no saishū to miwakekata"@jpn,
                 "茸の採集と見分け方"@jpn ] .
 

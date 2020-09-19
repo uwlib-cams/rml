@@ -1,55 +1,55 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/4aa945a6-3fde-44e8-a2b4-bd7eeb7c5266> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/4aa945a6-3fde-44e8-a2b4-bd7eeb7c5266> a bf:Instance ;
     rdfs:label "Moose"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "pfreeman"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-29" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:copyrightDate "©1988" ;
-    ns1:dimensions "28 cm"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1988" ;
+    bf:dimensions "28 cm"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "21 pages, 68 unnumbered pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "ISBN 0877014949"@eng ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "ISBN 0877014949"@eng ] ;
             rdf:value "ISBN 0877014949"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "ISBN 0877014949"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Production ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/69fc88d5-620e-4d6d-981d-4d24f011f0d0> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Raincoast Books"@eng ] ;
-            ns1:date "1988"@eng ;
-            ns1:place [ a ns1:Place ;
+            bf:date "1988"@eng ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Vancouver, B.C."@eng ] ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Chronicle Books"@eng ],
                 <http://id.loc.gov/rwo/agents/n87936832> ;
-            ns1:date "[1988]" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "[1988]" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "San Francisco"@eng ] ] ;
-    ns1:provisionActivityStatement "San Francisco : Chronicle Books, [1988]"@eng ;
-    ns1:responsibilityStatement "Michio Hoshino"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:provisionActivityStatement "San Francisco : Chronicle Books, [1988]"@eng ;
+    bf:responsibilityStatement "Michio Hoshino"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Moose"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Moose"@eng ] .
 

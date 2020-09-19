@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/e/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns4="http://sinopia.io/vocabulary/"
+   xmlns:rdae="http://rdaregistry.info/Elements/e/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/e5327b04-32e0-4177-903c-a54d56438353">
-    <ns1:P20315 xml:lang="eng">Metadata</ns1:P20315>
-    <ns1:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-    <ns2:adminMetadata rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b1"/>
-    <ns4:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</ns4:hasResourceTemplate>
-    <ns1:P20207 rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
-    <ns1:P20313 xml:lang="eng">Metadata</ns1:P20313>
-    <ns1:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <rdae:P20315 xml:lang="eng">Metadata</rdae:P20315>
+    <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:adminMetadata rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b1"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</sin:hasResourceTemplate>
+    <rdae:P20207 rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <rdae:P20313 xml:lang="eng">Metadata</rdae:P20313>
+    <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b1">
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns2:creationDate xml:lang="eng">2019-11-27</ns2:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate xml:lang="eng">2019-11-27</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns3:catalogerID xml:lang="eng">leemihwa</ns3:catalogerID>
-    <ns2:status rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b2"/>
-    <ns3:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">leemihwa</bflc:catalogerID>
+    <bf:status rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/eng">
     <rdfs:label>English</rdfs:label>
@@ -35,7 +35,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="f3df899bcb46f4799a645769a40088fc2b2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns2:code xml:lang="eng">n</ns2:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAContentType/1020">
     <rdfs:label>text</rdfs:label>

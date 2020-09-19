@@ -1,49 +1,49 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/06362edc-8f38-449b-a23e-2fffc0374ac8> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/06362edc-8f38-449b-a23e-2fffc0374ac8> a bf:Instance ;
     rdfs:label "A pocket full of rye"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23" ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-01-28" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©1981" ;
-    ns1:dimensions "19 cm"@eng ;
-    ns1:editionStatement "Berkley edition"@eng ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-28" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1981" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:editionStatement "Berkley edition"@eng ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "185 pages"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "0425130282" ] ;
             rdf:value "0425130282" ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "0425130282" ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "0425130282" ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/ddee57d3-5e03-43f3-ac3f-673231e23928> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/ddee57d3-5e03-43f3-ac3f-673231e23928> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Berkley Books"@eng ] ;
-            ns1:date "1991" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "1991" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "New York"@eng ] ] ;
-    ns1:provisionActivityStatement "New York : Berkley Books, 1991"@eng ;
-    ns1:responsibilityStatement "Agatha Christie"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:provisionActivityStatement "New York : Berkley Books, 1991"@eng ;
+    bf:responsibilityStatement "Agatha Christie"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "A pocket full of rye"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A pocket full of rye"@eng ] .
 

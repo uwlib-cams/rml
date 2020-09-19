@@ -1,62 +1,62 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/702c94e2-54c7-4f6b-b88a-6653830f8de7> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/702c94e2-54c7-4f6b-b88a-6653830f8de7> a bf:Instance ;
     rdfs:label "Taiwania"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cc83"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-12-22" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:copyrightDate "©" ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource"@eng ] ;
-    ns1:firstIssue "May 1948"@eng,
+    bf:firstIssue "May 1948"@eng,
         "Volume 1, Number 1"@eng ;
-    ns1:frequency [ a ns1:Frequency ;
+    bf:frequency [ a bf:Frequency ;
             rdfs:label "Quarterly"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
+    bf:identifiedBy [ a bf:Identifier ;
             rdf:value "0372-333X"@eng ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "0372-333X"@eng ] ;
             rdf:value "0372-333X"@eng ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "0372-333X"@eng ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/bf2d6519-6dd3-4726-bd7b-78dfdb76e746> ;
-    ns1:issuance [ a ns1:Issuance ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/bf2d6519-6dd3-4726-bd7b-78dfdb76e746> ;
+    bf:issuance [ a bf:Issuance ;
             rdfs:label "Periodicals" ] ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:note [ a ns1:Note ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
             rdfs:label "Some issues have subtitles: Sciences reports of plant biology, An International journal of plant science, or An International journal of life science"@eng ;
-            ns1:noteType "title"@en ],
-        [ a ns1:Note ;
+            bf:noteType "title"@en ],
+        [ a bf:Note ;
             rdfs:label "Annual, 1948-<1990>"@eng ;
-            ns1:noteType "frequency"@en ],
-        [ a ns1:Note ;
+            bf:noteType "frequency"@en ],
+        [ a bf:Note ;
             rdfs:label "No. 1-4 also called v. 1, no. 1-4; None published between Mar. 1950 to Oct. 1954 and Dec. 1955 to Dec. 1960"@eng ;
-            ns1:noteType "numbering of sequence"@en ] ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+            bf:noteType "numbering of sequence"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Dept. of Botany, College of Science, National Taiwan University"@eng ],
                 <http://id.loc.gov/rwo/agents/n88005780> ;
-            ns1:date "1948-" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "1948-" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Taipei"@eng ] ] ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
                 "國立臺灣大學理學院植物學系研究報告"@chi ;
-            ns1:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
+            bf:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi,
                 "國立臺灣大學理學院植物學系研究報告"@chi ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Taiwania"@eng ] .
+        [ a bf:Title ;
+            bf:mainTitle "Taiwania"@eng ] .
 

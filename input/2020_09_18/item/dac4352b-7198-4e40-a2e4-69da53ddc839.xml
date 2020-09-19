@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://sinopia.io/vocabulary/"
-   xmlns:ns3="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b1">
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:creationDate xml:lang="zxx">2020-05-20</ns1:creationDate>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:status rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b2"/>
-    <ns4:catalogerID xml:lang="eng">aschiff</ns4:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate xml:lang="zxx">2020-05-20</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b2"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/dac4352b-7198-4e40-a2e4-69da53ddc839">
-    <ns3:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns3:hasPhysicalLocation xml:lang="eng">suzzallen</ns3:hasPhysicalLocation>
-    <ns1:adminMetadata rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b1"/>
-    <ns5:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7"/>
-    <ns3:hasLcClassificationPartA xml:lang="eng">TL603</ns3:hasLcClassificationPartA>
-    <ns2:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns2:hasResourceTemplate>
-    <ns3:hasLcClassificationPartB xml:lang="eng">.F34 2016</ns3:hasLcClassificationPartB>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdax:hasPhysicalLocation xml:lang="eng">suzzallen</rdax:hasPhysicalLocation>
+    <bf:adminMetadata rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b1"/>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7"/>
+    <rdax:hasLcClassificationPartA xml:lang="eng">TL603</rdax:hasLcClassificationPartA>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdax:hasLcClassificationPartB xml:lang="eng">.F34 2016</rdax:hasLcClassificationPartB>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns3:hasPhysicalSubLocation xml:lang="eng">Adam's house</ns3:hasPhysicalSubLocation>
+    <rdax:hasPhysicalSubLocation xml:lang="eng">Adam's house</rdax:hasPhysicalSubLocation>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
     <rdfs:label>WaU</rdfs:label>
@@ -47,7 +47,7 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa10d85db8099409995fd09bed43b8c78b2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">

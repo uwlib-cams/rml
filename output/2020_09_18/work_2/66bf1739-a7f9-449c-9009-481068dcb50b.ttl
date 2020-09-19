@@ -1,28 +1,28 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/66bf1739-a7f9-449c-9009-481068dcb50b> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "pfreeman"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-05-04" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+<https://trellis.sinopia.io/repository/washington/66bf1739-a7f9-449c-9009-481068dcb50b> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
         <http://rdaregistry.info/termList/RDAColourContent/1002> ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:derivativeOf [ a ns1:Work ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:derivativeOf [ a bf:Work ;
             rdfs:label "Revised edition of: Seashore life of Puget Sound, the Strait of Georgia, and the San Juan Archipelago, 1973." ] ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/7f1ae484-c6e1-424e-9e18-a91e1c345161> ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/7f1ae484-c6e1-424e-9e18-a91e1c345161> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "1983" ;
-    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+    bf:originDate "1983" ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
             rdfs:label "Includes bibliographical references (pages 353-355) and index"@eng ] .
 

@@ -1,50 +1,50 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/face7c36-b484-4966-93ef-b7e99a783e28> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/face7c36-b484-4966-93ef-b7e99a783e28> a bf:Work ;
     rdfs:label "eWork and eBusiness in architecture, engineering and construction"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-27" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent [ a ns1:Agent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "European Conference on Product and Process Modelling (2010 : Cork, Ireland)" ] ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "European Conference on Product and Process Modelling (2010 : Cork, Ireland). eWork and eBusiness in architecture, engineering and construction"@eng ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "European Conference on Product and Process Modelling (2010 : Cork, Ireland). Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ] ;
-    ns1:originDate "2010" ;
-    ns1:relatedTo [ a ns1:Work ;
+    bf:originDate "2010" ;
+    bf:relatedTo [ a bf:Work ;
             rdfs:label "Innovations -- Advanced computing in engineering -- Building information modelling -- Collaboration and process modelling -- Computer aided education and training -- Intelligent computing in engineering (EG-ICE) -- Hardware-sofware platforms for facilities and energy management -- Information technology for optimised building operation -- Information technology for energy-efficiency -- Optimisation and simulation -- Semantic Web and GIS" ] ;
-    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Architecture--Data processing--Congresses",
                 "Architecture--Information technology--Congresses",
                 "Construction industry--Data processing--Congresses ",
                 "Construction industry--Information technology--Congresses",
                 "Engineering--Information technology--Congresses" ],
         <http://id.loc.gov/authorities/subjects/sh2008103070> ;
-    ns1:title [ a ns1:VariantTitle ;
-            ns1:mainTitle "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "eWork and eBusiness in architecture, engineering and construction"@eng ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "eWork and eBusiness in architecture, engineering and construction"@eng ] .
 

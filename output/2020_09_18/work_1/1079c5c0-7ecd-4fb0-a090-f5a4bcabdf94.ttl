@@ -1,50 +1,50 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/1079c5c0-7ecd-4fb0-a090-f5a4bcabdf94> a ns1:Work ;
+<https://trellis.sinopia.io/repository/washington/1079c5c0-7ecd-4fb0-a090-f5a4bcabdf94> a bf:Work ;
     rdfs:label "He li you yu"@chi ;
-    ns2:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh2002006249>,
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh2002006249>,
         <http://id.loc.gov/authorities/subjects/sh85024235> ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jlee37"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-02-21" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent [ a ns1:Agent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Li, Jingjing" ] ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    ns1:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026111>,
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026111>,
         <http://id.loc.gov/authorities/genreForms/gf2014026160> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Li, Jingjing. He li you yu"@chi ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Li, Jingjing. There are fish in the river"@eng,
                 "Li, Jingjing. 河里有鱼"@eng ] ;
-    ns1:originPlace <http://id.loc.gov/authorities/names/n79076155> ;
-    ns1:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79076155> ;
+    bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Chinese language--Study and teaching--Juvenile literature" ],
         <http://id.loc.gov/authorities/subjects/sh2008100554>,
         <http://id.loc.gov/authorities/subjects/sh2009119299> ;
-    ns1:title [ a ns1:VariantTitle ;
-            ns1:mainTitle "There are fish in the river"@eng,
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "There are fish in the river"@eng,
                 "河里有鱼"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "He li you yu"@chi ] .
+        [ a bf:Title ;
+            bf:mainTitle "He li you yu"@chi ] .
 

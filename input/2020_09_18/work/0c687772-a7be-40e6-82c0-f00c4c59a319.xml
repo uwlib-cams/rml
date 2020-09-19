@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns3="http://rdaregistry.info/Elements/w/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -18,27 +18,27 @@
     <rdfs:label>Books and reading</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/0c687772-a7be-40e6-82c0-f00c4c59a319">
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns5:hasResourceTemplate>
-    <ns2:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh85083510"/>
-    <ns3:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85015758"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
+    <rdax:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/subjects/sh85083510"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh85015758"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-    <ns3:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh88002065"/>
-    <ns3:P10061 rdf:resource="http://id.loc.gov/authorities/names/nr2001029840"/>
-    <ns3:P10223 xml:lang="spa">Librerías</ns3:P10223>
-    <ns3:P10331 xml:lang="spa">Carrión, Jorge, 1976- Librerías.</ns3:P10331>
-    <ns3:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2010003327"/>
-    <ns1:adminMetadata rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db1"/>
-    <ns2:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060718"/>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh88002065"/>
+    <rdaw:P10061 rdf:resource="http://id.loc.gov/authorities/names/nr2001029840"/>
+    <rdaw:P10223 xml:lang="spa">Librerías</rdaw:P10223>
+    <rdaw:P10331 xml:lang="spa">Carrión, Jorge, 1976- Librerías.</rdaw:P10331>
+    <rdaw:P10256 rdf:resource="http://id.loc.gov/authorities/subjects/sh2010003327"/>
+    <bf:adminMetadata rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db1"/>
+    <rdax:hasCreatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060718"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db1">
-    <ns1:creationDate xml:lang="eng">2020-03-09</ns1:creationDate>
-    <ns1:status rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db2"/>
+    <bf:creationDate xml:lang="eng">2020-03-09</bf:creationDate>
+    <bf:status rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db2"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:catalogerID xml:lang="eng">jlee37</ns4:catalogerID>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID xml:lang="eng">jlee37</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/names/nr2001029840">
     <rdfs:label>Carrión, Jorge, 1976-</rdfs:label>
@@ -47,7 +47,7 @@
     <rdfs:label>Authors--Books and reading</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f6f1adbdc89db4bd1a482534718e7477db2">
-    <ns1:code xml:lang="eng">n</ns1:code>
+    <bf:code xml:lang="eng">n</bf:code>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85083510">

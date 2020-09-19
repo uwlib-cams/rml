@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://rdaregistry.info/Elements/i/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns3="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,36 +12,36 @@
     <rdfs:label>English</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/3aee1fa8-6c01-4fec-ae51-bf0f18159c53">
-    <ns2:adminMetadata rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab1"/>
-    <ns3:hasPhysicalLocation>crystalshouse</ns3:hasPhysicalLocation>
+    <bf:adminMetadata rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab1"/>
+    <rdax:hasPhysicalLocation>crystalshouse</rdax:hasPhysicalLocation>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns3:hasPhysicalSubLocation>crystalsbookshelfmysteryfiction</ns3:hasPhysicalSubLocation>
-    <ns1:P40050 xml:lang="eng">Inherited from grandma.</ns1:P40050>
-    <ns3:hasLcClassificationPartB>P63 1991</ns3:hasLcClassificationPartB>
-    <ns3:hasLcClassificationPartA>PR6005.H66</ns3:hasLcClassificationPartA>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns5:hasResourceTemplate>
-    <ns1:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/06362edc-8f38-449b-a23e-2fffc0374ac8"/>
-    <ns3:hasBarcode>123456789</ns3:hasBarcode>
-    <ns3:heldBy>CeC</ns3:heldBy>
-    <ns1:P40048 xml:lang="eng">Requires access to Crystal's bookshelf at home.</ns1:P40048>
-    <ns1:P40019>Klein, Gail</ns1:P40019>
+    <rdax:hasPhysicalSubLocation>crystalsbookshelfmysteryfiction</rdax:hasPhysicalSubLocation>
+    <rdai:P40050 xml:lang="eng">Inherited from grandma.</rdai:P40050>
+    <rdax:hasLcClassificationPartB>P63 1991</rdax:hasLcClassificationPartB>
+    <rdax:hasLcClassificationPartA>PR6005.H66</rdax:hasLcClassificationPartA>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/06362edc-8f38-449b-a23e-2fffc0374ac8"/>
+    <rdax:hasBarcode>123456789</rdax:hasBarcode>
+    <rdax:heldBy>CeC</rdax:heldBy>
+    <rdai:P40048 xml:lang="eng">Requires access to Crystal's bookshelf at home.</rdai:P40048>
+    <rdai:P40019>Klein, Gail</rdai:P40019>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab1">
-    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns2:creationDate>2020-01-28</ns2:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate>2020-01-28</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <ns2:status rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab2"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns4:catalogerID>cec23</ns4:catalogerID>
-    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fa5efb005b22a4ed4b9591a177055ad5ab2">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns2:code xml:lang="eng">n</ns2:code>
+    <bf:code xml:lang="eng">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>

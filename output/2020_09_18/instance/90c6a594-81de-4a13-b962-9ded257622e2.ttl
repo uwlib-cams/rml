@@ -1,55 +1,55 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/90c6a594-81de-4a13-b962-9ded257622e2> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/90c6a594-81de-4a13-b962-9ded257622e2> a bf:Instance ;
     rdfs:label "Aleppo cookbook"@eng ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    ns1:contribution [ a ns1:Contribution ;
-            ns1:agent _:N0d200850d1f74a659025c7d509f1d92d ;
-            ns1:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
-    ns1:dimensions "27 cm" ;
-    ns1:extent [ a ns1:Extent ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent _:N0d200850d1f74a659025c7d509f1d92d ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:dimensions "27 cm" ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "352 pages"@eng ] ;
-    ns1:genreForm [ a ns1:GenreForm ;
+    bf:genreForm [ a bf:GenreForm ;
             rdfs:label "Cookbooks" ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "9781566569866" ] ;
             rdf:value "9781566569866" ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "9781566569866" ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "9781566569866" ] ;
-    ns1:instanceOf [ a ns1:Work.subclass ;
+    bf:instanceOf [ a bf:Work.subclass ;
             rdfs:label "2014032555" ],
-        [ a ns1:Work ;
+        [ a bf:Work ;
             rdfs:label "2014032555" ] ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:note [ a ns1:Note ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
             rdfs:label "book designer"@en ;
-            ns1:noteType "role in manufacture"@en ] ;
-    ns1:provisionActivity [ a ns1:Manufacture ;
-            ns1:agent _:N0d200850d1f74a659025c7d509f1d92d ],
-        [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+            bf:noteType "role in manufacture"@en ] ;
+    bf:provisionActivity [ a bf:Manufacture ;
+            bf:agent _:N0d200850d1f74a659025c7d509f1d92d ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Interlink Books"@eng ] ;
-            ns1:place [ a ns1:Place ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Northampton (Mass.)"@eng ] ] ;
-    ns1:responsibilityStatement "Marlene Matar"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:responsibilityStatement "Marlene Matar"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Celebrating the legendary cuisine of Syria"@eng ;
-            ns1:mainTitle "Celebrating the legendary cuisine of Syria"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Aleppo cookbook"@eng ;
-            ns1:subtitle "Celebrating the legendary cuisine of Syria"@eng ] .
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ;
+            bf:subtitle "Celebrating the legendary cuisine of Syria"@eng ] .
 
-_:N0d200850d1f74a659025c7d509f1d92d a ns1:Agent ;
+_:N0d200850d1f74a659025c7d509f1d92d a bf:Agent ;
     rdfs:label "Moushabeck, Leyla " .
 

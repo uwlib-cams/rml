@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns3="http://rdaregistry.info/Elements/i/"
-   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b2">
-    <ns4:catalogerID xml:lang="eng">dbrookin</ns4:catalogerID>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:creationDate xml:lang="eng">2020-02-26</ns1:creationDate>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">dbrookin</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate xml:lang="eng">2020-02-26</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns1:status rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b1"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b1"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/b54ee4f7-c24a-428a-8828-f955c66bd072">
-    <ns2:hasBarcode xml:lang="zxx">39352078098761</ns2:hasBarcode>
-    <ns2:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdax:hasBarcode xml:lang="zxx">39352078098761</rdax:hasBarcode>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns2:hasLcClassificationPartB xml:lang="zxx">.W5817 1998</ns2:hasLcClassificationPartB>
-    <ns3:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/0de3eaac-0788-4d62-bd45-a9149e30e88a"/>
-    <ns2:hasPhysicalSubLocation xml:lang="zxx">szstx</ns2:hasPhysicalSubLocation>
-    <ns2:hasPhysicalLocation xml:lang="zxx">suzzallen</ns2:hasPhysicalLocation>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns5:hasResourceTemplate>
-    <ns1:adminMetadata rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b2"/>
-    <ns2:hasLcClassificationPartA xml:lang="zxx">DK508.846</ns2:hasLcClassificationPartA>
+    <rdax:hasLcClassificationPartB xml:lang="zxx">.W5817 1998</rdax:hasLcClassificationPartB>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/0de3eaac-0788-4d62-bd45-a9149e30e88a"/>
+    <rdax:hasPhysicalSubLocation xml:lang="zxx">szstx</rdax:hasPhysicalSubLocation>
+    <rdax:hasPhysicalLocation xml:lang="zxx">suzzallen</rdax:hasPhysicalLocation>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <bf:adminMetadata rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b2"/>
+    <rdax:hasLcClassificationPartA xml:lang="zxx">DK508.846</rdax:hasLcClassificationPartA>
   </rdf:Description>
   <rdf:Description rdf:nodeID="f32a200ce453e4d858a5a0a70b657dba9b1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="zxx">n</ns1:code>
+    <bf:code xml:lang="zxx">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>

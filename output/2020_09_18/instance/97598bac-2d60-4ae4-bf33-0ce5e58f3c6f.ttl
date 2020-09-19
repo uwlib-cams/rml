@@ -1,48 +1,48 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f> a bf:Instance ;
     rdfs:label "Agricultural nanobiotechnology"@en ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "cec23"@en ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2019-11-20" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    ns1:copyrightDate "©2018" ;
-    ns1:dimensions "25 cm"@en ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2018" ;
+    bf:dimensions "25 cm"@en ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "xii, 218 pages"@en ] ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "9783319967189"@en ] ;
             rdf:value "9783319967189"@en ],
-        [ a ns1:Identifier.subclass ;
+        [ a bf:Identifier.subclass ;
             rdf:value "9783319967189"@en ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "9783319967189"@en ] ;
-    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd> ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/4a9ec86c-8209-4ac2-8322-bfd27db73edd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Springer"@en ] ;
-            ns1:date "[2018]" ;
-            ns1:place [ a ns1:Place ;
+            bf:date "[2018]" ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Cham, Switzerland"@en ] ] ;
-    ns1:responsibilityStatement "Fernando López-Valdez, Fabián Fernández-Luqueño, editors"@en ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:responsibilityStatement "Fernando López-Valdez, Fabián Fernández-Luqueño, editors"@en ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:Title ;
-            ns1:mainTitle "Agricultural nanobiotechnology"@en ;
-            ns1:subtitle "modern agriculture for a sustainable future"@en ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Agricultural nanobiotechnology"@en ;
+            bf:subtitle "modern agriculture for a sustainable future"@en ] .
 

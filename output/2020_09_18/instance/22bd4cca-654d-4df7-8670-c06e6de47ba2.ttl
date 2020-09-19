@@ -1,52 +1,52 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/22bd4cca-654d-4df7-8670-c06e6de47ba2> a ns1:Instance ;
+<https://trellis.sinopia.io/repository/washington/22bd4cca-654d-4df7-8670-c06e6de47ba2> a bf:Instance ;
     rdfs:label "Violence in South Asia"@eng ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "jmoede"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-04-23" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    ns1:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
-    ns1:extent [ a ns1:Extent ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource (ix, 247 pages)"@eng ] ;
-    ns1:identifiedBy [ a ns1:Identifier.subclass ;
+    bf:identifiedBy [ a bf:Identifier.subclass ;
             rdf:value "9780429316845 electronic book" ],
-        [ a ns1:Identifier ;
-            ns1:source [ a ns1:Source ;
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
                     rdfs:label "9780429316845 electronic book" ] ;
             rdf:value "9780429316845 electronic book" ],
-        [ a ns1:Identifier ;
+        [ a bf:Identifier ;
             rdf:value "9780429316845 electronic book" ] ;
-    ns1:instanceOf [ a ns1:Work.subclass ;
+    bf:instanceOf [ a bf:Work.subclass ;
             rdfs:label "2019032288" ],
-        [ a ns1:Work ;
+        [ a bf:Work ;
             rdfs:label "2019032288" ] ;
-    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
-    ns1:provisionActivity [ a ns1:Publication ;
-            ns1:agent [ a ns1:Agent ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
                     rdfs:label "Routledge"@eng ] ;
-            ns1:place [ a ns1:Place ;
+            bf:place [ a bf:Place ;
                     rdfs:label "Abingdon, Oxon ; New York, NY"@eng ] ] ;
-    ns1:provisionActivityStatement "Abingdon, Oxon ; New York, NY : Routledge, 2020"@eng ;
-    ns1:reproductionOf [ a ns1:Instance ;
+    bf:provisionActivityStatement "Abingdon, Oxon ; New York, NY : Routledge, 2020"@eng ;
+    bf:reproductionOf [ a bf:Instance ;
             rdfs:label "1111655174" ] ;
-    ns1:responsibilityStatement "edited by Pavan Kumar Malreddy, Anindya Sekhar Purakayastha and Birte Heidemann"@eng ;
-    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+    bf:responsibilityStatement "edited by Pavan Kumar Malreddy, Anindya Sekhar Purakayastha and Birte Heidemann"@eng ;
+    bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    ns1:title [ a ns1:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "contemporary perspectives"@eng ;
-            ns1:mainTitle "contemporary perspectives"@eng ],
-        [ a ns1:Title ;
-            ns1:mainTitle "Violence in South Asia"@eng ] .
+            bf:mainTitle "contemporary perspectives"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Violence in South Asia"@eng ] .
 

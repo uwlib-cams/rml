@@ -1,44 +1,44 @@
-@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
-@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/fca1c8b8-03aa-4e09-ad2d-5df26c54baaf> a ns1:Work ;
-    ns1:adminMetadata [ a ns1:AdminMetadata ;
-            ns2:catalogerID "aschiff"@eng ;
-            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            ns1:creationDate "2020-05-07" ;
-            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
-            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
-            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
-            ns1:status [ a ns1:Status ;
-                    ns1:code "n" ] ] ;
-    ns1:colorContent [ a ns1:ColorContent ;
+<https://trellis.sinopia.io/repository/washington/fca1c8b8-03aa-4e09-ad2d-5df26c54baaf> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
             rdfs:label "color" ],
         <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
-    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/fe9935a9-172e-4f4d-bafa-c7cc79894c71> ;
-    ns1:identifiedBy [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/fe9935a9-172e-4f4d-bafa-c7cc79894c71> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "St. Clair, Kassia. Secret lives of colour. Text. English"@eng ],
-        [ a ns1:Identifier ;
-            ns1:note [ a ns1:Note ;
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
-                    ns1:noteType "type of identifier"@en ] ;
-            ns1:source [ a ns1:Source ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "St. Clair, Kassia. Secret lives of color. Text. English"@eng ] ;
-    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
-    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    ns1:notation [ a ns1:Script ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    ns1:originDate "2016" ;
-    ns1:summary [ a ns1:Summary ;
+    bf:originDate "2016" ;
+    bf:summary [ a bf:Summary ;
             rdfs:label "\"The unforgettable, unknown history of colors and the vivid stories behind them in a beautiful multi-colored volume The Secret Lives of Color tells the unusual stories of seventy-five fascinating shades, dyes and hues. From blonde to ginger, the brown that changed the way battles were fought to the white that protected against the plague, Picasso's blue period to the charcoal on the cave walls at Lascaux, acid yellow to kelly green, and from scarlet women to imperial purple, these surprising stories run like a bright thread throughout history. In this book, Kassia St. Clair has turned her lifelong obsession with colors and where they come from (whether Van Gogh's chrome yellow sunflowers or punk's fluorescent pink) into a unique study of human civilization. Across fashion and politics, art and war, the secret lives of color tell the vivid story of our culture. \"A mind-expanding tour of the world without leaving your paintbox. Every color has a story, and here are some of the most alluring, alarming, and thought-provoking.\"--Simon Garfield, author of Just My Type\"--Provided by publisher."@eng ] ;
-    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
             rdfs:label "Includes bibliographical references and index"@eng ] .
 

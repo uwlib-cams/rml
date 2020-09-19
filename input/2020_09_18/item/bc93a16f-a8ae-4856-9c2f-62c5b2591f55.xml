@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
-   xmlns:ns2="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns3="http://rdaregistry.info/Elements/i/"
-   xmlns:ns4="https://doi.org/10.6069/uwlib.55.d.4#"
-   xmlns:ns5="http://sinopia.io/vocabulary/"
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdai="http://rdaregistry.info/Elements/i/"
+   xmlns:rdax="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:sin="http://sinopia.io/vocabulary/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
@@ -12,27 +12,27 @@
     <rdfs:label>WAU</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb2">
-    <ns1:creationDate xml:lang="en">2019-11-20</ns1:creationDate>
-    <ns2:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <ns2:catalogerID xml:lang="en">ries07</ns2:catalogerID>
-    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate xml:lang="en">2019-11-20</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="en">ries07</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <ns1:status rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb1"/>
-    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb1"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7">
     <rdfs:label>Ground water development - issues and sustainable solutions</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://trellis.sinopia.io/repository/washington/bc93a16f-a8ae-4856-9c2f-62c5b2591f55">
-    <ns4:hasLcClassificationPartA xml:lang="en">TD419-428</ns4:hasLcClassificationPartA>
+    <rdax:hasLcClassificationPartA xml:lang="en">TD419-428</rdax:hasLcClassificationPartA>
     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-    <ns4:hasPhysicalLocation xml:lang="en">Suzzallo and Allen Libraries</ns4:hasPhysicalLocation>
-    <ns3:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7"/>
-    <ns1:adminMetadata rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb2"/>
-    <ns4:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <ns5:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns5:hasResourceTemplate>
-    <ns4:hasBarcode xml:lang="en">39352084182484</ns4:hasBarcode>
+    <rdax:hasPhysicalLocation xml:lang="en">Suzzallo and Allen Libraries</rdax:hasPhysicalLocation>
+    <rdai:P40049 rdf:resource="https://trellis.sinopia.io/repository/washington/22b554ca-6b46-4153-aebe-f573d5266de7"/>
+    <bf:adminMetadata rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb2"/>
+    <rdax:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Item:monograph</sin:hasResourceTemplate>
+    <rdax:hasBarcode xml:lang="en">39352084182484</rdax:hasBarcode>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
     <rdfs:label>Resource Description and Access</rdfs:label>
@@ -42,7 +42,7 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="fc584b3fac3114d6c8301390d17918ceeb1">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <ns1:code xml:lang="en">n</ns1:code>
+    <bf:code xml:lang="en">n</bf:code>
   </rdf:Description>
   <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
     <rdfs:label>full</rdfs:label>
