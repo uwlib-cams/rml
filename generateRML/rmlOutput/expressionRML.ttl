@@ -18321,6 +18321,13 @@ ex:ExpressionMap rr:predicateObjectMap [
   ]
 ].
 
+ex:Title_549_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20316[not(@resource)]]"
+  ].
+
 ex:Title_549_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:VariantTitle
