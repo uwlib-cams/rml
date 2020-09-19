@@ -1,0 +1,28 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/015baba0-b384-42aa-a07b-02294d9ba14e> a ns2:Item ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "jmoede"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-05-19" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:classification [ a ns2:ClassificationLcc ;
+            rdf:value "TX725.S9M38 2017" ] ;
+    ns2:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    ns2:identifier [ a ns2:Barcode ;
+            rdf:value "39352099999999" ] ;
+    ns2:itemOf [ a ns2:Instance.subclass ;
+            rdfs:label "9781566569866" ],
+        [ a ns2:Instance ;
+            rdfs:label "9781566569866" ] ;
+    ns2:physicalLocation "suzzallen"@eng ;
+    ns2:sublocation [ a ns2:Sublocation ;
+            rdfs:label "szstx"@eng ] .
+

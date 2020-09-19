@@ -1,0 +1,37 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b109860f-1a89-4dda-b922-f06701f448f7> a ns1:Work ;
+    rdfs:label "Training your boxer"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-16" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/c6edd386-5262-4bac-b6db-e1641879ed06> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Walker, Joan Hustace, 1962-. Training your boxer. English. 2011."@eng ] ;
+    ns1:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns1:intendedAudience <http://id.loc.gov/authorities/subjects/sh85038768> ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "\"An informative and fully illustrated manual that covers all aspects of training for your pet Boxer\"-- Provided by publisher."@eng,
+                "\"Noted for affectionate loyalty to their masters and their household, typical Boxers respond most readily to positive reinforcement techniques, such as clicker training. Inappropriate obedience training methods can often produce a stubborn and unwilling learner. This book, a title in Barron's Training Your Dog series, presents breed-specific advice to dog owners. The emphasis is on dog-friendly methods for teaching skills and preventing or correcting bad habits. Virtually every aspect of canine training is covered, including house training, teaching obedience to verbal cues and hand signals, retrieving, walking the dog on a leash, and more. Instructive color photos appear on most pages\"-- Provided by publisher."@eng ] ;
+    ns1:supplementaryContent [ a ns1:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references and index."@eng ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Training your boxer"@eng ] .
+

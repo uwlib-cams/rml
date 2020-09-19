@@ -1,0 +1,52 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/327694af-5194-468e-a68f-debab7cfc91b> a ns1:Instance ;
+    rdfs:label "Lorax"@en ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23"@en ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-13" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©1971" ;
+    ns1:dimensions "29 cm"@en ;
+    ns1:editionStatement "Trade edition"@en ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "61 unnumbered pages"@en ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "0394823370"@en,
+                        "74158378"@en ] ;
+            rdf:value "0394823370"@en,
+                "74158378"@en ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "0394823370"@en,
+                "74158378"@en ],
+        [ a ns1:Identifier ;
+            rdf:value "0394823370"@en,
+                "74158378"@en ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Random House"@en ] ;
+            ns1:date "[1971]" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "New York"@en ] ] ;
+    ns1:responsibilityStatement "by Dr. Seuss"@en ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Lorax"@en ] .
+

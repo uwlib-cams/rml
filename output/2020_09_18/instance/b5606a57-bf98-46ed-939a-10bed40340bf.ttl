@@ -1,0 +1,49 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/b5606a57-bf98-46ed-939a-10bed40340bf> a ns1:Instance ;
+    rdfs:label "Doc Maynard"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "pfreeman"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-05-06" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    ns1:copyrightDate "©1978" ;
+    ns1:dimensions "24 cm"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "8 unnumbered pages, 275 pages, 1 unnumbered page"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "ISBN 0914890026" ] ;
+            rdf:value "ISBN 0914890026" ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "ISBN 0914890026" ],
+        [ a ns1:Identifier ;
+            rdf:value "ISBN 0914890026" ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/4820e1d1-353f-4baa-a1b6-980eaae469e1> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Nettle Creek Publishing Company"@eng ] ;
+            ns1:date "1978" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Seattle"@eng ] ] ;
+    ns1:provisionActivityStatement "Seattle : Nettle Creek Publishing Company,  1978."@eng ;
+    ns1:responsibilityStatement "by Bill Speidel"@eng ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Doc Maynard"@eng ;
+            ns1:subtitle "the man who invented Seattle"@eng ] .
+

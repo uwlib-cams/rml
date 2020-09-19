@@ -1,0 +1,32 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/42bcdb3c-5c36-4970-9cc0-851d5bef0baa> a ns1:Work ;
+    rdfs:label "\"水木清华\" 与《雷雨》"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cc83"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-12-23" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1014> ;
+    ns1:expressionOf <https://trellis.sinopia.io/repository/washington/d02e409c-bd11-4769-a3b8-b4f2242d4f82> ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "\"Shui mu qing hua\" yu \"Lei yu\". Chinese"@eng ] ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@chi ] ;
+    ns1:note [ a ns1:Note ;
+            rdfs:label "Realia"@eng ;
+            ns1:noteType "other distinguishing characteristic of expression"@en ] ;
+    ns1:originDate "2012" ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "\"水木清华\" 与《雷雨》"@eng ] .
+

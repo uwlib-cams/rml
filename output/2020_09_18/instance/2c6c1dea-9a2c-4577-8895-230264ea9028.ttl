@@ -1,0 +1,55 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2c6c1dea-9a2c-4577-8895-230264ea9028> a ns1:Instance ;
+    rdfs:label "国际私法的振扬之路"@chi ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "jlee37"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "04-08-2020" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "24 cm"@eng ;
+    ns1:editionStatement "第1版"@eng ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "3, 2, 323 pages"@eng ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "9787520137591" ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "9787520137591" ] ;
+            rdf:value "9787520137591" ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "9787520137591" ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/7e1467c7-83bb-41a5-8bd2-aba07d336fd4> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "社会科学文献出版社"@chi ],
+                <http://id.loc.gov/rwo/agents/no2001101420> ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "北京"@eng ] ] ;
+    ns1:provisionActivityStatement "北京 : 社会科学文献出版社, 2019"@chi ;
+    ns1:responsibilityStatement "沈涓主编"@chi ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:seriesStatement "法学所60年学术精品选萃"@eng ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Guo ji si fa de zhen yang zhi lu"@chi,
+                "Road to the invigoration of private international law"@chi ;
+            ns1:mainTitle "Guo ji si fa de zhen yang zhi lu"@chi,
+                "Road to the invigoration of private international law"@chi ],
+        [ a ns1:Title ;
+            ns1:mainTitle "国际私法的振扬之路"@chi,
+                "Road to the invigoration of private international law"@eng ] .
+

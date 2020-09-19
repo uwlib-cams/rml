@@ -1,0 +1,43 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/0bcb899a-60c9-43be-b571-f4f8c496e89b> a ns2:Instance ;
+    rdfs:label "Македонско-русский словарь"@rus ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "dbrookin"@zxx ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-03-04" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns2:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns2:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns2:copyrightDate "©" ;
+    ns2:extent [ a ns2:Extent ;
+            rdfs:label "576 pages"@eng ] ;
+    ns2:instanceOf <https://trellis.sinopia.io/repository/washington/90ecceaa-a3f1-4cdd-8e61-96d76bd1b160> ;
+    ns2:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns2:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns2:note [ a ns2:Note ;
+            rdfs:label "Includes bibliographical references (page 5)"@eng ] ;
+    ns2:provisionActivity [ a ns2:Publication ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Государственное издатеальство иностранных и национальных словарей"@rus ] ;
+            ns2:date "1963" ;
+            ns2:place [ a ns2:Place ;
+                    rdfs:label "Москва"@rus ] ] ;
+    ns2:responsibilityStatement "под редакцией Н.И. Толстого"@rus,
+        "с приложением краткого грамматического справочника, составленного В.М. Иллич-Свитычем"@rus,
+        "составили Д. Толовски и В.М. Иллич-Свитыч"@rus ;
+    ns2:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns2:title [ a ns2:Title ;
+            ns2:mainTitle "Македонско-руски речник"@mac,
+                "Македонско-русский словарь"@rus ;
+            ns2:subtitle "30000 слов"@rus ] .
+

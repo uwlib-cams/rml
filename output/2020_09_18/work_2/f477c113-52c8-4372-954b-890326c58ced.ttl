@@ -1,0 +1,30 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bflc/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced> a ns2:Work ;
+    ns2:adminMetadata [ a ns2:AdminMetadata ;
+            ns1:catalogerID "dbrookin"@eng ;
+            ns1:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns2:creationDate "2020-02-19" ;
+            ns2:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns2:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns2:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns2:status [ a ns2:Status ;
+                    ns2:code "n" ] ] ;
+    ns2:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns2:contribution [ a ns2:Contribution ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Klochkov, R. A. (Rudolʹf Andreevich)" ] ;
+            ns2:role <http://id.loc.gov/vocabulary/relators/ill> ],
+        [ a ns2:Contribution ;
+            ns2:agent [ a ns2:Agent ;
+                    rdfs:label "Sokolova, M. A. (Maĭi︠a︡ Anatolʹevna)" ] ;
+            ns2:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    ns2:expressionOf <https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef> ;
+    ns2:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    ns2:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    ns2:notation [ a ns2:Script ;
+            rdfs:label "Cyrillic"@eng ] ;
+    ns2:originDate "1991" .
+

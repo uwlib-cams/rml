@@ -1,0 +1,40 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2c19725a-49ae-45bf-b776-95ce1dbda6b3> a ns1:Instance ;
+    rdfs:label "ဆရာကြီးဦးရန်အောင် ရာပြည့်အထိမ်းအမှတ် ရန်အောင်"@bur ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "dbrookin"@eng ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-02-26" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:dimensions "18 cm"@zxx ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "251 pages"@eng ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/73f6a5a5-53f2-4067-9c7c-5200ab8efb85> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "ရန်အောင်စာပေ"@bur ] ;
+            ns1:date "2004" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "ရန်ကုန်"@bur ] ] ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:title [ a ns1:VariantTitle ;
+            rdfs:label "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ : Vatthu tui cu (1)"@bur ;
+            ns1:mainTitle "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ : Vatthu tui cu (1)"@bur ],
+        [ a ns1:Title ;
+            ns1:mainTitle "ဆရာကြီးဦးရန်အောင် ရာပြည့်အထိမ်းအမှတ် ရန်အောင်"@bur ;
+            ns1:subtitle "ဝတ္ထုတိုစု (၁)"@bur ] .
+

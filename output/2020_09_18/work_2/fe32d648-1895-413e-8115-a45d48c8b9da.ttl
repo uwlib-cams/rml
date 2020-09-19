@@ -1,0 +1,52 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fe32d648-1895-413e-8115-a45d48c8b9da> a ns1:Work ;
+    rdfs:label "Zapiski iz mertvogo doma. English (Garnett)"@eng ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23" ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2020-01-15" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    ns1:contribution [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n83209489> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a ns1:Contribution ;
+            ns1:agent <http://id.loc.gov/rwo/agents/n50015174> ;
+            ns1:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    ns1:expressionOf [ a ns1:Work ;
+            rdfs:label "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9" ],
+        [ a ns1:Work.subclass ;
+            rdfs:label "https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9" ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. House of the dead"@eng ] ;
+    ns1:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    ns1:notation [ a ns1:Script ;
+            rdfs:label "Latin"@eng ] ;
+    ns1:originDate "1915" ;
+    ns1:summary [ a ns1:Summary ;
+            rdfs:label "\"The narrator, Aleksandr Petrovich Goryanchikov, has been sentenced to penalty deportation to Siberia and ten years of hard labour for murdering his wife. Life in prison is particularly hard for Aleksandr Petrovich, since he is a \"gentleman\" and suffers the malice of the other prisoners, nearly all of whom belong to the peasantry. Gradually Goryanchikov overcomes his revulsion at his situation and his fellow convicts, undergoing a spiritual re-awakening that culminates with his release from the camp. It is a work of great humanity; Dostoevsky portrays the inmates of the prison with sympathy for their plight, and also expresses admiration for their energy, ingenuity and talent. He concludes that the existence of the prison, with its absurd practices and savage corporal punishments is a tragic fact, both for the prisoners and for Russia\"--Wikipedia, January 15, 2020."@eng ] ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Zapiski iz mertvogo doma. English (Garnett)"@eng ],
+        [ a ns1:VariantTitle ;
+            ns1:mainTitle "House of the dead"@eng ] .
+

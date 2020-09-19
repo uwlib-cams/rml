@@ -1,0 +1,56 @@
+@prefix ns1: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix ns2: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3f90ecf0-f15b-4426-8d85-23c3d2ce341c> a ns1:Instance ;
+    rdfs:label "Multidimensional time-resolved spectroscopy"@en ;
+    ns1:adminMetadata [ a ns1:AdminMetadata ;
+            ns2:catalogerID "cec23"@en ;
+            ns2:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            ns1:creationDate "2019-11-06" ;
+            ns1:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            ns1:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            ns1:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            ns1:status [ a ns1:Status ;
+                    ns1:code "n" ] ] ;
+    ns1:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    ns1:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    ns1:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    ns1:copyrightDate "©2019" ;
+    ns1:dimensions "24 cm"@en ;
+    ns1:extent [ a ns1:Extent ;
+            rdfs:label "ix, 320 pages"@en ] ;
+    ns1:identifiedBy [ a ns1:Identifier ;
+            rdf:value "9783030024772"@en ],
+        [ a ns1:Identifier ;
+            ns1:source [ a ns1:Source ;
+                    rdfs:label "9783030024772"@en ] ;
+            rdf:value "9783030024772"@en ],
+        [ a ns1:Identifier.subclass ;
+            rdf:value "9783030024772"@en ],
+        [ a ns1:Identifier ;
+            ns1:note [ a ns1:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    ns1:noteType "type of identifier"@en ] ;
+            ns1:source [ a ns1:Source ;
+                    rdf:value "RDA"@en ] ;
+            rdf:value "Multidimensional time-resolved spectroscopy"@en ] ;
+    ns1:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/2591250d-3dde-4f8b-b0da-0d0ead2d45e6> ;
+    ns1:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    ns1:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    ns1:provisionActivity [ a ns1:Publication ;
+            ns1:agent [ a ns1:Agent ;
+                    rdfs:label "Springer"@en ] ;
+            ns1:date "[2019]" ;
+            ns1:place [ a ns1:Place ;
+                    rdfs:label "Cham, Switzerland"@en ] ] ;
+    ns1:responsibilityStatement "Tiago Buckup, Jérémie Léonard, editors"@en,
+        "with contributions from Johanna Brazard, Tiago Buckup, Thomas P. Cheshire, Marco Garavelli, Zhenkun Guo, Harold Y. Hwang, Jan Philip Kraak, Jérémie Léonard, Xian Li, Jian Lu, Margherita Maiuri, Brian P. Molesky, Andrew M. Moran, Shaul Mukamel, Keith A. Nelson, Artur Nenov, Benjamin K. Ofori-Okai, Ivan Rivalta, Javier Segarra-Martí, Yaquing Zhang"@en ;
+    ns1:role <http://id.loc.gov/vocabulary/relators/chr>,
+        <http://id.loc.gov/vocabulary/relators/cre>,
+        <http://id.loc.gov/vocabulary/relators/ctg> ;
+    ns1:seriesStatement "Topics in current chemistry collections"@en ;
+    ns1:title [ a ns1:Title ;
+            ns1:mainTitle "Multidimensional time-resolved spectroscopy"@en ] .
+
