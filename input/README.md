@@ -1,4 +1,4 @@
-# 2020_9_2
+# 2020_9_18
 
 Most recent data pulled from [Trellis](https://trellis.sinopia.io/repository/washington).
 
