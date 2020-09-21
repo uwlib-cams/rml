@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> a bf:Instance ;
-    rdfs:label "Русский костюм в фотографиях"@rus ;
+    rdfs:label "Русский костюм в фотографиях"@ru ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-03-04" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -17,30 +17,30 @@
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "319 pages"@eng ] ;
+            rdfs:label "319 pages"@en ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Contents and summary also in English."@eng,
-                "Includes bibliographical references."@eng,
-                "Published to accompany an exhibit held April-May, 2009 as part of the Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii.\""@eng ] ;
+            rdfs:label "Contents and summary also in English."@en,
+                "Includes bibliographical references."@en,
+                "Published to accompany an exhibit held April-May, 2009 as part of the Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii.\""@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Slovo"@eng ],
+                    rdfs:label "Slovo"@en ],
                 [ a bf:Agent ;
-                    rdfs:label "Слово"@rus ] ;
+                    rdfs:label "Слово"@ru ] ;
             bf:date "2010" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Москва"@rus ] ] ;
-    bf:responsibilityStatement "редактор, Е. Усенко"@rus,
-        "тексты А. Петрова, К. Соловьева"@rus ;
+                    rdfs:label "Москва"@ru ] ] ;
+    bf:responsibilityStatement "редактор, Е. Усенко"@ru,
+        "тексты А. Петрова, К. Соловьева"@ru ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "Russian costume in photographs"@eng,
-                "Русский костюм в фотографиях"@rus ;
-            bf:subtitle "metamorphoses"@eng,
-                "метаморфозы"@rus ] .
+            bf:mainTitle "Russian costume in photographs"@en,
+                "Русский костюм в фотографиях"@ru ;
+            bf:subtitle "metamorphoses"@en,
+                "метаморфозы"@ru ] .
 

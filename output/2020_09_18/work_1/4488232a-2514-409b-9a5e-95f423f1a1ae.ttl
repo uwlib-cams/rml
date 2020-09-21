@@ -4,10 +4,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/4488232a-2514-409b-9a5e-95f423f1a1ae> a bf:Work ;
-    rdfs:label "Histoire du soldat"@fra ;
+    rdfs:label "Histoire du soldat"@fr ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "gerhart"@eng ;
+            bflc:catalogerID "gerhart"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-02-07" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -28,8 +28,8 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
-            rdf:value "Stravinsky, Igor, 1882-1971. Soldier's tale."@eng,
-                "Stravinsky, Igor, 1882-1971. The soldier's tale"@eng ],
+            rdf:value "Stravinsky, Igor, 1882-1971. Soldier's tale."@en,
+                "Stravinsky, Igor, 1882-1971. The soldier's tale"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
@@ -39,5 +39,5 @@
             rdf:value "Stravinsky, Igor,1882-1971. Histoire du soldat" ] ;
     bf:subject <http://id.loc.gov/authorities/subjects/sh85011293> ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "Histoire du soldat"@fra ] .
+            bf:mainTitle "Histoire du soldat"@fr ] .
 

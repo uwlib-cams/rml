@@ -4,11 +4,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/1079c5c0-7ecd-4fb0-a090-f5a4bcabdf94> a bf:Work ;
-    rdfs:label "He li you yu"@chi ;
+    rdfs:label "He li you yu"@zh ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh2002006249>,
         <http://id.loc.gov/authorities/subjects/sh85024235> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "jlee37"@eng ;
+            bflc:catalogerID "jlee37"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-02-21" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -28,23 +28,23 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
-            rdf:value "Li, Jingjing. He li you yu"@chi ],
+            rdf:value "Li, Jingjing. He li you yu"@zh ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
-            rdf:value "Li, Jingjing. There are fish in the river"@eng,
-                "Li, Jingjing. 河里有鱼"@eng ] ;
+            rdf:value "Li, Jingjing. There are fish in the river"@en,
+                "Li, Jingjing. 河里有鱼"@en ] ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79076155> ;
     bf:subject [ a <http://www.loc.gov/mads/rdf/v1#Authority> ;
             rdfs:label "Chinese language--Study and teaching--Juvenile literature" ],
         <http://id.loc.gov/authorities/subjects/sh2008100554>,
         <http://id.loc.gov/authorities/subjects/sh2009119299> ;
     bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "There are fish in the river"@eng,
-                "河里有鱼"@eng ],
+            bf:mainTitle "There are fish in the river"@en,
+                "河里有鱼"@en ],
         [ a bf:Title ;
-            bf:mainTitle "He li you yu"@chi ] .
+            bf:mainTitle "He li you yu"@zh ] .
 

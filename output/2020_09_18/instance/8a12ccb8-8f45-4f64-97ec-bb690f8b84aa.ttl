@@ -4,9 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa> a bf:Instance ;
-    rdfs:label "A girl in the Himalayas"@eng ;
+    rdfs:label "A girl in the Himalayas"@en ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "jlee70"@eng ;
+            bflc:catalogerID "jlee70"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-02-07" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -18,15 +18,15 @@
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:copyrightDate "©2018" ;
-    bf:dimensions "24 cm"@zxx ;
+    bf:dimensions "24 cm" ;
     bf:identifiedBy [ a bf:Identifier.subclass ;
-            rdf:value "ISBN 9781684151295"@eng ],
+            rdf:value "ISBN 9781684151295"@en ],
         [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "ISBN 9781684151295"@eng ] ;
-            rdf:value "ISBN 9781684151295"@eng ],
+                    rdfs:label "ISBN 9781684151295"@en ] ;
+            rdf:value "ISBN 9781684151295"@en ],
         [ a bf:Identifier ;
-            rdf:value "ISBN 9781684151295"@eng ] ;
+            rdf:value "ISBN 9781684151295"@en ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/6f37ad8e-93a0-40d2-b43e-1f7cc9e195b6> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
@@ -34,15 +34,15 @@
             bf:agent [ a bf:Agent ;
                     rdfs:label "Archaia" ],
                 [ a bf:Agent ;
-                    rdfs:label "Archaia"@eng ] ;
+                    rdfs:label "Archaia"@en ] ;
             bf:date "2018" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Los Angeles, CA"@eng ] ] ;
-    bf:provisionActivityStatement "Los Angeles, CA : Archaia, [2018]"@eng ;
-    bf:responsibilityStatement "David Jesus Vignolli"@eng ;
+                    rdfs:label "Los Angeles, CA"@en ] ] ;
+    bf:provisionActivityStatement "Los Angeles, CA : Archaia, [2018]"@en ;
+    bf:responsibilityStatement "David Jesus Vignolli"@en ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "A girl in the Himalayas"@eng ] .
+            bf:mainTitle "A girl in the Himalayas"@en ] .
 

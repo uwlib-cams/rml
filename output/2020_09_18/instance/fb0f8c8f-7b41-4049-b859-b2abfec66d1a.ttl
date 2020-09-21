@@ -4,9 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/fb0f8c8f-7b41-4049-b859-b2abfec66d1a> a bf:Instance ;
-    rdfs:label "Heimweh nach Prag"@deu ;
+    rdfs:label "Heimweh nach Prag"@de ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-04-07" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -18,32 +18,32 @@
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "640 pages"@eng ] ;
+            rdfs:label "640 pages"@en ] ;
     bf:identifiedBy [ a bf:Identifier ;
-            rdf:value "ISBN 9783835311688"@zxx ],
+            rdf:value "ISBN 9783835311688" ],
         [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "ISBN 9783835311688"@zxx ] ;
-            rdf:value "ISBN 9783835311688"@zxx ],
+                    rdfs:label "ISBN 9783835311688" ] ;
+            rdf:value "ISBN 9783835311688" ],
         [ a bf:Identifier.subclass ;
-            rdf:value "ISBN 9783835311688"@zxx ] ;
+            rdf:value "ISBN 9783835311688" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/203252f2-2591-43d7-91f4-f6f60535576c> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Includes bibliographical references."@eng ] ;
+            rdfs:label "Includes bibliographical references."@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Wallstein Verlag"@deu ] ;
+                    rdfs:label "Wallstein Verlag"@de ] ;
             bf:date "2012" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Göttingen"@deu ] ] ;
-    bf:responsibilityStatement "Joseph Roth"@deu,
-        "herausgegeben und kommentiert von Helmuth Nürnberger"@deu ;
+                    rdfs:label "Göttingen"@de ] ] ;
+    bf:responsibilityStatement "Joseph Roth"@de,
+        "herausgegeben und kommentiert von Helmuth Nürnberger"@de ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "Heimweh nach Prag"@deu ;
-            bf:subtitle "Feuilletons, Glossen, Reportagen für das \"Prager Tagblatt\""@eng ] .
+            bf:mainTitle "Heimweh nach Prag"@de ;
+            bf:subtitle "Feuilletons, Glossen, Reportagen für das \"Prager Tagblatt\""@en ] .
 

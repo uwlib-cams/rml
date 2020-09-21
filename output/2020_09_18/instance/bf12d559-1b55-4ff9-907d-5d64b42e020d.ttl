@@ -3,9 +3,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/bf12d559-1b55-4ff9-907d-5d64b42e020d> a bf:Instance ;
-    rdfs:label "大阪市案内圖"@jpn ;
+    rdfs:label "大阪市案内圖"@ja ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "jlee70"@eng ;
+            bflc:catalogerID "jlee70"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-02-12" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -16,27 +16,27 @@
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
-    bf:dimensions "49 x 33 cm"@zxx ;
+    bf:dimensions "49 x 33 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "1 map"@eng ] ;
+            rdfs:label "1 map"@en ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/4076d7bd-e965-461e-b213-483f0a14ea6c> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Includes three diagrams and text on verso."@eng ] ;
+            rdfs:label "Includes three diagrams and text on verso."@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Nihon Chizu Kabushiki Kaisha"@jpn ] ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha"@ja ] ;
             bf:date "[1950]" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Ōsaka"@jpn ] ] ;
-    bf:provisionActivityStatement "Ōsaka : Nihon Chizu Kabushiki Kaisha, Shōwa 25 [1950]"@jpn ;
+                    rdfs:label "Ōsaka"@ja ] ] ;
+    bf:provisionActivityStatement "Ōsaka : Nihon Chizu Kabushiki Kaisha, Shōwa 25 [1950]"@ja ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Ōsaka-shi annaizu"@jpn ;
-            bf:mainTitle "Ōsaka-shi annaizu"@jpn ],
+            rdfs:label "Ōsaka-shi annaizu"@ja ;
+            bf:mainTitle "Ōsaka-shi annaizu"@ja ],
         [ a bf:Title ;
-            bf:mainTitle "大阪市案内圖"@jpn ] .
+            bf:mainTitle "大阪市案内圖"@ja ] .
 

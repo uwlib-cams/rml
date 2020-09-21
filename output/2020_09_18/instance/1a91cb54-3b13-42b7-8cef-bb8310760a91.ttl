@@ -4,9 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/1a91cb54-3b13-42b7-8cef-bb8310760a91> a bf:Instance ;
-    rdfs:label "Northanger Abbey"@eng ;
+    rdfs:label "Northanger Abbey"@en ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "aschiff"@eng ;
+            bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2012-12-10" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -16,33 +16,33 @@
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:copyrightDate "©1950" ;
-    bf:dimensions "19 cm"@eng ;
+    bf:dimensions "19 cm"@en ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "243 pages"@eng ] ;
+            rdfs:label "243 pages"@en ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "LCCN 50001514"@eng ] ;
-            rdf:value "LCCN 50001514"@eng ],
+                    rdfs:label "LCCN 50001514"@en ] ;
+            rdf:value "LCCN 50001514"@en ],
         [ a bf:Identifier.subclass ;
-            rdf:value "LCCN 50001514"@eng ],
+            rdf:value "LCCN 50001514"@en ],
         [ a bf:Identifier ;
-            rdf:value "LCCN 50001514"@eng ] ;
+            rdf:value "LCCN 50001514"@en ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Doric Books"@eng ],
+                    rdfs:label "Doric Books"@en ],
                 [ a bf:Agent ;
                     rdfs:label "http://id.loc.gov/entities/providers/74c75a2bf3f8dbd4c393d0bf9894d7d4" ] ;
             bf:date "[1950]" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "[New York]"@eng ] ] ;
-    bf:provisionActivityStatement "[New York] : Doric Books, [1950]"@eng ;
-    bf:responsibilityStatement "by Jane Austen"@eng ;
+                    rdfs:label "[New York]"@en ] ] ;
+    bf:provisionActivityStatement "[New York] : Doric Books, [1950]"@en ;
+    bf:responsibilityStatement "by Jane Austen"@en ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:Title ;
-            bf:mainTitle "Northanger Abbey"@eng ] .
+            bf:mainTitle "Northanger Abbey"@en ] .
 

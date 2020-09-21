@@ -4,9 +4,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/0010d9b0-ec29-4ab0-b25a-9a1a87108dd2> a bf:Instance ;
-    rdfs:label "Мач кнеза Стефана"@srp ;
+    rdfs:label "Мач кнеза Стефана"@sr ;
     bf:adminMetadata [ a bf:AdminMetadata ;
-            bflc:catalogerID "dbrookin"@eng ;
+            bflc:catalogerID "dbrookin"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2020-03-03" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
@@ -17,41 +17,41 @@
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:editionStatement "Пето издање"@srp ;
+    bf:editionStatement "Пето издање"@sr ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "277 pages"@eng ] ;
+            rdfs:label "277 pages"@en ] ;
     bf:identifiedBy [ a bf:Identifier ;
-            rdf:value "ISBN 8673462827"@zxx,
-                "ISBN 9788673462820"@zxx ],
+            rdf:value "ISBN 8673462827",
+                "ISBN 9788673462820" ],
         [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "ISBN 8673462827"@zxx,
-                        "ISBN 9788673462820"@zxx ] ;
-            rdf:value "ISBN 8673462827"@zxx,
-                "ISBN 9788673462820"@zxx ],
+                    rdfs:label "ISBN 8673462827",
+                        "ISBN 9788673462820" ] ;
+            rdf:value "ISBN 8673462827",
+                "ISBN 9788673462820" ],
         [ a bf:Identifier.subclass ;
-            rdf:value "ISBN 8673462827"@zxx,
-                "ISBN 9788673462820"@zxx ] ;
+            rdf:value "ISBN 8673462827",
+                "ISBN 9788673462820" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/52c3b570-ab8a-4989-8eb9-28f2dcffb65e> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "In Serbian (Cyrillic)."@eng ] ;
+            rdfs:label "In Serbian (Cyrillic)."@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Дерета"@srp ] ;
+                    rdfs:label "Дерета"@sr ] ;
             bf:date "2003" ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Београд"@srp ] ] ;
-    bf:responsibilityStatement "Драган Лакићевић"@srp ;
+                    rdfs:label "Београд"@sr ] ] ;
+    bf:responsibilityStatement "Драган Лакићевић"@sr ;
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
-    bf:seriesEnumeration "коло 3, књига 6"@srp ;
-    bf:seriesStatement "Библиотека Венац"@srp ;
+    bf:seriesEnumeration "коло 3, књига 6"@sr ;
+    bf:seriesStatement "Библиотека Венац"@sr ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Mač kneza Stefana"@srp ;
-            bf:mainTitle "Mač kneza Stefana"@srp ],
+            rdfs:label "Mač kneza Stefana"@sr ;
+            bf:mainTitle "Mač kneza Stefana"@sr ],
         [ a bf:Title ;
-            bf:mainTitle "Мач кнеза Стефана"@srp ] .
+            bf:mainTitle "Мач кнеза Стефана"@sr ] .
 
