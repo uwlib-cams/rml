@@ -3,7 +3,7 @@
 ## Install maven
 
  - Run the following commands  
-`$ sudo apt update`
+`$ sudo apt update`  
 `$ sudo apt install maven`
 
  - Confirm that the installation worked by asking for the version number  
@@ -29,7 +29,7 @@ _Note: the install seems to trip up while running the CSV tests. It may skip the
  - The directory should contain the following files:  
     - `original-rmlmapper-4.7.0-r152.jar`
     - `rmlmapper-4.7.0-r152.jar`  
-_The numbers with this file may be different with future versions of RML Mapper._  
+_The numbers with these files may be different with future versions of RML Mapper._  
 
  - The correct jar file is the latter (`rmlmapper-4.7.0-r152.jar`)
  - Confirm the installation of RML Mapper worked by asking for the help menu  
