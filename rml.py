@@ -1,7 +1,24 @@
 import os
 import rdflib
+import time
 from rdflib import *
 from datetime import date
+
+"""Namespaces"""
+LDP = Namespace('http://www.w3.org/ns/ldp#')
+bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
+bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
+dbo = Namespace('http://dbpedia.org/ontology/')
+madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
+rdac = Namespace('http://rdaregistry.info/Elements/c/')
+rdae = Namespace('http://rdaregistry.info/Elements/e/')
+rdai = Namespace('http://rdaregistry.info/Elements/i/')
+rdam = Namespace('http://rdaregistry.info/Elements/m/')
+rdamdt = Namespace('http://rdaregistry.info/Elements/m/datatype/')
+rdau = Namespace('http://rdaregistry.info/Elements/u/')
+rdaw = Namespace('http://rdaregistry.info/Elements/w/')
+rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
+sin = Namespace('http://sinopia.io/vocabulary/')
 
 """Functions"""
 
@@ -12,8 +29,6 @@ def create_URI_list():
     print("...\nPulling files from Trellis", flush=True)
     Graph_URI = Graph()
     # bind namespaces to graph
-    LDP = Namespace('http://www.w3.org/ns/ldp#')
-    rdac = Namespace('http://rdaregistry.info/Elements/c/')
     Graph_URI.bind('LDP', LDP)
     Graph_URI.bind('rdac', rdac)
     # load files from trellis
@@ -25,19 +40,18 @@ def create_URI_list():
 
 def save_works(URI_list, currentDate):
     """Look for works from trellis according to RDA class"""
+    # create directory for works
+    if not os.path.exists(f'input/{currentDate}/work'):
+        print("...\nCreating work directory")
+        os.system(f'mkdir input/{currentDate}/work')
     print(f"...\nLocating works")
     workURIList = []
     for uri in URI_list:
         Graph_trellisFile = Graph()
-        rdac = Namespace('http://rdaregistry.info/Elements/c/')
         Graph_trellisFile.bind('rdac', rdac)
         Graph_trellisFile.load(uri, format='turtle') # load record into graph
         for work in Graph_trellisFile.subjects(RDF.type, rdac.C10001): # see if record in graph is typed as an RDA work
             workURIList.append(work)
-            # create directory for works
-            if not os.path.exists(f'input/{currentDate}/work'):
-                print("...\nCreating work directory")
-                os.system(f'mkdir input/{currentDate}/work')
             Graph_trellisWork = Graph()
             Graph_trellisWork.load(work, format='turtle') # load work record into a new graph
             label = work.split('/')[-1] # select just the identifier
@@ -49,19 +63,18 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
     # remove works from URI list to save time
     for work in workURIList:
         URI_list.remove(work)
+    # create directory for expressions
+    if not os.path.exists(f'input/{currentDate}/expression'):
+        print("...\nCreating expression directory")
+        os.system(f'mkdir input/{currentDate}/expression')
     print(f"...\nLocating expressions")
     expressionURIList = []
     for uri in URI_list:
         Graph_trellisFile = Graph()
-        rdac = Namespace('http://rdaregistry.info/Elements/c/')
         Graph_trellisFile.bind('rdac', rdac)
         Graph_trellisFile.load(uri, format='turtle') # load record into graph
         for expression in Graph_trellisFile.subjects(RDF.type, rdac.C10006): # looks for records typed as an RDA expression
             expressionURIList.append(expression)
-            # create directory for expressions
-            if not os.path.exists(f'input/{currentDate}/expression'):
-                print("...\nCreating expression directory")
-                os.system(f'mkdir input/{currentDate}/expression')
             Graph_trellisExpression = Graph()
             Graph_trellisExpression.load(expression, format='turtle') # load expression record into a new graph
             label = expression.split('/')[-1] # select just the identifier
@@ -73,19 +86,18 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
     # remove works + expressions from URI list to save time
     for expression in expressionURIList:
         URI_list.remove(expression)
+    # create directory for manifestations
+    if not os.path.exists(f'input/{currentDate}/manifestation'):
+        print("...\nCreating manifestation directory")
+        os.system(f'mkdir input/{currentDate}/manifestation')
     print(f"...\nLocating manifestations")
     manifestationURIList = []
     for uri in URI_list:
         Graph_trellisFile = Graph()
-        rdac = Namespace('http://rdaregistry.info/Elements/c/')
         Graph_trellisFile.bind('rdac', rdac)
         Graph_trellisFile.load(uri, format='turtle')
         for manifestation in Graph_trellisFile.subjects(RDF.type, rdac.C10007): # looks for records typed as an RDA manifestation
             manifestationURIList.append(manifestation)
-            # create directory for manifestations
-            if not os.path.exists(f'input/{currentDate}/manifestation'):
-                print("...\nCreating manifestation directory")
-                os.system(f'mkdir input/{currentDate}/manifestation')
             Graph_trellisManifestation = Graph()
             Graph_trellisManifestation.load(manifestation, format='turtle')
             label = manifestation.split('/')[-1]
@@ -97,24 +109,22 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
     # remove works, expressions + manifestations from URI list to save time
     for manifestation in manifestationURIList:
         URI_list.remove(manifestation)
+    # create directory for items
+    if not os.path.exists(f'input/{currentDate}/item'):
+        print("...\nCreating item directory")
+        os.system(f'mkdir input/{currentDate}/item')
     print(f"...\nLocating items")
     for uri in URI_list:
         Graph_trellisFile = Graph()
-        rdac = Namespace('http://rdaregistry.info/Elements/c/')
         Graph_trellisFile.bind('rdac', rdac)
         Graph_trellisFile.load(uri,format='turtle')
         for item in Graph_trellisFile.subjects(RDF.type, rdac.C10003): # looks for records typed as an RDA item
-            # create directory for items
-            if not os.path.exists(f'input/{currentDate}/item'):
-                print("...\nCreating item directory")
-                os.system(f'mkdir input/{currentDate}/item')
             Graph_trellisItem = Graph()
             Graph_trellisItem.load(item, format='turtle')
             label = item.split('/')[-1]
             Graph_trellisItem.serialize(destination=f'input/{currentDate}/item/' + label + '.xml', format="xml")
 
 ## RML functions
-
 def transform_works(workList, currentDate):
     os.system("chmod u+rwx generateRML/rmlOutput/workRML.ttl") # adjust file permissions for map (RML sometimes trips on file permissions)
     # create work output directory
@@ -122,17 +132,34 @@ def transform_works(workList, currentDate):
         print(f'...\nCreating work_1 directory')
         os.makedirs(f'output/{currentDate}/work_1')
     print(f"...\nTransforming {len(workList)} files from RDA Work to BIBFRAME Work")
-    for work in workList:
+    for work in workList[0:2]:
         os.system(f"chmod u+rwx input/{currentDate}/work/{work}") # adjust file permissions for data
         label = work.split('.')[0] # save trellis identifier as label
         workID = f"{currentDate}/work/{label}" # use label to make path
         work_map_replace_to_ID(workID) # use path as RML source in work monograph map
         os.system(f"java -jar rmlmapper-4.8.1-r262.jar -m generateRML/rmlOutput/workRML.ttl -o {label}.nq") # run RML, output as nquad file
+        # create new empty graph
         Graph_localWork = Graph()
-        Graph_localWork.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-        Graph_localWork.serialize(destination=f'output/{currentDate}/work_1/' + label + '.ttl', format="turtle") # serialize file in turtle
-        os.system(f"rm {label}.nq") # delete nquad file
-        work_map_replace_to_default(workID) # return work monograph map to default
+        # bind namespaces to graph
+        Graph_localWork.bind('bf', bf)
+        Graph_localWork.bind('bflc', bflc)
+        # add nquad file to new graph
+        Graph_localWork.load(f'file:{label}.nq', format='nquads')
+        # create variables for new triples
+        snapshot_bnode = BNode()
+        currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+        snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
+        # create new triples
+        for s, p, o in Graph_localWork.triples((None, bf.adminMetadata, None)):
+            Graph_localWork.add((o, bf.generationProcess, snapshot_bnode))
+            Graph_localWork.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
+            Graph_localWork.add((snapshot_bnode, RDFS.label, snapshot_literal))
+        # serialize graph as turtle
+        Graph_localWork.serialize(destination=f'output/{currentDate}/work_1/' + label + '.ttl', format="turtle")
+        # delete nquad file
+        os.system(f"rm {label}.nq")
+        # return work map to default
+        work_map_replace_to_default(workID)
 
 def transform_expressions(expressionList, currentDate):
     os.system("chmod u+rwx generateRML/rmlOutput/expressionRML.ttl") # adjust file permissions for map (RML sometimes trips on file permissions)
@@ -147,11 +174,28 @@ def transform_expressions(expressionList, currentDate):
         expressionID = f"{currentDate}/expression/{label}" # use label to make path
         expression_map_replace_to_ID(expressionID) # use trellis identifier as RML source in expression monograph map
         os.system(f"java -jar rmlmapper-4.8.1-r262.jar -m generateRML/rmlOutput/expressionRML.ttl -o {label}.nq") # run RML, output as nquad file
+        # create new empty graph
         Graph_localExpression = Graph()
-        Graph_localExpression.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-        Graph_localExpression.serialize(destination=f'output/{currentDate}/work_2/' + label + '.ttl', format="turtle") # serialize file in turtle
-        os.system(f"rm {label}.nq") # delete nquad file
-        expression_map_replace_to_default(expressionID) # return expression monograph map to default
+        # bind namespaces to graph
+        Graph_localExpression.bind('bf', bf)
+        Graph_localExpression.bind('bflc', bflc)
+        # add nquad file to new graph
+        Graph_localExpression.load(f'file:{label}.nq', format='nquads')
+        # create variables for new triples
+        snapshot_bnode = BNode()
+        currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+        snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
+        # create new triples
+        for s, p, o in Graph_localExpression.triples((None, bf.adminMetadata, None)):
+            Graph_localExpression.add((o, bf.generationProcess, snapshot_bnode))
+            Graph_localExpression.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
+            Graph_localExpression.add((snapshot_bnode, RDFS.label, snapshot_literal))
+        # serialize graph as turtle
+        Graph_localExpression.serialize(destination=f'output/{currentDate}/work_2/' + label + '.ttl', format="turtle")
+        # delete nquad file
+        os.system(f"rm {label}.nq")
+        # return expression map to default
+        expression_map_replace_to_default(expressionID)
 
 def transform_manifestations(manifestationList, currentDate):
     os.system("chmod u+rwx generateRML/rmlOutput/manifestationRML.ttl") # adjust file permissions for map (RML sometimes trips on file permissions)
@@ -166,11 +210,28 @@ def transform_manifestations(manifestationList, currentDate):
         manifestationID = f"{currentDate}/manifestation/{label}" # use label to make path
         manifestation_map_replace_to_ID(manifestationID) # use trellis identifier as RML source in manifestation monograph map
         os.system(f"java -jar rmlmapper-4.8.1-r262.jar -m generateRML/rmlOutput/manifestationRML.ttl -o {label}.nq") # run RML, output as nquad file
+        # create new empty graph
         Graph_localManifestation = Graph()
-        Graph_localManifestation.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-        Graph_localManifestation.serialize(destination=f'output/{currentDate}/instance/' + label + '.ttl', format="turtle") # serialize file in turtle
-        os.system(f"rm {label}.nq") # delete nquad file
-        manifestation_map_replace_to_default(manifestationID) # return manifestation monograph map to default
+        # bind namespaces to graph
+        Graph_localManifestation.bind('bf', bf)
+        Graph_localManifestation.bind('bflc', bflc)
+        # add nquad file to new graph
+        Graph_localManifestation.load(f'file:{label}.nq', format='nquads')
+        # create variables for new triples
+        snapshot_bnode = BNode()
+        currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+        snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
+        # create new triples
+        for s, p, o in Graph_localManifestation.triples((None, bf.adminMetadata, None)):
+            Graph_localManifestation.add((trellis_url, bf.generationProcess, snapshot_bnode))
+            Graph_localManifestation.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
+            Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
+        # serialize graph as turtle
+        Graph_localManifestation.serialize(destination=f'output/{currentDate}/instance/' + label + '.ttl', format="turtle")
+        # delete nquad file
+        os.system(f"rm {label}.nq")
+        # return manifestation map to default
+        manifestation_map_replace_to_default(manifestationID)
 
 def transform_items(itemList, currentDate):
     os.system("chmod u+rwx generateRML/rmlOutput/itemRML.ttl") # adjust file permissions for map (RML sometimes trips on file permissions)
@@ -185,11 +246,28 @@ def transform_items(itemList, currentDate):
         itemID = f"{currentDate}/item/{label}" # use label to make path
         item_map_replace_to_ID(itemID) # use trellis identifier as RML source in item monograph map
         os.system(f"java -jar rmlmapper-4.8.1-r262.jar -m generateRML/rmlOutput/itemRML.ttl -o {label}.nq") # run RML, output as nquad file
+        # create new empty graph
         Graph_localItem = Graph()
-        Graph_localItem.load(f'file:{label}.nq', format='nquads') # add nquad file to new graph
-        Graph_localItem.serialize(destination=f'output/{currentDate}/item/' + label + '.ttl', format="turtle") # serialize file in turtle
-        os.system(f"rm {label}.nq") # delete nquad file
-        item_map_replace_to_default(itemID) # return item monograph map to default
+        # bind namespaces to graph
+        Graph_localItem.bind('bf', bf)
+        Graph_localItem.bind('bflc', bflc)
+        # add nquad file to new graph
+        Graph_localItem.load(f'file:{label}.nq', format='nquads')
+        # create variables for new triples
+        snapshot_bnode = BNode()
+        currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+        snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
+        # create new triples
+        for s, p, o in Graph_localItem.triples((None, bf.adminMetadata, None)):
+            Graph_localItem.add((trellis_url, bf.generationProcess, snapshot_bnode))
+            Graph_localItem.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
+            Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
+        # serialize file in turtle
+        Graph_localItem.serialize(destination=f'output/{currentDate}/item/' + label + '.ttl', format="turtle")
+        # delete nquad file
+        os.system(f"rm {label}.nq")
+        # return item map to default
+        item_map_replace_to_default(itemID)
 
 ## Find-and-replace functions
 
@@ -278,20 +356,19 @@ def item_map_replace_to_default(itemID):
 
 # format for naming folder according to date
 today = date.today()
-currentDate = str(today).replace('-', '_')
-print(currentDate)
+currentDate = # str(today).replace('-', '_')
 
 ###
 
-#URI_list = create_URI_list()
+URI_list = create_URI_list()
 
 # create directory with today's date for RDA-in-RDF/XML data
-#if not os.path.exists(f'input/{currentDate}'):
-#    print('...\nCreating input folder')
-#    os.system(f'mkdir input/{currentDate}')
+if not os.path.exists(f'input/{currentDate}'):
+    print('...\nCreating input folder')
+    os.system(f'mkdir input/{currentDate}')
 
 #workURIList = save_works(URI_list, currentDate)
-#workList = os.listdir(f'input/{currentDate}/work') # add RDA-in-RDF/XML works to new list
+workList = os.listdir(f'input/{currentDate}/work') # add RDA-in-RDF/XML works to new list
 
 #expressionURIList = save_expressions(URI_list, currentDate, workURIList)
 #expressionList = os.listdir(f'input/{currentDate}/expression') # add RDA-in-RDF/XML expressions to new list
@@ -303,67 +380,13 @@ print(currentDate)
 #itemList = os.listdir(f'input/{currentDate}/item') # add RDA-in-RDF/XML items to new list
 
 # create directory with today's date for BF-in-turtle data
-#if not os.path.exists(f'output/{currentDate}'):
-#    print('...\nCreating output folder')
-#    os.makedirs(f'output/{currentDate}')
+if not os.path.exists(f'output/{currentDate}'):
+    print('...\nCreating output folder')
+    os.makedirs(f'output/{currentDate}')
 
-#transform_works(workList, currentDate)
+transform_works(workList, currentDate)
 #transform_expressions(expressionList, currentDate)
 #transform_manifestations(manifestationList, currentDate)
 #transform_items(itemList, currentDate)
-
-# temporary code to fix lang tags until permanent solution is found
-def fix_english_lang_tags(filepath):
-    """Find instances of @eng in Turtle, replace with @en"""
-    eng = open(filepath, "rt")
-    en = eng.read()
-    en = en.replace("@eng", "@en")
-    eng.close()
-    eng = open(filepath, "wt")
-    eng.write(en)
-    eng.close()
-
-def fix_russian_lang_tags(filepath):
-    """Find instances of @rus in Turtle, replace with @ru"""
-    rus = open(filepath, "rt")
-    ru = rus.read()
-    ru = ru.replace("@rus", "@ru")
-    rus.close()
-    rus = open(filepath, "wt")
-    rus.write(ru)
-    rus.close()
-
-def fix_no_ling_content_lang_tags(filepath):
-    """Find instances of @zxx in Turtle, delete"""
-    zxx = open(filepath, "rt")
-    no_tag = zxx.read()
-    no_tag = no_tag.replace("@zxx", "")
-    zxx.close()
-    zxx = open(filepath, "wt")
-    zxx.write(no_tag)
-    zxx.close()
-
-currentDate = '2020_09_14'
-
-work1List = os.listdir(f"output/{currentDate}/work_1")
-for work in work1List:
-    filepath = f"output/{currentDate}/work_1/{work}"
-    fix_english_lang_tags(filepath)
-    fix_russian_lang_tags(filepath)
-work2List = os.listdir(f"output/{currentDate}/work_2")
-for work in work2List:
-    filepath = f"output/{currentDate}/work_2/{work}"
-    fix_english_lang_tags(filepath)
-    fix_russian_lang_tags(filepath)
-instanceList = os.listdir(f"output/{currentDate}/instance")
-for instance in instanceList:
-    filepath = f"output/{currentDate}/instance/{instance}"
-    fix_english_lang_tags(filepath)
-    fix_russian_lang_tags(filepath)
-itemList = os.listdir(f"output/{currentDate}/item")
-for item in itemList:
-    filepath = f"output/{currentDate}/item/{item}"
-    fix_english_lang_tags(filepath)
-    fix_russian_lang_tags(filepath)
 
 print("...\nDone!")
