@@ -2,7 +2,7 @@
 
 Script that takes in kiegel mappings via CSV files, and outputs RML that will transform RDA data to BIBFRAME according to those kiegel mappings. Takes directory of CSV files as an argument.
 
-`python3.6 generateRML_v4.py csv_dir`
+`$ python3.6 generateRML_v4.py csv_dir`
 
 # csv_dir
 
