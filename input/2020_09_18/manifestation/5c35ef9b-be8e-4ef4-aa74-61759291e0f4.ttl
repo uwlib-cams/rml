@@ -1,0 +1,86 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamdt: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdax: <https://doi.org/10.6069/uwlib.55.d.4#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sin: <http://sinopia.io/vocabulary/> .
+
+# Data review 2020-09-23
+# Compare with output > 2020_09_18 > instance > 5c35ef9b-be8e-4ef4-aa74-61759291e0f4.ttl
+
+<https://trellis.sinopia.io/repository/washington/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a <http://rdaregistry.info/Elements/c/C10007> ; # rdf:type rdac:Manifestation
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-11"@eng ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n"@eng ] ] ;
+    rdam:P30001 <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    rdam:P30002 <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    rdam:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    rdam:P30007 "©1968"@eng ;
+    rdam:P30011 "[1968]"@eng ;
+    rdam:P30083 <http://id.loc.gov/rwo/agents/n80020835> ; # has publisher agent, results in second of two Agent values for bf:Publication (SEE ISSUE #12)
+    rdam:P30084 <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    rdam:P30088 "Boston"@eng, # Output as one of two rdfs:label values on bf:Place bnode
+        "Toronto"@eng ; # Output as two of two rdfs:label values on bf:Place bnode
+        # But these should be two distinct bnodes
+        # SEE ISSUE #9
+    rdam:P30105 "by Louisa May Alcott"@eng,
+        "illustrations in color by Jessie Willcox Smith"@eng,
+        "with a new introduction by Cornelia Meigs"@eng ;
+    rdam:P30111 "Boston ; Toronto : Little Brown and Company, [1968]"@eng ;
+    rdam:P30128 "Little women"@eng,
+        "Meg, Jo, Beth, and Amy"@eng ;
+    rdam:P30133 "Centennial edition"@eng ;
+    rdam:P30139 <https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
+    rdam:P30156 "Little women, or, Meg, Jo, Beth, and Amy"@eng ;
+    rdam:P30169 "24 cm"@eng ;
+    rdam:P30176 "Little Brown and Company"@eng ; # name of publisher, results first of two Agent values output for bf:Publication (SEE ISSUE #12)
+    rdam:P30182 "xvii, 444 pages, 8 unnumbered leaves of plates"@eng ;
+    rdam:P30208 <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    rdam:P30305 <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/subjects/sh85055012> ;
+    rdamdt:P30004 "ISBN 0-316-030-90-2"@eng, # datatype properties strike again! Probably don't want to use datatype props in future iterations of RDA resource templates
+        "LCCN 68-0211171"@eng,
+        "OCLC 1157"@eng ;
+    sin:hasResourceTemplate "WAU:RT:RDA:Manifestation:monograph" ; # I believe that we will want to map and transform these, as stable BF RTs are identified as our targets for BF data
+    rdax:hasLcClassificationPartA "PZ7.A335"@eng ; # Note not output to Instance... maybe not output at all? Need to finish rdax mappings!
+    rdax:hasLcClassificationPartB "Li68"@eng ; # Note not output to Instance... maybe not output at all? Need to finish rdax mappings!
+    rdax:heldBy <https://id.loc.gov/vocabulary/organizations/wau> . # Note not output to Instance... maybe not output at all? Need to finish rdax mappings!
+
+# Disregarding <IRI> rdfs:label "literal" triples, we have decided not to squat on published resources!
+
+<http://id.loc.gov/authorities/demographicTerms/dg2015060010> rdfs:label "Children" .
+
+<http://id.loc.gov/authorities/subjects/sh85055012> rdfs:label "Girls" .
+
+<http://id.loc.gov/rwo/agents/n80020835> rdfs:label "Little, Brown and Company" .
+
+<http://id.loc.gov/vocabulary/marcauthen/pcc> rdfs:label "Program for Cooperative Cataloging" .
+
+<http://rdaregistry.info/termList/ModeIssue/1001> rdfs:label "single unit" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1017> rdfs:label "Ink" .
+
+<http://rdaregistry.info/termList/RDAMaterial/1025> rdfs:label "paper" .
+
+<http://rdaregistry.info/termList/RDAMediaType/1007> rdfs:label "unmediated" .
+
+<http://www.rdaregistry.info/termList/RDACarrierType/1008> rdfs:label "volume" .
+
+<https://id.loc.gov/vocabulary/descriptionConventions/rda> rdfs:label "Resource Description and Access" .
+
+<https://id.loc.gov/vocabulary/languages/eng> rdfs:label "English" .
+
+<https://id.loc.gov/vocabulary/menclvl/f> rdfs:label "full" .
+
+<https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> rdfs:label "Little women. English" .
+
+<https://id.loc.gov/vocabulary/organizations/wau> rdfs:label "WaU",
+        "https://id.loc.gov/vocabulary/organizations/wau" .

@@ -3,8 +3,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://trellis.sinopia.io/repository/washington/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a bf:Instance ;
-    rdfs:label "Little women, or, Meg, Jo, Beth, and Amy"@en ;
+# Data review 2020-09-23
+# Compare with input > 2020_09_18 > manifestation > 5c35ef9b-be8e-4ef4-aa74-61759291e0f4.ttl
+
+<https://trellis.sinopia.io/repository/washington/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a bf:Instance ; # Typing as bf:Instance OK
+    rdfs:label "Little women, or, Meg, Jo, Beth, and Amy"@en ; # P30156 / title proper literal value with lang tag output OK to rdfs:label
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
@@ -14,15 +17,16 @@
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
-    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
-    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
-    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©1968" ;
-    bf:dimensions "24 cm"@en ;
-    bf:editionStatement "Centennial edition"@en ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ; # P30084 / applied material IRI output OK
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ; # P30208 / base material IRI output OK
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ; # P30001/carrier type IRI output OK
+    bf:copyrightDate "©1968" ; # P30007 / copyright date literal output OK, lang tag stripped OK
+    bf:dimensions "24 cm"@en ; # P30169 / has dimensions literal output OK, lang tag kept--should lang tag be stripped?? Hmmm SEE ISSUE # 10
+    bf:editionStatement "Centennial edition"@en ; # P30133 / has designation of edition literal value with lang tag output OK
     bf:extent [ a bf:Extent ;
-            rdfs:label "xvii, 444 pages, 8 unnumbered leaves of plates"@en ] ;
-    bf:identifiedBy [ a bf:Identifier ;
+            rdfs:label "xvii, 444 pages, 8 unnumbered leaves of plates"@en ] ; # P30182 / extent of manifestation literal value with lang tag OK
+    bf:identifiedBy [ a bf:Identifier ; # bf:identifiedBy mappings need further review, datatype prop used in source data not found in mapping document...
+                                        # ...also CEC has brought up identifiers in ISSUE #12
             rdf:value "ISBN 0-316-030-90-2"@en,
                 "LCCN 68-0211171"@en,
                 "OCLC 1157"@en ],
@@ -38,31 +42,34 @@
             rdf:value "ISBN 0-316-030-90-2"@en,
                 "LCCN 68-0211171"@en,
                 "OCLC 1157"@en ] ;
-    bf:instanceOf <https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
-    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
-        <http://id.loc.gov/authorities/subjects/sh85055012> ;
-    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
-    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ; # P30139 / instance of IRI value output OK
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>, # P30305 / intended audience IRI value 1 output OK
+        <http://id.loc.gov/authorities/subjects/sh85055012> ; # P30305 / intended audience IRI value 2 output OK
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ; # P30003 / mode of issuance IRI output OK
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ; # P30002 / media type IRI output OK
     bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Little Brown and Company"@en ],
-                <http://id.loc.gov/rwo/agents/n80020835> ;
-            bf:date "[1968]" ;
+            bf:agent [ a bf:Agent ; # here is the issue brought up by @CECSpecialist in issue #12, converted BF says two Agents for the Publication...
+                    rdfs:label "Little Brown and Company"@en ], # ...one, from P30176 / name of publisher...
+                <http://id.loc.gov/rwo/agents/n80020835> ; # ... and another, from P30083 / publisher agent
+                # SEE ISSUE #12
+            bf:date "[1968]" ; # Literal output, lang tag stripped, from P30011 / date of publication
             bf:place [ a bf:Place ;
-                    rdfs:label "Boston"@en,
-                        "Toronto"@en ] ] ;
-    bf:provisionActivityStatement "Boston ; Toronto : Little Brown and Company, [1968]"@en ;
-    bf:responsibilityStatement "by Louisa May Alcott"@en,
-        "illustrations in color by Jessie Willcox Smith"@en,
-        "with a new introduction by Cornelia Meigs"@en ;
+                    rdfs:label "Boston"@en, # literal output with lang tag from P30088 / place of publication
+                        "Toronto"@en ] ] ; # literal output with lang tag from P30088 / place of publication
+                        # IN THIS CASE we should have two bnodes for bf:Publication > bf:Place, it seems
+                        # (even though in many cases we have been working to merge bnodes)
+                        # SEE ISSUE #9
+    bf:provisionActivityStatement "Boston ; Toronto : Little Brown and Company, [1968]"@en ; # P30111 / publication statement literal output with lang tag OK
+    bf:responsibilityStatement "by Louisa May Alcott"@en, # P30105 / statement of resp. relating to title proper / literal output with lang tag OK
+        "illustrations in color by Jessie Willcox Smith"@en, # P30105 / statement of resp. relating to title proper / literal output with lang tag OK
+        "with a new introduction by Cornelia Meigs"@en ; # P30105 / statement of resp. relating to title proper / literal output with lang tag OK
     bf:role <http://id.loc.gov/vocabulary/relators/chr>,
         <http://id.loc.gov/vocabulary/relators/cre>,
         <http://id.loc.gov/vocabulary/relators/ctg> ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Little women"@en,
-                "Meg, Jo, Beth, and Amy"@en ;
-            bf:mainTitle "Little women"@en,
-                "Meg, Jo, Beth, and Amy"@en ],
+            rdfs:label "Little women"@en, # P30128 literal value 1 with lang tag, output as rdfs:label OK
+                "Meg, Jo, Beth, and Amy"@en ; # P30128 literal value 2 with lang tag, output as rdfs:label OK
+            bf:mainTitle "Little women"@en, # P30128 literal value 1 with lang tag, output as bf:VariantTitle > bf:mainTitle OK
+                "Meg, Jo, Beth, and Amy"@en ], # P30128 literal value 2 with lang tag, output as bf:VariantTitle > bf:mainTitle OK
         [ a bf:Title ;
-            bf:mainTitle "Little women, or, Meg, Jo, Beth, and Amy"@en ] .
-
+            bf:mainTitle "Little women, or, Meg, Jo, Beth, and Amy"@en ] . # P30156 / title proper literal value with lang tag output OK to bf:title >> bf:Title > bf:mainTitle
