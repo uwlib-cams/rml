@@ -6,7 +6,7 @@ has respondent (RDA 18.5),http://rdaregistry.info/Elements/w/P10001,"bf:contribu
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/rsp> ;
-   bf:agent <P10001value> ] .",
+   bf:agent <P10001value> ] .",contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsp> > agent >> Person > rdfs:label or contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsp>
 has identifier for work (RDA 6.8),http://rdaregistry.info/Elements/w/P10002,"bf:identifiedBy <P10002value> .
 # with literal value
 bf:identifiedBy [ a bf:Identifier ;
@@ -325,7 +325,7 @@ bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/pra> ;
    bf:agent <P10045value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/pra> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/pra> "
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/pra>"
 has issuing body agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10046,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/isb> ;
    bf:agent [ a bf:Agent ;
@@ -1504,7 +1504,7 @@ has key of representative expression (RDA 6.17),http://rdaregistry.info/Elements
 has nature of content (RDA 7.2),http://rdaregistry.info/Elements/w/P10222,"bf:natureOfContent ""P10222value"" .",natureOfContent
 has preferred title of work (*) (RDA 6.2.2),http://rdaregistry.info/Elements/w/P10223,"rdfs:label ""P10223value"" ;
 bf:title [ a bf:Title;
-   bf:mainTitle ""P10223value"" ] . ",rdfs:label ; title >> Title > mainTitle
+   bf:mainTitle ""P10223value"" ] . ",title >> Title > mainTitle
 is absorption of work (RDA 24.5),http://rdaregistry.info/Elements/w/P10224,"bf:absorbed <P10224value> .
 # with literal value
 bf:absorbed [ a bf:Work ;
@@ -2257,7 +2257,7 @@ has authorized access point for work (*),http://rdaregistry.info/Elements/w/P103
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
+         rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
 has variant access point for work,http://rdaregistry.info/Elements/w/P10332,"bf:identifiedBy [ a bf:Identifier ;
    rdf:value ""P10332value"" ;
    bf:note [ a bf:Note ;
@@ -2389,7 +2389,7 @@ is binding of manifestation of,http://rdaregistry.info/Elements/w/P10363,not map
 is binding of item of,http://rdaregistry.info/Elements/w/P10364,not mapped,not mapped
 has extension plan,http://rdaregistry.info/Elements/w/P10365,"bf:note [ a bf:Note ;
    rdfs:label ""P10365value"" ;
-   bf:noteType ""extensoin plan"" ] .",note >> Note > rdfs:label > noteType
+   bf:noteType ""extension plan"" ] .",note >> Note > rdfs:label > noteType
 has ISSN,http://rdaregistry.info/Elements/w/P10366,"bf:identifiedBy [ a bf:Issn ;
    rdf:value ""P104366value"" ] .",identifiedBy >> Issn > rdf:value
 has key title,http://rdaregistry.info/Elements/w/P10367,"bf:title [ a bf:KeyTitle ;
@@ -4434,7 +4434,7 @@ bf:references <P10601value> .
 bf:subject [ a madsrdf:Geographic;
    rdfs:label  ""P10601value"" ] ;
 bf:references [ a rdac:C10009 ;
-   rdfs:label ""P10601value"" ] .","subject* ; references *
+   rdfs:label ""P10601value"" ] .","subject* ; references*
 or
 subject >> madsrdf:SimpleType > rdfs:label ; references >> rdac:C10009 > rdfs:label"
 is description of timespan,http://rdaregistry.info/Elements/w/P10602,"bf:subject <P10602value> ;
@@ -4443,7 +4443,7 @@ bf:references <P10602value> .
 bf:subject [ a madsrdf:Temporal;
    rdfs:label  ""P10602value"" ] ;
 bf:references [ a rdac:C10010 ;
-   rdfs:label ""P10602value"" ] .","subject* ; references *
+   rdfs:label ""P10602value"" ] .","subject* ; references*
 or
 subject >> madsrdf:SimpleType > rdfs:label ; references >> rdac:C10010 > rdfs:label"
 has medium of performance of choreographic content of representative expression,http://rdaregistry.info/Elements/w/P10603,not mapped,not mapped

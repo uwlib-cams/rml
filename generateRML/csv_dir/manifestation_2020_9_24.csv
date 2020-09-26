@@ -796,7 +796,7 @@ or
 layout*"
 has title proper (*) (RDA 2.3.2),http://rdaregistry.info/Elements/m/P30156,"rdfs:label ""P30156value"" ;
 bf:title [ a bf:Title ;
-   bf:mainTitle ""P30156value"" ] .",rdfs:label > title >> Title > mainTitle
+   bf:mainTitle ""P30156value"" ] .",title >> Title > mainTitle
 has title of series (RDA 2.12.2),http://rdaregistry.info/Elements/m/P30157,"bf:seriesStatement ""P30157value"" .",seriesStatement
 has resolution (RDA 3.19.5),http://rdaregistry.info/Elements/m/P30159,"bf:digitalCharacteristic [ a bf:Resolution ;
    rdfs:label ""P30159value"" ] .
@@ -1223,8 +1223,7 @@ has authorized access point for manifestation,http://rdaregistry.info/Elements/m
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-      rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA""
-"
+      rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA"""
 has variant access point for manifestation,http://rdaregistry.info/Elements/m/P30295,"bf:identifier [ a bf:Identifier ;
    rdf:value ""P30295value"" ;
    bf:note [ a bf:Note ;
@@ -1319,7 +1318,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30311value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of music""
+      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of music""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of music""
 
@@ -1346,7 +1345,7 @@ bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:Cartography ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30315value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/ctg>
+    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctg>
 or
 instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctg>"
 has contributor agent of choreography (RDA 18.5),http://rdaregistry.info/Elements/m/P30316,"
@@ -1359,27 +1358,28 @@ bf:instanceOf [ a bf:Work ;
 bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30316value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/chr>
+    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/chr>
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/chr>"
-has contributor agent of still image (RDA 18.5),http://rdaregistry.info/Elements/m/P30321,"
-bf:instanceOf [ a bf:Work ;
+has contributor agent of still image (RDA 18.5),http://rdaregistry.info/Elements/m/P30321,"bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:StillImage ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent [ a bf:Agent ;
-      rdfs:label ""P30321value"" ] ;
-    bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .
+    rdfs:label ""P30321value"" ] ;
+  bf:role [ a bf:Role ;
+    rdfs:label ""contributor of still image"" ]
+  ]
+] .
 # with IRI value
 bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:StillImage ] ;
   bf:contribution [ a bf:Contribution ;
-    bf:agent <P30321value> ;
-    bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of still image""
+    bf:agent <P30321value> ;bf:role [ a bf:Role ;
+    rdfs:label ""contributor of still image"" ]
+  ]
+] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
-instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image""
-"
+instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor agent of moving image (RDA 18.5),http://rdaregistry.info/Elements/m/P30326,"
 bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:MovingImage ] ;
@@ -1394,10 +1394,11 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30326value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of moving image""
+      rdfs:label ""contributor of moving image"" ]
+  ]
+] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of moving image""
 or
-instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image""
-"
+instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image"""
 has contributor agent to aggregate,http://rdaregistry.info/Elements/m/P30327,not mapped,not mapped
 has contributor agent of text,http://rdaregistry.info/Elements/m/P30328,"
 bf:instanceOf [ a bf:Work ;
@@ -1413,7 +1414,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30328value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of text""
+      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of text""
 or
 instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of text""
 "
@@ -1424,7 +1425,7 @@ has creator agent of manifestation,http://rdaregistry.info/Elements/m/P30329,"bf
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30329value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Agent > rdfs:label > ; role=<http://id.loc.gov/vocabulary/relators/cre>
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cre>
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has related entity of manifestation,http://rdaregistry.info/Elements/m/P30330,not mapped,not mapped
@@ -1442,7 +1443,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30331value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of speech""
+      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of speech""
 or
 instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of speech""
 "
@@ -1460,7 +1461,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30332value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of object""
+      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of object""
 or
 instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of object""
 "
@@ -1476,7 +1477,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30316value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of computer content""
+      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of computer content""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of computer content""
 
@@ -1511,7 +1512,7 @@ bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:Cartography ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30338value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Person > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/ctg>
+    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctg>
 or
 instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctg>"
 has contributor person of choreography,http://rdaregistry.info/Elements/m/P30339,"
@@ -1524,7 +1525,7 @@ bf:instanceOf [ a bf:Work ;
 bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30339value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/chr>
+    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/chr>
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/chr>"
 has contributor person of moving image,http://rdaregistry.info/Elements/m/P30340,"
@@ -1541,7 +1542,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30340value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of moving image""
+      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of moving image""
 or
 instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image"""
 has contributor person of music,http://rdaregistry.info/Elements/m/P30341,"
@@ -1556,7 +1557,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30341value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of music""
+      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of music""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of music"""
 has contributor person of speech,http://rdaregistry.info/Elements/m/P30342,"
@@ -1573,7 +1574,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30342value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of speech""
+      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of speech""
 or
 instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of speech"""
 has contributor person of still image,http://rdaregistry.info/Elements/m/P30343,"
@@ -1590,7 +1591,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30343value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of still image""
+      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
 instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor person of text,http://rdaregistry.info/Elements/m/P30344,"
@@ -1607,7 +1608,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30344value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of text""
+      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of text""
 or
 instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of text"""
 has contributor person of object,http://rdaregistry.info/Elements/m/P30345,"
@@ -1624,7 +1625,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30345value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of object""
+      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of object""
 or
 instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of object"""
 has contributor person of computer content,http://rdaregistry.info/Elements/m/P30346,"
@@ -1639,7 +1640,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30346value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; role >> Role > rdfs:label=""contributor of computer content""
+      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""contributor of computer content""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of computer content"""
 has broadcaster person,http://rdaregistry.info/Elements/m/P30347,"bf:provisionActivity [ a bf:Publication;
@@ -1942,7 +1943,7 @@ has creator person of manifestation,http://rdaregistry.info/Elements/m/P30363,"b
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30363value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Person > rdfs:label > ; role=<http://id.loc.gov/vocabulary/relators/cre>
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Person > rdfs:label > ; > role=<http://id.loc.gov/vocabulary/relators/cre>
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has papermaker person,http://rdaregistry.info/Elements/m/P30364,"bf:provisionActivity [ a bf:Manufacture ;
@@ -1989,7 +1990,7 @@ bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:Cartography ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30367value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/ctg>
+    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctg>
 or
 instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctg>"
 has contributor collective agent of choreography,http://rdaregistry.info/Elements/m/P30368,"
@@ -2002,7 +2003,7 @@ bf:instanceOf [ a bf:Work ;
 bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30368value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/chr>
+    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/chr>
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/chr>"
 has contributor collective agent of moving image,http://rdaregistry.info/Elements/m/P30369,"
@@ -2019,7 +2020,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30369value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of moving image""
+      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of moving image""
 or
 instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image"""
 has contributor collective agent of music,http://rdaregistry.info/Elements/m/P30370,"
@@ -2034,7 +2035,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30370value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of music""
+      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of music""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of music"""
 has contributor collective agent of speech,http://rdaregistry.info/Elements/m/P30371,"
@@ -2051,7 +2052,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30371value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of speech""
+      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of speech""
 or
 instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of speech"""
 has contributor collective agent of still image,http://rdaregistry.info/Elements/m/P30372,"
@@ -2068,7 +2069,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30372value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of still image""
+      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
 instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor collective agent of text,http://rdaregistry.info/Elements/m/P30373,"
@@ -2085,7 +2086,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30373value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of text""
+      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of text""
 or
 instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of text"""
 has contributor collective agent of object,http://rdaregistry.info/Elements/m/P30374,"
@@ -2102,7 +2103,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30374value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of object""
+      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of object""
 or
 instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of object"""
 has contributor collective agent of computer content,http://rdaregistry.info/Elements/m/P30375,"
@@ -2117,7 +2118,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30375value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; role >> Role > rdfs:label=""contributor of computer content""
+      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of computer content""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of computer content"""
 has broadcaster collective agent,http://rdaregistry.info/Elements/m/P30376,"bf:provisionActivity [ a bf:Publication;
@@ -2420,7 +2421,7 @@ has creator collective agent of manifestation,http://rdaregistry.info/Elements/m
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30392value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Agent > rdfs:label > ; role=<http://id.loc.gov/vocabulary/relators/cre>
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Agent > rdfs:label > ; > role=<http://id.loc.gov/vocabulary/relators/cre>
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has papermaker collective agent,http://rdaregistry.info/Elements/m/P30393,"bf:provisionActivity [ a bf:Manufacture ;
@@ -2467,7 +2468,7 @@ bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:Cartography ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30396value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/ctg>
+    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctg>
 or
 instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctg>"
 has contributor corporate body of choreography,http://rdaregistry.info/Elements/m/P30397,"
@@ -2480,7 +2481,7 @@ bf:instanceOf [ a bf:Work ;
 bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30397value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/chr>
+    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/chr>
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/chr>"
 has contributor corporate body of moving image,http://rdaregistry.info/Elements/m/P30398,"
@@ -2497,7 +2498,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30398value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of moving image""
+      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of moving image""
 or
 instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image"""
 has contributor corporate body of music,http://rdaregistry.info/Elements/m/P30399,"
@@ -2512,7 +2513,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30399value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of music""
+      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of music""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of music"""
 has contributor corporate body of speech,http://rdaregistry.info/Elements/m/P30400,"
@@ -2529,7 +2530,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30400value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of speech""
+      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of speech""
 or
 instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of speech"""
 has contributor corporate body of still image,http://rdaregistry.info/Elements/m/P30401,"
@@ -2546,7 +2547,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30401value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of still image""
+      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
 instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor corporate body of text,http://rdaregistry.info/Elements/m/P30402,"
@@ -2563,7 +2564,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30402value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of text""
+      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of text""
 or
 instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of text"""
 has contributor corporate body of object,http://rdaregistry.info/Elements/m/P30403,"
@@ -2580,7 +2581,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30403value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of object""
+      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of object""
 or
 instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of object"""
 has contributor corporate body of computer content,http://rdaregistry.info/Elements/m/P30404,"
@@ -2595,7 +2596,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30404value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; role >> Role > rdfs:label=""contributor of computer content""
+      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor of computer content""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of computer content"""
 has broadcaster corporate body,http://rdaregistry.info/Elements/m/P30405,"bf:provisionActivity [ a bf:Publication;
@@ -2898,7 +2899,7 @@ has creator corporate body of manifestation,http://rdaregistry.info/Elements/m/P
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30421value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Organization > rdfs:label > ; role=<http://id.loc.gov/vocabulary/relators/cre>
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Organization > rdfs:label > ; > role=<http://id.loc.gov/vocabulary/relators/cre>
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has papermaker corporate body,http://rdaregistry.info/Elements/m/P30422,"bf:provisionActivity [ a bf:Manufacture ;
@@ -2945,7 +2946,7 @@ bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:Cartography ] ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30425value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Family > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/ctg>
+    bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ] .","instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctg>
 or
 instanceOf >> Work > expressionOf >> Cartography ; > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctg>"
 has contributor family of choreography,http://rdaregistry.info/Elements/m/P30426,"
@@ -2958,7 +2959,7 @@ bf:instanceOf [ a bf:Work ;
 bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30426value> ;
-    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; role=<http://id.loc.gov/vocabulary/relators/chr>
+    bf:role <http://id.loc.gov/vocabulary/relators/chr> ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/chr>
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/chr>"
 has contributor family of moving image,http://rdaregistry.info/Elements/m/P30427,"
@@ -2975,7 +2976,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30427value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of moving image""
+      rdfs:label ""contributor of moving image"" ] ] ] .","instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of moving image""
 or
 instanceOf >> Work > expressionOf >> MovingImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of moving image"""
 has contributor family of music,http://rdaregistry.info/Elements/m/P30428,"
@@ -2990,7 +2991,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30428value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of music""
+      rdfs:label ""contributor of music"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of music""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of music"""
 has contributor family of speech,http://rdaregistry.info/Elements/m/P30429,"
@@ -3007,7 +3008,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30429value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of speech""
+      rdfs:label ""contributor of speech"" ] ] ] .","instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of speech""
 or
 instanceOf >> Work > expressionOf >> Audio ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of speech"""
 has contributor family of still image,http://rdaregistry.info/Elements/m/P30430,"
@@ -3024,7 +3025,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30430value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of still image""
+      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
 instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor family of text,http://rdaregistry.info/Elements/m/P30431,"
@@ -3041,7 +3042,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30431value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of text""
+      rdfs:label ""contributor of text"" ] ] ] .","instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of text""
 or
 instanceOf >> Work > expressionOf >> Text ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of text"""
 has contributor family of object,http://rdaregistry.info/Elements/m/P30432,"
@@ -3058,7 +3059,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30432value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of object""
+      rdfs:label ""contributor of object"" ] ] ] .","instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of object""
 or
 instanceOf >> Work > expressionOf >> Object ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of object"""
 has contributor family of computer content,http://rdaregistry.info/Elements/m/P30433,"
@@ -3073,7 +3074,7 @@ bf:instanceOf [ a bf:Work ;
   bf:contribution [ a bf:Contribution ;
     bf:agent <P30433value> ;
     bf:role [ a bf:Role ;
-      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; role >> Role > rdfs:label=""contributor of computer content""
+      rdfs:label ""contributor of computer content"" ] ] ] .","instanceOf >> Work > contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor of computer content""
 or
 instanceOf >> Work > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of computer content"""
 has broadcaster family,http://rdaregistry.info/Elements/m/P30434,"bf:provisionActivity [ a bf:Publication;
@@ -3376,7 +3377,7 @@ has creator family of manifestation,http://rdaregistry.info/Elements/m/P30450,"b
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30450value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Family > rdfs:label > ; role=<http://id.loc.gov/vocabulary/relators/cre>
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ] .","contribution >> Contribution > agent >> Family > rdfs:label > ; > role=<http://id.loc.gov/vocabulary/relators/cre>
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has papermaker family,http://rdaregistry.info/Elements/m/P30451,"bf:provisionActivity [ a bf:Manufacture ;

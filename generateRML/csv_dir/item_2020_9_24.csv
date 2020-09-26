@@ -429,8 +429,7 @@ has authorized access point for item,http://rdaregistry.info/Elements/i/P40083,"
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-      rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA""
-"
+      rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA"""
 has variant access point for item,http://rdaregistry.info/Elements/i/P40084,"bf:identifier [ a bf:Identifier ;
    rdf:value ""p40084value"" ;
    bf:note [ a bf:Note ;
@@ -441,7 +440,7 @@ has variant access point for item,http://rdaregistry.info/Elements/i/P40084,"bf:
 "
 has preferred title of item,http://rdaregistry.info/Elements/i/P40085,"rdfs:label ""P40085value"" ;
 bf:title [ a bf:Title;
-   bf:mainTitle ""P40085value"" ] . ",rdfs:label ; title >> Title > mainTitle
+   bf:mainTitle ""P40085value"" ] . ",title >> Title > mainTitle
 has variant title of item,http://rdaregistry.info/Elements/i/P40086,"bf:title [ a bf:VariantTitle ;
    bf:mainTitle ""P40086value"" ] .",title >> VariantTitle > mainTitle
 has digital transfer of item,http://rdaregistry.info/Elements/i/P40087,"bf:hasReproduction <P40087value> .
