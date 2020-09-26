@@ -4,6 +4,9 @@ from sys import argv
 
 script, data_directory = argv
 
+if not os.path.exists('input/sample_records'):
+    os.system('mkdir input/sample_records')
+
 def get_work_property_list():
     csv_file_list = os.listdir("generateRML/csv_dir")
     work_files = []
@@ -128,7 +131,7 @@ for item in os.listdir(f"generateRML/csv_dir"):
 work_list = os.listdir(f"input/{data_directory}/work/")
 
 work_output_list = [
-"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\"\n",
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
 "<rdf:RDF\n",
 "   xmlns:rdaw=\"http://rdaregistry.info/Elements/w/\"\n",
 "   xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\"\n",
@@ -138,9 +141,9 @@ work_output_list = [
 "   xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n",
 "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n",
 "   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n",
-"   xmlns:rdax=\"https://doi.org/10.6069/uwlib.55.d.4#\"\n",
 ">\n",
-"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_work\">\n"
+"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_work\">\n",
+"    <rdf:type rdf:resource=\"http://rdaregistry.info/Elements/c/C10001\"/>\n"
 ]
 
 work_property_list = get_work_property_list()
@@ -170,7 +173,7 @@ work_output_ending_list = [
 
 work_output_list = work_output_list + work_output_ending_list
 
-with open("sample_work_record.xml", "w") as output_file:
+with open("input/sample_records/sample_work_record.xml", "w") as output_file:
     for line in work_output_list:
         output_file.write(line)
 
@@ -179,7 +182,7 @@ with open("sample_work_record.xml", "w") as output_file:
 expression_list = os.listdir(f"input/{data_directory}/expression/")
 
 expression_output_list = [
-"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\"\n",
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
 "<rdf:RDF\n",
 "   xmlns:rdae=\"http://rdaregistry.info/Elements/e/\"\n",
 "   xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\"\n",
@@ -189,9 +192,9 @@ expression_output_list = [
 "   xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n",
 "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n",
 "   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n",
-"   xmlns:rdax=\"https://doi.org/10.6069/uwlib.55.d.4#\"\n",
 ">\n",
-"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_expression\">\n"
+"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_expression\">\n",
+"    <rdf:type rdf:resource=\"http://rdaregistry.info/Elements/c/C10006\"/>\n"
 ]
 
 expression_property_list = get_expression_property_list()
@@ -221,7 +224,7 @@ expression_output_ending_list = [
 
 expression_output_list = expression_output_list + expression_output_ending_list
 
-with open("sample_expression_record.xml", "w") as output_file:
+with open("input/sample_records/sample_expression_record.xml", "w") as output_file:
     for line in expression_output_list:
         output_file.write(line)
 
@@ -230,7 +233,7 @@ with open("sample_expression_record.xml", "w") as output_file:
 manifestation_list = os.listdir(f"input/{data_directory}/manifestation/")
 
 manifestation_output_list = [
-"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\"\n",
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
 "<rdf:RDF\n",
 "   xmlns:rdam=\"http://rdaregistry.info/Elements/m/\"\n",
 "   xmlns:rdamdt=\"http://rdaregistry.info/Elements/m/datatype/\"\n",
@@ -241,9 +244,9 @@ manifestation_output_list = [
 "   xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n",
 "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n",
 "   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n",
-"   xmlns:rdax=\"https://doi.org/10.6069/uwlib.55.d.4#\"\n",
 ">\n",
-"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_manifestation\">\n"
+"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_manifestation\">\n",
+"    <rdf:type rdf:resource=\"http://rdaregistry.info/Elements/c/C10007\"/>\n"
 ]
 
 manifestation_property_list = get_manifestation_property_list()
@@ -273,7 +276,7 @@ manifestation_output_ending_list = [
 
 manifestation_output_list = manifestation_output_list + manifestation_output_ending_list
 
-with open("sample_manifestation_record.xml", "w") as output_file:
+with open("input/sample_records/sample_manifestation_record.xml", "w") as output_file:
     for line in manifestation_output_list:
         output_file.write(line)
 
@@ -282,9 +285,9 @@ with open("sample_manifestation_record.xml", "w") as output_file:
 item_list = os.listdir(f"input/{data_directory}/item/")
 
 item_output_list = [
-"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\"\n",
+"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
 "<rdf:RDF\n",
-"   xmlns:rdae=\"http://rdaregistry.info/Elements/e/\"\n",
+"   xmlns:rdai=\"http://rdaregistry.info/Elements/i/\"\n",
 "   xmlns:bf=\"http://id.loc.gov/ontologies/bibframe/\"\n",
 "   xmlns:bflc=\"http://id.loc.gov/ontologies/bflc/\"\n",
 "   xmlns:rdax=\"https://doi.org/10.6069/uwlib.55.d.4#\"\n",
@@ -292,9 +295,9 @@ item_output_list = [
 "   xmlns:madsrdf=\"http://www.loc.gov/mads/rdf/v1#\"\n",
 "   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n",
 "   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n",
-"   xmlns:rdax=\"https://doi.org/10.6069/uwlib.55.d.4#\"\n",
 ">\n",
-"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_item\">\n"
+"  <rdf:Description rdf:about=\"https://trellis.sinopia.io/repository/washington/sample_item\">\n",
+"    <rdf:type rdf:resource=\"http://rdaregistry.info/Elements/c/C10003\"/>\n"
 ]
 
 item_property_list = get_item_property_list()
@@ -324,6 +327,6 @@ item_output_ending_list = [
 
 item_output_list = item_output_list + item_output_ending_list
 
-with open("sample_item_record.xml", "w") as output_file:
+with open("input/sample_records/sample_item_record.xml", "w") as output_file:
     for line in item_output_list:
         output_file.write(line)
