@@ -9,7 +9,7 @@ manifestationList = os.listdir(f'input/{data_directory}/manifestation')
 itemList = os.listdir(f'input/{data_directory}/item')
 
 def find_and_replace(entity, file, prop, URI):
-	"""uhh"""
+	"""Rewrite lines of RDF/XML so the value goes from being a literal to a URI"""
 	open_file = open(f"input/{data_directory}/{entity}/{file}", "rt")
 	file_replacement = open_file.read()
 	if " " in prop:
