@@ -57,5 +57,16 @@ For an example with a flawed dataset, a full report for the 2020_8_31 output can
 
 # sample_record.py
 
-This record goes line by line through the records in a given directory of RDF/XML files to compile a new RDF/XML file with an example of each RDA property that is present in the sample data. It creates separate files for work, expression, manifestation, and item properties. The output goes to `rml/input/sample_records/`. Example:
+This script goes line-by-line through the records in a given directory of RDF/XML files to compile a new RDF/XML file with an example of each RDA property that is present in the sample data. It creates separate files for work, expression, manifestation, and item properties. The output goes to `rml/input/sample_records/`.
+
+Example:
 `$ python3.6 sample_record.py 2020_09_29`
+
+# type_date.py
+
+This script goes line-by-line through the records in a given directory of Turtle files to add datatypes to values of the following BIBFRAME date properties: bf:date, bf:originDate, bf:legalDate, bf:copyrightDate, bf:changeDate, bf:creationDate, bf:generationDate.
+
+For values formatted as "YYYY", the script adds `^^xsd:gYear`. For values formatted as "YYYY-MM", it adds `^^xsd:gYearMonth`. For values formatted as "YYYY-MM-DD", it adds `^^xsd:date`.
+
+Example:
+`$ python3.6 type_dates.py 2020_09_29`
