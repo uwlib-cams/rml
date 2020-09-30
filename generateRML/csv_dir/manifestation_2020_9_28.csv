@@ -1223,7 +1223,7 @@ has authorized access point for manifestation,http://rdaregistry.info/Elements/m
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-      rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA"""
+      rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA"" ; rdfs:label"
 has variant access point for manifestation,http://rdaregistry.info/Elements/m/P30295,"bf:identifier [ a bf:Identifier ;
    rdf:value ""P30295value"" ;
    bf:note [ a bf:Note ;
@@ -1366,18 +1366,15 @@ has contributor agent of still image (RDA 18.5),http://rdaregistry.info/Elements
   bf:contribution [ a bf:Contribution ;
     bf:agent [ a bf:Agent ;
     rdfs:label ""P30321value"" ] ;
-  bf:role [ a bf:Role ;
-    rdfs:label ""contributor of still image"" ]
-  ]
-] .
+    bf:role [ a bf:Role ;
+      rdfs:label ""contributor of still image"" ] ] ] .
 # with IRI value
 bf:instanceOf [ a bf:Work ;
   bf:expressionOf [ a bf:StillImage ] ;
   bf:contribution [ a bf:Contribution ;
-    bf:agent <P30321value> ;bf:role [ a bf:Role ;
-    rdfs:label ""contributor of still image"" ]
-  ]
-] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
+    bf:agent <P30321value> ;
+    bf:role [ a bf:Role ;
+      rdfs:label ""contributor of still image"" ] ] ] .","instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor of still image""
 or
 instanceOf >> Work > expressionOf >> StillImage ; > contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor of still image"""
 has contributor agent of moving image (RDA 18.5),http://rdaregistry.info/Elements/m/P30326,"

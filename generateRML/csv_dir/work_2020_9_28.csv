@@ -6,7 +6,9 @@ has respondent (RDA 18.5),http://rdaregistry.info/Elements/w/P10001,"bf:contribu
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/rsp> ;
-   bf:agent <P10001value> ] .",contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsp> > agent >> Person > rdfs:label or contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsp>
+   bf:agent <P10001value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsp> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsp>"
 has identifier for work (RDA 6.8),http://rdaregistry.info/Elements/w/P10002,"bf:identifiedBy <P10002value> .
 # with literal value
 bf:identifiedBy [ a bf:Identifier ;
@@ -2257,7 +2259,7 @@ has authorized access point for work (*),http://rdaregistry.info/Elements/w/P103
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
+         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"" ; rdfs:label"
 has variant access point for work,http://rdaregistry.info/Elements/w/P10332,"bf:identifiedBy [ a bf:Identifier ;
    rdf:value ""P10332value"" ;
    bf:note [ a bf:Note ;

@@ -758,12 +758,12 @@ bf:hasDerivative [ a bf:Work ;
     rdfs:label ""P20104value"" ] .","hasDerivative*
 or
 hasDerivative >> Work > rdfs:label"
-is augmented by expression RDA 24.5,http://rdaregistry.info/Elements/e/P20105,"bf:accompaniedBy<P20105value> .
+is augmented by expression RDA 24.5,http://rdaregistry.info/Elements/e/P20105,"bf:accompaniedBy <P20105value> .
 # with literal value
 bf:accompaniedBy [ a bf:Work ;
     rdfs:label ""P20105value"" ] .","accompaniedBy*
 or
-accompaniedBy>> Work > rdfs:label"
+accompaniedBy >> Work > rdfs:label"
 is summarized as expression RDA 24.5,http://rdaregistry.info/Elements/e/P20106,"bf:hasDerivative <P20106value> .
 # with literal value
 bf:hasDerivative [ a bf:Work ;
@@ -1958,7 +1958,7 @@ has authorized access point for expression,http://rdaregistry.info/Elements/e/P2
       rdfs:label ""Authorized access point"" ;
       bf:noteType ""type of identifier"" ] ;
    bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","rdfs:label ; identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
+         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"" ; rdfs:label"
 has variant access point for expression,http://rdaregistry.info/Elements/e/P20314,"bf:identifiedBy [ a bf:Identifier ;
    rdf:value ""P20314value"";
    bf:note [ a bf:Note ;
