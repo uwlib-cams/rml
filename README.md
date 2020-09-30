@@ -10,9 +10,11 @@ The RDA-to-BF transform (rml.py) is a script that pulls RDA data from [Trellis](
  - [RML Mapper](https://github.com/RMLio/rmlmapper-java)
     - [Instructions for downloading RML Mapper](https://docs.google.com/document/d/1ufe8nBblVOsVX0HGARHVScPS8arS7cnT0pGPumetdU4/edit?usp=sharing)
  - [rdflib](https://rdflib.readthedocs.io/en/stable/)
-    - `$ pip install rdflib`
+    - `$ pip3 install rdflib`
  - UW Libraries' [RML repository](https://github.com/uwlib-cams/rml)
     - `$ git clone https://github.com/uwlib-cams/rml.git`
+ - [progress](https://pypi.org/project/progress/)
+    - `$ pip3 install progress
 
 ### Running the script
 The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar`) must be in the `rml` directory.
@@ -20,7 +22,7 @@ The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar
 From the `rml` directory, run the script:
 ```$ python3.6 rml.py```
 
-Be warned: this script does run slowly. It will take a while to complete.
+Be warned: this script does run slowly. It will take upwards of an hour to complete.
 
 When the script is complete, the input RDA files will be in the directory `rml/input` in a new directory named after the current date (e.g. `2020_8_25`). The output BIBFRAME will be in the directory `rml/output` also in a directory named after the date.
 
@@ -52,3 +54,8 @@ Bad output files: 0
 ```
 
 For an example with a flawed dataset, a full report for the 2020_8_31 output can be viewed [here](https://github.com/uwlib-cams/rml/blob/master/old/badFileReport.txt).
+
+# sample_record.py
+
+This record goes line by line through the records in a given directory of RDF/XML files to compile a new RDF/XML file with an example of each RDA property that is present in the sample data. It creates separate files for work, expression, manifestation, and item properties. The output goes to `rml/input/sample_records/`. Example:
+`$ python3.6 sample_record.py 2020_09_29`
