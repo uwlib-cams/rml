@@ -3,44 +3,38 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/face7c36-b484-4966-93ef-b7e99a783e28> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-27" ;
+            bf:creationDate "2020-04-27"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:26:46+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:26:46+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "European Conference on Product and Process Modelling (2010 : Cork, Ireland)" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026068> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "European Conference on Product and Process Modelling (2010 : Cork, Ireland). eWork and eBusiness in architecture, engineering and construction"@en ] ;
             rdf:value "European Conference on Product and Process Modelling (2010 : Cork, Ireland). eWork and eBusiness in architecture, engineering and construction"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
             rdf:value "European Conference on Product and Process Modelling (2010 : Cork, Ireland). Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010" ] ;
-    bf:originDate "2010" ;
+    bf:originDate "2010"^^xsd:gYear ;
     bf:relatedTo [ a bf:Work ;
-            rdfs:label "Innovations -- Advanced computing in engineering -- Building information modelling -- Collaboration and process modelling -- Computer aided education and training -- Intelligent computing in engineering (EG-ICE) -- Hardware-sofware platforms for facilities and energy management -- Information technology for optimised building operation -- Information technology for energy-efficiency -- Optimisation and simulation -- Semantic Web and GIS" ] ;
     bf:subject [ a madsrdf:Authority ;
-            rdfs:label "Architecture--Data processing--Congresses",
                 "Architecture--Information technology--Congresses",
                 "Construction industry--Data processing--Congresses ",
                 "Construction industry--Information technology--Congresses",

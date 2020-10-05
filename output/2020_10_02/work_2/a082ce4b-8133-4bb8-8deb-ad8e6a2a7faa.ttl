@@ -2,40 +2,35 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a082ce4b-8133-4bb8-8deb-ad8e6a2a7faa> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "CC83"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-27" ;
+            bf:creationDate "2019-11-27"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:41:43+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:41:43+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:colorContent [ a bf:ColorContent ;
-            rdfs:label "color" ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1014>,
         <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/a8592848-3759-4c1e-b37e-e56409254a3d> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Imazeki, Rokuya, 1904-1991. Genshoku kinoko",
                         "RDA"@en ] ;
             rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
             rdf:value "今関六也, 1904-1991. 原色きのこ" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:index [ a bf:Work ;
-            rdfs:label "Includes index" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/jpn>,
         <http://id.loc.gov/vocabulary/languages/lat> ;
     bf:title [ a bf:Title ;

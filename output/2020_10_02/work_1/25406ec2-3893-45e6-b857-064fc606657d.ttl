@@ -2,6 +2,7 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/25406ec2-3893-45e6-b857-064fc606657d> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
@@ -9,16 +10,15 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-27" ;
+            bf:creationDate "2019-11-27"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:05:47+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:05:47+00:00"^^xsd:dateTime ] ;
             bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:derivativeOf [ a bf:Work ;
-            rdfs:label "Austen, Jane, 1775-1817. Emma" ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026264>,
         <http://id.loc.gov/authorities/genreForms/gf2014026294>,
         <http://id.loc.gov/authorities/genreForms/gf2014026369>,
@@ -26,14 +26,12 @@
     bf:historyOfWork "Gordon Glennon's play Emma, an adaptation of Jane Austen's novel of the same name, was first produced at Rugby Repertory Theatre on August 24, 1943." ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "Glennon, Gordon. Emma"@en ] ;
             rdf:value "Glennon, Gordon. Emma"@en ],
         <http://viaf.org/viaf/316560479> ;
-    bf:originDate "1943" ;
+    bf:originDate "1943"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Emma"@en ] .

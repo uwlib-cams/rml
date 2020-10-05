@@ -2,16 +2,17 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d24c241f-ff54-41d2-b0cc-3f4780c07bcc> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-13" ;
+            bf:creationDate "2019-11-13"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:45:30+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:45:30+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -20,24 +21,20 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/repository/washington/d72465eb-d1dc-4ee4-a30d-062c033bfbe3> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Idiot. English (Myers)",
                         "RDA"@en ] ;
             rdf:value "Dostoyevsky, Fyodor, 1821-1881. Idiot. English (Myers)" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/map> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Includes bibliographical references (page xxv).",
                 "Introduction -- Note on the translation -- Select bibliography -- A chronology of Fyodor Dostoevsky -- List of characters -- Map of St. Petersburg -- The Idiot -- Explanatory notes." ;
             bf:noteType "note on expression"@en ] ;
-    bf:originDate "1992" ;
+    bf:originDate "1992"^^xsd:gYear ;
     bf:relatedTo <http://id.loc.gov/authorities/names/no2014019446>,
         <http://id.loc.gov/authorities/names/no2015170444>,
         <http://id.loc.gov/authorities/names/nr2002011688> ;
     bf:summary [ a bf:Summary ;
-            rdfs:label "\"Into a compelling real portrait of nineteenth-century Russian society Dostoevsky introduces his ideal hero, the saintly Prince Myshkin. The tensions subsequently unleashed by the hero's innocence, truthfulness, and humility betray the inadequacy of his moral idealism and disclose the spiritual emptiness of a society that cannot accommodate him. Myshkin's mission ends in idiocy and darkness, but it is the world that is rotten, not he. 'The Idiot' (1868), written under appalling personal circumstances when Dostoevsky was travelling in Europe, not only reveals the author's acute artistic sense and psychological insight, but also affords his most penetrating indictment of a Russia struggling to emulate contemporary Europe and sinking under the weight of Western materialism\"--Page 4 of cover.,",
                 "\"The main idea of the novel is to depict the positively good man, There is nothing more difficult than this in the world, especially nowadays\"--Dostoevsky." ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Idiot. English (Myers)"@en ] ;

@@ -2,50 +2,44 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e8681ce8-c125-4640-9583-2404b7603e41> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-07" ;
+            bf:creationDate "2019-11-07"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:43+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:43+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©2009" ;
+    bf:copyrightDate "©2009"^^xsd:gYear ;
     bf:dimensions "23 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "xiv, 128 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Cherkasova, Evgenia. Dostoevsky and Kant"@en ;
                     rdf:value "RDA"@en ] ;
             rdf:value "Cherkasova, Evgenia. Dostoevsky and Kant"@en ],
         [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "9789042026100" ] ;
             rdf:value "9789042026100" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/a32b42cd-8d13-4301-bf16-fef767049670> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "perfect-bound" ;
             bf:noteType "type of binding"@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Rodopi" ] ;
-            bf:date "2009" ;
+            bf:date "2009"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Amsterdam",
                         "New York, NY" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Evgenia Cherkasova",

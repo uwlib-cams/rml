@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/261c0d2e-0240-4085-8106-2b60099a511d> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-21" ;
-            bf:creationDate "2020-04-20" ;
+            bf:changeDate "2020-04-21"^^xsd:date ;
+            bf:creationDate "2020-04-20"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:20:29+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:20:29+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -24,5 +25,4 @@
     bf:itemOf <https://trellis.sinopia.io/repository/washington/18435621-8e0f-4e45-b7df-890f0114d5ce> ;
     bf:physicalLocation "Drama" ;
     bf:sublocation [ a bf:Sublocation ;
-            rdfs:label "drstx" ] .
 

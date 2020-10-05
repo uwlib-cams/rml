@@ -2,27 +2,26 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/64cb5d64-0992-4086-9c10-364ef750186f> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-02" ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:59:05+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:59:05+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©1936" ;
+    bf:copyrightDate "©1936"^^xsd:gYear ;
     bf:dimensions "24 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "352 pages, 5 unnumbered leaves of plates" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "LCCN 36017126" ] ;
             rdf:value "LCCN 36017126" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/7c2c6757-3047-494e-8b13-2acc2ae54060> ;
     bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
@@ -30,11 +29,9 @@
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Rand McNally & Company" ],
                 <http://id.loc.gov/rwo/agents/n79150315> ;
-            bf:date "[1936]" ;
+            bf:date "[1936]"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Chicago",
                         "New York",
                         "San Francisco" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
@@ -43,7 +40,6 @@
         "illustrated by Milo Winter" ;
     bf:seriesStatement "The Windermere series" ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Hans Brinker",
                 "Silver skates" ;
             bf:mainTitle "Hans Brinker",
                 "Silver skates" ;

@@ -1,41 +1,37 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/fabade19-3fe6-4fb4-be3f-7a1c169f7458> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jmoede"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-30" ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:16:12+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:16:12+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©2015" ;
+    bf:copyrightDate "©2015"^^xsd:gYear ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "1 online resource (174 pages)" ] ;
     bf:hasItem [ a bf:Item ;
             bf:electronicLocator <http://hdl.handle.net/1773/35302> ] ;
     bf:instanceOf [ a bf:Work ;
-            rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ] ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "[University of Washington Libraries]" ] ;
-            bf:date "2015" ;
+            bf:date "2015"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "[Seattle, Washington]" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2015]" ;
     bf:responsibilityStatement "Bradley Jensen Murg" ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan" ;
             bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan" ;
             bf:variantType "earlier title proper"@en,
                 "later title proper"@en ],

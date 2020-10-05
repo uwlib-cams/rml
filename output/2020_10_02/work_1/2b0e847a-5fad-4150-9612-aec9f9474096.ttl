@@ -3,26 +3,25 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2b0e847a-5fad-4150-9612-aec9f9474096> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee70"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "02-21-2020" ;
+            bf:creationDate "02-21-2020"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:06:26+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:06:26+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Wŏn, Chŏng-sun" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/tld> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Kwŏn, Min-hi",
                         "Sin, Min-jung" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aus> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026091>,
@@ -30,15 +29,12 @@
         <http://id.loc.gov/authorities/subjects/sh2007006723> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "The dancer, Choi Seunghee"@en ] ;
             rdf:value "The dancer, Choi Seunghee"@en ] ;
-    bf:originDate "2006" ;
+    bf:originDate "2006"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
-            rdfs:label "Ch'oe, Sŭng-hŭi, 1911-1969",
                 "Women dancers--Korea (North)--Biography",
                 "Women dancers--Korea--Biography" ;
             madsrdf:Authority "Ch'oe, Sŭng-hŭi, 1911-1969",

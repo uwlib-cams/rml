@@ -2,16 +2,17 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/749ba546-5a3a-4f31-bbbd-3a015adbd36a> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "mathiasuw"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-03" ;
+            bf:creationDate "2020-03-03"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:38:47+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:38:47+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -19,17 +20,14 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/e357057e-1dea-4835-a404-518c1d4b7305> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Robortello, Francesco, 1516-1567. In librum Aristotelis De arte poëtica, explicationes. Latin",
                         "RDA"@en ] ;
             rdf:value "Robortello, Francesco, 1516-1567. In librum Aristotelis De arte poëtica, explicationes. Latin" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/gre>,
         <http://id.loc.gov/vocabulary/languages/lat> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
-    bf:originDate "1555" ;
+    bf:originDate "1555"^^xsd:gYear ;
     bf:title [ a bf:Title ;
             bf:mainTitle "In librum Aristotelis De arte poëtica, explicationes. Latin"@en ] .
 

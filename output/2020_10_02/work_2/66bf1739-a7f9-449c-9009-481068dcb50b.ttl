@@ -1,16 +1,17 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/66bf1739-a7f9-449c-9009-481068dcb50b> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-04" ;
+            bf:creationDate "2020-05-04"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:37:20+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:37:20+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -18,13 +19,10 @@
         <http://rdaregistry.info/termList/RDAColourContent/1002> ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:derivativeOf [ a bf:Work ;
-            rdfs:label "Revised edition of: Seashore life of Puget Sound, the Strait of Georgia, and the San Juan Archipelago, 1973." ] ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/7f1ae484-c6e1-424e-9e18-a91e1c345161> ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
-    bf:originDate "1983" ;
+    bf:originDate "1983"^^xsd:gYear ;
     bf:supplementaryContent [ a bf:SupplementaryContent ;
-            rdfs:label "Includes bibliographical references (pages 353-355) and index" ] .
 

@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2f054ab2-7d58-4247-a3ad-3977d8dce2c1> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-23" ;
-            bf:creationDate "2020-04-23" ;
+            bf:changeDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:21:37+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:21:37+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -24,5 +25,4 @@
     bf:itemOf <https://trellis.sinopia.io/repository/washington/8846a80b-5fa3-4dfe-8032-1b5dcf42e2e5> ;
     bf:physicalLocation "suzzallen" ;
     bf:sublocation [ a bf:Sublocation ;
-            rdfs:label "szstx" ] .
 

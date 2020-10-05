@@ -3,44 +3,38 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/5f1dc2d1-1b6c-4c5c-a993-910c65003954> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-21" ;
+            bf:creationDate "2020-04-21"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:11:12+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:11:12+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "United States. International Cooperation Administration." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/spn> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "German Methods Used to Increase Productivity Team" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "Itineraries" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "German Methods Used to Increase Productivity Team.  Program and itinerary."@en ] ;
             rdf:value "German Methods Used to Increase Productivity Team.  Program and itinerary."@en ],
         [ a bf:Identifier ;
             rdf:value "S 17.38:G 31 tu" ] ;
-    bf:originDate "[1956]" ;
+    bf:originDate "[1956]"^^xsd:gYear ;
     bf:originPlace [ a bf:Place ;
-            rdfs:label "Washington, D.C." ] ;
     bf:subject [ a madsrdf:Authority ;
-            rdfs:label "German Methods Used to Increase Productivity Team." ;
             madsrdf:Authority "German Methods Used to Increase Productivity Team." ;
             madsrdf:authoritativeLabel "German Methods Used to Increase Productivity Team." ] ;
     bf:title [ a bf:Title ;

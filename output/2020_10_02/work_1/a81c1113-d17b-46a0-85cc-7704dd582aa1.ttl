@@ -3,33 +3,30 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a81c1113-d17b-46a0-85cc-7704dd582aa1> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-22" ;
+            bf:creationDate "2020-04-22"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:13+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:13+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "Drama" ],
         <http://id.loc.gov/authorities/genreForms/gf2014026264> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "Bridgham, Gladys Ruth. Six times nine"@en ] ;
             rdf:value "Bridgham, Gladys Ruth. Six times nine"@en ] ;
-    bf:originDate "1914" ;
+    bf:originDate "1914"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
-            rdfs:label "Tourists -- Drama",
                 "Women -- Drama" ;
             madsrdf:Authority "Tourists -- Drama",
                 "Women -- Drama" ;

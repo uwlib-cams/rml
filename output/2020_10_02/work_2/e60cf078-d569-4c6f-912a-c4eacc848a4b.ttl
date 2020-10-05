@@ -2,37 +2,33 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e60cf078-d569-4c6f-912a-c4eacc848a4b> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee70"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-24" ;
+            bf:creationDate "2020-02-24"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:47:07+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:47:07+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:colorContent [ a bf:ColorContent ;
-            rdfs:label "black and white" ],
         <http://rdaregistry.info/termList/RDAColourContent/1002> ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/53ac989d-d13d-402a-9f6c-03d165f91319> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Calder, Alan, 1957- Information security risk management for ISO 27001/ISO 27002. English",
                         "RDA"@en ] ;
             rdf:value "Calder, Alan, 1957- Information security risk management for ISO 27001/ISO 27002. English" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
     bf:summary [ a bf:Summary ;
-            rdfs:label "Ideal for risk managers, information security managers, lead implementers, compliance managers and consultants, as well as providing useful background material for auditors, this book will enable readers to develop an ISO 27001-compliant risk assessment framework for their organisation and deliver real, bottom-line business benefits." ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Information security risk management for ISO 27001/ISO 27002"@en ] .
 

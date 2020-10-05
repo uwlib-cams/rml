@@ -1,20 +1,18 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/88ae0700-dd55-4089-add1-314469a85c12> a bf:Work ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "General Fruit Corporation" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026046> ;
     bf:hasExpression <https://trellis.sinopia.io/repository/washington/17d1cc4b-9d87-4ee0-9568-36a23dee7385> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "General Fruit Corporation. General news"@en ] ;
             rdf:value "General Fruit Corporation. General news"@en ] ;
     bf:title [ a bf:Title ;

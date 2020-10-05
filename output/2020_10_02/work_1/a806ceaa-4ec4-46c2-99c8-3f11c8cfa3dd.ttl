@@ -3,44 +3,40 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a806ceaa-4ec4-46c2-99c8-3f11c8cfa3dd> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060372> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-05-07" ;
-            bf:creationDate "2020-04-23" ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:17:59+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:17:59+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:dissertation [ a bf:Dissertation ;
-            bf:date "2019" ],
+            bf:date "2019" ]^^xsd:gYear ,
         [ a bf:Dissertation ;
             bf:degree "Ph. D." ],
         [ a bf:Dissertation ;
             bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
     bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "Theses--Biology" ],
         <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "Shi, Yue, 1988- . Species from feces"@en ] ;
             rdf:value "Shi, Yue, 1988- . Species from feces"@en ] ;
-    bf:originDate "2019" ;
+    bf:originDate "2019"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
     bf:relatedTo [ a bf:Work ;
-            rdfs:label "Genetic resilience of a once endangered species, Tibetan antelope (Pantholops hodgsonii) / Yue Shi, Jiarui Chen, Jianping Su, Tongzuo Zhang, Samuel K. Wasser -- Shift of maternal gut microbiome of Tibetan antelope (Pantholops hodgsonii) during the perinatal period / Yue Shi, Ziyan Miao, Jianping Su, Samuel K. Wasser -- Prey partitioning between sympatric canid species revealed by DNA metabarcoding / Yue Shi, Yves Hoareau, Ellie Reese, Samuel K. Wasser" ] ;
     bf:subject [ a madsrdf:Authority ;
-            rdfs:label "Animal droppings--Analysis",
                 "Animal population genetics--Tibet, Plateau of",
                 "Chiru--Feces--Analysis",
                 "Chiru--Feces--Microbiology",

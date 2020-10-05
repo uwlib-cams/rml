@@ -2,16 +2,17 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e5791eca-d02a-4237-911b-ad8e837f55be> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "mcm104"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-25" ;
+            bf:creationDate "2019-11-25"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:45+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:45+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -20,13 +21,11 @@
                 "eISBN: 9780770435639" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en,
                         "Lady Almina and the real Downtown Abbey"@en ] ;
             rdf:value "Lady Almina and the real Downtown Abbey"@en ] ;
-    bf:originDate "2011" ;
+    bf:originDate "2011"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:subject <http://id.loc.gov/authorities/names/nb2005002246>,
         <http://id.loc.gov/authorities/subjects/sh2006006693> ;

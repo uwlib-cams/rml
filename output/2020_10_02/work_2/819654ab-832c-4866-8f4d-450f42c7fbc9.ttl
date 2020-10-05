@@ -1,16 +1,17 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/819654ab-832c-4866-8f4d-450f42c7fbc9> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-04" ;
+            bf:creationDate "2020-05-04"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:40:08+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:40:08+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -19,6 +20,5 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/8a0d5042-8b2d-4287-b228-612e456f0fe5> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
-    bf:originDate "1977" .
+    bf:originDate "1977"^^xsd:gYear .
 

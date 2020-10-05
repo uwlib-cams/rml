@@ -2,26 +2,25 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/bdbd9de4-e201-4f5c-9113-ce5eb6a30500> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "emcotter"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-20" ;
+            bf:creationDate "2020-04-20"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:36:20+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:36:20+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:classification [ a bf:Classification ;
-            rdfs:label "Y 3.T 22/2:2 C 73/13" ;
             bf:source [ a bf:Source ;
                     rdf:value "SuDocs classification number"@en ] ] ;
     bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
     bf:itemOf <https://trellis.sinopia.io/repository/washington/ae37b855-a29b-4f8b-ab5c-09934acedf63> ;
     bf:physicalLocation "suzzallen" ;
     bf:sublocation [ a bf:Sublocation ;
-            rdfs:label "szgus" ] .
 

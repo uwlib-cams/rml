@@ -2,38 +2,33 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/b1e9039f-d398-4d88-bf47-4e85591ee3ba> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2012-12-10" ;
+            bf:creationDate "2012-12-10"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:43:14+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:43:14+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/16a61969-3b31-4e09-bba0-0319a13895d1> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Austen, Jane, 1775-1817. Lady Susan. English. 1925",
                         "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Lady Susan. English. 1925" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
     bf:note [ a bf:Note ;
-            rdfs:label "\"Written about 1805. First published in 1871. Now reprinted from the manuscript.\"" ;
             bf:noteType "note on expression"@en ] ;
-    bf:originDate "1925" ;
+    bf:originDate "1925"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
-            rdfs:label "Flirtatious and recently widowed, Lady Susan Vernon seeks a new and advantageous marriage for herself, and at the same time attempts to push her daughter into marriage with a man she detests. The plot unfolds through letters exchanged among Lady Susan, her family, friends, and enemies." ] ;
     bf:supplementaryContent [ a bf:SupplementaryContent ;
-            rdfs:label "Notes on \"Variations, &c., in the manuscript\" and \"Variations in the edition of 1871\": 14 unnumbered pages at end." ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Lady Susan"@en ] .
 

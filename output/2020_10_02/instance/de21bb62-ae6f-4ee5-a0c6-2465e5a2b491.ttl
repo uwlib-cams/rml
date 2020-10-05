@@ -1,37 +1,34 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/de21bb62-ae6f-4ee5-a0c6-2465e5a2b491> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-21" ;
+            bf:creationDate "2020-04-21"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:02+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:02+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©" ;
+    bf:copyrightDate "©"^^xsd:gYear ;
     bf:dimensions "27 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "1 volume" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Cover title." ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "International Cooperation Administration" ] ;
-            bf:date "[1958]" ;
+            bf:date "[1958]"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Washington, D.C." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Germany T.U. Methods to Increase Productivity, TE 09-374-70013." ;
     bf:title [ a bf:Title ;

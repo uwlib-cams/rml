@@ -1,16 +1,17 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/50a06a60-3366-46a9-85f1-dd879b7765ed> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins@uw.edu"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-05" ;
+            bf:creationDate "2020-05-05"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:34:55+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:34:55+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -19,10 +20,7 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/a2979f34-29cc-44a4-a1c6-36a4ab6b3651> ;
     bf:language <http://id.loc.gov/vocabulary/languages/fre> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
     bf:note [ a bf:Note ;
-            rdfs:label "Side 1. Plage 1. Les droites a la mode (4:49) ;  plage 2. Des petro-dollars pour la posterite (2.22) -- side 2. plage 3. Venus par vauges (3:27) ; plage 4. Un faux chef Indien (3:45)" ;
             bf:noteType "note on expression"@en ] ;
     bf:summary [ a bf:Summary ;
-            rdfs:label "Four short segments on Canadian life, originally broadcast on Radio Canada International." ] .
 

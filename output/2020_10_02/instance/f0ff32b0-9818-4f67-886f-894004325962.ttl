@@ -2,46 +2,42 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/f0ff32b0-9818-4f67-886f-894004325962> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "emcotter"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-24" ;
+            bf:creationDate "2020-05-24"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:13:29+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:13:29+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "© 1989" ;
+    bf:copyrightDate "© 1989"^^xsd:gYear ;
     bf:dimensions "24 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "vi, 142 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "Y 4.Sci 2:101/H" ] ;
             rdf:value "Y 4.Sci 2:101/H" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/5e7ea9c5-28be-4ccc-ac1f-eeafa8a5d61b> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
-            rdfs:label "\"October 1989.\"",
                 "\"Serial H.\"",
                 "At head ot title: Committee print",
                 "Item 1025-A-1, 1025-A-2 (MF)",
                 "Shipping list no.: 90-105-P" ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "United States Governmental Printing Office" ],
                 <http://id.loc.gov/rwo/agents/n86017577> ;
-            bf:date "1989" ;
+            bf:date "1989"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Washington, D.C." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Washington, D.C. : United States Government Printing Office, 1989" ;
     bf:title [ a bf:Title ;

@@ -2,34 +2,29 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d74aea53-c6ae-4a7d-ba68-68d102b13294> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jmoede"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-23" ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:45:50+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:45:50+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf [ a bf:Work ;
-            rdfs:label "2019032287" ] ;
     bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "monograph" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "9780367135119 hardcover" ] ;
             rdf:value "9780367135119 hardcover" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-            rdfs:label "Latin" ] ;
-    bf:originDate "2020" ;
+    bf:originDate "2020"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
-            rdfs:label "This volume explores new perspectives on contemporary forms of violence in South Asia. Drawing on extensive fieldwork and case studies, it examines the infiltration of violence at the societal level and affords a comparative regional analysis of its historical, cultural and geopolitical origins in South Asia. Featuring essays from Sri Lanka to Nepal, and from Afghanistan to Burma, it sheds light on issues as wide-ranging as lynching and mob justice, hate speech, caste violence, gender-based violence, and the plight of the Rohingyas, among others. Lucid and engaging, this book will be an invaluable source of reference as well as scholarship to students and researchers of postcolonial studies, anthropology, sociology, cultural geography, minority studies, politics and gender studies." ] ;
     bf:supplementaryContent [ a bf:SupplementaryContent ;
-            rdfs:label "Includes bibliographical references and index" ] .
 

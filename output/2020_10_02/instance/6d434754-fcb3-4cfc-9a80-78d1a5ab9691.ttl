@@ -2,46 +2,41 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/6d434754-fcb3-4cfc-9a80-78d1a5ab9691> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-29" ;
+            bf:creationDate "2020-04-29"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:59:28+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:59:28+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©1990" ;
+    bf:copyrightDate "©1990"^^xsd:gYear ;
     bf:dimensions "22 cm" ;
     bf:extent [ a bf:Extent ;
-            rdfs:label "197 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
-                    rdfs:label "ISBN: 0960267697" ] ;
             rdf:value "ISBN: 0960267697" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/32ed7aac-229c-4b07-b568-f1e8e6f9ee37> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-                    rdfs:label "Perseverance Press" ],
                 [ a bf:Agent ;
-                    rdfs:label "Perserverance Press" ] ;
-            bf:date "[1990]" ;
+            bf:date "[1990]"^^xsd:gYear ;
             bf:place [ a bf:Place ;
-                    rdfs:label "Menlo Park, California" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Menlo Park, California : Perseverance Press,  [1990]" ;
     bf:responsibilityStatement "by Janet L. Smith" ;
     bf:title [ a bf:VariantTitle ;
-            rdfs:label "Murder in the Pacific Northwest : Sea of troubles" ;
             bf:mainTitle "Murder in the Pacific Northwest : Sea of troubles" ;
             bf:variantType "earlier title proper"@en,
                 "later title proper"@en ],
