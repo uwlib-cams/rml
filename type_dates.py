@@ -20,9 +20,7 @@ for work in work1List:
 				output_file_lines.append(line)
 
 			elif "rdfs:" in line:
-				if "bf:" in line:
-					print(f"uh oh: {work}")
-				elif "rml.py SNAPSHOT:" in line:
+				if "rml.py SNAPSHOT:" in line:
 					spacing = line.split('rdfs:')[0]
 					edited_line = line.strip()
 					punctuation = "] " + edited_line[-1] # see if line ends in ;, ,, or .
@@ -75,9 +73,7 @@ for work in work2List:
 				output_file_lines.append(line)
 
 			elif "rdfs:" in line:
-				if "bf:" in line:
-					print(f"uh oh: {work}")
-				elif "rml.py SNAPSHOT:" in line:
+				if "rml.py SNAPSHOT:" in line:
 					spacing = line.split('rdfs:')[0]
 					edited_line = line.strip()
 					punctuation = "] " + edited_line[-1] # see if line ends in ;, ,, or .
@@ -130,9 +126,7 @@ for instance in instanceList:
 				output_file_lines.append(line)
 
 			elif "rdfs:" in line:
-				if "bf:" in line:
-					print(f"uh oh: {instance}")
-				elif "rml.py SNAPSHOT:" in line:
+				if "rml.py SNAPSHOT:" in line:
 					spacing = line.split('rdfs:')[0]
 					edited_line = line.strip()
 					punctuation = "] " + edited_line[-1] # see if line ends in ;, ,, or .
@@ -185,9 +179,7 @@ for item in itemList:
 				output_file_lines.append(line)
 
 			elif "rdfs:" in line:
-				if "bf:" in line:
-					print(f"uh oh: {item}")
-				elif "rml.py SNAPSHOT:" in line:
+				if "rml.py SNAPSHOT:" in line:
 					spacing = line.split('rdfs:')[0]
 					edited_line = line.strip()
 					punctuation = "] " + edited_line[-1] # see if line ends in ;, ,, or .
