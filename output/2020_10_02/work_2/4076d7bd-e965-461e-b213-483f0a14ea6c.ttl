@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/4076d7bd-e965-461e-b213-483f0a14ea6c> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-11" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:41:44+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1002> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/2be1aad1-4cae-4a38-82aa-896480e41a79> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu. Japanese",
+                        "RDA"@en ] ;
+            rdf:value "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu. Japanese" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/jpn> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Japanese" ] ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "1:35,000" ] .
+

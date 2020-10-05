@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7e1467c7-83bb-41a5-8bd2-aba07d336fd4> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "04-06-2020" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:48:54+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/994efbab-6adb-4953-95e8-9a323436829f> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "Guo ji si fa de zhen yang zhi lu. Chinese",
+                        "RDA"@en ] ;
+            rdf:value "Guo ji si fa de zhen yang zhi lu. Chinese" ],
+        [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "9787520137591" ] ;
+            rdf:value "9787520137591" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "国际私法的振扬之路. Chinese" ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Han (Simplified)",
+                "Latin" ] ;
+    bf:originDate "2019" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "2018年是法学研究所成立60年之际.本文集收集了60年间所有在法学研究所和国际法研究所从事国际私法专业研究的学者的代表性成果.这些成果涉及了国际私法学科的基本问题,法律选择和法律适用,争议解决程序等多个方面,较全面地反映了学者们对国际私法学科研究的全面性和深刻性,展示了学者们对国际私法专业研究的热情和认真的态度,体现了成果所具有的较高学术质量和学者们在国际私法学界较大的学术影响." ] .
+

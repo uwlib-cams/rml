@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/8cc345de-2152-4864-aa32-4b13667b1377> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:12:15+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2004" ;
+    bf:dimensions "24 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "143 pages" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 0-7938-0537-6" ] ;
+            rdf:value "ISBN 0-7938-0537-6" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/81141d70-53d0-4864-ba9a-492ba667af87> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographic references (pages 133-137) and index." ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "T.F.H. Publications" ] ;
+            bf:date "2004" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Neptune City, NJ" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:provisionActivityStatement "Neptune City, NJ : T.F.H. Publications, 2004." ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Little dogs" ;
+            bf:subtitle "training your pint-sized companion." ] .
+

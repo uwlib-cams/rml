@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/c83130f0-b914-4db0-979c-67db73330f0c> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-15" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:31:13+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    bf:historyOfWork "\"Poor Folk (Russian: Бедные люди, Bednye lyudi), sometimes translated as Poor People,[note] is the first novel by Fyodor Dostoevsky, written over the span of nine months between 1844 and 1845. Dostoevsky was in financial difficulty because of his extravagant lifestyle and his developing gambling addiction; although he had produced some translations of foreign novels, they had little success, and he decided to write a novel of his own to try to raise funds\"--Wikipedia, January 15, 2020." ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Bi︠e︡dnye li︠u︡di",
+                "Dostoyevsky, Fyodor, 1821-1881. Бедные люди",
+                "Dostoyevsky, Fyodor, 1821-1881. Бѣдные люди" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
+                        "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di"@rus ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di"@rus ] ;
+    bf:originDate "1846" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80001203> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Poor--Russia--Fiction",
+                "Poverty--Russia--Fiction" ;
+            madsrdf:Authority "Poor--Russia--Fiction",
+                "Poverty--Russia--Fiction" ;
+            madsrdf:authoritativeLabel "Poor--Russia--Fiction",
+                "Poverty--Russia--Fiction" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Bi︠e︡dnye li︠u︡di",
+                "Бедные люди",
+                "Бѣдные люди" ],
+        [ a bf:Title ;
+            bf:mainTitle "Bednye li︠u︡di"@rus ] .
+

@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/635cfe10-0edc-456d-b9c6-ddf81d5937f1> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:09:29+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©" ;
+    bf:dimensions "22 cm" ;
+    bf:editionStatement "Fifteenth printing." ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "416 pages." ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/74959199-9271-4353-844f-4819ba4f3f14> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Dell Publishing Co., Inc." ] ;
+            bf:date "July, 1974." ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, N.Y." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:provisionActivityStatement "New York, N.Y." ;
+    bf:responsibilityStatement "by Bram Stoker." ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Dracula." ] .
+

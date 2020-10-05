@@ -1,0 +1,26 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/634feb94-394e-4860-a41d-a4e2f489a931> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "gerhart"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:45:30+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1012> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/4488232a-2514-409b-9a5e-95f423f1a1ae> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "n 2018039031" ] ;
+            rdf:value "n 2018039031" ] ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin" ] .
+

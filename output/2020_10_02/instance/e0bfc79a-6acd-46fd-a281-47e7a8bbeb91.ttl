@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/e0bfc79a-6acd-46fd-a281-47e7a8bbeb91> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:19:40+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1983" ;
+    bf:dimensions "26 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vi, 370 pages, 40 pages of plates" ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/66bf1739-a7f9-449c-9009-481068dcb50b> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University of Washington Press" ] ;
+            bf:date "[1983]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:provisionActivityStatement "Seattle : University of Washington Press, [1983]" ;
+    bf:responsibilityStatement "Eugene N. Kozloff" ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Seashore life of the northern Pacific coast" ;
+            bf:subtitle "Seashore life of the northern Pacific coast : ǂb an illustrated guide to northern California, Oregon, Washington, and British Columbia" ] .
+

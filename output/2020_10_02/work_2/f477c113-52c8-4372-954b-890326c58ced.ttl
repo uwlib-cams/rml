@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/f477c113-52c8-4372-954b-890326c58ced> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-19" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:56:48+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Klochkov, R. A. (Rudolʹf Andreevich)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ill> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sokolova, M. A. (Maĭi︠a︡ Anatolʹevna)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Cyrillic" ] ;
+    bf:originDate "1991" .
+

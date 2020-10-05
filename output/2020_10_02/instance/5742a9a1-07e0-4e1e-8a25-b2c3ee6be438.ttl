@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/5742a9a1-07e0-4e1e-8a25-b2c3ee6be438> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "leemihwa"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:08:43+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "2016",
+        "©" ;
+    bf:editionStatement "2nd edition" ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "https://trellis.sinopia.io/repository/washington/b09a2eac-c2b4-48fd-8d10-c2d99f0e1679" ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Neal-Schuman" ],
+                <http://id.loc.gov/rwo/agents/n80016154> ;
+            bf:date "2016" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Chicago" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
+    bf:responsibilityStatement "Marcia Lei Zeng, Jian Qin" ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Metadata" ] .
+

@@ -1,0 +1,74 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/fdc17c27-063f-4fd2-ad34-b4ecea9279ad> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-05" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:23:26+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2010" ;
+    bf:dimensions "25 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 166 pages" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "9780618574926" ] ;
+            rdf:value "9780618574926" ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "Aronson, Marc. Sugar changed the world " ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Hardback" ;
+            bf:noteType "type of binding"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Clarion Books" ] ;
+            bf:date "2010" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston (Mass.)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ],
+        [ a bf:Manufacture ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Watts, Trish Parcell" ;
+                    bf:note [ a bf:Note ;
+                            rdfs:label "book designer"@en ;
+                            bf:contribution [ a bf:Contribution ;
+                                    bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+                            bf:noteType "role in manufacture"@en ] ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "China" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd>,
+                <http://id.loc.gov/vocabulary/relators/brl>,
+                <http://id.loc.gov/vocabulary/relators/cas>,
+                <http://id.loc.gov/vocabulary/relators/clt>,
+                <http://id.loc.gov/vocabulary/relators/egr>,
+                <http://id.loc.gov/vocabulary/relators/etr>,
+                <http://id.loc.gov/vocabulary/relators/ltg>,
+                <http://id.loc.gov/vocabulary/relators/plt>,
+                <http://id.loc.gov/vocabulary/relators/ppm>,
+                <http://id.loc.gov/vocabulary/relators/prm>,
+                <http://id.loc.gov/vocabulary/relators/prt> ] ;
+    bf:provisionActivityStatement "Boston [Mass.] : Clarion Books, 2010" ;
+    bf:responsibilityStatement "by Marc Aronson and Marina Budhos" ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Story of magic, spice, slavery, freedom, and science" ;
+            bf:mainTitle "Story of magic, spice, slavery, freedom, and science" ;
+            bf:variantType "earlier title proper"@en,
+                "later title proper"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Sugar changed the world" ;
+            bf:subtitle "Story of magic, spice, slavery, freedom, and science" ] .
+

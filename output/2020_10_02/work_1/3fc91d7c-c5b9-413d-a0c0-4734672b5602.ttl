@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/3fc91d7c-c5b9-413d-a0c0-4734672b5602> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2016060285> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:18:10+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Scigliano, Eric, 1953- . Flotsametrics and the floating world" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
+                        "Ebbesmeyer, Curtis C. Flotsametrics and the floating world"@eng ] ;
+            rdf:value "Ebbesmeyer, Curtis C. Flotsametrics and the floating world"@eng ] ;
+    bf:originDate "2009" ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85093884>,
+        <http://id.loc.gov/authorities/subjects/sh90004986> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Flotsametrics and the floating world"@eng ] .
+
