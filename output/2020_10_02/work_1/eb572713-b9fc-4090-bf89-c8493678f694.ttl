@@ -12,11 +12,19 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:34:04+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:25:12+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ray, Billy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmd> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walker, Mandy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
+        [ a bf:Contribution ;
             bf:agent [ a bf:Organization ;
                     rdfs:label "Cruise/Wagner Productions (Firm)" ],
                 <http://id.loc.gov/rwo/agents/no2005051688>,
@@ -26,15 +34,7 @@
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "Ray, Billy" ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/fmd> ],
-        [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Ray, Billy" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aus> ],
-        [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Walker, Mandy" ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "baumgarten, craig" ] ;

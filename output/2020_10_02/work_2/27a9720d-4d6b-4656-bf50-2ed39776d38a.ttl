@@ -11,7 +11,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:39:31+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:30:52+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -21,19 +21,19 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/20578541-d001-4b6a-818c-413ee8d77b4a> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Lebedev, Vladimir Vasilʹevich, 1891-1967. Игрушки и зверушки. Russian." ],
-        [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "Lebedev, Vladimir Vasilʹevich, 1891-1967. Igrushki i zverushki. Russian",
                         "RDA"@en ] ;
-            rdf:value "Lebedev, Vladimir Vasilʹevich, 1891-1967. Igrushki i zverushki. Russian" ] ;
+            rdf:value "Lebedev, Vladimir Vasilʹevich, 1891-1967. Igrushki i zverushki. Russian" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lebedev, Vladimir Vasilʹevich, 1891-1967. Игрушки и зверушки. Russian." ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060032> ;
     bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
@@ -42,8 +42,8 @@
     bf:originDate "1939" ;
     bf:summary [ a bf:Summary ;
             rdfs:label "This simple picture book, with just a few words per page, uses facing illustrations to compare children's toys with objects from real life.  A baby bear from the forest is paired with a toy bear on wheels, fish in an aquarium with toy fish. Additional pictures illustrate a cat chasing mice and a dog chasing a girl's pet kitten." ] ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "Igrushki i zverushki"@rus ],
-        [ a bf:VariantTitle ;
-            bf:mainTitle "Игрушки и зверушки" ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Игрушки и зверушки" ],
+        [ a bf:Title ;
+            bf:mainTitle "Igrushki i zverushki"@rus ] .
 

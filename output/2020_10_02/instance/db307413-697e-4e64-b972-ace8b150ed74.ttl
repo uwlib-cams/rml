@@ -10,7 +10,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:19:19+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:11:47+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:copyrightDate "©" ;
@@ -31,7 +31,9 @@
             rdfs:label "No. 1-4 also called v. 1, no. 1-4;",
                 "None published from Mar. 1950 to Oct. 1954 and Dec. 1955 to Dec. 1960." ;
             bf:noteType "frequency"@en ] ;
-    bf:title [ a bf:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Taiwania" ],
+        [ a bf:VariantTitle ;
             rdfs:label "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao",
                 "Zhi wu ke xue qi kan",
                 "國立臺灣大學理學院植物學系研究報告",
@@ -41,7 +43,5 @@
                 "國立臺灣大學理學院植物學系研究報告",
                 "植物科學期刊" ;
             bf:variantType "earlier title proper"@en,
-                "later title proper"@en ],
-        [ a bf:Title ;
-            bf:mainTitle "Taiwania" ] .
+                "later title proper"@en ] .
 

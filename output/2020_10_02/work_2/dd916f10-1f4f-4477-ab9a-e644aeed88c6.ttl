@@ -11,36 +11,35 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:55:10+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:46:13+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
-    bf:expressionOf [ a bf:Work ;
-            rdfs:label "https://trellis.sinopia.io/repository/washington/c83130f0-b914-4db0-979c-67db73330f0c" ] ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/c83130f0-b914-4db0-979c-67db73330f0c> ;
     bf:identifiedBy [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Poor folk (Garnett)" ],
-        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di. English (Garnett)",
                         "RDA"@en ] ;
-            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di. English (Garnett)" ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Bednye li︠u︡di. English (Garnett)" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Poor folk (Garnett)" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
             rdfs:label "Latin" ] ;
     bf:originDate "1914" ;
     bf:summary [ a bf:Summary ;
             rdfs:label "\"Poor Folk is written in the form of letters between the two main characters, Makar Devushkin and Varvara Dobroselova, who are poor third cousins twice removed. The novel showcases the life of poor people, their relationship with rich people, and poverty in general, all common themes of literary naturalism. A deep but odd friendship develops between them until Dobroselova loses her interest in literature, and later in communicating with Devushkin after a rich widower Mr. Bykov proposes to her. Devushkin, a prototype of the clerk found in many works of naturalistic literature at that time, retains his sentimental characteristics; Dobroselova abandons art, while Devushkin cannot live without literature\"--Wikipedia, January 15, 2020." ] ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "Bednye li︠u︡di. English (Garnett)"@eng ],
-        [ a bf:VariantTitle ;
-            bf:mainTitle "Poor folk (Garnett)" ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Poor folk (Garnett)" ],
+        [ a bf:Title ;
+            bf:mainTitle "Bednye li︠u︡di. English (Garnett)"@eng ] .
 

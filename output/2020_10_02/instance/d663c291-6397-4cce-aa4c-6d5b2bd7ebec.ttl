@@ -10,26 +10,28 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:18:42+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:11:01+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
     bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource (12 unnumbered pages)" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://digitalcollections.lib.washington.edu/digital/collection/childrens/id/2384/rec/11> ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Description based on print version." ;
-            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ],
-        [ a bf:Note ;
             rdfs:label "Chromolithographs. Stapled into self-wraps.",
                 "Cover title.",
                 "Publisher's white color-printed pictorial self wrappers." ],
         [ a bf:Note ;
             rdfs:label "Original University of Washington Libraries Special Collections copy is a gift of Pamela K. Harer." ;
-            bf:noteType "University of Washington note"@en ] ;
+            bf:noteType "University of Washington note"@en ],
+        [ a bf:Note ;
+            rdfs:label "Description based on print version." ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "ДЕТИЗДАТ ЦК ВЛКСМ" ] ;

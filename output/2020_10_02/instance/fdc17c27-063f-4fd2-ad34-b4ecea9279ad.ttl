@@ -11,7 +11,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:23:26+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:17:50+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -33,14 +33,7 @@
     bf:note [ a bf:Note ;
             rdfs:label "Hardback" ;
             bf:noteType "type of binding"@en ] ;
-    bf:provisionActivity [ a bf:Publication ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Clarion Books" ] ;
-            bf:date "2010" ;
-            bf:place [ a bf:Place ;
-                    rdfs:label "Boston (Mass.)" ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/brd> ],
-        [ a bf:Manufacture ;
+    bf:provisionActivity [ a bf:Manufacture ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "Watts, Trish Parcell" ;
                     bf:note [ a bf:Note ;
@@ -60,7 +53,14 @@
                 <http://id.loc.gov/vocabulary/relators/plt>,
                 <http://id.loc.gov/vocabulary/relators/ppm>,
                 <http://id.loc.gov/vocabulary/relators/prm>,
-                <http://id.loc.gov/vocabulary/relators/prt> ] ;
+                <http://id.loc.gov/vocabulary/relators/prt> ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Clarion Books" ] ;
+            bf:date "2010" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston (Mass.)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Boston [Mass.] : Clarion Books, 2010" ;
     bf:responsibilityStatement "by Marc Aronson and Marina Budhos" ;
     bf:title [ a bf:VariantTitle ;

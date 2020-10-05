@@ -14,7 +14,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:31:49+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:22:51+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -37,8 +37,7 @@
                     rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Idiot"@en,
                         "RDA"@en ] ;
             rdf:value "Dostoyevsky, Fyodor, 1821-1881. Idiot"@en ],
-        [ a bf:Identifier ;
-            rdf:value "http://viaf.org/viaf/180506435" ] ;
+        <http://viaf.org/viaf/180506435> ;
     bf:originDate "1869" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n80001203> ;
     bf:subject [ a madsrdf:Authority ;
@@ -55,8 +54,8 @@
         <http://id.loc.gov/authorities/subjects/sh94004075>,
         <http://id.loc.gov/authorities/subjects/sh94005098>,
         <http://id.loc.gov/authorities/subjects/sh94006704> ;
-    bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "Идиот" ],
-        [ a bf:Title ;
-            bf:mainTitle "Idiot"@en ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Idiot"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Идиот" ] .
 

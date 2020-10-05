@@ -12,11 +12,21 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:34:54+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:26:01+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Suri, Yash Pal" ],
+                <http://id.loc.gov/rwo/agents/no2008035935> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ivr> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lenski, Lars",
+                        "Suri, Yash Pal" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
+        [ a bf:Contribution ;
             bf:agent [ a bf:Organization ;
                     rdfs:label "Fandango (Production Company)",
                         "Zero West (Firm)" ] ;
@@ -26,17 +36,7 @@
                     rdfs:label "Kunnemann, Kai" ],
                 <http://id.loc.gov/rwo/agents/no2001076834>,
                 <http://id.loc.gov/rwo/agents/nr2005007651> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
-        [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Lenski, Lars",
-                        "Suri, Yash Pal" ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
-        [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "Suri, Yash Pal" ],
-                <http://id.loc.gov/rwo/agents/no2008035935> ;
-            bf:role <http://id.loc.gov/vocabulary/relators/ivr> ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026089>,
         <http://id.loc.gov/authorities/genreForms/gf2011026205>,
         <http://id.loc.gov/authorities/genreForms/gf2011026232>,

@@ -12,7 +12,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:28:03+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:45+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -22,19 +22,19 @@
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026098> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Russian costume in photographs" ],
-        [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ] ;
-            rdf:value "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ] ;
+            rdf:value "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Russian costume in photographs" ] ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Clothing and dress--Russia (Federation)--Exhibitions.",
                 "Clothing and dress--Russia--Exhibitions" ;
@@ -42,8 +42,8 @@
                 "Clothing and dress--Russia--Exhibitions" ;
             madsrdf:authoritativeLabel "Clothing and dress--Russia (Federation)--Exhibitions.",
                 "Clothing and dress--Russia--Exhibitions" ] ;
-    bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "Russian costume in photographs" ],
-        [ a bf:Title ;
-            bf:mainTitle "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Russian costume in photographs" ] .
 

@@ -10,7 +10,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:06:04+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:54:47+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -19,8 +19,9 @@
     bf:digitalCharacteristic [ a bf:FileType ;
             rdfs:label "PDF" ],
         <http://rdaregistry.info/termList/fileType/1002> ;
-    bf:instanceOf [ a bf:Work ;
-            rdfs:label "https://trellis.sinopia.io/repository/washington/95cf5ef7-0942-4efc-af5e-b9301d3280d0" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44348> ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/95cf5ef7-0942-4efc-af5e-b9301d3280d0> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:provisionActivity [ a bf:Publication ;

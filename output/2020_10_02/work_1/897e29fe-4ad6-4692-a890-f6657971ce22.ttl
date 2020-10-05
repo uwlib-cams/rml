@@ -9,10 +9,11 @@
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
             bf:creationDate "2019-12-09" ;
-            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:24:48+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:14:50+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:cartographicAttributes [ a bf:Cartographic ;
             bf:coordinates "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ] ;
@@ -20,9 +21,8 @@
             bf:source [ a bf:Source ;
                     rdfs:label "Library of Congress Geographic Classification"@en ] ;
             rdf:value "G6524.S93" ] ;
-    bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "http://id.loc.gov/authorities/genreForms/gf2017027232" ],
-        <http://id.loc.gov/authorities/genreForms/gf2011026033> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026033>,
+        <http://id.loc.gov/authorities/genreForms/gf2017027232> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
@@ -37,15 +37,14 @@
             bf:noteType "coverage of content"@en ] ;
     bf:originDate "1617" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n80050882> ;
-    bf:partOf [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/no2015087016" ] ;
+    bf:partOf <http://id.loc.gov/authorities/names/no2015087016> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Szczecin (Poland)--Aerial views--Early works to 1800" ;
             madsrdf:Authority "Szczecin (Poland)--Aerial views--Early works to 1800" ;
             madsrdf:authoritativeLabel "Szczecin (Poland)--Aerial views--Early works to 1800" ] ;
-    bf:title [ a bf:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Alten Stettin (Map : 1588)"@deu ],
+        [ a bf:VariantTitle ;
             bf:mainTitle "Alten Stettin",
-                "Stettin" ],
-        [ a bf:Title ;
-            bf:mainTitle "Alten Stettin (Map : 1588)"@deu ] .
+                "Stettin" ] .
 

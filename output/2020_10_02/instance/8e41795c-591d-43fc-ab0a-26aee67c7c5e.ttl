@@ -1,6 +1,5 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/8e41795c-591d-43fc-ab0a-26aee67c7c5e> a bf:Instance ;
@@ -11,17 +10,16 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:12:26+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:02:49+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
     bf:copyrightDate "©2019" ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
     bf:extent [ a bf:Extent ;
             rdfs:label "viii, 189 pages" ] ;
-    bf:identifiedBy [ a bf:Identifier ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "http://hdl.handle.net/1773/44258" ] ;
-            rdf:value "http://hdl.handle.net/1773/44258" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44258> ] ;
+    bf:identifierBy <http://hdl.handle.net/1773/44258> ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/17d556c7-3b45-4903-ac30-d74ddc57718a> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;

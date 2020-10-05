@@ -13,7 +13,8 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:15:28+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:05:47+00:00" ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:derivativeOf [ a bf:Work ;
@@ -24,15 +25,14 @@
         <http://id.loc.gov/authorities/genreForms/gf2016026007> ;
     bf:historyOfWork "Gordon Glennon's play Emma, an adaptation of Jane Austen's novel of the same name, was first produced at Rugby Repertory Theatre on August 24, 1943." ;
     bf:identifiedBy [ a bf:Identifier ;
-            rdf:value "http://viaf.org/viaf/316560479" ],
-        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Glennon, Gordon. Emma"@eng ] ;
-            rdf:value "Glennon, Gordon. Emma"@eng ] ;
+            rdf:value "Glennon, Gordon. Emma"@eng ],
+        <http://viaf.org/viaf/316560479> ;
     bf:originDate "1943" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:title [ a bf:Title ;

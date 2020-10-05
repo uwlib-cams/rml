@@ -15,18 +15,11 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:12:39+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:02:58+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026314>,
         <http://id.loc.gov/authorities/genreForms/gf2015026019> ;
     bf:identifiedBy [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Austen, Jane, 1775-1817. Jane Austen's Lady Susan" ],
-        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
@@ -35,10 +28,17 @@
                         "Austen, Jane, 1775-1817. Lady Susan"@eng ] ;
             rdf:value "Austen, Jane, 1775-1817. Lady Susan"@eng ],
         [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Austen, Jane, 1775-1817. Jane Austen's Lady Susan" ],
+        [ a bf:Identifier ;
             rdf:value "VIAF: 183486135",
-                "Wikidata: Q581180",
-                "http://viaf.org/viaf/183486135",
-                "http://www.wikidata.org/entity/Q581180" ] ;
+                "Wikidata: Q581180" ],
+        <http://viaf.org/viaf/183486135>,
+        <http://www.wikidata.org/entity/Q581180> ;
     bf:originDate "1794?",
         "approximately 1805" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
@@ -52,8 +52,8 @@
         <http://id.loc.gov/authorities/subjects/sh2008107223>,
         <http://id.loc.gov/authorities/subjects/sh2008107237>,
         <http://id.loc.gov/authorities/subjects/sh2008113420> ;
-    bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "Jane Austen's Lady Susan" ],
-        [ a bf:Title ;
-            bf:mainTitle "Lady Susan"@eng ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Lady Susan"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Jane Austen's Lady Susan" ] .
 

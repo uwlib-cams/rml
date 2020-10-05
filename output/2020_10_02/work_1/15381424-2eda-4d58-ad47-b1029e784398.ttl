@@ -12,14 +12,16 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:12:30+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:02:48+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:dissertation [ a bf:Dissertation ;
+            rdfs:label "Doctor of Philosophy University of Washington 2019" ],
+        [ a bf:Dissertation ;
             bf:date "2019" ],
         [ a bf:Dissertation ;
-            bf:degree "Ph. D." ],
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
         [ a bf:Dissertation ;
-            rdfs:label "Doctor of Philosophy University of Washington 2019" ] ;
+            bf:degree "Ph. D." ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
@@ -45,7 +47,4 @@
                 "Rainbow trout--Migration" ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] .
-
-[] a bf:Organization ;
-    rdfs:label "http://id.loc.gov/authorities/names/n79054596" .
 

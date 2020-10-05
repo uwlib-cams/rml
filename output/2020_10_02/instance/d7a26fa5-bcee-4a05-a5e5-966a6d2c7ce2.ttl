@@ -12,7 +12,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:19:01+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:11:20+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
@@ -39,12 +39,10 @@
                     rdfs:label "New York",
                         "Oxford" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
-    bf:relatedTo [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/n97072225" ],
-        [ a bf:Instance ;
+    bf:relatedTo [ a bf:Instance ;
             rdfs:label "\"First published as a World's Classics paperback 1995\"--Title page verso" ],
-        [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/n97075954" ] ;
+        <http://id.loc.gov/authorities/names/n97072225>,
+        <http://id.loc.gov/authorities/names/n97075954> ;
     bf:responsibilityStatement "Jules Verne",
         "translated with an introduction and notes by William Butcher" ;
     bf:seriesStatement "Oxford world's classics",

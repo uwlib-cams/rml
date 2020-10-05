@@ -13,7 +13,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:27:44+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:26+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
@@ -21,19 +21,19 @@
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "今関六也, 1904-1991. 原色きのこ" ],
-        [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@jpn ] ;
-            rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@jpn ] ;
+            rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@jpn ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "今関六也, 1904-1991. 原色きのこ" ] ;
     bf:note [ a bf:Note ;
             rdfs:label "Japan" ;
             bf:noteType "coverage of content"@en ] ;
@@ -55,9 +55,9 @@
                 "Mushrooms--Japan",
                 "Mushrooms--Japan--Identification" ],
         <http://id.loc.gov/authorities/subjects/sh85088751> ;
-    bf:title [ a bf:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "原色きのこ"@jpn ],
+        [ a bf:VariantTitle ;
             bf:mainTitle "Kinoko no saishū to miwakekata",
-                "茸の採集と見分け方" ],
-        [ a bf:Title ;
-            bf:mainTitle "原色きのこ"@jpn ] .
+                "茸の採集と見分け方" ] .
 

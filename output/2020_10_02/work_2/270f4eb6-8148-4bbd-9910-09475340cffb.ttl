@@ -11,27 +11,26 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:39:23+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:30:44+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    bf:colorContent [ a bf:ColorContent ;
-            rdfs:label "http://rdaregistry.info/termList/RDAColourContent/1003" ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/25a341e3-305a-49a9-8322-5a45a6227535> ;
     bf:identifiedBy [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Разные звери. Russian" ],
-        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri. Russian",
                         "RDA"@en ] ;
-            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri. Russian" ] ;
+            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri. Russian" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Разные звери. Russian" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
     bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
@@ -40,8 +39,8 @@
     bf:originDate "1931" ;
     bf:summary [ a bf:Summary ;
             rdfs:label "This picture book depicts different animals, such as bears, reindeer, and wolves. Each animal is illustrated and named, but there is otherwise no text." ] ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "Raznye zveri"@rus ],
-        [ a bf:VariantTitle ;
-            bf:mainTitle "Разные звери" ] .
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Разные звери" ],
+        [ a bf:Title ;
+            bf:mainTitle "Raznye zveri"@rus ] .
 

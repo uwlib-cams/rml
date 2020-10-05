@@ -11,7 +11,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:13:52+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:04:06+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
@@ -19,17 +19,17 @@
             bf:role <http://id.loc.gov/vocabulary/relators/isb> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026174> ;
     bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "2018252950" ],
+        [ a bf:Issn ;
+            rdf:value "0372-333X" ],
+        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Taiwania"@eng ] ;
-            rdf:value "Taiwania"@eng ],
-        [ a bf:Identifier ;
-            rdf:value "2018252950" ],
-        [ a bf:Issn ;
-            rdf:value "0372-333X" ] ;
+            rdf:value "Taiwania"@eng ] ;
     bf:note [ a bf:Note ;
             rdfs:label "Taiwan" ;
             bf:noteType "coverage of content"@en ],
@@ -38,9 +38,9 @@
     bf:originPlace <http://id.loc.gov/authorities/names/n80022631> ;
     bf:precededBy [ a bf:Work ;
             rdfs:label "Acta botanica Taiwanica " ] ;
-    bf:title [ a bf:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Taiwania"@eng ],
+        [ a bf:VariantTitle ;
             bf:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao",
-                "國立臺灣大學理學院植物學系研究報告" ],
-        [ a bf:Title ;
-            bf:mainTitle "Taiwania"@eng ] .
+                "國立臺灣大學理學院植物學系研究報告" ] .
 

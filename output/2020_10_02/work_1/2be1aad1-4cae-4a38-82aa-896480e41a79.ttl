@@ -12,7 +12,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:16:54+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:06:38+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -23,19 +23,19 @@
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖" ],
-        [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn ] ;
-            rdf:value "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn ] ;
+            rdf:value "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖" ] ;
     bf:originDate "1950" ;
     bf:originPlace [ a bf:Place ;
             rdfs:label "Japan" ] ;
@@ -43,8 +43,8 @@
             rdfs:label "Osaka (Japan)--Maps" ;
             madsrdf:Authority "Osaka (Japan)--Maps" ;
             madsrdf:authoritativeLabel "Osaka (Japan)--Maps" ] ;
-    bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "大阪市案内圖" ],
-        [ a bf:Title ;
-            bf:mainTitle "Ōsaka-shi annaizu"@jpn ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Ōsaka-shi annaizu"@jpn ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "大阪市案内圖" ] .
 

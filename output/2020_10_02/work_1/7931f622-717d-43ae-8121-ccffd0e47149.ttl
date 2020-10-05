@@ -14,7 +14,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:23:03+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:12:57+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -24,20 +24,20 @@
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
-                    rdfs:label "Variant access point"@en ;
-                    bf:noteType "type of identifier"@en ] ;
-            bf:source [ a bf:Source ;
-                    rdfs:label "RDA"@en ] ;
-            rdf:value "Lei, Zepu.",
-                "Lei, Zepu. 新宁乡土地理" ],
-        [ a bf:Identifier ;
-            bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en,
                         "Lei, Zepu. Xinning xiang tu di li"@eng ] ;
-            rdf:value "Lei, Zepu. Xinning xiang tu di li"@eng ] ;
+            rdf:value "Lei, Zepu. Xinning xiang tu di li"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Lei, Zepu.",
+                "Lei, Zepu. 新宁乡土地理" ] ;
     bf:originDate "1909",
         "宣統元年" ;
     bf:originPlace [ a bf:Place ;
@@ -46,8 +46,8 @@
             rdfs:label "Taishan Shi (Guangdong Sheng, China)--Historical geography" ;
             madsrdf:Authority "Taishan Shi (Guangdong Sheng, China)--Historical geography" ;
             madsrdf:authoritativeLabel "Taishan Shi (Guangdong Sheng, China)--Historical geography" ] ;
-    bf:title [ a bf:VariantTitle ;
-            bf:mainTitle "新寧鄉土地理" ],
-        [ a bf:Title ;
-            bf:mainTitle "Xinning xiang tu di li"@chi ] .
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu di li"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "新寧鄉土地理" ] .
 

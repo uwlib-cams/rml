@@ -5,13 +5,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9> a bf:Work ;
-    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
-            rdfs:label "http://id.loc.gov/authorities/demographicTerms/dg2015060358",
-                "http://id.loc.gov/authorities/demographicTerms/dg2015060373",
-                "http://id.loc.gov/authorities/demographicTerms/dg2015060386" ;
-            bflc:CreatorCharacteristic "http://id.loc.gov/authorities/demographicTerms/dg2015060358",
-                "http://id.loc.gov/authorities/demographicTerms/dg2015060373",
-                "http://id.loc.gov/authorities/demographicTerms/dg2015060386" ] ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060373>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060386> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
@@ -19,30 +15,19 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T14:26:16+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:16:55+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
-    bf:contribution [ a bf:Contribution ;
-            bf:agent [ a bf:Agent ;
-                    rdfs:label "http://id.loc.gov/authorities/names/n79032879" ] ;
-            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
-    bf:genreForm [ a bf:GenreForm ;
-            rdfs:label "http://id.loc.gov/authorities/genreForms/gf2014026360",
-                "http://id.loc.gov/authorities/genreForms/gf2014026516",
-                "http://id.loc.gov/authorities/genreForms/gf2015026020",
-                "http://id.loc.gov/authorities/genreForms/gf2018026115",
-                "http://id.loc.gov/authorities/subjects/sh85048050" ] ;
-    bf:hasDerivative [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/no2015083789" ],
-        [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/no2015083846" ],
-        [ a bf:Work ;
-            rdfs:label "http://id.loc.gov/authorities/names/no2015082081",
-                "http://id.loc.gov/authorities/names/no2015084066",
-                "http://id.loc.gov/authorities/names/no2015084096" ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026360>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026516>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2018026115>,
+        <http://id.loc.gov/authorities/subjects/sh85048050> ;
+    bf:hasDerivative <http://id.loc.gov/authorities/names/no2015082081>,
+        <http://id.loc.gov/authorities/names/no2015083789>,
+        <http://id.loc.gov/authorities/names/no2015083846>,
+        <http://id.loc.gov/authorities/names/no2015084066>,
+        <http://id.loc.gov/authorities/names/no2015084096> ;
     bf:identifiedBy [ a bf:Identifier ;
-            rdf:value "VIAF: 175982694",
-                "Wikidata: Q477508" ],
-        [ a bf:Identifier ;
             bf:note [ a bf:Note ;
                     rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
@@ -57,10 +42,12 @@
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Jane Austen's Northanger Abbey",
-                "Austen, Jane, 1775-1817. Susan" ] ;
+                "Austen, Jane, 1775-1817. Susan" ],
+        [ a bf:Identifier ;
+            rdf:value "VIAF: 175982694",
+                "Wikidata: Q477508" ] ;
     bf:originDate "approximately 1798 or approximately 1799" ;
-    bf:originPlace [ a bf:Place ;
-            rdfs:label "http://id.loc.gov/authorities/names/n79023147" ] ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "England--Social life and customs--18th century--Fiction",
                 "Morland, Catherine (Fictitious character)--Fiction",
@@ -71,9 +58,9 @@
             madsrdf:authoritativeLabel "England--Social life and customs--18th century--Fiction",
                 "Morland, Catherine (Fictitious character)--Fiction",
                 "Young women--England--Fiction" ] ;
-    bf:title [ a bf:VariantTitle ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Northanger Abbey"@eng ],
+        [ a bf:VariantTitle ;
             bf:mainTitle "Jane Austen's Northanger Abbey",
-                "Susan" ],
-        [ a bf:Title ;
-            bf:mainTitle "Northanger Abbey"@eng ] .
+                "Susan" ] .
 

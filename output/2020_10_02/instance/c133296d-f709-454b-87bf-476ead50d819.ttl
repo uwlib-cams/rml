@@ -11,7 +11,7 @@
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:16:49+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:08:31+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -22,6 +22,8 @@
         <http://rdaregistry.info/termList/fileType/1002> ;
     bf:extent [ a bf:Extent ;
             rdfs:label "1 online resource (xix, 20-189 pages)" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44816> ] ;
     bf:identifierBy <http://hdl.handle.net/1773/44816> ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/51ec4ece-0d37-4d3b-8334-61b8ecd8eea6> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
@@ -39,11 +41,11 @@
                     rdfs:label "[Seattle, Washington]" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Daniel G. Hernandez" ;
-    bf:title [ a bf:Title ;
-            bf:mainTitle "The host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus" ],
-        [ a bf:VariantTitle ;
+    bf:title [ a bf:VariantTitle ;
             rdfs:label "Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus" ;
             bf:mainTitle "Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus" ;
             bf:variantType "earlier title proper"@en,
-                "later title proper"@en ] .
+                "later title proper"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "The host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus" ] .
 

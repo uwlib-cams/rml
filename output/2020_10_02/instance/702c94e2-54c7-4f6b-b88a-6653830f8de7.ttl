@@ -11,7 +11,7 @@
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T15:10:16+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:59:55+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
     bf:copyrightDate "©" ;
@@ -22,6 +22,8 @@
         "Volume 1, Number 1" ;
     bf:frequency [ a bf:Frequency ;
             rdfs:label "Quarterly" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://tai2.ntu.edu.tw/taiwania/> ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
                     rdfs:label "0372-333X" ] ;
@@ -31,14 +33,14 @@
             rdfs:label "Periodicals" ] ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:note [ a bf:Note ;
-            rdfs:label "Annual, 1948-<1990>" ;
-            bf:noteType "frequency"@en ],
-        [ a bf:Note ;
             rdfs:label "Some issues have subtitles: Sciences reports of plant biology, An International journal of plant science, or An International journal of life science" ;
             bf:noteType "title"@en ],
         [ a bf:Note ;
             rdfs:label "No. 1-4 also called v. 1, no. 1-4; None published between Mar. 1950 to Oct. 1954 and Dec. 1955 to Dec. 1960"@eng ;
-            bf:noteType "numbering of sequence"@en ] ;
+            bf:noteType "numbering of sequence"@en ],
+        [ a bf:Note ;
+            rdfs:label "Annual, 1948-<1990>" ;
+            bf:noteType "frequency"@en ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
                     rdfs:label "Dept. of Botany, College of Science, National Taiwan University" ],
