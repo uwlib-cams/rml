@@ -2,17 +2,16 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2743e55d-86b1-4226-a59c-cef6f4dbc7f5> a bf:Item ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-25"^^xsd:date ;
+            bf:creationDate "2019-11-25" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:20:45+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:20:45+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -21,7 +20,10 @@
             rdf:value "39352080015522" ] ;
     bf:itemOf <https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5> ;
     bf:note [ a bf:Note ;
+            rdfs:label "note on item"@en ] ;
     bf:physicalLocation "suzzallen" ;
     bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "scr" ] ;
     bf:usageAndAccessPolicy [ a bf:UsePolicy ;
+            rdfs:label "This item is fragile and requires an appointment for use. Please contact Special Collections." ] .
 

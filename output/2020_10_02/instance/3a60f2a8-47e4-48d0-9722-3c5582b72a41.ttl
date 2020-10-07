@@ -1,30 +1,31 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/3a60f2a8-47e4-48d0-9722-3c5582b72a41> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cc83"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-22"^^xsd:date ;
+            bf:creationDate "2019-12-22" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:54:58+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:54:58+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1047>,
         <http://rdaregistry.info/termList/RDACarrierType/1048> ;
-    bf:copyrightDate "©"^^xsd:gYear ;
+    bf:copyrightDate "©" ;
     bf:dimensions "103 x 66 cm, on sheet 192 x 79 cm rolled to 79 x 5 cm in diameter" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "1 scroll" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/bd6c8ad6-677e-4557-8877-cb387e7cbf8a> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "秦百蘭" ],
                 <http://id.loc.gov/rwo/agents/no2016169387> ;
-            bf:date "乙未 [2015]"^^xsd:gYear ;
+            bf:date "乙未 [2015]" ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "百蘭" ;
     bf:title [ a bf:Title ;

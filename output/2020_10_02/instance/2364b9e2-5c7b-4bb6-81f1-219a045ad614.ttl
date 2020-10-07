@@ -1,22 +1,22 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2364b9e2-5c7b-4bb6-81f1-219a045ad614> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:51:50+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:51:50+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©1929"^^xsd:gYear ;
+    bf:copyrightDate "©1929" ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (320 pages)" ] ;
     bf:hasItem [ a bf:Item ;
             bf:electronicLocator <http://hdl.loc.gov/loc.gdc/scd0001.0002491317A> ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/9da40fe2-ab05-45b2-90b1-16d80d252e0b> ;
@@ -25,15 +25,19 @@
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Albert Whitman & Company, Publishers" ],
                 <http://id.loc.gov/rwo/agents/n78059801> ;
-            bf:date "1929"^^xsd:gYear ;
+            bf:date "1929" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Chicago" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:reproductionOf [ a bf:Instance ;
+            rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman & Company, Publishers, [1929] (DLC)   29024738 (OCoLC)6194975" ] ;
     bf:responsibilityStatement "by Mary Mapes Dodge",
         "illustrated by Violet Moore Higgins" ;
     bf:seriesStatement "Albert Whitman's classics fully illustrated" ;
     bf:title [ a bf:VariantTitle ;
+            rdfs:label "Hans Brinker",
                 "Silver skates" ;
             bf:mainTitle "Hans Brinker",
                 "Silver skates" ;

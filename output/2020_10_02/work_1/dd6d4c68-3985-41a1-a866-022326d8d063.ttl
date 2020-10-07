@@ -3,7 +3,6 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/dd6d4c68-3985-41a1-a866-022326d8d063> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
@@ -12,12 +11,12 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-02-11"^^xsd:date ;
-            bf:creationDate "2020-02-11"^^xsd:date ;
+            bf:changeDate "2020-02-11" ;
+            bf:creationDate "2020-02-11" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:32+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:32+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -41,23 +40,29 @@
         <http://id.loc.gov/authorities/names/no2020020884>,
         <http://id.loc.gov/authorities/names/no96042995> ;
     bf:hasPart [ a bf:Work ;
+            rdfs:label "Part one. Playing Pilgrims ; A merry Christmas ; The Laurence boy ; Burdens ; Being neighborly ; Beth finds the palace beautiful ; Amy's valley of humiliation ; Jo meets Apollyon ; Meg goes to Vanity Fair ; The P.C. and P.O. ; Experiments ; Camp Laurence ; Castles in the air ; Secrets ; A telegram ; Letters ; Little faithful ; Dark days ; Amy's will ; Confidential ; Laurie makes mischief and Jo makes peace ; Pleasant meadows ; Aunt March settles the question -- Part two. Gossip ; The first wedding ; Artistic atempts ; Literary lessons ; Domestic experiences ; Calls ; Consequences ; Our foreign correspondent ; Tender troubles ; Jo's journal ; A friend ; Heartache ; Beth's secret ; New impressions ; On the shelf ; Lazy Laurence ; The valley of the shadow ; Learning to forget ; All alone ; Surprises ; My lord and lady ; Daisy and Demi ; Under the umbrella ; Harvest time." ] ;
     bf:historyOfWork "Little Women is a novel by American author Louisa May Alcott (1832-1888) which was originally published in two volumes in 1868 and 1869." ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Alcott, Louisa May, 1832-1888. Little women"@en ] ;
             rdf:value "Alcott, Louisa May, 1832-1888. Little women"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Alcott, Louisa May, 1832-1888. Little women, or, Meg, Jo, Beth, and Amy",
                 "Alcott, Louisa May, 1832-1888. Meg, Jo, Beth, and Amy" ],
         <http://www.wikidata.org/entity/Q523076> ;
-    bf:originDate "1868-1869"^^xsd:gYearMonth ;
+    bf:originDate "1868-1869" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "New England--Juvenile fiction",
                 "Young women--New England--Juvenile fiction" ;
             madsrdf:Authority "New England--Juvenile fiction",
                 "Young women--New England--Juvenile fiction" ;

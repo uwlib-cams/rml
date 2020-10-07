@@ -2,17 +2,16 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/4ea0c284-f575-4e3e-b2a3-84f1b623f0e8> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "emcotter"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-20"^^xsd:date ;
+            bf:creationDate "2020-05-20" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:34:28+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:34:28+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -20,16 +19,21 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/0eca0437-74d5-43ee-a46e-f935800fd4a2> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Brooks, Jack, 1922-2012. How our laws are made. Text. English" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Willett, Edward F. (Edward Farrand), 1933-. How our laws are made. Text. English",
                         "RDA"@en ] ;
             rdf:value "Willett, Edward F. (Edward Farrand), 1933-. How our laws are made. Text. English" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-    bf:originDate "1990"^^xsd:gYear .
+            rdfs:label "Latin" ] ;
+    bf:originDate "1990" .
 

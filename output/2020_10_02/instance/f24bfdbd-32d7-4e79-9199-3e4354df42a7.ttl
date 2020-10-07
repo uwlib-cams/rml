@@ -2,28 +2,29 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/f24bfdbd-32d7-4e79-9199-3e4354df42a7> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "ries07" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-06"^^xsd:date ;
+            bf:creationDate "2020-02-06" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:13:45+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:13:45+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:copyrightDate "©2019" ;
     bf:dimensions "25 cm" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 265 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 978-4-431-56848-3",
                         "ISSN 2364-9119" ] ;
             rdf:value "ISBN 978-4-431-56848-3",
                 "ISSN 2364-9119" ] ;
@@ -33,7 +34,9 @@
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Springer" ] ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Tokyo" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Tsunami generation and progagation" ] .

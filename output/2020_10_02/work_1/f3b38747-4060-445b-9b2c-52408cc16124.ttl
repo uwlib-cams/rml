@@ -3,34 +3,37 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/f3b38747-4060-445b-9b2c-52408cc16124> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins@uw.edu"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-27"^^xsd:date ;
+            bf:creationDate "2020-04-27" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:26:01+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:26:01+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Suri, Yash Pal" ],
                 <http://id.loc.gov/rwo/agents/no2008035935> ;
             bf:role <http://id.loc.gov/vocabulary/relators/ivr> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Lenski, Lars",
                         "Suri, Yash Pal" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Organization ;
+                    rdfs:label "Fandango (Production Company)",
                         "Zero West (Firm)" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/prn> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Kunnemann, Kai" ],
                 <http://id.loc.gov/rwo/agents/no2001076834>,
                 <http://id.loc.gov/rwo/agents/nr2005007651> ;
             bf:role <http://id.loc.gov/vocabulary/relators/fmp> ] ;
@@ -43,14 +46,17 @@
         <http://id.loc.gov/authorities/genreForms/gf2011026423> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "I for India"@en ] ;
             rdf:value "I for India"@en ] ;
-    bf:originDate "2005"^^xsd:gYear ;
+    bf:originDate "2005" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n80125931>,
         <http://id.loc.gov/authorities/subjects/sh85056605> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Amateur films--Great Britain",
                 "Amateur films--India",
                 "East Indians--England--Social life and customs",
                 "Immigrants--Family relationships",

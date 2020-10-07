@@ -3,30 +3,31 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e66461ad-b82a-4d13-adca-4ee58e3cd231> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-08-05"^^xsd:date ;
+            bf:creationDate "2020-08-05" ;
             bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:58+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:58+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Person ;
+                    rdfs:label "Naish, Kerry" ],
                 <http://id.loc.gov/rwo/agents/no2015084006> ;
             bf:role <http://id.loc.gov/vocabulary/relators/dgs> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Hernandez, Daniel G." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:dissertation [ a bf:Dissertation ;
-            bf:date "2019" ]^^xsd:gYear ,
+            bf:date "2019" ],
         [ a bf:Dissertation ;
             bf:degree "Ph. D." ],
         [ a bf:Dissertation ;
@@ -35,13 +36,16 @@
     bf:hasExpression <https://trellis.sinopia.io/repository/washington/51ec4ece-0d37-4d3b-8334-61b8ecd8eea6> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Hernandez, Daniel G. Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@en ] ;
             rdf:value "Hernandez, Daniel G. Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@en ] ;
-    bf:originDate "2019"^^xsd:gYear ;
+    bf:originDate "2019" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Chinook salmon--Viruses--Columbia River Watershed",
                 "Infectious hematopoietic necrosis virus--Columbia River Watershed" ;
             madsrdf:Authority "Chinook salmon--Viruses--Columbia River Watershed",
                 "Infectious hematopoietic necrosis virus--Columbia River Watershed" ;

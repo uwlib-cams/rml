@@ -3,39 +3,43 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/897e29fe-4ad6-4692-a890-f6657971ce22> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-09"^^xsd:date ;
+            bf:creationDate "2019-12-09" ;
             bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:14:50+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:14:50+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:cartographicAttributes [ a bf:Cartographic ;
             bf:coordinates "E 14°32ʹ40ʺ--E 14°33ʹ50ʺ/N 53°25ʹ50ʺ--N 53°24ʹ50ʺ" ] ;
     bf:classification [ a bf:Classification ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Library of Congress Geographic Classification"@en ] ;
             rdf:value "G6524.S93" ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026033>,
         <http://id.loc.gov/authorities/genreForms/gf2017027232> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. Part 4. Plate 41."@en ] ;
             rdf:value "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. Part 4. Plate 41."@en ] ;
     bf:natureOfContent "An aerial view of the city of Stettin (modern-day Szczecin) from the northwest." ;
     bf:note [ a bf:Note ;
+            rdfs:label "Shows the Oder River, people, animals, boats, fortifications, buildings, hills, trees, and farmland. Shows the Cathedral Basilica of St James the Apostle." ;
             bf:noteType "coverage of content"@en ] ;
-    bf:originDate "1617"^^xsd:gYear ;
+    bf:originDate "1617" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n80050882> ;
     bf:partOf <http://id.loc.gov/authorities/names/no2015087016> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Szczecin (Poland)--Aerial views--Early works to 1800" ;
             madsrdf:Authority "Szczecin (Poland)--Aerial views--Early works to 1800" ;
             madsrdf:authoritativeLabel "Szczecin (Poland)--Aerial views--Early works to 1800" ] ;
     bf:title [ a bf:Title ;

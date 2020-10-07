@@ -2,17 +2,16 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-12"^^xsd:date ;
+            bf:creationDate "2019-11-12" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:36:22+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:36:22+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -20,18 +19,23 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Faulkner, William, 1897-1962. Go down, Moses",
                         "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
-    bf:originDate "1942"^^xsd:gYear ;
+    bf:originDate "1942" ;
     bf:summary [ a bf:Summary ;
+            rdfs:label "\"Go Down, Moses is a collection of short stories (and two longer stories, \"The Fire and the Hearth\" and \"The Bear\") that, together, tell the composite history of the McCaslin family, of the descendents of Carothers McCaslin and the residents of the plantation he founded. The complete histories emerge gradually over the course of the book, with bits of information appearing in successive stories to clarify, complete, and sometimes controvert the information given in previous stories. But each story has its own plot, as well, independent of the other stories\"--Spark Notes website, November 12, 2019." ] ;
     bf:title [ a bf:VariantTitle ;
             bf:mainTitle "Go down, Moses and other stories" ],
         [ a bf:Title ;

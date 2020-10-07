@@ -2,29 +2,30 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/327694af-5194-468e-a68f-debab7cfc91b> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-13"^^xsd:date ;
+            bf:creationDate "2019-11-13" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:54:03+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:54:03+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©1971"^^xsd:gYear ;
+    bf:copyrightDate "©1971" ;
     bf:dimensions "29 cm" ;
     bf:editionStatement "Trade edition" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "61 unnumbered pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "0394823370",
                         "74158378" ] ;
             rdf:value "0394823370",
                 "74158378" ] ;
@@ -33,8 +34,10 @@
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "[1971]"^^xsd:gYear ;
+                    rdfs:label "Random House" ] ;
+            bf:date "[1971]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "by Dr. Seuss" ;
     bf:title [ a bf:Title ;

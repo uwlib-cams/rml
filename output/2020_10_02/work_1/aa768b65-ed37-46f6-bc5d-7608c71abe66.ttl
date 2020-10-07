@@ -3,35 +3,40 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/aa768b65-ed37-46f6-bc5d-7608c71abe66> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-04"^^xsd:date ;
+            bf:creationDate "2020-03-04" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:45+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:45+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label " Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii\"" ] ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026098> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@ru ] ;
             rdf:value "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@ru ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Russian costume in photographs" ] ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Clothing and dress--Russia (Federation)--Exhibitions.",
                 "Clothing and dress--Russia--Exhibitions" ;
             madsrdf:Authority "Clothing and dress--Russia (Federation)--Exhibitions.",
                 "Clothing and dress--Russia--Exhibitions" ;

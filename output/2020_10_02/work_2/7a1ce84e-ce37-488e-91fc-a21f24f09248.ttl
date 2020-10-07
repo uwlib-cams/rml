@@ -2,13 +2,12 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/7a1ce84e-ce37-488e-91fc-a21f24f09248> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-20"^^xsd:date ;
+            bf:creationDate "2020-04-20" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:N8156d72c04eb47a4a5f7323062bb4997 ;
@@ -18,7 +17,7 @@
         [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-20"^^xsd:date ;
+            bf:creationDate "2020-04-20" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:N8156d72c04eb47a4a5f7323062bb4997 ;
@@ -28,15 +27,18 @@
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> ;
     bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Comedy plays",
                 "dialect drama" ],
         <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "lccn: 42021317" ] ;
             rdf:value "lccn: 42021317" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-    bf:originDate "1942"^^xsd:gYear .
+            rdfs:label "Latin" ] ;
+    bf:originDate "1942" .
 
 _:N60c266ffac3f47288afeaeab4ecdc470 a bf:Status ;
     bf:code "n" .
@@ -45,5 +47,5 @@ _:N62ded634a4474f29955df38d43025781 a bf:Status ;
     bf:code "n" .
 
 _:N8156d72c04eb47a4a5f7323062bb4997 a bf:GenerationProcess ;
-    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:39:03+00:00"^^xsd:dateTime ] .
+    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:39:03+00:00" .
 

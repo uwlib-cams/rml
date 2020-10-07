@@ -2,30 +2,33 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/bba41063-cd99-485e-b7c8-9061f830a331> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2012-12-10"^^xsd:date ;
+            bf:creationDate "2012-12-10" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:43:55+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:43:55+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Austen, Jane, 1775-1817. Northanger Abbey. English",
                         "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Northanger Abbey. English" ] ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
-    bf:originDate "approximately 1798 or approximately 1799"^^xsd:gYear ;
+            rdfs:label "Latin" ] ;
+    bf:originDate "approximately 1798 or approximately 1799" ;
     bf:summary [ a bf:Summary ;
+            rdfs:label "Catherine Morland falls in love with Henry Tilney, the owner of a medieval mansion. But she becomes darkly suspicious of the abbey after she visits there." ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Northanger Abbey"@en ] .
 

@@ -2,13 +2,12 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/81141d70-53d0-4864-ba9a-492ba667af87> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-22"^^xsd:date ;
+            bf:creationDate "2020-04-22" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:Ne340971972044f5bb60cda7d1a7a5ad1 ;
@@ -18,8 +17,8 @@
         [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-23"^^xsd:date ;
-            bf:creationDate "2020-04-22"^^xsd:date ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-22" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:Ne340971972044f5bb60cda7d1a7a5ad1 ;
@@ -30,16 +29,20 @@
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/7580672d-ace4-4a41-b89a-8a0b8631e586> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Wood, Deborah, 1952- Little dogs",
                         "RDA"@en ] ;
             rdf:value "Wood, Deborah, 1952- Little dogs" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
+            rdfs:label "Latin" ] ;
     bf:note [ a bf:Note ;
+            rdfs:label "color illustrations" ;
             bf:noteType "has details of colour content"@en ] ;
-    bf:originDate "2004"^^xsd:gYear .
+    bf:originDate "2004" .
 
 _:N60c266ffac3f47288afeaeab4ecdc470 a bf:Status ;
     bf:code "n" .
@@ -48,5 +51,5 @@ _:N62ded634a4474f29955df38d43025781 a bf:Status ;
     bf:code "n" .
 
 _:Ne340971972044f5bb60cda7d1a7a5ad1 a bf:GenerationProcess ;
-    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:40:00+00:00"^^xsd:dateTime ] .
+    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:40:00+00:00" .
 

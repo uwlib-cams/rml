@@ -2,35 +2,40 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/199fd36d-eb47-4a1a-849b-2de1549e24ea> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-24"^^xsd:date ;
+            bf:creationDate "2020-03-24" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:03:30+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:03:30+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/com> ] ;
     bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Russian language materials" ],
         <http://id.loc.gov/authorities/genreForms/gf2014026160> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashimʺ di︠e︡ti︠a︡m"@mul ] ;
             rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashimʺ di︠e︡ti︠a︡m"@mul ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashim deti︠a︡m",
                 "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Нашим детям",
                 "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Нашимъ дѣтям" ] ;

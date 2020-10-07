@@ -2,39 +2,43 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "emcotter"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-06-16"^^xsd:date ;
+            bf:creationDate "2020-06-16" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:10:35+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:10:35+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©[1990]"^^xsd:gYear ;
+    bf:copyrightDate "©[1990]" ;
     bf:dimensions "25 cm" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 203 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Ju 10.2:F 31" ] ;
             rdf:value "Ju 10.2:F 31" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
+            rdfs:label "\"April 2, 1990.\"",
                 "Item 729",
                 "Shipping list no.: 90-426-P" ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "[1990]"^^xsd:gYear ;
+                    rdfs:label "[Federal Courts Study Committee]" ] ;
+            bf:date "[1990]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "[Philadelphia, Pennsylvania?]" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "[Philadelphia, Pennsylvania?] : [Federal Courts Study Committee], [1990]" ;
     bf:responsibilityStatement "Judicial Conference of the United States. Federal Courts Study Committee" ;

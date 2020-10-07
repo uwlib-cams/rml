@@ -2,30 +2,33 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/b53e89ed-452c-463b-8331-fbbc0e360ed8> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "mcm104"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-20"^^xsd:date ;
+            bf:creationDate "2020-03-20" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:19:49+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:19:49+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026333> ;
     bf:hasDerivative [ a bf:Work ;
+            rdfs:label "" ],
         [ a bf:Work ;
+            rdfs:label "" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Jones, Diana Wynne. Howl's moving castle."@en ] ;
             rdf:value "Jones, Diana Wynne. Howl's moving castle."@en ] ;
-    bf:originDate "1986"^^xsd:gYear ;
+    bf:originDate "1986" ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Howl's moving castle"@en ] .
 

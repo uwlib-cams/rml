@@ -3,37 +3,44 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e01ddea9-54f1-4835-a049-f70e64c888fc> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-21"^^xsd:date ;
+            bf:creationDate "2020-04-21" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:18+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:24:18+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "United States. International Cooperation Administration." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/spn> ],
         [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "German-American Trade Union Methods and Practices to Increase Productivity (Team)" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Itineraries" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and itinerary."@en ] ;
             rdf:value "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and itinerary."@en ] ;
     bf:note [ a bf:Note ;
-    bf:originDate "[1958]"^^xsd:gYear ;
+            rdfs:label "Under the auspices of International Cooperation Administration." ] ;
+    bf:originDate "[1958]" ;
     bf:originPlace [ a bf:Place ;
+            rdfs:label "Washington, D.C." ] ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "German-American Trade Union Methods and Practices to Increase Productivity (Team)" ;
             madsrdf:Authority "German-American Trade Union Methods and Practices to Increase Productivity (Team)" ;
             madsrdf:authoritativeLabel "German-American Trade Union Methods and Practices to Increase Productivity (Team)" ] ;
     bf:title [ a bf:Title ;

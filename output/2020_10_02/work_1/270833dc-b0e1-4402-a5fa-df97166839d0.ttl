@@ -3,7 +3,6 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/270833dc-b0e1-4402-a5fa-df97166839d0> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060254>,
@@ -14,11 +13,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-27"^^xsd:date ;
+            bf:creationDate "2020-04-27" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:06:07+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:06:07+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -27,20 +26,25 @@
         <http://id.loc.gov/authorities/subjects/sh94007953> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Vogel, Julius, Sir, 1835-1899. Anno Domini 2000"@en ] ;
             rdf:value "Vogel, Julius, Sir, 1835-1899. Anno Domini 2000"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Vogel, Julius, Sir, 1835-1899. Anno Domini 2000, or, Woman's destiny",
                 "Vogel, Julius, Sir, 1835-1899. Woman's destiny" ],
         [ a bf:Identifier ;
             rdf:value "VIAF ID: 1444156133226458430003" ] ;
-    bf:originDate "1889"^^xsd:gYear ;
+    bf:originDate "1889" ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Women politicians--Fiction" ;
             madsrdf:Authority "Women politicians--Fiction" ;
             madsrdf:authoritativeLabel "Women politicians--Fiction" ],
         <http://id.loc.gov/authorities/subjects/sh2008113158>,

@@ -2,7 +2,6 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/dc28450a-35ec-4474-9793-689a582100a0> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060216>,
@@ -11,27 +10,31 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2020-04-23" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:23+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:23+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026047> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "He, Liyi, 1930- Mr. China's son"@en ] ;
             rdf:value "He, Liyi, 1930- Mr. China's son"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Chik, Claire Anne, 1952- Mr. China's son" ] ;
-    bf:originDate "1993"^^xsd:gYear ;
+    bf:originDate "1993" ;
     bf:subject <http://id.loc.gov/authorities/names/n85105994> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Mr. China's son"@en ] .

@@ -1,25 +1,27 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a87caa3e-c7da-4654-8cd5-ebad405e398a> a bf:Instance ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "2016"^^xsd:gYear ,
+    bf:copyrightDate "2016",
         "©" ;
     bf:dimensions "23 cm" ;
     bf:editionStatement "2nd edition" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "555 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "978-1-55570-965-5" ] ;
             rdf:value "978-1-55570-965-5" ] ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
-            bf:date "2016"^^xsd:gYear ;
+            bf:date "2016" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Chicago" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Marcia Lei Zeng, Jian Qin" ;
     bf:title [ a bf:Title ;

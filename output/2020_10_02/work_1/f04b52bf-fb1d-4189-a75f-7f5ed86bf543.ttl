@@ -2,37 +2,42 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/f04b52bf-fb1d-4189-a75f-7f5ed86bf543> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-04"^^xsd:date ;
+            bf:creationDate "2020-05-04" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:25:40+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:25:40+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Bayless, G. A. (George Albert), 1925-" ],
                 <http://id.loc.gov/authorities/names/n83190598> ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "reference works" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Kline, M. S. (Mary Stiles), 1953-  Ferryboats"@en ] ;
             rdf:value "Kline, M. S. (Mary Stiles), 1953-  Ferryboats"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Bayless, G. A. (George Albert), 1925-  Ferryboats" ] ;
-    bf:originDate "1983"^^xsd:gYear ;
+    bf:originDate "1983" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Ferryboats"@en ] .

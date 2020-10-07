@@ -2,17 +2,16 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/40145a5f-2c0a-4a6a-924c-af9efd105615> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee37"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "04-08-2020"^^xsd:date ;
+            bf:creationDate "04-08-2020" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:56:11+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:56:11+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -22,23 +21,28 @@
     bf:dimensions "24 cm" ;
     bf:editionStatement "第1版" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "6, 5, 2, 248 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 978-7-5201-3814-7" ] ;
             rdf:value "ISBN 978-7-5201-3814-7" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "社会科学文献出版社" ],
                 <http://id.loc.gov/rwo/agents/no2001101420> ;
-            bf:date "2018"^^xsd:gYear ;
+            bf:date "2018" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "北京" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "北京 : 社会科学文献出版社, 2018" ;
     bf:responsibilityStatement "尹铁超著" ;
     bf:seriesStatement "Man--Tonggusi yu yan wen hua yan jiu wen ku",
         "满-通古斯语言文化研究文库" ;
     bf:title [ a bf:VariantTitle ;
+            rdfs:label "Chaoxian yu yu Tonggusi yu guan xi yan jiu",
                 "Comparative study of Korean and Tungusic languages" ;
             bf:mainTitle "Chaoxian yu yu Tonggusi yu guan xi yan jiu",
                 "Comparative study of Korean and Tungusic languages" ;

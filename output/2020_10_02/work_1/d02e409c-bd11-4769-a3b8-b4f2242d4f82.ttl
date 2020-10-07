@@ -2,27 +2,28 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d02e409c-bd11-4769-a3b8-b4f2242d4f82> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cc83"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-23"^^xsd:date ;
+            bf:creationDate "2019-12-23" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:22:26+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:22:26+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:genreForm <http://vocab.getty.edu/aat/300265419> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "\"Shui mu qing hua\" yu \"Lei yu\""@zh,
                         "RDA"@en ] ;
             rdf:value "\"Shui mu qing hua\" yu \"Lei yu\""@zh ] ;
     bf:natureOfContent "The content is an essay written by Cao Yu who recalled how he wrote \"Lei yu\" in summer 1933 in the Library. \"Lei yu\" is a famous and influential play in China. Bamboo slips were primary writing tools before the innovation of paper." ;
-    bf:originDate "2012"^^xsd:gYear ;
+    bf:originDate "2012" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79076155> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "\"水木清华\" 与《雷雨》"@en ] .

@@ -2,37 +2,40 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d81ded4c-4502-4ba8-abc3-d0b9586d5169> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-23"^^xsd:date ;
-            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:11:33+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:11:33+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©1993"^^xsd:gYear ;
+    bf:copyrightDate "©1993" ;
     bf:dimensions "24 cm" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "xvi, 271 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 0-8133-1730-4" ] ;
             rdf:value "ISBN 0-8133-1730-4" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/f935a8b4-b9f3-4a2d-85d1-532284ce9a5c> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "1993"^^xsd:gYear ;
+                    rdfs:label "Westview Press" ] ;
+            bf:date "1993" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Boulder" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Boulder: Westview Press, 1993" ;
     bf:responsibilityStatement "He Liyi with Claire Anne Chik" ;

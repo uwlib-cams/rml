@@ -2,28 +2,29 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e5291657-c073-4cc8-a640-76da110185dd> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "tgis"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-04"^^xsd:date ;
+            bf:creationDate "2020-02-04" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:23+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:23+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©"^^xsd:gYear ;
+    bf:copyrightDate "©" ;
     bf:dimensions "24 cm." ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "xxiv, 304 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "1681731649",
                         "9781681731643" ] ;
             rdf:value "1681731649",
                 "9781681731643" ] ;
@@ -31,11 +32,13 @@
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Production ;
-            bf:date "2018" ]^^xsd:gYear ,
+            bf:date "2018" ],
         [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "2018"^^xsd:gYear ;
+                    rdfs:label "Morgan & Claypool Publishers" ] ;
+            bf:date "2018" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "[Williston, VT]" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Validating RDF data / ǂc Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris Kontokostas" ;
     bf:seriesEnumeration "#16" ;

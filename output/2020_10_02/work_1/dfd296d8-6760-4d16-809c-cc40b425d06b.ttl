@@ -2,7 +2,6 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/dfd296d8-6760-4d16-809c-cc40b425d06b> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
@@ -12,25 +11,28 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "mathiasuw"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-12"^^xsd:date ;
+            bf:creationDate "2020-02-12" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:55+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:23:55+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Waddell, Myra Mae" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026159> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Waddell, Myra Mae. Nautilus"@en ] ;
             rdf:value "Waddell, Myra Mae. Nautilus"@en ] ;
-    bf:originDate "2017"^^xsd:gYear ;
+    bf:originDate "2017" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79041317> ;
     bf:subject <http://id.loc.gov/authorities/subjects/sh97002702> ;
     bf:title [ a bf:Title ;

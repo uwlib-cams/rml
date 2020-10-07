@@ -2,10 +2,10 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/6a36c334-c396-4dbb-b7da-9edf8de7a2ce> a bf:Work ;
     bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "Martial artists" ;
             bflc:CreatorCharacteristic "Martial artists" ],
         <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
         <http://id.loc.gov/authorities/demographicTerms/dg2015060397>,
@@ -13,28 +13,32 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-22"^^xsd:date ;
+            bf:creationDate "2020-04-22" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:12:12+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:12:12+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Choi, Hong Hi.  Taekwondo"@en ] ;
             rdf:value "Choi, Hong Hi.  Taekwondo"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Choi, Hong Hi.  Tae kwon do",
                 "Choi, Hong Hi.  Taekwondo." ] ;
-    bf:originDate "1972"^^xsd:gYear ;
+    bf:originDate "1972" ;
     bf:subject <http://id.loc.gov/authorities/subjects/sh94004461> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Taekwon-do."@en ] .

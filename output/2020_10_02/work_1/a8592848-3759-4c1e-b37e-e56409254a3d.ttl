@@ -3,39 +3,46 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a8592848-3759-4c1e-b37e-e56409254a3d> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060347> ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "CC83"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-26"^^xsd:date ;
+            bf:creationDate "2019-11-26" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:26+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:18:26+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "今関六也, 1904-1991" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@ja ] ;
             rdf:value "Imazeki, Rokuya, 1904-1991. Genshoku kinoko"@ja ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "今関六也, 1904-1991. 原色きのこ" ] ;
     bf:note [ a bf:Note ;
+            rdfs:label "Japan" ;
             bf:noteType "coverage of content"@en ] ;
-    bf:originDate "1942"^^xsd:gYear ;
+    bf:originDate "1942" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79034998> ;
     bf:partOf [ a bf:Work ;
+            rdfs:label "Nature guide" ] ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mushrooms, Poisonous--Japan",
                 "Mushrooms, Poisonous--Japan--Identification",
                 "Mushrooms--Japan",
                 "Mushrooms--Japan--Identification" ;

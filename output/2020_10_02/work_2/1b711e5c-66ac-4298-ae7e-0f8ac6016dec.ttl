@@ -1,24 +1,26 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/1b711e5c-66ac-4298-ae7e-0f8ac6016dec> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins@uw.edu"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-05"^^xsd:date ;
+            bf:creationDate "2020-05-05" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:29:30+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:29:30+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ] ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
     bf:expressionOf <https://trellis.sinopia.io/repository/washington/f0658123-0bae-4399-8fd7-c2404bcdc005> ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:notation [ a bf:Script ;
+            rdfs:label "Latin" ] ;
     bf:summary [ a bf:Summary ;
+            rdfs:label "Old age is the single greatest risk factor for morbidity and mortality in developed nations. Successful interventions that delay the biological aging process or increase healthy longevity in people could have profound benefits for quality of life, productivity, and reduced healthcare costs (Goldman et al. 2013;Kaeberlein et al. 2015). The FDA approved mTOR inhibitor, rapamycin, represents an outstanding candidate for such an intervention. The field of Geroscience, which seeks to understand how aging causes disease and develop preventative and therapeutic approaches, has shown that this geroprotective intervention impacts major age-related diseases such as heart disease and Alzheimer⁰́₉s disease. In contrast to major age-associated diseases, the relationship between biological aging and oral health is often neglected among broader dental, biomedical, and Geroscience research communities. We present in Chapter 1 that implementing Geroscience within oral health research is imperative to our geriatric population, who experience age-related diseases also in the oral cavity, such as periodontal disease and oral cancer. In Chapter 2, we explore if the geroprotective compound rapamycin impacts the oral cavity by investigating its effect on periodontal bone loss, a hallmark of an age-associated oral disease known as periodontal disease. Chapter 3 then addresses the groundwork for properly designing Geroscience studies using animal models to understand oral health and disease. Lastly, in Chapter 4 we take the framework we have addressed from Chapter 3 and our observations in Chapter 2 to uncover the novel finding that rapamycin reverses age-associated periodontal disease. This work is transformative as it capitalizes on advances in Geroscience to enhance our understanding of the mechanistic and molecular basis for age-associated changes in the periodontium leading to disease. We go beyond just addressing knowledge gaps to extend oral healthspan but uncover possible interventions that target aging hallmarks in the oral cavity - ultimately leading to clinical strategies to treat periodontal disease in elderly patients." ] .
 

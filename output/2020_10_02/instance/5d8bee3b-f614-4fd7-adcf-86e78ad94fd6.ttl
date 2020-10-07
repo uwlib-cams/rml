@@ -1,35 +1,38 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/5d8bee3b-f614-4fd7-adcf-86e78ad94fd6> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "mathiasuw"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-12"^^xsd:date ;
+            bf:creationDate "2020-02-12" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:58:39+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:58:39+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©"^^xsd:gYear ;
+    bf:copyrightDate "©" ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/58d212a6-6925-4152-952a-380261985a88> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
+            rdfs:label "stapled" ;
             bf:noteType "type of binding"@en ] ;
     bf:productionMethod <http://rdaregistry.info/termList/RDAproductionMethod/1008> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Gal-Pal Zines" ],
                 [ a bf:Agent ;
-            bf:date "2018"^^xsd:gYear ;
+                    rdfs:label "Gal-Pal Zines" ] ;
+            bf:date "2018" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Honolulu, Hawaii" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "by Myra Mae Waddell" ;
     bf:title [ a bf:Title ;

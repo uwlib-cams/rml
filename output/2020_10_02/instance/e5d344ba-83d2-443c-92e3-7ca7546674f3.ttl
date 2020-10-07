@@ -2,39 +2,42 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/e5d344ba-83d2-443c-92e3-7ca7546674f3> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-24"^^xsd:date ;
+            bf:creationDate "2020-04-24" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:32+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:12:32+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©2009."^^xsd:gYear ;
+    bf:copyrightDate "©2009." ;
     bf:dimensions "24 cm" ;
     bf:editionStatement "First edition" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 286 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 978-0-06-155841-2" ] ;
             rdf:value "ISBN 978-0-06-155841-2" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/f6f897c5-47d7-4899-8c92-671c438d982b> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Collins",
                         "Smithsonian Books" ],
                 <http://id.loc.gov/rwo/agents/n86102676> ;
-            bf:date "[2009]"^^xsd:gYear ;
+            bf:date "[2009]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "New York, N.Y." ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "New York, NY :  Smithsonian Books :  Collins, [2009]" ;
     bf:responsibilityStatement "Curtis Ebbesmeyer and Eric Scigliano" ;

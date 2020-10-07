@@ -2,43 +2,48 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/9849909f-60f8-4b89-81a3-a9c1d686c23e> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-16"^^xsd:date ;
+            bf:creationDate "2020-04-16" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:04:10+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:04:10+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©1995"^^xsd:gYear ;
+    bf:copyrightDate "©1995" ;
     bf:dimensions "26 x 11 cm" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "x, 149 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 0-89815-688-2" ] ;
             rdf:value "ISBN 0-89815-688-2" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/7b05a65a-8b90-46a2-bc23-4fd434cfb36d> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
+            rdfs:label "Subtitle on cover: A handbook with recipes" ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Ten Speed Press" ],
                 <http://id.loc.gov/rwo/agents/n2017061021> ;
-            bf:date "[1995]"^^xsd:gYear ;
+            bf:date "[1995]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Berkeley, California" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1995]" ;
     bf:responsibilityStatement "Norman Van Aken with John Harrisson",
         "photography by Lois Ellen Frank" ;
     bf:title [ a bf:VariantTitle ;
+            rdfs:label "Exotic fruit" ;
             bf:mainTitle "Exotic fruit" ;
             bf:variantType "earlier title proper"@en,
                 "later title proper"@en ],

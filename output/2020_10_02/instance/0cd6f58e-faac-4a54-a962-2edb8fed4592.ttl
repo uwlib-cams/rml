@@ -1,22 +1,21 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/0cd6f58e-faac-4a54-a962-2edb8fed4592> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee70"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-24"^^xsd:date ;
+            bf:creationDate "2020-02-24" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:49:47+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:49:47+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:copyrightDate "©2019" ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
     bf:editionStatement "Third edition" ;
     bf:hasItem [ a bf:Item ;
@@ -25,9 +24,12 @@
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:note [ a bf:Note ;
+            rdfs:label "Description based on online resource; title from title page (Safari, viewed October 16, 2019)." ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "IT Governance Publishing" ] ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Ely, Cambridgeshire, United Kingdom" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "Ely, Cambridgeshire, United Kingdom : IT Governance Publishing, [2019]" ;
     bf:responsibilityStatement "Alan Calder, Steve G. Watkins" ;

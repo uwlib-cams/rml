@@ -3,7 +3,6 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/47396f92-ff77-4480-a26d-8e7c73b83043> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
@@ -12,11 +11,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-12"^^xsd:date ;
+            bf:creationDate "2019-11-12" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:08:31+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:08:31+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -26,19 +25,24 @@
         <http://id.worldcat.org/fast/1367787> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses and other stories" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Faulkner, William, 1897-1962. Go down, Moses"@en,
                         "RDA"@en ] ;
             rdf:value "Faulkner, William, 1897-1962. Go down, Moses"@en ],
         <http://viaf.org/viaf/174446829> ;
-    bf:originDate "1942"^^xsd:gYear ;
+    bf:originDate "1942" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mississippi--Race relations--Fiction",
                 "Mississippi--Social life and customs--Fiction",
                 "Southern States--Race relations--Fiction",
                 "Yoknapatawpha County (Imaginary place)--Fiction" ;

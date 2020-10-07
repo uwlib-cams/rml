@@ -2,19 +2,19 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/ef16e337-20ce-49c1-ac66-241ca3124c15> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:47:34+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:47:34+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "black and white",
                 "color" ],
         <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
         <http://rdaregistry.info/termList/RDAColourContent/1002> ;
@@ -24,25 +24,33 @@
     bf:genreForm <http://id.loc.gov/authorities/subjects/sh85064405> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Baldridge)",
                         "RDA"@en ] ;
             rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Baldridge)" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English. 1945" ] ;
     bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
     bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
+            rdfs:label "Latin" ] ;
     bf:note [ a bf:Note ;
+            rdfs:label "Chiefly black and white illustrations; plates in color" ;
             bf:noteType "has details of colour content"@en ],
         [ a bf:Note ;
+            rdfs:label "Baldridge" ;
             bf:noteType "other distinguishing characteristic of expression"@en ] ;
-    bf:originDate "1945"^^xsd:gYear ;
+    bf:originDate "1945" ;
     bf:summary [ a bf:Summary ;
+            rdfs:label "When a new friend gives Hans and his sister Gretel enough money for one pair of ice skates, Hans insists that Gretel enter the grand skating competition, while he approaches the great Doctor who consents to try to restore their father's health and memory." ] ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Hans Brinker"@en ],
         [ a bf:VariantTitle ;

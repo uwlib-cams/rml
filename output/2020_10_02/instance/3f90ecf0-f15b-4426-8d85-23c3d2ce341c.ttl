@@ -2,42 +2,47 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/3f90ecf0-f15b-4426-8d85-23c3d2ce341c> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-06"^^xsd:date ;
+            bf:creationDate "2019-11-06" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:55:52+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:55:52+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:copyrightDate "©2019" ;
     bf:dimensions "24 cm" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 320 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "Multidimensional time-resolved spectroscopy"@en ;
                     rdf:value "RDA"@en ] ;
             rdf:value "Multidimensional time-resolved spectroscopy"@en ],
         [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "9783030024772" ] ;
             rdf:value "9783030024772" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/repository/washington/2591250d-3dde-4f8b-b0da-0d0ead2d45e6> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "[2019]"^^xsd:gYear ;
+                    rdfs:label "Springer" ] ;
+            bf:date "[2019]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Cham, Switzerland" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "Tiago Buckup, Jérémie Léonard, editors",
         "with contributions from Johanna Brazard, Tiago Buckup, Thomas P. Cheshire, Marco Garavelli, Zhenkun Guo, Harold Y. Hwang, Jan Philip Kraak, Jérémie Léonard, Xian Li, Jian Lu, Margherita Maiuri, Brian P. Molesky, Andrew M. Moran, Shaul Mukamel, Keith A. Nelson, Artur Nenov, Benjamin K. Ofori-Okai, Ivan Rivalta, Javier Segarra-Martí, Yaquing Zhang" ;

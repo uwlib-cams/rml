@@ -3,37 +3,41 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-20"^^xsd:date ;
+            bf:creationDate "2020-05-20" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:11:35+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:11:35+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026111> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Falcus, Matt. Lost airline colors of Europe" ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Falcus, Matt. Lost airline colours of Europe"@en ] ;
             rdf:value "Falcus, Matt. Lost airline colours of Europe"@en ] ;
-    bf:originDate "2016"^^xsd:gYear ;
+    bf:originDate "2016" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:relatedTo <http://id.loc.gov/authorities/names/no2015137282>,
         <https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Airlines--Europe--Identification--Pictorial works",
                 "Airplanes--Markings--Europe--Pictorial works",
                 "Transport planes--Europe--Identification--Pictorial works",
                 "Transport planes--Markings--Europe--Pictorial works" ;

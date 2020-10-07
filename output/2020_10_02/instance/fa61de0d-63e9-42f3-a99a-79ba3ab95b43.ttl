@@ -1,17 +1,16 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "dbrookin" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-04"^^xsd:date ;
+            bf:creationDate "2020-03-04" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:15:56+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:15:56+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -19,17 +18,22 @@
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "319 pages" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/4090de90-1df9-4e92-bfc5-8d22c2f8eaee> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:note [ a bf:Note ;
+            rdfs:label "Contents and summary also in English.",
                 "Includes bibliographical references.",
                 "Published to accompany an exhibit held April-May, 2009 as part of the Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii.\"" ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Slovo" ],
                 [ a bf:Agent ;
-            bf:date "2010"^^xsd:gYear ;
+                    rdfs:label "Слово" ] ;
+            bf:date "2010" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Москва" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:responsibilityStatement "редактор, Е. Усенко",
         "тексты А. Петрова, К. Соловьева" ;

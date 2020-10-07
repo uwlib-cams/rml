@@ -2,43 +2,47 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/3f37d02f-464a-4d85-8604-ea6a6e8534ad> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-18"^^xsd:date ;
+            bf:creationDate "2019-12-18" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:55:40+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:55:40+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
-    bf:copyrightDate "©"^^xsd:gYear ;
+    bf:copyrightDate "©" ;
     bf:dimensions "22 cm" ;
     bf:editionStatement "Raqm al-ṭabʻah: al-ūlá",
         "رقم الطبعة: الاولى" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "239 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "ISBN 978-614-8030-55-0" ] ;
             rdf:value "ISBN 978-614-8030-55-0" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/666f03ca-448f-446e-9228-e9efd584077a> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Muʼminūn bi-lā Ḥudūd lil-Dirāsāt wa-al-Abḥāth",
                         "مؤمنون بلا حدود للدراسات والابحاث" ],
                 <http://id.loc.gov/rwo/agents/no2014092990> ;
-            bf:date "2017"^^xsd:gYear ;
+            bf:date "2017" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "al-Mamlakah al-Maghribīyah, al-Rabāṭ",
                         "المملكة المغربية، الرباط" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "al-Mamlakah al-Maghribīyah, al-Rabāṭ : Muʼminūn bi-lā Ḥudūd lil-Dirāsāt wa-al-Abḥāth, 2017",
         "المملكة المغربية، الرباط : مؤمنون بلا حدود للدراسات والابحاث، 2017" ;
     bf:relatedTo [ a bf:Work ;
+            rdfs:label "Silsilat kutub (Muʼassasat Muʼminūn bi-lā Ḥudūd lil-Dirāsāt wa-al-Abḥāth (Morocco))" ] ;
     bf:responsibilityStatement "Naṣr Ḥāmid Abū Zayd",
         "نصر حامد أبو زيد" ;
     bf:seriesStatement "Silsilat kutub",

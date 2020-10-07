@@ -3,7 +3,6 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/16a61969-3b31-4e09-bba0-0319a13895d1> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
@@ -12,34 +11,39 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2012-12-10"^^xsd:date ;
+            bf:creationDate "2012-12-10" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:02:58+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:02:58+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026314>,
         <http://id.loc.gov/authorities/genreForms/gf2015026019> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Austen, Jane, 1775-1817. Lady Susan"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Lady Susan"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Jane Austen's Lady Susan" ],
         [ a bf:Identifier ;
             rdf:value "VIAF: 183486135",
                 "Wikidata: Q581180" ],
         <http://viaf.org/viaf/183486135>,
         <http://www.wikidata.org/entity/Q581180> ;
-    bf:originDate "1794?"^^xsd:gYear ,
+    bf:originDate "1794?",
         "approximately 1805" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "England--Fiction",
                 "Vernon, Susan, Lady (Fictitious character)--Fiction" ;
             madsrdf:Authority "England--Fiction",
                 "Vernon, Susan, Lady (Fictitious character)--Fiction" ;

@@ -2,39 +2,42 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/8846a80b-5fa3-4dfe-8032-1b5dcf42e2e5> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-23"^^xsd:date ;
-            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:02:17+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:02:17+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
     bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
     bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
-    bf:copyrightDate "©1960"^^xsd:gYear ;
+    bf:copyrightDate "©1960" ;
     bf:dimensions "21 cm" ;
     bf:editionStatement "Popular Library edition" ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "284 pages" ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:source [ a bf:Source ;
+                    rdfs:label "LCCN: 60-7847" ] ;
             rdf:value "LCCN: 60-7847" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/cbf47d3c-7555-44e8-bca2-036018a8b4e6> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
+                    rdfs:label "Popular Library" ],
                 <http://id.loc.gov/rwo/agents/no2017063288> ;
-            bf:date "[1962]"^^xsd:gYear ;
+            bf:date "[1962]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "New York" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "New York : Popular Library, [1962]" ;
     bf:responsibilityStatement "Harper Lee" ;

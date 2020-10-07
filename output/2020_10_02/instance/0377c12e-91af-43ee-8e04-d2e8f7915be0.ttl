@@ -1,25 +1,25 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/0377c12e-91af-43ee-8e04-d2e8f7915be0> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-05-07"^^xsd:date ;
-            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:changeDate "2020-05-07" ;
+            bf:creationDate "2020-04-23" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:48:58+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:48:58+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:copyrightDate "©2019" ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (125 pages)" ] ;
     bf:hasItem [ a bf:Item ;
             bf:electronicLocator <http://hdl.handle.net/1773/44725> ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/541a0131-f24b-48cf-800a-0fc9616a0622> ;
@@ -27,8 +27,10 @@
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "[2019]"^^xsd:gYear ;
+                    rdfs:label "[University of Washington Libraries]" ] ;
+            bf:date "[2019]" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle]" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]" ;
     bf:responsibilityStatement "Yue Shi" ;

@@ -1,32 +1,35 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a bf:Instance ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-17"^^xsd:date ;
+            bf:creationDate "2020-04-17" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:04:46+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T17:04:46+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
-    bf:copyrightDate "©"^^xsd:gYear ;
+    bf:copyrightDate "©" ;
     bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1006> ;
     bf:extent [ a bf:Extent ;
+            rdfs:label "1 video file" ] ;
     bf:instanceOf <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
     bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
     bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
     bf:note [ a bf:Note ;
+            rdfs:label "Title from title screen (viewed April 17, 2020)" ] ;
     bf:provisionActivity [ a bf:Publication ;
             bf:agent [ a bf:Agent ;
-            bf:date "2003"^^xsd:gYear ;
+                    rdfs:label "Lions Gate Films" ] ;
+            bf:date "2003" ;
             bf:place [ a bf:Place ;
+                    rdfs:label "Santa Monica, CA" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/brd> ] ;
     bf:provisionActivityStatement "[Santa Monica, CA] Lions Gate Films  [2003]" ;
     bf:responsibilityStatement "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray." ;

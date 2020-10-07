@@ -3,22 +3,21 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/b7ef5c30-4e4c-459c-8361-2c371359894f> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins@uw.edu"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-06-10"^^xsd:date ;
+            bf:creationDate "2020-06-10" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:20:16+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:20:16+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
     bf:dissertation [ a bf:Dissertation ;
-            bf:date "2019" ]^^xsd:gYear ,
+            bf:date "2019" ],
         [ a bf:Dissertation ;
             bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
         [ a bf:Dissertation ;
@@ -26,13 +25,16 @@
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Carey, Cathea Marcena. Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@en ] ;
             rdf:value "Carey, Cathea Marcena. Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@en ] ;
-    bf:originDate "2019"^^xsd:gYear ;
+    bf:originDate "2019" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Alcohol Drinking--prevention $ control" ;
             madsrdf:Authority "Alcohol Drinking--prevention $ control" ;
             madsrdf:authoritativeLabel "Alcohol Drinking--prevention $ control" ],
         <http://id.nlm.nih.gov/mesh/D006297>,

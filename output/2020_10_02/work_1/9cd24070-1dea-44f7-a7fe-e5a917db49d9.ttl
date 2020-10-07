@@ -3,7 +3,6 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/9cd24070-1dea-44f7-a7fe-e5a917db49d9> a bf:Work ;
     bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
@@ -12,11 +11,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@en ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-10"^^xsd:date ;
+            bf:creationDate "2019-12-10" ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:16:55+00:00"^^xsd:dateTime ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-02T16:16:55+00:00" ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026360>,
         <http://id.loc.gov/authorities/genreForms/gf2014026516>,
@@ -30,22 +29,27 @@
         <http://id.loc.gov/authorities/names/no2015084096> ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en,
                         "Austen, Jane, 1775-1817. Northanger Abbey"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Northanger Abbey"@en ],
         [ a bf:Identifier ;
             bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
                     bf:noteType "type of identifier"@en ] ;
             bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
             rdf:value "Austen, Jane, 1775-1817. Jane Austen's Northanger Abbey",
                 "Austen, Jane, 1775-1817. Susan" ],
         [ a bf:Identifier ;
             rdf:value "VIAF: 175982694",
                 "Wikidata: Q477508" ] ;
-    bf:originDate "approximately 1798 or approximately 1799"^^xsd:gYear ;
+    bf:originDate "approximately 1798 or approximately 1799" ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:subject [ a madsrdf:Authority ;
+            rdfs:label "England--Social life and customs--18th century--Fiction",
                 "Morland, Catherine (Fictitious character)--Fiction",
                 "Young women--England--Fiction" ;
             madsrdf:Authority "England--Social life and customs--18th century--Fiction",
