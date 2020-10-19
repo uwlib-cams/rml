@@ -14,7 +14,7 @@ Anything that is _not_ in this list will be "split", i.e. in its own distinct bl
 Note: Due to limitations of RML, these "no-split" blank nodes do not contain mapping for language tags. This means that provision activity properties and title properties (excluding variant title properties) will not have language tags in BIBFRAME.
 
  - "No language tag" list
- A list of RDA properties that may have language tags in the original RDA-in-RDF/XML, but these language tags were added by accident or by default in Sinopia and should be ignored by our mapping, e.g. properties that only contain dates. Properties can be added to this list by request.
+A list of RDA properties that may have language tags in the original RDA-in-RDF/XML, but these language tags were added by accident or by default in Sinopia and should be ignored by our mapping, e.g. properties that only contain dates. Properties can be added to this list by request.
 
  - Manually-written RML code
 For several properties, rather than creating specific Python code to interpret the kiegel from UW's [RDA-to-BIBFRAME map](https://docs.google.com/spreadsheets/d/1y0coXcJAoVOP2BPtzwmnc9l-OWQbwYujVJ8oXXYpMRc/edit?usp=sharing), manually-written RML is inserted into the output instead. Because of this, if changes are made to the RDA-to-BIBFRAME map, these changes will not automatically update in future output of generateRML. If changes to these properties are made, the manually-written RML in can be updated by request.
