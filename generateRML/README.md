@@ -23,15 +23,15 @@ A list of RDA properties that may have language tags in the original RDA-in-RDF/
 For several properties, rather than creating specific Python code to interpret the kiegel from UW's [RDA-to-BIBFRAME map](https://docs.google.com/spreadsheets/d/1y0coXcJAoVOP2BPtzwmnc9l-OWQbwYujVJ8oXXYpMRc/edit?usp=sharing), manually-written RML is inserted into the output instead. Because of this, if changes are made to the RDA-to-BIBFRAME map, these changes will not automatically update in future output of generateRML. If changes to these properties are made, the manually-written RML in can be updated by request.
 
 Properties currently being written manually:
-  - P10002 (has identifier for work)
-  - P10331 (has authorized access point for work)
-  - P10332 (has variant access point for work)
-  - P20313 (has authorized access point for expression)
-  - P20314 (has variant access point for expression)
-  - P30294 (has authorized access point for manifestation)
-  - P30295 (has variant access point for manifestation)
-  - P40083 (has authorized access point for item)
-  - P40084 (has variant access point for item)
+   - P10002 (has identifier for work)
+   - P10331 (has authorized access point for work)
+   - P10332 (has variant access point for work)
+   - P20313 (has authorized access point for expression)
+   - P20314 (has variant access point for expression)
+   - P30294 (has authorized access point for manifestation)
+   - P30295 (has variant access point for manifestation)
+   - P40083 (has authorized access point for item)
+   - P40084 (has variant access point for item)
 
 # csv_dir
 
