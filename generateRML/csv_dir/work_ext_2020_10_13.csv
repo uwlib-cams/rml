@@ -42,8 +42,7 @@ has University of Washington-specific note on work (RDA 5.9),https://doi.org/10.
 ""dvdVideo"",
 ""monograph"",
 ""soundRecording""",,,,literal,FALSE,TRUE,http://access.rdatoolkit.org/5.9.html,,,,,,
-work has Library of Congress Geographic Classification,https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification,"bf:classification [ a bf:Classification ;
-   rdf:value ""value"" ;
-   bf:source [ a bf:Source ;
-      rdfs:label ""Library of Congress Geographic Classification"" ] ] .","classification >> Classification > rdf:value ; > source >> Source > rdfs:label=""Library of Congress Geographic Classification""",118.51,"""map"",
+work has Library of Congress Geographic Classification,https://doi.org/10.6069/uwlib.55.d.4#hasLcGeographicClassification,"bf:geographicCoverage [ a bf:GeographicCoverage ;
+ bf:source <http://id.loc.gov/vocabulary/classSchemes/lcc> ;
+ rdfs:label ""value""].",geographicCoverage >> GeographicCoverage > source=<http://id.loc.gov/vocabulary/classSchemes/lcc> > rdfs:label,118.51,"""map"",
 ""eMap""",,,,literal,FALSE,TRUE,,,,,,,

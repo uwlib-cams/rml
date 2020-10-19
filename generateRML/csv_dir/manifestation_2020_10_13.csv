@@ -1,4 +1,5 @@
 RDA label,RDA IRI,pseudo-Turtle,Kiegel syntax
+type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,rdf:type bf:Instance .,rdf:type=<http://id.loc.gov/ontologies/bibframe/Instance>
 has carrier type (RDA 3.3),http://rdaregistry.info/Elements/m/P30001,"bf:carrier [ a bf:Carrier ;
    rdfs:label ""P30001value"" ] .
 # with IRI value
@@ -548,7 +549,7 @@ bf:provisionActivity [ a bf:Production ;
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30081value> ;
    bf:role [ a bf:Role ;
-      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
+      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
 provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer agent (RDA 21.5),http://rdaregistry.info/Elements/m/P30082,"bf:provisionActivity [ a bf:Manufacture ;
@@ -1914,7 +1915,7 @@ bf:provisionActivity [ a bf:Production ;
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30360value> ;
    bf:role [ a bf:Role ;
-      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Person > rdfs:label ; contribution >> Contribution > agent >> Person > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
+      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
 provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer person,http://rdaregistry.info/Elements/m/P30361,"bf:provisionActivity [ a bf:Manufacture ;
@@ -2392,7 +2393,7 @@ bf:provisionActivity [ a bf:Production ;
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30389value> ;
    bf:role [ a bf:Role ;
-      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
+      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Agent > rdfs:label ; contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
 provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer collective agent,http://rdaregistry.info/Elements/m/P30390,"bf:provisionActivity [ a bf:Manufacture ;
@@ -3348,7 +3349,7 @@ bf:provisionActivity [ a bf:Production ;
 bf:contribution [ a bf:Contribution ;
    bf:agent <P30447value> ;
    bf:role [ a bf:Role ;
-      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Family > rdfs:label ; contribution >> Contribution > agent >> Family > label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
+      rdfs:label ""producer of unpublished manifestation"" ] ] .","provisionActivity >> Production > agent >> Family > rdfs:label ; contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""producer of unpublished manifestation""
 or
 provisionActivity >> Production > agent* ; contribution >> Contribution > agent* > role >> Role > rdfs:label=""producer of unpublished manifestation"""
 has manufacturer family,http://rdaregistry.info/Elements/m/P30448,"bf:provisionActivity [ a bf:Manufacture ;
