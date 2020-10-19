@@ -7,6 +7,7 @@ Script that takes in kiegel mappings via CSV files, and outputs RML that will tr
 ## Version 5 notes
 
  - "No-split" blank nodes
+
 Specific blank nodes that are designated as having multiple properties mapped into a single blank node, notably for provision activity properties and for title properties (exluding variant titles, which are being "split"). Properties that ought to be mapped into a single blank node can be accommodated into the script by request.
 
 Anything that is _not_ in this list will be "split", i.e. in its own distinct blank node. This includes cases in which there are multiple instances of a single property in the original RDA-in-RDF/XML, which in previous versions of generateRML would be mapped into the same blank node.
@@ -14,9 +15,11 @@ Anything that is _not_ in this list will be "split", i.e. in its own distinct bl
 Note: Due to limitations of RML, these "no-split" blank nodes do not contain mapping for language tags. This means that provision activity properties and title properties (excluding variant title properties) will not have language tags in BIBFRAME.
 
  - "No language tag" list
+
 A list of RDA properties that may have language tags in the original RDA-in-RDF/XML, but these language tags were added by accident or by default in Sinopia and should be ignored by our mapping, e.g. properties that only contain dates. Properties can be added to this list by request.
 
  - Manually-written RML code
+
 For several properties, rather than creating specific Python code to interpret the kiegel from UW's [RDA-to-BIBFRAME map](https://docs.google.com/spreadsheets/d/1y0coXcJAoVOP2BPtzwmnc9l-OWQbwYujVJ8oXXYpMRc/edit?usp=sharing), manually-written RML is inserted into the output instead. Because of this, if changes are made to the RDA-to-BIBFRAME map, these changes will not automatically update in future output of generateRML. If changes to these properties are made, the manually-written RML in can be updated by request.
 
     Properties currently being written manually:
