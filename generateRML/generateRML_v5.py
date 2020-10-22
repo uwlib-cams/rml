@@ -3723,6 +3723,108 @@ f"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
 "].\n"
 ]
 
+# has identifier for expression
+P20002_list = [
+"ex:ExpressionMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rr:parentTriplesMap ex:IdentifierMap",
+"  ]",
+"].\n",
+f"ex:ExpressionMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rml:reference \"P20002/@resource\";",
+"    rr:termType rr:IRI",
+"  ]",
+"].\n",
+"ex:IdentifierMap a rr:TriplesMap;",
+"  rml:logicalSource [",
+f"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:referenceFormulation ql:XPath;",
+"    rml:iterator \"/RDF/Description/P20002[not(@resource)]\"",
+"  ].\n",
+"ex:IdentifierMap rr:subjectMap [",
+"  rr:termType rr:BlankNode;",
+"  rr:class bf:Identifier",
+"].\n",
+"ex:IdentifierMap rr:predicateObjectMap [",
+"  rr:predicate rdf:value;",
+"  rr:objectMap [",
+"    rml:reference \".\";",
+"    rr:termType rr:Literal",
+"  ]",
+"].\n"
+]
+
+# has identifier for manifestation
+P30004_list = [
+"ex:ManifestationMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rr:parentTriplesMap ex:IdentifierMap",
+"  ]",
+"].\n",
+f"ex:ManifestationMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rml:reference \"P30004/@resource\";",
+"    rr:termType rr:IRI",
+"  ]",
+"].\n",
+"ex:IdentifierMap a rr:TriplesMap;",
+"  rml:logicalSource [",
+f"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:referenceFormulation ql:XPath;",
+"    rml:iterator \"/RDF/Description/P30004[not(@resource)]\"",
+"  ].\n",
+"ex:IdentifierMap rr:subjectMap [",
+"  rr:termType rr:BlankNode;",
+"  rr:class bf:Identifier",
+"].\n",
+"ex:IdentifierMap rr:predicateObjectMap [",
+"  rr:predicate rdf:value;",
+"  rr:objectMap [",
+"    rml:reference \".\";",
+"    rr:termType rr:Literal",
+"  ]",
+"].\n"
+]
+
+# has identifier for item
+P40001_list = [
+"ex:ItemMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rr:parentTriplesMap ex:IdentifierMap",
+"  ]",
+"].\n",
+f"ex:ItemMap rr:predicateObjectMap [",
+"  rr:predicate bf:identifiedBy;",
+"  rr:objectMap [",
+"    rml:reference \"P40001/@resource\";",
+"    rr:termType rr:IRI",
+"  ]",
+"].\n",
+"ex:IdentifierMap a rr:TriplesMap;",
+"  rml:logicalSource [",
+f"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:referenceFormulation ql:XPath;",
+"    rml:iterator \"/RDF/Description/P40001[not(@resource)]\"",
+"  ].\n",
+"ex:IdentifierMap rr:subjectMap [",
+"  rr:termType rr:BlankNode;",
+"  rr:class bf:Identifier",
+"].\n",
+"ex:IdentifierMap rr:predicateObjectMap [",
+"  rr:predicate rdf:value;",
+"  rr:objectMap [",
+"    rml:reference \".\";",
+"    rr:termType rr:Literal",
+"  ]",
+"].\n"
+]
+
 # has authorized access point for work
 P10331_list = [
 "ex:WorkMap rr:predicateObjectMap [",
@@ -4832,9 +4934,9 @@ P40084_list = [
 ]
 
 skip_work_props = ["P10002", "P10331", "P10332"]
-skip_expression_props = ["P20313", "P20314"]
-skip_manifestation_props = ["P30294", "P30295"]
-skip_item_props = ["P40083", "P40084"]
+skip_expression_props = ["P20002", "P20313", "P20314"]
+skip_manifestation_props = ["P30004", "P30294", "P30295"]
+skip_item_props = ["P40001", "P40083", "P40084"]
 
 """Functions to parse CSV"""
 
@@ -4891,6 +4993,13 @@ def get_work_kiegel_list(csv_dir):
 					pass
 				else:
 					kiegel = line[3]
+
+					if ".subclass" in kiegel:
+						kiegel_split = kiegel.split("\nor\n")
+						for line in kiegel_split:
+							if ".subclass" in line:
+								kiegel_split.remove(line)
+						kiegel = "\nor\n".join(kiegel_split)
 
 					work_kiegel_list.append(kiegel)
 				line_count += 1
@@ -4951,6 +5060,13 @@ def get_expression_kiegel_list(csv_dir):
 				else:
 					kiegel = line[3]
 
+					if ".subclass" in kiegel:
+						kiegel_split = kiegel.split("\nor\n")
+						for line in kiegel_split:
+							if ".subclass" in line:
+								kiegel_split.remove(line)
+						kiegel = "\nor\n".join(kiegel_split)
+
 					expression_kiegel_list.append(kiegel)
 				line_count += 1
 
@@ -5010,6 +5126,13 @@ def get_manifestation_kiegel_list(csv_dir):
 				else:
 					kiegel = line[3]
 
+					if ".subclass" in kiegel:
+						kiegel_split = kiegel.split("\nor\n")
+						for line in kiegel_split:
+							if ".subclass" in line:
+								kiegel_split.remove(line)
+						kiegel = "\nor\n".join(kiegel_split)
+
 					manifestation_kiegel_list.append(kiegel)
 				line_count += 1
 
@@ -5068,6 +5191,13 @@ def get_item_kiegel_list(csv_dir):
 					pass
 				else:
 					kiegel = line[3]
+
+					if ".subclass" in kiegel:
+						kiegel_split = kiegel.split("\nor\n")
+						for line in kiegel_split:
+							if ".subclass" in line:
+								kiegel_split.remove(line)
+						kiegel = "\nor\n".join(kiegel_split)
 
 					item_kiegel_list.append(kiegel)
 				line_count += 1
