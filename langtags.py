@@ -1,12 +1,16 @@
 import os
-from sys import argv
+from datetime import date
+#from sys import argv
 
-script, data_directory = argv
+#script, data_directory = argv
 
-work_1List = os.listdir(f'output/{data_directory}/work_1')
-work_2List = os.listdir(f'output/{data_directory}/work_2')
-instanceList = os.listdir(f'output/{data_directory}/instance')
-itemList = os.listdir(f'output/{data_directory}/item')
+today = date.today()
+currentDate = str(today).replace('-', '_')
+
+work_1List = [] # os.listdir(f'output/{currentDate}/work_1')
+work_2List = [] # os.listdir(f'output/{currentDate}/work_2')
+instanceList = os.listdir(f'output/{currentDate}/instance')
+itemList = [] # os.listdir(f'output/{currentDate}/item')
 
 lang_tag_fix_list = [
 ("@ara", "@ar"), # arabic
@@ -28,11 +32,11 @@ lang_tag_fix_list = [
 
 def find_and_replace(entity, file, find_replace):
     """Find instances of an incorrect language tag, replace with correct language tag"""
-    open_file = open(f"output/{data_directory}/{entity}/{file}", "rt")
+    open_file = open(f"output/{currentDate}/{entity}/{file}", "rt")
     file_replacement = open_file.read()
     file_replacement = file_replacement.replace(f"{find_replace[0]}", f"{find_replace[1]}")
     open_file.close()
-    open_file = open(f"output/{data_directory}/{entity}/{file}", "wt")
+    open_file = open(f"output/{currentDate}/{entity}/{file}", "wt")
     open_file.write(file_replacement)
     open_file.close()
 
