@@ -231,16 +231,16 @@ def fix_item_output(itemList):
 			for line in output_file_lines:
 				output_file.write(line)
 
-work1List = [] # os.listdir(f"output/{currentDate}/work_1/")
-work2List = [] # os.listdir(f"output/{currentDate}/work_2/")
+work1List = os.listdir(f"output/{currentDate}/work_1/")
+work2List = os.listdir(f"output/{currentDate}/work_2/")
 instanceList = os.listdir(f"output/{currentDate}/instance/")
-itemList = [] # os.listdir(f"output/{currentDate}/item/")
+itemList = os.listdir(f"output/{currentDate}/item/")
 
 bf_date_prop_list = ["date", "originDate", "legalDate", "copyrightDate", "changeDate", "creationDate", "generationDate"]
 
 #
 
-#fix_work_1_output(work1List)
-#fix_work_2_output(work2List)
+fix_work_1_output(work1List)
+fix_work_2_output(work2List)
 fix_instance_output(instanceList)
-#fix_item_output(itemList)
+fix_item_output(itemList)
