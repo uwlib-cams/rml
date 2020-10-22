@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:33:56+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1006> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 video file"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Title from title screen (viewed April 17, 2020)"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lions Gate Films"@en ] ;
+            bf:date "2003"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Santa Monica, CA"@en ] ] ;
+    bf:provisionActivityStatement "[Santa Monica, CA] Lions Gate Films  [2003]"@en ;
+    bf:responsibilityStatement "Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray."@en ;
+    bf:soundCharacteristic <http://rdaregistry.info/termList/typeRec/1002> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Shattered glass"@en ] .
+

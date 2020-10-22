@@ -1,0 +1,25 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/665af0f6-abdd-4a92-9add-045cc806c28a> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:43:58+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:Classification ;
+            rdfs:label "Y 4.W 36:WMCP 101-19"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/b117b54d-ba45-4cc1-98ec-2654e93b657a> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "szgus"@eng ] .
+

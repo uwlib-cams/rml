@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/f24bfdbd-32d7-4e79-9199-3e4354df42a7> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "ries07" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-06"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:38:46+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:dimensions "25 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 265 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/95cb73d5-927f-41c2-9546-9b041de95bf0> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Springer"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Tokyo"@en ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Tsunami generation and progagation"@en ] .
+

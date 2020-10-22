@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/90c6a594-81de-4a13-b962-9ded257622e2> a bf:Instance ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent _:Na2150ee60d7445269367363e4af49556 ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:copyrightDate "©2107"^^xsd:gYear ;
+    bf:dimensions "27 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "352 pages"@en ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cookbooks" ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "2014032555" ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note _:N8e58fceb71e74816ba7b772e92f31e2d ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Interlink Books"@en ] ;
+            bf:date "2017"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Northampton (Mass.)"@en ] ],
+        [ a bf:Manufacture ;
+            bf:agent _:Na2150ee60d7445269367363e4af49556 ;
+            bf:note _:N8e58fceb71e74816ba7b772e92f31e2d ] ;
+    bf:responsibilityStatement "Marlene Matar"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@en ;
+            bf:subtitle "Celebrating the legendary cuisine of Syria"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Celebrating the legendary cuisine of Syria"@en ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@en ] .
+
+_:N8e58fceb71e74816ba7b772e92f31e2d a bf:Note ;
+    rdfs:label "book designer"@en ;
+    bf:noteType "role in manufacture"@en .
+
+_:Na2150ee60d7445269367363e4af49556 a bf:Agent ;
+    rdfs:label "Moushabeck, Leyla " .
+

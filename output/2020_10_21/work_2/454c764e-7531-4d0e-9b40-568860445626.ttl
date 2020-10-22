@@ -1,0 +1,23 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/454c764e-7531-4d0e-9b40-568860445626> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:13:36+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/59122c7c-302b-4a95-9201-717356a1350b> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "1919" .
+

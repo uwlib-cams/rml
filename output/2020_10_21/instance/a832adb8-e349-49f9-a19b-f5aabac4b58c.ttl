@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/a832adb8-e349-49f9-a19b-f5aabac4b58c> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "gerhart"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:34:18+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    bf:copyrightDate "℗1986"^^xsd:gYear ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1001> ;
+    bf:dimensions "4 3/4 in."@en ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1001> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Nimbus Records"@en ] ;
+            bf:date "[1986]" ]^^xsd:gYear ;
+    bf:responsibilityStatement "Stravinsky/Ramuz"@en ;
+    bf:soundCharacteristic <http://rdaregistry.info/termList/configPlayback/1002>,
+        <http://rdaregistry.info/termList/typeRec/1002> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The soldier's tale"@en ] .
+

@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/3ae462fd-27e3-4b13-8127-0c0bdb016fc4> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-25"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:28:53+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1039> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/0e468b37-033d-4ebe-85cf-5cdad4da9abd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "UW Libraries has limited edition copy 4/10"@en ],
+        [ a bf:Note ;
+            bf:noteType "University of Washington note"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Transformer Press"@en ] ;
+            bf:date "2018"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Kingston (Ont.)"@en ] ] ;
+    bf:provisionActivityStatement "[Kingston, Ontario] : Transformer Press, 2018"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Zipper"@en ] .
+

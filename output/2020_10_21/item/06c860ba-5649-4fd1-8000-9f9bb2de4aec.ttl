@@ -1,0 +1,26 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/06c860ba-5649-4fd1-8000-9f9bb2de4aec> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:41:10+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PQ2469.T7" ;
+            bf:itemPortion "E5 2008" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352080619653"@eng ] ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/d7a26fa5-bcee-4a05-a5e5-966a6d2c7ce2> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "szstx"@eng ] .
+

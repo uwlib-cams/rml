@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/19b551ac-893a-49af-8c1d-23e0bee928d8> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-10"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:26:07+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "PDF"@en ],
+        <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (ix, 170 pages)"@en ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44730> ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/e0319987-d987-44bd-b2a8-ef01507ad6a3> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed November 22, 2019)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@en ] ;
+            bf:date "[2019]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@en ] ] ;
+    bf:provisionActivityStatement "[Seattle] :  [University of Washington Libraries], [2019]"@en ;
+    bf:responsibilityStatement "Kelsey Grinde"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Statistical inference in admixed populations"@en ] .
+

@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/270f4eb6-8148-4bbd-9910-09475340cffb> a bf:Work ;
+    rdfs:label "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri. Russian"@rus ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:10:58+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/25a341e3-305a-49a9-8322-5a45a6227535> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri. Russian"@rus ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Charushin, Evgeniĭ Ivanovich, 1901-1965. Разные звери. Russian"@rus ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Cyrillic"@eng ] ;
+    bf:originDate "1931" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This picture book depicts different animals, such as bears, reindeer, and wolves. Each animal is illustrated and named, but there is otherwise no text."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Разные звери"@rus ],
+        [ a bf:Title ;
+            bf:mainTitle "Raznye zveri"@rus ] .
+
+_:N8b75fb104b8e476abf59adfc8b8e5cef a bf:Source ;
+    rdfs:label "RDA"@en .
+

@@ -1,0 +1,25 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/a40940e4-7a02-4f19-9129-99be2f03168d> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:45:34+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QL737.U55" ;
+            bf:itemPortion "H675 1988" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/2442f2d5-0841-4384-b08e-bd25c3a3d4e9> ;
+    bf:physicalLocation "natural history books"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "Bookshelf"@eng ] .
+

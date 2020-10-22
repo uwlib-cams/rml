@@ -1,0 +1,53 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/7bb2a32d-0232-440c-b008-0405e1cdc5d5> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:32:05+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 x 23 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "12 unnumbered pages"@en ] ;
+    bf:hasReproduction <https://trellis.sinopia.io/repository/washington/d663c291-6397-4cce-aa4c-6d5b2bd7ebec> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Also available electronically."@en ],
+        [ a bf:Note ;
+            rdfs:label "Cover title."@en ],
+        [ a bf:Note ;
+            rdfs:label "Chromolithographs. Stapled into self-wraps."@en ],
+        [ a bf:Note ;
+            rdfs:label "Publisher's white color-printed pictorial self wrappers."@en ] ;
+    bf:productionMethod [ a bf:ProductionMethod ;
+            rdfs:label "Chromolithography" ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "ДЕТИЗДАТ ЦК ВЛКСМ"@ru ] ;
+            bf:date "1939"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Leningrad]"@en ] ] ;
+    bf:responsibilityStatement "V. Lebedev"@ru,
+        "В. Лебедев"@ru ;
+    bf:seriesStatement "Bibliotechka detskogo sada"@ru,
+        "Библиотечка детского сада"@ru ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Игрушки и зверушки"@ru ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Igrushki i zverushki"@ru ;
+            bf:mainTitle "Igrushki i zverushki"@ru ] .
+

@@ -1,0 +1,28 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/bccffc16-e87e-4e34-9934-bbbc6aad4b74> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:47:03+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "N7433.4.W225" ;
+            bf:itemPortion "N38 2017" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352084716349"@eng ] ;
+    bf:itemOf <https://trellis.sinopia.io/repository/washington/35dfd27d-237e-4ab2-af3a-91d96f3bd9a4> ;
+    bf:physicalLocation "bothell"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "boart"@eng ] .
+

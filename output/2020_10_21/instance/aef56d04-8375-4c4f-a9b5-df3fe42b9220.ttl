@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/aef56d04-8375-4c4f-a9b5-df3fe42b9220> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:34:45+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    bf:dimensions "38 x 74 cm and  34 x 64 cm on sheet 43 x 82 cm, folded to 22 x 9 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 maps on 1 sheet"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a5e2f0f4-d441-4b7e-ad45-2af468d6bf56> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "City of Spokane Valley--Downtown Spokane."@en ],
+        [ a bf:Note ;
+            rdfs:label "Panel title."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes inset maps of Browne's addition,Cheney, Green Bluff, Liberty Lake retail corridor, City of Spokane Valley Sullivan Road retail corridor, indexed list to tourist attractions, advertisements, and color illustrations."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[2015]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Spokane, Washington"@en ] ] ;
+    bf:provisionActivityStatement "[Spokane, Washington?] : $b Visit Spokane, $c [2015]"@en ;
+    bf:responsibilityStatement "Visit Spokane"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Visit Spokane map"@en ] .
+

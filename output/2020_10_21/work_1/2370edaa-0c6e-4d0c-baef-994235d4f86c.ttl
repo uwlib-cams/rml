@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/2370edaa-0c6e-4d0c-baef-994235d4f86c> a bf:Work ;
+    rdfs:label "Visit Spokane (Organization). Visit Spokane map"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "202004-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:43:03+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026441>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026536>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026699> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            rdfs:label "G4284.S4E635 2015"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/lcc> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Visit Spokane (Organization). Visit Spokane map"@eng ] ;
+    bf:originDate "2015" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Spokane, Washington" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "CCentral business districts--Washington (State)--Spokane--Maps" ;
+            madsrdf:Authority "CCentral business districts--Washington (State)--Spokane--Maps" ;
+            madsrdf:authoritativeLabel "CCentral business districts--Washington (State)--Spokane--Maps" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Spokane (Wash.)--Maps" ;
+            madsrdf:Authority "Spokane (Wash.)--Maps" ;
+            madsrdf:authoritativeLabel "Spokane (Wash.)--Maps" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Spokane Valley (Wash.)--Maps" ;
+            madsrdf:Authority "Spokane Valley (Wash.)--Maps" ;
+            madsrdf:authoritativeLabel "Spokane Valley (Wash.)--Maps" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Visit Spokane map"@eng ] .
+

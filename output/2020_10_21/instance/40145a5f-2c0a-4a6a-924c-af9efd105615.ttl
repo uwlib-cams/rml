@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/40145a5f-2c0a-4a6a-924c-af9efd105615> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "04-08-2020"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:29:23+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "24 cm"@en ;
+    bf:editionStatement "第1版"@zh ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "6, 5, 2, 248 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "社会科学文献出版社"@zh ],
+                <http://id.loc.gov/rwo/agents/no2001101420> ;
+            bf:date "2018"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "北京"@zh ] ] ;
+    bf:provisionActivityStatement "北京 : 社会科学文献出版社, 2018"@zh ;
+    bf:responsibilityStatement "尹铁超著"@zh ;
+    bf:seriesStatement "Man--Tonggusi yu yan wen hua yan jiu wen ku"@zh,
+        "满-通古斯语言文化研究文库"@zh ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "朝鲜语与通古斯语关系研究"@zh ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Comparative study of Korean and Tungusic languages"@en ;
+            bf:mainTitle "Comparative study of Korean and Tungusic languages"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@zh ;
+            bf:mainTitle "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@zh ] .
+

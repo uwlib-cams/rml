@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:32:38+00:00"^^xsd:dateTime ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2018"^^xsd:gYear ;
+    bf:dimensions "24 cm" ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/6f37ad8e-93a0-40d2-b43e-1f7cc9e195b6> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Archaia"@en ],
+                [ a bf:Agent ;
+                    rdfs:label "Archaia" ] ;
+            bf:date "2018"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Los Angeles, CA"@en ] ] ;
+    bf:provisionActivityStatement "Los Angeles, CA : Archaia, [2018]"@en ;
+    bf:responsibilityStatement "David Jesus Vignolli"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A girl in the Himalayas"@en ] .
+

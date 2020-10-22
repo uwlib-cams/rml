@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/81141d70-53d0-4864-ba9a-492ba667af87> a bf:Work ;
+    rdfs:label "Wood, Deborah, 1952- Little dogs"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:N42fb1f53af874bf4be74a443dc872c17 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N02fc0e11e40f4d9d811f73d804211ec8,
+                _:N9568dd5721924e0792b7ac5eeebbc39e ],
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:N42fb1f53af874bf4be74a443dc872c17 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N02fc0e11e40f4d9d811f73d804211ec8,
+                _:N9568dd5721924e0792b7ac5eeebbc39e ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/7580672d-ace4-4a41-b89a-8a0b8631e586> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Wood, Deborah, 1952- Little dogs"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "color illustrations"@eng ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "2004" .
+
+_:N02fc0e11e40f4d9d811f73d804211ec8 a bf:Status ;
+    bf:code "n" .
+
+_:N42fb1f53af874bf4be74a443dc872c17 a bf:GenerationProcess ;
+    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:18:41+00:00" .
+
+_:N9568dd5721924e0792b7ac5eeebbc39e a bf:Status ;
+    bf:code "n" .
+

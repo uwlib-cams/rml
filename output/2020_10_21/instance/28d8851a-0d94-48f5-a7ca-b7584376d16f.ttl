@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/28d8851a-0d94-48f5-a7ca-b7584376d16f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:27:28+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    bf:dimensions "57 x 44 cm and 40 x 74 cm, sheet 60 x 76 cm, folded to 22 x 10 cm"@en ;
+    bf:editionStatement "2015 edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2 maps on 1 sheet"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/121557a5-5cf7-40a0-9b02-8779f201df38> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "AAA"@en ] ;
+            bf:date "[2015]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Heathrow, FL"@en ] ] ;
+    bf:provisionActivityStatement "Heathrow, FL : $b AAA, $c [2015]"@en ;
+    bf:responsibilityStatement "AAA"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Idaho Montana"@en ] .
+

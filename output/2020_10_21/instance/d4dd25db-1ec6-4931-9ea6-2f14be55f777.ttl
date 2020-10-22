@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/d4dd25db-1ec6-4931-9ea6-2f14be55f777> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:36:59+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©[1990]"^^xsd:gYear ;
+    bf:dimensions "25 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 203 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/95ce0610-1fac-4fbf-9f51-25fb002fd035> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Item 729"@en ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-426-P"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"April 2, 1990.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[Federal Courts Study Committee]"@en ] ;
+            bf:date "[1990]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Philadelphia, Pennsylvania?]"@en ] ] ;
+    bf:provisionActivityStatement "[Philadelphia, Pennsylvania?] : [Federal Courts Study Committee], [1990]"@en ;
+    bf:responsibilityStatement "Judicial Conference of the United States. Federal Courts Study Committee"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Report of the federal Courts Study Committee"@en ] .
+

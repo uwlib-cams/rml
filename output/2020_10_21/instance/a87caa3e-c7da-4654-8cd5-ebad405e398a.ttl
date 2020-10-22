@@ -1,0 +1,23 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/a87caa3e-c7da-4654-8cd5-ebad405e398a> a bf:Instance ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "2016"^^xsd:gYear ;
+    bf:dimensions "23 cm"@en ;
+    bf:editionStatement "2nd edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "555 pages"@en ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "2016"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Chicago"@en ] ] ;
+    bf:responsibilityStatement "Marcia Lei Zeng, Jian Qin"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Metadata"@en ] .
+

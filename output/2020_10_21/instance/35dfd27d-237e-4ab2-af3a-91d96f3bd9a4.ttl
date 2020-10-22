@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/35dfd27d-237e-4ab2-af3a-91d96f3bd9a4> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-12"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:28:27+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "12 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "12 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/0a873285-d181-4eb9-b2f0-17fadb2e583a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Gal-Pal Zines" ],
+                [ a bf:Agent ;
+                    rdfs:label "Gal-Pal Zines"@en ] ;
+            bf:date "2017"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Honolulu, Hawaii"@en ] ] ;
+    bf:provisionActivityStatement "[Honolulu, Hawaii] : Gal-Pal Zines, 2017"@en ;
+    bf:responsibilityStatement "by Myra Mae Waddell"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Nautilus"@en ] .
+

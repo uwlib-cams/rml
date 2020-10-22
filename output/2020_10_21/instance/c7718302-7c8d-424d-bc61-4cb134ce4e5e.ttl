@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/c7718302-7c8d-424d-bc61-4cb134ce4e5e> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:36:09+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1990"^^xsd:gYear ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "v, 28 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/3707b060-c28f-4361-88a0-f2854890bd85> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Distributed to some depository libraries in microfiche."@en ],
+        [ a bf:Note ;
+            rdfs:label "At head of title: 101st Congress, 2d session. Committee print."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"January 1990.\""@en ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-107-P."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"Serial no. 101-F.\""@en ],
+        [ a bf:Note ;
+            rdfs:label "Item 1009-B-1, 1009-C-1 (MF)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "United States Congress, Senate, Special Committee on Aging"@en ],
+                <http://id.loc.gov/rwo/agents/n80151956> ;
+            bf:date "1990"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@en ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : United States Congress, Senate, Special Committee on Aging, 1990"@en ;
+    bf:responsibilityStatement "United States. Congress. Senate. Special Committee on Aging."@en ;
+    bf:seriesEnumeration "101-69"@en ;
+    bf:seriesStatement "S. prt."@en,
+        "S. prt. ; 101-69"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Skyrocketing prescription drug prices"@en ;
+            bf:subtitle "turning a bad deal into a fair deal : a majority staff report of the Special Committee on Aging, United States Senate."@en ] .
+

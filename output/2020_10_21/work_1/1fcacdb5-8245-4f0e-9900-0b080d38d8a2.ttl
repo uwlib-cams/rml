@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/1fcacdb5-8245-4f0e-9900-0b080d38d8a2> a bf:Work ;
+    rdfs:label "Zeng, Marcia Lei, 1956- . Metadata"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "leemihwa"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:41:40+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Zeng, Macia Lei, 1956-" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Qin, Jian, 1956-. Metadata"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Zeng, Marcia Lei, 1956- . Metadata"@eng ],
+        <http://id.loc.gov/resources/works/18713336.html> ;
+    bf:originDate "2016" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Chicago" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Metadata"@eng ] .
+
+_:N8b75fb104b8e476abf59adfc8b8e5cef a bf:Source ;
+    rdfs:label "RDA"@en .
+

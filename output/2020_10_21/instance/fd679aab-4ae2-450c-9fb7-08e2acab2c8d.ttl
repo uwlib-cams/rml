@@ -1,0 +1,17 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/fd679aab-4ae2-450c-9fb7-08e2acab2c8d> a bf:Instance ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/4076d7bd-e965-461e-b213-483f0a14ea6c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "大阪市案内図"@en ;
+            bf:mainTitle "大阪市案内図"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Ōsaka-shi annaizu"@en ] .
+

@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://trellis.sinopia.io/repository/washington/fbb77272-6393-44bb-9934-e672ca51c4f2> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-13"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:40:15+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "185 pages"@en ] ;
+    bf:instanceOf <https://trellis.sinopia.io/repository/washington/7da5a062-e2cb-4c8a-acd4-2e600340dc83> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Summary in English."@en ],
+        [ a bf:Note ;
+            rdfs:label "Includes bibliographical references (pages 183-185)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Наукове товариство імени Шевченка"@uk ] ;
+            bf:date "1972"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Торонто"@uk ] ] ;
+    bf:responsibilityStatement "Alexandra Kopach"@en,
+        "Олександра Копач"@uk ;
+    bf:seriesEnumeration "ч. 11"@uk ;
+    bf:seriesStatement "Канадське наукове товариство ім. Шевченка"@uk ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Language and style of Ol'ha Kobylianska"@en,
+                "Мовостиль Ольги Кобилянської"@uk ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@uk ;
+            bf:mainTitle "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@uk ] .
+

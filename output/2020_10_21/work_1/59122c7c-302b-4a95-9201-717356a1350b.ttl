@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/59122c7c-302b-4a95-9201-717356a1350b> a bf:Work ;
+    rdfs:label "Bridgham, Gladys Ruth. I grant you three wishes"@eng ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "women" ;
+            bflc:CreatorCharacteristic "women" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:49:48+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "drama" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Bridgham, Gladys Ruth. I grant you three wishes"@eng ] ;
+    bf:originDate "1919" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "women college graduates -- drama" ;
+            madsrdf:Authority "women college graduates -- drama" ;
+            madsrdf:authoritativeLabel "women college graduates -- drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "wisdom -- drama " ;
+            madsrdf:Authority "wisdom -- drama " ;
+            madsrdf:authoritativeLabel "wisdom -- drama " ],
+        [ a madsrdf:Authority ;
+            rdfs:label "grandmothers -- drama" ;
+            madsrdf:Authority "grandmothers -- drama" ;
+            madsrdf:authoritativeLabel "grandmothers -- drama" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I grant you three wishes"@eng ] .
+

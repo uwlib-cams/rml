@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> a bf:Work ;
+    rdfs:label "Falcus, Matt. Lost airline colours of Europe. Text"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:11:12+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Falcus, Matt. Lost airline colors of Europe. Text"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
+            rdf:value "Falcus, Matt. Lost airline colours of Europe. Text"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2016" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "This book traces many of the schemes which were familiar across Europe, including national carriers, leisure airlines from the holiday charter boom, and regional airlines feeding our smaller airports. Many airlines in these pages have now been lost forever, and others continue in a completely revised scheme"@eng ] .
+
+_:N8b75fb104b8e476abf59adfc8b8e5cef a bf:Source ;
+    rdfs:label "RDA"@en .
+

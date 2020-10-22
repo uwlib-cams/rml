@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef> a bf:Work ;
+    rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Short stories. Selections"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-19" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:38:11+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026542>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026006> ;
+    bf:hasPart [ a bf:Work ;
+            rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Kut︠s︡yĭ" ],
+        [ a bf:Work ;
+            rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Pobeg" ],
+        [ a bf:Work ;
+            rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Maksimka" ],
+        [ a bf:Work ;
+            rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Dva mori︠a︡ka" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N7285dba4177f46238fab2e0de24046ca ;
+            rdf:value "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Short stories. Selections"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N7285dba4177f46238fab2e0de24046ca ;
+            rdf:value "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Rasskazy"@rus ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Short stories. Selections"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Рассказы"@rus ] .
+
+_:N7285dba4177f46238fab2e0de24046ca a bf:Source ;
+    rdfs:label "RDA"@en .
+

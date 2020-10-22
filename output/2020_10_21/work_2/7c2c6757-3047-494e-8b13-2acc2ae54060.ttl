@@ -1,0 +1,63 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://trellis.sinopia.io/repository/washington/7c2c6757-3047-494e-8b13-2acc2ae54060> a bf:Work ;
+    rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Winter)"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02" ;
+            bf:creationDate "2019-12-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:18:22+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "black and white" ],
+        [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+        <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://trellis.sinopia.io/repository/washington/c5ed4800-ab25-4fe6-804a-7bc84f67e719> ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh85064405> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N7285dba4177f46238fab2e0de24046ca ;
+            rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Winter)"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N7285dba4177f46238fab2e0de24046ca ;
+            rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English. 1936"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Chiefly black and white illustrations; five color plates"@eng ;
+            bf:noteType "has details of colour content"@en ],
+        [ a bf:Note ;
+            rdfs:label "Winter"@eng ;
+            bf:noteType "other distinguishing characteristic of expression"@en ] ;
+    bf:originDate "1936" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "When a new friend gives Hans and his sister Gretel enough money for one pair of ice skates, Hans insists that Gretel enter the grand skating competition, while he approaches the great Doctor who consents to try to restore their father's health and memory."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Silver skates"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ] .
+
+_:N7285dba4177f46238fab2e0de24046ca a bf:Source ;
+    rdfs:label "RDA"@en .
+
