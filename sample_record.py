@@ -255,19 +255,23 @@ manifestation_IRI_represented_list = []
 
 for csv_property in manifestation_property_list:
     for manifestation in manifestation_list:
-        with open(f"input/{data_directory}/manifestation/{manifestation}") as input_file:
-            for line in input_file:
-                input_property = line.strip()
-                input_property = input_property.split('>')[0]
-                input_property = input_property.split(' ')[0]
-                if csv_property in input_property:
-                    if input_property not in manifestation_literal_represented_list:
-                        if input_property not in manifestation_IRI_represented_list:
-                            manifestation_output_list.append(line)
-                            if "rdf:resource" in line:
-                                manifestation_IRI_represented_list.append(input_property)
-                            else:
-                                manifestation_literal_represented_list.append(input_property)
+        if ".ttl" in manifestation:
+            print(manifestation)
+            pass
+        else:
+            with open(f"input/{data_directory}/manifestation/{manifestation}") as input_file:
+                for line in input_file:
+                    input_property = line.strip()
+                    input_property = input_property.split('>')[0]
+                    input_property = input_property.split(' ')[0]
+                    if csv_property in input_property:
+                        if input_property not in manifestation_literal_represented_list:
+                            if input_property not in manifestation_IRI_represented_list:
+                                manifestation_output_list.append(line)
+                                if "rdf:resource" in line:
+                                    manifestation_IRI_represented_list.append(input_property)
+                                else:
+                                    manifestation_literal_represented_list.append(input_property)
 
 manifestation_output_ending_list = [
 "  </rdf:Description>\n",
