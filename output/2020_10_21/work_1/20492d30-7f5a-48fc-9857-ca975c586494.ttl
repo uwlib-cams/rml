@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/20492d30-7f5a-48fc-9857-ca975c586494> a bf:Work ;
     rdfs:label "Murg, Bradley Jensen. Impetus or impediment"@eng ;
@@ -10,11 +11,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jmoede"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-30" ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:41:58+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:41:58+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -23,7 +24,7 @@
         [ a bf:Dissertation ;
             bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
         [ a bf:Dissertation ;
-            bf:date "2015" ],
+            bf:date "2015" ]^^xsd:gYear ,
         [ a bf:Dissertation ;
             bf:degree "Ph. D."@eng ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
@@ -34,7 +35,7 @@
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Murg, Bradley Jensen. Impetus or impediment"@eng ] ;
-    bf:originDate "2015" ;
+    bf:originDate "2015"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Investments, Foreign--Law and legislation--Russia (Federation)" ;
             madsrdf:Authority "Investments, Foreign--Law and legislation--Russia (Federation)" ;

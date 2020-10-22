@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/d21e9509-d5ce-42b7-95b3-25042867d2e1> a bf:Work ;
     rdfs:label "Solomon-Fears, Carmen. Child Support Enforcement program. Text. English"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "emcotter"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-30" ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:22:28+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:22:28+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -28,5 +29,5 @@
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "1989" .
+    bf:originDate "1989"^^xsd:gYear .
 

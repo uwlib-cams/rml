@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/287c0864-7afa-4f15-b811-7fe191e9f8a9> a bf:Work ;
     rdfs:label "Falcus, Matt. Lost airline colours of Europe. Text"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-20" ;
+            bf:creationDate "2020-05-20"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:11:12+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:11:12+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -37,7 +38,7 @@
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "2016" ;
+    bf:originDate "2016"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "This book traces many of the schemes which were familiar across Europe, including national carriers, leisure airlines from the holiday charter boom, and regional airlines feeding our smaller airports. Many airlines in these pages have now been lost forever, and others continue in a completely revised scheme"@eng ] .
 

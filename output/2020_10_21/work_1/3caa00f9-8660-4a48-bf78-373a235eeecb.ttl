@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/3caa00f9-8660-4a48-bf78-373a235eeecb> a bf:Work ;
     rdfs:label "Woodbridge, Sally Byrne. A guide to architecture in Washington State"@eng ;
@@ -15,11 +16,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-06" ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:45:55+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:45:55+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -36,7 +37,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
             rdf:value "Woodbridge, Sally Byrne. A guide to architecture in Washington State"@eng ] ;
-    bf:originDate "1980" ;
+    bf:originDate "1980"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Architecture --  Washington (State) -- Guidebooks" ;
             madsrdf:Authority "Architecture --  Washington (State) -- Guidebooks" ;

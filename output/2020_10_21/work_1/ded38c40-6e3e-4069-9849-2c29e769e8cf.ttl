@@ -2,6 +2,7 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/ded38c40-6e3e-4069-9849-2c29e769e8cf> a bf:Work ;
     rdfs:label "Abū Zayd, Naṣr Ḥāmid. Tajdīd wa-al-taḥrīm wa-al-taʼwīl"@eng ;
@@ -10,11 +11,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-18" ;
+            bf:creationDate "2019-12-18"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:55+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:55+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:identifiedBy [ a bf:Identifier ;
             bf:note [ a bf:Note ;
@@ -28,7 +29,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:N8b75fb104b8e476abf59adfc8b8e5cef ;
             rdf:value "Abū Zayd, Naṣr Ḥāmid. تجديد والتحريم والتأويل"@eng ] ;
-    bf:originDate "2017" ;
+    bf:originDate "2017"^^xsd:gYear ;
     bf:partOf [ a bf:Work ;
             rdfs:label "Silsilat kutub (Muʼassasat Muʼminūn bi-lā Ḥudūd lil-Dirāsāt wa-al-Abḥāth (Morocco))" ] ;
     bf:relatedTo [ a bf:Work ;

@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/52a0ccb7-3ddd-4731-9c19-9074f388de8e> a bf:Work ;
     rdfs:label "Li, Jingjing. He li you yu. 2019"@chi ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee37"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-21" ;
+            bf:creationDate "2020-02-21"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:15:13+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:15:13+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -59,7 +60,7 @@
             rdfs:label "Han (Simplifed variant)"@eng ],
         [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "2019" .
+    bf:originDate "2019"^^xsd:gYear .
 
 _:N9f98cdf7650949c6afa22aa63fee87c3 a bf:Note ;
     rdfs:label "Variant access point"@en ;

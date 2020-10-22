@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/bd9d343d-229d-49b9-9eb1-34367dcbfada> a bf:Work ;
     rdfs:label "Amir, Eli. Yasmin"@heb ;
@@ -14,12 +15,12 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-05-07" ;
-            bf:creationDate "2020-05-06" ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:01:39+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:01:39+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -42,7 +43,7 @@
             bf:source _:N7285dba4177f46238fab2e0de24046ca ;
             rdf:value "Ami, Eli. Jasmine"@eng ],
         <http://viaf.org/viaf/302444691> ;
-    bf:originDate "2005" ;
+    bf:originDate "2005"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79003285> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Women, Palestinian Arab--Fiction" ;

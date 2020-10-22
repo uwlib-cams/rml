@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2be1aad1-4cae-4a38-82aa-896480e41a79> a bf:Work ;
     rdfs:label "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee70"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2011-02-11" ;
+            bf:creationDate "2011-02-11"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:45:05+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:45:05+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -34,7 +35,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:Nf781e9dd52144dd9b0b0a88ed99ad4f7 ;
             rdf:value "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖"@jpn ] ;
-    bf:originDate "1950" ;
+    bf:originDate "1950"^^xsd:gYear ;
     bf:originPlace [ a bf:Place ;
             rdfs:label "Japan" ] ;
     bf:subject [ a madsrdf:Authority ;

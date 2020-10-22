@@ -2,14 +2,15 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/81141d70-53d0-4864-ba9a-492ba667af87> a bf:Work ;
     rdfs:label "Wood, Deborah, 1952- Little dogs"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-04-23" ;
-            bf:creationDate "2020-04-22" ;
+            bf:changeDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2020-04-22"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:N42fb1f53af874bf4be74a443dc872c17 ;
@@ -19,7 +20,7 @@
         [ a bf:AdminMetadata ;
             bflc:catalogerID "aentze"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-22" ;
+            bf:creationDate "2020-04-22"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess _:N42fb1f53af874bf4be74a443dc872c17 ;
@@ -42,13 +43,13 @@
     bf:note [ a bf:Note ;
             rdfs:label "color illustrations"@eng ;
             bf:noteType "has details of colour content"@en ] ;
-    bf:originDate "2004" .
+    bf:originDate "2004"^^xsd:gYear .
 
 _:N02fc0e11e40f4d9d811f73d804211ec8 a bf:Status ;
     bf:code "n" .
 
 _:N42fb1f53af874bf4be74a443dc872c17 a bf:GenerationProcess ;
-    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:18:41+00:00" .
+    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:18:41+00:00"^^xsd:dateTime ] .
 
 _:N9568dd5721924e0792b7ac5eeebbc39e a bf:Status ;
     bf:code "n" .

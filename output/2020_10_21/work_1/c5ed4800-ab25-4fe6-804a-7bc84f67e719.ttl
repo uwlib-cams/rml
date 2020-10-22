@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/c5ed4800-ab25-4fe6-804a-7bc84f67e719> a bf:Work ;
     rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker"@eng ;
@@ -11,11 +12,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-11-27" ;
+            bf:creationDate "2019-11-27"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:02:16+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:02:16+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -34,7 +35,7 @@
             rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker"@eng ],
         <http://viaf.org/viaf/83145424560386831350>,
         <http://www.wikidata.org/entity/Q2710575> ;
-    bf:originDate "1865" ;
+    bf:originDate "1865"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Netherlands--Juvenile fiction" ;

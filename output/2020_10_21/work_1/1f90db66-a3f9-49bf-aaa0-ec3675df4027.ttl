@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/1f90db66-a3f9-49bf-aaa0-ec3675df4027> a bf:Work ;
     rdfs:label "Kyzytse mariĭ literatur"@chm ;
@@ -10,11 +11,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "dbrookin"@zxx ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-03-17" ;
+            bf:creationDate "2020-03-17"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:41:31+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:41:31+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;

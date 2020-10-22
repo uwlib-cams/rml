@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/1204a5b5-49c0-40b0-b7ce-cdee99e8e54b> a bf:Work ;
     rdfs:label "Strickler, Dee. Wayside wildflowers of the Pacific Northwest"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-06" ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:40:08+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:40:08+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -33,7 +34,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:N93a1efd0f3784f3a8d24f74190f6a4cb ;
             rdf:value "Strickler, Zoe. Wayside wildflowers of the Pacific Northwest"@eng ] ;
-    bf:originDate "1993" ;
+    bf:originDate "1993"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Roadside plants -- Northwest, Pacific -- Identification" ;
             madsrdf:Authority "Roadside plants -- Northwest, Pacific -- Identification" ;

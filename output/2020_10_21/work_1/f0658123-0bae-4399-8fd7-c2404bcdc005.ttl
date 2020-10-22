@@ -2,6 +2,7 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/f0658123-0bae-4399-8fd7-c2404bcdc005> a bf:Work ;
     rdfs:label "An, Jonathan Y. Targeting mTOR to reverse age-associated periodontal disease"@eng ;
@@ -9,11 +10,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins@uw.edu"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-05" ;
+            bf:creationDate "2020-05-05"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:05:55+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:05:55+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -22,7 +23,7 @@
                     rdfs:label "Kaeberlein, Matt" ] ;
             bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
     bf:dissertation [ a bf:Dissertation ;
-            bf:date "2019"@zxx ],
+            bf:date "2019"@zxx ]^^xsd:gYear ,
         [ a bf:Dissertation ;
             bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
         [ a bf:Dissertation ;
@@ -35,7 +36,7 @@
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "An, Jonathan Y. Targeting mTOR to reverse age-associated periodontal disease"@eng ] ;
-    bf:originDate "2019" ;
+    bf:originDate "2019"^^xsd:gYear ;
     bf:originPlace [ a bf:Place ;
             rdfs:label "[Seattle]" ] ;
     bf:subject <http://id.nlm.nih.gov/mesh/D000375>,

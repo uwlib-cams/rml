@@ -1,16 +1,17 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/0a8385c4-35ad-4640-a702-0e285625eefb> a bf:Work ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-22" ;
+            bf:creationDate "2020-04-22"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:08:15+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:08:15+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -31,7 +32,7 @@
     bf:note [ a bf:Note ;
             rdfs:label "map of North American beaver range"@eng ;
             bf:noteType "details of illustrative content"@en ] ;
-    bf:originDate "2018" ;
+    bf:originDate "2018"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "Ben Goldfarb reveals that our modern idea of what a healthy landscape looks like and how it functions is wrong, distorted by the fur trade that once trapped out millions of beavers from North America's lakes and rivers. The consequences of losing beavers were profound: streams eroded, wetlands dried up, and species from salmon to swans lost vital habitat."@eng ] ;
     bf:supplementaryContent [ a bf:SupplementaryContent ;

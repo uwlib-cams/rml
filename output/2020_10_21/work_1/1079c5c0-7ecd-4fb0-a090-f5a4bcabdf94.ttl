@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/1079c5c0-7ecd-4fb0-a090-f5a4bcabdf94> a bf:Work ;
     rdfs:label "Li, Jingjing. He li you yu"@chi ;
@@ -11,11 +12,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee37"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-21" ;
+            bf:creationDate "2020-02-21"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:57+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:57+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -39,7 +40,7 @@
             bf:note _:N7285dba4177f46238fab2e0de24046ca ;
             bf:source _:N93a1efd0f3784f3a8d24f74190f6a4cb ;
             rdf:value "Li, Jingjing. 河里有鱼"@chi ] ;
-    bf:originDate "2019" ;
+    bf:originDate "2019"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79076155> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Chinese language--Study and teaching--Juvenile literature" ;

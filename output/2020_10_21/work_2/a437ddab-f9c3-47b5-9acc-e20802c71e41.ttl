@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/a437ddab-f9c3-47b5-9acc-e20802c71e41> a bf:Work ;
     rdfs:label "Yin, Tiechao, 1958- Chaoxian yu yu Tonggusi yu guan xi yan jiu. Chinese"@chi ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee37"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "04-08-2020" ;
+            bf:creationDate "04-08-2020"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:20:18+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:20:18+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -39,7 +40,7 @@
             rdfs:label "Han (Simplified)"@eng ],
         [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "2018" ;
+    bf:originDate "2018"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "本书在充分分析, 借鉴国内外研究者相关研究成果基础上, 进行了朝鲜语与通古斯语两者间的同源比较.作者对两种语言进行时段划分, 再从语音(元音和辅音), 音节结构(声调, 重音, 原因和谐), 超音段特征, 语法(构词法, 词类, 句子构成等)等几方面探讨朝鲜语和通古斯语的同源性, 通过罗列不同研究者的观点分析, 比对, 引用了大量的文献和语言例证, 指出已有研究的不足和困难, 同时也能做出自己的论断."@chi ] ;
     bf:supplementaryContent [ a bf:SupplementaryContent ;

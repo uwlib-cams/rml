@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/0a4ea663-988e-474b-a25e-659b935b65a9> a bf:Work ;
     rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma"@rus ;
@@ -11,12 +12,12 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-05-08" ;
-            bf:creationDate "2020-01-15" ;
+            bf:changeDate "2020-05-08"^^xsd:date ;
+            bf:creationDate "2020-01-15"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:06+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:06+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -41,7 +42,7 @@
             bf:note _:N58c649c6576844dc987dff76956791f8 ;
             bf:source _:N9f98cdf7650949c6afa22aa63fee87c3 ;
             rdf:value "Dostoyevsky, Fyodor, 1821-1881. Записки изъ мертваго дома"@rus ] ;
-    bf:originDate "1862" ;
+    bf:originDate "1862"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n80001203> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Exiles--Russia (Federation)--Siberia--Fiction" ;

@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/dd6d4c68-3985-41a1-a866-022326d8d063> a bf:Work ;
     rdfs:label "Alcott, Louisa May, 1832-1888. Little women"@eng ;
@@ -12,12 +13,12 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2020-02-11" ;
-            bf:creationDate "2020-02-11" ;
+            bf:changeDate "2020-02-11"^^xsd:date ;
+            bf:creationDate "2020-02-11"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:44+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:44+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -58,7 +59,7 @@
             bf:source _:N93a1efd0f3784f3a8d24f74190f6a4cb ;
             rdf:value "Alcott, Louisa May, 1832-1888. Meg, Jo, Beth, and Amy"@eng ],
         <http://www.wikidata.org/entity/Q523076> ;
-    bf:originDate "1868-1869" ;
+    bf:originDate "1868-1869"^^xsd:gYearMonth ;
     bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "New England--Juvenile fiction" ;

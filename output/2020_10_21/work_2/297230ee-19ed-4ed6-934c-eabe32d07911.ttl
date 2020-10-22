@@ -2,18 +2,19 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/297230ee-19ed-4ed6-934c-eabe32d07911> a bf:Work ;
     rdfs:label "Braun, Georg, ǂd 1540 or 1541-1622. Civitates orbis terrarum. German. 1617. Part 4. Plate 41."@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-09" ;
+            bf:creationDate "2019-12-09"^^xsd:date ;
             bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/dcrmc>,
                 <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:11:19+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:11:19+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:cartographicAttributes <http://id.loc.gov/vocabulary/mrelief/pict> ;
     bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
@@ -42,7 +43,7 @@
         [ a bf:Note ;
             rdfs:label "Text on verso begins with decorative initial \"P\". Has plate number \"41\" in lower right. Last line of text \"schafft ... erkendt\" (followed by geographical position). First line ends \"des\"."@eng ;
             bf:noteType "note on expression"@en ] ;
-    bf:originDate "1617" ;
+    bf:originDate "1617"^^xsd:gYear ;
     bf:scale <http://rdaregistry.info/termList/scale/1002> ;
     bf:title [ a bf:Title ;
             bf:mainTitle "Alten Stettin (Map : 1588). German. 1617"@eng ],

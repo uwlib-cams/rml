@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/2370edaa-0c6e-4d0c-baef-994235d4f86c> a bf:Work ;
     rdfs:label "Visit Spokane (Organization). Visit Spokane map"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "lins"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "202004-21" ;
+            bf:creationDate "202004-21"^^xsd:gYearMonth ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:43:03+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:43:03+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -31,7 +32,7 @@
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Visit Spokane (Organization). Visit Spokane map"@eng ] ;
-    bf:originDate "2015" ;
+    bf:originDate "2015"^^xsd:gYear ;
     bf:originPlace [ a bf:Place ;
             rdfs:label "Spokane, Washington" ] ;
     bf:subject [ a madsrdf:Authority ;

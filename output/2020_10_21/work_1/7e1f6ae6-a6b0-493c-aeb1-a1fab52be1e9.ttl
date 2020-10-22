@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/7e1f6ae6-a6b0-493c-aeb1-a1fab52be1e9> a bf:Work ;
     rdfs:label "Shaping Seattle architecture : a historical guide to the architects"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jmoede"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-04-17" ;
+            bf:creationDate "2020-04-17"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:54:11+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:54:11+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -35,7 +36,7 @@
             rdf:value "Shaping Seattle architecture : a historical guide to the architects"@eng ],
         [ a bf:Identifier ;
             rdf:value "94-17618" ] ;
-    bf:originDate "[1994]" ;
+    bf:originDate "[1994]"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Architecture--Washington (State)--Seattle--History" ;
             madsrdf:Authority "Architecture--Washington (State)--Seattle--History" ;

@@ -3,20 +3,21 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/15381424-2eda-4d58-ad47-b1029e784398> a bf:Work ;
     rdfs:label "Arostegui, Martin C. (Martin Christopher). Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-03" ;
+            bf:creationDate "2019-12-03"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:40:32+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:40:32+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:dissertation [ a bf:Dissertation ;
-            bf:date "2019"@eng ],
+            bf:date "2019"@eng ]^^xsd:gYear ,
         [ a bf:Dissertation ;
             rdfs:label "Doctor of Philosophy University of Washington 2019"@eng ],
         [ a bf:Dissertation ;
@@ -31,7 +32,7 @@
             bf:source [ a bf:Source ;
                     rdfs:label "RDA"@en ] ;
             rdf:value "Arostegui, Martin C. (Martin Christopher). Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] ;
-    bf:originDate "2019" ;
+    bf:originDate "2019"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Rainbow trout--Ecology" ;
             madsrdf:Authority "Rainbow trout--Ecology" ;

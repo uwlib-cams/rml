@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/61231191-9b85-4ba4-aa90-42a64e6bac9c> a bf:Work ;
     rdfs:label "Falcus, Matt. Lost airline colours of Europe"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-20" ;
+            bf:creationDate "2020-05-20"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:51:17+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:51:17+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -30,7 +31,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:Nf781e9dd52144dd9b0b0a88ed99ad4f7 ;
             rdf:value "Falcus, Matt. Lost airline colors of Europe"@eng ] ;
-    bf:originDate "2016" ;
+    bf:originDate "2016"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
     bf:relatedTo <http://id.loc.gov/authorities/names/no2015137282>,
         <https://trellis.sinopia.io/repository/washington/b8a70189-1a6b-4efd-99f1-0674a65052ee> ;

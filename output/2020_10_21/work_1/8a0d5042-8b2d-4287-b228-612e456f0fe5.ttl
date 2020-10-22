@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/8a0d5042-8b2d-4287-b228-612e456f0fe5> a bf:Work ;
     rdfs:label "Flora, Charles J. (Charles Jerry). Sound and the sea"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "pfreeman"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-05-04" ;
+            bf:creationDate "2020-05-04"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:55:41+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:55:41+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -31,7 +32,7 @@
                     bf:noteType "type of identifier"@en ] ;
             bf:source _:Na2150ee60d7445269367363e4af49556 ;
             rdf:value "Fairbanks, Eugene F. Sound and the sea"@eng ] ;
-    bf:originDate "1977" ;
+    bf:originDate "1977"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Marine invertebrates -- Identification" ;
             madsrdf:Authority "Marine invertebrates -- Identification" ;

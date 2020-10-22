@@ -3,17 +3,18 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/0b6addf4-d44d-4502-a637-a50e70420b80> a bf:Work ;
     rdfs:label "Progress in Science, Progress in Society (Conference) ( 2016 : Brussels, Belgium). Progress in science, progress in society"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-04" ;
+            bf:creationDate "2019-12-04"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:24+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:39:24+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:contribution [ a bf:Contribution ;
             bf:agent [ a bf:Agent ;
@@ -31,7 +32,7 @@
             rdfs:label "\"On November 18-19, 2016, the European Academy of Sciences organized a conference devoted to the theme 'Progress in Science, Progress in Society', in cooperation with the Académie royale de Belgique. The conference took place at the Palais des Académies in Brussels, Belgium. We are glad to publish the proceedings of this conference for the general public\"--Print version, page vii."@eng ],
         [ a bf:Note ;
             rdfs:label "Contents: Is progress for science, progress for society? / Catherine Bréchignac -- Science and social communication / Natividad Carpintero-Santamaría -- Understanding phenomena by building models : methodological studies on physical chemistry / Martin Carrier, Armin Gölzhäuser and Katharina Kohse-Höinghaus -- Making education more inclusive and more integrated / Claude Debru -- The contribution of social sciences and the humanities to research addressing societal challenges. Towards a policy for interdisciplinarity at European level? / Philippe Keraudren -- Science in an age of (non)reason / John R. Porter and Bernd Wollenweber -- New perspectives in genetic therapies / Alain Fischer -- Technological innovation as a factor of penetration of science in society / Franc̦ois Guinot -- Law facing information and communication technology (ICT)--conflict or alliance? / Yves Poullet."@eng ] ;
-    bf:originDate "2018" ;
+    bf:originDate "2018"^^xsd:gYear ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Science and the humanities--Congresses" ;
             madsrdf:Authority "Science and the humanities--Congresses" ;

@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/055719b8-ddee-48b8-aad0-3553d0752168> a bf:Work ;
     rdfs:label "Progress in Science, Progress in Society (Conference) ( 2016 : Brussels, Belgium). Progress in science, progress in society. English"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2019-12-04" ;
+            bf:creationDate "2019-12-04"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:08:02+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:08:02+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
     bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
@@ -31,7 +32,7 @@
     bf:note [ a bf:Note ;
             rdfs:label "Includes bibliographical references."@eng ;
             bf:noteType "note on expression"@en ] ;
-    bf:originDate "2018" ;
+    bf:originDate "2018"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "This book addresses current societal debates around the globe. Written by respected researchers from France, Germany, Belgium, Denmark, Spain, Portugal and Italy, the chapters are based on presentations given at a conference organized by the European Academy of Sciences, in partnership with the Royal Academy of Belgium and French Academy of Sciences, in Brussels (Belgium) in November 2016. The book approaches science and society from a perspective of progress. Does progress in science ultimately translate into progress in society? How can we ensure that scientific progress becomes both materially and intellectually beneficial for society, including people who are far away from or socially excluded from it? Progress is a common feature of science and of human societies. There is no doubt that one of the driving forces of the material and intellectual progress of mankind has been science and technology. However, these are not the only forces acting on human history, so that the role of science and technology is not always fully recognized and sometimes even rejected. The various chapters of this book cover many aspects of these issues, arriving at valuable new insights."@eng ] ;
     bf:title [ a bf:Title ;

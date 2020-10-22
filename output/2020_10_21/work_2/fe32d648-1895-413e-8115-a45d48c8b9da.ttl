@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/fe32d648-1895-413e-8115-a45d48c8b9da> a bf:Work ;
     rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-01-15" ;
+            bf:creationDate "2020-01-15"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:24:47+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:24:47+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -33,7 +34,7 @@
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "1915" ;
+    bf:originDate "1915"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "\"The narrator, Aleksandr Petrovich Goryanchikov, has been sentenced to penalty deportation to Siberia and ten years of hard labour for murdering his wife. Life in prison is particularly hard for Aleksandr Petrovich, since he is a \"gentleman\" and suffers the malice of the other prisoners, nearly all of whom belong to the peasantry. Gradually Goryanchikov overcomes his revulsion at his situation and his fellow convicts, undergoing a spiritual re-awakening that culminates with his release from the camp. It is a work of great humanity; Dostoevsky portrays the inmates of the prison with sympathy for their plight, and also expresses admiration for their energy, ingenuity and talent. He concludes that the existence of the prison, with its absurd practices and savage corporal punishments is a tragic fact, both for the prisoners and for Russia\"--Wikipedia, January 15, 2020."@eng ] ;
     bf:title [ a bf:VariantTitle ;

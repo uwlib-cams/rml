@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/7931f622-717d-43ae-8121-ccffd0e47149> a bf:Work ;
     rdfs:label "Lei, Zepu. Xinning xiang tu di li"@eng ;
@@ -11,11 +12,11 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "jlee37"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-02-07" ;
+            bf:creationDate "2020-02-07"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:53:10+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T14:53:10+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -37,7 +38,7 @@
             bf:note _:N7285dba4177f46238fab2e0de24046ca ;
             bf:source _:N93a1efd0f3784f3a8d24f74190f6a4cb ;
             rdf:value "Lei, Zepu."@eng ] ;
-    bf:originDate "1909",
+    bf:originDate "1909"^^xsd:gYear ,
         "宣統元年" ;
     bf:originPlace [ a bf:Place ;
             rdfs:label "Taishan Shi (China)" ] ;

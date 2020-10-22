@@ -3,6 +3,7 @@
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/da71d823-03f2-4122-8d5d-3e38df134370> a bf:Work ;
     rdfs:label "Verne, Jules, ǂd 1828-1905. Tour du monde en quatre-vingts jours"@eng ;
@@ -11,12 +12,12 @@
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "aschiff"@eng ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:changeDate "2019-12-02" ;
-            bf:creationDate "2019-12-02" ;
+            bf:changeDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:17+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:03:17+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026217>,
         <http://id.loc.gov/authorities/genreForms/gf2015026020>,
@@ -40,7 +41,7 @@
         <http://id.worldcat.org/fast/1361614>,
         <http://viaf.org/viaf/174954981>,
         <http://www.wikidata.org/entity/Q1219561> ;
-    bf:originDate "1872" ;
+    bf:originDate "1872"^^xsd:gYear ;
     bf:originPlace <http://id.loc.gov/authorities/names/n79006404> ;
     bf:subject [ a madsrdf:Authority ;
             rdfs:label "Wagers--Fiction" ;

@@ -2,17 +2,18 @@
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://trellis.sinopia.io/repository/washington/ddee57d3-5e03-43f3-ac3f-673231e23928> a bf:Work ;
     rdfs:label "Christie, Agatha, 1890-1976. Pocket full of rye. English"@eng ;
     bf:adminMetadata [ a bf:AdminMetadata ;
             bflc:catalogerID "cec23" ;
             bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
-            bf:creationDate "2020-01-28" ;
+            bf:creationDate "2020-01-28"^^xsd:date ;
             bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
             bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
             bf:generationProcess [ a bf:GenerationProcess ;
-                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:23:11+00:00" ] ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-10-21T15:23:11+00:00"^^xsd:dateTime ] ;
             bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
             bf:status [ a bf:Status ;
                     bf:code "n" ] ] ;
@@ -28,7 +29,7 @@
     bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
     bf:notation [ a bf:Script ;
             rdfs:label "Latin"@eng ] ;
-    bf:originDate "1953" ;
+    bf:originDate "1953"^^xsd:gYear ;
     bf:summary [ a bf:Summary ;
             rdfs:label "\"It started with a spot of tea. It ended in tragedy when the wealthy Rex Fortescue sipped his last cup, fell ill, and died. The only clue: a pocketful of rye found on the victim. The murder seemed without rhyme or reason--until the shrewd Miss Marple recalled that delightful nursery rhyme 'Sing a Song of Sixpence.' A playful hint, indeed. But the spinster sleuth knew that murder was anything but child's play...\"--Page 4 of cover."@eng ] ;
     bf:title [ a bf:Title ;
