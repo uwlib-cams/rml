@@ -1,5 +1,4 @@
 import os
-import rdflib
 import time
 from rdflib import *
 from datetime import date
@@ -45,7 +44,6 @@ def save_works(URI_list, currentDate):
 	if not os.path.exists(f'input/{currentDate}/work'):
 		print("...\nCreating work directory")
 		os.system(f'mkdir input/{currentDate}/work')
-	#print(f"...\nLocating works")
 	workURIList = []
 	bar = Bar('Locating works', max=len(URI_list), suffix='%(percent)d%%')
 	for uri in URI_list:
@@ -182,9 +180,10 @@ def transform_works(workList, currentDate):
 	if not os.path.exists(f'output/{currentDate}/work_1'):
 		print(f'...\nCreating work_1 directory')
 		os.makedirs(f'output/{currentDate}/work_1')
-	#print(f"...\nTransforming {len(workList)} files from RDA Work to BIBFRAME Work")
+	print("...")
 	bar = Bar(f'Transforming {len(workList)} files from RDA Work to BIBFRAME Work', max=len(workList), suffix='%(percent)d%%')
-	for work in workList:
+	#bar = Bar(f'Transforming 3 files from RDA Work to BIBFRAME Work', max=3, suffix='%(percent)d%%')
+	for work in workList: # [0:3]:
 		os.system(f"chmod u+rwx input/{currentDate}/work/{work}") # adjust file permissions for data
 		label = work.split('.')[0] # save trellis identifier as label
 		workID = f"{currentDate}/work/{label}" # use label to make path
@@ -222,9 +221,10 @@ def transform_expressions(expressionList, currentDate):
 	if not os.path.exists(f'output/{currentDate}/work_2'):
 		print(f'...\nCreating work_2 directory')
 		os.makedirs(f'output/{currentDate}/work_2')
-	#print(f"...\nTransforming {len(expressionList)} from RDA Expression to BIBFRAME Work")
+	print("...")
 	bar = Bar(f'Transforming {len(expressionList)} from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%')
-	for expression in expressionList:
+	#bar = Bar(f'Transforming 3 from RDA Expression to BIBFRAME Work', max=3, suffix='%(percent)d%%')
+	for expression in expressionList: # [0:3]:
 		os.system(f"chmod u+rwx input/{currentDate}/expression/{expression}") # adjust file permissions for data
 		label = expression.split('.')[0] # save trellis identifier as label
 		expressionID = f"{currentDate}/expression/{label}" # use label to make path
@@ -262,9 +262,10 @@ def transform_manifestations(manifestationList, currentDate):
 	if not os.path.exists(f'output/{currentDate}/instance'):
 		print(f'...\nCreating instance directory')
 		os.makedirs(f'output/{currentDate}/instance')
-	#print(f"...\nTransforming {len(manifestationList)} files from RDA Manifestation to BIBFRAME Instance")
+	print("...")
 	bar = Bar(f'Transforming {len(manifestationList)} files from RDA Manifestation to BIBFRAME Instance', max=len(manifestationList), suffix='%(percent)d%%')
-	for manifestation in manifestationList:
+	#bar = Bar(f'Transforming 3 files from RDA Manifestation to BIBFRAME Instance', max=3, suffix='%(percent)d%%')
+	for manifestation in manifestationList: # [0:3]:
 		os.system(f"chmod u+rwx input/{currentDate}/manifestation/{manifestation}") # adjust file permissions for data
 		label = manifestation.split('.')[0] # save trellis identifier as label
 		manifestationID = f"{currentDate}/manifestation/{label}" # use label to make path
@@ -302,9 +303,10 @@ def transform_items(itemList, currentDate):
 	if not os.path.exists(f'output/{currentDate}/item'):
 		print(f'...\nCreating item directory')
 		os.makedirs(f'output/{currentDate}/item')
-	#print(f"...\nTransforming {len(itemList)} files from RDA Item to BIBFRAME Item")
+	print("...")
 	bar = Bar(f'Transforming {len(itemList)} files from RDA Item to BIBFRAME Item', max=len(itemList), suffix='%(percent)d%%')
-	for item in itemList:
+	#bar = Bar(f'Transforming 3 files from RDA Item to BIBFRAME Item', max=3, suffix='%(percent)d%%')
+	for item in itemList: # [0:3]:
 		os.system(f"chmod u+rwx input/{currentDate}/item/{item}") # adjust file permissions for data
 		label = item.split('.')[0] # save trellis identifier as label
 		itemID = f"{currentDate}/item/{label}" # use label to make path
@@ -427,24 +429,36 @@ currentDate = str(today).replace('-', '_')
 
 ###
 
-URI_list = create_URI_list()
+"""Retrieve RDA Data"""
+
+#URI_list = create_URI_list()
 
 # create directory with today's date for RDA-in-RDF/XML data
 if not os.path.exists(f'input/{currentDate}'):
 	print('...\nCreating input folder')
 	os.system(f'mkdir input/{currentDate}')
 
-workURIList = save_works(URI_list, currentDate)
+#workURIList = save_works(URI_list, currentDate)
 workList = os.listdir(f'input/{currentDate}/work') # add RDA-in-RDF/XML works to new list
 
-expressionURIList = save_expressions(URI_list, currentDate, workURIList)
+#expressionURIList = save_expressions(URI_list, currentDate, workURIList)
 expressionList = os.listdir(f'input/{currentDate}/expression') # add RDA-in-RDF/XML expressions to new list
 
-manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
+#manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
 manifestationList = os.listdir(f'input/{currentDate}/manifestation') # add RDA-in-RDF/XML manifestations to new list
 
-save_items(URI_list, currentDate, manifestationURIList)
+#save_items(URI_list, currentDate, manifestationURIList)
 itemList = os.listdir(f'input/{currentDate}/item') # add RDA-in-RDF/XML items to new list
+
+#print("...\nCleaning input data")
+
+#print(">> Fixing IRIs typed as literals")
+#import fix_URIs
+
+#print(">> Remove blank copyright dates")
+#import fix_copyright_dates
+
+"""Transform RDA to BIBFRAME"""
 
 # create directory with today's date for BF-in-turtle data
 if not os.path.exists(f'output/{currentDate}'):
@@ -455,5 +469,13 @@ transform_works(workList, currentDate)
 transform_expressions(expressionList, currentDate)
 transform_manifestations(manifestationList, currentDate)
 transform_items(itemList, currentDate)
+
+print("...\nCleaning output data")
+
+print(">> Fixing language tags")
+import langtags
+
+print(">> Adding datatypes to dates")
+import type_dates
 
 print("...\nDone!")
