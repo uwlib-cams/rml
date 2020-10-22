@@ -1,6 +1,6 @@
-# 2020_9_18
+# 2020_10_02
 
-Most recent data pulled from [Trellis](https://trellis.sinopia.io/repository/washington).
+Most recent data pulled from [Trellis](https://trellis.sinopia.io/repository/washington). Has been run through `fix_URIs.py` and `fix_copyright_dates.py`.
 
 # list_namespaces.py
 
