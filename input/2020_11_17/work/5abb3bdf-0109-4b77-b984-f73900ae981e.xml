@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns2="http://sinopia.io/vocabulary/"
+   xmlns:ns3="http://rdaregistry.info/Elements/w/"
+   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="b1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <ns1:code xml:lang="en">n</ns1:code>
+    <ns2:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata:Status</ns2:hasResourceTemplate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b0">
+    <ns4:catalogerID xml:lang="en">cec</ns4:catalogerID>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/isbd"/>
+    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns1:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <ns2:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata</ns2:hasResourceTemplate>
+    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <ns1:creationDate xml:lang="en">2019-09-25</ns1:creationDate>
+    <ns1:status rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/5abb3bdf-0109-4b77-b984-f73900ae981e">
+    <ns3:P10078 rdf:resource="http://id.loc.gov/authorities/names/n94102982.html"/>
+    <ns1:adminMetadata rdf:nodeID="b0"/>
+    <ns2:hasResourceTemplate>WAU:RT:RDA:Work:monograph</ns2:hasResourceTemplate>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+  </rdf:Description>
+</rdf:RDF>

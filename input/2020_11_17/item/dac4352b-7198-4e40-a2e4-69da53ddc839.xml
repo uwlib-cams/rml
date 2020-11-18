@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="https://doi.org/10.6069/uwlib.55.d.4#"
+   xmlns:ns2="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns3="http://sinopia.io/vocabulary/"
+   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns5="http://rdaregistry.info/Elements/i/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <ns4:catalogerID xml:lang="eng">aschiff</ns4:catalogerID>
+    <ns2:creationDate xml:lang="zxx">2020-05-20</ns2:creationDate>
+    <ns2:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <ns2:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns2:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <ns2:status rdf:nodeID="b0"/>
+    <ns2:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b0">
+    <ns2:code xml:lang="eng">n</ns2:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+    <rdfs:label>WaU</rdfs:label>
+    <rdfs:label>WAU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/dac4352b-7198-4e40-a2e4-69da53ddc839">
+    <ns1:hasPhysicalSubLocation xml:lang="eng">Adam's house</ns1:hasPhysicalSubLocation>
+    <ns1:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+    <ns1:hasLcClassificationPartB xml:lang="eng">.F34 2016</ns1:hasLcClassificationPartB>
+    <ns5:P40049 rdf:resource="https://api.sinopia.io/resource/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7"/>
+    <ns1:hasPhysicalLocation xml:lang="eng">suzzallen</ns1:hasPhysicalLocation>
+    <ns3:hasResourceTemplate>WAU:RT:RDA:Item:monograph</ns3:hasResourceTemplate>
+    <ns2:adminMetadata rdf:nodeID="b1"/>
+    <ns1:hasLcClassificationPartA xml:lang="eng">TL603</ns1:hasLcClassificationPartA>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>Resource Description and Access</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7">
+    <rdfs:label>Lost airline colours of Europe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label>full</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

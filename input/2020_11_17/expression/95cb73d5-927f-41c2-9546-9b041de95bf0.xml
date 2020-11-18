@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:ns2="http://rdaregistry.info/Elements/e/"
+   xmlns:ns3="http://sinopia.io/vocabulary/"
+   xmlns:ns4="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label>Illustrations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/95cb73d5-927f-41c2-9546-9b041de95bf0">
+    <ns2:P20207 rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <ns3:hasResourceTemplate>WAU:RT:RDA:Expression:monograph</ns3:hasResourceTemplate>
+    <ns2:P20207 rdf:resource="http://id.loc.gov/vocabulary/millus/map"/>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+    <ns2:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <ns2:P20231 rdf:resource="https://api.sinopia.io/resource/2f6fce73-629b-4987-9af6-b496e4c8091c"/>
+    <ns2:P20315 xml:lang="eng">Tsunami generation and propagation</ns2:P20315>
+    <ns2:P20065 xml:lang="eng">Latin</ns2:P20065>
+    <ns1:adminMetadata rdf:nodeID="b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/2f6fce73-629b-4987-9af6-b496e4c8091c">
+    <rdfs:label>Tsunami generation and progagation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b1">
+    <ns1:creationDate>2020-02-06</ns1:creationDate>
+    <ns4:catalogerID>ries07</ns4:catalogerID>
+    <ns1:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <ns4:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <ns1:status rdf:nodeID="b0"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <ns1:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <ns1:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/millus/map">
+    <rdfs:label>Maps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <ns1:code>n</ns1:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>Resource Description and Access</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdaregistry.info/termList/RDAContentType/1020">
+    <rdfs:label>text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label>full</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://id.loc.gov/vocabulary/organizations/wau">
+    <rdfs:label>WAU</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
