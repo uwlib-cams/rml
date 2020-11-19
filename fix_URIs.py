@@ -5,7 +5,8 @@ from datetime import date
 #script, data_directory = argv
 
 today = date.today()
-currentDate = str(today).replace('-', '_')
+#currentDate = str(today).replace('-', '_')
+currentDate = "2020_11_17"
 
 workList = os.listdir(f'input/{currentDate}/work')
 expressionList = os.listdir(f'input/{currentDate}/expression')

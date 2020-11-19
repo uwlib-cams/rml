@@ -2,18 +2,19 @@ import os
 from datetime import date
 from sys import argv
 
-script, data_directory = argv
+#script, data_directory = argv
 
 today = date.today()
-currentDate = str(today).replace('-', '_')
+#currentDate = str(today).replace('-', '_')
+currentDate = "2020_11_17"
 
-workList = os.listdir(f'input/{data_directory}/work')
-expressionList = os.listdir(f'input/{data_directory}/expression')
-manifestationList = os.listdir(f'input/{data_directory}/manifestation')
-itemList = os.listdir(f'input/{data_directory}/item')
+workList = os.listdir(f'input/{currentDate}/work')
+expressionList = os.listdir(f'input/{currentDate}/expression')
+manifestationList = os.listdir(f'input/{currentDate}/manifestation')
+itemList = os.listdir(f'input/{currentDate}/item')
 
 for work in workList:
-	with open(f'input/{data_directory}/work/{work}', 'r') as work_xml:
+	with open(f'input/{currentDate}/work/{work}', 'r') as work_xml:
 		work_line_list = []
 		for line in work_xml:
 			if "©" in line:
@@ -27,12 +28,12 @@ for work in workList:
 					work_line_list.append(line)
 			else:
 				work_line_list.append(line)
-	with open(f'input/{data_directory}/work/{work}', 'w') as work_xml:
+	with open(f'input/{currentDate}/work/{work}', 'w') as work_xml:
 		for line in work_line_list:
 			work_xml.write(line)
 
 for expression in expressionList:
-	with open(f'input/{data_directory}/expression/{expression}', 'r') as expression_xml:
+	with open(f'input/{currentDate}/expression/{expression}', 'r') as expression_xml:
 		expression_line_list = []
 		for line in expression_xml:
 			if "©" in line:
@@ -46,12 +47,12 @@ for expression in expressionList:
 					expression_line_list.append(line)
 			else:
 				expression_line_list.append(line)
-	with open(f'input/{data_directory}/expression/{expression}', 'w') as expression_xml:
+	with open(f'input/{currentDate}/expression/{expression}', 'w') as expression_xml:
 		for line in expression_line_list:
 			expression_xml.write(line)
 
 for manifestation in manifestationList:
-	with open(f'input/{data_directory}/manifestation/{manifestation}', 'r') as manifestation_xml:
+	with open(f'input/{currentDate}/manifestation/{manifestation}', 'r') as manifestation_xml:
 		manifestation_line_list = []
 		for line in manifestation_xml:
 			if "©" in line:
@@ -65,12 +66,12 @@ for manifestation in manifestationList:
 					manifestation_line_list.append(line)
 			else:
 				manifestation_line_list.append(line)
-	with open(f'input/{data_directory}/manifestation/{manifestation}', 'w') as manifestation_xml:
+	with open(f'input/{currentDate}/manifestation/{manifestation}', 'w') as manifestation_xml:
 		for line in manifestation_line_list:
 			manifestation_xml.write(line)
 
 for item in itemList:
-	with open(f'input/{data_directory}/item/{item}', 'r') as item_xml:
+	with open(f'input/{currentDate}/item/{item}', 'r') as item_xml:
 		item_line_list = []
 		for line in item_xml:
 			if "©" in line:
@@ -84,6 +85,6 @@ for item in itemList:
 					item_line_list.append(line)
 			else:
 				item_line_list.append(line)
-	with open(f'input/{data_directory}/item/{item}', 'w') as item_xml:
+	with open(f'input/{currentDate}/item/{item}', 'w') as item_xml:
 		for line in item_line_list:
 			item_xml.write(line)
