@@ -1610,44 +1610,112 @@ ex:IRI_Contribution_10010_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:relatedTo;
+  rr:predicate bf:contribution;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Relatedto_10011_Map
+    rr:parentTriplesMap ex:Lang_Contribution_10011_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:relatedTo;
+  rr:predicate bf:contribution;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Relatedto_10011_Map
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10011_Map
   ]
 ].
 
-ex:Lang_Relatedto_10011_Map a rr:TriplesMap;
+ex:Lang_Contribution_10011_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10011[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Relatedto_10011_Map a rr:TriplesMap;
+ex:Not_Lang_Contribution_10011_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10011[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Relatedto_10011_Map rr:subjectMap [
+ex:Lang_Contribution_10011_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10011_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cou";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cou";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10011_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10011_Map
+  ]
+].
+
+ex:Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10011_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10011_Map
+  ]
+].
+
+ex:Lang_Agent_10011_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10011[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10011_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10011[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10011_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Organization
 ].
 
-ex:Not_Lang_Relatedto_10011_Map rr:subjectMap [
+ex:Not_Lang_Agent_10011_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Organization
 ].
 
-ex:Lang_Relatedto_10011_Map rr:predicateObjectMap [
+ex:Lang_Agent_10011_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -1658,7 +1726,7 @@ ex:Lang_Relatedto_10011_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Relatedto_10011_Map rr:predicateObjectMap [
+ex:Not_Lang_Agent_10011_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -1667,9 +1735,36 @@ ex:Not_Lang_Relatedto_10011_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:relatedTo;
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10011_Map
+  ]
+].
+
+ex:IRI_Contribution_10011_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10011/@resource"
+  ].
+
+ex:IRI_Contribution_10011_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10011/@resource";
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Contribution_10011_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cou";
     rr:termType rr:IRI
   ]
 ].
@@ -8852,6 +8947,22 @@ ex:Not_Lang_Contribution_10073_Map rr:subjectMap [
 ].
 
 ex:Lang_Contribution_10073_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_10073_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_10073_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10073_Map
@@ -8919,22 +9030,6 @@ ex:Not_Lang_Agent_10073_Map rr:predicateObjectMap [
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
-  ]
-].
-
-ex:Lang_Contribution_10073_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
-    rr:termType rr:IRI
-  ]
-].
-
-ex:Not_Lang_Contribution_10073_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/fmp";
-    rr:termType rr:IRI
   ]
 ].
 
@@ -9621,6 +9716,234 @@ ex:Not_Lang_Hassubseries_10080_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Cartographicattributes_10081_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Cartographicattributes_10081_Map
+  ]
+].
+
+ex:Lang_Cartographicattributes_10081_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10081[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Cartographicattributes_10081_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10081[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Cartographicattributes_10081_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Not_Lang_Cartographicattributes_10081_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Lang_Cartographicattributes_10081_Map rr:predicateObjectMap [
+  rr:predicate bf:coordinates;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Cartographicattributes_10081_Map rr:predicateObjectMap [
+  rr:predicate bf:coordinates;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Cartographicattributes_10082_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Cartographicattributes_10082_Map
+  ]
+].
+
+ex:Lang_Cartographicattributes_10082_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10082[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Cartographicattributes_10082_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10082[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Cartographicattributes_10082_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Not_Lang_Cartographicattributes_10082_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Lang_Cartographicattributes_10082_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Cartographicattributes_10082_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Cartographicattributes_10083_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Cartographicattributes_10083_Map
+  ]
+].
+
+ex:Lang_Cartographicattributes_10083_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10083[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Cartographicattributes_10083_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10083[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Cartographicattributes_10083_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Not_Lang_Cartographicattributes_10083_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Lang_Cartographicattributes_10083_Map rr:predicateObjectMap [
+  rr:predicate bf:coordinates;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Cartographicattributes_10083_Map rr:predicateObjectMap [
+  rr:predicate bf:coordinates;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:arrangement;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Arrangement_10084_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:arrangement;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Arrangement_10084_Map
+  ]
+].
+
+ex:Lang_Arrangement_10084_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10084[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Arrangement_10084_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10084[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Arrangement_10084_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Arrangement
+].
+
+ex:Not_Lang_Arrangement_10084_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Arrangement
+].
+
+ex:Lang_Arrangement_10084_Map rr:predicateObjectMap [
+  rr:predicate bf:organization;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Arrangement_10084_Map rr:predicateObjectMap [
+  rr:predicate bf:organization;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:hasDerivative;
     rr:objectMap [
     rml:reference "P10085/@resource";
@@ -9776,25 +10099,6 @@ ex:Not_Lang_Hasderivative_10087_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference "P10088[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P10088/@lang"
-    ]
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rml:reference "P10088[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
@@ -10683,6 +10987,71 @@ ex:Not_Lang_Subseriesof_10101_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+    rr:objectMap [
+    rml:reference "P10102/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Hasseries_10102_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Hasseries_10102_Map
+  ]
+].
+
+ex:Lang_Hasseries_10102_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10102[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Hasseries_10102_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10102[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Hasseries_10102_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Hasseries_10102_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Hasseries_10102_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Hasseries_10102_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:accompaniedBy;
     rr:objectMap [
     rml:reference "P10103/@resource";
@@ -10748,7 +11117,7 @@ ex:Not_Lang_Accompaniedby_10103_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:succeededBy;
+  rr:predicate bf:splitInto;
     rr:objectMap [
     rml:reference "P10104/@resource";
     rr:termType rr:IRI
@@ -10756,44 +11125,44 @@ ex:WorkMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:succeededBy;
+  rr:predicate bf:splitInto;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Succeededby_10104_Map
+    rr:parentTriplesMap ex:Lang_Splitinto_10104_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:succeededBy;
+  rr:predicate bf:splitInto;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Succeededby_10104_Map
+    rr:parentTriplesMap ex:Not_Lang_Splitinto_10104_Map
   ]
 ].
 
-ex:Lang_Succeededby_10104_Map a rr:TriplesMap;
+ex:Lang_Splitinto_10104_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10104[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Succeededby_10104_Map a rr:TriplesMap;
+ex:Not_Lang_Splitinto_10104_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10104[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Succeededby_10104_Map rr:subjectMap [
+ex:Lang_Splitinto_10104_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Work
 ].
 
-ex:Not_Lang_Succeededby_10104_Map rr:subjectMap [
+ex:Not_Lang_Splitinto_10104_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Work
 ].
 
-ex:Lang_Succeededby_10104_Map rr:predicateObjectMap [
+ex:Lang_Splitinto_10104_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -10804,7 +11173,7 @@ ex:Lang_Succeededby_10104_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Succeededby_10104_Map rr:predicateObjectMap [
+ex:Not_Lang_Splitinto_10104_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -13172,7 +13541,7 @@ ex:Not_Lang_Subject_10140_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
+  rr:predicate bf:seriesOf;
     rr:objectMap [
     rml:reference "P10141/@resource";
     rr:termType rr:IRI
@@ -13180,44 +13549,44 @@ ex:WorkMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
+  rr:predicate bf:seriesOf;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Hasderivative_10141_Map
+    rr:parentTriplesMap ex:Lang_Seriesof_10141_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
+  rr:predicate bf:seriesOf;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Hasderivative_10141_Map
+    rr:parentTriplesMap ex:Not_Lang_Seriesof_10141_Map
   ]
 ].
 
-ex:Lang_Hasderivative_10141_Map a rr:TriplesMap;
+ex:Lang_Seriesof_10141_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10141[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Hasderivative_10141_Map a rr:TriplesMap;
+ex:Not_Lang_Seriesof_10141_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10141[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Hasderivative_10141_Map rr:subjectMap [
+ex:Lang_Seriesof_10141_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Work
 ].
 
-ex:Not_Lang_Hasderivative_10141_Map rr:subjectMap [
+ex:Not_Lang_Seriesof_10141_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Work
 ].
 
-ex:Lang_Hasderivative_10141_Map rr:predicateObjectMap [
+ex:Lang_Seriesof_10141_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -13228,7 +13597,7 @@ ex:Lang_Hasderivative_10141_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Hasderivative_10141_Map rr:predicateObjectMap [
+ex:Not_Lang_Seriesof_10141_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -13895,14 +14264,6 @@ ex:WorkMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:illustrativeContent;
-    rr:objectMap [
-    rml:reference "P10152/@resource";
-    rr:termType rr:IRI
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:accompanies;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Accompanies_10152_Map
@@ -13952,77 +14313,6 @@ ex:Lang_Accompanies_10152_Map rr:predicateObjectMap [
 ].
 
 ex:Not_Lang_Accompanies_10152_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:Lang_Accompanies_10152_Map rr:predicateObjectMap [
-  rr:predicate bf:illustrativeContent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Illustrativecontent_10152_Map
-  ]
-].
-
-ex:Not_Lang_Accompanies_10152_Map rr:predicateObjectMap [
-  rr:predicate bf:illustrativeContent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Illustrativecontent_10152_Map
-  ]
-].
-
-ex:Lang_Accompanies_10152_Map rr:predicateObjectMap [
-  rr:predicate bf:illustrativeContent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Illustrativecontent_10152_Map
-  ]
-].
-
-ex:Not_Lang_Accompanies_10152_Map rr:predicateObjectMap [
-  rr:predicate bf:illustrativeContent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Illustrativecontent_10152_Map
-  ]
-].
-
-ex:Lang_Illustrativecontent_10152_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10152[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Illustrativecontent_10152_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10152[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Illustrativecontent_10152_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Work
-].
-
-ex:Not_Lang_Illustrativecontent_10152_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Work
-].
-
-ex:Lang_Illustrativecontent_10152_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Illustrativecontent_10152_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -17032,6 +17322,63 @@ ex:Not_Lang_Relatedto_10198_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:temporalCoverage;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Temporalcoverage_10199_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:temporalCoverage;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Temporalcoverage_10199_Map
+  ]
+].
+
+ex:Lang_Temporalcoverage_10199_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10199[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Temporalcoverage_10199_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10199[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Temporalcoverage_10199_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Temporal
+].
+
+ex:Not_Lang_Temporalcoverage_10199_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Temporal
+].
+
+ex:Lang_Temporalcoverage_10199_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Temporalcoverage_10199_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Contribution_10200_Map
@@ -18027,44 +18374,44 @@ ex:Not_Lang_Replacementof_10207_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:dissertation;
+  rr:predicate bf:note;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Dissertation_10209_Map
+    rr:parentTriplesMap ex:Lang_Note_10209_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:dissertation;
+  rr:predicate bf:note;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Dissertation_10209_Map
+    rr:parentTriplesMap ex:Not_Lang_Note_10209_Map
   ]
 ].
 
-ex:Lang_Dissertation_10209_Map a rr:TriplesMap;
+ex:Lang_Note_10209_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10209[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Dissertation_10209_Map a rr:TriplesMap;
+ex:Not_Lang_Note_10209_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10209[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Dissertation_10209_Map rr:subjectMap [
+ex:Lang_Note_10209_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Dissertation
+  rr:class bf:Note
 ].
 
-ex:Not_Lang_Dissertation_10209_Map rr:subjectMap [
+ex:Not_Lang_Note_10209_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Dissertation
+  rr:class bf:Note
 ].
 
-ex:Lang_Dissertation_10209_Map rr:predicateObjectMap [
+ex:Lang_Note_10209_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -18075,11 +18422,29 @@ ex:Lang_Dissertation_10209_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Dissertation_10209_Map rr:predicateObjectMap [
+ex:Not_Lang_Note_10209_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
+  ]
+].
+
+ex:Lang_Note_10209_Map rr:predicateObjectMap [
+  rr:predicate bf:noteType;
+  rr:objectMap [
+    rr:constant "dissertation or thesis information";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Note_10209_Map rr:predicateObjectMap [
+  rr:predicate bf:noteType;
+  rr:objectMap [
+    rr:constant "dissertation or thesis information";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -18298,6 +18663,63 @@ ex:Not_Lang_Mergerof_10213_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Cartographicattributes_10214_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:cartographicAttributes;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Cartographicattributes_10214_Map
+  ]
+].
+
+ex:Lang_Cartographicattributes_10214_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10214[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Cartographicattributes_10214_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10214[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Cartographicattributes_10214_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Not_Lang_Cartographicattributes_10214_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Cartographic
+].
+
+ex:Lang_Cartographicattributes_10214_Map rr:predicateObjectMap [
+  rr:predicate bf:equinox;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Cartographicattributes_10214_Map rr:predicateObjectMap [
+  rr:predicate bf:equinox;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:dissertation;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Dissertation_10215_Map
@@ -18351,6 +18773,14 @@ ex:Not_Lang_Dissertation_10215_Map rr:predicateObjectMap [
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10216/@resource";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -18563,6 +18993,128 @@ ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:originDate;
     rr:objectMap [
     rml:reference "P10219[not(@resource)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:musicMedium;
+    rr:objectMap [
+    rml:reference "P10220/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:musicMedium;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Musicmedium_10220_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:musicMedium;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Musicmedium_10220_Map
+  ]
+].
+
+ex:Lang_Musicmedium_10220_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10220[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Musicmedium_10220_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10220[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Musicmedium_10220_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:MusicMedium
+].
+
+ex:Not_Lang_Musicmedium_10220_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:MusicMedium
+].
+
+ex:Lang_Musicmedium_10220_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Musicmedium_10220_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:musicKey;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Musickey_10221_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:musicKey;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Musickey_10221_Map
+  ]
+].
+
+ex:Lang_Musickey_10221_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10221[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Musickey_10221_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10221[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Musickey_10221_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:MusicKey
+].
+
+ex:Not_Lang_Musickey_10221_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:MusicKey
+].
+
+ex:Lang_Musickey_10221_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Musickey_10221_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
     rr:termType rr:Literal
   ]
 ].
@@ -19906,7 +20458,7 @@ ex:Not_Lang_Hasderivative_10249_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:drivativeOf;
+  rr:predicate bf:derivativeOf;
     rr:objectMap [
     rml:reference "P10250[not(@resource)][@lang]";
     rr:termType rr:Literal;
@@ -19917,7 +20469,7 @@ ex:WorkMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:drivativeOf;
+  rr:predicate bf:derivativeOf;
   rr:objectMap [
     rml:reference "P10250[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
@@ -20312,6 +20864,41 @@ ex:Not_Lang_Contribution_10254_Map rr:subjectMap [
 ex:Lang_Contribution_10254_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10254_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10254_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10254_Map
+  ]
+].
+
+ex:Constant_Role_P10254_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10254]"
+  ].
+
+ex:Constant_Role_P10254_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10254_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_10254_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
     rr:termType rr:IRI
   ]
@@ -20426,6 +21013,30 @@ ex:IRI_Contribution_10254_Map rr:predicateObjectMap [
 ex:IRI_Contribution_10254_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10254_Map
+  ]
+].
+
+ex:Constant_Role_P10254_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_10254_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/art";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_10254_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
     rr:termType rr:IRI
   ]
@@ -20467,6 +21078,41 @@ ex:Lang_Contribution_10255_Map rr:subjectMap [
 ex:Not_Lang_Contribution_10255_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10255_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10255_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10255_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10255_Map
+  ]
+].
+
+ex:Constant_Role_P10255_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10255]"
+  ].
+
+ex:Constant_Role_P10255_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10255_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
 ].
 
 ex:Lang_Contribution_10255_Map rr:predicateObjectMap [
@@ -20584,6 +21230,30 @@ ex:IRI_Contribution_10255_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10255_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10255_Map
+  ]
+].
+
+ex:Constant_Role_P10255_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_10255_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_10255_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -24464,6 +25134,41 @@ ex:Not_Lang_Contribution_10298_Map rr:subjectMap [
 ex:Lang_Contribution_10298_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10298_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10298_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10298_Map
+  ]
+].
+
+ex:Constant_Role_P10298_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10298]"
+  ].
+
+ex:Constant_Role_P10298_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10298_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_10298_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
     rr:termType rr:IRI
   ]
@@ -24576,6 +25281,30 @@ ex:IRI_Contribution_10298_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10298_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10298_Map
+  ]
+].
+
+ex:Constant_Role_P10298_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_10298_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_10298_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
@@ -25417,63 +26146,6 @@ ex:WorkMap rr:predicateObjectMap [
 
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:relatedTo;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Relatedto_10307_Map
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:relatedTo;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Relatedto_10307_Map
-  ]
-].
-
-ex:Lang_Relatedto_10307_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10307[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Relatedto_10307_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10307[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Relatedto_10307_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Work
-].
-
-ex:Not_Lang_Relatedto_10307_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Work
-].
-
-ex:Lang_Relatedto_10307_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Relatedto_10307_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10308/@resource";
     rr:termType rr:IRI
@@ -25538,7 +26210,7 @@ ex:Not_Lang_Relatedto_10308_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasInstance;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10309/@resource";
     rr:termType rr:IRI
@@ -25546,44 +26218,44 @@ ex:WorkMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasInstance;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Hasinstance_10309_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10309_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasInstance;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Hasinstance_10309_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10309_Map
   ]
 ].
 
-ex:Lang_Hasinstance_10309_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10309_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10309[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Hasinstance_10309_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10309_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P10309[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Hasinstance_10309_Map rr:subjectMap [
+ex:Lang_Relatedto_10309_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Instance
 ].
 
-ex:Not_Lang_Hasinstance_10309_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10309_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Instance
 ].
 
-ex:Lang_Hasinstance_10309_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10309_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -25594,7 +26266,7 @@ ex:Lang_Hasinstance_10309_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Hasinstance_10309_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10309_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -25668,135 +26340,7 @@ ex:Not_Lang_Relatedto_10310_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Contribution_10311_Map
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Contribution_10311_Map
-  ]
-].
-
-ex:Lang_Contribution_10311_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10311[not(@resource)][@lang]]"
-  ].
-
-ex:Not_Lang_Contribution_10311_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10311[not(@resource) and not(@lang)]]"
-  ].
-
-ex:Lang_Contribution_10311_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:Not_Lang_Contribution_10311_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:Lang_Contribution_10311_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10311_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10311_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10311_Map
-  ]
-].
-
-ex:Lang_Contribution_10311_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10311_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10311_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10311_Map
-  ]
-].
-
-ex:Lang_Agent_10311_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10311[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Agent_10311_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10311[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Agent_10311_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Agent
-].
-
-ex:Not_Lang_Agent_10311_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Agent
-].
-
-ex:Lang_Agent_10311_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Agent_10311_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Contribution_10311_Map
-  ]
-].
-
-ex:IRI_Contribution_10311_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10311[not(@resource)][@lang]]"
-  ].
-
-ex:IRI_Contribution_10311_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:IRI_Contribution_10311_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10311/@resource";
     rr:termType rr:IRI
@@ -25804,96 +26348,44 @@ ex:IRI_Contribution_10311_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Contribution_10312_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10311_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Contribution_10312_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10311_Map
   ]
 ].
 
-ex:Lang_Contribution_10312_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10311_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10312[not(@resource)][@lang]]"
+    rml:iterator "/RDF/Description/P10311[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Contribution_10312_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10311_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10312[not(@resource) and not(@lang)]]"
+    rml:iterator "/RDF/Description/P10311[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Contribution_10312_Map rr:subjectMap [
+ex:Lang_Relatedto_10311_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Agent
 ].
 
-ex:Not_Lang_Contribution_10312_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10311_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Agent
 ].
 
-ex:Lang_Contribution_10312_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10312_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10312_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10312_Map
-  ]
-].
-
-ex:Lang_Contribution_10312_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10312_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10312_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10312_Map
-  ]
-].
-
-ex:Lang_Agent_10312_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10312[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Agent_10312_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10312[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Agent_10312_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Person
-].
-
-ex:Not_Lang_Agent_10312_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Person
-].
-
-ex:Lang_Agent_10312_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10311_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -25904,7 +26396,7 @@ ex:Lang_Agent_10312_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Agent_10312_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10311_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -25913,26 +26405,7 @@ ex:Not_Lang_Agent_10312_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Contribution_10312_Map
-  ]
-].
-
-ex:IRI_Contribution_10312_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10312[not(@resource)][@lang]]"
-  ].
-
-ex:IRI_Contribution_10312_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:IRI_Contribution_10312_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10312/@resource";
     rr:termType rr:IRI
@@ -25940,96 +26413,44 @@ ex:IRI_Contribution_10312_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Contribution_10313_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10312_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Contribution_10313_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10312_Map
   ]
 ].
 
-ex:Lang_Contribution_10313_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10312_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10313[not(@resource)][@lang]]"
+    rml:iterator "/RDF/Description/P10312[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Contribution_10313_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10312_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10313[not(@resource) and not(@lang)]]"
+    rml:iterator "/RDF/Description/P10312[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Contribution_10313_Map rr:subjectMap [
+ex:Lang_Relatedto_10312_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Person
 ].
 
-ex:Not_Lang_Contribution_10313_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10312_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Person
 ].
 
-ex:Lang_Contribution_10313_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10313_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10313_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10313_Map
-  ]
-].
-
-ex:Lang_Contribution_10313_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10313_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10313_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10313_Map
-  ]
-].
-
-ex:Lang_Agent_10313_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10313[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Agent_10313_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10313[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Agent_10313_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Family
-].
-
-ex:Not_Lang_Agent_10313_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Family
-].
-
-ex:Lang_Agent_10313_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10312_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26040,7 +26461,7 @@ ex:Lang_Agent_10313_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Agent_10313_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10312_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26049,26 +26470,7 @@ ex:Not_Lang_Agent_10313_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Contribution_10313_Map
-  ]
-].
-
-ex:IRI_Contribution_10313_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10313[not(@resource)][@lang]]"
-  ].
-
-ex:IRI_Contribution_10313_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:IRI_Contribution_10313_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10313/@resource";
     rr:termType rr:IRI
@@ -26076,96 +26478,44 @@ ex:IRI_Contribution_10313_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Contribution_10314_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10313_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Contribution_10314_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10313_Map
   ]
 ].
 
-ex:Lang_Contribution_10314_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10313_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10314[not(@resource)][@lang]]"
+    rml:iterator "/RDF/Description/P10313[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Contribution_10314_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10313_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10314[not(@resource) and not(@lang)]]"
+    rml:iterator "/RDF/Description/P10313[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Contribution_10314_Map rr:subjectMap [
+ex:Lang_Relatedto_10313_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Family
 ].
 
-ex:Not_Lang_Contribution_10314_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10313_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Family
 ].
 
-ex:Lang_Contribution_10314_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10314_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10314_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10314_Map
-  ]
-].
-
-ex:Lang_Contribution_10314_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10314_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10314_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10314_Map
-  ]
-].
-
-ex:Lang_Agent_10314_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10314[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Agent_10314_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10314[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Agent_10314_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Organization
-].
-
-ex:Not_Lang_Agent_10314_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Organization
-].
-
-ex:Lang_Agent_10314_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10313_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26176,7 +26526,7 @@ ex:Lang_Agent_10314_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Agent_10314_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10313_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26185,26 +26535,7 @@ ex:Not_Lang_Agent_10314_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Contribution_10314_Map
-  ]
-].
-
-ex:IRI_Contribution_10314_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10314[not(@resource)][@lang]]"
-  ].
-
-ex:IRI_Contribution_10314_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:IRI_Contribution_10314_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10314/@resource";
     rr:termType rr:IRI
@@ -26212,96 +26543,44 @@ ex:IRI_Contribution_10314_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Contribution_10315_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10314_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Contribution_10315_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10314_Map
   ]
 ].
 
-ex:Lang_Contribution_10315_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10314_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10315[not(@resource)][@lang]]"
+    rml:iterator "/RDF/Description/P10314[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Contribution_10315_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10314_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10315[not(@resource) and not(@lang)]]"
+    rml:iterator "/RDF/Description/P10314[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Contribution_10315_Map rr:subjectMap [
+ex:Lang_Relatedto_10314_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Organization
 ].
 
-ex:Not_Lang_Contribution_10315_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10314_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Contribution
+  rr:class bf:Organization
 ].
 
-ex:Lang_Contribution_10315_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10315_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10315_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10315_Map
-  ]
-].
-
-ex:Lang_Contribution_10315_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10315_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_10315_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Agent_10315_Map
-  ]
-].
-
-ex:Lang_Agent_10315_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10315[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Agent_10315_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10315[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Agent_10315_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Agent
-].
-
-ex:Not_Lang_Agent_10315_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Agent
-].
-
-ex:Lang_Agent_10315_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10314_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26312,7 +26591,7 @@ ex:Lang_Agent_10315_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Agent_10315_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10314_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26321,26 +26600,7 @@ ex:Not_Lang_Agent_10315_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:contribution;
-  rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Contribution_10315_Map
-  ]
-].
-
-ex:IRI_Contribution_10315_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10315[not(@resource)][@lang]]"
-  ].
-
-ex:IRI_Contribution_10315_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Contribution
-].
-
-ex:IRI_Contribution_10315_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
     rml:reference "P10315/@resource";
     rr:termType rr:IRI
@@ -26348,44 +26608,44 @@ ex:IRI_Contribution_10315_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:place;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Place_10316_Map
+    rr:parentTriplesMap ex:Lang_Relatedto_10315_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:place;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Place_10316_Map
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10315_Map
   ]
 ].
 
-ex:Lang_Place_10316_Map a rr:TriplesMap;
+ex:Lang_Relatedto_10315_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10316[not(@resource)][@lang]"
+    rml:iterator "/RDF/Description/P10315[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Place_10316_Map a rr:TriplesMap;
+ex:Not_Lang_Relatedto_10315_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10316[not(@resource) and not(@lang)]"
+    rml:iterator "/RDF/Description/P10315[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Place_10316_Map rr:subjectMap [
+ex:Lang_Relatedto_10315_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Place
+  rr:class bf:Agent
 ].
 
-ex:Not_Lang_Place_10316_Map rr:subjectMap [
+ex:Not_Lang_Relatedto_10315_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Place
+  rr:class bf:Agent
 ].
 
-ex:Lang_Place_10316_Map rr:predicateObjectMap [
+ex:Lang_Relatedto_10315_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26396,7 +26656,7 @@ ex:Lang_Place_10316_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Place_10316_Map rr:predicateObjectMap [
+ex:Not_Lang_Relatedto_10315_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -26405,29 +26665,132 @@ ex:Not_Lang_Place_10316_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:place;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
-    rml:reference "P10316[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P10316/@lang"
-    ]
+    rml:reference "P10316/@resource";
+    rr:termType rr:IRI
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:place;
+  rr:predicate bf:relatedTo;
   rr:objectMap [
-    rml:reference "P10316[not(@resource) and not(@lang)]";
+    rr:parentTriplesMap ex:Lang_Relatedto_10316_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10316_Map
+  ]
+].
+
+ex:Lang_Relatedto_10316_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10316[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10316_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10316[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10316_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Place
+].
+
+ex:Not_Lang_Relatedto_10316_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Place
+].
+
+ex:Lang_Relatedto_10316_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10316_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
     rr:termType rr:Literal
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:;
+  rr:predicate bf:relatedTo;
     rr:objectMap [
-    rml:reference "P10316/@resource";
+    rml:reference "P10317/@resource";
     rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10317_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10317_Map
+  ]
+].
+
+ex:Lang_Relatedto_10317_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10317[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10317_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10317[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10317_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Temporal
+].
+
+ex:Not_Lang_Relatedto_10317_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Temporal
+].
+
+ex:Lang_Relatedto_10317_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10317_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
   ]
 ].
 
@@ -26469,16 +26832,16 @@ ex:Not_Lang_Subject_10319_Map a rr:TriplesMap;
 
 ex:Lang_Subject_10319_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Title
+  rr:class madsrdf:Name
 ].
 
 ex:Not_Lang_Subject_10319_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Title
+  rr:class madsrdf:Name
 ].
 
 ex:Lang_Subject_10319_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Title;
+  rr:predicate madsrdf:Name;
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal;
@@ -26489,7 +26852,7 @@ ex:Lang_Subject_10319_Map rr:predicateObjectMap [
 ].
 
 ex:Not_Lang_Subject_10319_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Title;
+  rr:predicate madsrdf:Name;
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
@@ -26553,16 +26916,16 @@ ex:Not_Lang_Subject_10320_Map a rr:TriplesMap;
 
 ex:Lang_Subject_10320_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Title
+  rr:class madsrdf:Name
 ].
 
 ex:Not_Lang_Subject_10320_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Title
+  rr:class madsrdf:Name
 ].
 
 ex:Lang_Subject_10320_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Title;
+  rr:predicate madsrdf:Name;
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal;
@@ -26573,7 +26936,7 @@ ex:Lang_Subject_10320_Map rr:predicateObjectMap [
 ].
 
 ex:Not_Lang_Subject_10320_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Title;
+  rr:predicate madsrdf:Name;
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
@@ -26686,6 +27049,182 @@ ex:Not_Lang_Subject_10321_Map rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:subject;
     rr:objectMap [
+    rml:reference "P10322/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Subject_10322_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Subject_10322_Map
+  ]
+].
+
+ex:Lang_Subject_10322_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10322[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Subject_10322_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10322[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Subject_10322_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class madsrdf:Temporal
+].
+
+ex:Not_Lang_Subject_10322_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class madsrdf:Temporal
+].
+
+ex:Lang_Subject_10322_Map rr:predicateObjectMap [
+  rr:predicate madsrdf:Temporal;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Subject_10322_Map rr:predicateObjectMap [
+  rr:predicate madsrdf:Temporal;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:Lang_Subject_10322_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Subject_10322_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+    rr:objectMap [
+    rml:reference "P10323/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Subject_10323_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Subject_10323_Map
+  ]
+].
+
+ex:Lang_Subject_10323_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10323[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Subject_10323_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10323[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Subject_10323_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class madsrdf:Name
+].
+
+ex:Not_Lang_Subject_10323_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class madsrdf:Name
+].
+
+ex:Lang_Subject_10323_Map rr:predicateObjectMap [
+  rr:predicate madsrdf:Name;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Subject_10323_Map rr:predicateObjectMap [
+  rr:predicate madsrdf:Name;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:Lang_Subject_10323_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Subject_10323_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+    rr:objectMap [
+    rml:reference "P10324/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:subject;
+    rr:objectMap [
     rml:reference "P10325/@resource";
     rr:termType rr:IRI
   ]
@@ -26721,31 +27260,12 @@ ex:Not_Lang_Subject_10325_Map a rr:TriplesMap;
 
 ex:Lang_Subject_10325_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
+  rr:class bf:Person
 ].
 
 ex:Not_Lang_Subject_10325_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
-].
-
-ex:Lang_Subject_10325_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Subject_10325_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
+  rr:class bf:Person
 ].
 
 ex:Lang_Subject_10325_Map rr:predicateObjectMap [
@@ -26805,31 +27325,12 @@ ex:Not_Lang_Subject_10326_Map a rr:TriplesMap;
 
 ex:Lang_Subject_10326_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
+  rr:class bf:Organization
 ].
 
 ex:Not_Lang_Subject_10326_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
-].
-
-ex:Lang_Subject_10326_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Subject_10326_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
+  rr:class bf:Organization
 ].
 
 ex:Lang_Subject_10326_Map rr:predicateObjectMap [
@@ -26889,31 +27390,12 @@ ex:Not_Lang_Subject_10327_Map a rr:TriplesMap;
 
 ex:Lang_Subject_10327_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
+  rr:class bf:Family
 ].
 
 ex:Not_Lang_Subject_10327_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class madsrdf:Name
-].
-
-ex:Lang_Subject_10327_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Subject_10327_Map rr:predicateObjectMap [
-  rr:predicate madsrdf:Name;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
+  rr:class bf:Family
 ].
 
 ex:Lang_Subject_10327_Map rr:predicateObjectMap [
@@ -26936,138 +27418,21 @@ ex:Not_Lang_Subject_10327_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Identifiedby_10328_Map
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Identifiedby_10328_Map
-  ]
-].
-
-ex:Lang_Identifiedby_10328_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10328[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Identifiedby_10328_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10328[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Identifiedby_10328_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Identifier
-].
-
-ex:Not_Lang_Identifiedby_10328_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Identifier
-].
-
-ex:Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
+  rr:predicate rdfs:label;
     rr:objectMap [
-    rml:reference ".";
+    rml:reference "P10328[not(@resource)][@lang]";
     rr:termType rr:Literal;
     rml:languageMap [
-      rml:reference "@lang"
+      rml:reference "P10328/@lang"
     ]
   ]
 ].
 
-ex:Not_Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-    rr:objectMap [
-    rml:reference ".";
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rml:reference "P10328[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
-  ]
-].
-
-ex:Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Note_P10328_Map
-  ]
-].
-
-ex:Not_Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Note_P10328_Map
-  ]
-].
-
-ex:Constant_Note_P10328_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10328]"
-  ].
-
-ex:Constant_Note_P10328_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Note
-].
-
-ex:Constant_Note_P10328_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rr:constant "Access point";
-    rr:termType rr:Literal;
-    rr:language "en"
-  ]
-].
-
-ex:Constant_Note_P10328_Map rr:predicateObjectMap [
-  rr:predicate bf:noteType;
-  rr:objectMap [
-    rr:constant "type of identifier";
-    rr:termType rr:Literal;
-    rr:language "en"
-  ]
-].
-
-ex:Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Source_P10328_Map
-  ]
-].
-
-ex:Not_Lang_Identifiedby_10328_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Source_P10328_Map
-  ]
-].
-
-ex:Constant_Source_P10328_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10328]"
-  ].
-
-ex:Constant_Source_P10328_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Source
-].
-
-ex:Constant_Source_P10328_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rr:constant "RDA";
-    rr:termType rr:Literal;
-    rr:language "en"
   ]
 ].
 
@@ -27200,6 +27565,136 @@ ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:musicThematicNumber;
   rr:objectMap [
     rml:reference "P10335[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10336/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10336_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10336_Map
+  ]
+].
+
+ex:Lang_Relatedto_10336_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10336[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10336_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10336[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10336_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10336_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10336_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10336_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10337/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10337_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10337_Map
+  ]
+].
+
+ex:Lang_Relatedto_10337_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10337[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10337_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10337[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10337_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10337_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10337_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10337_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
     rr:termType rr:Literal
   ]
 ].
@@ -28157,20 +28652,19 @@ ex:Not_Lang_Note_10365_Map rr:predicateObjectMap [
 
 ex:Lang_Note_10365_Map rr:predicateObjectMap [
   rr:predicate bf:noteType;
-    rr:objectMap [
-    rml:reference ".";
+  rr:objectMap [
+    rr:constant "extension plan";
     rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
+    rr:language "en"
   ]
 ].
 
 ex:Not_Lang_Note_10365_Map rr:predicateObjectMap [
   rr:predicate bf:noteType;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
+  rr:objectMap [
+    rr:constant "extension plan";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -28895,6 +29389,136 @@ ex:Not_Lang_Relatedto_10386_Map rr:predicateObjectMap [
 ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:relatedTo;
     rr:objectMap [
+    rml:reference "P10387/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10387_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10387_Map
+  ]
+].
+
+ex:Lang_Relatedto_10387_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10387[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10387_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10387[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10387_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10387_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10387_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10387_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10388/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10388_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10388_Map
+  ]
+].
+
+ex:Lang_Relatedto_10388_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10388[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10388_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10388[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10388_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10388_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10388_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10388_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
     rml:reference "P10389/@resource";
     rr:termType rr:IRI
   ]
@@ -28958,6 +29582,459 @@ ex:Not_Lang_Relatedto_10389_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10390/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10390_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10390_Map
+  ]
+].
+
+ex:Lang_Relatedto_10390_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10390[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10390_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10390[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10390_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10390_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10390_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10390_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10391/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10391_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10391_Map
+  ]
+].
+
+ex:Lang_Relatedto_10391_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10391[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10391_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10391[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10391_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10391_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10391_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10391_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10392/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Relatedto_10392_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Relatedto_10392_Map
+  ]
+].
+
+ex:Lang_Relatedto_10392_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10392[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Relatedto_10392_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10392[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Relatedto_10392_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Relatedto_10392_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Relatedto_10392_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Relatedto_10392_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10393_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10393_Map
+  ]
+].
+
+ex:Lang_Contribution_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10393_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10393_Map
+  ]
+].
+
+ex:Lang_Contribution_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10393_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10393_Map
+  ]
+].
+
+ex:Lang_Role_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10393_Map
+  ]
+].
+
+ex:Not_Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10393_Map
+  ]
+].
+
+ex:Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10393_Map
+  ]
+].
+
+ex:Not_Lang_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10393_Map
+  ]
+].
+
+ex:Lang_Agent_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Not_Lang_Agent_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Lang_Agent_10393_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10393_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10393_Map
+  ]
+].
+
+ex:IRI_Contribution_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393/@resource"
+  ].
+
+ex:IRI_Contribution_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10393_Map
+  ]
+].
+
+ex:IRI_Role_10393_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10393/@resource"
+  ].
+
+ex:IRI_Role_10393_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Role_10393_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Contribution_10394_Map
@@ -28998,12 +30075,74 @@ ex:Not_Lang_Contribution_10394_Map rr:subjectMap [
 ex:Lang_Contribution_10394_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10394_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10394_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10394_Map
+  ]
+].
+
+ex:Lang_Contribution_10394_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10394_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10394_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10394_Map
+  ]
+].
+
+ex:Lang_Role_10394_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10394[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10394_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10394[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10394_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10394_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10394_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10394_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29011,28 +30150,36 @@ ex:Not_Lang_Contribution_10394_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Contribution_10394_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10394_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10394_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10394_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10394_Map
   ]
 ].
 
-ex:Lang_Contribution_10394_Map rr:predicateObjectMap [
+ex:Lang_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10394_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10394_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10394_Map
@@ -29102,14 +30249,42 @@ ex:IRI_Contribution_10394_Map rr:subjectMap [
 ].
 
 ex:IRI_Contribution_10394_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10394_Map
+  ]
+].
+
+ex:IRI_Role_10394_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10394/@resource"
+  ].
+
+ex:IRI_Role_10394_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10394_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10394/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
-ex:IRI_Contribution_10394_Map rr:predicateObjectMap [
+ex:IRI_Role_10394_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29158,12 +30333,74 @@ ex:Not_Lang_Contribution_10395_Map rr:subjectMap [
 ex:Lang_Contribution_10395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10395_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10395_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10395_Map
+  ]
+].
+
+ex:Lang_Contribution_10395_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10395_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10395_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10395_Map
+  ]
+].
+
+ex:Lang_Role_10395_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10395[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10395_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10395[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10395_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10395_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10395_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10395_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29171,28 +30408,36 @@ ex:Not_Lang_Contribution_10395_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Contribution_10395_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10395_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10395_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10395_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10395_Map
   ]
 ].
 
-ex:Lang_Contribution_10395_Map rr:predicateObjectMap [
+ex:Lang_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10395_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10395_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10395_Map
@@ -29262,14 +30507,42 @@ ex:IRI_Contribution_10395_Map rr:subjectMap [
 ].
 
 ex:IRI_Contribution_10395_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10395_Map
+  ]
+].
+
+ex:IRI_Role_10395_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10395/@resource"
+  ].
+
+ex:IRI_Role_10395_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10395_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10395/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
-ex:IRI_Contribution_10395_Map rr:predicateObjectMap [
+ex:IRI_Role_10395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29318,12 +30591,74 @@ ex:Not_Lang_Contribution_10396_Map rr:subjectMap [
 ex:Lang_Contribution_10396_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10396_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10396_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10396_Map
+  ]
+].
+
+ex:Lang_Contribution_10396_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10396_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10396_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10396_Map
+  ]
+].
+
+ex:Lang_Role_10396_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10396[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10396_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10396[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10396_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10396_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10396_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10396_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29331,28 +30666,36 @@ ex:Not_Lang_Contribution_10396_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Contribution_10396_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10396_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10396_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10396_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10396_Map
   ]
 ].
 
-ex:Lang_Contribution_10396_Map rr:predicateObjectMap [
+ex:Lang_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10396_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10396_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10396_Map
@@ -29422,14 +30765,42 @@ ex:IRI_Contribution_10396_Map rr:subjectMap [
 ].
 
 ex:IRI_Contribution_10396_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10396_Map
+  ]
+].
+
+ex:IRI_Role_10396_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10396/@resource"
+  ].
+
+ex:IRI_Role_10396_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10396_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "criminal defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10396/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
-ex:IRI_Contribution_10396_Map rr:predicateObjectMap [
+ex:IRI_Role_10396_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29478,12 +30849,74 @@ ex:Not_Lang_Contribution_10397_Map rr:subjectMap [
 ex:Lang_Contribution_10397_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10397_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10397_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10397_Map
+  ]
+].
+
+ex:Lang_Contribution_10397_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10397_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10397_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10397_Map
+  ]
+].
+
+ex:Lang_Role_10397_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10397[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10397_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10397[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10397_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10397_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10397_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10397_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
@@ -29491,28 +30924,36 @@ ex:Not_Lang_Contribution_10397_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Contribution_10397_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10397_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10397_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10397_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10397_Map
   ]
 ].
 
-ex:Lang_Contribution_10397_Map rr:predicateObjectMap [
+ex:Lang_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10397_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10397_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10397_Map
@@ -29582,17 +31023,53 @@ ex:IRI_Contribution_10397_Map rr:subjectMap [
 ].
 
 ex:IRI_Contribution_10397_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10397_Map
+  ]
+].
+
+ex:IRI_Role_10397_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10397/@resource"
+  ].
+
+ex:IRI_Role_10397_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10397_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "civil defendant";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10397/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
-ex:IRI_Contribution_10397_Map rr:predicateObjectMap [
+ex:IRI_Role_10397_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/dfd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:relatedTo;
+    rr:objectMap [
+    rml:reference "P10405/@resource";
     rr:termType rr:IRI
   ]
 ].
@@ -29673,52 +31150,166 @@ ex:Not_Lang_Note_10406_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
-    rr:objectMap [
-    rml:reference "P10410/@resource";
-    rr:termType rr:IRI
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10407_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
+  rr:predicate bf:contribution;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Hasderivative_10410_Map
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10407_Map
   ]
 ].
 
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:hasDerivative;
+ex:Lang_Contribution_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Hasderivative_10410_Map
+    rr:parentTriplesMap ex:Lang_Role_10407_Map
   ]
 ].
 
-ex:Lang_Hasderivative_10410_Map a rr:TriplesMap;
+ex:Not_Lang_Contribution_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10407_Map
+  ]
+].
+
+ex:Lang_Contribution_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10407_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10407_Map
+  ]
+].
+
+ex:Lang_Role_10407_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10410[not(@resource)][@lang]"
+    rml:iterator "/RDF/Description/P10407[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Hasderivative_10410_Map a rr:TriplesMap;
+ex:Not_Lang_Role_10407_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10410[not(@resource) and not(@lang)]"
+    rml:iterator "/RDF/Description/P10407[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Hasderivative_10410_Map rr:subjectMap [
+ex:Lang_Role_10407_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Work
+  rr:class bf:Role
 ].
 
-ex:Not_Lang_Hasderivative_10410_Map rr:subjectMap [
+ex:Not_Lang_Role_10407_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Work
+  rr:class bf:Role
 ].
 
-ex:Lang_Hasderivative_10410_Map rr:predicateObjectMap [
+ex:Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "academic supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "academic supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10407_Map
+  ]
+].
+
+ex:Not_Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10407_Map
+  ]
+].
+
+ex:Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10407_Map
+  ]
+].
+
+ex:Not_Lang_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10407_Map
+  ]
+].
+
+ex:Lang_Agent_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Not_Lang_Agent_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Lang_Agent_10407_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -29729,7 +31320,7 @@ ex:Lang_Hasderivative_10410_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Hasderivative_10410_Map rr:predicateObjectMap [
+ex:Not_Lang_Agent_10407_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -29738,52 +31329,221 @@ ex:Not_Lang_Hasderivative_10410_Map rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:derivativeOf;
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10407_Map
+  ]
+].
+
+ex:IRI_Contribution_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407/@resource"
+  ].
+
+ex:IRI_Contribution_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10407_Map
+  ]
+].
+
+ex:IRI_Role_10407_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10407/@resource"
+  ].
+
+ex:IRI_Role_10407_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "academic supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10407_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10411/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:derivativeOf;
+  rr:predicate bf:contribution;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Derivativeof_10411_Map
+    rr:parentTriplesMap ex:Lang_Contribution_10408_Map
   ]
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:derivativeOf;
+  rr:predicate bf:contribution;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Derivativeof_10411_Map
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10408_Map
   ]
 ].
 
-ex:Lang_Derivativeof_10411_Map a rr:TriplesMap;
+ex:Lang_Contribution_10408_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10411[not(@resource)][@lang]"
+    rml:iterator "/RDF/Description/P10408[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Derivativeof_10411_Map a rr:TriplesMap;
+ex:Not_Lang_Contribution_10408_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10411[not(@resource) and not(@lang)]"
+    rml:iterator "/RDF/Description/P10408[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Derivativeof_10411_Map rr:subjectMap [
+ex:Lang_Contribution_10408_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Work
+  rr:class bf:Contribution
 ].
 
-ex:Not_Lang_Derivativeof_10411_Map rr:subjectMap [
+ex:Not_Lang_Contribution_10408_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Work
+  rr:class bf:Contribution
 ].
 
-ex:Lang_Derivativeof_10411_Map rr:predicateObjectMap [
+ex:Lang_Contribution_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10408_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10408_Map
+  ]
+].
+
+ex:Lang_Contribution_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10408_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10408_Map
+  ]
+].
+
+ex:Lang_Role_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "project supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "project supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10408_Map
+  ]
+].
+
+ex:Not_Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10408_Map
+  ]
+].
+
+ex:Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10408_Map
+  ]
+].
+
+ex:Not_Lang_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10408_Map
+  ]
+].
+
+ex:Lang_Agent_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Not_Lang_Agent_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Lang_Agent_10408_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -29794,7 +31554,426 @@ ex:Lang_Derivativeof_10411_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Derivativeof_10411_Map rr:predicateObjectMap [
+ex:Not_Lang_Agent_10408_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10408_Map
+  ]
+].
+
+ex:IRI_Contribution_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408/@resource"
+  ].
+
+ex:IRI_Contribution_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10408_Map
+  ]
+].
+
+ex:IRI_Role_10408_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10408/@resource"
+  ].
+
+ex:IRI_Role_10408_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "project supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10408_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10409_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10409_Map
+  ]
+].
+
+ex:Lang_Contribution_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10409_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10409_Map
+  ]
+].
+
+ex:Lang_Contribution_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10409_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10409_Map
+  ]
+].
+
+ex:Lang_Role_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "research supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "research supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10409_Map
+  ]
+].
+
+ex:Not_Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10409_Map
+  ]
+].
+
+ex:Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10409_Map
+  ]
+].
+
+ex:Not_Lang_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10409_Map
+  ]
+].
+
+ex:Lang_Agent_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Not_Lang_Agent_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Lang_Agent_10409_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10409_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10409_Map
+  ]
+].
+
+ex:IRI_Contribution_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409/@resource"
+  ].
+
+ex:IRI_Contribution_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10409_Map
+  ]
+].
+
+ex:IRI_Role_10409_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10409/@resource"
+  ].
+
+ex:IRI_Role_10409_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "research supervisor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10409_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:seriesOf;
+    rr:objectMap [
+    rml:reference "P10410/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:seriesOf;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Seriesof_10410_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:seriesOf;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Seriesof_10410_Map
+  ]
+].
+
+ex:Lang_Seriesof_10410_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10410[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Seriesof_10410_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10410[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Seriesof_10410_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Seriesof_10410_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Seriesof_10410_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Seriesof_10410_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+    rr:objectMap [
+    rml:reference "P10411/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Hasseries_10411_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:hasSeries;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Hasseries_10411_Map
+  ]
+].
+
+ex:Lang_Hasseries_10411_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10411[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Hasseries_10411_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10411[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Hasseries_10411_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Not_Lang_Hasseries_10411_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Work
+].
+
+ex:Lang_Hasseries_10411_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Hasseries_10411_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -30643,41 +32822,111 @@ ex:Not_Lang_Contribution_10417_Map rr:subjectMap [
 ex:Lang_Contribution_10417_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10417_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10417_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Lang_Role_10417_Map
   ]
 ].
 
 ex:Lang_Contribution_10417_Map rr:predicateObjectMap [
-  rr:predicate bf:agent;
+  rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Agent_10417_Map
+    rr:parentTriplesMap ex:Not_Lang_Role_10417_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10417_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10417_Map
+  ]
+].
+
+ex:Lang_Role_10417_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10417[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10417_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10417[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10417_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10417_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/edt";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/edt";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10417_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10417_Map
   ]
 ].
 
-ex:Lang_Contribution_10417_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10417_Map
+  ]
+].
+
+ex:Lang_Role_10417_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10417_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10417_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10417_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10417_Map
@@ -30747,17 +32996,45 @@ ex:IRI_Contribution_10417_Map rr:subjectMap [
 ].
 
 ex:IRI_Contribution_10417_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10417_Map
+  ]
+].
+
+ex:IRI_Role_10417_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10417/@resource"
+  ].
+
+ex:IRI_Role_10417_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10417_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10417_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
     rr:objectMap [
-    rml:reference "P10417/@resource";
+    rml:reference "self::node()";
     rr:termType rr:IRI
   ]
 ].
 
-ex:IRI_Contribution_10417_Map rr:predicateObjectMap [
+ex:IRI_Role_10417_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
+    rr:constant "http://id.loc.gov/vocabularies/relators/edt";
     rr:termType rr:IRI
   ]
 ].
@@ -31283,30 +33560,56 @@ ex:Not_Lang_Contribution_10421_Map rr:subjectMap [
 ex:Lang_Contribution_10421_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Role_P10421_Map
+    rr:parentTriplesMap ex:Lang_Role_10421_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10421_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Role_P10421_Map
+    rr:parentTriplesMap ex:Lang_Role_10421_Map
   ]
 ].
 
-ex:Constant_Role_P10421_Map a rr:TriplesMap;
+ex:Lang_Contribution_10421_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10421_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10421_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10421_Map
+  ]
+].
+
+ex:Lang_Role_10421_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!workID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10421]"
+    rml:iterator "/RDF/Description/P10421[not(@resource)][@lang]"
   ].
 
-ex:Constant_Role_P10421_Map rr:subjectMap [
+ex:Not_Lang_Role_10421_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10421[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10421_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Role
 ].
 
-ex:Constant_Role_P10421_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10421_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10421_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [
     rr:constant "audio producer";
@@ -31315,28 +33618,53 @@ ex:Constant_Role_P10421_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Contribution_10421_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10421_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "audio producer";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10421_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Role_10421_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Role_10421_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10421_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10421_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10421_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_10421_Map
   ]
 ].
 
-ex:Lang_Contribution_10421_Map rr:predicateObjectMap [
+ex:Lang_Role_10421_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10421_Map
   ]
 ].
 
-ex:Not_Lang_Contribution_10421_Map rr:predicateObjectMap [
+ex:Not_Lang_Role_10421_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Not_Lang_Agent_10421_Map
@@ -31420,12 +33748,32 @@ ex:IRI_Contribution_10421_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Constant_Role_P10421_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10421]"
+  ].
+
+ex:Constant_Role_P10421_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
 ex:Constant_Role_P10421_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [
     rr:constant "audio producer";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10421_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -32430,15 +34778,42 @@ ex:Not_Lang_Contribution_10428_Map rr:subjectMap [
 ex:Lang_Contribution_10428_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10428_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10428_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
+    rr:parentTriplesMap ex:Constant_Role_P10428_Map
+  ]
+].
+
+ex:Constant_Role_P10428_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10428]"
+  ].
+
+ex:Constant_Role_P10428_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10428_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10428_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/art";
     rr:termType rr:IRI
   ]
 ].
@@ -32544,7 +34919,23 @@ ex:IRI_Contribution_10428_Map rr:predicateObjectMap [
 ex:IRI_Contribution_10428_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
+    rr:parentTriplesMap ex:Constant_Role_P10428_Map
+  ]
+].
+
+ex:Constant_Role_P10428_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10428_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/art";
     rr:termType rr:IRI
   ]
 ].
@@ -33070,15 +35461,42 @@ ex:Not_Lang_Contribution_10432_Map rr:subjectMap [
 ex:Lang_Contribution_10432_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10432_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10432_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+    rr:parentTriplesMap ex:Constant_Role_P10432_Map
+  ]
+].
+
+ex:Constant_Role_P10432_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10432]"
+  ].
+
+ex:Constant_Role_P10432_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10432_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10432_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/aut";
     rr:termType rr:IRI
   ]
 ].
@@ -33184,7 +35602,23 @@ ex:IRI_Contribution_10432_Map rr:predicateObjectMap [
 ex:IRI_Contribution_10432_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
+    rr:parentTriplesMap ex:Constant_Role_P10432_Map
+  ]
+].
+
+ex:Constant_Role_P10432_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10432_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabularies/relators/aut";
     rr:termType rr:IRI
   ]
 ].
@@ -35613,6 +38047,300 @@ ex:IRI_Contribution_10447_Map rr:predicateObjectMap [
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ive";
     rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10448_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10448_Map
+  ]
+].
+
+ex:Lang_Contribution_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10448_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Role_10448_Map
+  ]
+].
+
+ex:Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10448_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Role_10448_Map
+  ]
+].
+
+ex:Lang_Role_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Role_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Role_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Not_Lang_Role_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Not_Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate <http://id.loc.gov/vocabulary/relators/cre>;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate <http://id.loc.gov/vocabulary/relators/cre>;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10448_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10448_Map
+  ]
+].
+
+ex:Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10448_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10448_Map
+  ]
+].
+
+ex:Lang_Agent_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Person
+].
+
+ex:Not_Lang_Agent_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Person
+].
+
+ex:Lang_Agent_10448_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10448_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10448_Map
+  ]
+].
+
+ex:IRI_Contribution_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448/@resource"
+  ].
+
+ex:IRI_Contribution_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Contribution_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Role_10448_Map
+  ]
+].
+
+ex:IRI_Role_10448_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10448/@resource"
+  ].
+
+ex:IRI_Role_10448_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:IRI_Role_10448_Map rr:predicateObjectMap [
+  rr:predicate <http://id.loc.gov/vocabulary/relators/cre>;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
   ]
 ].
 
@@ -38138,16 +40866,35 @@ ex:Not_Lang_Contribution_10464_Map rr:subjectMap [
 ex:Lang_Contribution_10464_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10464_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10464_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10464_Map
+  ]
+].
+
+ex:Constant_Role_P10464_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10464]"
+  ].
+
+ex:Constant_Role_P10464_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10464_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -38252,8 +40999,16 @@ ex:IRI_Contribution_10464_Map rr:predicateObjectMap [
 ex:IRI_Contribution_10464_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10464_Map
+  ]
+].
+
+ex:Constant_Role_P10464_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -38810,6 +41565,14 @@ ex:Constant_Role_P10468_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Constant_Role_P10468_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:Lang_Contribution_10468_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
@@ -38921,6 +41684,14 @@ ex:Constant_Role_P10468_Map rr:predicateObjectMap [
     rr:constant "audio producer";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10468_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -39925,12 +42696,39 @@ ex:Not_Lang_Contribution_10475_Map rr:subjectMap [
 ex:Lang_Contribution_10475_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10475_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10475_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10475_Map
+  ]
+].
+
+ex:Constant_Role_P10475_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10475]"
+  ].
+
+ex:Constant_Role_P10475_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10475_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10475_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -40037,6 +42835,22 @@ ex:IRI_Contribution_10475_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10475_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10475_Map
+  ]
+].
+
+ex:Constant_Role_P10475_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10475_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -40565,12 +43379,39 @@ ex:Not_Lang_Contribution_10479_Map rr:subjectMap [
 ex:Lang_Contribution_10479_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10479_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10479_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10479_Map
+  ]
+].
+
+ex:Constant_Role_P10479_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10479]"
+  ].
+
+ex:Constant_Role_P10479_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10479_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10479_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -40679,8 +43520,50 @@ ex:IRI_Contribution_10479_Map rr:predicateObjectMap [
 ex:IRI_Contribution_10479_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:IRI_Role_10479_Map
+  ]
+].
+
+ex:IRI_Role_10479_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10479/@resource"
+  ].
+
+ex:IRI_Role_10479_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:IRI_Role_10479_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:IRI_Role_10479_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:IRI_Role_10479_Map rr:predicateObjectMap [
+  rr:predicate <http://id.loc.gov/vocabulary/relators/aut>;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
   ]
 ].
 
@@ -43107,6 +45990,209 @@ ex:IRI_Contribution_10494_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ive";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10495_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10495_Map
+  ]
+].
+
+ex:Lang_Contribution_10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10495[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10495[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10495_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10495_Map
+  ]
+].
+
+ex:Constant_Role_P10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10495]"
+  ].
+
+ex:Constant_Role_P10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10495_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10495_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10495_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10495_Map
+  ]
+].
+
+ex:Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10495_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10495_Map
+  ]
+].
+
+ex:Lang_Agent_10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10495[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10495[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Not_Lang_Agent_10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Agent
+].
+
+ex:Lang_Agent_10495_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10495_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10495_Map
+  ]
+].
+
+ex:IRI_Contribution_10495_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10495/@resource"
+  ].
+
+ex:IRI_Contribution_10495_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Contribution_10495_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10495_Map
+  ]
+].
+
+ex:Constant_Role_P10495_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10495_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
     rr:termType rr:IRI
   ]
 ].
@@ -45633,12 +48719,39 @@ ex:Not_Lang_Contribution_10511_Map rr:subjectMap [
 ex:Lang_Contribution_10511_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10511_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10511_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10511_Map
+  ]
+].
+
+ex:Constant_Role_P10511_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10511]"
+  ].
+
+ex:Constant_Role_P10511_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10511_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10511_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
@@ -45745,6 +48858,22 @@ ex:IRI_Contribution_10511_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10511_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10511_Map
+  ]
+].
+
+ex:Constant_Role_P10511_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10511_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
@@ -46305,6 +49434,14 @@ ex:Constant_Role_P10515_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Constant_Role_P10515_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:Lang_Contribution_10515_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
@@ -46416,6 +49553,14 @@ ex:Constant_Role_P10515_Map rr:predicateObjectMap [
     rr:constant "audio producer";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10515_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -47420,12 +50565,39 @@ ex:Not_Lang_Contribution_10522_Map rr:subjectMap [
 ex:Lang_Contribution_10522_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10522_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10522_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10522_Map
+  ]
+].
+
+ex:Constant_Role_P10522_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10522]"
+  ].
+
+ex:Constant_Role_P10522_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10522_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10522_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -47532,6 +50704,22 @@ ex:IRI_Contribution_10522_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10522_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10522_Map
+  ]
+].
+
+ex:Constant_Role_P10522_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10522_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -48060,12 +51248,39 @@ ex:Not_Lang_Contribution_10526_Map rr:subjectMap [
 ex:Lang_Contribution_10526_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10526_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10526_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10526_Map
+  ]
+].
+
+ex:Constant_Role_P10526_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10526]"
+  ].
+
+ex:Constant_Role_P10526_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10526_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10526_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -48172,6 +51387,22 @@ ex:IRI_Contribution_10526_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10526_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10526_Map
+  ]
+].
+
+ex:Constant_Role_P10526_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10526_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -50602,6 +53833,209 @@ ex:IRI_Contribution_10541_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ive";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10542_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10542_Map
+  ]
+].
+
+ex:Lang_Contribution_10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10542[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10542[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10542_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10542_Map
+  ]
+].
+
+ex:Constant_Role_P10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10542]"
+  ].
+
+ex:Constant_Role_P10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10542_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10542_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10542_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10542_Map
+  ]
+].
+
+ex:Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10542_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10542_Map
+  ]
+].
+
+ex:Lang_Agent_10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10542[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10542[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Organization
+].
+
+ex:Not_Lang_Agent_10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Organization
+].
+
+ex:Lang_Agent_10542_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10542_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10542_Map
+  ]
+].
+
+ex:IRI_Contribution_10542_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10542/@resource"
+  ].
+
+ex:IRI_Contribution_10542_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Contribution_10542_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10542_Map
+  ]
+].
+
+ex:Constant_Role_P10542_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10542_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/relators/cre";
     rr:termType rr:IRI
   ]
 ].
@@ -53128,12 +56562,39 @@ ex:Not_Lang_Contribution_10558_Map rr:subjectMap [
 ex:Lang_Contribution_10558_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10558_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10558_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10558_Map
+  ]
+].
+
+ex:Constant_Role_P10558_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10558]"
+  ].
+
+ex:Constant_Role_P10558_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10558_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10558_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
@@ -53240,6 +56701,22 @@ ex:IRI_Contribution_10558_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10558_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10558_Map
+  ]
+].
+
+ex:Constant_Role_P10558_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "editorial director";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10558_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/edt";
@@ -53800,6 +57277,14 @@ ex:Constant_Role_P10562_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Constant_Role_P10562_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:Lang_Contribution_10562_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
@@ -53911,6 +57396,14 @@ ex:Constant_Role_P10562_Map rr:predicateObjectMap [
     rr:constant "audio producer";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10562_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/prd";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -54915,12 +58408,39 @@ ex:Not_Lang_Contribution_10569_Map rr:subjectMap [
 ex:Lang_Contribution_10569_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/art";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10569_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10569_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10569_Map
+  ]
+].
+
+ex:Constant_Role_P10569_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10569]"
+  ].
+
+ex:Constant_Role_P10569_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10569_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10569_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -55027,6 +58547,22 @@ ex:IRI_Contribution_10569_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10569_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10569_Map
+  ]
+].
+
+ex:Constant_Role_P10569_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "book artist";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10569_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/art";
@@ -55555,12 +59091,39 @@ ex:Not_Lang_Contribution_10573_Map rr:subjectMap [
 ex:Lang_Contribution_10573_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/aut";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P10573_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_10573_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10573_Map
+  ]
+].
+
+ex:Constant_Role_P10573_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10573]"
+  ].
+
+ex:Constant_Role_P10573_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10573_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10573_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -55667,6 +59230,22 @@ ex:IRI_Contribution_10573_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_10573_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10573_Map
+  ]
+].
+
+ex:Constant_Role_P10573_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "rapporteur";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10573_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/aut";
@@ -58097,6 +61676,209 @@ ex:IRI_Contribution_10588_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ive";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Contribution_10589_Map
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Contribution_10589_Map
+  ]
+].
+
+ex:Lang_Contribution_10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10589[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Contribution_10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10589[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Contribution_10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Not_Lang_Contribution_10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10589_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10589_Map
+  ]
+].
+
+ex:Constant_Role_P10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P10589]"
+  ].
+
+ex:Constant_Role_P10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P10589_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10589_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10589_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Lang_Agent_10589_Map
+  ]
+].
+
+ex:Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10589_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Not_Lang_Agent_10589_Map
+  ]
+].
+
+ex:Lang_Agent_10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10589[not(@resource)][@lang]"
+  ].
+
+ex:Not_Lang_Agent_10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10589[not(@resource) and not(@lang)]"
+  ].
+
+ex:Lang_Agent_10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Family
+].
+
+ex:Not_Lang_Agent_10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Family
+].
+
+ex:Lang_Agent_10589_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "@lang"
+    ]
+  ]
+].
+
+ex:Not_Lang_Agent_10589_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+    rr:objectMap [
+    rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate bf:contribution;
+  rr:objectMap [
+    rr:parentTriplesMap ex:IRI_Contribution_10589_Map
+  ]
+].
+
+ex:IRI_Contribution_10589_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!workID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description/P10589/@resource"
+  ].
+
+ex:IRI_Contribution_10589_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Contribution
+].
+
+ex:IRI_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:agent;
+    rr:objectMap [
+    rml:reference "self::node()";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:IRI_Contribution_10589_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P10589_Map
+  ]
+].
+
+ex:Constant_Role_P10589_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "aggregator";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Constant_Role_P10589_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cre";
     rr:termType rr:IRI
   ]
 ].

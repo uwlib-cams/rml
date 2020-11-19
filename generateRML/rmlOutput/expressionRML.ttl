@@ -555,6 +555,14 @@ ex:Not_Lang_Note_20003_Map rr:predicateObjectMap [
 
 ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:capture;
+    rr:objectMap [
+    rml:reference "P20004/@resource";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:ExpressionMap rr:predicateObjectMap [
+  rr:predicate bf:capture;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Capture_20004_Map
   ]
@@ -873,6 +881,22 @@ ex:Not_Lang_Contribution_20011_Map rr:subjectMap [
 ].
 
 ex:Lang_Contribution_20011_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20011_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Lang_Contribution_20011_Map rr:predicateObjectMap [
   rr:predicate bf:agent;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Agent_20011_Map
@@ -940,22 +964,6 @@ ex:Not_Lang_Agent_20011_Map rr:predicateObjectMap [
     rr:objectMap [
     rml:reference ".";
     rr:termType rr:Literal
-  ]
-].
-
-ex:Lang_Contribution_20011_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
-  ]
-].
-
-ex:Not_Lang_Contribution_20011_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
   ]
 ].
 
@@ -17408,7 +17416,7 @@ ex:IRI_Cartographicattributes_20216_Map a rr:TriplesMap;
 
 ex:IRI_Cartographicattributes_20216_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Catographic
+  rr:class bf:Cartographic
 ].
 
 ex:IRI_Cartographicattributes_20216_Map rr:predicateObjectMap [
@@ -17458,58 +17466,58 @@ ex:Not_Lang_Cartographicattributes_20216_Map rr:subjectMap [
 ].
 
 ex:Lang_Cartographicattributes_20216_Map rr:predicateObjectMap [
-  rr:predicate bf:projecttion;
+  rr:predicate bf:projection;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Projecttion_20216_Map
+    rr:parentTriplesMap ex:Lang_Projection_20216_Map
   ]
 ].
 
 ex:Not_Lang_Cartographicattributes_20216_Map rr:predicateObjectMap [
-  rr:predicate bf:projecttion;
+  rr:predicate bf:projection;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Projecttion_20216_Map
+    rr:parentTriplesMap ex:Lang_Projection_20216_Map
   ]
 ].
 
 ex:Lang_Cartographicattributes_20216_Map rr:predicateObjectMap [
-  rr:predicate bf:projecttion;
+  rr:predicate bf:projection;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Projecttion_20216_Map
+    rr:parentTriplesMap ex:Not_Lang_Projection_20216_Map
   ]
 ].
 
 ex:Not_Lang_Cartographicattributes_20216_Map rr:predicateObjectMap [
-  rr:predicate bf:projecttion;
+  rr:predicate bf:projection;
   rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Projecttion_20216_Map
+    rr:parentTriplesMap ex:Not_Lang_Projection_20216_Map
   ]
 ].
 
-ex:Lang_Projecttion_20216_Map a rr:TriplesMap;
+ex:Lang_Projection_20216_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P20216[not(@resource)][@lang]"
   ].
 
-ex:Not_Lang_Projecttion_20216_Map a rr:TriplesMap;
+ex:Not_Lang_Projection_20216_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P20216[not(@resource) and not(@lang)]"
   ].
 
-ex:Lang_Projecttion_20216_Map rr:subjectMap [
+ex:Lang_Projection_20216_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Projection
 ].
 
-ex:Not_Lang_Projecttion_20216_Map rr:subjectMap [
+ex:Not_Lang_Projection_20216_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Projection
 ].
 
-ex:Lang_Projecttion_20216_Map rr:predicateObjectMap [
+ex:Lang_Projection_20216_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -17520,7 +17528,7 @@ ex:Lang_Projecttion_20216_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Not_Lang_Projecttion_20216_Map rr:predicateObjectMap [
+ex:Not_Lang_Projection_20216_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
@@ -18333,6 +18341,22 @@ ex:Constant_Role_P20237_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Lang_Contribution_20237_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20237_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
@@ -18373,6 +18397,22 @@ ex:Constant_Role_P20237_Map rr:predicateObjectMap [
     rr:constant "writer of afterword";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20237_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20237_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -18520,6 +18560,22 @@ ex:Constant_Role_P20238_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Lang_Contribution_20238_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20238_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
@@ -18560,6 +18616,22 @@ ex:Constant_Role_P20238_Map rr:predicateObjectMap [
     rr:constant "writer of postface";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20238_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20238_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -20219,6 +20291,41 @@ ex:Not_Lang_Agent_20259_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20259_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20259_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_20259_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20259_Map
+  ]
+].
+
+ex:Constant_Role_P20259_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20259]"
+  ].
+
+ex:Constant_Role_P20259_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20259_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "has letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20259_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ill";
     rr:termType rr:IRI
   ]
@@ -20260,6 +20367,30 @@ ex:IRI_Contribution_20259_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_20259_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20259_Map
+  ]
+].
+
+ex:Constant_Role_P20259_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "has letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20259_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20259_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/ill";
@@ -21466,6 +21597,22 @@ ex:Constant_Role_P20275_Map rr:predicateObjectMap [
   ]
 ].
 
+ex:Lang_Contribution_20275_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20275_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
 ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
@@ -21506,6 +21653,22 @@ ex:Constant_Role_P20275_Map rr:predicateObjectMap [
     rr:constant "writer of foreword";
     rr:termType rr:Literal;
     rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20275_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20275_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/wst";
+    rr:termType rr:IRI
   ]
 ].
 
@@ -22867,6 +23030,41 @@ ex:Not_Lang_Agent_20285_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20285_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20285_Map
+  ]
+].
+
+ex:Not_Lang_Contribution_20285_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20285_Map
+  ]
+].
+
+ex:Constant_Role_P20285_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20285]"
+  ].
+
+ex:Constant_Role_P20285_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20285_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20285_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
     rr:termType rr:IRI
   ]
@@ -22908,6 +23106,30 @@ ex:IRI_Contribution_20285_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_20285_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20285_Map
+  ]
+].
+
+ex:Constant_Role_P20285_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
+  ]
+].
+
+ex:Lang_Contribution_20285_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20285_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
@@ -23027,12 +23249,30 @@ ex:Not_Lang_Agent_20286_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20286_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20286_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20286_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20286_Map
+  ]
+].
+
+ex:Constant_Role_P20286_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20286]"
+  ].
+
+ex:Constant_Role_P20286_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
@@ -23068,6 +23308,21 @@ ex:IRI_Contribution_20286_Map rr:predicateObjectMap [
 ].
 
 ex:IRI_Contribution_20286_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:parentTriplesMap ex:Constant_Role_P20286_Map
+  ]
+].
+
+ex:Lang_Contribution_20286_Map rr:predicateObjectMap [
+  rr:predicate bf:role;
+  rr:objectMap [
+    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
+    rr:termType rr:IRI
+  ]
+].
+
+ex:Not_Lang_Contribution_20286_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
     rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
@@ -25560,148 +25815,12 @@ ex:Not_Lang_Note_20309_Map rr:predicateObjectMap [
 ].
 
 ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Identifiedby_20310_Map
-  ]
-].
-
-ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Identifiedby_20310_Map
-  ]
-].
-
-ex:Lang_Identifiedby_20310_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P20310[not(@resource)][@lang]"
-  ].
-
-ex:Not_Lang_Identifiedby_20310_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P20310[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Identifiedby_20310_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Identifier
-].
-
-ex:Not_Lang_Identifiedby_20310_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Identifier
-].
-
-ex:Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
+  rr:predicate rdfs:label;
     rr:objectMap [
-    rml:reference ".";
+    rml:reference "P20310[not(@resource)][@lang]";
     rr:termType rr:Literal;
     rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Note_P20310_Map
-  ]
-].
-
-ex:Not_Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Note_P20310_Map
-  ]
-].
-
-ex:Constant_Note_P20310_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P20310]"
-  ].
-
-ex:Constant_Note_P20310_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Note
-].
-
-ex:Constant_Note_P20310_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rr:constant "Access point";
-    rr:termType rr:Literal;
-    rr:language "en"
-  ]
-].
-
-ex:Constant_Note_P20310_Map rr:predicateObjectMap [
-  rr:predicate bf:noteType;
-  rr:objectMap [
-    rr:constant "type of identifier";
-    rr:termType rr:Literal;
-    rr:language "en"
-  ]
-].
-
-ex:Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Source_P20310_Map
-  ]
-].
-
-ex:Not_Lang_Identifiedby_20310_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Constant_Source_P20310_Map
-  ]
-].
-
-ex:Constant_Source_P20310_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P20310]"
-  ].
-
-ex:Constant_Source_P20310_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Source
-].
-
-ex:Constant_Source_P20310_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rr:constant "RDA";
-    rr:termType rr:Literal;
-    rr:language "en"
-  ]
-].
-
-ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference "P20311[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P20311/@lang"
+      rml:reference "P20310/@lang"
     ]
   ]
 ].
@@ -25709,7 +25828,7 @@ ex:ExpressionMap rr:predicateObjectMap [
 ex:ExpressionMap rr:predicateObjectMap [
   rr:predicate rdfs:label;
   rr:objectMap [
-    rml:reference "P20311[not(@resource) and not(@lang)]";
+    rml:reference "P20310[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
@@ -25719,25 +25838,6 @@ ex:ExpressionMap rr:predicateObjectMap [
     rr:objectMap [
     rml:reference "P20312/@resource";
     rr:termType rr:IRI
-  ]
-].
-
-ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference "P20312[not(@resource)][@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P20312/@lang"
-    ]
-  ]
-].
-
-ex:ExpressionMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rml:reference "P20312[not(@resource) and not(@lang)]";
-    rr:termType rr:Literal
   ]
 ].
 
@@ -26351,16 +26451,35 @@ ex:Not_Lang_Agent_20327_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20327_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20327_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20327_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20327_Map
+  ]
+].
+
+ex:Constant_Role_P20327_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20327]"
+  ].
+
+ex:Constant_Role_P20327_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20327_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -26394,8 +26513,16 @@ ex:IRI_Contribution_20327_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20327_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20327_Map
+  ]
+].
+
+ex:Constant_Role_P20327_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -26511,16 +26638,35 @@ ex:Not_Lang_Agent_20328_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20328_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20328_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20328_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20328_Map
+  ]
+].
+
+ex:Constant_Role_P20328_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20328]"
+  ].
+
+ex:Constant_Role_P20328_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20328_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -26554,8 +26700,16 @@ ex:IRI_Contribution_20328_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20328_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20328_Map
+  ]
+].
+
+ex:Constant_Role_P20328_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -26671,16 +26825,35 @@ ex:Not_Lang_Agent_20329_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20329_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20329_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20329_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20329_Map
+  ]
+].
+
+ex:Constant_Role_P20329_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20329]"
+  ].
+
+ex:Constant_Role_P20329_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20329_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -26714,8 +26887,16 @@ ex:IRI_Contribution_20329_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20329_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20329_Map
+  ]
+].
+
+ex:Constant_Role_P20329_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -27267,19 +27448,38 @@ ex:Not_Lang_Agent_20336_Map rr:predicateObjectMap [
   ]
 ].
 
-ex:Lang_Agent_20336_Map rr:predicateObjectMap [
+ex:Lang_Contribution_20336_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20336_Map
   ]
 ].
 
-ex:Not_Lang_Agent_20336_Map rr:predicateObjectMap [
+ex:Not_Lang_Contribution_20336_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20336_Map
+  ]
+].
+
+ex:Constant_Role_P20336_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20336]"
+  ].
+
+ex:Constant_Role_P20336_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20336_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -27313,8 +27513,16 @@ ex:IRI_Contribution_20336_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20336_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20336_Map
+  ]
+].
+
+ex:Constant_Role_P20336_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -29057,16 +29265,35 @@ ex:Not_Lang_Agent_20347_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20347_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20347_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20347_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20347_Map
+  ]
+].
+
+ex:Constant_Role_P20347_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20347]"
+  ].
+
+ex:Constant_Role_P20347_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20347_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -29100,8 +29327,16 @@ ex:IRI_Contribution_20347_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20347_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20347_Map
+  ]
+].
+
+ex:Constant_Role_P20347_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32256,12 +32491,12 @@ ex:Not_Lang_Agent_20366_Map a rr:TriplesMap;
 
 ex:Lang_Agent_20366_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Person
+  rr:class bf:Agent
 ].
 
 ex:Not_Lang_Agent_20366_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Person
+  rr:class bf:Agent
 ].
 
 ex:Lang_Agent_20366_Map rr:predicateObjectMap [
@@ -32286,16 +32521,35 @@ ex:Not_Lang_Agent_20366_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20366_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20366_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20366_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20366_Map
+  ]
+].
+
+ex:Constant_Role_P20366_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20366]"
+  ].
+
+ex:Constant_Role_P20366_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20366_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32329,8 +32583,16 @@ ex:IRI_Contribution_20366_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20366_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20366_Map
+  ]
+].
+
+ex:Constant_Role_P20366_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32416,12 +32678,12 @@ ex:Not_Lang_Agent_20367_Map a rr:TriplesMap;
 
 ex:Lang_Agent_20367_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Person
+  rr:class bf:Agent
 ].
 
 ex:Not_Lang_Agent_20367_Map rr:subjectMap [
   rr:termType rr:BlankNode;
-  rr:class bf:Person
+  rr:class bf:Agent
 ].
 
 ex:Lang_Agent_20367_Map rr:predicateObjectMap [
@@ -32446,16 +32708,35 @@ ex:Not_Lang_Agent_20367_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20367_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20367_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20367_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20367_Map
+  ]
+].
+
+ex:Constant_Role_P20367_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20367]"
+  ].
+
+ex:Constant_Role_P20367_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20367_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32489,8 +32770,16 @@ ex:IRI_Contribution_20367_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20367_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20367_Map
+  ]
+].
+
+ex:Constant_Role_P20367_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32606,16 +32895,35 @@ ex:Not_Lang_Agent_20368_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20368_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20368_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20368_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20368_Map
+  ]
+].
+
+ex:Constant_Role_P20368_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20368]"
+  ].
+
+ex:Constant_Role_P20368_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20368_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -32649,8 +32957,16 @@ ex:IRI_Contribution_20368_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20368_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20368_Map
+  ]
+].
+
+ex:Constant_Role_P20368_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -35673,16 +35989,35 @@ ex:Not_Lang_Agent_20387_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20387_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20387_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20387_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20387_Map
+  ]
+].
+
+ex:Constant_Role_P20387_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20387]"
+  ].
+
+ex:Constant_Role_P20387_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20387_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -35716,8 +36051,16 @@ ex:IRI_Contribution_20387_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20387_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20387_Map
+  ]
+].
+
+ex:Constant_Role_P20387_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -36980,16 +37323,35 @@ ex:Not_Lang_Agent_20395_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20395_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20395_Map
+  ]
+].
+
+ex:Constant_Role_P20395_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20395]"
+  ].
+
+ex:Constant_Role_P20395_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20395_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -37023,8 +37385,16 @@ ex:IRI_Contribution_20395_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20395_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20395_Map
+  ]
+].
+
+ex:Constant_Role_P20395_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -38767,16 +39137,35 @@ ex:Not_Lang_Agent_20406_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20406_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20406_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20406_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20406_Map
+  ]
+].
+
+ex:Constant_Role_P20406_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20406]"
+  ].
+
+ex:Constant_Role_P20406_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20406_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -38810,8 +39199,16 @@ ex:IRI_Contribution_20406_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20406_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20406_Map
+  ]
+].
+
+ex:Constant_Role_P20406_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -41115,71 +41512,35 @@ ex:Not_Lang_Agent_20420_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20420_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Role_20420_Map
+    rr:parentTriplesMap ex:Constant_Role_P20420_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20420_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Role_20420_Map
+    rr:parentTriplesMap ex:Constant_Role_P20420_Map
   ]
 ].
 
-ex:Lang_Contribution_20420_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Role_20420_Map
-  ]
-].
-
-ex:Not_Lang_Contribution_20420_Map rr:predicateObjectMap [
-  rr:predicate bf:role;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Role_20420_Map
-  ]
-].
-
-ex:Lang_Role_20420_Map a rr:TriplesMap;
+ex:Constant_Role_P20420_Map a rr:TriplesMap;
   rml:logicalSource [
     rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
     rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P20420[not(@resource)][@lang]"
+    rml:iterator "/RDF/Description[P20420]"
   ].
 
-ex:Not_Lang_Role_20420_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P20420[not(@resource) and not(@lang)]"
-  ].
-
-ex:Lang_Role_20420_Map rr:subjectMap [
+ex:Constant_Role_P20420_Map rr:subjectMap [
   rr:termType rr:BlankNode;
   rr:class bf:Role
 ].
 
-ex:Not_Lang_Role_20420_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Role
-].
-
-ex:Lang_Role_20420_Map rr:predicateObjectMap [
+ex:Constant_Role_P20420_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
+  rr:objectMap [
+    rr:constant "visual effects provider";
     rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
-  ]
-].
-
-ex:Not_Lang_Role_20420_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
-    rr:termType rr:Literal
+    rr:language "en"
   ]
 ].
 
@@ -41213,30 +41574,16 @@ ex:IRI_Contribution_20420_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20420_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:parentTriplesMap ex:IRI_Role_20420_Map
+    rr:parentTriplesMap ex:Constant_Role_P20420_Map
   ]
 ].
 
-ex:IRI_Role_20420_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P20420/@resource"
-  ].
-
-ex:IRI_Role_20420_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-  rr:class bf:Role
-].
-
-ex:IRI_Role_20420_Map rr:predicateObjectMap [
+ex:Constant_Role_P20420_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
-    rr:objectMap [
-    rml:reference ".";
+  rr:objectMap [
+    rr:constant "visual effects provider";
     rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "@lang"
-    ]
+    rr:language "en"
   ]
 ].
 
@@ -42046,16 +42393,35 @@ ex:Not_Lang_Agent_20425_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20425_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20425_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20425_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20425_Map
+  ]
+].
+
+ex:Constant_Role_P20425_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20425]"
+  ].
+
+ex:Constant_Role_P20425_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20425_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -42089,8 +42455,16 @@ ex:IRI_Contribution_20425_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20425_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20425_Map
+  ]
+].
+
+ex:Constant_Role_P20425_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -42206,16 +42580,35 @@ ex:Not_Lang_Agent_20426_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20426_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20426_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20426_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20426_Map
+  ]
+].
+
+ex:Constant_Role_P20426_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20426]"
+  ].
+
+ex:Constant_Role_P20426_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20426_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -42249,8 +42642,16 @@ ex:IRI_Contribution_20426_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20426_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20426_Map
+  ]
+].
+
+ex:Constant_Role_P20426_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -42366,16 +42767,35 @@ ex:Not_Lang_Agent_20427_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20427_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20427_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20427_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20427_Map
+  ]
+].
+
+ex:Constant_Role_P20427_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20427]"
+  ].
+
+ex:Constant_Role_P20427_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20427_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -42409,8 +42829,16 @@ ex:IRI_Contribution_20427_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20427_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20427_Map
+  ]
+].
+
+ex:Constant_Role_P20427_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -45433,16 +45861,35 @@ ex:Not_Lang_Agent_20446_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20446_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20446_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20446_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20446_Map
+  ]
+].
+
+ex:Constant_Role_P20446_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20446]"
+  ].
+
+ex:Constant_Role_P20446_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20446_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -45476,8 +45923,16 @@ ex:IRI_Contribution_20446_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20446_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20446_Map
+  ]
+].
+
+ex:Constant_Role_P20446_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -46740,16 +47195,35 @@ ex:Not_Lang_Agent_20454_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20454_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20454_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20454_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20454_Map
+  ]
+].
+
+ex:Constant_Role_P20454_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20454]"
+  ].
+
+ex:Constant_Role_P20454_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20454_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -46783,8 +47257,16 @@ ex:IRI_Contribution_20454_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20454_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20454_Map
+  ]
+].
+
+ex:Constant_Role_P20454_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -48527,16 +49009,35 @@ ex:Not_Lang_Agent_20465_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20465_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20465_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20465_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20465_Map
+  ]
+].
+
+ex:Constant_Role_P20465_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20465]"
+  ].
+
+ex:Constant_Role_P20465_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20465_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -48570,8 +49071,16 @@ ex:IRI_Contribution_20465_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20465_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/edt";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20465_Map
+  ]
+].
+
+ex:Constant_Role_P20465_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "reviser";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -51756,16 +52265,35 @@ ex:Not_Lang_Agent_20484_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20484_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20484_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20484_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20484_Map
+  ]
+].
+
+ex:Constant_Role_P20484_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20484]"
+  ].
+
+ex:Constant_Role_P20484_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20484_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -51799,8 +52327,16 @@ ex:IRI_Contribution_20484_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20484_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20484_Map
+  ]
+].
+
+ex:Constant_Role_P20484_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -51916,16 +52452,35 @@ ex:Not_Lang_Agent_20485_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20485_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20485_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20485_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20485_Map
+  ]
+].
+
+ex:Constant_Role_P20485_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20485]"
+  ].
+
+ex:Constant_Role_P20485_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20485_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -51959,8 +52514,16 @@ ex:IRI_Contribution_20485_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20485_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20485_Map
+  ]
+].
+
+ex:Constant_Role_P20485_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -52076,16 +52639,35 @@ ex:Not_Lang_Agent_20486_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20486_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20486_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20486_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20486_Map
+  ]
+].
+
+ex:Constant_Role_P20486_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20486]"
+  ].
+
+ex:Constant_Role_P20486_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20486_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -52119,8 +52701,16 @@ ex:IRI_Contribution_20486_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20486_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20486_Map
+  ]
+].
+
+ex:Constant_Role_P20486_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "instrumental conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -55143,16 +55733,35 @@ ex:Not_Lang_Agent_20505_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20505_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20505_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20505_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20505_Map
+  ]
+].
+
+ex:Constant_Role_P20505_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20505]"
+  ].
+
+ex:Constant_Role_P20505_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20505_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -55186,8 +55795,16 @@ ex:IRI_Contribution_20505_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20505_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ill";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20505_Map
+  ]
+].
+
+ex:Constant_Role_P20505_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "letterer";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -56450,16 +57067,35 @@ ex:Not_Lang_Agent_20513_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20513_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20513_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20513_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20513_Map
+  ]
+].
+
+ex:Constant_Role_P20513_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20513]"
+  ].
+
+ex:Constant_Role_P20513_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20513_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -56493,8 +57129,16 @@ ex:IRI_Contribution_20513_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20513_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/cnd";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20513_Map
+  ]
+].
+
+ex:Constant_Role_P20513_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "choral conductor";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -61474,16 +62118,35 @@ ex:Not_Lang_Agent_20543_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20543_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20543_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20543_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20543_Map
+  ]
+].
+
+ex:Constant_Role_P20543_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20543]"
+  ].
+
+ex:Constant_Role_P20543_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20543_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -61517,8 +62180,16 @@ ex:IRI_Contribution_20543_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20543_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20543_Map
+  ]
+].
+
+ex:Constant_Role_P20543_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to performance";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -61634,16 +62305,35 @@ ex:Not_Lang_Agent_20544_Map rr:predicateObjectMap [
 ex:Lang_Contribution_20544_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20544_Map
   ]
 ].
 
 ex:Not_Lang_Contribution_20544_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20544_Map
+  ]
+].
+
+ex:Constant_Role_P20544_Map a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "/home/mcm104/rml/input/!!expressionID!!.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/RDF/Description[P20544]"
+  ].
+
+ex:Constant_Role_P20544_Map rr:subjectMap [
+  rr:termType rr:BlankNode;
+  rr:class bf:Role
+].
+
+ex:Constant_Role_P20544_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
@@ -61677,8 +62367,16 @@ ex:IRI_Contribution_20544_Map rr:predicateObjectMap [
 ex:IRI_Contribution_20544_Map rr:predicateObjectMap [
   rr:predicate bf:role;
   rr:objectMap [
-    rr:constant "http://id.loc.gov/vocabulary/relators/ctb";
-    rr:termType rr:IRI
+    rr:parentTriplesMap ex:Constant_Role_P20544_Map
+  ]
+].
+
+ex:Constant_Role_P20544_Map rr:predicateObjectMap [
+  rr:predicate rdfs:label;
+  rr:objectMap [
+    rr:constant "contributor to amalgamation";
+    rr:termType rr:Literal;
+    rr:language "en"
   ]
 ].
 
