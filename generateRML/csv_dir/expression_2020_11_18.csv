@@ -28,8 +28,12 @@ identifiedBy >> Identifier.subclass > rdf:value"
 has other distinguishing characteristic of expression RDA 6.12,http://rdaregistry.info/Elements/e/P20003,"bf:note [ a bf:Note ;
    rdfs:label ""P20003value"" ;
    bf:noteType ""other distinguishing characteristic of expression"" ] .","note >> Note > rdfs:label > noteType=""other distinguishing characteristic of expression"""
-has date of capture RDA 7.11.3,http://rdaregistry.info/Elements/e/P20004,"bf:capture [ a bf:Capture ;
-   rdf:value ""P20004value"" ] .",capture >> Capture > rdf:value
+has date of capture RDA 7.11.3,http://rdaregistry.info/Elements/e/P20004,"bf:capture <P20004> .
+# note: with literal value:
+bf:capture [ a bf:Capture ;
+   rdf:value ""P20004value"" ] .","capture*
+or
+capture >> Capture > rdf:value"
 has award RDA 7.28,http://rdaregistry.info/Elements/e/P20005,"bf:awards ""P20005value"" .",awards
 has language of expression RDA 6.11,http://rdaregistry.info/Elements/e/P20006,"bf:language <P20006value> .
 # with literal value
@@ -47,13 +51,13 @@ has note on changes in content characteristics RDA 7.29.2,http://rdaregistry.inf
    rdfs:label ""P20010value"" ;
    bf:noteType ""note on changes in content characteristics"" ] .","note >> Note > rdfs:label > noteType=""note on changes in content characteristics"""
 has conductor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20011,"bf:contribution [ a bf:Contribution ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] ;
    bf:agent [ a bf:Agent ;
-      rdfs:label ""P20011value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+      rdfs:label ""P20011value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:agent <P20011value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd>
+   bf:agent <P20011value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/cnd> > agent >> Agent > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
 has actor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20012,"bf:contribution [ a bf:Contribution ;
@@ -575,10 +579,10 @@ bf:partOf [ a bf:Work ;
    rdfs:label ""P20074value"" ] .","partOf*
 or
 partOf >> Work > rdfs:label"
-is replaced in part by expression RDA 24.5,http://rdaregistry.info/Elements/e/P20075,"bf:replacedBy <P20275value> .
+is replaced in part by expression RDA 24.5,http://rdaregistry.info/Elements/e/P20075,"bf:replacedBy <P20075value> .
 # with literal value
 bf:replacedBy [ a bf:Work ;
-   rdfs:label ""P20275value"" ] .","replacedBy*
+   rdfs:label ""P20075value"" ] .","replacedBy*
 or
 replacedBy >> Work > rdfs:label"
 is replaced by expression RDA 24.5,http://rdaregistry.info/Elements/e/P20076,"bf:replacedBy <P20276value> .
@@ -1352,9 +1356,9 @@ has projection of cartographic content RDA 7.26,http://rdaregistry.info/Elements
 # with literal value
 bf:cartographicAttributes [ a bf:Cartographic ;
    bf:projection [ a bf:Projection ;
-      rdfs:label ""P20216value"" ] ] .","cartographicAttributes >> Catographic > projection*
+      rdfs:label ""P20216value"" ] ] .","cartographicAttributes >> Cartographic > projection*
 or
-cartographicAttributes >> Cartographic > projecttion >> Projection > rdfs:label"
+cartographicAttributes >> Cartographic > projection >> Projection > rdfs:label"
 has capture information RDA 7.11,http://rdaregistry.info/Elements/e/P20217,"bf:capture <P20217value> .
 # with literal value
 bf:capture [ a bf:Capture;
@@ -1426,26 +1430,30 @@ has writer of afterword RDA 18.5,http://rdaregistry.info/Elements/e/P20237,"bf:c
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20237value"" ] ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of afterword"" ] ] .
+      rdfs:label ""writer of afterword"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20237value>  ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of afterword""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of afterword""
+      rdfs:label ""writer of afterword""  ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of afterword"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of afterword"""
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of afterword"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>"
 has writer of postface RDA 18.5,http://rdaregistry.info/Elements/e/P20238,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20238value"" ] ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of postface"" ] ] .
+      rdfs:label ""writer of postface"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20238value>  ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of postface""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of postface""
+      rdfs:label ""writer of postface""  ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of postface"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of postface"""
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of postface"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>"
 is musical theatre adaptation of expression RDA 24.5,http://rdaregistry.info/Elements/e/P20239,"bf:derivativeOf <P20239value> .
 # with literal value
 bf:derivativeOf [a bf:Work;
@@ -1579,15 +1587,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role >> Role > rdfs:label=""special effects provider"""
 has letterer agent RDA 18.5,http://rdaregistry.info/Elements/e/P20259,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Agent;
+   bf:agent [ a bf:Agent ;
       rdfs:label ""P20259value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""has letterer"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:agent <P20259value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ill>
+   bf:agent <P20259value>  ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""has letterer""  ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""has letterer"" ; > role=<http://id.loc.gov/vocabulary/relators/ill>
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ill>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""has letterer"" ; > role=<http://id.loc.gov/vocabulary/relators/ill>"
 has details of aspect ratio designation RDA 7.19.1.4.1.4,http://rdaregistry.info/Elements/e/P20260,"bf:note [ a bf:Note ;
    rdfs:label ""P20260value"" ;
    bf:noteType ""details of aspect ratio designation"" ] .","note >> Note > rdfs:label > noteType=""details of aspect ratio designation"""
@@ -1659,14 +1671,16 @@ has writer of foreword RDA 18.5,http://rdaregistry.info/Elements/e/P20275,"bf:co
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20275value"" ] ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of foreword"" ] ] .
+      rdfs:label ""writer of foreword"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20275value>  ;
    bf:role [ a bf:Role ;
-      rdfs:label ""writer of foreword""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of foreword""
+      rdfs:label ""writer of foreword""  ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/wst> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""writer of foreword"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of foreword"""
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""writer of foreword"" ; > role=<http://id.loc.gov/vocabulary/relators/wst>"
 has sound designer agent RDA 18.5,http://rdaregistry.info/Elements/e/P20276,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20276value"" ] ;
@@ -1751,23 +1765,31 @@ contribution >> Contribution > agent* > role >> Role > rdfs:label=""makeup artis
 has choral conductor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20285,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20285value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20285value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""choral conductor"" ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""choral conductor"" ; > role=<http://id.loc.gov/vocabulary/relators/cnd>"
 has instrumental conductor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20286,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20286value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20286value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""> ; role=<http://id.loc.gov/vocabulary/relators/cnd>
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent*  > role >> Role > rdfs:label=""instrumental conductor""> ; > role=<http://id.loc.gov/vocabulary/relators/cnd>"
 has censor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20287,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20287value"" ] ;
@@ -1938,37 +1960,17 @@ has related nomen of expression,http://rdaregistry.info/Elements/e/P20308,not ma
 has note on capture RDA 7.11.4,http://rdaregistry.info/Elements/e/P20309,"bf:note [ a bf:Note ;
    rdfs:label ""P20309value"" ;
    bf:noteType ""capture"" ] .","note >> Note > rdfs:label > noteType=""capture"""
-has access point for expression,http://rdaregistry.info/Elements/e/P20310,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P20310value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
-has appellation of expression,http://rdaregistry.info/Elements/e/P20311,"rdfs:label ""P20311value""",rdfs:label
+has access point for expression,http://rdaregistry.info/Elements/e/P20310,"rdfs:label ""P20310value"" .",rdfs:label
+has appellation of expression,http://rdaregistry.info/Elements/e/P20311,not mapped,not mapped
 has title of expression,http://rdaregistry.info/Elements/e/P20312,"bf:title <P20312value> .
 # with literal value
-rdfs:label ""P20312value"" ;
 bf:title [ a bf:Title ;
    bf:mainTitle ""P20312value"" ] .","title*
 or
-rdfs:label ; title >> Title > mainTitle"
-has authorized access point for expression,http://rdaregistry.info/Elements/e/P20313,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P20313value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Authorized access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"" ; rdfs:label"
-has variant access point for expression,http://rdaregistry.info/Elements/e/P20314,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P20314value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Variant access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Variant access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
-has preferred title of expression,http://rdaregistry.info/Elements/e/P20315,"rdfs:label ""P20315value"" ;
-bf:title [ a bf:Title;
+title >> Title > mainTitle"
+has authorized access point for expression,http://rdaregistry.info/Elements/e/P20313,"skos:prefLabel ""P20313value"" .",skos:prefLabel
+has variant access point for expression,http://rdaregistry.info/Elements/e/P20314,"skos:altLabel ""P20314value"" .",skos:altLabel
+has preferred title of expression,http://rdaregistry.info/Elements/e/P20315,"bf:title [ a bf:Title;
    bf:mainTitle ""P20315value"" ] . ",title >> Title > mainTitle
 has variant title of expression,http://rdaregistry.info/Elements/e/P20316,"bf:title [ a bf:VariantTitle ;
    bf:mainTitle ""P20316value"" ] .",title >> VariantTitle > mainTitle
@@ -2010,33 +2012,39 @@ has key of expression,http://rdaregistry.info/Elements/e/P20326,"bf:musicKey ""P
 has reviser agent,http://rdaregistry.info/Elements/e/P20327,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20327value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20327value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/edt>
+  bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""reviser""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""reviser"" "
 has contributor agent to amalgamation,http://rdaregistry.info/Elements/e/P20328,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20328value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20328value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+  bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to amalgamation""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to amalgamation"" "
 has contributor agent to performance,http://rdaregistry.info/Elements/e/P20329,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20329value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20329value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+  bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to performance""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to performance"" "
 has editor agent,http://rdaregistry.info/Elements/e/P20330,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent;
       rdfs:label ""P20330value"" ] ;
@@ -2074,15 +2082,17 @@ bf:succeededBy [ a bf:Work ;
 or
 succeededBy >> Work > rdfs:label"
 has choral conductor person,http://rdaregistry.info/Elements/e/P20336,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Person;
+   bf:agent [ a bf:Agent;
       rdfs:label ""P20336value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20336value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Person > rdfs:label > role=<http://id.loc.gov/vocabulary/relators/cnd>
+  bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""choral conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""choral conductor"" "
 has interviewer person of expression,http://rdaregistry.info/Elements/e/P20337,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20337value"" ];
@@ -2186,15 +2196,17 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/trl>"
 has reviser person,http://rdaregistry.info/Elements/e/P20347,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Person ;
-      rdfs:label ""P20347value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ] .
+   bf:agent [ a bf:Person;
+      rdfs:label ""P20347value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20347value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/edt>
+  bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""reviser""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt> "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""reviser"" "
 has audio engineer person,http://rdaregistry.info/Elements/e/P20348,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person;
       rdfs:label ""P20348value"" ] ;
@@ -2390,35 +2402,41 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/arr>"
 has contributor person to performance,http://rdaregistry.info/Elements/e/P20366,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Person ;
-      rdfs:label ""P20366value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:agent [ a bf:Person;
+      rdfs:label ""P20366value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20366value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+  bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to performance""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to performance"" "
 has contributor person to amalgamation,http://rdaregistry.info/Elements/e/P20367,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Person ;
-      rdfs:label ""P20367value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:agent [ a bf:Agent;
+      rdfs:label ""P20367value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20367value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+  bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to amalgamation""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to amalgamation"" "
 has instrumental conductor person,http://rdaregistry.info/Elements/e/P20368,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20368value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20368value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""instrumental conductor"""
 has actor person,http://rdaregistry.info/Elements/e/P20369,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20369value"" ];
@@ -2604,13 +2622,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has letterer person,http://rdaregistry.info/Elements/e/P20387,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20387value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20387value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ill>
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""letterer""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ill>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""letterer"""
 has presenter person,http://rdaregistry.info/Elements/e/P20388,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20388value"" ];
@@ -2684,15 +2704,17 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/anm>"
 has choral conductor collective agent,http://rdaregistry.info/Elements/e/P20395,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Agent ;
-      rdfs:label ""P20395value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:agent [ a bf:Agent;
+      rdfs:label ""P20395value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:agent <P20395value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:agent <P20395value>  ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""choral conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""choral conductor"""
 has interviewer collective agent of expression,http://rdaregistry.info/Elements/e/P20396,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20396value"" ];
@@ -2798,13 +2820,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has reviser collective agent,http://rdaregistry.info/Elements/e/P20406,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20406value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20406value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/edt>
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] . ","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""reviser""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt> "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""reviser"" "
 has audio engineer collective agent,http://rdaregistry.info/Elements/e/P20407,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20407value"" ] ;
@@ -2952,9 +2976,9 @@ has visual effects provider collective agent,http://rdaregistry.info/Elements/e/
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20420value>  ;
    bf:role [ a bf:Role ;
-      rdfs:label ""visual effects provider""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label
+      rdfs:label ""visual effects provider""  ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""visual effects provider""
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""visual effects provider"""
 has music programmer collective agent,http://rdaregistry.info/Elements/e/P20421,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20421value"" ] ;
@@ -3002,33 +3026,39 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has contributor collective agent to performance,http://rdaregistry.info/Elements/e/P20425,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20425value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20425value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to performance""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to performance"" "
 has contributor collective agent to amalgamation,http://rdaregistry.info/Elements/e/P20426,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20426value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20426value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""contributor to amalgamation""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to amalgamation"" "
 has instrumental conductor collective agent,http://rdaregistry.info/Elements/e/P20427,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20427value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20427value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""instrumental conductor"""
 has actor collective agent,http://rdaregistry.info/Elements/e/P20428,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20428value"" ];
@@ -3214,13 +3244,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has letterer collective agent,http://rdaregistry.info/Elements/e/P20446,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20446value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20446value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ill>
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""letterer""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ill>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""letterer"""
 has presenter collective agent,http://rdaregistry.info/Elements/e/P20447,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P20447value"" ] ;
@@ -3296,13 +3328,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has choral conductor corporate body,http://rdaregistry.info/Elements/e/P20454,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20454value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20454value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""choral conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""choral conductor"""
 has interviewer corporate body of expression,http://rdaregistry.info/Elements/e/P20455,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20455value"" ];
@@ -3408,13 +3442,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has reviser corporate body,http://rdaregistry.info/Elements/e/P20465,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20465value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20465value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/edt>
+   bf:role [ a bf:Role ;
+      rdfs:label ""reviser"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""reviser""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt> "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""reviser"""
 has audio engineer corporate body,http://rdaregistry.info/Elements/e/P20466,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20466value"" ] ;
@@ -3612,33 +3648,39 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has contributor corporate body to performance,http://rdaregistry.info/Elements/e/P20484,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20484value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20484value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor to performance""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to performance"""
 has contributor corporate body to amalgamation,http://rdaregistry.info/Elements/e/P20485,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20485value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20485value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""contributor to amalgamation""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to amalgamation"""
 has instrumental conductor corporate body,http://rdaregistry.info/Elements/e/P20486,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20486value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20486value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role [ a bf:Role ;
+      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""instrumental conductor"""
 has actor corporate body,http://rdaregistry.info/Elements/e/P20487,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20487value"" ];
@@ -3824,13 +3866,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has letterer corporate body,http://rdaregistry.info/Elements/e/P20505,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20505value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20505value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ill>
+   bf:role [ a bf:Role ;
+      rdfs:label ""letterer"" ] ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""letterer""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ill>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""letterer"" "
 has presenter corporate body,http://rdaregistry.info/Elements/e/P20506,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20506value"" ];
@@ -3906,13 +3950,15 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has choral conductor family,http://rdaregistry.info/Elements/e/P20513,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family;
       rdfs:label ""P20513value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd>  ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20513value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/cnd>  ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
+   bf:role [ a bf:Role ;
+      rdfs:label ""choral conductor"" ] ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""choral conductor""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cnd>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""choral conductor"" "
 has interviewer family of expression,http://rdaregistry.info/Elements/e/P20514,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P20514value"" ];
@@ -4222,23 +4268,27 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has contributor family to performance,http://rdaregistry.info/Elements/e/P20543,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P20543value"" ];
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20543value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb> ].","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to performance"" ] ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor to performance""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to performance"""
 has contributor family to amalgamation,http://rdaregistry.info/Elements/e/P20544,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family;
       rdfs:label ""P20544value"" ] ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb>  ] .
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P20544value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/ctb>  ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/ctb>
+   bf:role [ a bf:Role ;
+      rdfs:label ""contributor to amalgamation"" ] ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""contributor to amalgamation""
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ctb>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""contributor to amalgamation"""
 has instrumental conductor family,http://rdaregistry.info/Elements/e/P20545,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family;
       rdfs:label ""P20545value"" ] ;

@@ -91,12 +91,16 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P10010value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ptf> > agent >> Organization > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ptf>"
-has court governed (RDA 18.5),http://rdaregistry.info/Elements/w/P10011,"bf:relatedTo [ a bf:Organization ;
-   rdfs:label ""P10011value"" ] .
+has court governed (RDA 18.5),http://rdaregistry.info/Elements/w/P10011,"bf:contribution [ a bf:Contribution ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cou> ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P10011value"" ] ] .
 # with IRI value
-bf:relatedTo <P10011value> .","relatedTo >> Organization > rdfs:label
+bf:contribution [a bf:Contribution ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cou> ;
+   bf:agent <P10011value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/cou> > agent >> Organization > rdfs:label
 or
-relatedTo*"
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cou>"
 has numbering of part (RDA 24.6),http://rdaregistry.info/Elements/w/P10012,"bf:title [ a bf:Title ;
    bf:partNumber ""P10012value""  ]  .",title >> Title > partNumber
 has film director agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10013,"bf:contribution [ a bf:Contribution ;
@@ -596,7 +600,7 @@ has film producer agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10073,"bf
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:agent <P10073value> ;
-   bf:role <http://id.loc.gov/vocabulary/relators/fmp> ] . ","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/fmp>
+   bf:role <http://id.loc.gov/vocabulary/relators/fmp> ] . ","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmp> > agent >> Agent > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmp>"
 has radio producer agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10074,"bf:contribution [ a bf:Contribution ;
@@ -647,10 +651,14 @@ bf:hasSubseries [ a bf:Work ;
    rdfs:label ""P10080value"" ] .","hasSubseries*
 or
 hasSubseries >> Work > rdfs:label"
-has longitude and latitude (RDA 7.4.2),http://rdaregistry.info/Elements/w/P10081,not mapped,not mapped
-has right ascension and declination (RDA 7.4.4),http://rdaregistry.info/Elements/w/P10082,not mapped,not mapped
-has strings of coordinate pairs (RDA 7.4.3),http://rdaregistry.info/Elements/w/P10083,not mapped,not mapped
-has system of organization (RDA 7.8),http://rdaregistry.info/Elements/w/P10084,not mapped,not mapped
+has longitude and latitude (RDA 7.4.2),http://rdaregistry.info/Elements/w/P10081,"bf:cartographicAttributes [ a bf:Cartographic ;
+   bf:coordinates ""P10024value"" ] .",cartographicAttributes >> Cartographic > coordinates
+has right ascension and declination (RDA 7.4.4),http://rdaregistry.info/Elements/w/P10082,"bf:cartographicAttributes [ a bf:Cartographic ;
+   rdfs:label ""P10082value"" ] .",cartographicAttributes >> Cartographic > rdfs:label
+has strings of coordinate pairs (RDA 7.4.3),http://rdaregistry.info/Elements/w/P10083,"bf:cartographicAttributes [ a bf:Cartographic ;
+   bf:coordinates ""P10024value"" ] .",cartographicAttributes >> Cartographic > coordinates
+has system of organization (RDA 7.8),http://rdaregistry.info/Elements/w/P10084,"bf:arrangement [a bf:Arrangement ;
+bf:organization <""P10084value""> ].",arrangement >> Arrangement > organization
 is adapted as television program work (RDA 24.5),http://rdaregistry.info/Elements/w/P10085,"bf:hasDerivative <P10085value> .
 # with literal value
 bf:hasDerivative [ a bf:Work ;
@@ -666,9 +674,8 @@ bf:hasDerivative [ a bf:Work ;
 or
 hasDerivative >> Work > rdfs:label
 "
-has title of work (RDA 6.2),http://rdaregistry.info/Elements/w/P10088,"rdfs:label ""P10088value"" ;
-bf:title [ a bf:Title;
-   bf:mainTitle ""P10088value"" ] . ",rdfs:label ; title >> Title > mainTitle
+has title of work (RDA 6.2),http://rdaregistry.info/Elements/w/P10088,"bf:title [ a bf:Title;
+   bf:mainTitle ""P10088value"" ] . ",title >> Title > mainTitle
 is abstracted in work (RDA 24.5),http://rdaregistry.info/Elements/w/P10089,"bf:hasDerivative <P10089value> .
 # with literal value
 bf:hasDerivative [ a bf:Work ;
@@ -757,7 +764,13 @@ bf:subSeriesOf [ a bf:Work ;
    rdfs:label ""P10101value"" ] .","subseriesOf*
 or
 subseriesOf >> Work > rdfs:label"
-is issue of (RDA 24.5),http://rdaregistry.info/Elements/w/P10102,not mapped,not mapped
+is issue of (RDA 24.5),http://rdaregistry.info/Elements/w/P10102,"bf:hasSeries <P10102value> .
+# with literal value
+bf:hasSeries [ a bf:Work ;
+    rdfs:label ""P10102value"" ] .","hasSeries*
+or
+hasSeries >> Work > rdfs:label
+"
 is complemented by work (RDA 24.5),http://rdaregistry.info/Elements/w/P10103,"bf:accompaniedBy <P10103value> .
 # with literal value
 bf:accompaniedBy [ a bf:Work ;
@@ -765,12 +778,12 @@ rdfs:label ""P10103value"" ] .","accompaniedBy*
 or
 accompaniedBy >> Work > rdfs:label
 "
-is separated into work (RDA 24.5),http://rdaregistry.info/Elements/w/P10104,"bf:succeededBy <P10104value> .
+is separated into work (RDA 24.5),http://rdaregistry.info/Elements/w/P10104,"bf:splitInto <P10104value> .
 # with literal value
-bf:succeededBy [ a bf:Work ;
-rdfs:label ""P10104value"" ] .","succeededBy*
+bf:splitInto [ a bf:Work ;
+rdfs:label ""P10104value"" ] .","splitInto*
 or
-succeededBy >> Work > rdfs:label"
+splitInto >> Work > rdfs:label"
 is screenplay for work (RDA 24.5),http://rdaregistry.info/Elements/w/P10105,"bf:accompanies <P10105value> .
 # with literal value
 bf:accompanies [ a bf:Work ;
@@ -1000,12 +1013,12 @@ bf:subject [ a madsrdf:Title ;
    rdfs:label  ""P10140value"" ] .","subject*
 or
 subject >> madsrdf:Title > rdfs:label"
-has issue (RDA 24.5),http://rdaregistry.info/Elements/w/P10141,"bf:hasDerivative <P10141value> .
+has issue (RDA 24.5),http://rdaregistry.info/Elements/w/P10141,"bf:seriesOf <P10141value> .
 # with literal value
-bf:hasDerivative [ a bf:Work ;
-    rdfs:label ""P10141value"" ] .","hasDerivative*
+bf:seriesOf [ a bf:Work ;
+    rdfs:label ""P10141value"" ] .","seriesOf*
 or
-hasDerivative >> Work > rdfs:label
+seriesOf >> Work > rdfs:label
 "
 is adaptation of work (RDA 24.5),http://rdaregistry.info/Elements/w/P10142,"bf:derivativeOf <P10142value> .
 # with literal value
@@ -1072,15 +1085,12 @@ or
 accompanies >> Work > rdfs:label
 "
 is illustrations for work (RDA 24.5),http://rdaregistry.info/Elements/w/P10152,"
-bf:accompanies <P10152value> ;
-  bf:illustrativeContent <P10152value> .
+bf:accompanies <P10152value> .
 # with literal value
 bf:accompanies [ a bf:Work ;
-    rdfs:label ""P10152value"" ] ;
-  bf:illustrativeContent [ a bf:Work ;
-    rdfs:label ""P10152value"" ] .","accompanies* ; illustrativeContent*
+    rdfs:label ""P10152value"" ] .","accompanies*
 or
-accompanies >> Work > rdfs:label ; > illustrativeContent >> Work > rdfs:label
+accompanies >> Work > rdfs:label
 "
 is evaluation of work (RDA 23.5),http://rdaregistry.info/Elements/w/P10153,"bf:subject <P10153value> .
 # with literal value
@@ -1374,7 +1384,8 @@ bf:relatedTo [ a bf:Work ;
 or
 relatedTo >> Work > rdfs:label
 "
-has epoch (RDA 7.6),http://rdaregistry.info/Elements/w/P10199,not mapped,not mapped
+has epoch (RDA 7.6),http://rdaregistry.info/Elements/w/P10199,"bf:temporalCoverage [a bf:Temporal ;
+rdfs:label ""P1099value""]",temporalCoverage >> Temporal > rdfs:label
 has landscape architect agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10200,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/lsa> ;
    bf:agent [ a bf:Agent ;
@@ -1444,8 +1455,9 @@ bf:replacementOf [ a bf:Work ;
   rdfs:label ""P10207value"" ] .","replacementOf*
 or
 replacementOf >> Work > rdfs:label"
-has dissertation or thesis information (RDA 7.9),http://rdaregistry.info/Elements/w/P10209,"bf:dissertation [ a bf:Dissertation ;
-      rdfs:label ""P10209value"" ] .",dissertation >> Dissertation > rdfs:label
+has dissertation or thesis information (RDA 7.9),http://rdaregistry.info/Elements/w/P10209,"bf:note [ a bf:Note ;
+rdfs:label ""P10209value"" ;
+bf:noteType ""dissertation or thesis information""] .","note >> Note > rdfs:label > noteType=""dissertation or thesis information"""
 has history of work (RDA 6.7),http://rdaregistry.info/Elements/w/P10210,"bf:historyOfWork ""P10210value"" .",historyOfWork
 is split into work (RDA 24.5),http://rdaregistry.info/Elements/w/P10211,"bf:splitInto <P10211value> .
 # with literal value
@@ -1465,12 +1477,17 @@ bf:mergerOf [ a bf:Work ;
 rdfs:label ""P10213value"" ] .","mergerOf*
 or
 mergerOf >> Work > rdfs:label"
-has equinox (RDA 7.5),http://rdaregistry.info/Elements/w/P10214,not mapped,not mapped
+has equinox (RDA 7.5),http://rdaregistry.info/Elements/w/P10214,"bf:cartographicAttributes [ a bf:Cartographic ;
+   bf:equinox ""P10214value"" ] .",cartographicAttributes >> Cartographic > equinox
 has year degree granted (RDA 7.9.4),http://rdaregistry.info/Elements/w/P10215,"bf:dissertation [ a bf:Dissertation ;
       bf:date  ""P10215value"" ] .",dissertation >> Dissertation > date
-has coverage of content (RDA 7.3),http://rdaregistry.info/Elements/w/P10216,"bf:note [ a bf:Note ;
+has coverage of content (RDA 7.3),http://rdaregistry.info/Elements/w/P10216,"bf:relatedTo <P10216value> .
+# with literal value
+bf:note [ a bf:Note ;
    rdfs:label ""P10216value"" ;
-   bf:noteType ""coverage of content"" ] .","note >> Note > rdfs:label > noteType=""coverage of content"""
+   bf:noteType ""coverage of content"" ] .","relatedTo*
+or
+note >> Note > rdfs:label > noteType=""coverage of content"""
 has intended audience of representative expression (RDA 7.7),http://rdaregistry.info/Elements/w/P10217,"bf:intendedAudience <P10217value> .
 # with literal value
 bf:intendedAudience [ a bf:IntendedAudience ;
@@ -1484,11 +1501,16 @@ bf:originPlace [ a bf:Place ;
 or
 originPlace >> Place > rdfs:label"
 has date of work (RDA 6.4),http://rdaregistry.info/Elements/w/P10219,"bf:originDate ""P10219value"" .",originDate
-has medium of performance of musical content of representative expression (RDA 6.15),http://rdaregistry.info/Elements/w/P10220,not mapped,not mapped
-has key of representative expression (RDA 6.17),http://rdaregistry.info/Elements/w/P10221,not mapped,not mapped
+has medium of performance of musical content of representative expression (RDA 6.15),http://rdaregistry.info/Elements/w/P10220,"bf:musicMedium <P10220value> .
+# with literal value
+bf:musicMedium [a bf:MusicMedium ;
+rdfs:label ""P10220value"" ] .","musicMedium*
+or
+musicMedium >> MusicMedium > rdfs:label"
+has key of representative expression (RDA 6.17),http://rdaregistry.info/Elements/w/P10221,"bf:musicKey [a bf:MusicKey ;
+rdfs:label ""P10221value"" ] .",musicKey >> MusicKey > rdfs:label
 has nature of content (RDA 7.2),http://rdaregistry.info/Elements/w/P10222,"bf:natureOfContent ""P10222value"" .",natureOfContent
-has preferred title of work (*) (RDA 6.2.2),http://rdaregistry.info/Elements/w/P10223,"rdfs:label ""P10223value"" ;
-bf:title [ a bf:Title;
+has preferred title of work (*) (RDA 6.2.2),http://rdaregistry.info/Elements/w/P10223,"bf:title [ a bf:Title;
    bf:mainTitle ""P10223value"" ] . ",title >> Title > mainTitle
 is absorption of work (RDA 24.5),http://rdaregistry.info/Elements/w/P10224,"bf:absorbed <P10224value> .
 # with literal value
@@ -1631,7 +1653,7 @@ hasDerivative >> Work > rdfs:label
 is video game adaptation of work (RDA 24.5),http://rdaregistry.info/Elements/w/P10250,"bf:derivativeOf <P10250value> .
 # with literal value
 bf:derivativeOf [ a bf:Work ;
-   rdfs:label ""P10250value"" ] .","drivativeOf
+   rdfs:label ""P10250value"" ] .","derivativeOf
 or
 derivativeOf >> Work > rdfs:label"
 is adapted as graphic novel work (RDA 24.5),http://rdaregistry.info/Elements/w/P10251,"bf:hasDerivative <P10251value> .
@@ -1658,25 +1680,33 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cll>"
 has book artist agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10254,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10254value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
-   bf:agent <P10254value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/art> > agent >> Agent > rdfs:label
+   bf:agent <P10254value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""book artist"" ; > role=<http://id.loc.gov/vocabulary/relators/art> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/art>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""book artist"" ; > role=<http://id.loc.gov/vocabulary/relators/art>"
 has rapporteur agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10255,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+rdfs:label ""rapporteur"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10255value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+rdfs:label ""rapporteur"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
-   bf:agent <P10255value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/aut> > agent >> Agent > rdfs:label
+   bf:agent <P10255value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""rapporteur"" ; > role=<http://id.loc.gov/vocabulary/relators/aut> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""rapporteur"" ; > role=<http://id.loc.gov/vocabulary/relators/aut>"
 has subject (RDA 23.4),http://rdaregistry.info/Elements/w/P10256,"bf:subject <P10256value> .
 # with literal value
 bf:subject [ a madsrdf:Authority ;
@@ -1957,15 +1987,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/orm>"
 has editorial director agent (RDA 18.5),http://rdaregistry.info/Elements/w/P10298,"bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""editorial director "" ]  ;
    bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent [ a bf:Agent ;
+   bf:agent [ a bf:Agent;
       rdfs:label ""P10298value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent <P10298value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/edt> > agent >> Agent > rdfs:label
+   bf:agent <P10298value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" ; > role=<http://id.loc.gov/vocabulary/relators/edt> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""editorial director"" ; > role=<http://id.loc.gov/vocabulary/relators/edt>"
 has founding agent of work (RDA 18.5),http://rdaregistry.info/Elements/w/P10299,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""founder "" ]  ;
@@ -2020,10 +2054,8 @@ or
 contribution >> Contribution > agent* > role >> Role > rdfs:label=""remix artist"" "
 has related RDA entity of work,http://rdaregistry.info/Elements/w/P10307,"bf:relatedTo <P10307value> .
 # with literal value
-bf:relatedTo [ a bf:Work ;
+bf:relatedTo [ a http://rdaregistry.info/Elements/c/C10013 ;
    rdfs:label ""P10307value"" ] .","relatedTo*
-or
-relatedTo >> Work > rdfs:label
 "
 has related expression of work,http://rdaregistry.info/Elements/w/P10308,"bf:relatedTo <P10308value> .
 # with literal value
@@ -2032,12 +2064,13 @@ bf:relatedTo [ a bf:Work ;
 or
 relatedTo >> Work > rdfs:label
 "
-has related manifestation of work,http://rdaregistry.info/Elements/w/P10309,"bf:hasInstance <P10309value> .
+has related manifestation of work,http://rdaregistry.info/Elements/w/P10309,"bf:relatedTo <P10309value> .
 # with literal value
-bf:hasInstance [ a bf:Instance ;
-   rdfs:label ""P10309value"" ] .","hasInstance*
+bf:relatedTo [ a bf:Instance ;
+   rdfs:label ""P10309value"" ] .","relatedTo*
 or
-hasInstance >> Instance > rdfs:label"
+relatedTo >> Instance > rdfs:label
+"
 has related item of work,http://rdaregistry.info/Elements/w/P10310,"bf:relatedTo <P10310value> .
 # with literal value
 bf:relatedTo [ a bf:Item ;
@@ -2045,123 +2078,130 @@ bf:relatedTo [ a bf:Item ;
 or
 relatedTo >> Item > rdfs:label
 "
-has related agent of work,http://rdaregistry.info/Elements/w/P10311,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Agent ;
-      rdfs:label ""P10311value"" ] ] .
-# with IRI value
-bf:contribution [ a bf:Contribution ;
-   bf:agent <P10311value> ] .","contribution >> Contribution > agent >> Agent > rdfs:label
+has related agent of work,http://rdaregistry.info/Elements/w/P10311,"bf:relatedTo <P10311value> .
+# with literal value
+bf:relatedTo [ a bf:Agent ;
+   rdfs:label ""P10311value"" ] .","relatedTo*
 or
-contribution >> Contribution > agent*"
-has related person of work,http://rdaregistry.info/Elements/w/P10312,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Person ;
-      rdfs:label ""P10312value"" ] ] .
-# with IRI value
-bf:contribution [ a bf:Contribution ;
-   bf:agent <P10312value> ] .","contribution >> Contribution > agent >> Person > rdfs:label
-or
-contribution >> Contribution > agent*"
-has related family of work,http://rdaregistry.info/Elements/w/P10313,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Family ;
-      rdfs:label ""P10313value"" ] ] .
-# with IRI value
-bf:contribution [ a bf:Contribution ;
-   bf:agent <P10313value> ] .","contribution >> Contribution > agent >> Family > rdfs:label
-or
-contribution >> Contribution > agent*"
-has related corporate body of work,http://rdaregistry.info/Elements/w/P10314,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Organization ;
-      rdfs:label ""P10314value"" ] ] .
-# with IRI value
-bf:contribution [ a bf:Contribution ;
-   bf:agent <P10314value> ] .","contribution >> Contribution > agent >> Organization > rdfs:label
-or
-contribution >> Contribution > agent*"
-has related collective agent of work,http://rdaregistry.info/Elements/w/P10315,"bf:contribution [ a bf:Contribution ;
-   bf:agent [ a bf:Agent ;
-      rdfs:label ""P10315value"" ] ] .
-# with IRI value
-bf:contribution [ a bf:Contribution ;
-   bf:agent <P10315value> ] .","contribution >> Contribution > agent >> Agent > rdfs:label
-or
-contribution >> Contribution > agent*"
-has related place of work,http://rdaregistry.info/Elements/w/P10316,"bf:place [ a bf:Place;
-   rdfs:label ""P10316value"" ] .
-# with IRI value
-bf:place <P10316value> .","place >> Place > rdfs:label
-or
-place *
+relatedTo >> Agent > rdfs:label
 "
-has related timespan of work,http://rdaregistry.info/Elements/w/P10317,not mapped,not mapped
+has related person of work,http://rdaregistry.info/Elements/w/P10312,"bf:relatedTo <P10312value> .
+# with literal value
+bf:relatedTo [ a bf:Person ;
+   rdfs:label ""P10312value"" ] .","relatedTo*
+or
+relatedTo >> Person > rdfs:label
+"
+has related family of work,http://rdaregistry.info/Elements/w/P10313,"bf:relatedTo <P10313value> .
+# with literal value
+bf:relatedTo [ a bf:Family ;
+   rdfs:label ""P10313value"" ] .","relatedTo*
+or
+relatedTo >> Family > rdfs:label
+"
+has related corporate body of work,http://rdaregistry.info/Elements/w/P10314,"bf:relatedTo <P10314value> .
+# with literal value
+bf:relatedTo [ a bf:Organization ;
+   rdfs:label ""P10314value"" ] .","relatedTo*
+or
+relatedTo >> Organization > rdfs:label
+"
+has related collective agent of work,http://rdaregistry.info/Elements/w/P10315,"bf:relatedTo <P10315value> .
+# with literal value
+bf:relatedTo [ a bf:Organization ;
+   rdfs:label ""P10315value"" ] .","relatedTo*
+or
+relatedTo >> Agent > rdfs:label
+"
+has related place of work,http://rdaregistry.info/Elements/w/P10316,"bf:relatedTo <P10316value> .
+# with literal value
+bf:relatedTo [ a bf:Place ;
+   rdfs:label ""P10316value"" ] .","relatedTo*
+or
+relatedTo >> Place > rdfs:label
+"
+has related timespan of work,http://rdaregistry.info/Elements/w/P10317,"bf:relatedTo <P10317value> .
+# with literal value
+bf:relatedTo [a bf:Temporal ;
+rdfs:label ""P10317value"" ] .","relatedTo*
+or
+relatedTo >> Temporal > rdfs:label"
 has related nomen of work,http://rdaregistry.info/Elements/w/P10318,not mapped,not mapped
 has subject agent,http://rdaregistry.info/Elements/w/P10319,"bf:subject <P10319value> .
 # with literal value
 bf:subject [ a madsrdf:Name;
    rdfs:label  ""P10319value"" ] .","subject*
 or
-subject >> madsrdf:Title > rdfs:label"
+subject >> madsrdf:Name > rdfs:label"
 has subject collective agent,http://rdaregistry.info/Elements/w/P10320,"bf:subject <P10320value> .
 # with literal value
 bf:subject [ a madsrdf:Name;
    rdfs:label  ""P10320value"" ] .","subject*
 or
-subject >> madsrdf:Title > rdfs:label"
+subject >> madsrdf:Name > rdfs:label"
 has subject place,http://rdaregistry.info/Elements/w/P10321,"bf:subject <P10321value> .
 # with literal value
 bf:subject [ a madsrdf:Geographic ;
    rdfs:label  ""P10321value"" ] .","subject*
 or
 subject >> madsrdf:Geographic > rdfs:label"
-has subject timespan,http://rdaregistry.info/Elements/w/P10322,not mapped,not mapped
-has subject nomen,http://rdaregistry.info/Elements/w/P10323,not mapped,not mapped
-has subject RDA entity,http://rdaregistry.info/Elements/w/P10324,not mapped,not mapped
-is description of person (RDA 23.5),http://rdaregistry.info/Elements/w/P10325,"bf:subject <P10325value>
-# with literal value.
+has subject timespan,http://rdaregistry.info/Elements/w/P10322,"bf:subject <P10322value> .
+#with literal value
+bf:subject [ a madsrdf:Temporal ;
+   rdfs:label ""P10322value"" ] .","subject*
+or
+subject >> madsrdf:Temporal > rdfs:label"
+has subject nomen,http://rdaregistry.info/Elements/w/P10323,"bf:subject <P10320value> .
+# with literal value
 bf:subject [ a madsrdf:Name;
-   rdfs:label  ""P10325value"" ] .","subject*
+   rdfs:label  ""P10320value"" ] .","subject*
 or
 subject >> madsrdf:Name > rdfs:label"
+has subject RDA entity,http://rdaregistry.info/Elements/w/P10324,"bf:subject <P10324value> .
+# with literal value
+bf:subject [a http://rdaregistry.info/Elements/c/C10013 ;
+   rdfs:label ""P10324value"" ] .",subject*
+is description of person (RDA 23.5),http://rdaregistry.info/Elements/w/P10325,"bf:subject <P10325value>
+# with literal value.
+bf:subject [ a madsrdf:PersonalName;
+   rdfs:label  ""P10325value"" ] .","subject*
+or
+subject >> Person > rdfs:label"
 is description of corporate body (RDA 23.5),http://rdaregistry.info/Elements/w/P10326,"bf:subject <P10326value> .
 # with literal value
 bf:subject [ a madsrdf:Name;
    rdfs:label  ""P10326value"" ] .","subject*
 or
-subject >> madsrdf:Name > rdfs:label"
+subject >> Organization > rdfs:label"
 is description of family (RDA 23.5),http://rdaregistry.info/Elements/w/P10327,"bf:subject <P10327value> .
 # with literal value
 bf:subject [ a madsrdf:Name;
    rdfs:label  ""P10327value"" ] .","subject*
 or
-subject >> madsrdf:Name > rdfs:label"
-has access point for work (RDA 6.1.2),http://rdaregistry.info/Elements/w/P10328,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P10328value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
-has appellation of work,http://rdaregistry.info/Elements/w/P10329,"rdfs:label ""P10329value"" .",rdfs:label
+subject >> Family > rdfs:label"
+has access point for work (RDA 6.1.2),http://rdaregistry.info/Elements/w/P10328,"rdfs:label ""P10328value"".",rdfs:label
+has appellation of work,http://rdaregistry.info/Elements/w/P10329,"rdfs:label ""P10329value"".",rdfs:label
 has note on work (RDA 5.9),http://rdaregistry.info/Elements/w/P10330,"bf:note [ a bf:Note ;
    rdfs:label ""P10330value"" ] .",note >> Note > rdfs:label
-has authorized access point for work (*),http://rdaregistry.info/Elements/w/P10331,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P10331value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Authorized access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"" ; rdfs:label"
-has variant access point for work,http://rdaregistry.info/Elements/w/P10332,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P10332value"" ;
-   bf:note [ a bf:Note ;
-      rdfs:label ""Variant access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Variant access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA"""
+has authorized access point for work (*),http://rdaregistry.info/Elements/w/P10331,"skos:prefLabel ""P10331value"" .",skos:prefLabel
+has variant access point for work,http://rdaregistry.info/Elements/w/P10332,"skos:altLabel ""P10332value"" .",skos:altLabel
 has opus number (RDA 6.16.1.3.2),http://rdaregistry.info/Elements/w/P10333,"bf:musicOpusNumber ""P10333value"" .",musicOpusNumber
 has serial number of musical work (RDA 6.16.1.3.1),http://rdaregistry.info/Elements/w/P10334,"bf:musicSerialNumber ""P10334value"" .",musicSerialNumber
 has thematic index number (RDA 6.16.1.3.3),http://rdaregistry.info/Elements/w/P10335,"bf:musicThematicNumber ""P10335value"" .",musicThematicNumber
-has transformation,http://rdaregistry.info/Elements/w/P10336,not mapped,not mapped
-is transformation of,http://rdaregistry.info/Elements/w/P10337,not mapped,not mapped
+has transformation,http://rdaregistry.info/Elements/w/P10336,"bf:relatedTo <P10336value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10336value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
+is transformation of,http://rdaregistry.info/Elements/w/P10337,"bf:relatedTo <P10337value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10337value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
 is description of agent,http://rdaregistry.info/Elements/w/P10338,"bf:subject <P10338value> .
 # with literal value
 bf:subject [ a madsrdf:Agent ;
@@ -2263,7 +2303,7 @@ is binding of manifestation of,http://rdaregistry.info/Elements/w/P10363,not map
 is binding of item of,http://rdaregistry.info/Elements/w/P10364,not mapped,not mapped
 has extension plan,http://rdaregistry.info/Elements/w/P10365,"bf:note [ a bf:Note ;
    rdfs:label ""P10365value"" ;
-   bf:noteType ""extension plan"" ] .",note >> Note > rdfs:label > noteType
+   bf:noteType ""extension plan"" ] .","note >> Note > rdfs:label > noteType=""extension plan"""
 has ISSN,http://rdaregistry.info/Elements/w/P10366,"bf:identifiedBy [ a bf:Issn ;
    rdf:value ""P104366value"" ] .",identifiedBy >> Issn > rdf:value
 has key title,http://rdaregistry.info/Elements/w/P10367,"bf:title [ a bf:KeyTitle ;
@@ -2342,8 +2382,20 @@ bf:relatedTo [ a bf:Work ;
 or
 relatedTo >> Work > rdfs:label
 "
-has carrier version,http://rdaregistry.info/Elements/w/P10387,not mapped,not mapped
-is language version of,http://rdaregistry.info/Elements/w/P10388,not mapped,not mapped
+has carrier version,http://rdaregistry.info/Elements/w/P10387,"bf:relatedTo <P10387value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10387value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
+is language version of,http://rdaregistry.info/Elements/w/P10388,"bf:relatedTo <P10388value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10388value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
 is regional version of,http://rdaregistry.info/Elements/w/P10389,"bf:relatedTo <P10389value> .
 # with literal value
 bf:relatedTo [ a bf:Work ;
@@ -2351,50 +2403,97 @@ bf:relatedTo [ a bf:Work ;
 or
 relatedTo >> Work > rdfs:label
 "
-is carrier version of,http://rdaregistry.info/Elements/w/P10390,not mapped,not mapped
-is serialized version of,http://rdaregistry.info/Elements/w/P10391,not mapped,not mapped
-is static version of,http://rdaregistry.info/Elements/w/P10392,not mapped,not mapped
-has aggregator agent,http://rdaregistry.info/Elements/w/P10393,not mapped,not mapped
+is carrier version of,http://rdaregistry.info/Elements/w/P10390,"bf:relatedTo <P10389value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10389value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
+is serialized version of,http://rdaregistry.info/Elements/w/P10391,"bf:relatedTo <P10389value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10389value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
+is static version of,http://rdaregistry.info/Elements/w/P10392,"bf:relatedTo <P10389value> .
+# with literal value
+bf:relatedTo [ a bf:Work ;
+   rdfs:label ""P10389value"" ] .","relatedTo*
+or
+relatedTo >> Work > rdfs:label
+"
+has aggregator agent,http://rdaregistry.info/Elements/w/P10393,"bf:contribution [a bf:Contribution ;
+  bf:role [a bf:Role ;
+  rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+  bf:agent [a bf:Agent ;
+  rdfs:label ""P10393value"" ] ] .
+# with IRI value
+bf:contribution [a bf:Contribution ;
+bf:role [a bf:Role ;
+rdfs:label ""aggregator"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+bf:agent <P10393value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/vocabulary/relators/cre> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > agent* > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has criminal defendant corporate body,http://rdaregistry.info/Elements/w/P10394,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""criminal defendant"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
    bf:agent [ a bf:Organization;
       rdfs:label ""P10394value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""criminal defendant"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent <P10394value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Organization > rdfs:label
+   bf:agent <P10394value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""criminal defendant""  > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
+contribution >> Contribution > role >> Role > rdfs:label=""criminal defendant"" > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
 has civil defendant corporate body,http://rdaregistry.info/Elements/w/P10395,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:role [a bf:Role ;
+      rdfs:label ""civil defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
    bf:agent [ a bf:Organization;
       rdfs:label ""P10395value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent <P10395value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Organization > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""civil defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:agent <P10395value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""civil defendant"" > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
+contribution >> Contribution > role >> Role > rdfs:label=""civil defendant"" > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
 has criminal defendant person,http://rdaregistry.info/Elements/w/P10396,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent [ a bf:Person ;
+   bf:role [a bf:Role ;
+      rdfs:label ""criminal defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:agent [ a bf:Person;
       rdfs:label ""P10396value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent <P10396value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Person > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""criminal defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:agent <P10396value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""criminal defendant"" > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
+contribution >> Contribution > role >> Role > rdfs:label=""criminal defendant"" > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
 has civil defendant person,http://rdaregistry.info/Elements/w/P10397,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent [ a bf:Person ;
+   bf:role [a bf:Role ;
+      rdfs:label ""civil defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:agent [ a bf:Person;
       rdfs:label ""P10397value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
-   bf:agent <P10397value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Person > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""civil defendant"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/dfd> ;
+   bf:agent <P10397value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""civil defendant"" > role=<http://id.loc.gov/vocabulary/relators/dfd> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
+contribution >> Contribution > role >> Role > rdfs:label=""civil defendant"" > agent* > role=<http://id.loc.gov/vocabulary/relators/dfd>"
 has date of representative expression,http://rdaregistry.info/Elements/w/P10398,not mapped,not mapped
 has appellation of work group,http://rdaregistry.info/Elements/w/P10399,not mapped,not mapped
 has identifier for work group,http://rdaregistry.info/Elements/w/P10400,not mapped,not mapped
@@ -2402,25 +2501,61 @@ has authorized access point for work group,http://rdaregistry.info/Elements/w/P1
 has note on metadata work (RDA 24.7 24.8 29.6 29.7),http://rdaregistry.info/Elements/w/P10402,not mapped,not mapped
 has scope of validity,http://rdaregistry.info/Elements/w/P10403,not mapped,not mapped
 has recording source,http://rdaregistry.info/Elements/w/P10404,not mapped,not mapped
-has related entity of work,http://rdaregistry.info/Elements/w/P10405,not mapped,not mapped
+has related entity of work,http://rdaregistry.info/Elements/w/P10405,"bf:relatedTo <P10405value> .
+",relatedTo*
 has source consulted,http://rdaregistry.info/Elements/w/P10406,"bf:note [ a bf:Note ;
    rdfs:label ""P10406value"" ;
    bf:noteType ""source consulted"" ] .","note >> Note > rdfs:label > noteType=""source consulted"""
-has academic supervisor,http://rdaregistry.info/Elements/w/P10407,not mapped,not mapped
-has project supervisor,http://rdaregistry.info/Elements/w/P10408,not mapped,not mapped
-has research supervisor,http://rdaregistry.info/Elements/w/P10409,not mapped,not mapped
-has special issue,http://rdaregistry.info/Elements/w/P10410,"bf:hasDerivative <P10410value> .
-# with literal value
-bf:hasDerivative [ a bf:Work ;
-    rdfs:label ""P10410value"" ] .","hasDerivative*
+has academic supervisor,http://rdaregistry.info/Elements/w/P10407,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""academic supervisor"" ] ;
+   bf:agent [ a bf:Agent;
+      rdfs:label ""P10407value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""academic supervisor"" ] ;
+   bf:agent <P10407value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""academic supervisor"" > agent >> Agent > rdfs:label
 or
-hasDerivative >> Work > rdfs:label"
-is special issue of,http://rdaregistry.info/Elements/w/P10411,"bf:derivativeOf <P10411value> .
-# with literal value
-bf:derivativeOf [a bf:Work ;
-   rdfs:label ""P10411value"" ] .","derivativeOf*
+contribution >> Contribution > role >> Role > rdfs:label=""academic supervisor"" > agent*"
+has project supervisor,http://rdaregistry.info/Elements/w/P10408,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""project supervisor"" ] ;
+   bf:agent [ a bf:Agent;
+      rdfs:label ""P10408value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""project supervisor"" ] ;
+   bf:agent <P10408value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""project supervisor"" > agent >> Agent > rdfs:label
 or
-derivativeOf >> Work > rdfs:label"
+contribution >> Contribution > role >> Role > rdfs:label=""project supervisor"" > agent*"
+has research supervisor,http://rdaregistry.info/Elements/w/P10409,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""research supervisor"" ] ;
+   bf:agent [ a bf:Agent;
+      rdfs:label ""P10409value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""research supervisor"" ] ;
+   bf:agent <P10409value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""research supervisor"" > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > role >> Role > rdfs:label=""research supervisor"" > agent*"
+has special issue,http://rdaregistry.info/Elements/w/P10410,"bf:seriesOf <P10410value> .
+# with literal value
+bf:seriesOf [ a bf:Work ;
+   rdfs:label ""P10410value"" ] .","seriesOf*
+or
+seriesOf >> Work > rdfs:label
+"
+is special issue of,http://rdaregistry.info/Elements/w/P10411,"bf:hasSeries <P10411value> .
+# with literal value
+bf:hasSeries [a bf:Work ;
+   rdfs:label ""P10411value"" ] .","hasSeries*
+or
+hasSeries >> Work > rdfs:label
+"
 has dedicatee person of work,http://rdaregistry.info/Elements/w/P10412,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/dte> ;
    bf:agent [ a bf:Person ;
@@ -2472,15 +2607,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/res>"
 has editorial director person,http://rdaregistry.info/Elements/w/P10417,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
+   bf:role <http://id.loc.gov/vocabularies/relators/edt> ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10417value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent <P10417value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/edt> > agent >> Person > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
+bf:role <http://id.loc.gov/vocabularies/relators/edt> ;
+   bf:agent <P10417value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" > role=<http://id.loc.gov/vocabularies/relators/edt> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" > agent* > role=<http://id.loc.gov/vocabularies/relators/edt>"
 has film director person,http://rdaregistry.info/Elements/w/P10418,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10418value"" ] ;
@@ -2514,15 +2653,17 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has audio producer person,http://rdaregistry.info/Elements/w/P10421,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""audio producer"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10421value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role [a bf:Role ;
       rdfs:label ""audio producer"" ] ;
-   bf:agent <P10421value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" ; > agent >> Person > rdfs:label
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
+   bf:agent <P10421value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd> > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd>"
 has film producer person,http://rdaregistry.info/Elements/w/P10422,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10422value"" ] ;
@@ -2584,15 +2725,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/scl>"
 has book artist person,http://rdaregistry.info/Elements/w/P10428,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/art> ;
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
+   bf:role <http://id.loc.gov/vocabularies/relators/art> ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10428value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/art> ;
-   bf:agent <P10428value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/art> > agent >> Person > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
+bf:role <http://id.loc.gov/vocabularies/relators/art> ;
+   bf:agent <P10428value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabularies/relators/art> ; > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/art>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabularies/relators/art>"
 has screenwriter person,http://rdaregistry.info/Elements/w/P10429,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10429value"" ] ;
@@ -2624,15 +2769,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/lbt>"
 has rapporteur person,http://rdaregistry.info/Elements/w/P10432,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
+   bf:role <http://id.loc.gov/vocabularies/relators/aut> ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P10432value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
-   bf:agent <P10432value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/aut> > agent >> Person > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
+bf:role <http://id.loc.gov/vocabularies/relators/aut> ;
+   bf:agent <P10432value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabularies/relators/aut> ; > agent >> Person > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabularies/relators/aut>"
 has honouree person of work,http://rdaregistry.info/Elements/w/P10433,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/hnr> ;
    bf:agent [ a bf:Person ;
@@ -2784,7 +2933,20 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P10447value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ive> > agent >> Person > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ive>"
-has aggregator person,http://rdaregistry.info/Elements/w/P10448,not mapped,not mapped
+has aggregator person,http://rdaregistry.info/Elements/w/P10448,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P10448value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent <P10448value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > role <http://id.loc.gov/vocabulary/relators/cre> ; > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""aggregator"" > role <http://id.loc.gov/vocabulary/relators/cre>"
 has remix artist person,http://rdaregistry.info/Elements/w/P10449,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""remix artist"" ] ;
@@ -2942,15 +3104,17 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/res>"
 has editorial director collective agent,http://rdaregistry.info/Elements/w/P10464,"bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10464value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent <P10464value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/edt> > agent >> Agent > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
+   bf:agent <P10464value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""editorial director"" "
 has film director collective agent,http://rdaregistry.info/Elements/w/P10465,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10465value"" ] ;
@@ -2984,15 +3148,17 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has audio producer collective agent,http://rdaregistry.info/Elements/w/P10468,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""audio producer"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10468value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role [a bf:Role ;
       rdfs:label ""audio producer"" ] ;
-   bf:agent <P10468value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" ; > agent >> Agent > rdfs:label
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
+   bf:agent <P10468value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd>"
 has film producer collective agent,http://rdaregistry.info/Elements/w/P10469,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10469value"" ] ;
@@ -3054,15 +3220,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/scl>"
 has book artist collective agent,http://rdaregistry.info/Elements/w/P10475,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10475value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/art> ;
-   bf:agent <P10475value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/art> > agent >> Agent > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/art> ;
+   bf:agent <P10475value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/art>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art>"
 has screenwriter collective agent,http://rdaregistry.info/Elements/w/P10476,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10476value"" ] ;
@@ -3094,15 +3264,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/lbt>"
 has rapporteur collective agent,http://rdaregistry.info/Elements/w/P10479,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
    bf:agent [ a bf:Agent ;
       rdfs:label ""P10479value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
-   bf:agent <P10479value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/aut> > agent >> Agent > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""book rapporteur"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
+   bf:agent <P10479value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabulary/relators/aut> ; > agent >> Agent > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""rapporteur"" > role <http://id.loc.gov/vocabulary/relators/aut>"
 has honouree collective agent of work,http://rdaregistry.info/Elements/w/P10480,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/hnr> ;
    bf:agent [ a bf:Agent ;
@@ -3254,7 +3428,20 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P10494value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ive> > agent >> Agent > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ive>"
-has aggregator collective agent,http://rdaregistry.info/Elements/w/P10495,not mapped,not mapped
+has aggregator collective agent,http://rdaregistry.info/Elements/w/P10495,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P10495value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent <P10495value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/vocabulary/relators/cre> ; > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has remix artist collective agent,http://rdaregistry.info/Elements/w/P10496,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""remix artist"" ] ;
@@ -3412,15 +3599,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/res>"
 has editorial director corporate body,http://rdaregistry.info/Elements/w/P10511,"bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10511value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent <P10511value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/edt> > agent >> Organization > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
+   bf:agent <P10511value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" > role=<http://id.loc.gov/vocabulary/relators/edt> ; > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""editorial director"" > role=<http://id.loc.gov/vocabulary/relators/edt>"
 has film director corporate body,http://rdaregistry.info/Elements/w/P10512,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10512value"" ] ;
@@ -3454,15 +3645,17 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has audio producer corporate body,http://rdaregistry.info/Elements/w/P10515,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""audio producer"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10515value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role [a bf:Role ;
       rdfs:label ""audio producer"" ] ;
-   bf:agent <P10515value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" ; > agent >> Organization > rdfs:label
+bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
+   bf:agent <P10515value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd> ; > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd>"
 has film producer corporate body,http://rdaregistry.info/Elements/w/P10516,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organiztion ;
       rdfs:label ""P10516value"" ] ;
@@ -3524,15 +3717,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/scl>"
 has book artist corporate body,http://rdaregistry.info/Elements/w/P10522,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10522value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/art> ;
-   bf:agent <P10522value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/art> > agent >> Organization > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""book artist"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/art> ;
+   bf:agent <P10522value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art> ; > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/art>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art>"
 has screenwriter corporate body,http://rdaregistry.info/Elements/w/P10523,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10523value"" ] ;
@@ -3564,15 +3761,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/lbt>"
 has rapporteur corporate body,http://rdaregistry.info/Elements/w/P10526,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P10526value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
-   bf:agent <P10526value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/aut> > agent >> Organization > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
+bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
+   bf:agent <P10526value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabulary/relators/aut> ; > agent >> Organization > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabulary/relators/aut>"
 has honouree corporate body of work,http://rdaregistry.info/Elements/w/P10527,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/hnr> ;
    bf:agent [ a bf:Organization ;
@@ -3724,7 +3925,20 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P10541value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ive> > agent >> Organization > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ive>"
-has aggregator corporate body,http://rdaregistry.info/Elements/w/P10542,not mapped,not mapped
+has aggregator corporate body,http://rdaregistry.info/Elements/w/P10542,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/relators/cre> ;
+   bf:agent [a bf:Organization ;
+      rdfs:label ""P10542value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+    bf:role <http://id.loc.gov/relators/cre> ;
+   bf:agent <P10542value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/relators/cre> ; > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/relators/cre>"
 has remix artist corporate body,http://rdaregistry.info/Elements/w/P10543,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""remix artist"" ] ;
@@ -3882,15 +4096,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/res>"
 has editorial director family,http://rdaregistry.info/Elements/w/P10558,"bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""editorial director"" ]  ;
    bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10558value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""editorial director"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/edt> ;
-   bf:agent <P10558value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/edt> > agent >> Family > rdfs:label
+   bf:agent <P10558value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""editorial director"" > role=<http://id.loc.gov/vocabulary/relators/edt> ; > agent >> Family > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/edt>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""editorial director"" > role=<http://id.loc.gov/vocabulary/relators/edt>"
 has film director family,http://rdaregistry.info/Elements/w/P10559,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10559value"" ] ;
@@ -3924,15 +4142,17 @@ contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relat
 has audio producer family,http://rdaregistry.info/Elements/w/P10562,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""audio producer"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10562value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
    bf:role [a bf:Role ;
       rdfs:label ""audio producer"" ] ;
-   bf:agent <P10562value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" ; > agent >> Family > rdfs:label
+   bf:role <http://id.loc.gov/vocabulary/relators/prd> ;
+   bf:agent <P10562value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd> ; > agent >> Family > rdfs:label
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""audio producer"" > role=<http://id.loc.gov/vocabulary/relators/prd>"
 has film producer family,http://rdaregistry.info/Elements/w/P10563,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10563value"" ] ;
@@ -3994,15 +4214,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/scl>"
 has book artist family,http://rdaregistry.info/Elements/w/P10569,"bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10569value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""book artist"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/art> ;
-   bf:agent <P10569value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/art> > agent >> Family > rdfs:label
+   bf:agent <P10569value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art> ; > agent >> Family > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/art>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""book artist"" > role=<http://id.loc.gov/vocabulary/relators/art>"
 has screenwriter family,http://rdaregistry.info/Elements/w/P10570,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10570value"" ] ;
@@ -4034,15 +4258,19 @@ bf:contribution [ a bf:Contribution ;
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/lbt>"
 has rapporteur family,http://rdaregistry.info/Elements/w/P10573,"bf:contribution [ a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
    bf:agent [ a bf:Family ;
       rdfs:label ""P10573value"" ] ] .
 # with IRI value
 bf:contribution [ a bf:Contribution ;
-   bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
-   bf:agent <P10573value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/aut> > agent >> Family > rdfs:label
+   bf:role [a bf:Role ;
+      rdfs:label ""rapporteur"" ] ;
+    bf:role <http://id.loc.gov/vocabulary/relators/aut> ;
+   bf:agent <P10573value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabulary/relators/aut> ; > agent >> Family > rdfs:label
 or
-contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""rapporteur"" > role=<http://id.loc.gov/vocabulary/relators/aut>"
 has honouree family of work,http://rdaregistry.info/Elements/w/P10574,"bf:contribution [ a bf:Contribution ;
    bf:role <http://id.loc.gov/vocabulary/relators/hnr> ;
    bf:agent [ a bf:Family ;
@@ -4194,7 +4422,20 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P10588value> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ive> > agent >> Family > rdfs:label
 or
 contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ive>"
-has aggregator family,http://rdaregistry.info/Elements/w/P10589,not mapped,not mapped
+has aggregator family,http://rdaregistry.info/Elements/w/P10589,"bf:contribution [a bf:Contribution ;
+   bf:role [a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P10589value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""aggregator"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cre> ;
+   bf:agent <P10589value> ] .","contribution >> Contribution > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/vocabulary/relators/cre> ; > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""aggregator"" > role=<http://id.loc.gov/vocabulary/relators/cre>"
 has remix artist family,http://rdaregistry.info/Elements/w/P10590,"bf:contribution [ a bf:Contribution ;
    bf:role [ a bf:Role ;
       rdfs:label ""remix artist"" ] ;

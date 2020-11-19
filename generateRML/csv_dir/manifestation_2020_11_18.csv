@@ -239,9 +239,9 @@ has note on publication statement (RDA 2.17.7),http://rdaregistry.info/Elements/
 has note on frequency (RDA 2.17.12),http://rdaregistry.info/Elements/m/P30056,"bf:note [ a bf:Note ;
    rdfs:label ""P30056value"" ;
    bf:noteType ""frequency"" ] .","note >> Note > rdfs:label > noteType=""frequency"""
-has note on statement of responsibility (RDA 2.17.3),http://rdaregistry.info/Elements/m/P30057,"bf:note [ a bf:note ;
+has note on statement of responsibility (RDA 2.17.3),http://rdaregistry.info/Elements/m/P30057,"bf:note [ a bf:Note ;
    rdfs:label ""P30057value"" ;
-   bf:noteType ""statement of responsibility"" ] .","note >> note > rdfs:label > noteType=""statement of responsibility"""
+   bf:noteType ""statement of responsibility"" ] .","note >> Note > rdfs:label > noteType=""statement of responsibility"""
 has note on series statement (RDA 2.17.11),http://rdaregistry.info/Elements/m/P30058,"bf:note [ a bf:Note ;
    rdfs:label ""P30058value"" ;
    bf:noteType ""series statement"" ] .","note >> Note > rdfs:label > noteType=""series statement"""
@@ -722,9 +722,8 @@ has abbreviated title (RDA 2.3.10),http://rdaregistry.info/Elements/m/P30131,"bf
    bf:mainTitle ""P30131value"" ] .",title >> AbbreviatedTitle > mainTittle
 has designation of named revision of edition (RDA 2.5.6),http://rdaregistry.info/Elements/m/P30132,"bf:editionStatement ""P30132value"" .",editionStatement
 has designation of edition (RDA 2.5.2),http://rdaregistry.info/Elements/m/P30133,"bf:editionStatement ""P30133value"" .",editionStatement
-has title of manifestation (RDA 2.3),http://rdaregistry.info/Elements/m/P30134,"rdfs:label ""P30134value"" ;
-bf:title [ a bf:Title;
-   bf:mainTitle ""P30134value"" ] . ",rdfs:label ; title >> Title > mainTitle
+has title of manifestation (RDA 2.3),http://rdaregistry.info/Elements/m/P30134,"bf:title [ a bf:Title;
+   bf:mainTitle ""P30134value"" ] . ",title >> Title > mainTitle
 has work manifested (RDA 17.8),http://rdaregistry.info/Elements/m/P30135,"bf:relatedTo <P30135value> .
 #with literal value
 bf:relatedTo [ a bf:Work ;
@@ -795,8 +794,7 @@ has layout (RDA 3.11),http://rdaregistry.info/Elements/m/P30155,"bf:layout [ a b
 bf:layout <P30155value> .","layout >> Layout > rdfs:label
 or
 layout*"
-has title proper (*) (RDA 2.3.2),http://rdaregistry.info/Elements/m/P30156,"rdfs:label ""P30156value"" ;
-bf:title [ a bf:Title ;
+has title proper (*) (RDA 2.3.2),http://rdaregistry.info/Elements/m/P30156,"bf:title [ a bf:Title ;
    bf:mainTitle ""P30156value"" ] .",title >> Title > mainTitle
 has title of series (RDA 2.12.2),http://rdaregistry.info/Elements/m/P30157,"bf:seriesStatement ""P30157value"" .",seriesStatement
 has resolution (RDA 3.19.5),http://rdaregistry.info/Elements/m/P30159,"bf:digitalCharacteristic [ a bf:Resolution ;
@@ -1186,14 +1184,8 @@ has related timespan of manifestation,http://rdaregistry.info/Elements/m/P30273,
 has related nomen of manifestation,http://rdaregistry.info/Elements/m/P30274,not mapped,not mapped
 has details of regional encoding (RDA 3.19.6.4),http://rdaregistry.info/Elements/m/P30275,"bf:digitalCharacteristic [ a bf:RegionalEncoding ;
    rdfs:label ""P30275value"" ] .",digitalCharacteristic >> RegionalEncoding > rdfs:label
-has access point for manifestation,http://rdaregistry.info/Elements/m/P30276,"bf:identifiedBy [ a bf:Identifier ;
-   rdf:value ""P30276value"";
-   bf:note [ a bf:Note ;
-      rdfs:label ""Access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-         rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Access point"" > noteType=""type of identifier"" ; source >> Source > rdfs:label=""RDA"""
-has appellation of manifestation,http://rdaregistry.info/Elements/m/P30277,"rdfs:label ""P30277value""",rdfs:label
+has access point for manifestation,http://rdaregistry.info/Elements/m/P30276,"rdfs:label ""P30276value"" .",rdfs:label
+has appellation of manifestation,http://rdaregistry.info/Elements/m/P30277,not mapped,not mapped
 has date of manifestation,http://rdaregistry.info/Elements/m/P30278,"bf:date ""P30278value""",date
 has place of manifestation,http://rdaregistry.info/Elements/m/P30279,"bf:place [ a bf:Place ;
   rdfs:label ""P30279value"" ] .
@@ -1218,21 +1210,8 @@ has manifestation regional encoding statement,http://rdaregistry.info/Elements/m
 has manifestation series statement,http://rdaregistry.info/Elements/m/P30291,"bf:seriesStatement ""P30106value"" .",seriesStatement
 has manifestation statement,http://rdaregistry.info/Elements/m/P30292,not mapped,not mapped
 has manifestation title and responsibility statement,http://rdaregistry.info/Elements/m/P30293,not mapped,not mapped
-has authorized access point for manifestation,http://rdaregistry.info/Elements/m/P30294,"bf:identifier [ a bf:Identifier ;
-   rdf:value ""P30294value"" ;
-   bf:note [ a bf:Note ;
-      rdfs:label ""Authorized access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-      rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Authorized access point"" > noteType=""type of identifier"" ; > source >> Source > rdf:value=""RDA"" ; rdfs:label"
-has variant access point for manifestation,http://rdaregistry.info/Elements/m/P30295,"bf:identifier [ a bf:Identifier ;
-   rdf:value ""P30295value"" ;
-   bf:note [ a bf:Note ;
-      rdfs:label ""Variant access point"" ;
-      bf:noteType ""type of identifier"" ] ;
-   bf:source [ a bf:Source ;
-      rdfs:label ""RDA"" ] ] .","identifiedBy >> Identifier > rdf:value > note >> Note > rdfs:label=""Variant access point"" > noteType=""type of identifier"" ; > source >> Source > rdfs:label=""RDA""
-"
+has authorized access point for manifestation,http://rdaregistry.info/Elements/m/P30294,"skos:prefLabel ""P30294value"" .",skos:prefLabel
+has variant access point for manifestation,http://rdaregistry.info/Elements/m/P30295,"skos:altLabel ""P30295value"" .",skos:altLabel
 has fingerprint,http://rdaregistry.info/Elements/m/P30296,"bf:identifiedBy [ a bf:Fingerprint ;
   rdfs:label ""P30296value"" ] .",identifiedBy >> Fingerprint > rdfs:label
 has name of agent of manifestation,http://rdaregistry.info/Elements/m/P30297,"bf:agent [ a bf:Agent ;
