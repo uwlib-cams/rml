@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/53cfeb78-aa5c-4256-a463-358ca04520e6> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:51:35+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1980"^^xsd:gYear ;
+    bf:dimensions "23 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xv, 483 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/3b3a6019-a83b-434d-926f-135078efde5e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University of Washington Press"@en ],
+                [ a bf:Agent ;
+                    rdfs:label "University of Washington Press" ] ;
+            bf:date "[1980]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@en ],
+                [ a bf:Place ;
+                    rdfs:label "Seattle"@en ] ] ;
+    bf:provisionActivityStatement "Seattle ; London : University of Washington Press, [1980]"@en ;
+    bf:responsibilityStatement "Sally B. Woodbridge and Roger Montgomery ; essay on landscape design by David S. Streatfield."@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A guide to architecture in Washington State"@en ;
+            bf:subtitle "an environmental perspective"@en ] .
+

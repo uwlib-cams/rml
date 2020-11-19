@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/c6edd386-5262-4bac-b6db-e1641879ed06> a bf:Work ;
+    rdfs:label "Walker, Joan Hustace, 1962-. Training your boxer"@eng ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060358> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T14:16:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026109> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Walker, Joan Hustace, 1962-. Training your boxer"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Contents: Why train your boxer? -- Understanding the boxer -- How the boxer learns -- House training -- Socialization -- Habituation -- Beginning command training -- Seven basic commands -- Seven more commands -- Five boxer tricks -- Looking for trouble -- Activities."@eng ] ;
+    bf:originDate "2001"^^xsd:gYear ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Boxer (Dog breed)--Training" ;
+            madsrdf:Authority "Boxer (Dog breed)--Training" ;
+            madsrdf:authoritativeLabel "Boxer (Dog breed)--Training" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Training your boxer"@eng ] .
+

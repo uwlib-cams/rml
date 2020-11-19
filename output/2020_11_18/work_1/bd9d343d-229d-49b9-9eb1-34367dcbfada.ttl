@@ -1,0 +1,73 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/bd9d343d-229d-49b9-9eb1-34367dcbfada> a bf:Work ;
+    rdfs:label "Amir, Eli. Yasmin"@heb ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060254>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060316>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060051>,
+        <http://id.loc.gov/authorities/subjects/sh85070496> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T14:15:52+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026516>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:Nc797a175d5e24af7b9b4b896695d210e ;
+            bf:source _:Nad58330bc06a492c98b456e2c856b8c3 ;
+            rdf:value "Amir, Eli. יסמין" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nad58330bc06a492c98b456e2c856b8c3 ;
+            rdf:value "Amir, Eli. Yasmin"@heb ],
+        [ a bf:Identifier ;
+            bf:note _:Nc797a175d5e24af7b9b4b896695d210e ;
+            bf:source _:Nad58330bc06a492c98b456e2c856b8c3 ;
+            rdf:value "Ami, Eli. Jasmine"@eng ],
+        [ a bf:Identifier ;
+            rdf:value "VIAF ID: 302444691" ],
+        <http://viaf.org/viaf/302444691> ;
+    bf:originDate "2005"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79003285> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Arab-Israeli conflict--Social aspects--Fiction" ;
+            madsrdf:Authority "Arab-Israeli conflict--Social aspects--Fiction" ;
+            madsrdf:authoritativeLabel "Arab-Israeli conflict--Social aspects--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Israel--History--1967-1993--Fiction " ;
+            madsrdf:Authority "Israel--History--1967-1993--Fiction " ;
+            madsrdf:authoritativeLabel "Israel--History--1967-1993--Fiction " ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Women, Palestinian Arab--Fiction" ;
+            madsrdf:Authority "Women, Palestinian Arab--Fiction" ;
+            madsrdf:authoritativeLabel "Women, Palestinian Arab--Fiction" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Yasmin"@heb ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Jasmine"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "יסמין"@heb ] .
+
+_:Nc797a175d5e24af7b9b4b896695d210e a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:Nad58330bc06a492c98b456e2c856b8c3 a bf:Source ;
+    rdfs:label "RDA"@en .
+

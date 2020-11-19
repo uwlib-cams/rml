@@ -1,0 +1,80 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b7d6a2f8-e217-4b85-a12f-ecbe75b409dd> a bf:Work ;
+    rdfs:label "Chen, Meng (Paleontologist). Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T14:14:45+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Theses--Biology" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Chen, Meng (Paleontologist). Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Chapter 3, \"A multivariate approach to infer locomotor modes in Mesozoic mammals,\" is a reprint of an article published in the journal Paleobiology."@eng ] ;
+    bf:originDate "2015"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:relatedTo [ a bf:Work ;
+            rdfs:label "Introduction -- Postcranial skeleton of eutriconodontan Yanoconodon allini from the Early Cretaceous of Hebei, China and its implications for locomotor adaptation / Meng Chen, Zhe-Xi Luo, and Gregory P. Wilson -- A multivariate approach to infer locomotor modes in Mesozoic mammals / Meng Chen and Gregory P. Wilson -- Supplementary materials for \"Inferring locomotor mode in Mesozoic mammals\" (submitted to Paleobiology, 17 April, 2014) / Meng Chen and Gregory P. Wilson -- The non-analog ecological structure of Early Cretaceous Jehol mammal communities / Meng Chen and Gregory P. Wilson -- Supplementary materials for \"The non-analog ecological structure of Early Cretaceous Jehol mammal communities\" / Meng Chen and Gregory P. Wilson -- Concluding remarks." ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mesozoic mammals" ;
+            madsrdf:Authority "Mesozoic mammals" ;
+            madsrdf:authoritativeLabel "Mesozoic mammals" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mammals, Fossil--Morphology" ;
+            madsrdf:Authority "Mammals, Fossil--Morphology" ;
+            madsrdf:authoritativeLabel "Mammals, Fossil--Morphology" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Ecological structure" ;
+            madsrdf:Authority "Ecological structure" ;
+            madsrdf:authoritativeLabel "Ecological structure" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Jehol Group" ;
+            madsrdf:Authority "Jehol Group" ;
+            madsrdf:authoritativeLabel "Jehol Group" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mammals, Fossil--Ecology" ;
+            madsrdf:Authority "Mammals, Fossil--Ecology" ;
+            madsrdf:authoritativeLabel "Mammals, Fossil--Ecology" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mammals, Fossil--Locomotion" ;
+            madsrdf:Authority "Mammals, Fossil--Locomotion" ;
+            madsrdf:authoritativeLabel "Mammals, Fossil--Locomotion" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Morphometrics" ;
+            madsrdf:Authority "Morphometrics" ;
+            madsrdf:authoritativeLabel "Morphometrics" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Locomotor diversity" ;
+            madsrdf:Authority "Locomotor diversity" ;
+            madsrdf:authoritativeLabel "Locomotor diversity" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Functional morphology" ;
+            madsrdf:Authority "Functional morphology" ;
+            madsrdf:authoritativeLabel "Functional morphology" ],
+        <http://id.loc.gov/authorities/subjects/sh2016000196>,
+        <http://id.loc.gov/authorities/subjects/sh85097131>,
+        <http://id.loc.gov/authorities/subjects/sh91002815> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals"@eng ] .
+

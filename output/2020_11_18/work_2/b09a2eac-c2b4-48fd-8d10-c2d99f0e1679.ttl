@@ -1,0 +1,29 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b09a2eac-c2b4-48fd-8d10-c2d99f0e1679> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "leemihwa"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:36:56+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "black and white" ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/1fcacdb5-8245-4f0e-9900-0b080d38d8a2> ;
+    bf:illustrativeContent [ a bf:Illustration ;
+            rdfs:label "Part I: Fundamentals of metadata. Introduction ; Understanding metadata vocabularies ; Creating metadata descriptions -- Part II: Metadata vocabulary building blocks. Metadata structures and semantics ; Metadata schemas -- Part III: Metadata services. Metadata services ; Metadata quality measurement and improvement ; Achieving interoperability -- Part IV: Metadata outlook in research. Metadata research landscape -- Part V: Metadata standards. Current standards -- Appendixes: The following appendixes are available online only. A: Metadata standards : metadata schemas, application profiles, and registries http://www.metadataetc.org/book-website/readings/appendixaschemas.htm ; B: Value encoding schemes and content standards http://www.nietadataetc.oig/book-website/readings/appendixbencodscheines.htm -- Glossary." ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "2016"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Metadata remains the solution for describing the explosively growing, complex world of digital information, and continues to be of paramount importance for information professionals. Providing a solid grounding in the variety and interrelationships among different metadata types, Zeng and Qin's thorough revision of their benchmark text offers a comprehensive look at the metadata schemas that exist in the world of library and information science and beyond, as well as the contexts in which they operate. Cementing its value as both an LIS text and a handy reference for professionals already in the field, this book lays out the fundamentals of metadata, including principles of metadata, structures of metadata vocabularies, and metadata descriptions; surveys metadata standards and their applications in distinct domains and for various communities of metadata practice; examines metadata building blocks, from modeling to defining properties, and from designing application profiles to implementing value vocabularies; describes important concepts as resource identification, metadata as linked data, consumption of metadata, interoperability, and quality measurement; and offers an updated glossary to help readers navigate metadata's complex terms in easy-to-understand definitions. An online resource of web extras, packed with exercises, quizzes, and links to additional materials, completes this definitive primer on metadata\"--Publisher's website."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Metadata"@eng ] .
+

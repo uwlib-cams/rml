@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/6ffa79a8-94a8-4d01-b5c2-b7e7ef6f0b74> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-18"^^xsd:date ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:52:58+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2007"^^xsd:gYear ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "39 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "EKS Publishing Co." ],
+                [ a bf:Agent ;
+                    rdfs:label "EKS Publishing Co."@en ] ;
+            bf:date "[2007]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Oakland, California"@en ] ] ;
+    bf:provisionActivityStatement "Oakland, California : EKS Publishing Co., [2007]"@en ;
+    bf:responsibilityStatement "adapted by Sarah Gershman"@en,
+        "illustrated by Kristina Swarner"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "לילה טוב : קריאת שמע על המטה"@he ;
+            bf:mainTitle "לילה טוב : קריאת שמע על המטה"@he ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Bedtime Shema"@en ;
+            bf:mainTitle "Bedtime Shema"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "The Bedtime Sh'ma"@en,
+                "Lailah ṭov"@he,
+                "לילה טוב"@he ;
+            bf:subtitle "a good night book"@en,
+                "Ḳeriʼat Shemaʻ ʻal ha-miṭah"@he,
+                "קריאת שמע על המטה"@he ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@he ;
+            bf:mainTitle "Lailah ṭov : Ḳeriʼat Shemaʻ ʻal ha-miṭah"@he ] .
+

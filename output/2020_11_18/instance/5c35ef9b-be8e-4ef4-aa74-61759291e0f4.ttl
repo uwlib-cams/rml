@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-11"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:52:01+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1968"^^xsd:gYear ;
+    bf:dimensions "24 cm"@en ;
+    bf:editionStatement "Centennial edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 444 pages, 8 unnumbered leaves of plates"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/subjects/sh85055012> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Little Brown and Company"@en ],
+                <http://id.loc.gov/rwo/agents/n80020835> ;
+            bf:date "[1968]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@en ],
+                [ a bf:Place ;
+                    rdfs:label "Toronto"@en ] ] ;
+    bf:provisionActivityStatement "Boston ; Toronto : Little Brown and Company, [1968]"@en ;
+    bf:responsibilityStatement "by Louisa May Alcott"@en,
+        "illustrations in color by Jessie Willcox Smith"@en,
+        "with a new introduction by Cornelia Meigs"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Little women, or, Meg, Jo, Beth, and Amy"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Little women"@en ;
+            bf:mainTitle "Little women"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Meg, Jo, Beth, and Amy"@en ;
+            bf:mainTitle "Meg, Jo, Beth, and Amy"@en ] .
+

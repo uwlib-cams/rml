@@ -1,0 +1,72 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/52a0ccb7-3ddd-4731-9c19-9074f388de8e> a bf:Work ;
+    rdfs:label "Li, Jingjing. He li you yu. 2019"@chi ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-21"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:25:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sun, Yuting" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Loyal Kids" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ill> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/1079c5c0-7ecd-4fb0-a090-f5a4bcabdf94> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:Na30383c6d42a49deb48ede2631bcb65a ;
+            bf:source _:Nb2aa8c631d0940f891b86eb4b41cca22 ;
+            rdf:value "Li, Jingjing. 河里有鱼. 2019"@eng ],
+        [ a bf:Identifier ;
+            bf:note _:Na30383c6d42a49deb48ede2631bcb65a ;
+            bf:source _:Nb2aa8c631d0940f891b86eb4b41cca22 ;
+            rdf:value "Li, Jingjing. He li you yu. Chinese"@chi ],
+        [ a bf:Identifier ;
+            bf:note _:Na30383c6d42a49deb48ede2631bcb65a ;
+            bf:source _:Nb2aa8c631d0940f891b86eb4b41cca22 ;
+            rdf:value "Li, Jingjing. There are fish in the river. English"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nb2aa8c631d0940f891b86eb4b41cca22 ;
+            rdf:value "Li, Jingjing. He li you yu. 2019"@chi ],
+        [ a bf:Identifier ;
+            bf:note _:Na30383c6d42a49deb48ede2631bcb65a ;
+            bf:source _:Nb2aa8c631d0940f891b86eb4b41cca22 ;
+            rdf:value "Li, Jingjing. Heli you yu. English" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060276> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi>,
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Han (Simplifed variant)"@eng ],
+        [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2019"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> .
+
+_:Na30383c6d42a49deb48ede2631bcb65a a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:Nb2aa8c631d0940f891b86eb4b41cca22 a bf:Source ;
+    rdfs:label "RDA"@en .
+

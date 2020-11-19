@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/c965bfd3-c20b-4bda-bcc5-72d644920712> a bf:Work ;
+    rdfs:label "Brumfield, William Craft, 1944- William Brumfield Russian architecture digital collection. English"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:38:45+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "Chiefly colour." ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1014> ;
+    bf:expressionOf <https://api.sinopia.io/resource/40a13f9e-9a28-4d20-91db-d6dab4284bf6> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Brumfield, William Craft, 1944- William Brumfield Russian architecture digital collection. English"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2016"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Over 29,000 images of Russian sites, mostly buildings constructed from the Middle Ages and the present. The original film photographs were taken between 1970 and 2008 by a single photographer, Professor William Craft Brumfield of Tulane University."@eng ] .
+

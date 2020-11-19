@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/5c7a09ac-9803-41b5-88e2-68d55160749d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:52:08+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "227 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/46865484-c1d1-42ca-9f42-c73a4c546ad9> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references (pages 213-224)."@en ],
+        [ a bf:Note ;
+            rdfs:label "At head of title: Академія наук Української РСР. Інстітут мовознавства ім. О.О. Потебні."@uk ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "\"Наукова думка\""@uk ] ;
+            bf:date "1968"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Київ"@uk ] ] ;
+    bf:provisionActivityStatement "Київ : \"Наукова думка\", 1968."@uk ;
+    bf:responsibilityStatement "Г.М. Удовиченко"@uk ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Словосполучення в сучасній українській літературній мові"@uk ] .
+

@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d1e428e1-0463-49e2-8bd5-299c8ad8269c> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T16:02:37+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "Copryright, 1914"^^xsd:gYear ;
+    bf:dimensions "19 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "43 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/3bf67b0a-e76b-4f36-afbe-89933acb89bd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker & Co."@en ] ;
+            bf:date "1914"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@en ] ] ;
+    bf:provisionActivityStatement "Boston : Walter H. Baker & Co."@en ;
+    bf:responsibilityStatement "by Gladys Ruth Bridgham"@en ;
+    bf:seriesStatement "Baker's edition of plays."@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Six times nine"@en ;
+            bf:subtitle "a comedy in two acts"@en ] .
+

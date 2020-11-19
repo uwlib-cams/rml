@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d7a26fa5-bcee-4a05-a5e5-966a6d2c7ce2> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T16:03:51+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1995"^^xsd:gYear ;
+    bf:dimensions "20 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xlv, 247 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/3cbf69c3-822e-47e8-bf7f-6f3429cd6abe> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Oxford University Press"@en ],
+                <http://id.loc.gov/rwo/agents/n80126136> ;
+            bf:date "[2008]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ],
+                [ a bf:Place ;
+                    rdfs:label "Oxford"@en ] ] ;
+    bf:relatedTo [ a bf:Instance ;
+            rdfs:label "\"First published as a World's Classics paperback 1995\"--Title page verso" ],
+        <http://id.loc.gov/authorities/names/n97072225>,
+        <http://id.loc.gov/authorities/names/n97075954> ;
+    bf:responsibilityStatement "Jules Verne"@en,
+        "translated with an introduction and notes by William Butcher"@en ;
+    bf:seriesStatement "Oxford world's classics"@en,
+        "The extraordinary journeys"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Around the world in 80 days"@en ;
+            bf:mainTitle "Around the world in 80 days"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Around the world in eighty days"@en ] .
+

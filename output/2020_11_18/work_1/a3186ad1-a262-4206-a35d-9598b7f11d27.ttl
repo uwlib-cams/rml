@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/a3186ad1-a262-4206-a35d-9598b7f11d27> a bf:Work ;
+    rdfs:label "Kopach, Oleksandra. Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-13"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T14:12:05+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Kopach, Oleksandra" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nfe4f874bc80142b6b1c962bfdcf5505c ;
+            rdf:value "Kopach, Oleksandra. Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nfe4f874bc80142b6b1c962bfdcf5505c ;
+            rdf:value "Копач, Олександра.Мовостиль Ольги Кобилянської"@ukr ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language." ;
+            madsrdf:Authority "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language." ;
+            madsrdf:authoritativeLabel "Kobyli︠a︡nsʹka, Olʹha, 1863-1942--Language." ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Movostylʹ Olʹhy Kobyli︠a︡nsʹkoï"@ukr ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Language and style of Ol'ha Kobylianska"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Мовостиль Ольги Кобилянської"@ukr ] .
+
+_:Nfe4f874bc80142b6b1c962bfdcf5505c a bf:Source ;
+    rdfs:label "RDA"@en .
+

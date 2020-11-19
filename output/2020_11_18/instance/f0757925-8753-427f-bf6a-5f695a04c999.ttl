@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/f0757925-8753-427f-bf6a-5f695a04c999> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-09"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T16:05:31+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "22 cm"@en ;
+    bf:editionStatement "第1版"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "10 unnmbered pages of plates, 356 pages"@en ] ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh85015738> ;
+    bf:instanceOf <https://api.sinopia.io/resource/638b68df-332d-4ded-9408-9602a8299e71> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sheng huo, du shu, xin zhi san lian shu dian"@zh ],
+                <http://id.loc.gov/rwo/agents/n81120675> ;
+            bf:date "2018"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Beijing (China)"@en ] ] ;
+    bf:provisionActivityStatement "北京 : 生活・读书・新知三联书店, 2018"@en ;
+    bf:responsibilityStatement "(西班牙)豪尔赫・卡里翁著 ; 侯建, 张琼译"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "书店漫游"@zh ;
+            bf:subtitle "一段书店与文学的寻访之旅"@zh ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Shu dian man you"@zh ;
+            bf:mainTitle "Shu dian man you"@zh ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Yi duan shu dian yu wen xue de xun fang zhi lü"@zh ;
+            bf:mainTitle "Yi duan shu dian yu wen xue de xun fang zhi lü"@zh ] .
+

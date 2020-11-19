@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/1bec6764-c00c-4f92-a227-4ddac14811e8> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:46:22+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2011"^^xsd:gYear ;
+    bf:dimensions "5.25 x 8"@en ;
+    bf:instanceOf <https://api.sinopia.io/resource/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Broadway Books" ],
+                [ a bf:Agent ;
+                    rdfs:label "Broadway Books"@en ] ;
+            bf:date "2011"^^xsd:gYear ;
+            bf:place <http://id.loc.gov/vocabulary/geographicAreas/n-us-ny> ] ;
+    bf:responsibilityStatement "The Countess of Carnarvon"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Lady Almina and the real Downton Abbey"@en ;
+            bf:mainTitle "Lady Almina and the real Downton Abbey"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@en ] .
+

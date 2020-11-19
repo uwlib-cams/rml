@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/28838fda-3a72-4237-9c6d-ae11188b241e> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:47:32+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2012"^^xsd:gYear ;
+    bf:dimensions "21 cm"@en ;
+    bf:editionStatement "Second edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 164 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/b109860f-1a89-4dda-b922-f06701f448f7> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Barron's"@en ] ;
+            bf:date "[2011]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Hauppauge, NY"@en ] ] ;
+    bf:provisionActivityStatement "Hauppauge, NY : Barron's, [2011]"@en ;
+    bf:responsibilityStatement "Joan Hustace Walker"@en ;
+    bf:seriesStatement "Barron's training your dog series"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Training your boxer"@en ] .
+

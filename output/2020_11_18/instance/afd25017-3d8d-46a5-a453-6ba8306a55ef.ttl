@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/afd25017-3d8d-46a5-a453-6ba8306a55ef> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-18"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:58:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "189 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/700dcd07-2ba5-4360-80a0-75339178addf> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Детская литература"@ru ] ;
+            bf:date "1986"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Москва"@ru ] ] ;
+    bf:responsibilityStatement "Александр Миловский"@ru,
+        "фотографии автора"@ru ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Skachi, dobryĭ edinorog : ocherki"@ru ;
+            bf:mainTitle "Skachi, dobryĭ edinorog : ocherki"@ru ],
+        [ a bf:Title ;
+            bf:mainTitle "Скачи, добрый единорог"@ru ;
+            bf:subtitle "очерки"@ru ] .
+

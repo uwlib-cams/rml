@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/3bd557b7-1207-4617-985d-ac84e8a62634> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:49:52+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://www.morganclaypool.com/doi/10.2200/S00786ED1V01Y201707WBE016> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/0409bd3c-3127-479c-b698-43d31c06546c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Morgan & Claypool Publishers"@en ] ;
+            bf:date "2017"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Williston, Vermont]"@en ] ] ;
+    bf:responsibilityStatement "Jose Emilio Labra Gayo, Eric Prud'hommeaux, Iovka Boneva, Dimitris Kontokostas"@en ;
+    bf:seriesStatement "Synthesis Lectures on the Semantic Web"@en,
+        "Theory and Technology"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Validating RDF data"@en ] .
+

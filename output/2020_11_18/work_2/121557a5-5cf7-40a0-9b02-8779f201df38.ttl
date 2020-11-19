@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/121557a5-5cf7-40a0-9b02-8779f201df38> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:15:33+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:cartographicAttributes [ a bf:Cartographic ;
+            rdfs:label "Relief shown by shading and spot heights." ],
+        [ a bf:Cartographic ;
+            bf:projection <http://id.loc.gov/vocabulary/mprojection/cc> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1002> ;
+    bf:expressionOf <https://api.sinopia.io/resource/420d9d87-de67-45fd-8367-e1c451ef725a> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2015"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:scale [ a bf:Scale ;
+            rdfs:label "Scale 1:1,425,600. one in. equals approximately 22.5 miles or 36.21 km"@eng ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "indexes"@eng ] .
+

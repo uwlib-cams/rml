@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b3e395e1-96a9-47cf-87dd-2be74335bfc8> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:59:17+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1945"^^xsd:gYear ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiv, 314 pages, 10 unnumbered leaves of plates"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/ef16e337-20ce-49c1-ac66-241ca3124c15> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Grosset & Dunlap, Publishers"@en ],
+                <http://id.loc.gov/rwo/agents/n50072416> ;
+            bf:date "[1945]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ] ] ;
+    bf:relatedTo [ a bf:Instance ;
+            rdfs:label "Issued also with marginal illustrations" ],
+        <http://id.loc.gov/authorities/names/n42702296> ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@en,
+        "illustrated by Cyrus Leroy Baldridge"@en ;
+    bf:seriesStatement "Illustrated junior library"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@en ;
+            bf:subtitle "a story of life in Holland"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Silver skates"@en ;
+            bf:mainTitle "Silver skates"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Hans Brinker"@en ;
+            bf:mainTitle "Hans Brinker"@en ] .
+

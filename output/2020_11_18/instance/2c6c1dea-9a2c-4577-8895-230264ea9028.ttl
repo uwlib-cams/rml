@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/2c6c1dea-9a2c-4577-8895-230264ea9028> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "04-08-2020"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:48:30+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "24 cm"@en ;
+    bf:editionStatement "第1版"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "3, 2, 323 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/7e1467c7-83bb-41a5-8bd2-aba07d336fd4> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "社会科学文献出版社"@zh ],
+                <http://id.loc.gov/rwo/agents/no2001101420> ;
+            bf:date "2019"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "北京"@en ] ] ;
+    bf:provisionActivityStatement "北京 : 社会科学文献出版社, 2019"@zh ;
+    bf:responsibilityStatement "沈涓主编"@zh ;
+    bf:seriesStatement "法学所60年学术精品选萃"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "国际私法的振扬之路"@zh,
+                "Road to the invigoration of private international law"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Guo ji si fa de zhen yang zhi lu"@zh ;
+            bf:mainTitle "Guo ji si fa de zhen yang zhi lu"@zh ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Road to the invigoration of private international law"@en ;
+            bf:mainTitle "Road to the invigoration of private international law"@en ] .
+

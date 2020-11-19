@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/3d6fbc01-b25c-4145-8293-5c4bc68f9ffc> a bf:Work ;
+    rdfs:label "Lei, Zepu. Xinning xiang tu di li. Chinese"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-09"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:21:40+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/7931f622-717d-43ae-8121-ccffd0e47149> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:N6cb616da86e24402b7473d409ebb1358 ;
+            bf:source _:N328586beefd94010b8e2b5d68f31c0d0 ;
+            rdf:value "Lei, Zepu. Xinning xiang tu di li (1909)"@eng ],
+        [ a bf:Identifier ;
+            bf:note _:N6cb616da86e24402b7473d409ebb1358 ;
+            bf:source _:N328586beefd94010b8e2b5d68f31c0d0 ;
+            rdf:value "Lei, Zepu. 新寧鄉土地理. Chinese"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N328586beefd94010b8e2b5d68f31c0d0 ;
+            rdf:value "Lei, Zepu. Xinning xiang tu di li. Chinese"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Traditional Chinese"@chi ] ;
+    bf:originDate "1909"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu di li"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "新寧鄉土地理 : [二卷]"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Xinning xiang tu di li : [er juan]"@eng ] .
+
+_:N6cb616da86e24402b7473d409ebb1358 a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:N328586beefd94010b8e2b5d68f31c0d0 a bf:Source ;
+    rdfs:label "RDA"@en .
+

@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/666f03ca-448f-446e-9228-e9efd584077a> a bf:Work ;
+    rdfs:label "Abū Zayd, Naṣr Ḥāmid. Tajdīd wa-al-taḥrīm wa-al-taʼwīl. Arabic"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-18"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:28:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/ded38c40-6e3e-4069-9849-2c29e769e8cf> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Abū Zayd, Naṣr Ḥāmid. Tajdīd wa-al-taḥrīm wa-al-taʼwīl. Arabic"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/ara> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Arabic"@eng ] ;
+    bf:originDate "2017"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Tajdīd wa-al-taḥrīm wa-al-taʼwīl"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "تجديد والتحريم والتأويل"@eng ] .
+

@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/6fa80990-31fd-437a-9a67-aedc27489141> a bf:Work ;
+    rdfs:label "Amir, Eli. Yasmin. English"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:29:53+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/bd9d343d-229d-49b9-9eb1-34367dcbfada> ;
+    bf:genreForm <http://id.worldcat.org/fast/1423791>,
+        <http://vocab.getty.edu/aat/300027389> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N2ae53a38ba294ccfa6cc392baed6e61c ;
+            rdf:value "Amir, Eli. Yasmin. English"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N2ae53a38ba294ccfa6cc392baed6e61c ;
+            rdf:value "Amir, Eli. Yasmine"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2012"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Jerusalem 1967: everyone is reeling from the aftermath of the 6-Day War. The Palestinians are stunned and cannot comprehend their losses, whilst the Israelis are waking up to a new political reality - and their new responsibilities"@eng ] ;
+    bf:translationOf <https://api.sinopia.io/resource/bd9d343d-229d-49b9-9eb1-34367dcbfada> .
+
+_:N2ae53a38ba294ccfa6cc392baed6e61c a bf:Source ;
+    rdfs:label "RDA"@en .
+

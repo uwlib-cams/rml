@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/fe32d648-1895-413e-8115-a45d48c8b9da> a bf:Work ;
+    rdfs:label "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-15"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:44:34+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/0a4ea663-988e-474b-a25e-659b935b65a9> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Ne46fe6d5b36b4867a16d3359182b7b45 ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. House of the dead"@eng ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Ne46fe6d5b36b4867a16d3359182b7b45 ;
+            rdf:value "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "1915"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The narrator, Aleksandr Petrovich Goryanchikov, has been sentenced to penalty deportation to Siberia and ten years of hard labour for murdering his wife. Life in prison is particularly hard for Aleksandr Petrovich, since he is a \"gentleman\" and suffers the malice of the other prisoners, nearly all of whom belong to the peasantry. Gradually Goryanchikov overcomes his revulsion at his situation and his fellow convicts, undergoing a spiritual re-awakening that culminates with his release from the camp. It is a work of great humanity; Dostoevsky portrays the inmates of the prison with sympathy for their plight, and also expresses admiration for their energy, ingenuity and talent. He concludes that the existence of the prison, with its absurd practices and savage corporal punishments is a tragic fact, both for the prisoners and for Russia\"--Wikipedia, January 15, 2020."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Zapiski iz mertvogo doma. English (Garnett)"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "House of the dead"@eng ] .
+
+_:Ne46fe6d5b36b4867a16d3359182b7b45 a bf:Source ;
+    rdfs:label "RDA"@en .
+

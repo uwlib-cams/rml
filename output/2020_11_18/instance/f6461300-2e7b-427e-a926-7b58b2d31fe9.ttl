@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/f6461300-2e7b-427e-a926-7b58b2d31fe9> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-19"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T16:06:30+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1991"^^xsd:gYear ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "477 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/1b238b17-3bd6-4820-825e-a5fcf0802470>,
+        <https://api.sinopia.io/resource/f477c113-52c8-4372-954b-890326c58ced> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Издательство \"Правда\""@ru ] ;
+            bf:date "1991"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Москва"@ru ] ] ;
+    bf:responsibilityStatement "Константин Станюкович"@ru,
+        "иллюстрации Р.А. Клочкова"@ru,
+        "составление и послесовие М.А. Соколовой"@ru ;
+    bf:seriesStatement "Мир приключений"@ru ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@ru ;
+            bf:mainTitle "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@ru ],
+        [ a bf:Title ;
+            bf:mainTitle "Похождения одного матроса ; Рассказы"@ru ] .
+

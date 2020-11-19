@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/1bf3aa2b-60cd-4b36-9d94-8ecb27d1c7e6> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:46:30+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1983"^^xsd:gYear ;
+    bf:dimensions "27 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 401 pages, 1 folded leaf"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/ad4838ea-b5b7-4cdd-9bab-cf1f5d51217c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Bayless Books"@en ] ;
+            bf:date "1983"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle"@en ] ] ;
+    bf:provisionActivityStatement "Seattle : Bayless Books, 1983"@en ;
+    bf:responsibilityStatement "by M.S. Kline and G.A. Bayless"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Ferryboats"@en ;
+            bf:subtitle "a legend on Puget Sound"@en ] .
+

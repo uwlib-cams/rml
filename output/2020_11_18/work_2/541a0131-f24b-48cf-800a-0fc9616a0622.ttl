@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/541a0131-f24b-48cf-800a-0fc9616a0622> a bf:Work ;
+    rdfs:label "Shi, Yue, 1988- . Species from feces. Text. English"@eng ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2020-11-18T15:26:26+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/a806ceaa-4ec4-46c2-99c8-3f11c8cfa3dd> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Shi, Yue, 1988- . Species from feces. Text. English"@eng ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill>,
+        <http://id.loc.gov/vocabulary/millus/map> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2019"^^xsd:gYear ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Effective species recovery plans rely on adequate scientific data, being tailored to the species' natural history and keeping up with rapid socioeconomic changes. My dissertation focuses on two great conservation success stories, Tibetan antelope (Pantholops hodgsonii) on the Tibetan Plateau and gray wolf (Canis lupus) in Washington State. These two species have different needs in terms of recovery. Tibetan antelope have a unique natural history that we need to consider in order to help them recover to their maximal potential. Whereas, for wolves, as apex predators, their recoveries rely on restoring the full suite of trophic interactions in their ecosystem. I used noninvasive fecal sampling and molecular tools to study the natural history of Tibetan antelope and trophic interactions of wolves. Chapter one shed light on how the movement of Tibetan antelope may be the genetic resilience mechanism in the face of dramatic population decline. It is crucial to ensure their migration routes remain unobstructed by growing human disturbances while continuing to enforce anti-poaching law enforcement efforts. Chapter two took a more in-depth look at their seasonal female migration, as it is synchronized with the perinatal period when substantial physiological changes take place. I characterized the maternal gut microbiome of Tibetan antelope and demonstrated its shift in microbiome composition during the transition from late pregnancy to the postpartum period. It is essential to build a baseline for the changes in microbiome during this critical transition period when both the females and offspring are most vulnerable. If increasing human activities disrupt their migration routes and reproductive cycles, we can have a better understanding of the impacts on their reproductive health. Chapter three focused on characterizing the wolf-coyote interactions, how their interactions change over time and space, and how it might affect the local prey populations. I developed a dietary analysis protocol using fecal DNA and DNA metabarcoding to characterize their diet profiles with the fine-grained resolution. This protocol can be applied to other carnivore species to help understand the impacts of recovery of apex predators on the local ecosystems."@eng ] .
+
