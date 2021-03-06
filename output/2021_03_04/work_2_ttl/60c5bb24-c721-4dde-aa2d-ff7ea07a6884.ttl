@@ -1,0 +1,67 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> a bf:Work ;
+    rdfs:label "Alcott, Louisa May, 1832-1888. Little women. English. Text"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-02-11" ;
+            bf:creationDate "2020-02-11" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:52:46+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/dd6d4c68-3985-41a1-a866-022326d8d063> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:N088850f7dcea43078a31954e8f934a27 ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Alcott, Louisa May, 1832-1888. Little women, or, Meg, Jo, Beth, and Amy. English. Text"@en ],
+        [ a bf:Identifier ;
+            bf:note _:N088850f7dcea43078a31954e8f934a27 ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Alcott, Louisa May, 1832-1888. Meg, Jo, Beth, and Amy. English. Text"@en ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Alcott, Louisa May, 1832-1888. Little women. English. Text"@en ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060360> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@en ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Meigs and Smith"@en ;
+            bf:noteType "other distinguishing characteristic of expression"@en ] ;
+    bf:originDate "1968" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The adventures of Meg, Jo, Beth, and Amy as they grow into young women in mid-nineteenth-century New England."@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Little women. English (Meigs and Smith)"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Little women. English. 1968"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Little women. English. Text"@en ] .
+
+_:N088850f7dcea43078a31954e8f934a27 a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:N2d3256bfcdf3444eb528e5bf9c610e27 a bf:Source ;
+    rdfs:label "RDA"@en .
+

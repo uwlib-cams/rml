@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/0de3eaac-0788-4d62-bd45-a9149e30e88a> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-26" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:55:48+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "240 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/0fdb4413-f1ca-4f14-b60b-06156c4e0c8d> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references (pages 220-240) and index."@en ],
+        [ a bf:Note ;
+            rdfs:label "At head of title: DIE, Deutsches Institut für Entwicklungspolitik = НИСР, Немецкий институт сотрудничества и развития."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Издательство Сфера"@ru ] ;
+            bf:date "1998" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Киев"@ru ] ] ;
+    bf:responsibilityStatement "Андреас Виттковски"@ru,
+        "перевод с немецкого, Наталья Комарова"@ru ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Pi︠a︡tiletka bez plana : Ukraina: 1991-1996 : formirovanie nat︠s︡ionalʹnogo gosudarstva, ekonomika, elity"@ru ;
+            bf:mainTitle "Pi︠a︡tiletka bez plana : Ukraina: 1991-1996 : formirovanie nat︠s︡ionalʹnogo gosudarstva, ekonomika, elity"@ru ],
+        [ a bf:Title ;
+            bf:mainTitle "Пятилетка без плана"@ru ;
+            bf:subtitle "Украина: 1991-1996 : формирование национального государства, економика, елиты"@ru ] .
+

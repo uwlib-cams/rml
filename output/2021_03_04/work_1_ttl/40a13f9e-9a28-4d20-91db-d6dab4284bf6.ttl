@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/40a13f9e-9a28-4d20-91db-d6dab4284bf6> a bf:Work ;
+    rdfs:label "Brumfield, William C., 1944- William Brumfield Russian Architecture Digital Collection"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:47:25+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Photographs" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Brumfield, William C., 1944- William Brumfield Russian Architecture Digital Collection"@en ] ;
+    bf:originDate "2016" ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "William Brumfield Russian Architecture Digital Collection"@en ] .
+

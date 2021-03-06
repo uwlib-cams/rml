@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/22909bd1-6249-400e-9b5a-3a46895698a2> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-19" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:51:20+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Matar, Marlene" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Moushabek, Ruth Lane" ],
+                [ a bf:Agent ;
+                    rdfs:label "Fiscella, John" ],
+                [ a bf:Agent ;
+                    rdfs:label "Moushabeck, Michel" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/edt> ] ;
+    bf:expressionOf [ a bf:Work ;
+            rdfs:label "2014032555" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@en ] ;
+    bf:originDate "2020" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> .
+

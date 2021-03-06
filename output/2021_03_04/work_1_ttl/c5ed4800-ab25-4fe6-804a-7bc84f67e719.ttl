@@ -1,0 +1,63 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/c5ed4800-ab25-4fe6-804a-7bc84f67e719> a bf:Work ;
+    rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060358> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:49:47+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026295>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026110> ;
+    bf:hasDerivative <http://id.loc.gov/authorities/names/n2003073203>,
+        <http://www.wikidata.org/entity/Q1132450>,
+        <http://www.wikidata.org/entity/Q55613366> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Dodge, Mary Mapes, 1830-1905. Hans Brinker"@en ],
+        <http://viaf.org/viaf/83145424560386831350>,
+        <http://www.wikidata.org/entity/Q2710575> ;
+    bf:originDate "1865" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Speed skating--Juvenile fiction" ;
+            madsrdf:Authority "Speed skating--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Speed skating--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Brinker, Hans (Fictitious character)--Juvenile fiction" ;
+            madsrdf:Authority "Brinker, Hans (Fictitious character)--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Brinker, Hans (Fictitious character)--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Netherlands--Juvenile fiction" ;
+            madsrdf:Authority "Netherlands--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Netherlands--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Brinker, Gretel (Fictitious character)--Juvenile fiction" ;
+            madsrdf:Authority "Brinker, Gretel (Fictitious character)--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Brinker, Gretel (Fictitious character)--Juvenile fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2007102168> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Silver skates"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker"@en ] .
+

@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/66de3ff5-2b1c-41b6-a25b-8a30b6a2b69f> a bf:Work ;
+    rdfs:label "Wilde, Oscar, 1854-1900. Picture of Dorian Gray."@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060303>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060212> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:06+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:hasDerivative [ a bf:Work ;
+            rdfs:label "" ],
+        [ a bf:Work ;
+            rdfs:label "" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Wilde, Oscar, 1854-1900. Picture of Dorian Gray."@en ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The picture of Dorian Gray"@en ] .
+

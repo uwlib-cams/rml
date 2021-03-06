@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/46ee55f3-68fa-4a86-a614-a8a0f850c27e> a bf:Work ;
+    rdfs:label "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:52:12+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/1a09069d-8165-42ae-bfc0-f6b269b4d34b> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Beyond Einstein: Historical Perspectives on Geometry, Gravitation, and Cosmology in the Twentieth Century (Conference) (2008 : Mainz, Germany). Beyond Einstein"@en ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references."@en ;
+            bf:noteType "note on expression"@en ] ;
+    bf:originDate "2018" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"This volume explores the interplay between mathematical and physical research and the interactions of twentieth-century scientists within their academic communities. Beginning with Einstein's general theory of relativity, the authors investigate a series of dramatic discoveries and rival theories in physics that influenced the development of modern differential geometry. Other sections recount the numerous methods, like the resurgence of Weyl geometry, used by geometers to solve the problems revealed by those same innovations in space-time physics. The effect of general relativity on astronomy is also addressed, namely how astronomers worked through new theories like inflationary cosmology and Phoenix models. By including recent historical research and coupling this work with many disciplines' unique perspectives, this text provides a rich picture of general relativity and cosmology over the course of the twentieth century. The increased study on the documentation of Einstein's early scientific work has clarified the history of science for that time and profoundly altered the way scientists view their own work, as this interdisciplinary volume demonstrates\"--Page 4 of cover."@en ] .
+

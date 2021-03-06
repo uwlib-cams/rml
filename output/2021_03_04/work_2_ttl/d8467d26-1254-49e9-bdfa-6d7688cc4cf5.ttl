@@ -1,0 +1,67 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d8467d26-1254-49e9-bdfa-6d7688cc4cf5> a bf:Work ;
+    rdfs:label "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and Itinerary."@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:N9c3e8f2202ef41a088a3987bd93bbf91 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N6f5da2ecedd44b19ac6c56b585ad07be,
+                _:Nc6ce8d7b96ea48c7a1de2a160b6a3702,
+                _:Nda26359fdc944ba9a6c69df7d3307b70 ],
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:N9c3e8f2202ef41a088a3987bd93bbf91 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N6f5da2ecedd44b19ac6c56b585ad07be,
+                _:Nc6ce8d7b96ea48c7a1de2a160b6a3702,
+                _:Nda26359fdc944ba9a6c69df7d3307b70 ],
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:N9c3e8f2202ef41a088a3987bd93bbf91 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N6f5da2ecedd44b19ac6c56b585ad07be,
+                _:Nc6ce8d7b96ea48c7a1de2a160b6a3702,
+                _:Nda26359fdc944ba9a6c69df7d3307b70 ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/e01ddea9-54f1-4835-a049-f70e64c888fc> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "German-American Trade Union Methods and Practices to Increase Productivity (Team). Program and Itinerary."@en ] ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "[1958]" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> .
+
+_:N6f5da2ecedd44b19ac6c56b585ad07be a bf:Status ;
+    bf:code "n" .
+
+_:N9c3e8f2202ef41a088a3987bd93bbf91 a bf:GenerationProcess ;
+    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:54:51+00:00"^^xsd:dateTime .
+
+_:Nc6ce8d7b96ea48c7a1de2a160b6a3702 a bf:Status ;
+    bf:code "n" .
+
+_:Nda26359fdc944ba9a6c69df7d3307b70 a bf:Status ;
+    bf:code "n" .
+

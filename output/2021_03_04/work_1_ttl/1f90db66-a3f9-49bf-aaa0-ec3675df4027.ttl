@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/1f90db66-a3f9-49bf-aaa0-ec3675df4027> a bf:Work ;
+    rdfs:label "Kyzytse mariĭ literatur"@chm ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85081067> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:46:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026297>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026481> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N694075a821c644ceb657e36aeae49ce5 ;
+            rdf:value "Кызытсе марий литератур"@chm ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N694075a821c644ceb657e36aeae49ce5 ;
+            rdf:value "Kyzytse mariĭ literatur"@chm ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mari literature--20th century" ;
+            madsrdf:Authority "Mari literature--20th century" ;
+            madsrdf:authoritativeLabel "Mari literature--20th century" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Kyzytse mariĭ literatur"@chm ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Кызытсе марий литератур"@chm ] .
+
+_:N694075a821c644ceb657e36aeae49ce5 a bf:Source ;
+    rdfs:label "RDA"@en .
+

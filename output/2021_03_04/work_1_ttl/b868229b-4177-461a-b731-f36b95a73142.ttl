@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b868229b-4177-461a-b731-f36b95a73142> a bf:Work ;
+    rdfs:label "Malyshkin, E. V. (Evgeniĭ Vitalʹevich). Dve metafory pami︠a︡ti"@ru ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-02-19" ;
+            bf:creationDate "2020-02-18" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:49:32+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Malyshkin, E. V. (Evgeniĭ Vitalʹevich). Dve metafory pami︠a︡ti"@ru ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Memory (Philosophy)--History" ;
+            madsrdf:Authority "Memory (Philosophy)--History" ;
+            madsrdf:authoritativeLabel "Memory (Philosophy)--History" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Dve metafory pami︠a︡ti"@ru ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Две метафоры памяти"@ru ] .
+

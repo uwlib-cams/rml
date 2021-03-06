@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/53ac989d-d13d-402a-9f6c-03d165f91319> a bf:Work ;
+    rdfs:label "Caler, Alan, 1957- Information security risk management for ISO 27001/ISO 27002"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:47:38+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Electronic books" ],
+        <http://vocab.getty.edu/aat/300265554> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Caler, Alan, 1957- Information security risk management for ISO 27001/ISO 27002"@en ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Data protection--Standards" ;
+            madsrdf:Authority "Data protection--Standards" ;
+            madsrdf:authoritativeLabel "Data protection--Standards" ],
+        <http://id.loc.gov/authorities/subjects/sh2009121243>,
+        <http://id.loc.gov/authorities/subjects/sh99004226> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Information security risk management for ISO 27001/ISO 27002"@en ] .
+

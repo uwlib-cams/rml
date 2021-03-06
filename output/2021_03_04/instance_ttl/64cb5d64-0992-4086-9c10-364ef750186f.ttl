@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/64cb5d64-0992-4086-9c10-364ef750186f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-02" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:57:19+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1936" ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "352 pages, 5 unnumbered leaves of plates"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/7c2c6757-3047-494e-8b13-2acc2ae54060> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Rand McNally & Company"@en ],
+                <http://id.loc.gov/rwo/agents/n79150315> ;
+            bf:date "[1936]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ],
+                [ a bf:Place ;
+                    rdfs:label "Chicago"@en ],
+                [ a bf:Place ;
+                    rdfs:label "San Francisco"@en ] ] ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/no99039838> ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@en,
+        "illustrated by Milo Winter"@en ;
+    bf:seriesStatement "The Windermere series"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Silver skates"@en ;
+            bf:mainTitle "Silver skates"@en ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Hans Brinker"@en ;
+            bf:mainTitle "Hans Brinker"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@en ] .
+

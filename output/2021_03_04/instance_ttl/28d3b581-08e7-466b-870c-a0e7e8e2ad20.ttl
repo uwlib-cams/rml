@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/28d3b581-08e7-466b-870c-a0e7e8e2ad20> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-05" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:56:17+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "x, 51 pages"@en ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44674> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/1b711e5c-66ac-4298-ae7e-0f8ac6016dec> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed November 19, 2019)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@en ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@en ] ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@en ;
+    bf:responsibilityStatement "Jonathan Y. An"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Targeting mTOR to reverse age-associated periodontal disease"@en ] .
+

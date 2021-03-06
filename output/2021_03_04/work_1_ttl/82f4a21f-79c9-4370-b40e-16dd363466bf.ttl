@@ -1,0 +1,53 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/82f4a21f-79c9-4370-b40e-16dd363466bf> a bf:Work ;
+    rdfs:label "Mahorter, Siobhan.Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.ed"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-01" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:29+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Lion, K. Casey" ],
+                [ a bf:Person ;
+                    rdfs:label "Petrescu-Prahova, Miruna" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Mahorter, Siobhan" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
+        [ a bf:Dissertation ;
+            bf:degree "M.P.H."@en ],
+        [ a bf:Dissertation ;
+            bf:date "2019" ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Mahorter, Siobhan.Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@en ] ;
+    bf:originDate "2019" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Seattle" ] ;
+    bf:subject <http://id.nlm.nih.gov/mesh/D000080536>,
+        <http://id.nlm.nih.gov/mesh/D003144>,
+        <http://id.nlm.nih.gov/mesh/D006776>,
+        <http://id.nlm.nih.gov/mesh/D057220> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@en ] .
+

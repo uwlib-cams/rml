@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/7a1ce84e-ce37-488e-91fc-a21f24f09248> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:Ne8f19d7af3a94edf95d9ae8378f3e0b8 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N6f5da2ecedd44b19ac6c56b585ad07be,
+                _:Nc6ce8d7b96ea48c7a1de2a160b6a3702 ],
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:Ne8f19d7af3a94edf95d9ae8378f3e0b8 ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N6f5da2ecedd44b19ac6c56b585ad07be,
+                _:Nc6ce8d7b96ea48c7a1de2a160b6a3702 ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Comedy plays" ],
+        [ a bf:GenreForm ;
+            rdfs:label "dialect drama" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@en ] ;
+    bf:originDate "1942" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> .
+
+_:N6f5da2ecedd44b19ac6c56b585ad07be a bf:Status ;
+    bf:code "n" .
+
+_:Nc6ce8d7b96ea48c7a1de2a160b6a3702 a bf:Status ;
+    bf:code "n" .
+
+_:Ne8f19d7af3a94edf95d9ae8378f3e0b8 a bf:GenerationProcess ;
+    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:53:18+00:00"^^xsd:dateTime .
+

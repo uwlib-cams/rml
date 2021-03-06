@@ -1,0 +1,68 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/20492d30-7f5a-48fc-9857-ca975c586494> a bf:Work ;
+    rdfs:label "Murg, Bradley Jensen. Impetus or impediment"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85004432> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:46:46+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:degree "Ph. D."@en ],
+        [ a bf:Dissertation ;
+            bf:date "2015" ],
+        [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Murg, Bradley Jensen. Impetus or impediment"@en ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Ph. D.  University of Washington  2015"@en ;
+            bf:noteType "dissertation or thesis information"@en ] ;
+    bf:originDate "2015" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Marketing--Law and legislation--Russia (Federation)" ;
+            madsrdf:Authority "Marketing--Law and legislation--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Marketing--Law and legislation--Russia (Federation)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Investments, Foreign--Law and legislation--Russia (Federation)" ;
+            madsrdf:Authority "Investments, Foreign--Law and legislation--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Investments, Foreign--Law and legislation--Russia (Federation)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Law reform--Russia (Federation)" ;
+            madsrdf:Authority "Law reform--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Law reform--Russia (Federation)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Investments, Foreign--Law and legislation--Kazakhstan" ;
+            madsrdf:Authority "Investments, Foreign--Law and legislation--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Investments, Foreign--Law and legislation--Kazakhstan" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Marketing--Law and legislation--Kazakhstan" ;
+            madsrdf:Authority "Marketing--Law and legislation--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Marketing--Law and legislation--Kazakhstan" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Law reform--Kazakhstan" ;
+            madsrdf:Authority "Law reform--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Law reform--Kazakhstan" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@en ] .
+

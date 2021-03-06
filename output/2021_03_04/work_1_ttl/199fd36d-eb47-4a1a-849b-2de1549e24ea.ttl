@@ -1,0 +1,61 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/199fd36d-eb47-4a1a-849b-2de1549e24ea> a bf:Work ;
+    rdfs:label "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashimʺ di︠e︡ti︠a︡m"@mul ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-24" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:46:37+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/com> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Russian language materials" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026160> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:N0f1d1e93df9e470a83f5ae449feeec02 ;
+            bf:source _:N088850f7dcea43078a31954e8f934a27 ;
+            rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashim deti︠a︡m"@mul ],
+        [ a bf:Identifier ;
+            bf:note _:N0f1d1e93df9e470a83f5ae449feeec02 ;
+            bf:source _:N088850f7dcea43078a31954e8f934a27 ;
+            rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Нашим детям"@mul ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N088850f7dcea43078a31954e8f934a27 ;
+            rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Nashimʺ di︠e︡ti︠a︡m"@mul ],
+        [ a bf:Identifier ;
+            bf:note _:N0f1d1e93df9e470a83f5ae449feeec02 ;
+            bf:source _:N088850f7dcea43078a31954e8f934a27 ;
+            rdf:value "Aizenshṭadṭ, Mosheh Elʻazar, 1869-1943. Нашимъ дѣтям"@mul ] ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2010111639> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Нашимъ дѣтям"@ru ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Нашим детям"@ru ],
+        [ a bf:Title ;
+            bf:mainTitle "Nashimʺ di︠e︡ti︠a︡m"@ru ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Nashim deti︠a︡m"@ru ] .
+
+_:N0f1d1e93df9e470a83f5ae449feeec02 a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:N088850f7dcea43078a31954e8f934a27 a bf:Source ;
+    rdfs:label "RDA"@en .
+

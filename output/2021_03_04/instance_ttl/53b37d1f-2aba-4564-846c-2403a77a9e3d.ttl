@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/53b37d1f-2aba-4564-846c-2403a77a9e3d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:57:05+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2012" ;
+    bf:dimensions "22 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "445 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/6fa80990-31fd-437a-9a67-aedc27489141> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Halban"@en ],
+                [ a bf:Agent ;
+                    rdfs:label "Halban Publishers" ] ;
+            bf:date "2012" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@en ] ] ;
+    bf:provisionActivityStatement "London : Halban, 2012"@en ;
+    bf:responsibilityStatement "Eli Amir"@en,
+        "translated by Yael Lotan"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Yasmine"@en ] .
+

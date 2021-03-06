@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/19e8abd4-f1e4-47b6-afa0-7da404615a17> a bf:Work ;
+    rdfs:label "Seuss, Dr. Lorax"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-13" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:51:09+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/repository/washington/d0d9f78e-05f1-4594-bdcb-b396ce68f618> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Seuss, Dr. Lorax"@en ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "1971" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The Lorax is a children's book written by Dr. Seuss and first published in 1971.[1] It chronicles the plight of the environment and the Lorax is the titular character, who \"speaks for the trees\" and confronts the Once-ler, who causes environmental destruction. As in most Dr. Seuss books, the creatures mentioned are typically unique to the story.  The story is commonly recognized as a fable concerning the danger that corporate greed poses to nature,[not verified in body] using the literary element of personification to create relateable characters for industry (as the Once-ler), the environment (the Truffula trees) and activism (as the Lorax).  It was Dr. Seuss's personal favorite of his books. He was able to create a story addressing industrial/economic and environmental issues without it being dull: \"The Lorax came out of me being angry. In The Lorax I was out to attack what I think are evil things and let the chips fall where they might.\"[2] \"--Wikipedia, November 13, 2019."@en ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Lorax"@en ] .
+

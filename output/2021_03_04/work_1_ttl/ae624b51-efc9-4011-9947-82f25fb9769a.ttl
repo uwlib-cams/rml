@@ -1,0 +1,62 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/ae624b51-efc9-4011-9947-82f25fb9769a> a bf:Work ;
+    rdfs:label "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "ries07"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-21" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:49:21+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Introduction: A convoluted dinosaur -- Dinomania: Giant sloths, sea snakes, and concrete contraptions -- His majesty notices a drawing: The tradition of copying dinosaurs -- Getting Diplodocus ready for the stage: From Pittsburgh to London -- \"The years of wandering\": Germany -- Visite au Diplodocus: Paris -- \"Properly messy\": Crouching dinosaurs, national competition, and science reform -- Diaspora: From Rio to Madrid -- Conclusion: Diplodocus after Madrid- and after Carnegie."@en ] ;
+    bf:originDate "2019" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Paleontology -- Social aspects -- Europe -- History -- 20th century" ;
+            madsrdf:Authority "Paleontology -- Social aspects -- Europe -- History -- 20th century" ;
+            madsrdf:authoritativeLabel "Paleontology -- Social aspects -- Europe -- History -- 20th century" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Dinosaurs -- Catalogs and collections -- Pennsylvania -- Pittsburgh" ;
+            madsrdf:Authority "Dinosaurs -- Catalogs and collections -- Pennsylvania -- Pittsburgh" ;
+            madsrdf:authoritativeLabel "Dinosaurs -- Catalogs and collections -- Pennsylvania -- Pittsburgh" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Diplodocus -- Exhibitions -- Social aspects" ;
+            madsrdf:Authority "Diplodocus -- Exhibitions -- Social aspects" ;
+            madsrdf:authoritativeLabel "Diplodocus -- Exhibitions -- Social aspects" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Carnegie, Andrew, 1835-1919 -- Natural history collections" ;
+            madsrdf:Authority "Carnegie, Andrew, 1835-1919 -- Natural history collections" ;
+            madsrdf:authoritativeLabel "Carnegie, Andrew, 1835-1919 -- Natural history collections" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Natural history -- Catalogs and collections -- Political aspects" ;
+            madsrdf:Authority "Natural history -- Catalogs and collections -- Political aspects" ;
+            madsrdf:authoritativeLabel "Natural history -- Catalogs and collections -- Political aspects" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Dinosaurs -- Social aspects -- Europe" ;
+            madsrdf:Authority "Dinosaurs -- Social aspects -- Europe" ;
+            madsrdf:authoritativeLabel "Dinosaurs -- Social aspects -- Europe" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Fossils -- Collection and preservation -- Political aspects" ;
+            madsrdf:Authority "Fossils -- Collection and preservation -- Political aspects" ;
+            madsrdf:authoritativeLabel "Fossils -- Collection and preservation -- Political aspects" ],
+        <http://id.loc.gov/authorities/subjects/sh2013003413> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "American dinosaur abroad: a cultural history of Carnegie's plaster diplodocus"@en ] .
+

@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/97598bac-2d60-4ae4-bf33-0ce5e58f3c6f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-20" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:57:58+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2018" ;
+    bf:dimensions "25 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 218 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/4a9ec86c-8209-4ac2-8322-bfd27db73edd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Springer"@en ] ;
+            bf:date "[2018]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cham, Switzerland"@en ] ] ;
+    bf:responsibilityStatement "Fernando López-Valdez, Fabián Fernández-Luqueño, editors"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Agricultural nanobiotechnology"@en ;
+            bf:subtitle "modern agriculture for a sustainable future"@en ] .
+

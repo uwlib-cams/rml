@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/ae37b855-a29b-4f8b-ab5c-09934acedf63> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-22" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:58:16+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "© [1990]" ;
+    bf:dimensions "26 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vii, 395 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/51f63541-0493-4fcf-8320-2dba1ad3fd0c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Item 1070-M."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"January 1990\"--Page 4 of cover."@en ],
+        [ a bf:Note ;
+            rdfs:label "\"OTA-CIT-407\"--Page 4 of cover."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Congress of the U.S., Office of Technology Assessment"@en ],
+                <http://id.loc.gov/rwo/agents/n50079957> ;
+            bf:date "[1990]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@en ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Critical connections"@en ;
+            bf:subtitle "Communication for the future"@en ] .
+

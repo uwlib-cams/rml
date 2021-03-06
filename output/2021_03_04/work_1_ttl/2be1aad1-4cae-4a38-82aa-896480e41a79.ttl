@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/2be1aad1-4cae-4a38-82aa-896480e41a79> a bf:Work ;
+    rdfs:label "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@ja ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2011-02-11" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:47:10+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nd5b2bbdc796d42b4b3a60d49fe10307d ;
+            rdf:value "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖"@ja ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nd5b2bbdc796d42b4b3a60d49fe10307d ;
+            rdf:value "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@ja ] ;
+    bf:originDate "1950" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Japan" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Osaka (Japan)--Maps" ;
+            madsrdf:Authority "Osaka (Japan)--Maps" ;
+            madsrdf:authoritativeLabel "Osaka (Japan)--Maps" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "大阪市案内圖"@ja ],
+        [ a bf:Title ;
+            bf:mainTitle "Ōsaka-shi annaizu"@ja ] .
+
+_:Nd5b2bbdc796d42b4b3a60d49fe10307d a bf:Source ;
+    rdfs:label "RDA"@en .
+

@@ -1,0 +1,77 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/9cd24070-1dea-44f7-a7fe-e5a917db49d9> a bf:Work ;
+    rdfs:label "Austen, Jane, 1775-1817. Northanger Abbey"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060358>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060373>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060386> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-10" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:53+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026360>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026516>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2018026115>,
+        <http://id.loc.gov/authorities/subjects/sh85048050> ;
+    bf:hasDerivative <http://id.loc.gov/authorities/names/no2015082081>,
+        <http://id.loc.gov/authorities/names/no2015083789>,
+        <http://id.loc.gov/authorities/names/no2015083846>,
+        <http://id.loc.gov/authorities/names/no2015084066>,
+        <http://id.loc.gov/authorities/names/no2015084096> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:N088850f7dcea43078a31954e8f934a27 ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Austen, Jane, 1775-1817. Susan"@en ],
+        [ a bf:Identifier ;
+            rdf:value "Wikidata: Q477508" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Austen, Jane, 1775-1817. Northanger Abbey"@en ],
+        [ a bf:Identifier ;
+            bf:note _:N088850f7dcea43078a31954e8f934a27 ;
+            bf:source _:N2d3256bfcdf3444eb528e5bf9c610e27 ;
+            rdf:value "Austen, Jane, 1775-1817. Jane Austen's Northanger Abbey"@en ],
+        [ a bf:Identifier ;
+            rdf:value "VIAF: 175982694" ] ;
+    bf:originDate "approximately 1798 or approximately 1799" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Young women--England--Fiction" ;
+            madsrdf:Authority "Young women--England--Fiction" ;
+            madsrdf:authoritativeLabel "Young women--England--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Morland, Catherine (Fictitious character)--Fiction" ;
+            madsrdf:Authority "Morland, Catherine (Fictitious character)--Fiction" ;
+            madsrdf:authoritativeLabel "Morland, Catherine (Fictitious character)--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "England--Social life and customs--18th century--Fiction" ;
+            madsrdf:Authority "England--Social life and customs--18th century--Fiction" ;
+            madsrdf:authoritativeLabel "England--Social life and customs--18th century--Fiction" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Susan"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Northanger Abbey"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Jane Austen's Northanger Abbey"@en ] .
+
+_:N088850f7dcea43078a31954e8f934a27 a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:N2d3256bfcdf3444eb528e5bf9c610e27 a bf:Source ;
+    rdfs:label "RDA"@en .
+

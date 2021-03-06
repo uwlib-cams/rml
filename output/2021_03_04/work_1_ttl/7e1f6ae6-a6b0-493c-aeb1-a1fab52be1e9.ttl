@@ -1,0 +1,57 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/7e1f6ae6-a6b0-493c-aeb1-a1fab52be1e9> a bf:Work ;
+    rdfs:label "Shaping Seattle architecture : a historical guide to the architects"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:23+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ochsner, Jeffrey Karl" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/com> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nb21e6061c0e3420da6d03a44df875353 ;
+            rdf:value "Historical guide to the architects"@en ],
+        [ a bf:Identifier ;
+            rdf:value "94-17618" ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nb21e6061c0e3420da6d03a44df875353 ;
+            rdf:value "Shaping Seattle architecture : a historical guide to the architects"@en ] ;
+    bf:originDate "[1994]" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Architecture--Washington (State)--Seattle--History" ;
+            madsrdf:Authority "Architecture--Washington (State)--Seattle--History" ;
+            madsrdf:authoritativeLabel "Architecture--Washington (State)--Seattle--History" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Seattle (Wash.)--Buildings, structures, etc." ;
+            madsrdf:Authority "Seattle (Wash.)--Buildings, structures, etc." ;
+            madsrdf:authoritativeLabel "Seattle (Wash.)--Buildings, structures, etc." ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Architects--Washington (State)--Seattle--Biography" ;
+            madsrdf:Authority "Architects--Washington (State)--Seattle--Biography" ;
+            madsrdf:authoritativeLabel "Architects--Washington (State)--Seattle--Biography" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Shaping Seattle architecture : a historical guide to the architects"@en ] .
+
+_:Nb21e6061c0e3420da6d03a44df875353 a bf:Source ;
+    rdfs:label "RDA"@en .
+

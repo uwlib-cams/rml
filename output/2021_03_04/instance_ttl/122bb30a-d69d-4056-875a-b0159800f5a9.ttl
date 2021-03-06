@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/122bb30a-d69d-4056-875a-b0159800f5a9> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:55:50+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2010" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@en ] ;
+    bf:hasEquivalent [ a bf:Instance ;
+            rdfs:label "Print version: European Conference on Product and Process Modelling in the Building and Construction Industry (2010 : Cork, Republic of Ireland). eWork and eBusiness in architecture, engineering and construction. Boca Raton, Fla. : CRC ; London : Taylor & Francis [distributor], 2010. 9780415605076 (OCoLC)664326023" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://www.taylorfrancis.com/books/9780203833773> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/2f419e71-0aef-4924-b284-91a61bc4e953> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "CRC Press/Balkema"@en ] ;
+            bf:date "[2010]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Leiden, Netherlands"@en ] ] ;
+    bf:provisionActivityStatement "Leiden, Netherlands : CRC Press/Balkema, [2010]"@en ;
+    bf:responsibilityStatement "editors, Karsten Menzel, Raimar Scherer"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@en ;
+            bf:mainTitle "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "eWork and eBusiness in architecture, engineering and construction"@en ;
+            bf:subtitle "proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@en ] .
+

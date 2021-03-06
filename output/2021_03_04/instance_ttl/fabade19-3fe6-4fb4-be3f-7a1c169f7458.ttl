@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/fabade19-3fe6-4fb4-be3f-7a1c169f7458> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:59:31+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2015" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (174 pages)"@en ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/35302> ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "Murg, Bradley Jensen. Impetus or impediment " ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@en ] ;
+            bf:date "2015" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@en ] ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2015]"@en ;
+    bf:responsibilityStatement "Bradley Jensen Murg"@en ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@en ;
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@en ] .
+

@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/0010d9b0-ec29-4ab0-b25a-9a1a87108dd2> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-03" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:55:32+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:editionStatement "Пето издање"@sr ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "277 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/52c3b570-ab8a-4989-8eb9-28f2dcffb65e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "In Serbian (Cyrillic)."@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Дерета"@sr ] ;
+            bf:date "2003" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Београд"@sr ] ] ;
+    bf:responsibilityStatement "Драган Лакићевић"@sr ;
+    bf:seriesEnumeration "коло 3, књига 6"@sr ;
+    bf:seriesStatement "Библиотека Венац"@sr ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Mač kneza Stefana"@sr ;
+            bf:mainTitle "Mač kneza Stefana"@sr ],
+        [ a bf:Title ;
+            bf:mainTitle "Мач кнеза Стефана"@sr ] .
+

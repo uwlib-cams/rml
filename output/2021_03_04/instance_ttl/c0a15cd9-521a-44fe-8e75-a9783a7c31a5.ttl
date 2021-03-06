@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/c0a15cd9-521a-44fe-8e75-a9783a7c31a5> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:58:35+00:00"^^xsd:dateTime ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1946" ;
+    bf:dimensions "22 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "335 pages, 4 unnumbered leaves of plates"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/2d2cdef9-c690-4537-b2a4-f0da15e57d77> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The World Publishing Company"@en ] ;
+            bf:date "[1946]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ],
+                [ a bf:Place ;
+                    rdfs:label "Cleveland"@en ] ] ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/no00049285> ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@en,
+        "illustrated by Hilda van Stockum"@en,
+        "with an introduction by May Lamberton Becker"@en ;
+    bf:seriesStatement "Rainbow classics"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@en ] .
+

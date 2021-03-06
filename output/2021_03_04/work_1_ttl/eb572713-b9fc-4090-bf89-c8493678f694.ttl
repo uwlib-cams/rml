@@ -1,0 +1,74 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/eb572713-b9fc-4090-bf89-c8493678f694> a bf:Work ;
+    rdfs:label "Shattered glass (Motion picture)"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:50:21+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ray, Billy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aus> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "baumgarten, craig" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Cruise/Wagner Productions (Firm)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prn> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ray, Billy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmd> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walker, Mandy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cng> ] ;
+    bf:derivativeOf [ a bf:Work ;
+            rdfs:label "Bissinger, Buzz, 1954-. Shattered glass" ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Film adaptations." ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Internet videos" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026406> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Shattered glass (Motion picture)"@en ] ;
+    bf:originDate "2003" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Glass, Stephen--Drama" ;
+            madsrdf:Authority "Glass, Stephen--Drama" ;
+            madsrdf:authoritativeLabel "Glass, Stephen--Drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Journalistic ethics--Drama" ;
+            madsrdf:Authority "Journalistic ethics--Drama" ;
+            madsrdf:authoritativeLabel "Journalistic ethics--Drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Journalists--Washington (State)--Drama" ;
+            madsrdf:Authority "Journalists--Washington (State)--Drama" ;
+            madsrdf:authoritativeLabel "Journalists--Washington (State)--Drama" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Shattered glass"@en ] .
+

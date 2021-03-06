@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/8a0d5042-8b2d-4287-b228-612e456f0fe5> a bf:Work ;
+    rdfs:label "Flora, Charles J. (Charles Jerry). Sound and the sea"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:38+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Field guides" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nbe2d75707b0649529a8574ef028c53cf ;
+            rdf:value "Flora, Charles J. (Charles Jerry). Sound and the sea"@en ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Variant access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:Nbe2d75707b0649529a8574ef028c53cf ;
+            rdf:value "Fairbanks, Eugene F. Sound and the sea"@en ] ;
+    bf:originDate "1977" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Marine invertebrates -- Northwest, Pacific -- Identification." ;
+            madsrdf:Authority "Marine invertebrates -- Northwest, Pacific -- Identification." ;
+            madsrdf:authoritativeLabel "Marine invertebrates -- Northwest, Pacific -- Identification." ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Marine invertebrates -- Identification" ;
+            madsrdf:Authority "Marine invertebrates -- Identification" ;
+            madsrdf:authoritativeLabel "Marine invertebrates -- Identification" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Sound and the sea"@en ] .
+
+_:Nbe2d75707b0649529a8574ef028c53cf a bf:Source ;
+    rdfs:label "RDA"@en .
+

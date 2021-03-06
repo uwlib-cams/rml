@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/a7a8b4fa-c730-4b24-ac39-0ada60ce6b9e> a bf:Work ;
+    rdfs:label "Gershman, Sarah, 1972- Bedtime Sh'ma. English"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-18" ;
+            bf:creationDate "2019-12-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:54:02+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/ebd029ad-b852-4fa2-bba6-abcffeff8e4c> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2016026096> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Gershman, Sarah, 1972- Bedtime Sh'ma. English"@en ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@en ],
+        [ a bf:Script ;
+            rdfs:label "Hebrew"@en ] ;
+    bf:originDate "2007" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes excerpts from the Bedtime Shema in English and Hebrew."@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "לילה טוב"@he ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Lailah ṭov"@he ],
+        [ a bf:Title ;
+            bf:mainTitle "Bedtime Sh'ma"@en ] .
+

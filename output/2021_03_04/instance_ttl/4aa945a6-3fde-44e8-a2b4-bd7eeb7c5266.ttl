@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/4aa945a6-3fde-44e8-a2b4-bd7eeb7c5266> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:56:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1988" ;
+    bf:dimensions "28 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "21 pages, 68 unnumbered pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/69fc88d5-620e-4d6d-981d-4d24f011f0d0> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Chronicle Books"@en ],
+                <http://id.loc.gov/rwo/agents/n87936832> ;
+            bf:date "[1988]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "San Francisco"@en ] ],
+        [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Raincoast Books"@en ] ;
+            bf:date "1988" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Vancouver, B.C."@en ] ] ;
+    bf:provisionActivityStatement "San Francisco : Chronicle Books, [1988]"@en ;
+    bf:responsibilityStatement "Michio Hoshino"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Moose"@en ] .
+

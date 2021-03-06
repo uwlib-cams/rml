@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b93c29a6-c7ce-494e-8737-058c20839c9f> a bf:Work ;
+    rdfs:label "Chen, Meng (Paleontologist). Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals. Text. English"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:54:16+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "black and white" ],
+        [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003>,
+        <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/b7d6a2f8-e217-4b85-a12f-ecbe75b409dd> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Chen, Meng (Paleontologist). Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals. Text. English"@en ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@en ] ;
+    bf:originDate "2015" ;
+    bf:role <http://id.loc.gov/vocabulary/relators/cnd>,
+        <http://id.loc.gov/vocabulary/relators/ill> ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The first two-thirds of mammalian history occurred in the Mesozoic Era (252-66 Ma). Mesozoic mammals have been long thought of as generalized, nocturnal, terrestrial taxa that were constrained by selective and ecological pressures imposed by contemporary terrestrial vertebrates. However, this notion has been challenged by discoveries of the last two decades. A number of relatively complete Mesozoic mammal skeletons have distinctive morphologies that suggest their evolution of ecological diversity comparable to extant mammals. To test this hypothesis, I used qualitative and quantitative approaches to infer functional morphology, locomotor diversity, and ecological structure of Mesozoic mammals at the species, clade, and community scale, respectively. The first study uses functional morphology and comparative anatomy to infer locomotion and posture in a recently recovered Early Cretaceous eutriconodontan mammal, Yanoconodon allini. The second study uses multivariate morphometrics of the appendicular skeleton in a broad sample of extant, small-bodied mammals as a basis to infer locomotor modes in ten Mesozoic mammal species. The results are combined with previous interpretations of other Mesozoic mammals to assemble temporal patterns of locomotor diversification of mammalian clades through the Mesozoic. The third study compares ecological structure and occupation, as measured by body size, diet, and locomotion, from a broad sample of extant, small-bodied mammalian communities to the inferred paleoecological structure of two Early Cretaceous mammalian communities. Results indicate that the ancient mammalian communities significantly differed from the modern mammalian communities, perhaps due to sampling artifacts of the fossil record, non-analog paleoenvironments of the Early Cretaceous communities, and/or evolutionary ecological transitions that only occurred after the extinction of non-avian dinosaurs. Together, these studies provide a more comprehensive and more quantitative approach to the study of Mesozoic mammals at both the species- and community levels."@en ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Includes bibliographical references."@en ] .
+

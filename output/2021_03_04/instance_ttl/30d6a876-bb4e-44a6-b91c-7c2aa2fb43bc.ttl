@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-12" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:56:27+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1942" ;
+    bf:dimensions "19 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "383 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The Modern Library"@en ],
+                <http://id.loc.gov/rwo/agents/nr92033481> ;
+            bf:date "[1955]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ] ] ;
+    bf:responsibilityStatement "William Faulkner"@en ;
+    bf:seriesStatement "The modern library of the world's best books"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Go down, Moses"@en ] .
+

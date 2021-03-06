@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/018e4c97-fb45-4333-9e8e-6cc0584e49ac> a bf:Work ;
+    rdfs:label "Van Aken, Norman, 1951- . Great exotic fruit book"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85032173>,
+        <http://id.loc.gov/authorities/subjects/sh85083510> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:46:10+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026169>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026109> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note _:Nbe2d75707b0649529a8574ef028c53cf ;
+            bf:source _:N694075a821c644ceb657e36aeae49ce5 ;
+            rdf:value "Van Aken, Norman, 1951- . Exotic fruit"@en ],
+        [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source _:N694075a821c644ceb657e36aeae49ce5 ;
+            rdf:value "Van Aken, Norman, 1951- . Great exotic fruit book"@en ],
+        [ a bf:Identifier ;
+            bf:note _:Nbe2d75707b0649529a8574ef028c53cf ;
+            bf:source _:N694075a821c644ceb657e36aeae49ce5 ;
+            rdf:value "Harrisson, John. Great exotic fruit book"@en ] ;
+    bf:originDate "1995" ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85138056>,
+        <http://id.loc.gov/authorities/subjects/sh90004612> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Great exotic fruit book"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Exotic fruit"@en ] .
+
+_:Nbe2d75707b0649529a8574ef028c53cf a bf:Note ;
+    rdfs:label "Variant access point"@en ;
+    bf:noteType "type of identifier"@en .
+
+_:N694075a821c644ceb657e36aeae49ce5 a bf:Source ;
+    rdfs:label "RDA"@en .
+

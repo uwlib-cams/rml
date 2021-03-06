@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/8ab49fc5-0df2-4ee3-8c63-69cf51cf65b8> a bf:Work ;
+    rdfs:label "Cherkasova, Evgenia. Dostoevsky and Kant"@en ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-07" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:48:40+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Cherkasova, Evgenia. Dostoevsky and Kant"@en ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"In this book, Evgenia Cherkasova brings the philosopher Kant and the novelist Dostoevsky together in conversations that probe why duty is central to our moral life. She shows that just as Dostoevsky is indebted to Kant, so Kant would profit from the deeply philosophical narratives of Dostoevsky, which engage the problem of evil and the claims of human community. She not only produces a novel reading of Dostoevsky, but also guides us to later, often neglected Kantian texts. This study is written with scholarly care, penetrating analysis, elegance of style, and moral urgency: Cherkasova writes with both mind and heart.\" Emily Grosholz, Professor of Philosophy, The Pennsylvania State University."@en ] ;
+    bf:originDate "2009" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Kant, Immanuel, 1724-1804--Ethics" ;
+            madsrdf:Authority "Kant, Immanuel, 1724-1804--Ethics" ;
+            madsrdf:authoritativeLabel "Kant, Immanuel, 1724-1804--Ethics" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Dostoyevsky, Fyodor, 1821-1881--Ethics" ;
+            madsrdf:Authority "Dostoyevsky, Fyodor, 1821-1881--Ethics" ;
+            madsrdf:authoritativeLabel "Dostoyevsky, Fyodor, 1821-1881--Ethics" ],
+        <http://id.loc.gov/authorities/subjects/sh85045096>,
+        <http://id.loc.gov/authorities/subjects/sh85077524> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Dostoevsky and Kant"@en ] .
+

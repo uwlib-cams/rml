@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/06362edc-8f38-449b-a23e-2fffc0374ac8> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-28" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:55:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1981" ;
+    bf:dimensions "19 cm"@en ;
+    bf:editionStatement "Berkley edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "185 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/ddee57d3-5e03-43f3-ac3f-673231e23928> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Berkley Books"@en ] ;
+            bf:date "1991" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ] ] ;
+    bf:provisionActivityStatement "New York : Berkley Books, 1991"@en ;
+    bf:responsibilityStatement "Agatha Christie"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A pocket full of rye"@en ] .
+

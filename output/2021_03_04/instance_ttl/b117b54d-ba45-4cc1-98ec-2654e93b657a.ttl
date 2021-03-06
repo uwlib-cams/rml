@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/b117b54d-ba45-4cc1-98ec-2654e93b657a> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:58:24+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1989" ;
+    bf:dimensions "27 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vii, 175 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/d21e9509-d5ce-42b7-95b3-25042867d2e1> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"December 5, 1989.\""@en ],
+        [ a bf:Note ;
+            rdfs:label "Item 1028-A, 1028-B (MF)"@en ],
+        [ a bf:Note ;
+            rdfs:label "At head of title: 101st Congress, 1st session. Committee print"@en ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-079-P"@en ],
+        [ a bf:Note ;
+            rdfs:label "\"WMCP:101-19.\""@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "United States Government Printing Office"@en ],
+                <http://id.loc.gov/rwo/agents/no89014710> ;
+            bf:date "1989" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@en ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : United States Government Printing Office, 1989"@en ;
+    bf:responsibilityStatement "Carmen Solomon-Fears"@en,
+        "prepared by the Congressional Research Service for the Subcommittee on Human Resources, Committee on Ways and Means"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The Child Support Enforcement program"@en ;
+            bf:subtitle "policy and practice : a report"@en ] .
+

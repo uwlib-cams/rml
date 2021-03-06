@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d81ded4c-4502-4ba8-abc3-d0b9586d5169> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23" ;
+            bf:creationDate "2020-04-23" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:59:02+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1993" ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvi, 271 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/f935a8b4-b9f3-4a2d-85d1-532284ce9a5c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Westview Press"@en ] ;
+            bf:date "1993" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boulder"@en ] ] ;
+    bf:provisionActivityStatement "Boulder: Westview Press, 1993"@en ;
+    bf:responsibilityStatement "He Liyi with Claire Anne Chik"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mr. China's son"@en ;
+            bf:subtitle "a villager's life"@en ] .
+

@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/f44955d7-60e3-45a2-8191-af416bfb61e0> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:59:23+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1941" ;
+    bf:dimensions "19 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "46 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/1225f60f-601a-4828-b0a2-5d406e9343c2> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French"@en ],
+                <http://id.loc.gov/rwo/agents/n89646383> ;
+            bf:date "[1941]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Los Angeles, Calif."@en ],
+                [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@en ] ] ;
+    bf:provisionActivityStatement "New York, N.Y. ; Los Angeles, Calif. : Samuel French, [1941]"@en ;
+    bf:responsibilityStatement "by Ned Albert"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hillbilly Sue"@en ;
+            bf:subtitle "a rousing one-act comedy"@en ] .
+

@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d663c291-6397-4cce-aa4c-6d5b2bd7ebec> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-25" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:58:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (12 unnumbered pages)"@en ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://digitalcollections.lib.washington.edu/digital/collection/childrens/id/2384/rec/11> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/27a9720d-4d6b-4656-bf50-2ed39776d38a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            bf:noteType "University of Washington note"@en ],
+        [ a bf:Note ;
+            rdfs:label "Chromolithographs. Stapled into self-wraps."@en ],
+        [ a bf:Note ;
+            rdfs:label "Cover title."@en ],
+        [ a bf:Note ;
+            rdfs:label "Original University of Washington Libraries Special Collections copy is a gift of Pamela K. Harer."@en ],
+        [ a bf:Note ;
+            rdfs:label "Publisher's white color-printed pictorial self wrappers."@en ],
+        [ a bf:Note ;
+            rdfs:label "Description based on print version."@en ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "ДЕТИЗДАТ ЦК ВЛКСМ"@ru ] ;
+            bf:date "1939" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Leningrad]"@en ] ] ;
+    bf:responsibilityStatement "V. Lebedev"@ru,
+        "В. Лебедев"@ru ;
+    bf:seriesStatement "Bibliotechka detskogo sada"@ru,
+        "Библиотечка детского сада"@ru ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Igrushki i zverushki"@ru ;
+            bf:mainTitle "Igrushki i zverushki"@ru ],
+        [ a bf:Title ;
+            bf:mainTitle "Игрушки и зверушки"@ru ] .
+

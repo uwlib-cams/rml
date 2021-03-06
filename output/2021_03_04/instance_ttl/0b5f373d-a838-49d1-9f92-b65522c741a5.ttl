@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/0b5f373d-a838-49d1-9f92-b65522c741a5> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-06-16" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:55:40+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1990" ;
+    bf:dimensions "28 cm"@en ;
+    bf:editionStatement "1990 ed."@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "184 pages"@en ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/97fe31f3-dcc8-40d3-9f70-508a03abd48a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Cover title: United States patent classification to international patent classification"@en ],
+        [ a bf:Note ;
+            rdfs:label "Item 254-A"@en ],
+        [ a bf:Note ;
+            rdfs:label "S/N 003-004-00643-9"@en ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-290-P"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations"@en ] ;
+            bf:date "1990" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Washington, D.C.]"@en ] ] ;
+    bf:provisionActivityStatement "[Washington, D.C.] : U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations, 1990"@en ;
+    bf:responsibilityStatement "United States. Patent Documentation Organizations"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Concordance, United States patent classification to international patent classification"@en ] .
+

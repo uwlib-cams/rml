@@ -1,0 +1,65 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/d0d9f78e-05f1-4594-bdcb-b396ce68f618> a bf:Work ;
+    rdfs:label "Seuss, Dr. Lorax"@en ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-13" ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-04T16:49:55+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026327>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026096> ;
+    bf:hasDerivative <http://id.loc.gov/authorities/names/no2012030670> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Authorized access point"@en ;
+                    bf:noteType "type of identifier"@en ] ;
+            bf:source [ a bf:Source ;
+                    rdfs:label "RDA"@en ] ;
+            rdf:value "Seuss, Dr. Lorax"@en ],
+        <http://viaf.org/viaf/254992797> ;
+    bf:originDate "1971" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Environmental ethics--Juvenile fiction" ;
+            madsrdf:Authority "Environmental ethics--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Environmental ethics--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Environmentalism--Juvenile fiction" ;
+            madsrdf:Authority "Environmentalism--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Environmentalism--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Greed--Juvenile fiction" ;
+            madsrdf:Authority "Greed--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Greed--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Ecology--Juvenile fiction" ;
+            madsrdf:Authority "Ecology--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Ecology--Juvenile fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Pollution--Juvenile fiction" ;
+            madsrdf:Authority "Pollution--Juvenile fiction" ;
+            madsrdf:authoritativeLabel "Pollution--Juvenile fiction" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Lórax (Beber)"@pt ],
+        [ a bf:Title ;
+            bf:mainTitle "Lorax"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Driad"@ru ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Lórax"@es ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Loraks"@af ] .
+
