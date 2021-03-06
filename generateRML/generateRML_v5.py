@@ -3597,7 +3597,7 @@ f"ex:{entity.capitalize()}Map rr:predicateObjectMap [",
 "].\n",
 "ex:AdminMetadataMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!{entity}ID!!.xml\";",
+f"    rml:source \"/home/mcm104/rml/input/!!{entity}_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[catalogerID]\"",
 "  ].\n",
@@ -3706,7 +3706,7 @@ f"ex:WorkMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+f"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10002[not(@resource)]\"",
 "  ].\n",
@@ -3740,7 +3740,7 @@ f"ex:ExpressionMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+f"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20002[not(@resource)]\"",
 "  ].\n",
@@ -3774,7 +3774,7 @@ f"ex:ManifestationMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+f"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30004[not(@resource)]\"",
 "  ].\n",
@@ -3808,7 +3808,7 @@ f"ex:ItemMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+f"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40001[not(@resource)]\"",
 "  ].\n",
@@ -3862,14 +3862,14 @@ P10331_list = [
 "",
 "ex:Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10331[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10331[not(@lang)]\"",
 "  ].",
@@ -3933,7 +3933,7 @@ P10331_list = [
 "",
 "ex:Authorizedaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P10331]\"",
 "  ].",
@@ -3963,7 +3963,7 @@ P10331_list = [
 "",
 "ex:Accesspoint_Source_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P10331 or P10332]\"",
 "  ].",
@@ -4001,14 +4001,14 @@ P10332_list = [
 "",
 "ex:Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10332[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10332[not(@lang)]\"",
 "  ].",
@@ -4072,7 +4072,7 @@ P10332_list = [
 "",
 "ex:Variantaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!workID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P10332]\"",
 "  ].",
@@ -4139,14 +4139,14 @@ P20313_list = [
 "",
 "ex:Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20313[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20313[not(@lang)]\"",
 "  ].",
@@ -4210,7 +4210,7 @@ P20313_list = [
 "",
 "ex:Authorizedaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P20313]\"",
 "  ].",
@@ -4240,7 +4240,7 @@ P20313_list = [
 "",
 "ex:Accesspoint_Source_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P20313 or P20314]\"",
 "  ].",
@@ -4278,14 +4278,14 @@ P20314_list = [
 "",
 "ex:Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20314[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20314[not(@lang)]\"",
 "  ].",
@@ -4349,7 +4349,7 @@ P20314_list = [
 "",
 "ex:Variantaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!expressionID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P20314]\"",
 "  ].",
@@ -4416,14 +4416,14 @@ P30294_list = [
 "",
 "ex:Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30294[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30294[not(@lang)]\"",
 "  ].",
@@ -4487,7 +4487,7 @@ P30294_list = [
 "",
 "ex:Authorizedaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30294\"",
 "  ].",
@@ -4517,7 +4517,7 @@ P30294_list = [
 "",
 "ex:Accesspoint_Source_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P30294 or P30295]\"",
 "  ].",
@@ -4555,14 +4555,14 @@ P30295_list = [
 "",
 "ex:Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30295[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30295[not(@lang)]\"",
 "  ].",
@@ -4626,7 +4626,7 @@ P30295_list = [
 "",
 "ex:Variantaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!manifestationID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30295\"",
 "  ].",
@@ -4693,14 +4693,14 @@ P40083_list = [
 "",
 "ex:Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40083[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Authorizedaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40083[not(@lang)]\"",
 "  ].",
@@ -4764,7 +4764,7 @@ P40083_list = [
 "",
 "ex:Authorizedaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P40083]\"",
 "  ].",
@@ -4794,7 +4794,7 @@ P40083_list = [
 "",
 "ex:Accesspoint_Source_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P40083 or P40084]\"",
 "  ].",
@@ -4832,14 +4832,14 @@ P40084_list = [
 "",
 "ex:Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40084[@lang]\"",
 "  ].",
 "",
 "ex:Not_Lang_Variantaccesspoint_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40084[not(@lang)]\"",
 "  ].",
@@ -4903,7 +4903,7 @@ P40084_list = [
 "",
 "ex:Variantaccesspoint_Note_Map a rr:TriplesMap;",
 "  rml:logicalSource [",
-"    rml:source \"/home/mcm104/rml/input/!!itemID!!.xml\";",
+"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[P40084]\"",
 "  ].",
@@ -5209,7 +5209,7 @@ def get_item_kiegel_list(csv_dir):
 def start_RML_map(entity):
 	default_map = f"{entity.capitalize()}"
 	default_class = f"{entity.capitalize()}"
-	default_path = f"!!{entity}ID!!"
+	default_path = f"!!{entity}_filepath!!"
 
 	RML_list = []
 	for prefix in prefix_list:
@@ -5287,7 +5287,7 @@ def generate_main_logical_source(entity):
 		class_number = "C10003"
 	lang_logical_source = f"""ex:{entity.capitalize()}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/!!{entity}ID!!.xml\";
+    rml:source \"/home/mcm104/rml/input/!!{entity}_filepath!!.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/{class_number}']\"
   ].\n"""
@@ -5812,7 +5812,7 @@ def constant_only_test(node_list, start_point):
 
 default_map = "Work"
 default_class = "Work"
-default_path = "!!workID!!"
+default_path = "!!work_filepath!!"
 
 work_RML_list = start_RML_map("work")
 work_property_list = get_work_property_list(csv_dir)
@@ -6063,7 +6063,7 @@ with open(f"rmlOutput/workRML.ttl", "w") as output_file:
 
 default_map = "Expression"
 default_class = "Expression"
-default_path = "!!expressionID!!"
+default_path = "!!expression_filepath!!"
 
 expression_RML_list = start_RML_map("expression")
 expression_property_list = get_expression_property_list(csv_dir)
@@ -6313,7 +6313,7 @@ with open(f"rmlOutput/expressionRML.ttl", "w") as output_file:
 
 default_map = "Manifestation"
 default_class = "Manifestation"
-default_path = "!!manifestationID!!"
+default_path = "!!manifestation_filepath!!"
 
 manifestation_RML_list = start_RML_map("manifestation")
 manifestation_property_list = get_manifestation_property_list(csv_dir)
@@ -6572,7 +6572,7 @@ with open(f"rmlOutput/manifestationRML.ttl", "w") as output_file:
 
 default_map = "Item"
 default_class = "Item"
-default_path = "!!itemID!!"
+default_path = "!!item_filepath!!"
 
 item_RML_list = start_RML_map("item")
 item_property_list = get_item_property_list(csv_dir)
