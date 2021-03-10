@@ -26,7 +26,7 @@ import fix_URIs
 print(">> Removing blank copyright dates")
 import fix_copyright_dates
 
-"""Transform RDA to BIBFRAME in Turtle"""
+"""Transform RDA to BIBFRAME in XML"""
 import transform_rda_to_bf
 
 """Separate blank nodes from resources"""
