@@ -36,9 +36,6 @@ import separate_bnodes
 
 print("...\nCleaning output data")
 
-print(">> Fixing language tags")
-import fix_langtags
-
 print(">> Adding datatypes to dates")
 import type_dates
 
