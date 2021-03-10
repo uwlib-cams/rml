@@ -26,14 +26,14 @@ sin = Namespace('http://sinopia.io/vocabulary/')
 # RML functions
 def transform_works(workList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/work_1_ttl'):
+	if not os.path.exists(f'../output/{currentDate}/work_1_xml'):
 		print('...\nCreating work_1 directory')
-		os.makedirs(f'../output/{currentDate}/work_1_ttl')
+		os.makedirs(f'../output/{currentDate}/work_1_xml')
 
 	print('...')
 
 	bar = Bar(f'Transforming {len(workList)} files from RDA Work to BIBFRAME Work', max=len(workList), suffix='%(percent)d%%') # progress bar
-	for work in workList[0:3]:
+	for work in workList:
 		label = work.split('.')[0] # save trellis identifier as label
 		work_filepath = f"{currentDate}/work/{label}" # use label to make path
 
@@ -63,8 +63,8 @@ def transform_works(workList, currentDate):
 			Graph_localWork.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localWork.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
-		# serialize graph as turtle
-		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1_ttl/' + label + ".xml", format="xml")
+		# serialize graph as XML
+		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1_xml/' + label + ".xml", format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {label}.nq")
@@ -76,14 +76,14 @@ def transform_works(workList, currentDate):
 
 def transform_expressions(expressionList, currentDate):
 	# create expression directory
-	if not os.path.exists(f'../output/{currentDate}/work_2_ttl'):
+	if not os.path.exists(f'../output/{currentDate}/work_2_xml'):
 		print(f'...\nCreating work_2 directory')
-		os.makedirs(f'../output/{currentDate}/work_2_ttl')
+		os.makedirs(f'../output/{currentDate}/work_2_xml')
 
 	print("...")
 
 	bar = Bar(f'Transforming {len(expressionList)} from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
-	for expression in expressionList[0:3]:
+	for expression in expressionList:
 		label = expression.split('.')[0] # save trellis identifier as label
 		expression_filepath = f"{currentDate}/expression/{label}" # use label to make path
 
@@ -113,12 +113,11 @@ def transform_expressions(expressionList, currentDate):
 			Graph_localExpression.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localExpression.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
-		# serialize graph as turtle
-		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2_ttl/' + label + ".xml", format="xml")
+		# serialize graph as XML
+		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2_xml/' + label + ".xml", format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {label}.nq")
-		# return expression map to default
 
 		# return expression map to default
 		expression_map_replace_to_default(expression_filepath)
@@ -127,15 +126,15 @@ def transform_expressions(expressionList, currentDate):
 
 def transform_manifestations(manifestationList, currentDate):
 	# create manifestation directory
-	if not os.path.exists(f'../output/{currentDate}/instance_ttl'):
+	if not os.path.exists(f'../output/{currentDate}/instance_xml'):
 		print(f'...\nCreating instance directory')
-		os.makedirs(f'../output/{currentDate}/instance_ttl')
+		os.makedirs(f'../output/{currentDate}/instance_xml')
 
 	print("...")
 
 	bar = Bar(f'Transforming {len(manifestationList)} files from RDA Manifestation to BIBFRAME Instance', max=len(manifestationList), suffix='%(percent)d%%') # progress bar
 
-	for manifestation in manifestationList[0:3]:
+	for manifestation in manifestationList:
 		label = manifestation.split('.')[0] # save trellis identifier as label
 		manifestation_filepath = f"{currentDate}/manifestation/{label}" # use label to make path
 
@@ -165,11 +164,12 @@ def transform_manifestations(manifestationList, currentDate):
 			Graph_localManifestation.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
-		# serialize graph as turtle
-		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance_ttl/' + label + ".xml", format="xml")
+		# serialize graph as XML
+		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance_xml/' + label + ".xml", format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {label}.nq")
+
 		# return manifestation map to default
 		manifestation_map_replace_to_default(manifestation_filepath)
 		bar.next()
@@ -177,15 +177,15 @@ def transform_manifestations(manifestationList, currentDate):
 
 def transform_items(itemList, currentDate):
 	# create item directory
-	if not os.path.exists(f'../output/{currentDate}/item_ttl'):
+	if not os.path.exists(f'../output/{currentDate}/item_xml'):
 		print(f'...\nCreating item directory')
-		os.makedirs(f'../output/{currentDate}/item_ttl')
+		os.makedirs(f'../output/{currentDate}/item_xml')
 
 	print("...")
 
 	bar = Bar(f'Transforming {len(itemList)} files from RDA Item to BIBFRAME Item', max=len(itemList), suffix='%(percent)d%%') # progress bar
 
-	for item in itemList[0:3]:
+	for item in itemList:
 		label = item.split('.')[0] # save trellis identifier as label
 		item_filepath = f"{currentDate}/item/{label}" # use label to make path
 
@@ -215,8 +215,8 @@ def transform_items(itemList, currentDate):
 			Graph_localItem.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
-		# serialize file in turtle
-		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_ttl/' + label + ".xml", format="xml")
+		# serialize file in XML
+		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_xml/' + label + ".xml", format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {label}.nq")
@@ -323,7 +323,7 @@ itemList = os.listdir(f'../input/{currentDate}/item')
 
 ###
 
-# create directory with today's date for BF-in-turtle data
+# create directory with today's date for BF-in-XML data
 if not os.path.exists(f'../output/{currentDate}'):
 	print('...\nCreating output folder')
 	os.makedirs(f'../output/{currentDate}')
