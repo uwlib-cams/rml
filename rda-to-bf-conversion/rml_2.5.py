@@ -29,21 +29,20 @@ import fix_copyright_dates
 """Transform RDA to BIBFRAME in XML"""
 import transform_rda_to_bf
 
-"""Separate blank nodes from resources"""
-import separate_bnodes
-
-# need to reserialize output as turtle
-
 print("...\nCleaning output data")
+
+print(">> Replacing RDA IRIs with BF IRIs")
+import fix_related_IRIs
 
 print(">> Adding datatypes to dates")
 import type_dates
 
-"""Reserialize Turtle as JSON-LD"""
-import serialize_ttl_json
+"""Separate blank nodes from resources"""
+print("...\nSeparate blank nodes into separate files")
+import separate_bnodes
 
-"""Generate new IRIs for JSON-LD resources"""
-import new_IDs_json
+"""Reserialize BIBFRAME in XML as JSON-LD"""
+import serialize_ttl_json # needs to be renamed lol
 
 """Prepare JSON-LD for upload into Sinopia""" # still in progress
 
