@@ -1,13 +1,8 @@
-from sys import argv
-import os
-import time
-from rdflib import *
-import rdflib
 from datetime import date
-import uuid
+import os
 from progress.bar import Bar
-import requests
-import csv
+import time
+import uuid
 import xml.etree.ElementTree as ET
 
 def replace_bnodes_w_IRIs(currentDate, entity, file):
@@ -103,12 +98,18 @@ entity_dict = {"work_1": work_1List, "work_2": work_2List, "instance": instanceL
 
 ###
 
+num_of_resources = len(work_1List) + len(work_2List) + len(instanceList) + len(itemList)
+
+print('...')
+
+bar = Bar('Separating blank nodes from resources', max=num_of_resources, suffix='%(percent)d%%')
 for entity in entity_dict.keys():
 	for resource in entity_dict[entity]:
 		replace_bnodes_w_IRIs(currentDate, entity, resource)
 
 		bnode_list = gen_bnode_list(currentDate, entity, resource)
-		print(bnode_list)
 
 		for bnode in bnode_list:
-			create_new_bnode_file(currentDate, entity, file, resource)
+			create_new_bnode_file(currentDate, entity, resource, bnode)
+		bar.next()
+bar.finish()

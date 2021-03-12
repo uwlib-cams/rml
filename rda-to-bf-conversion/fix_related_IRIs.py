@@ -94,8 +94,7 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 	csv_reader = csv.reader(key_file, delimiter=',')
 	line_count = 0
 
-	print('...')
-	bar = Bar('Replacing RDA IRIs with BF IRIs where necessary', max=total_line_count, suffix='%(percent)d%%') # progress bar
+	bar = Bar(max=total_line_count, suffix='%(percent)d%%') # progress bar
 	for line in csv_reader:
 		if line_count == 0: # skip header row
 			pass

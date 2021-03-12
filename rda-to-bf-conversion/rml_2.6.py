@@ -31,7 +31,7 @@ import transform_rda_to_bf
 
 print("...\nCleaning output data")
 
-print(">> Replacing RDA IRIs with BF IRIs")
+print(">> Replacing RDA IRIs with BIBFRAME IRIs")
 import fix_related_IRIs
 
 print(">> Adding datatypes to dates")
@@ -42,7 +42,7 @@ print("...\nSeparate blank nodes into separate files")
 import separate_bnodes
 
 """Reserialize BIBFRAME in XML as JSON-LD"""
-import serialize_ttl_json # needs to be renamed lol
+import serialize_xml_json
 
 """Prepare JSON-LD for upload into Sinopia""" # still in progress
 
