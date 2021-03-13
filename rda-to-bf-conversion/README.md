@@ -97,32 +97,41 @@ In our Sinopia application profiles, the character "©" was included as a defaul
 This script goes through our RDA data and removes these meaningless triples.
 
 _To run separately from rml_2.6.py:_
-`$ python3 fix_copyright_dates.py`
+```
+$ python3 fix_copyright_dates.py
+```
 
 ## transform_rda_to_bf.py
 
 This script uses the [RML Mapper](https://github.com/RMLio/rmlmapper-java) to transform RDA/RDF data to BIBFRAME. It references RML scripts from [this directory](https://github.com/uwlib-cams/rml/tree/master/generateRML/rmlOutput). It uses [rdflib](https://rdflib.readthedocs.io/en/stable/) to serialize the output as RDF/XML, and it uses the [UUID Python module](https://docs.python.org/3/library/uuid.html) to generate unique identifiers and IRIs for the new BIBFRAME descriptions. This script also outputs a CSV file, `RDA_BF_IRI_list_YYYY_MM_DD.csv`, which is a master list of equivalent RDA and BIBFRAME identifiers using the [Python CSV module](https://docs.python.org/3/library/csv.html).
 
 _To run separately from rml_2.6.py:_
-`$ python3 transform_rda_to_bf.py`
+```
+$ python3 transform_rda_to_bf.py
+```
 
 ## fix_related_IRIs.py
 
 This script looks for RDA IRIs in the BIBFRAME output where they are the objects of triples, and replaces them with their corresponding BIBFRAME IRI.
 
 _To run separately from rml_2.6.py:_
-`$ python3 fix_related_IRIs.py`
+```
+$ python3 fix_related_IRIs.py
+```
 
 ## type_dates.py
 
 This script goes through the BIBFRAME output and adds datatypes `xsd:dateTime`, `xsd:date`, `xsd:gYearMonth`, and `xsd:gYear` where applicable.
 
 _To run separately from rml_2.6.py:_
-`$ python3 type_dates.py`
+```
+$ python3 type_dates.py
+```
 
 ## serialize_xml_json.py
 
 This script takes the BIBFRAME output in RDF/XML and reserializes it as JSON-LD in preparation for upload to Sinopia.
 
 _To run separately from rml_2.6.py:_
-`$ python3 serialize_xml_json.py`
+```$ python3 serialize_xml_json.py
+```
