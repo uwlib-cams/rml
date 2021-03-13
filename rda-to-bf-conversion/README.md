@@ -35,7 +35,9 @@ When the script is complete, the input RDA files will be in the directory `rml/i
 This script pulls UW resources from [Sinopia via their API](https://ld4p.github.io/sinopia_api/) using [rdflib](https://rdflib.readthedocs.io/en/stable/), and saves them locally as RDF/XML.
 
 _To run separately from rml_2.6.py:_
-`$ python3 save_rda_locally.py`
+```
+$ python3 save_rda_locally.py
+```
 
 ## remove_extra_descriptions.py
 This script removes triples from the RDA/RDF resources that are not describing the resource in question.
@@ -70,7 +72,9 @@ Would be corrected to this:
 ```
 
 _To run separately from rml_2.6.py:_
-`$ python3 remove_extra_descriptions.py`
+```
+$ python3 remove_extra_descriptions.py
+```
 
 ## fix_URIs.py
 
@@ -86,7 +90,9 @@ Would be corrected to this:
 ```
 
 _To run separately from rml_2.6.py:_
-`$ python3 fix_URIs.py`
+```
+$ python3 fix_URIs.py
+```
 
 ## fix_copyright_dates.py
 
