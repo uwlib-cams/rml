@@ -36,7 +36,7 @@ In earlier versions of rml.py, an error occurred in which the identifier which s
 
 This error has been addressed in newer versions of rml.py, but this script can be used to ensure that this error has not occurred. For both input and output files for a given date, the script will check that each file contains the data for the record it is named for. It outputs a report to badFileReport.txt. An example of usage:
 ```
-$ python3.6 findBadFiles.py 2020_09_18
+$ python3 findBadFiles.py 2020_09_18
 ```
 
 The output for this command is:
