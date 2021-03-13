@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+>
+  <rdf:Description rdf:nodeID="N12bf9d2990d446379b65cb725131ebc3">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/isbd"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="en">cec</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="N2edd54482f2e49139ee5456e26524da3"/>
+    <bf:creationDate xml:lang="en">2019-09-25</bf:creationDate>
+    <sin:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata</sin:hasResourceTemplate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2edd54482f2e49139ee5456e26524da3">
+    <sin:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata:Status</sin:hasResourceTemplate>
+    <bf:code xml:lang="en">n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/5abb3bdf-0109-4b77-b984-f73900ae981e">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f799fef2-600d-43c3-ac59-709a10c92f12"/>
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
+    <rdaw:P10078 rdf:resource="http://id.loc.gov/authorities/names/n94102982.html"/>
+    <bf:adminMetadata rdf:nodeID="N12bf9d2990d446379b65cb725131ebc3"/>
+  </rdf:Description>
+</rdf:RDF>

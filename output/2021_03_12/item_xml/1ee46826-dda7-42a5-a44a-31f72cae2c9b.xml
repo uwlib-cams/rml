@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/1ee46826-dda7-42a5-a44a-31f72cae2c9b">
+    <bf:heldBy rdf:nodeID="N446e9de29c4f43d99b3ec7750874e92f"/>
+    <bf:adminMetadata rdf:nodeID="N339490c151364631a7835b89e490bdf3"/>
+    <bf:sublocation rdf:nodeID="N228eea4d2229461badbc2b3333abfca7"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:contribution rdf:nodeID="N36fa53b5ea5a4bafa0a583428a28498a"/>
+    <bf:identifier rdf:nodeID="N2eb03abe85a24e7dad5ac5728f4c1df5"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/repository/washington/0d1f4ee2-ed20-497c-a589-916ab694008b"/>
+    <bf:physicalLocation xml:lang="en">Yragui bookshelf</bf:physicalLocation>
+    <bf:usageAndAccessPolicy rdf:nodeID="N3a51d3be6cd249019689909e0b47bda7"/>
+    <bf:classification rdf:nodeID="N2cf94e80d84e41d29339deb19890ade2"/>
+    <bf:immediateAcquisition rdf:nodeID="Ne9d16304b70143c6a1e875332948425b"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="N048ded172f564bf6b10e4c0fd322ebbc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N228eea4d2229461badbc2b3333abfca7">
+    <rdfs:label xml:lang="en">Russian literature</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N339490c151364631a7835b89e490bdf3">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-13</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nb05c384652674e86a0bcbd04744b45cf"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N7316b1a3bf754036a9775f3ac6f8b115"/>
+    <bflc:catalogerID xml:lang="en">cec23</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb05c384652674e86a0bcbd04744b45cf">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2eb03abe85a24e7dad5ac5728f4c1df5">
+    <rdf:value xml:lang="en">12345</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N048ded172f564bf6b10e4c0fd322ebbc">
+    <rdfs:label xml:lang="en">Need keys to Yragui house or delivery from Crystal Clements</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36fa53b5ea5a4bafa0a583428a28498a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="Ne38da182df864241b1cb55502a1dfb03"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ann"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7316b1a3bf754036a9775f3ac6f8b115">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:56:46+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N446e9de29c4f43d99b3ec7750874e92f">
+    <rdfs:label>Crystal Clements</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2cf94e80d84e41d29339deb19890ade2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.I3 1998</bf:itemPortion>
+    <bf:classificationPortion>PG3326</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3a51d3be6cd249019689909e0b47bda7">
+    <rdfs:label xml:lang="en">Need Crystal's permission, which is unlikely to be given.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9d16304b70143c6a1e875332948425b">
+    <rdfs:label xml:lang="en">Amazon</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne38da182df864241b1cb55502a1dfb03">
+    <rdfs:label>Clements, Crystal, 1987-</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

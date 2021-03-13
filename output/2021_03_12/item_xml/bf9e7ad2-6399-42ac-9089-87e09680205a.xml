@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N9e679663dd8240f5ae4512ed42ec023a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N543219114a1f42e38e6b8ddca24f61cb">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-09</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N9e679663dd8240f5ae4512ed42ec023a"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">jlee37</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N7e338a9cbcc04304a2fdb9d2a7cb9e31"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/bf9e7ad2-6399-42ac-9089-87e09680205a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/2567b709-29d3-4fea-8d51-5c37128e2d9d"/>
+    <bf:physicalLocation xml:lang="eng">eastasia</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="N543219114a1f42e38e6b8ddca24f61cb"/>
+    <bf:sublocation rdf:nodeID="Nf07a86b88f9a4c1fad62420453afa3c3"/>
+    <bf:classification rdf:nodeID="Nd926a7d862804803a3ed8f6a075e0872"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e338a9cbcc04304a2fdb9d2a7cb9e31">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:57:24+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd926a7d862804803a3ed8f6a075e0872">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>DS797.32.T37</bf:classificationPortion>
+    <bf:itemPortion>L45 1909</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf07a86b88f9a4c1fad62420453afa3c3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">eaaux</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

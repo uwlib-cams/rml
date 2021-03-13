@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na98a468a9eb24dca854307712b53dd79">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-06</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N579805e1fc2346ee8aae0e212595f343"/>
+    <bf:status rdf:nodeID="N43cad44af7e547fe93f4d7fad165a0d5"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N43cad44af7e547fe93f4d7fad165a0d5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neaeba0650ac74fd4a38d261de8ec8f7a">
+    <bf:classificationPortion>F899.S453</bf:classificationPortion>
+    <bf:itemPortion>M397 1980</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/e364f4b2-03fc-4182-b95c-bf181713e5e8">
+    <bf:sublocation rdf:nodeID="N8331cb3c9df2472190ecab41d571610b"/>
+    <bf:adminMetadata rdf:nodeID="Na98a468a9eb24dca854307712b53dd79"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/75089063-8f31-4d78-aa1d-48efc705a8cb"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest collection</bf:physicalLocation>
+    <bf:classification rdf:nodeID="Neaeba0650ac74fd4a38d261de8ec8f7a"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8331cb3c9df2472190ecab41d571610b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">bookshelf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N579805e1fc2346ee8aae0e212595f343">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:57:01+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

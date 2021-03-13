@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N70270cc8e0e7498c981e80af72a1ac51">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-29</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N36b4c6a6862a478881ba96d13b3505ca"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Naa8d1ec80fbe4399b0a7a16fedc081fa"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N330b1c6f953e43da89e4409c82015116">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">18 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/32629350-2c44-4679-a8df-7a1cfa93ddeb">
+    <bf:seriesStatement xml:lang="eng">Baker's edition of plays</bf:seriesStatement>
+    <bf:provisionActivityStatement xml:lang="eng">Boston : Walter H. Baker Company,  [1919]</bf:provisionActivityStatement>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:extent rdf:nodeID="N330b1c6f953e43da89e4409c82015116"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©1919</bf:copyrightDate>
+    <bf:provisionActivity rdf:nodeID="N0c64e3f219164030850f3392792eb41a"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:adminMetadata rdf:nodeID="N70270cc8e0e7498c981e80af72a1ac51"/>
+    <bf:responsibilityStatement xml:lang="eng">by Gladys Ruth Bridgham</bf:responsibilityStatement>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:title rdf:nodeID="N90d6ddb118b04072adb89a174e09ac51"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/8f09c208-fb97-46fa-be62-3d87f472fb1b"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N78e290d17725421fa4d9b5e5d78bdee1">
+    <rdfs:label>Walter H. Baker Company</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa8d1ec80fbe4399b0a7a16fedc081fa">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90d6ddb118b04072adb89a174e09ac51">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:subtitle xml:lang="eng">a fantasy in one act ; composed of prologue, three scenes and an epilogue</bf:subtitle>
+    <bf:mainTitle xml:lang="eng">I grant you three wishes</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca1a8941fa9641be8831b7344396aec9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Boston</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c64e3f219164030850f3392792eb41a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">[1919]</bf:date>
+    <bf:place rdf:nodeID="Nca1a8941fa9641be8831b7344396aec9"/>
+    <bf:agent rdf:nodeID="N78e290d17725421fa4d9b5e5d78bdee1"/>
+    <bf:agent rdf:nodeID="N87cfa3b39e41403d95d9036b51eda524"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36b4c6a6862a478881ba96d13b3505ca">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:52:38+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N87cfa3b39e41403d95d9036b51eda524">
+    <rdfs:label xml:lang="eng">Walter H. Baker Company</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

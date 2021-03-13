@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N75ab4679a6e44aaf995162beefd810ac">
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">[2019]</bf:date>
+    <bf:place rdf:nodeID="Nf235396c04ef456fb57e3d708e17a9d7"/>
+    <bf:agent rdf:nodeID="N3fc3977b5b994d6d8b5ee89094d3d860"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd6f1ffe725c45efa5f2137aa337c963">
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-07</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nf025cb19e9cf4db7bea980c891aefca6"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-23</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N087c0fea7c0141a1b600dd4fd7edcff5"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N481283539d8545ed9d2ab8378a9ba946">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:electronicLocator rdf:resource="http://hdl.handle.net/1773/44725"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf235396c04ef456fb57e3d708e17a9d7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">[Seattle]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/69e8d97b-fe7d-48aa-97c9-a4d437d9ed9f">
+    <bf:hasItem rdf:nodeID="N481283539d8545ed9d2ab8378a9ba946"/>
+    <bf:responsibilityStatement xml:lang="eng">Yue Shi</bf:responsibilityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:adminMetadata rdf:nodeID="Ndd6f1ffe725c45efa5f2137aa337c963"/>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©2019</bf:copyrightDate>
+    <bf:provisionActivityStatement xml:lang="eng">[Seattle] : [University of Washington Libraries], [2019]</bf:provisionActivityStatement>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/214851ff-05aa-4193-962d-ab0fe731a2f9"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <bf:extent rdf:nodeID="Nf001bd7dbb47464ab08d07829b312f73"/>
+    <bf:title rdf:nodeID="Nce1071accb954bc4a22e5f7ead4e1ed7"/>
+    <bf:provisionActivity rdf:nodeID="N75ab4679a6e44aaf995162beefd810ac"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce1071accb954bc4a22e5f7ead4e1ed7">
+    <bf:subtitle xml:lang="eng">decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings</bf:subtitle>
+    <bf:mainTitle xml:lang="eng">Species from feces</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf025cb19e9cf4db7bea980c891aefca6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf001bd7dbb47464ab08d07829b312f73">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">1 online resource (125 pages)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N087c0fea7c0141a1b600dd4fd7edcff5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:51:18+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3fc3977b5b994d6d8b5ee89094d3d860">
+    <rdfs:label xml:lang="eng">[University of Washington Libraries]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nb82a118e855e4719ac13cbb405d20cfe">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-23</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-23</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Na07ea4d6886e443180fcdb4c2ca0b7aa"/>
+    <bf:status rdf:nodeID="N8ef94ed53aa24300b3d14d710ab40155"/>
+    <bflc:catalogerID xml:lang="eng">aentze</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ef94ed53aa24300b3d14d710ab40155">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/48bc3ff0-f2ee-45a7-acd3-f4033d791fa6">
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="N52c01f4c925348c7a765bfc128ef5051"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:identifier rdf:nodeID="N08eefd6b0c0f43a9add19f8c27db8235"/>
+    <bf:classification rdf:nodeID="Nbcdbdb7b65c549aa88259fedb124a931"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/a2822c3e-d04f-4be1-9af6-5d00bf6dba00"/>
+    <bf:adminMetadata rdf:nodeID="Nb82a118e855e4719ac13cbb405d20cfe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na07ea4d6886e443180fcdb4c2ca0b7aa">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-12T15:55:49+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N52c01f4c925348c7a765bfc128ef5051">
+    <rdfs:label xml:lang="eng">szstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N08eefd6b0c0f43a9add19f8c27db8235">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352083768093</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbcdbdb7b65c549aa88259fedb124a931">
+    <bf:itemPortion>T6 1962</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PS3562.E353</bf:classificationPortion>
+  </rdf:Description>
+</rdf:RDF>
