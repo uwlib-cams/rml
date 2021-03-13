@@ -139,5 +139,6 @@ $ python3 type_dates.py
 This script takes the BIBFRAME output in RDF/XML and reserializes it as JSON-LD in preparation for upload to Sinopia.
 
 _To run separately from rml_2.6.py:_
-```$ python3 serialize_xml_json.py
+```
+$ python3 serialize_xml_json.py
 ```
