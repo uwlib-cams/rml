@@ -37,10 +37,6 @@ import fix_related_IRIs
 print(">> Adding datatypes to dates")
 import type_dates
 
-"""Separate blank nodes from resources"""
-print("...\nSeparate blank nodes into separate files")
-import separate_bnodes
-
 """Reserialize BIBFRAME in XML as JSON-LD"""
 import serialize_xml_json
 
