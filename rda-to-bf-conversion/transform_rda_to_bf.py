@@ -3,7 +3,6 @@ from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
-import rdflib
 import time
 import uuid
 import xml.etree.ElementTree as ET
@@ -48,11 +47,14 @@ def reserialize(file):
 	g.serialize(destination=f'{file}', format='xml')
 
 # XML Tree functions
-def add_owlsameAs_to_rda(entity, file, new_IRI):
-	"""Add triple stating that old RDA resource owl:sameAs new BF resource"""
+def add_owlsameAs(rda_or_bf, entity, file, IRI):
+	"""Add triple stating that old RDA resource owl:sameAs new BF resource, or vice versa"""
 	file = file.split('.')[0] + '.xml'
 
-	file_path = f'../input/{currentDate}/{entity}/{file}'
+	if rda_or_bf.lower() == 'rda':
+		file_path = f'../input/{currentDate}/{entity}/{file}'
+	elif rda_or_bf.lower() == 'bf':
+		file_path = f'../output/{currentDate}/{entity}/{file}'
 
 	# open xml parser
 	tree = ET.parse(file_path)
@@ -60,7 +62,7 @@ def add_owlsameAs_to_rda(entity, file, new_IRI):
 
 	ns = {'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'owl': 'http://www.w3.org/2002/07/owl#'}
 
-	# append owl:sameAs
+	# insert owl:sameAs
 	for desc in root.findall('rdf:Description', ns):
 		# create dictionary of attributes for description
 		attrib_dict = desc.attrib
@@ -72,7 +74,7 @@ def add_owlsameAs_to_rda(entity, file, new_IRI):
 
 	# add value for owl:sameAs
 	for owl_new_triple in root.findall('rdf:Description/owl:sameAs', ns):
-		owl_new_triple.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', new_IRI)
+		owl_new_triple.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI)
 
 	# write new XML to a temporary file
 	tree.write(file_path)
@@ -155,7 +157,10 @@ def transform_works(workList, currentDate):
 		work_map_replace_to_default(work_filepath)
 
 		# add owl:sameAs triple to RDA
-		add_owlsameAs_to_rda("work", work, BF_IRI)
+		add_owlsameAs("rda", "work", work, BF_IRI)
+
+		# add owl:sameAs triple to BF
+		add_owlsameAs("bf", "work", work, RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("work_1", f"{BF_ID}.xml", BF_IRI)
@@ -222,7 +227,10 @@ def transform_expressions(expressionList, currentDate):
 		expression_map_replace_to_default(expression_filepath)
 
 		# add owl:sameAs triple to RDA
-		add_owlsameAs_to_rda("expression", expression, BF_IRI)
+		add_owlsameAs("rda", "expression", expression, BF_IRI)
+
+		# add owl:sameAs triple to BF
+		add_owlsameAs("bf", "expression", expression, RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("work_2", f"{BF_ID}.xml", BF_IRI)
@@ -290,7 +298,10 @@ def transform_manifestations(manifestationList, currentDate):
 		manifestation_map_replace_to_default(manifestation_filepath)
 
 		# add owl:sameAs triple to RDA
-		add_owlsameAs_to_rda("manifestation", manifestation, BF_IRI)
+		add_owlsameAs("rda", "manifestation", manifestation, BF_IRI)
+
+		# add owl:sameAs triple to BF
+		add_owlsameAs("bf", "manifestation", manifestation, RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("instance", f"{BF_ID}.xml", BF_IRI)
@@ -358,7 +369,10 @@ def transform_items(itemList, currentDate):
 		item_map_replace_to_default(item_filepath)
 
 		# add owl:sameAs triple to RDA
-		add_owlsameAs_to_rda("item", item, BF_IRI)
+		add_owlsameAs("rda", "item", item, BF_IRI)
+
+		# add owl:sameAs triple to BF
+		add_owlsameAs("bf", "item", item, RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("item", f"{BF_ID}.xml", BF_IRI)
