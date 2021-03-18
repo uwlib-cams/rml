@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N41637ed34ac341458107f744d49d4ae6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N32ed6d6e02774da686f1d521f62c4ca2"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N091c394bc3d14e589576feb67e773de1">
+    <bflc:catalogerID xml:lang="zxx">dbrookin</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N7e10bf6a36c844ae94e1a641c087e060"/>
+    <bf:generationProcess rdf:nodeID="N8691d563d2f64d36a101bd71e0f7c862"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-07</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f290e0b2-b0df-43b9-a654-71c9c827454e">
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/18bd20d9-f705-4792-a5a0-e3bc07f7efe2"/>
+    <bf:adminMetadata rdf:nodeID="N091c394bc3d14e589576feb67e773de1"/>
+    <bf:notation rdf:nodeID="N52da5e32477247fd9a7d4ae2346954f5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f290e0b2-b0df-43b9-a654-71c9c827454e"/>
+    <bf:contribution rdf:nodeID="N41637ed34ac341458107f744d49d4ae6"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32ed6d6e02774da686f1d521f62c4ca2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Nürnberger, Helmuth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e10bf6a36c844ae94e1a641c087e060">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8691d563d2f64d36a101bd71e0f7c862">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-18T15:33:25+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N52da5e32477247fd9a7d4ae2346954f5">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+</rdf:RDF>

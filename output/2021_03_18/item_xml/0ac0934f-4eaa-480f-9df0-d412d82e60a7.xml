@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf47d80fbce7f4dd99d8bc2a1d9bfed07">
+    <rdfs:label>szstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nacd993c766e74f9ba2afc2de589b1622">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>39352084161363</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28216771142b404d87d0b325549b73d3">
+    <bf:itemPortion>.P76 2016</bf:itemPortion>
+    <bf:classificationPortion>Q175.4</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/0ac0934f-4eaa-480f-9df0-d412d82e60a7">
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="Nf47d80fbce7f4dd99d8bc2a1d9bfed07"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/0ac0934f-4eaa-480f-9df0-d412d82e60a7"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/8f446b2b-5864-4010-ab47-3a4982434b0f"/>
+    <bf:identifier rdf:nodeID="Nacd993c766e74f9ba2afc2de589b1622"/>
+    <bf:classification rdf:nodeID="N28216771142b404d87d0b325549b73d3"/>
+    <bf:adminMetadata rdf:nodeID="N541d659a3d2e410baed6019ef3930905"/>
+    <bf:physicalLocation>suzzallen</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N541d659a3d2e410baed6019ef3930905">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Nce1d7aa1e1064e1ca7047e80d8c0b886"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-04</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce1d7aa1e1064e1ca7047e80d8c0b886">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-18T15:42:52+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

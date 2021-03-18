@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N0b3ebc718c3b46bf9c8c34e07a22626a">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-12-10</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N96476bdced5f4b23b057f11ad0b74f67"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96476bdced5f4b23b057f11ad0b74f67">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-18T15:38:27+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce3a74f9e92b4dabaef81d4038a77e3d">
+    <bf:mainTitle xml:lang="eng">Northanger Abbey</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b095e4e024745779a2731611982d89b">
+    <bf:place rdf:nodeID="N0e12b382e69643b7a1bbc92c2d06bbff"/>
+    <bf:agent rdf:resource="http://id.loc.gov/entities/providers/74c75a2bf3f8dbd4c393d0bf9894d7d4"/>
+    <bf:agent rdf:nodeID="Nd30cad7ec6a944cba2118240eab80f6e"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">[1950]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/6772d604-f3ca-4d71-adb8-b1b48aaa0602">
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/1c4c6940-6109-41cd-ae0e-d9284bb2e766"/>
+    <bf:extent rdf:nodeID="N6659cec3287b40adbe04283798aca932"/>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:responsibilityStatement xml:lang="eng">by Jane Austen</bf:responsibilityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:provisionActivity rdf:nodeID="N1b095e4e024745779a2731611982d89b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/6772d604-f3ca-4d71-adb8-b1b48aaa0602"/>
+    <bf:title rdf:nodeID="Nce3a74f9e92b4dabaef81d4038a77e3d"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:identifiedBy rdf:nodeID="Nb68c62e065d34b98b36592f67d016692"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©1950</bf:copyrightDate>
+    <bf:adminMetadata rdf:nodeID="N0b3ebc718c3b46bf9c8c34e07a22626a"/>
+    <bf:provisionActivityStatement xml:lang="eng">[New York] : Doric Books, [1950]</bf:provisionActivityStatement>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd30cad7ec6a944cba2118240eab80f6e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Doric Books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb68c62e065d34b98b36592f67d016692">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>LCCN 50001514</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e12b382e69643b7a1bbc92c2d06bbff">
+    <rdfs:label xml:lang="eng">[New York]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6659cec3287b40adbe04283798aca932">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">243 pages</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
