@@ -180,275 +180,6 @@ ex:IdentifierMap rr:predicateObjectMap [
 ].
 
 ex:WorkMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rml:reference "P10331[@lang]";
-    rr:termType rr:Literal;
-    rml:languageMap [
-      rml:reference "P10331/@lang"
-    ]
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-  rr:objectMap [
-    rml:reference "P10331[not(@lang)]";
-    rr:termType rr:Literal
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Authorizedaccesspoint_Map
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Authorizedaccesspoint_Map
-  ]
-].
-
-ex:Lang_Authorizedaccesspoint_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10331[@lang]"
-  ].
-
-ex:Not_Lang_Authorizedaccesspoint_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10331[not(@lang)]"
-  ].
-
-ex:Lang_Authorizedaccesspoint_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-	rr:class bf:Identifier
-].
-
-ex:Not_Lang_Authorizedaccesspoint_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-	rr:class bf:Identifier
-].
-
-ex:Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-	rr:objectMap [
-	  rml:reference ".";
-		rr:termType rr:Literal;
-		rml:languageMap [
-		  rml:reference "@lang"
-		]
-	]
-].
-
-ex:Not_Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-	rr:objectMap [
-	  rml:reference ".";
-		rr:termType rr:Literal
-	]
-].
-
-ex:Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Authorizedaccesspoint_Note_Map
-	]
-].
-
-ex:Not_Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Authorizedaccesspoint_Note_Map
-	]
-].
-
-ex:Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Accesspoint_Source_Map
-	]
-].
-
-ex:Not_Lang_Authorizedaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Accesspoint_Source_Map
-	]
-].
-
-ex:Authorizedaccesspoint_Note_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10331]"
-  ].
-
-ex:Authorizedaccesspoint_Note_Map rr:subjectMap [
-		rr:termType rr:BlankNode;
-		rr:class bf:Note
-].
-
-ex:Authorizedaccesspoint_Note_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-	rr:objectMap [
-	  rr:constant "Authorized access point";
-		rr:termType rr:Literal;
-		rr:language "en"
-	]
-].
-
-ex:Authorizedaccesspoint_Note_Map rr:predicateObjectMap [
-  rr:predicate bf:noteType;
-	rr:objectMap [
-	  rr:constant "type of identifier";
-		rr:termType rr:Literal;
-		rr:language "en"
-	]
-].
-
-ex:Accesspoint_Source_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10331 or P10332]"
-  ].
-
-ex:Accesspoint_Source_Map rr:subjectMap [
-		rr:termType rr:BlankNode;
-		rr:class bf:Source
-].
-
-ex:Accesspoint_Source_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-	rr:objectMap [
-	  rr:constant "RDA";
-		rr:termType rr:Literal;
-		rr:language "en"
-	]
-].
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Lang_Variantaccesspoint_Map
-  ]
-].
-
-ex:WorkMap rr:predicateObjectMap [
-  rr:predicate bf:identifiedBy;
-  rr:objectMap [
-    rr:parentTriplesMap ex:Not_Lang_Variantaccesspoint_Map
-  ]
-].
-
-ex:Lang_Variantaccesspoint_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10332[@lang]"
-  ].
-
-ex:Not_Lang_Variantaccesspoint_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description/P10332[not(@lang)]"
-  ].
-
-ex:Lang_Variantaccesspoint_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-	rr:class bf:Identifier
-].
-
-ex:Not_Lang_Variantaccesspoint_Map rr:subjectMap [
-  rr:termType rr:BlankNode;
-	rr:class bf:Identifier
-].
-
-ex:Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-	rr:objectMap [
-	  rml:reference ".";
-		rr:termType rr:Literal;
-		rml:languageMap [
-		  rml:reference "@lang"
-		]
-	]
-].
-
-ex:Not_Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate rdf:value;
-	rr:objectMap [
-	  rml:reference ".";
-		rr:termType rr:Literal
-	]
-].
-
-ex:Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Variantaccesspoint_Note_Map
-	]
-].
-
-ex:Not_Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:note;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Variantaccesspoint_Note_Map
-	]
-].
-
-ex:Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Accesspoint_Source_Map
-	]
-].
-
-ex:Not_Lang_Variantaccesspoint_Map rr:predicateObjectMap [
-  rr:predicate bf:source;
-	rr:objectMap [
-	  rr:parentTriplesMap ex:Accesspoint_Source_Map
-	]
-].
-
-ex:Variantaccesspoint_Note_Map a rr:TriplesMap;
-  rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!work_filepath!!.xml";
-    rml:referenceFormulation ql:XPath;
-    rml:iterator "/RDF/Description[P10332]"
-  ].
-
-ex:Variantaccesspoint_Note_Map rr:subjectMap [
-		rr:termType rr:BlankNode;
-		rr:class bf:Note
-].
-
-ex:Variantaccesspoint_Note_Map rr:predicateObjectMap [
-  rr:predicate rdfs:label;
-	rr:objectMap [
-	  rr:constant "Variant access point";
-		rr:termType rr:Literal;
-		rr:language "en"
-	]
-].
-
-ex:Variantaccesspoint_Note_Map rr:predicateObjectMap [
-  rr:predicate bf:noteType;
-	rr:objectMap [
-	  rr:constant "type of identifier";
-		rr:termType rr:Literal;
-		rr:language "en"
-	]
-].
-
-ex:WorkMap rr:predicateObjectMap [
   rr:predicate bf:contribution;
   rr:objectMap [
     rr:parentTriplesMap ex:Lang_Contribution_10001_Map
@@ -27508,6 +27239,44 @@ ex:Not_Lang_Note_10330_Map rr:predicateObjectMap [
   rr:predicate rdfs:label;
     rr:objectMap [
     rml:reference ".";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate skos:prefLabel;
+    rr:objectMap [
+    rml:reference "P10331[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P10331/@lang"
+    ]
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate skos:prefLabel;
+  rr:objectMap [
+    rml:reference "P10331[not(@resource) and not(@lang)]";
+    rr:termType rr:Literal
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate skos:altLabel;
+    rr:objectMap [
+    rml:reference "P10332[not(@resource)][@lang]";
+    rr:termType rr:Literal;
+    rml:languageMap [
+      rml:reference "P10332/@lang"
+    ]
+  ]
+].
+
+ex:WorkMap rr:predicateObjectMap [
+  rr:predicate skos:altLabel;
+  rr:objectMap [
+    rml:reference "P10332[not(@resource) and not(@lang)]";
     rr:termType rr:Literal
   ]
 ].
