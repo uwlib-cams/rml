@@ -54,7 +54,13 @@ def add_owlsameAs(rda_or_bf, entity, file, IRI):
 	if rda_or_bf.lower() == 'rda':
 		file_path = f'../input/{currentDate}/{entity}/{file}'
 	elif rda_or_bf.lower() == 'bf':
-		file_path = f'../output/{currentDate}/{entity}/{file}'
+		if entity == "work":
+			entity = "work_1"
+		elif entity == "expression":
+			entity = "work_2"
+		elif entity == "manifestation":
+			entity = "instance"
+		file_path = f'../output/{currentDate}/{entity}_xml/{file}'
 
 	# open xml parser
 	tree = ET.parse(file_path)
@@ -160,7 +166,7 @@ def transform_works(workList, currentDate):
 		add_owlsameAs("rda", "work", work, BF_IRI)
 
 		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "work", work, RDA_IRI)
+		add_owlsameAs("bf", "work", f"{BF_ID}.xml", RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("work_1", f"{BF_ID}.xml", BF_IRI)
@@ -230,7 +236,7 @@ def transform_expressions(expressionList, currentDate):
 		add_owlsameAs("rda", "expression", expression, BF_IRI)
 
 		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "expression", expression, RDA_IRI)
+		add_owlsameAs("bf", "expression", f"{BF_ID}.xml", RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("work_2", f"{BF_ID}.xml", BF_IRI)
@@ -301,7 +307,7 @@ def transform_manifestations(manifestationList, currentDate):
 		add_owlsameAs("rda", "manifestation", manifestation, BF_IRI)
 
 		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "manifestation", manifestation, RDA_IRI)
+		add_owlsameAs("bf", "manifestation", f"{BF_ID}.xml", RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("instance", f"{BF_ID}.xml", BF_IRI)
@@ -372,7 +378,7 @@ def transform_items(itemList, currentDate):
 		add_owlsameAs("rda", "item", item, BF_IRI)
 
 		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "item", item, RDA_IRI)
+		add_owlsameAs("bf", "item", f"{BF_ID}.xml", RDA_IRI)
 
 		# update IRI in BF resource
 		update_bf_IRI("item", f"{BF_ID}.xml", BF_IRI)
