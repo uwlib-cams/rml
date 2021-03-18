@@ -1783,7 +1783,7 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P20286value> ;
    bf:role <http://id.loc.gov/vocabulary/relators/cnd> ;
    bf:role [ a bf:Role ;
-      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""> ; role=<http://id.loc.gov/vocabulary/relators/cnd>
+      rdfs:label ""instrumental conductor"" ] ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor""> ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
 or
 contribution >> Contribution > agent*  > role >> Role > rdfs:label=""instrumental conductor""> ; > role=<http://id.loc.gov/vocabulary/relators/cnd>"
 has censor agent RDA 18.5,http://rdaregistry.info/Elements/e/P20287,"bf:contribution [ a bf:Contribution ;
@@ -2455,9 +2455,9 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P20368value> ;
    bf:role [ a bf:Role ;
       rdfs:label ""instrumental conductor"" ] ;
-  bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor"" ; > role=<http://id.loc.gov/vocabulary/cnd>
+  bf:role <http://id.loc.gov/vocabulary/relators/cnd> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""instrumental conductor"" ; > role=<http://id.loc.gov/vocabulary/relators/cnd>
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""instrumental conductor"" ; > role=<http://id.loc.gov/vocabulary/cnd> "
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""instrumental conductor"" ; > role=<http://id.loc.gov/vocabulary/relators/cnd> "
 has actor person,http://rdaregistry.info/Elements/e/P20369,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Person ;
       rdfs:label ""P20369value"" ];
