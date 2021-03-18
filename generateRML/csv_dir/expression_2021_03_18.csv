@@ -3915,9 +3915,9 @@ bf:contribution [ a bf:Contribution ;
    bf:agent <P20505value> ;
    bf:role [ a bf:Role ;
       rdfs:label ""letterer"" ] ;
-  bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""letterer"" ; role=<http://id.loc.gov/vocabulary/relators/ill>
+  bf:role <http://id.loc.gov/vocabulary/relators/ill> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""letterer"" ; > role=<http://id.loc.gov/vocabulary/relators/ill>
 or
-contribution >> Contribution > agent* > role >> Role > rdfs:label=""letterer"" ; role=<http://id.loc.gov/vocabulary/relators/ill>"
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""letterer"" ; > role=<http://id.loc.gov/vocabulary/relators/ill>"
 has presenter corporate body,http://rdaregistry.info/Elements/e/P20506,"bf:contribution [ a bf:Contribution ;
    bf:agent [ a bf:Organization ;
       rdfs:label ""P20506value"" ];
