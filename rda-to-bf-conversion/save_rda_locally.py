@@ -45,12 +45,39 @@ def create_URI_list():
 		URI_list.append(uri)
 
 	# remove temporary output file
-	os.system('rm uw_uri_list.nq')
+	#os.system('rm uw_uri_list.nq')
 
 	return URI_list
 
+def save_all_resources(URI_list, currentDate):
+	# create new graph, bind namespaces
+	Graph_sinopiaAll = rdflib.Graph()
+	Graph_sinopiaAll.bind('bf', bf)
+	Graph_sinopiaAll.bind('bflc', bflc)
+	Graph_sinopiaAll.bind('rdac', rdac)
+	Graph_sinopiaAll.bind('rdae', rdae)
+	Graph_sinopiaAll.bind('rdai', rdai)
+	Graph_sinopiaAll.bind('rdam', rdam)
+	Graph_sinopiaAll.bind('rdamdt', rdamdt)
+	Graph_sinopiaAll.bind('rdaw', rdaw)
+	Graph_sinopiaAll.bind('rdax', rdax)
+	Graph_sinopiaAll.bind('sin', sin)
+	Graph_sinopiaAll.bind('madsrdf', madsrdf)
+
+	# load RDA from sinopia into graph
+	bar = Bar('Parsing all UW resources', max=len(URI_list), suffix='%(percent)d%%')
+	for URI in URI_list:
+		Graph_sinopiaAll.parse(URI, format="json-ld")
+		bar.next()
+	bar.finish()
+
+	print('...\nSerializing as RDF/XML')
+	Graph_sinopiaAll.serialize(destination=f'../input/{currentDate}/all_resources.xml', format="xml") # serializes in xml
+
+	print('...\nDone!')
+
 def save_works(URI_list, currentDate):
-	"""Look for works from trellis according to RDA class"""
+	"""Look for works from mongoDB according to RDA class"""
 	# create directory for works
 	if not os.path.exists(f'../input/{currentDate}/work'):
 		print("...\nCreating work directory")
@@ -83,7 +110,7 @@ def save_works(URI_list, currentDate):
 	return workURIList
 
 def save_expressions(URI_list, currentDate, workURIList=[]):
-	"""Look for expressions from trellis according to RDA class"""
+	"""Look for expressions from mongoDB according to RDA class"""
 	# remove works from URI list to save time
 	for work in workURIList:
 		URI_list.remove(work)
@@ -119,7 +146,7 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 	return expressionURIList
 
 def save_manifestations(URI_list, currentDate, expressionURIList=[]):
-	"""Look for manifestations from trellis according to RDA class"""
+	"""Look for manifestations from mongoDB according to RDA class"""
 	# remove expressions from URI list to save time # works removed in previous step
 	for expression in expressionURIList:
 		URI_list.remove(expression)
@@ -156,7 +183,7 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 	return manifestationURIList
 
 def save_items(URI_list, currentDate, manifestationURIList=[]):
-	"""Look for items from trellis according to RDA class"""
+	"""Look for items from mongoDB according to RDA class"""
 	# remove manifestations from URI list to save time # works and expressions removed in previous steps
 	for manifestation in manifestationURIList:
 		URI_list.remove(manifestation)
@@ -202,6 +229,9 @@ if not os.path.exists(f'../input/{currentDate}'):
 	os.system(f'mkdir ../input/{currentDate}')
 
 URI_list = create_URI_list()
+
+#save_all_resources(URI_list, currentDate)
+
 workURIList = save_works(URI_list, currentDate)
 
 workList = os.listdir(f'../input/{currentDate}/work')
