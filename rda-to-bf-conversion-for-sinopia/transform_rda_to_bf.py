@@ -116,7 +116,7 @@ def transform_works(workList, currentDate):
 		# identify RDA ID and IRI
 		RDA_ID = work.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		work_filepath = f"{currentDate}/work/{RDA_ID}" # use RDA ID to make path
+		work_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/work/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -187,7 +187,7 @@ def transform_expressions(expressionList, currentDate):
 		# identify RDA ID and IRI
 		RDA_ID = expression.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		expression_filepath = f"{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
+		expression_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -258,7 +258,7 @@ def transform_manifestations(manifestationList, currentDate):
 		# identify RDA ID and IRI
 		RDA_ID = manifestation.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		manifestation_filepath = f"{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
+		manifestation_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -329,7 +329,7 @@ def transform_items(itemList, currentDate):
 		# identify RDA ID and IRI
 		RDA_ID = item.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		item_filepath = f"{currentDate}/item/{RDA_ID}" # use RDA ID to make path
+		item_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/item/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()

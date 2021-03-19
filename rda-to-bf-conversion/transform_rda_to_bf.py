@@ -46,9 +46,9 @@ def reserialize(file):
 # RML functions
 def transform_works(workList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/work_1'):
+	if not os.path.exists(f'output_{currentDate}/work_1'):
 		print('...\nCreating work_1 directory')
-		os.makedirs(f'../output/{currentDate}/work_1')
+		os.makedirs(f'output_{currentDate}/work_1')
 
 	print('...')
 
@@ -56,7 +56,7 @@ def transform_works(workList, currentDate):
 	for work in workList:
 		# identify RDA ID and IRI
 		work_identifier = work.split('.')[0]
-		work_filepath = f"{currentDate}/work/{work_identifier}" # use RDA ID to make path
+		work_filepath = f"rda-to-bf-conversion/input_{currentDate}/work/{work_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		work_map_replace_to_ID(work_filepath) # use path as RML source in work monograph map
@@ -87,7 +87,7 @@ def transform_works(workList, currentDate):
 			Graph_localWork.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1/{work_identifier}.xml', format="xml")
+		Graph_localWork.serialize(destination=f'output_{currentDate}/work_1/{work_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {work_identifier}.nq")
@@ -100,9 +100,9 @@ def transform_works(workList, currentDate):
 
 def transform_expressions(expressionList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/work_2'):
+	if not os.path.exists(f'output_{currentDate}/work_2'):
 		print(f'...\nCreating work_2 directory')
-		os.makedirs(f'../output/{currentDate}/work_2')
+		os.makedirs(f'output_{currentDate}/work_2')
 
 	print("...")
 
@@ -110,7 +110,7 @@ def transform_expressions(expressionList, currentDate):
 	for expression in expressionList:
 		# identify RDA ID and IRI
 		expression_identifier = expression.split('.')[0]
-		expression_filepath = f"{currentDate}/expression/{expression_identifier}" # use RDA ID to make path
+		expression_filepath = f"rda-to-bf-conversion/input_{currentDate}/expression/{expression_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		expression_map_replace_to_ID(expression_filepath) # use path as RML source in expression monograph map
@@ -141,7 +141,7 @@ def transform_expressions(expressionList, currentDate):
 			Graph_localExpression.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2/{expression_identifier}.xml', format="xml")
+		Graph_localExpression.serialize(destination=f'output_{currentDate}/work_2/{expression_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {expression_identifier}.nq")
@@ -154,9 +154,9 @@ def transform_expressions(expressionList, currentDate):
 
 def transform_manifestations(manifestationList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/instance'):
+	if not os.path.exists(f'output_{currentDate}/instance'):
 		print(f'...\nCreating instance directory')
-		os.makedirs(f'../output/{currentDate}/instance')
+		os.makedirs(f'output_{currentDate}/instance')
 
 	print("...")
 
@@ -165,7 +165,7 @@ def transform_manifestations(manifestationList, currentDate):
 	for manifestation in manifestationList:
 		# identify RDA ID and IRI
 		manifestation_identifier = manifestation.split('.')[0]
-		manifestation_filepath = f"{currentDate}/manifestation/{manifestation_identifier}" # use RDA ID to make path
+		manifestation_filepath = f"rda-to-bf-conversion/input_{currentDate}/manifestation/{manifestation_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		manifestation_map_replace_to_ID(manifestation_filepath) # use path as RML source in manifestation monograph map
@@ -196,7 +196,7 @@ def transform_manifestations(manifestationList, currentDate):
 			Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance/{manifestation_identifier}.xml', format="xml")
+		Graph_localManifestation.serialize(destination=f'output_{currentDate}/instance/{manifestation_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {manifestation_identifier}.nq")
@@ -209,9 +209,9 @@ def transform_manifestations(manifestationList, currentDate):
 
 def transform_items(itemList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/item'):
+	if not os.path.exists(f'output_{currentDate}/item'):
 		print(f'...\nCreating item directory')
-		os.makedirs(f'../output/{currentDate}/item')
+		os.makedirs(f'output_{currentDate}/item')
 
 	print("...")
 
@@ -220,7 +220,7 @@ def transform_items(itemList, currentDate):
 	for item in itemList:
 		# identify RDA ID and IRI
 		item_identifier = item.split('.')[0]
-		item_filepath = f"{currentDate}/item/{item_identifier}" # use RDA ID to make path
+		item_filepath = f"rda-to-bf-conversion/input_{currentDate}/item/{item_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		item_map_replace_to_ID(item_filepath) # use path as RML source in item monograph map
@@ -251,7 +251,7 @@ def transform_items(itemList, currentDate):
 			Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize file in XML
-		Graph_localItem.serialize(destination=f'../output/{currentDate}/item/{item_identifier}.xml', format="xml")
+		Graph_localItem.serialize(destination=f'output_{currentDate}/item/{item_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {item_identifier}.nq")
@@ -360,9 +360,9 @@ itemList = os.listdir(f'../input/{currentDate}/item')
 ###
 
 # create directory with today's date for BF-in-XML data
-if not os.path.exists(f'../output/{currentDate}'):
+if not os.path.exists(f'output_{currentDate}'):
 	print('...\nCreating output folder')
-	os.makedirs(f'../output/{currentDate}')
+	os.makedirs(f'output_{currentDate}')
 
 transform_works(workList, currentDate)
 transform_expressions(expressionList, currentDate)
