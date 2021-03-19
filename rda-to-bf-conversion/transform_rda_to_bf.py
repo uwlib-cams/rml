@@ -196,7 +196,7 @@ def transform_manifestations(manifestationList, currentDate):
 			Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance/{expression_identifier}.xml', format="xml")
+		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance/{manifestation_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {manifestation_identifier}.nq")
@@ -251,7 +251,7 @@ def transform_items(itemList, currentDate):
 			Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize file in XML
-		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_xml/{expression_identifier}.xml', format="xml")
+		Graph_localItem.serialize(destination=f'../output/{currentDate}/item/{item_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
 		os.system(f"rm {item_identifier}.nq")
