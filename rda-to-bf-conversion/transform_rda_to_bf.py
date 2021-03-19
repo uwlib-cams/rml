@@ -1,11 +1,8 @@
-import csv
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
 import time
-import uuid
-import xml.etree.ElementTree as ET
 
 """Namespaces"""
 LDP = Namespace('http://www.w3.org/ns/ldp#')
@@ -46,90 +43,26 @@ def reserialize(file):
 	g.load(f'file:{file}', format='xml')
 	g.serialize(destination=f'{file}', format='xml')
 
-# XML Tree functions
-def add_owlsameAs(rda_or_bf, entity, file, IRI):
-	"""Add triple stating that old RDA resource owl:sameAs new BF resource, or vice versa"""
-	file = file.split('.')[0] + '.xml'
-
-	if rda_or_bf.lower() == 'rda':
-		file_path = f'../input/{currentDate}/{entity}/{file}'
-	elif rda_or_bf.lower() == 'bf':
-		if entity == "work":
-			entity = "work_1"
-		elif entity == "expression":
-			entity = "work_2"
-		elif entity == "manifestation":
-			entity = "instance"
-		file_path = f'../output/{currentDate}/{entity}_xml/{file}'
-
-	# open xml parser
-	tree = ET.parse(file_path)
-	root = tree.getroot()
-
-	ns = {'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'owl': 'http://www.w3.org/2002/07/owl#'}
-
-	# insert owl:sameAs
-	for desc in root.findall('rdf:Description', ns):
-		# create dictionary of attributes for description
-		attrib_dict = desc.attrib
-
-		# if it contains rdf:about as an attribute...
-		if '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about' in attrib_dict.keys():
-			# write in owl:sameAs
-			ET.SubElement(desc, '{http://www.w3.org/2002/07/owl#}sameAs')
-
-	# add value for owl:sameAs
-	for owl_new_triple in root.findall('rdf:Description/owl:sameAs', ns):
-		owl_new_triple.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI)
-
-	# write new XML to a temporary file
-	tree.write(file_path)
-
-	# reserialize
-	reserialize(file_path)
-
-def update_bf_IRI(entity, file, new_IRI):
-	file_path = f'../output/{currentDate}/{entity}_xml/{file}'
-	# open xml parser
-	tree = ET.parse(file_path)
-	root = tree.getroot()
-
-	for child in root:
-		if '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about' in child.attrib.keys():
-			child.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about', new_IRI)
-
-	tree.write(file_path)
-
-	reserialize(file_path)
-
 # RML functions
 def transform_works(workList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/work_1_xml'):
+	if not os.path.exists(f'../output/{currentDate}/work_1'):
 		print('...\nCreating work_1 directory')
-		os.makedirs(f'../output/{currentDate}/work_1_xml')
+		os.makedirs(f'../output/{currentDate}/work_1')
 
 	print('...')
 
 	bar = Bar(f'Transforming {len(workList)} files from RDA Work to BIBFRAME Work', max=len(workList), suffix='%(percent)d%%') # progress bar
 	for work in workList:
 		# identify RDA ID and IRI
-		RDA_ID = work.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		work_filepath = f"{currentDate}/work/{RDA_ID}" # use RDA ID to make path
-
-		# generate new BF ID and IRI
-		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
-
-		# record equivalence in dictionary
-		rda_bf_dict[RDA_ID] = BF_ID
+		work_identifier = work.split('.')[0]
+		work_filepath = f"{currentDate}/work/{work_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		work_map_replace_to_ID(work_filepath) # use path as RML source in work monograph map
 
 		# run RML Mapper with workRML map
-		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/workRML.ttl -o {RDA_ID}.nq") # run RML, output as nquad file
+		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/workRML.ttl -o {work_identifier}.nq") # run RML, output as nquad file
 
 		# create new empty graph
 		Graph_localWork = Graph()
@@ -140,7 +73,7 @@ def transform_works(workList, currentDate):
 		Graph_localWork.bind('madsrdf', madsrdf)
 
 		# add nquad file to new graph
-		Graph_localWork.load(f'file:{RDA_ID}.nq', format='nquads')
+		Graph_localWork.load(f'file:{work_identifier}.nq', format='nquads')
 
 		# create variables for new triples
 		snapshot_bnode = BNode()
@@ -154,52 +87,36 @@ def transform_works(workList, currentDate):
 			Graph_localWork.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1_xml/{BF_ID}.xml', format="xml")
+		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1/{work_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
-		os.system(f"rm {RDA_ID}.nq")
+		os.system(f"rm {work_identifier}.nq")
 
 		# return work map to default
 		work_map_replace_to_default(work_filepath)
-
-		# add owl:sameAs triple to RDA
-		add_owlsameAs("rda", "work", work, BF_IRI)
-
-		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "work", f"{BF_ID}.xml", RDA_IRI)
-
-		# update IRI in BF resource
-		update_bf_IRI("work_1", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
 	bar.finish()
 
 def transform_expressions(expressionList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/work_2_xml'):
+	if not os.path.exists(f'../output/{currentDate}/work_2'):
 		print(f'...\nCreating work_2 directory')
-		os.makedirs(f'../output/{currentDate}/work_2_xml')
+		os.makedirs(f'../output/{currentDate}/work_2')
 
 	print("...")
 
 	bar = Bar(f'Transforming {len(expressionList)} from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
 	for expression in expressionList:
 		# identify RDA ID and IRI
-		RDA_ID = expression.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		expression_filepath = f"{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
-
-		# generate new BF ID and IRI
-		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
-
-		# record equivalence in dictionary
-		rda_bf_dict[RDA_ID] = BF_ID
+		expression_identifier = expression.split('.')[0]
+		expression_filepath = f"{currentDate}/expression/{expression_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		expression_map_replace_to_ID(expression_filepath) # use path as RML source in expression monograph map
 
-		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/expressionRML.ttl -o {RDA_ID}.nq") # run RML, output as nquad file
+		# run RML Mapper with expressionRML map
+		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/expressionRML.ttl -o {expression_identifier}.nq") # run RML, output as nquad file
 
 		# create new empty graph
 		Graph_localExpression = Graph()
@@ -210,7 +127,7 @@ def transform_expressions(expressionList, currentDate):
 		Graph_localExpression.bind('madsrdf', madsrdf)
 
 		# add nquad file to new graph
-		Graph_localExpression.load(f'file:{RDA_ID}.nq', format='nquads')
+		Graph_localExpression.load(f'file:{expression_identifier}.nq', format='nquads')
 
 		# create variables for new triples
 		snapshot_bnode = BNode()
@@ -224,31 +141,22 @@ def transform_expressions(expressionList, currentDate):
 			Graph_localExpression.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2_xml/{BF_ID}.xml', format="xml")
+		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2/{expression_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
-		os.system(f"rm {RDA_ID}.nq")
+		os.system(f"rm {expression_identifier}.nq")
 
 		# return expression map to default
 		expression_map_replace_to_default(expression_filepath)
-
-		# add owl:sameAs triple to RDA
-		add_owlsameAs("rda", "expression", expression, BF_IRI)
-
-		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "expression", f"{BF_ID}.xml", RDA_IRI)
-
-		# update IRI in BF resource
-		update_bf_IRI("work_2", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
 	bar.finish()
 
 def transform_manifestations(manifestationList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/instance_xml'):
+	if not os.path.exists(f'../output/{currentDate}/instance'):
 		print(f'...\nCreating instance directory')
-		os.makedirs(f'../output/{currentDate}/instance_xml')
+		os.makedirs(f'../output/{currentDate}/instance')
 
 	print("...")
 
@@ -256,21 +164,14 @@ def transform_manifestations(manifestationList, currentDate):
 
 	for manifestation in manifestationList:
 		# identify RDA ID and IRI
-		RDA_ID = manifestation.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		manifestation_filepath = f"{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
-
-		# generate new BF ID and IRI
-		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
-
-		# record equivalence in dictionary
-		rda_bf_dict[RDA_ID] = BF_ID
+		manifestation_identifier = manifestation.split('.')[0]
+		manifestation_filepath = f"{currentDate}/manifestation/{manifestation_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		manifestation_map_replace_to_ID(manifestation_filepath) # use path as RML source in manifestation monograph map
 
-		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/manifestationRML.ttl -o {RDA_ID}.nq") # run RML, output as nquad file
+		# run RML Mapper with manifestationRML map
+		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/manifestationRML.ttl -o {manifestation_identifier}.nq") # run RML, output as nquad file
 
 		# create new empty graph
 		Graph_localManifestation = Graph()
@@ -281,7 +182,7 @@ def transform_manifestations(manifestationList, currentDate):
 		Graph_localManifestation.bind('madsrdf', madsrdf)
 
 		# add nquad file to new graph
-		Graph_localManifestation.load(f'file:{RDA_ID}.nq', format='nquads')
+		Graph_localManifestation.load(f'file:{manifestation_identifier}.nq', format='nquads')
 
 		# create variables for new triples
 		snapshot_bnode = BNode()
@@ -295,31 +196,22 @@ def transform_manifestations(manifestationList, currentDate):
 			Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize graph as XML
-		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance_xml/{BF_ID}.xml', format="xml")
+		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance/{expression_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
-		os.system(f"rm {RDA_ID}.nq")
+		os.system(f"rm {manifestation_identifier}.nq")
 
 		# return manifestation map to default
 		manifestation_map_replace_to_default(manifestation_filepath)
-
-		# add owl:sameAs triple to RDA
-		add_owlsameAs("rda", "manifestation", manifestation, BF_IRI)
-
-		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "manifestation", f"{BF_ID}.xml", RDA_IRI)
-
-		# update IRI in BF resource
-		update_bf_IRI("instance", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
 	bar.finish()
 
 def transform_items(itemList, currentDate):
 	# create output directory
-	if not os.path.exists(f'../output/{currentDate}/item_xml'):
+	if not os.path.exists(f'../output/{currentDate}/item'):
 		print(f'...\nCreating item directory')
-		os.makedirs(f'../output/{currentDate}/item_xml')
+		os.makedirs(f'../output/{currentDate}/item')
 
 	print("...")
 
@@ -327,21 +219,14 @@ def transform_items(itemList, currentDate):
 
 	for item in itemList:
 		# identify RDA ID and IRI
-		RDA_ID = item.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		item_filepath = f"{currentDate}/item/{RDA_ID}" # use RDA ID to make path
-
-		# generate new BF ID and IRI
-		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
-
-		# record equivalence in dictionary
-		rda_bf_dict[RDA_ID] = BF_ID
+		item_identifier = item.split('.')[0]
+		item_filepath = f"{currentDate}/item/{item_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		item_map_replace_to_ID(item_filepath) # use path as RML source in item monograph map
 
-		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/itemRML.ttl -o {RDA_ID}.nq") # run RML, output as nquad file
+		# run RML Mapper with itemRML map
+		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/itemRML.ttl -o {item_identifier}.nq") # run RML, output as nquad file
 
 		# create new empty graph
 		Graph_localItem = Graph()
@@ -352,7 +237,7 @@ def transform_items(itemList, currentDate):
 		Graph_localItem.bind('madsrdf', madsrdf)
 
 		# add nquad file to new graph
-		Graph_localItem.load(f'file:{RDA_ID}.nq', format='nquads')
+		Graph_localItem.load(f'file:{item_identifier}.nq', format='nquads')
 
 		# create variables for new triples
 		snapshot_bnode = BNode()
@@ -366,22 +251,13 @@ def transform_items(itemList, currentDate):
 			Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
 
 		# serialize file in XML
-		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_xml/{BF_ID}.xml', format="xml")
+		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_xml/{expression_identifier}.xml', format="xml")
 
 		# delete temporary nquad file
-		os.system(f"rm {RDA_ID}.nq")
+		os.system(f"rm {item_identifier}.nq")
 
 		# return item map to default
 		item_map_replace_to_default(item_filepath)
-
-		# add owl:sameAs triple to RDA
-		add_owlsameAs("rda", "item", item, BF_IRI)
-
-		# add owl:sameAs triple to BF
-		add_owlsameAs("bf", "item", f"{BF_ID}.xml", RDA_IRI)
-
-		# update IRI in BF resource
-		update_bf_IRI("item", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
 	bar.finish()
@@ -481,8 +357,6 @@ expressionList = os.listdir(f'../input/{currentDate}/expression')
 manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
 itemList = os.listdir(f'../input/{currentDate}/item')
 
-rda_bf_dict = {}
-
 ###
 
 # create directory with today's date for BF-in-XML data
@@ -494,13 +368,3 @@ transform_works(workList, currentDate)
 transform_expressions(expressionList, currentDate)
 transform_manifestations(manifestationList, currentDate)
 transform_items(itemList, currentDate)
-
-print("...\nCreating record of new IRIs")
-with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
-	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-	# write header row
-	csv_writer.writerow(['original_RDA_identifier','equivalent_BF_identifier'])
-
-	for RDA_ID in rda_bf_dict.keys():
-		csv_writer.writerow([f'{RDA_ID}', f'{rda_bf_dict[RDA_ID]}'])
