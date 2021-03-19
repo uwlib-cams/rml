@@ -17,9 +17,6 @@ import transform_rda_to_bf
 
 print("...\nCleaning output data")
 
-print(">> Replacing RDA IRIs with BIBFRAME IRIs")
-import fix_related_IRIs
-
 print(">> Adding datatypes to dates")
 import type_dates
 
