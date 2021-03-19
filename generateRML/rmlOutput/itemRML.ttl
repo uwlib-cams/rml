@@ -22,7 +22,7 @@
 
 ex:ItemMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10003']"
   ].
@@ -41,7 +41,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:AdminMetadataMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[catalogerID]"
   ].
@@ -127,7 +127,7 @@ ex:AdminMetadataMap rr:predicateObjectMap [
 
 ex:StatusMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[code]"
   ].
@@ -161,7 +161,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IdentifierMap a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40001[not(@resource)]"
   ].
@@ -195,14 +195,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Note_40003_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40003[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Note_40003_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40003[not(@resource) and not(@lang)]"
   ].
@@ -270,14 +270,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40004_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40004[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40004_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40004[not(@resource) and not(@lang)]]"
   ].
@@ -322,14 +322,14 @@ ex:Not_Lang_Contribution_40004_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40004_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40004[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40004_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40004[not(@resource) and not(@lang)]"
   ].
@@ -388,7 +388,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40004_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40004[not(@resource)][@lang]]"
   ].
@@ -430,14 +430,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40005_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40005[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40005_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40005[not(@resource) and not(@lang)]]"
   ].
@@ -482,14 +482,14 @@ ex:Not_Lang_Contribution_40005_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40005_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40005[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40005_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40005[not(@resource) and not(@lang)]"
   ].
@@ -548,7 +548,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40005_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40005[not(@resource)][@lang]]"
   ].
@@ -590,14 +590,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40006_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40006[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40006_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40006[not(@resource) and not(@lang)]]"
   ].
@@ -658,14 +658,14 @@ ex:Not_Lang_Contribution_40006_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40006_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40006[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40006_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40006[not(@resource) and not(@lang)]"
   ].
@@ -708,7 +708,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40006_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40006[not(@resource)][@lang]]"
   ].
@@ -750,14 +750,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40007_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40007[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40007_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40007[not(@resource) and not(@lang)]]"
   ].
@@ -818,14 +818,14 @@ ex:Not_Lang_Contribution_40007_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40007_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40007[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40007_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40007[not(@resource) and not(@lang)]"
   ].
@@ -868,7 +868,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40007_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40007[not(@resource)][@lang]]"
   ].
@@ -910,14 +910,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40008_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40008[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40008_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40008[not(@resource) and not(@lang)]]"
   ].
@@ -978,14 +978,14 @@ ex:Not_Lang_Contribution_40008_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40008_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40008[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40008_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40008[not(@resource) and not(@lang)]"
   ].
@@ -1028,7 +1028,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40008_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40008[not(@resource)][@lang]]"
   ].
@@ -1078,14 +1078,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Partof_40009_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40009[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Partof_40009_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40009[not(@resource) and not(@lang)]"
   ].
@@ -1135,14 +1135,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Note_40010_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40010[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Note_40010_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40010[not(@resource) and not(@lang)]"
   ].
@@ -1210,14 +1210,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Note_40011_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40011[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Note_40011_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40011[not(@resource) and not(@lang)]"
   ].
@@ -1285,14 +1285,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40012_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40012[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40012_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40012[not(@resource) and not(@lang)]]"
   ].
@@ -1353,14 +1353,14 @@ ex:Not_Lang_Contribution_40012_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40012_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40012[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40012_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40012[not(@resource) and not(@lang)]"
   ].
@@ -1403,7 +1403,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40012_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40012[not(@resource)][@lang]]"
   ].
@@ -1445,14 +1445,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40013_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40013[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40013_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40013[not(@resource) and not(@lang)]]"
   ].
@@ -1513,14 +1513,14 @@ ex:Not_Lang_Contribution_40013_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40013_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40013[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40013_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40013[not(@resource) and not(@lang)]"
   ].
@@ -1563,7 +1563,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40013_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40013[not(@resource)][@lang]]"
   ].
@@ -1605,14 +1605,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40014_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40014[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40014_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40014[not(@resource) and not(@lang)]]"
   ].
@@ -1673,14 +1673,14 @@ ex:Not_Lang_Contribution_40014_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40014_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40014[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40014_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40014[not(@resource) and not(@lang)]"
   ].
@@ -1723,7 +1723,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40014_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40014[not(@resource)][@lang]]"
   ].
@@ -1765,14 +1765,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40015_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40015[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40015_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40015[not(@resource) and not(@lang)]]"
   ].
@@ -1833,14 +1833,14 @@ ex:Not_Lang_Contribution_40015_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40015_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40015[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40015_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40015[not(@resource) and not(@lang)]"
   ].
@@ -1883,7 +1883,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40015_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40015[not(@resource)][@lang]]"
   ].
@@ -1925,14 +1925,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40016_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40016[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40016_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40016[not(@resource) and not(@lang)]]"
   ].
@@ -1993,14 +1993,14 @@ ex:Not_Lang_Contribution_40016_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40016_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40016[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40016_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40016[not(@resource) and not(@lang)]"
   ].
@@ -2043,7 +2043,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40016_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40016[not(@resource)][@lang]]"
   ].
@@ -2085,14 +2085,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40017_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40017[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40017_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40017[not(@resource) and not(@lang)]]"
   ].
@@ -2137,14 +2137,14 @@ ex:Not_Lang_Contribution_40017_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40017_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40017[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40017_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40017[not(@resource) and not(@lang)]"
   ].
@@ -2203,7 +2203,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40017_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40017[not(@resource)][@lang]]"
   ].
@@ -2245,14 +2245,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40018_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40018[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40018_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40018[not(@resource) and not(@lang)]]"
   ].
@@ -2297,14 +2297,14 @@ ex:Not_Lang_Contribution_40018_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40018_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40018[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40018_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40018[not(@resource) and not(@lang)]"
   ].
@@ -2382,7 +2382,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40018_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40018[not(@resource)][@lang]]"
   ].
@@ -2424,14 +2424,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40019_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40019[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40019_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40019[not(@resource) and not(@lang)]]"
   ].
@@ -2492,14 +2492,14 @@ ex:Not_Lang_Contribution_40019_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40019_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40019[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40019_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40019[not(@resource) and not(@lang)]"
   ].
@@ -2542,7 +2542,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40019_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40019[not(@resource)][@lang]]"
   ].
@@ -2584,14 +2584,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40020[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40020[not(@resource) and not(@lang)]]"
   ].
@@ -2636,14 +2636,14 @@ ex:Not_Lang_Contribution_40020_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40020[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40020[not(@resource) and not(@lang)]"
   ].
@@ -2693,7 +2693,7 @@ ex:Not_Lang_Contribution_40020_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40020]"
   ].
@@ -2740,7 +2740,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40020_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40020[not(@resource)][@lang]]"
   ].
@@ -2790,14 +2790,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40021[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40021[not(@resource) and not(@lang)]]"
   ].
@@ -2842,14 +2842,14 @@ ex:Not_Lang_Contribution_40021_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40021[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40021[not(@resource) and not(@lang)]"
   ].
@@ -2899,7 +2899,7 @@ ex:Not_Lang_Contribution_40021_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40021]"
   ].
@@ -2946,7 +2946,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40021_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40021[not(@resource)][@lang]]"
   ].
@@ -2996,14 +2996,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40022_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40022[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40022_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40022[not(@resource) and not(@lang)]]"
   ].
@@ -3048,14 +3048,14 @@ ex:Not_Lang_Contribution_40022_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40022_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40022[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40022_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40022[not(@resource) and not(@lang)]"
   ].
@@ -3114,7 +3114,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40022_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40022[not(@resource)][@lang]]"
   ].
@@ -3156,14 +3156,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40024_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40024[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40024_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40024[not(@resource) and not(@lang)]]"
   ].
@@ -3224,14 +3224,14 @@ ex:Not_Lang_Contribution_40024_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40024_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40024[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40024_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40024[not(@resource) and not(@lang)]"
   ].
@@ -3274,7 +3274,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40024_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40024[not(@resource)][@lang]]"
   ].
@@ -3316,14 +3316,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40025_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40025[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40025_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40025[not(@resource) and not(@lang)]]"
   ].
@@ -3368,14 +3368,14 @@ ex:Not_Lang_Contribution_40025_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40025_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40025[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40025_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40025[not(@resource) and not(@lang)]"
   ].
@@ -3434,7 +3434,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40025_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40025[not(@resource)][@lang]]"
   ].
@@ -3488,7 +3488,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Constant_Note_P40028_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40028]"
   ].
@@ -3531,14 +3531,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Accompaniedby_40029_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40029[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Accompaniedby_40029_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40029[not(@resource) and not(@lang)]"
   ].
@@ -3596,14 +3596,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasequivalent_40031_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40031[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasequivalent_40031_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40031[not(@resource) and not(@lang)]"
   ].
@@ -3672,14 +3672,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Accompaniedby_40032_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40032[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Accompaniedby_40032_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40032[not(@resource) and not(@lang)]"
   ].
@@ -3737,14 +3737,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Haspart_40034_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40034[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Haspart_40034_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40034[not(@resource) and not(@lang)]"
   ].
@@ -3813,14 +3813,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Accompaniedby_40035_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40035[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Accompaniedby_40035_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40035[not(@resource) and not(@lang)]"
   ].
@@ -3889,14 +3889,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Accompaniedby_40036_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40036[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Accompaniedby_40036_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40036[not(@resource) and not(@lang)]"
   ].
@@ -3954,14 +3954,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Relatedto_40046_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40046[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Relatedto_40046_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40046[not(@resource) and not(@lang)]"
   ].
@@ -4019,14 +4019,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Usageandaccesspolicy_40047_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40047[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Usageandaccesspolicy_40047_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40047[not(@resource) and not(@lang)]"
   ].
@@ -4084,14 +4084,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Usageandaccesspolicy_40048_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40048[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Usageandaccesspolicy_40048_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40048[not(@resource) and not(@lang)]"
   ].
@@ -4149,14 +4149,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Itemof_40049_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40049[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Itemof_40049_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40049[not(@resource) and not(@lang)]"
   ].
@@ -4214,14 +4214,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Immediateacquisition_40050_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40050[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Immediateacquisition_40050_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40050[not(@resource) and not(@lang)]"
   ].
@@ -4279,14 +4279,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40061_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40061[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40061_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40061[not(@resource) and not(@lang)]"
   ].
@@ -4344,14 +4344,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40062_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40062[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40062_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40062[not(@resource) and not(@lang)]"
   ].
@@ -4409,14 +4409,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40063_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40063[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40063_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40063[not(@resource) and not(@lang)]"
   ].
@@ -4474,14 +4474,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40064_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40064[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40064_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40064[not(@resource) and not(@lang)]"
   ].
@@ -4539,14 +4539,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40065_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40065[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40065_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40065[not(@resource) and not(@lang)]"
   ].
@@ -4604,14 +4604,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40066_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40066[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40066_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40066[not(@resource) and not(@lang)]"
   ].
@@ -4669,14 +4669,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Referencedby_40067_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40067[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Referencedby_40067_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40067[not(@resource) and not(@lang)]"
   ].
@@ -4726,14 +4726,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Relatedto_40069_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40069[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Relatedto_40069_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40069[not(@resource) and not(@lang)]"
   ].
@@ -4791,14 +4791,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Relatedto_40070_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40070[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Relatedto_40070_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40070[not(@resource) and not(@lang)]"
   ].
@@ -4856,14 +4856,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Relatedto_40071_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40071[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Relatedto_40071_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40071[not(@resource) and not(@lang)]"
   ].
@@ -4921,14 +4921,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40072_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40072[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40072_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40072[not(@resource) and not(@lang)]]"
   ].
@@ -4973,14 +4973,14 @@ ex:Not_Lang_Contribution_40072_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40072_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40072[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40072_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40072[not(@resource) and not(@lang)]"
   ].
@@ -5023,7 +5023,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40072_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40072[not(@resource)][@lang]]"
   ].
@@ -5057,14 +5057,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40073_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40073[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40073_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40073[not(@resource) and not(@lang)]]"
   ].
@@ -5109,14 +5109,14 @@ ex:Not_Lang_Contribution_40073_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40073_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40073[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40073_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40073[not(@resource) and not(@lang)]"
   ].
@@ -5159,7 +5159,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40073_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40073[not(@resource)][@lang]]"
   ].
@@ -5193,14 +5193,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40074_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40074[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40074_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40074[not(@resource) and not(@lang)]]"
   ].
@@ -5245,14 +5245,14 @@ ex:Not_Lang_Contribution_40074_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40074_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40074[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40074_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40074[not(@resource) and not(@lang)]"
   ].
@@ -5295,7 +5295,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40074_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40074[not(@resource)][@lang]]"
   ].
@@ -5329,14 +5329,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40075_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40075[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40075_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40075[not(@resource) and not(@lang)]]"
   ].
@@ -5381,14 +5381,14 @@ ex:Not_Lang_Contribution_40075_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40075_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40075[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40075_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40075[not(@resource) and not(@lang)]"
   ].
@@ -5431,7 +5431,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40075_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40075[not(@resource)][@lang]]"
   ].
@@ -5465,14 +5465,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40076_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40076[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40076_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40076[not(@resource) and not(@lang)]]"
   ].
@@ -5517,14 +5517,14 @@ ex:Not_Lang_Contribution_40076_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40076_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40076[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40076_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40076[not(@resource) and not(@lang)]"
   ].
@@ -5567,7 +5567,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40076_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40076[not(@resource)][@lang]]"
   ].
@@ -5601,14 +5601,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Place_40077_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40077[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Place_40077_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40077[not(@resource) and not(@lang)]"
   ].
@@ -5697,7 +5697,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Title_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40082 or P40085]"
   ].
@@ -5792,7 +5792,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Title_40086_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40086[not(@resource)][@lang]"
   ].
@@ -5837,14 +5837,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40087_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40087[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40087_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40087[not(@resource) and not(@lang)]"
   ].
@@ -5902,14 +5902,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40088_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40088[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40088_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40088[not(@resource) and not(@lang)]"
   ].
@@ -5967,14 +5967,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40089_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40089[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40089_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40089[not(@resource) and not(@lang)]"
   ].
@@ -6032,14 +6032,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40090_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40090[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40090_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40090[not(@resource) and not(@lang)]"
   ].
@@ -6097,14 +6097,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40091_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40091[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40091_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40091[not(@resource) and not(@lang)]"
   ].
@@ -6162,14 +6162,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Hasreproduction_40092_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40092[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Hasreproduction_40092_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40092[not(@resource) and not(@lang)]"
   ].
@@ -6219,14 +6219,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40093[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40093[not(@resource) and not(@lang)]]"
   ].
@@ -6271,14 +6271,14 @@ ex:Not_Lang_Contribution_40093_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40093[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40093[not(@resource) and not(@lang)]"
   ].
@@ -6328,7 +6328,7 @@ ex:Not_Lang_Contribution_40093_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40093]"
   ].
@@ -6356,7 +6356,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40093_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40093[not(@resource)][@lang]]"
   ].
@@ -6406,14 +6406,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Note_40094_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40094[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Note_40094_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40094[not(@resource) and not(@lang)]"
   ].
@@ -6489,14 +6489,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Genreform_40096_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40096[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Genreform_40096_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40096[not(@resource) and not(@lang)]"
   ].
@@ -6546,14 +6546,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40097_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40097[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40097_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40097[not(@resource) and not(@lang)]]"
   ].
@@ -6598,14 +6598,14 @@ ex:Not_Lang_Contribution_40097_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40097_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40097[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40097_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40097[not(@resource) and not(@lang)]"
   ].
@@ -6664,7 +6664,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40097_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40097[not(@resource)][@lang]]"
   ].
@@ -6706,14 +6706,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40098_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40098[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40098_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40098[not(@resource) and not(@lang)]]"
   ].
@@ -6774,14 +6774,14 @@ ex:Not_Lang_Contribution_40098_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40098_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40098[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40098_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40098[not(@resource) and not(@lang)]"
   ].
@@ -6824,7 +6824,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40098_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40098[not(@resource)][@lang]]"
   ].
@@ -6866,14 +6866,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40099_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40099[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40099_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40099[not(@resource) and not(@lang)]]"
   ].
@@ -6918,14 +6918,14 @@ ex:Not_Lang_Contribution_40099_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40099_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40099[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40099_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40099[not(@resource) and not(@lang)]"
   ].
@@ -6984,7 +6984,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40099_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40099[not(@resource)][@lang]]"
   ].
@@ -7026,14 +7026,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40100_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40100[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40100_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40100[not(@resource) and not(@lang)]]"
   ].
@@ -7094,14 +7094,14 @@ ex:Not_Lang_Contribution_40100_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40100_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40100[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40100_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40100[not(@resource) and not(@lang)]"
   ].
@@ -7144,7 +7144,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40100_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40100[not(@resource)][@lang]]"
   ].
@@ -7186,14 +7186,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40101_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40101[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40101_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40101[not(@resource) and not(@lang)]]"
   ].
@@ -7238,14 +7238,14 @@ ex:Not_Lang_Contribution_40101_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40101_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40101[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40101_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40101[not(@resource) and not(@lang)]"
   ].
@@ -7323,7 +7323,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40101_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40101[not(@resource)][@lang]]"
   ].
@@ -7365,14 +7365,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40102_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40102[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40102_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40102[not(@resource) and not(@lang)]]"
   ].
@@ -7433,14 +7433,14 @@ ex:Not_Lang_Contribution_40102_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40102_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40102[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40102_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40102[not(@resource) and not(@lang)]"
   ].
@@ -7483,7 +7483,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40102_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40102[not(@resource)][@lang]]"
   ].
@@ -7525,14 +7525,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40103[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40103[not(@resource) and not(@lang)]]"
   ].
@@ -7577,14 +7577,14 @@ ex:Not_Lang_Contribution_40103_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40103[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40103[not(@resource) and not(@lang)]"
   ].
@@ -7634,7 +7634,7 @@ ex:Not_Lang_Contribution_40103_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40103]"
   ].
@@ -7681,7 +7681,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40103_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40103[not(@resource)][@lang]]"
   ].
@@ -7731,14 +7731,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40104[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40104[not(@resource) and not(@lang)]]"
   ].
@@ -7783,14 +7783,14 @@ ex:Not_Lang_Contribution_40104_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40104[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40104[not(@resource) and not(@lang)]"
   ].
@@ -7840,7 +7840,7 @@ ex:Not_Lang_Contribution_40104_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40104]"
   ].
@@ -7887,7 +7887,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40104_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40104[not(@resource)][@lang]]"
   ].
@@ -7937,14 +7937,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40105_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40105[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40105_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40105[not(@resource) and not(@lang)]]"
   ].
@@ -7989,14 +7989,14 @@ ex:Not_Lang_Contribution_40105_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40105_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40105[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40105_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40105[not(@resource) and not(@lang)]"
   ].
@@ -8055,7 +8055,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40105_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40105[not(@resource)][@lang]]"
   ].
@@ -8097,14 +8097,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40106_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40106[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40106_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40106[not(@resource) and not(@lang)]]"
   ].
@@ -8149,14 +8149,14 @@ ex:Not_Lang_Contribution_40106_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40106_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40106[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40106_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40106[not(@resource) and not(@lang)]"
   ].
@@ -8215,7 +8215,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40106_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40106[not(@resource)][@lang]]"
   ].
@@ -8257,14 +8257,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40107_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40107[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40107_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40107[not(@resource) and not(@lang)]]"
   ].
@@ -8325,14 +8325,14 @@ ex:Not_Lang_Contribution_40107_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40107_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40107[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40107_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40107[not(@resource) and not(@lang)]"
   ].
@@ -8375,7 +8375,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40107_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40107[not(@resource)][@lang]]"
   ].
@@ -8417,14 +8417,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40108_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40108[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40108_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40108[not(@resource) and not(@lang)]]"
   ].
@@ -8485,14 +8485,14 @@ ex:Not_Lang_Contribution_40108_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40108_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40108[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40108_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40108[not(@resource) and not(@lang)]"
   ].
@@ -8535,7 +8535,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40108_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40108[not(@resource)][@lang]]"
   ].
@@ -8577,14 +8577,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40109_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40109[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40109_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40109[not(@resource) and not(@lang)]]"
   ].
@@ -8645,14 +8645,14 @@ ex:Not_Lang_Contribution_40109_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40109_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40109[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40109_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40109[not(@resource) and not(@lang)]"
   ].
@@ -8695,7 +8695,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40109_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40109[not(@resource)][@lang]]"
   ].
@@ -8737,14 +8737,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40110_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40110[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40110_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40110[not(@resource) and not(@lang)]]"
   ].
@@ -8789,14 +8789,14 @@ ex:Not_Lang_Contribution_40110_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40110_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40110[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40110_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40110[not(@resource) and not(@lang)]"
   ].
@@ -8855,7 +8855,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40110_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40110[not(@resource)][@lang]]"
   ].
@@ -8897,14 +8897,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40111_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40111[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40111_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40111[not(@resource) and not(@lang)]]"
   ].
@@ -8965,14 +8965,14 @@ ex:Not_Lang_Contribution_40111_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40111_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40111[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40111_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40111[not(@resource) and not(@lang)]"
   ].
@@ -9015,7 +9015,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40111_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40111[not(@resource)][@lang]]"
   ].
@@ -9057,14 +9057,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40112[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40112[not(@resource) and not(@lang)]]"
   ].
@@ -9109,14 +9109,14 @@ ex:Not_Lang_Contribution_40112_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40112[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40112[not(@resource) and not(@lang)]"
   ].
@@ -9166,7 +9166,7 @@ ex:Not_Lang_Contribution_40112_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40112]"
   ].
@@ -9194,7 +9194,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40112_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40112[not(@resource)][@lang]]"
   ].
@@ -9244,14 +9244,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40113_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40113[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40113_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40113[not(@resource) and not(@lang)]]"
   ].
@@ -9296,14 +9296,14 @@ ex:Not_Lang_Contribution_40113_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40113_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40113[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40113_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40113[not(@resource) and not(@lang)]"
   ].
@@ -9362,7 +9362,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40113_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40113[not(@resource)][@lang]]"
   ].
@@ -9404,14 +9404,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40114_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40114[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40114_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40114[not(@resource) and not(@lang)]]"
   ].
@@ -9472,14 +9472,14 @@ ex:Not_Lang_Contribution_40114_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40114_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40114[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40114_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40114[not(@resource) and not(@lang)]"
   ].
@@ -9522,7 +9522,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40114_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40114[not(@resource)][@lang]]"
   ].
@@ -9564,14 +9564,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40115_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40115[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40115_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40115[not(@resource) and not(@lang)]]"
   ].
@@ -9616,14 +9616,14 @@ ex:Not_Lang_Contribution_40115_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40115_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40115[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40115_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40115[not(@resource) and not(@lang)]"
   ].
@@ -9682,7 +9682,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40115_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40115[not(@resource)][@lang]]"
   ].
@@ -9724,14 +9724,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40116_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40116[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40116_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40116[not(@resource) and not(@lang)]]"
   ].
@@ -9792,14 +9792,14 @@ ex:Not_Lang_Contribution_40116_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40116_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40116[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40116_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40116[not(@resource) and not(@lang)]"
   ].
@@ -9842,7 +9842,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40116_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40116[not(@resource)][@lang]]"
   ].
@@ -9884,14 +9884,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40117_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40117[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40117_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40117[not(@resource) and not(@lang)]]"
   ].
@@ -9936,14 +9936,14 @@ ex:Not_Lang_Contribution_40117_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40117_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40117[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40117_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40117[not(@resource) and not(@lang)]"
   ].
@@ -10021,7 +10021,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40117_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40117[not(@resource)][@lang]]"
   ].
@@ -10063,14 +10063,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40118_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40118[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40118_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40118[not(@resource) and not(@lang)]]"
   ].
@@ -10131,14 +10131,14 @@ ex:Not_Lang_Contribution_40118_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40118_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40118[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40118_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40118[not(@resource) and not(@lang)]"
   ].
@@ -10181,7 +10181,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40118_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40118[not(@resource)][@lang]]"
   ].
@@ -10223,14 +10223,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40119[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40119[not(@resource) and not(@lang)]]"
   ].
@@ -10275,14 +10275,14 @@ ex:Not_Lang_Contribution_40119_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40119[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40119[not(@resource) and not(@lang)]"
   ].
@@ -10332,7 +10332,7 @@ ex:Not_Lang_Contribution_40119_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40119]"
   ].
@@ -10379,7 +10379,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40119_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40119[not(@resource)][@lang]]"
   ].
@@ -10429,14 +10429,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40120[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40120[not(@resource) and not(@lang)]]"
   ].
@@ -10481,14 +10481,14 @@ ex:Not_Lang_Contribution_40120_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40120[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40120[not(@resource) and not(@lang)]"
   ].
@@ -10538,7 +10538,7 @@ ex:Not_Lang_Contribution_40120_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40120]"
   ].
@@ -10585,7 +10585,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40120_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40120[not(@resource)][@lang]]"
   ].
@@ -10635,14 +10635,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40121_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40121[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40121_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40121[not(@resource) and not(@lang)]]"
   ].
@@ -10687,14 +10687,14 @@ ex:Not_Lang_Contribution_40121_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40121_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40121[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40121_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40121[not(@resource) and not(@lang)]"
   ].
@@ -10753,7 +10753,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40121_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40121[not(@resource)][@lang]]"
   ].
@@ -10795,14 +10795,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40122_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40122[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40122_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40122[not(@resource) and not(@lang)]]"
   ].
@@ -10847,14 +10847,14 @@ ex:Not_Lang_Contribution_40122_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40122_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40122[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40122_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40122[not(@resource) and not(@lang)]"
   ].
@@ -10913,7 +10913,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40122_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40122[not(@resource)][@lang]]"
   ].
@@ -10955,14 +10955,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40123_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40123[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40123_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40123[not(@resource) and not(@lang)]]"
   ].
@@ -11023,14 +11023,14 @@ ex:Not_Lang_Contribution_40123_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40123_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40123[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40123_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40123[not(@resource) and not(@lang)]"
   ].
@@ -11073,7 +11073,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40123_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40123[not(@resource)][@lang]]"
   ].
@@ -11115,14 +11115,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40124_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40124[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40124_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40124[not(@resource) and not(@lang)]]"
   ].
@@ -11183,14 +11183,14 @@ ex:Not_Lang_Contribution_40124_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40124_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40124[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40124_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40124[not(@resource) and not(@lang)]"
   ].
@@ -11233,7 +11233,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40124_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40124[not(@resource)][@lang]]"
   ].
@@ -11275,14 +11275,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40125_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40125[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40125_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40125[not(@resource) and not(@lang)]]"
   ].
@@ -11343,14 +11343,14 @@ ex:Not_Lang_Contribution_40125_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40125_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40125[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40125_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40125[not(@resource) and not(@lang)]"
   ].
@@ -11393,7 +11393,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40125_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40125[not(@resource)][@lang]]"
   ].
@@ -11435,14 +11435,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40126_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40126[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40126_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40126[not(@resource) and not(@lang)]]"
   ].
@@ -11487,14 +11487,14 @@ ex:Not_Lang_Contribution_40126_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40126_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40126[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40126_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40126[not(@resource) and not(@lang)]"
   ].
@@ -11553,7 +11553,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40126_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40126[not(@resource)][@lang]]"
   ].
@@ -11595,14 +11595,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40127_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40127[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40127_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40127[not(@resource) and not(@lang)]]"
   ].
@@ -11663,14 +11663,14 @@ ex:Not_Lang_Contribution_40127_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40127_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40127[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40127_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40127[not(@resource) and not(@lang)]"
   ].
@@ -11713,7 +11713,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40127_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40127[not(@resource)][@lang]]"
   ].
@@ -11755,14 +11755,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40128[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40128[not(@resource) and not(@lang)]]"
   ].
@@ -11807,14 +11807,14 @@ ex:Not_Lang_Contribution_40128_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40128[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40128[not(@resource) and not(@lang)]"
   ].
@@ -11864,7 +11864,7 @@ ex:Not_Lang_Contribution_40128_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40128]"
   ].
@@ -11892,7 +11892,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40128_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40128[not(@resource)][@lang]]"
   ].
@@ -11942,14 +11942,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40129_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40129[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40129_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40129[not(@resource) and not(@lang)]]"
   ].
@@ -11994,14 +11994,14 @@ ex:Not_Lang_Contribution_40129_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40129_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40129[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40129_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40129[not(@resource) and not(@lang)]"
   ].
@@ -12060,7 +12060,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40129_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40129[not(@resource)][@lang]]"
   ].
@@ -12102,14 +12102,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40130_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40130[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40130_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40130[not(@resource) and not(@lang)]]"
   ].
@@ -12170,14 +12170,14 @@ ex:Not_Lang_Contribution_40130_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40130_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40130[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40130_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40130[not(@resource) and not(@lang)]"
   ].
@@ -12220,7 +12220,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40130_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40130[not(@resource)][@lang]]"
   ].
@@ -12262,14 +12262,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40131_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40131[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40131_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40131[not(@resource) and not(@lang)]]"
   ].
@@ -12314,14 +12314,14 @@ ex:Not_Lang_Contribution_40131_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40131_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40131[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40131_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40131[not(@resource) and not(@lang)]"
   ].
@@ -12380,7 +12380,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40131_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40131[not(@resource)][@lang]]"
   ].
@@ -12422,14 +12422,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40132_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40132[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40132_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40132[not(@resource) and not(@lang)]]"
   ].
@@ -12490,14 +12490,14 @@ ex:Not_Lang_Contribution_40132_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40132_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40132[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40132_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40132[not(@resource) and not(@lang)]"
   ].
@@ -12540,7 +12540,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40132_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40132[not(@resource)][@lang]]"
   ].
@@ -12582,14 +12582,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40133_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40133[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40133_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40133[not(@resource) and not(@lang)]]"
   ].
@@ -12634,14 +12634,14 @@ ex:Not_Lang_Contribution_40133_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40133_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40133[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40133_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40133[not(@resource) and not(@lang)]"
   ].
@@ -12719,7 +12719,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40133_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40133[not(@resource)][@lang]]"
   ].
@@ -12761,14 +12761,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40134_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40134[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40134_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40134[not(@resource) and not(@lang)]]"
   ].
@@ -12829,14 +12829,14 @@ ex:Not_Lang_Contribution_40134_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40134_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40134[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40134_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40134[not(@resource) and not(@lang)]"
   ].
@@ -12879,7 +12879,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40134_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40134[not(@resource)][@lang]]"
   ].
@@ -12921,14 +12921,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40135[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40135[not(@resource) and not(@lang)]]"
   ].
@@ -12973,14 +12973,14 @@ ex:Not_Lang_Contribution_40135_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40135[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40135[not(@resource) and not(@lang)]"
   ].
@@ -13030,7 +13030,7 @@ ex:Not_Lang_Contribution_40135_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40135]"
   ].
@@ -13077,7 +13077,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40135_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40135[not(@resource)][@lang]]"
   ].
@@ -13127,14 +13127,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40136[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40136[not(@resource) and not(@lang)]]"
   ].
@@ -13179,14 +13179,14 @@ ex:Not_Lang_Contribution_40136_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40136[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40136[not(@resource) and not(@lang)]"
   ].
@@ -13236,7 +13236,7 @@ ex:Not_Lang_Contribution_40136_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40136]"
   ].
@@ -13283,7 +13283,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40136_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40136[not(@resource)][@lang]]"
   ].
@@ -13333,14 +13333,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40137_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40137[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40137_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40137[not(@resource) and not(@lang)]]"
   ].
@@ -13385,14 +13385,14 @@ ex:Not_Lang_Contribution_40137_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40137_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40137[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40137_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40137[not(@resource) and not(@lang)]"
   ].
@@ -13451,7 +13451,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40137_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40137[not(@resource)][@lang]]"
   ].
@@ -13493,14 +13493,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40138_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40138[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40138_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40138[not(@resource) and not(@lang)]]"
   ].
@@ -13545,14 +13545,14 @@ ex:Not_Lang_Contribution_40138_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40138_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40138[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40138_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40138[not(@resource) and not(@lang)]"
   ].
@@ -13611,7 +13611,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40138_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40138[not(@resource)][@lang]]"
   ].
@@ -13653,14 +13653,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40139_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40139[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40139_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40139[not(@resource) and not(@lang)]]"
   ].
@@ -13721,14 +13721,14 @@ ex:Not_Lang_Contribution_40139_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40139_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40139[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40139_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40139[not(@resource) and not(@lang)]"
   ].
@@ -13771,7 +13771,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40139_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40139[not(@resource)][@lang]]"
   ].
@@ -13813,14 +13813,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40140_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40140[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40140_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40140[not(@resource) and not(@lang)]]"
   ].
@@ -13881,14 +13881,14 @@ ex:Not_Lang_Contribution_40140_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40140_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40140[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40140_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40140[not(@resource) and not(@lang)]"
   ].
@@ -13931,7 +13931,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40140_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40140[not(@resource)][@lang]]"
   ].
@@ -13973,14 +13973,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40141_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40141[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40141_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40141[not(@resource) and not(@lang)]]"
   ].
@@ -14041,14 +14041,14 @@ ex:Not_Lang_Contribution_40141_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40141_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40141[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40141_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40141[not(@resource) and not(@lang)]"
   ].
@@ -14091,7 +14091,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40141_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40141[not(@resource)][@lang]]"
   ].
@@ -14133,14 +14133,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40142_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40142[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40142_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40142[not(@resource) and not(@lang)]]"
   ].
@@ -14185,14 +14185,14 @@ ex:Not_Lang_Contribution_40142_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40142_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40142[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40142_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40142[not(@resource) and not(@lang)]"
   ].
@@ -14251,7 +14251,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40142_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40142[not(@resource)][@lang]]"
   ].
@@ -14293,14 +14293,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40143_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40143[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40143_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40143[not(@resource) and not(@lang)]]"
   ].
@@ -14361,14 +14361,14 @@ ex:Not_Lang_Contribution_40143_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40143_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40143[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40143_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40143[not(@resource) and not(@lang)]"
   ].
@@ -14411,7 +14411,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40143_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40143[not(@resource)][@lang]]"
   ].
@@ -14453,14 +14453,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40144[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40144[not(@resource) and not(@lang)]]"
   ].
@@ -14505,14 +14505,14 @@ ex:Not_Lang_Contribution_40144_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40144[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40144[not(@resource) and not(@lang)]"
   ].
@@ -14562,7 +14562,7 @@ ex:Not_Lang_Contribution_40144_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40144]"
   ].
@@ -14590,7 +14590,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40144_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40144[not(@resource)][@lang]]"
   ].
@@ -14640,14 +14640,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40145_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40145[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40145_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40145[not(@resource) and not(@lang)]]"
   ].
@@ -14692,14 +14692,14 @@ ex:Not_Lang_Contribution_40145_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40145_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40145[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40145_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40145[not(@resource) and not(@lang)]"
   ].
@@ -14758,7 +14758,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40145_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40145[not(@resource)][@lang]]"
   ].
@@ -14800,14 +14800,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40146_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40146[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40146_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40146[not(@resource) and not(@lang)]]"
   ].
@@ -14868,14 +14868,14 @@ ex:Not_Lang_Contribution_40146_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40146_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40146[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40146_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40146[not(@resource) and not(@lang)]"
   ].
@@ -14918,7 +14918,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40146_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40146[not(@resource)][@lang]]"
   ].
@@ -14960,14 +14960,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40147_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40147[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40147_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40147[not(@resource) and not(@lang)]]"
   ].
@@ -15012,14 +15012,14 @@ ex:Not_Lang_Contribution_40147_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40147_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40147[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40147_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40147[not(@resource) and not(@lang)]"
   ].
@@ -15078,7 +15078,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40147_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40147[not(@resource)][@lang]]"
   ].
@@ -15120,14 +15120,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40148_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40148[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40148_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40148[not(@resource) and not(@lang)]]"
   ].
@@ -15188,14 +15188,14 @@ ex:Not_Lang_Contribution_40148_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40148_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40148[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40148_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40148[not(@resource) and not(@lang)]"
   ].
@@ -15238,7 +15238,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40148_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40148[not(@resource)][@lang]]"
   ].
@@ -15280,14 +15280,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40149_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40149[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40149_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40149[not(@resource) and not(@lang)]]"
   ].
@@ -15332,14 +15332,14 @@ ex:Not_Lang_Contribution_40149_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40149_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40149[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40149_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40149[not(@resource) and not(@lang)]"
   ].
@@ -15417,7 +15417,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40149_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40149[not(@resource)][@lang]]"
   ].
@@ -15459,14 +15459,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40150_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40150[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40150_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40150[not(@resource) and not(@lang)]]"
   ].
@@ -15527,14 +15527,14 @@ ex:Not_Lang_Contribution_40150_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40150_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40150[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40150_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40150[not(@resource) and not(@lang)]"
   ].
@@ -15577,7 +15577,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40150_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40150[not(@resource)][@lang]]"
   ].
@@ -15619,14 +15619,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40151[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40151[not(@resource) and not(@lang)]]"
   ].
@@ -15671,14 +15671,14 @@ ex:Not_Lang_Contribution_40151_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40151[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40151[not(@resource) and not(@lang)]"
   ].
@@ -15728,7 +15728,7 @@ ex:Not_Lang_Contribution_40151_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40151]"
   ].
@@ -15775,7 +15775,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40151_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40151[not(@resource)][@lang]]"
   ].
@@ -15825,14 +15825,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40152[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40152[not(@resource) and not(@lang)]]"
   ].
@@ -15877,14 +15877,14 @@ ex:Not_Lang_Contribution_40152_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40152[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40152[not(@resource) and not(@lang)]"
   ].
@@ -15934,7 +15934,7 @@ ex:Not_Lang_Contribution_40152_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40152]"
   ].
@@ -15981,7 +15981,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40152_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40152[not(@resource)][@lang]]"
   ].
@@ -16031,14 +16031,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40153_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40153[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40153_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40153[not(@resource) and not(@lang)]]"
   ].
@@ -16083,14 +16083,14 @@ ex:Not_Lang_Contribution_40153_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40153_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40153[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40153_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40153[not(@resource) and not(@lang)]"
   ].
@@ -16149,7 +16149,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40153_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40153[not(@resource)][@lang]]"
   ].
@@ -16191,14 +16191,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40154_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40154[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40154_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40154[not(@resource) and not(@lang)]]"
   ].
@@ -16243,14 +16243,14 @@ ex:Not_Lang_Contribution_40154_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40154_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40154[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40154_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40154[not(@resource) and not(@lang)]"
   ].
@@ -16309,7 +16309,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40154_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40154[not(@resource)][@lang]]"
   ].
@@ -16351,14 +16351,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40155_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40155[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40155_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40155[not(@resource) and not(@lang)]]"
   ].
@@ -16419,14 +16419,14 @@ ex:Not_Lang_Contribution_40155_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40155_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40155[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40155_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40155[not(@resource) and not(@lang)]"
   ].
@@ -16469,7 +16469,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40155_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40155[not(@resource)][@lang]]"
   ].
@@ -16511,14 +16511,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40156_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40156[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40156_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40156[not(@resource) and not(@lang)]]"
   ].
@@ -16579,14 +16579,14 @@ ex:Not_Lang_Contribution_40156_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40156_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40156[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40156_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40156[not(@resource) and not(@lang)]"
   ].
@@ -16629,7 +16629,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40156_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40156[not(@resource)][@lang]]"
   ].
@@ -16671,14 +16671,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40157_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40157[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40157_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40157[not(@resource) and not(@lang)]]"
   ].
@@ -16739,14 +16739,14 @@ ex:Not_Lang_Contribution_40157_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40157_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40157[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40157_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40157[not(@resource) and not(@lang)]"
   ].
@@ -16789,7 +16789,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40157_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40157[not(@resource)][@lang]]"
   ].
@@ -16831,14 +16831,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40158_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40158[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40158_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40158[not(@resource) and not(@lang)]]"
   ].
@@ -16883,14 +16883,14 @@ ex:Not_Lang_Contribution_40158_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40158_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40158[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40158_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40158[not(@resource) and not(@lang)]"
   ].
@@ -16949,7 +16949,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40158_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40158[not(@resource)][@lang]]"
   ].
@@ -16991,14 +16991,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40159_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40159[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40159_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40159[not(@resource) and not(@lang)]]"
   ].
@@ -17059,14 +17059,14 @@ ex:Not_Lang_Contribution_40159_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40159_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40159[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40159_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40159[not(@resource) and not(@lang)]"
   ].
@@ -17109,7 +17109,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40159_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40159[not(@resource)][@lang]]"
   ].
@@ -17151,14 +17151,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40160[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40160[not(@resource) and not(@lang)]]"
   ].
@@ -17203,14 +17203,14 @@ ex:Not_Lang_Contribution_40160_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40160[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/P40160[not(@resource) and not(@lang)]"
   ].
@@ -17260,7 +17260,7 @@ ex:Not_Lang_Contribution_40160_Map rr:predicateObjectMap [
 
 ex:Constant_Role_P40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40160]"
   ].
@@ -17288,7 +17288,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_40160_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[P40160[not(@resource)][@lang]]"
   ].
@@ -17331,7 +17331,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:IRI_Contribution_hasContributorAgent_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasContributorAgent[not(@resource)][@lang]]"
   ].
@@ -17365,14 +17365,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Contribution_hasContributorAgent_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasContributorAgent[not(@resource)][@lang]]"
   ].
 
 ex:Not_Lang_Contribution_hasContributorAgent_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasContributorAgent[not(@resource) and not(@lang)]]"
   ].
@@ -17417,14 +17417,14 @@ ex:Not_Lang_Contribution_hasContributorAgent_Map rr:predicateObjectMap [
 
 ex:Lang_Agent_hasContributorAgent_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasContributorAgent[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Agent_hasContributorAgent_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasContributorAgent[not(@resource) and not(@lang)]"
   ].
@@ -17482,14 +17482,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Heldby_heldBy_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/heldBy[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Heldby_heldBy_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/heldBy[not(@resource) and not(@lang)]"
   ].
@@ -17532,7 +17532,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Classification_Lcc_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasLcClassificationPartA or hasLcClassificationPartB]"
   ].
@@ -17567,7 +17567,7 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Classification_Nlm_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description[hasNlmClassificationPartA or hasNlmClassificationPartB]"
   ].
@@ -17609,14 +17609,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Classification_hasSuDocClassificationNumber_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasSuDocClassificationNumber[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Classification_hasSuDocClassificationNumber_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasSuDocClassificationNumber[not(@resource) and not(@lang)]"
   ].
@@ -17682,14 +17682,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Shelfmark_hasCallNumber_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasCallNumber[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Shelfmark_hasCallNumber_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasCallNumber[not(@resource) and not(@lang)]"
   ].
@@ -17774,14 +17774,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Sublocation_hasPhysicalSubLocation_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasPhysicalSubLocation[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Sublocation_hasPhysicalSubLocation_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasPhysicalSubLocation[not(@resource) and not(@lang)]"
   ].
@@ -17831,14 +17831,14 @@ ex:ItemMap rr:predicateObjectMap [
 
 ex:Lang_Identifier_hasBarcode_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasBarcode[not(@resource)][@lang]"
   ].
 
 ex:Not_Lang_Identifier_hasBarcode_Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source "/home/mcm104/rml/input/!!item_filepath!!.xml";
+    rml:source "../../!!item_filepath!!.xml";
     rml:referenceFormulation ql:XPath;
     rml:iterator "/RDF/Description/hasBarcode[not(@resource) and not(@lang)]"
   ].
