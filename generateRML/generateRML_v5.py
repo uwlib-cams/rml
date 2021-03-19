@@ -3597,7 +3597,7 @@ f"ex:{entity.capitalize()}Map rr:predicateObjectMap [",
 "].\n",
 "ex:AdminMetadataMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!{entity}_filepath!!.xml\";",
+f"    rml:source \"../../!!{entity}_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[catalogerID]\"",
 "  ].\n",
@@ -3672,7 +3672,7 @@ f"    rml:source \"/home/mcm104/rml/input/!!{entity}_filepath!!.xml\";",
 "].\n",
 "ex:StatusMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/{default_path}.xml\";",
+f"    rml:source \"../../{default_path}.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description[code]\"",
 "  ].\n",
@@ -3706,7 +3706,7 @@ f"ex:WorkMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!work_filepath!!.xml\";",
+f"    rml:source \"../../!!work_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P10002[not(@resource)]\"",
 "  ].\n",
@@ -3740,7 +3740,7 @@ f"ex:ExpressionMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!expression_filepath!!.xml\";",
+f"    rml:source \"../../!!expression_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P20002[not(@resource)]\"",
 "  ].\n",
@@ -3774,7 +3774,7 @@ f"ex:ManifestationMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!manifestation_filepath!!.xml\";",
+f"    rml:source \"../../!!manifestation_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P30004[not(@resource)]\"",
 "  ].\n",
@@ -3808,7 +3808,7 @@ f"ex:ItemMap rr:predicateObjectMap [",
 "].\n",
 "ex:IdentifierMap a rr:TriplesMap;",
 "  rml:logicalSource [",
-f"    rml:source \"/home/mcm104/rml/input/!!item_filepath!!.xml\";",
+f"    rml:source \"../../!!item_filepath!!.xml\";",
 "    rml:referenceFormulation ql:XPath;",
 "    rml:iterator \"/RDF/Description/P40001[not(@resource)]\"",
 "  ].\n",
@@ -4169,7 +4169,7 @@ def generate_main_logical_source(entity):
 		class_number = "C10003"
 	lang_logical_source = f"""ex:{entity.capitalize()}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/!!{entity}_filepath!!.xml\";
+    rml:source \"../../!!{entity}_filepath!!.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/{class_number}']\"
   ].\n"""
@@ -4179,7 +4179,7 @@ def generate_main_logical_source(entity):
 def generate_IRI_logical_source(map_name, file_path, property_number):
 	IRI_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description/{property_number}/@resource\"
   ].\n"""
@@ -4189,7 +4189,7 @@ def generate_IRI_logical_source(map_name, file_path, property_number):
 def generate_neutral_literal_logical_source(map_name, file_path, property_number):
 	literal_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description/{property_number}[not(@resource)]\"
   ].\n"""
@@ -4199,7 +4199,7 @@ def generate_neutral_literal_logical_source(map_name, file_path, property_number
 def generate_lang_logical_source(map_name, file_path, property_number):
 	lang_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description/{property_number}[not(@resource)][@lang]\"
   ].\n"""
@@ -4209,7 +4209,7 @@ def generate_lang_logical_source(map_name, file_path, property_number):
 def generate_constant_logical_source(map_name, file_path, property_number):
 	constant_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_number}]\"
   ].\n"""
@@ -4219,7 +4219,7 @@ def generate_constant_logical_source(map_name, file_path, property_number):
 def generate_not_lang_logical_source(map_name, file_path, property_number):
 	not_lang_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description/{property_number}[not(@resource) and not(@lang)]\"
   ].\n"""
@@ -4238,7 +4238,7 @@ def generate_provact_logical_source(class_name, map_name, file_path):
 
 	provact_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_numbers}]\"
   ].\n"""
@@ -4257,7 +4257,7 @@ def generate_title_logical_source(map_name, file_path):
 
 	title_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_numbers}]\"
   ].\n"""
@@ -4272,7 +4272,7 @@ def generate_classification_logical_source(map_name, file_path):
 
 	title_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_numbers}]\"
   ].\n"""
@@ -4282,7 +4282,7 @@ def generate_classification_logical_source(map_name, file_path):
 def generate_lang_nosplit_logical_source(map_name, file_path, property_number):
 	lang_nosplit_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_number}[not(@resource)][@lang]]\"
   ].\n"""
@@ -4292,7 +4292,7 @@ def generate_lang_nosplit_logical_source(map_name, file_path, property_number):
 def generate_not_lang_nosplit_logical_source(map_name, file_path, property_number):
 	not_lang_nosplit_logical_source = f"""ex:{map_name}Map a rr:TriplesMap;
   rml:logicalSource [
-    rml:source \"/home/mcm104/rml/input/{file_path}.xml\";
+    rml:source \"../../{file_path}.xml\";
     rml:referenceFormulation ql:XPath;
     rml:iterator \"/RDF/Description[{property_number}[not(@resource) and not(@lang)]]\"
   ].\n"""
