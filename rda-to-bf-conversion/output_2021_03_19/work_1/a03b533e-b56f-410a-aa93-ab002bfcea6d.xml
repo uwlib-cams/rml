@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nb939623222cc4ca79b0bb12e2b3ea101">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">test</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/a03b533e-b56f-410a-aa93-ab002bfcea6d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:title rdf:nodeID="Nb939623222cc4ca79b0bb12e2b3ea101"/>
+    <ns3:prefLabel xml:lang="eng">test</ns3:prefLabel>
+    <bf:adminMetadata rdf:nodeID="Ne7ac1761e7f842389381a9bad4c44574"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7ac1761e7f842389381a9bad4c44574">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">cec23</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N4db7d6934d894be28ed7236936d7d477"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-27</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N9902dae016ad47c58f08e2423ed2412f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4db7d6934d894be28ed7236936d7d477">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-19T15:32:12+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9902dae016ad47c58f08e2423ed2412f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N68d9077dddb44cf6b863534e719ba388">
+    <rdf:value xml:lang="en">12345</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f5a5711bc444077afde48957f35e41c">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="en">cec23</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-12</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nbec135c26e3f48e9af501ba6179e7966"/>
+    <bf:status rdf:nodeID="N83d83048ed9344f0b64f18804c9444bd"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54abd515425846a8a99884af1f8f5cf3">
+    <bf:itemPortion>G6 1955</bf:itemPortion>
+    <bf:classificationPortion>PS3511.A86</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/b22e4e53-f744-461e-8bef-b9a9a402830d">
+    <bf:usageAndAccessPolicy rdf:nodeID="Nc1fe1b5e7862417db504b5c1452ce2a9"/>
+    <bf:identifier rdf:nodeID="N68d9077dddb44cf6b863534e719ba388"/>
+    <bf:immediateAcquisition rdf:nodeID="N5f7335e15d964d8abd5dcfeba5590a85"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="Nac832ee0acde466e933e5733a57d80ee"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N4f5a5711bc444077afde48957f35e41c"/>
+    <bf:physicalLocation xml:lang="en">Yragui bookshelf</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc"/>
+    <bf:classification rdf:nodeID="N54abd515425846a8a99884af1f8f5cf3"/>
+    <bf:heldBy rdf:nodeID="N536cdc23a4a44ecfa5f55be616d1a827"/>
+    <bf:sublocation rdf:nodeID="N82b5a00037c44daa91c0a5b25b4bd66f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N536cdc23a4a44ecfa5f55be616d1a827">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>WAU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac832ee0acde466e933e5733a57d80ee">
+    <rdfs:label xml:lang="en">Need permission from Crystal Clements</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbec135c26e3f48e9af501ba6179e7966">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-19T15:49:06+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1fe1b5e7862417db504b5c1452ce2a9">
+    <rdfs:label xml:lang="en">Need keys to Yragui house or delivery by Crystal Clements, who is infamously stingy when it comes to loaning out personal copies of her books, especially if she studied them with her favorite late professor, Willis Konick. This is one of those books and you'll probably need to pry it out of her cold, dead fingers. Better to find another copy.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82b5a00037c44daa91c0a5b25b4bd66f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="en">American fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N83d83048ed9344f0b64f18804c9444bd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f7335e15d964d8abd5dcfeba5590a85">
+    <rdfs:label xml:lang="en">Magus Books</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+  </rdf:Description>
+</rdf:RDF>
