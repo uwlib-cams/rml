@@ -30,10 +30,10 @@ currentDate = str(today).replace('-','_')
 
 bf_date_prop_list = ["date", "originDate", "legalDate", "copyrightDate", "changeDate", "creationDate", "generationDate"]
 
-work_1_list = os.listdir(f"../output/{currentDate}/work_1_xml/")
-work_2_list = os.listdir(f"../output/{currentDate}/work_2_xml/")
-instance_list = os.listdir(f"../output/{currentDate}/instance_xml/")
-item_list = os.listdir(f"../output/{currentDate}/item_xml/")
+work_1_list = os.listdir(f"output_{currentDate}/work_1/")
+work_2_list = os.listdir(f"output_{currentDate}/work_2/")
+instance_list = os.listdir(f"output_{currentDate}/instance/")
+item_list = os.listdir(f"output_{currentDate}/item/")
 
 resource_dict = {"work_1": work_1_list, "work_2": work_2_list, "instance": instance_list, "item": item_list}
 
@@ -81,7 +81,7 @@ def determine_date_type(value):
 
 def add_dates_in_xml(currentDate, entity, file):
 	# open xml parser
-	tree = ET.parse(f'../output/{currentDate}/{entity}_xml/{file}')
+	tree = ET.parse(f'output_{currentDate}/{entity}/{file}')
 	root = tree.getroot()
 
 	for child in root:
@@ -96,9 +96,9 @@ def add_dates_in_xml(currentDate, entity, file):
 					date_type = determine_date_type(prop.text)
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
 
-	tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
+	tree.write(f'output_{currentDate}/{entity}/{file}')
 
-	reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
+	reserialize(f'output_{currentDate}/{entity}/{file}')
 
 ###
 num_of_resources = len(work_1_list) + len(work_2_list) + len(instance_list) + len(item_list)
