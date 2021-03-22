@@ -20,6 +20,7 @@ rdau = Namespace('http://rdaregistry.info/Elements/u/')
 rdaw = Namespace('http://rdaregistry.info/Elements/w/')
 rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
+skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Functions"""
 # RDFLIB functions
@@ -40,6 +41,7 @@ def reserialize(file):
 	g.bind('rdaw', rdaw)
 	g.bind('rdax', rdax)
 	g.bind('sin', sin)
+	g.bind('skos', skos)
 	g.load(f'file:{file}', format='xml')
 	g.serialize(destination=f'{file}', format='xml')
 
@@ -56,7 +58,7 @@ def transform_works(workList, currentDate):
 	for work in workList:
 		# identify RDA ID and IRI
 		work_identifier = work.split('.')[0]
-		work_filepath = f"rda-to-bf-conversion/input_{currentDate}/work/{work_identifier}" # use RDA ID to make path
+		work_filepath = f"input_{currentDate}/work/{work_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		work_map_replace_to_ID(work_filepath) # use path as RML source in work monograph map
@@ -71,6 +73,7 @@ def transform_works(workList, currentDate):
 		Graph_localWork.bind('bf', bf)
 		Graph_localWork.bind('bflc', bflc)
 		Graph_localWork.bind('madsrdf', madsrdf)
+		Graph_localWork.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localWork.load(f'file:{work_identifier}.nq', format='nquads')
@@ -106,11 +109,11 @@ def transform_expressions(expressionList, currentDate):
 
 	print("...")
 
-	bar = Bar(f'Transforming {len(expressionList)} from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
+	bar = Bar(f'Transforming {len(expressionList)} files from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
 	for expression in expressionList:
 		# identify RDA ID and IRI
 		expression_identifier = expression.split('.')[0]
-		expression_filepath = f"rda-to-bf-conversion/input_{currentDate}/expression/{expression_identifier}" # use RDA ID to make path
+		expression_filepath = f"input_{currentDate}/expression/{expression_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		expression_map_replace_to_ID(expression_filepath) # use path as RML source in expression monograph map
@@ -125,6 +128,7 @@ def transform_expressions(expressionList, currentDate):
 		Graph_localExpression.bind('bf', bf)
 		Graph_localExpression.bind('bflc', bflc)
 		Graph_localExpression.bind('madsrdf', madsrdf)
+		Graph_localExpression.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localExpression.load(f'file:{expression_identifier}.nq', format='nquads')
@@ -165,7 +169,7 @@ def transform_manifestations(manifestationList, currentDate):
 	for manifestation in manifestationList:
 		# identify RDA ID and IRI
 		manifestation_identifier = manifestation.split('.')[0]
-		manifestation_filepath = f"rda-to-bf-conversion/input_{currentDate}/manifestation/{manifestation_identifier}" # use RDA ID to make path
+		manifestation_filepath = f"input_{currentDate}/manifestation/{manifestation_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		manifestation_map_replace_to_ID(manifestation_filepath) # use path as RML source in manifestation monograph map
@@ -180,6 +184,7 @@ def transform_manifestations(manifestationList, currentDate):
 		Graph_localManifestation.bind('bf', bf)
 		Graph_localManifestation.bind('bflc', bflc)
 		Graph_localManifestation.bind('madsrdf', madsrdf)
+		Graph_localManifestation.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localManifestation.load(f'file:{manifestation_identifier}.nq', format='nquads')
@@ -220,7 +225,7 @@ def transform_items(itemList, currentDate):
 	for item in itemList:
 		# identify RDA ID and IRI
 		item_identifier = item.split('.')[0]
-		item_filepath = f"rda-to-bf-conversion/input_{currentDate}/item/{item_identifier}" # use RDA ID to make path
+		item_filepath = f"input_{currentDate}/item/{item_identifier}" # use RDA ID to make path
 
 		# prepare RML map for transforming this resource
 		item_map_replace_to_ID(item_filepath) # use path as RML source in item monograph map
@@ -235,6 +240,7 @@ def transform_items(itemList, currentDate):
 		Graph_localItem.bind('bf', bf)
 		Graph_localItem.bind('bflc', bflc)
 		Graph_localItem.bind('madsrdf', madsrdf)
+		Graph_localItem.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localItem.load(f'file:{item_identifier}.nq', format='nquads')
@@ -352,10 +358,10 @@ currentDate = str(today).replace('-', '_')
 
 """Lists and Dictionaries"""
 
-workList = os.listdir(f'../input/{currentDate}/work')
-expressionList = os.listdir(f'../input/{currentDate}/expression')
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
-itemList = os.listdir(f'../input/{currentDate}/item')
+workList = os.listdir(f'input_{currentDate}/work')
+expressionList = os.listdir(f'input_{currentDate}/expression')
+manifestationList = os.listdir(f'input_{currentDate}/manifestation')
+itemList = os.listdir(f'input_{currentDate}/item')
 
 ###
 
