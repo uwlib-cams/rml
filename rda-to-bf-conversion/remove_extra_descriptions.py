@@ -29,7 +29,7 @@ def remove_extra_descriptions(entity, file):
 		os.system('touch temp.xml')
 
 	# open xml parser
-	tree = ET.parse(f'../input/{currentDate}/{entity}/{file}')
+	tree = ET.parse(f'input_{currentDate}/{entity}/{file}')
 	root = tree.getroot()
 
 	resource_identifier = file.split('.')[0]
@@ -65,7 +65,7 @@ def remove_extra_descriptions(entity, file):
 		g.bind('rdax', rdax)
 		g.bind('sin', sin)
 		g.load(f'file:temp.xml', format='xml')
-		g.serialize(destination=f'../input/{currentDate}/{entity}/{file}', format='xml')
+		g.serialize(destination=f'input_{currentDate}/{entity}/{file}', format='xml')
 
 """Variables"""
 
@@ -75,18 +75,24 @@ currentDate = str(today).replace('-', '_')
 
 """Lists and Dictionaries"""
 
-workList = os.listdir(f'../input/{currentDate}/work')
-expressionList = os.listdir(f'../input/{currentDate}/expression')
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
-itemList = os.listdir(f'../input/{currentDate}/item')
+workList = os.listdir(f'input_{currentDate}/work')
+expressionList = os.listdir(f'input_{currentDate}/expression')
+manifestationList = os.listdir(f'input_{currentDate}/manifestation')
+itemList = os.listdir(f'input_{currentDate}/item')
 
 resource_dict = {"work": workList, "expression": expressionList, "manifestation": manifestationList, "item": itemList}
 
 ###
 
+num_of_resources = len(workList) + len(expressionList) + len(manifestationList) + len(itemList)
+
+bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
+
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
 		remove_extra_descriptions(entity, resource)
+		bar.next()
+bar.finish()
 
 # remove temporary file
 if os.path.exists('temp.xml'):
