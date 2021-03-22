@@ -72,16 +72,16 @@ def save_all_resources(URI_list, currentDate):
 	bar.finish()
 
 	print('...\nSerializing as RDF/XML')
-	Graph_sinopiaAll.serialize(destination=f'../input/{currentDate}/all_resources.xml', format="xml") # serializes in xml
+	Graph_sinopiaAll.serialize(destination=f'input_{currentDate}/all_resources.xml', format="xml") # serializes in xml
 
 	print('...\nDone!')
 
 def save_works(URI_list, currentDate):
 	"""Look for works from mongoDB according to RDA class"""
 	# create directory for works
-	if not os.path.exists(f'../input/{currentDate}/work'):
+	if not os.path.exists(f'input_{currentDate}/work'):
 		print("...\nCreating work directory")
-		os.system(f'mkdir ../input/{currentDate}/work')
+		os.system(f'mkdir input_{currentDate}/work')
 
 	workURIList = []
 
@@ -103,7 +103,7 @@ def save_works(URI_list, currentDate):
 
 		# look for resources classed as an RDA Work, serialize as XML, and save locally
 		for work in Graph_sinopiaWork.subjects(RDF.type, rdac.C10001):
-			Graph_sinopiaWork.serialize(destination=f'../input/{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
+			Graph_sinopiaWork.serialize(destination=f'input_{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
 		bar.next()
 	bar.finish()
 
@@ -116,9 +116,9 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 		URI_list.remove(work)
 
 	# create directory for expressions
-	if not os.path.exists(f'../input/{currentDate}/expression'):
+	if not os.path.exists(f'input_{currentDate}/expression'):
 		print("...\nCreating expression directory")
-		os.system(f'mkdir ../input/{currentDate}/expression')
+		os.system(f'mkdir input_{currentDate}/expression')
 
 	expressionURIList = []
 
@@ -140,7 +140,7 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 		# look for resources classed as an RDA Expression, serialize as XML, and save locally
 		for expression in Graph_sinopiaExpression.subjects(RDF.type, rdac.C10006):
-			Graph_sinopiaExpression.serialize(destination=f'../input/{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
+			Graph_sinopiaExpression.serialize(destination=f'input_{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
 		bar.next()
 	bar.finish()
 	return expressionURIList
@@ -152,9 +152,9 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 		URI_list.remove(expression)
 
 	# create directory for manifestations
-	if not os.path.exists(f'../input/{currentDate}/manifestation'):
+	if not os.path.exists(f'input_{currentDate}/manifestation'):
 		print("...\nCreating manifestation directory")
-		os.system(f'mkdir ../input/{currentDate}/manifestation')
+		os.system(f'mkdir input_{currentDate}/manifestation')
 
 	manifestationURIList = []
 
@@ -177,7 +177,7 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 		# look for resources classed as an RDA Manifestation, serialize as XML, and save locally
 		for manifestation in Graph_sinopiaManifestation.subjects(RDF.type, rdac.C10007):
-			Graph_sinopiaManifestation.serialize(destination=f'../input/{currentDate}/manifestation/' + label + '.xml', format="xml")
+			Graph_sinopiaManifestation.serialize(destination=f'input_{currentDate}/manifestation/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
 	return manifestationURIList
@@ -189,9 +189,9 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 		URI_list.remove(manifestation)
 
 	# create directory for items
-	if not os.path.exists(f'../input/{currentDate}/item'):
+	if not os.path.exists(f'input_{currentDate}/item'):
 		print("...\nCreating item directory")
-		os.system(f'mkdir ../input/{currentDate}/item')
+		os.system(f'mkdir input_{currentDate}/item')
 
 	bar = Bar('Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
@@ -211,7 +211,7 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 
 		# look for resources classed as an RDA Item, serialize as XML, and save locally
 		for item in Graph_sinopiaItem.subjects(RDF.type, rdac.C10003):
-			Graph_sinopiaItem.serialize(destination=f'../input/{currentDate}/item/' + label + '.xml', format="xml")
+			Graph_sinopiaItem.serialize(destination=f'input_{currentDate}/item/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
 
@@ -224,9 +224,9 @@ currentDate = str(today).replace('-', '_')
 ###
 
 # create directory with today's date for RDA-in-RDF/XML data
-if not os.path.exists(f'../input/{currentDate}'):
+if not os.path.exists(f'input_{currentDate}'):
 	print('...\nCreating input folder')
-	os.system(f'mkdir ../input/{currentDate}')
+	os.system(f'mkdir input_{currentDate}')
 
 URI_list = create_URI_list()
 
@@ -234,11 +234,11 @@ URI_list = create_URI_list()
 
 workURIList = save_works(URI_list, currentDate)
 
-workList = os.listdir(f'../input/{currentDate}/work')
+workList = os.listdir(f'input_{currentDate}/work')
 expressionURIList = save_expressions(URI_list, currentDate, workURIList)
 
-expressionList = os.listdir(f'../input/{currentDate}/expression')
+expressionList = os.listdir(f'input_{currentDate}/expression')
 manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
 
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
+manifestationList = os.listdir(f'input_{currentDate}/manifestation')
 save_items(URI_list, currentDate, manifestationURIList)
