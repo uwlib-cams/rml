@@ -1,86 +1,81 @@
 import os
 from datetime import date
+from progress.bar import Bar
+from rdflib import *
+import xml.etree.ElementTree as ET
+
+"""Namespaces"""
+bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
+bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
+madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
+rdac = Namespace('http://rdaregistry.info/Elements/c/')
+rdae = Namespace('http://rdaregistry.info/Elements/e/')
+rdai = Namespace('http://rdaregistry.info/Elements/i/')
+rdam = Namespace('http://rdaregistry.info/Elements/m/')
+rdamdt = Namespace('http://rdaregistry.info/Elements/m/datatype/')
+rdaw = Namespace('http://rdaregistry.info/Elements/w/')
+rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
+sin = Namespace('http://sinopia.io/vocabulary/')
 
 """Functions"""
 
-def find_and_replace(entity, file, prop, URI):
-	"""Rewrite lines of RDF/XML so the value goes from being a literal to a URI"""
-	open_file = open(f"../input/{currentDate}/{entity}/{file}", "rt")
-	file_replacement = open_file.read()
-	if " " in prop:
-		attribute = prop.split(' ')[1]
-		prop = prop.split(' ')[0]
-		original_line = f"<{prop} {attribute}>{URI}</{prop}>"
-	else:
-		original_line = f"<{prop}>{URI}</{prop}>"
-	file_replacement = file_replacement.replace(original_line, f"<{prop} rdf:resource=\"{URI}\"/>")
-	open_file.close()
-	open_file = open(f"../input/{currentDate}/{entity}/{file}", "wt")
-	open_file.write(file_replacement)
-	open_file.close()
+def reserialize(file):
+	"""Reserialize with rdflib to fix namespaces and UTf-8"""
+	g = Graph()
+	g.bind('bf', bf)
+	g.bind('bflc', bflc)
+	g.bind('madsrdf', madsrdf)
+	g.bind('rdac', rdac)
+	g.bind('rdae', rdae)
+	g.bind('rdai', rdai)
+	g.bind('rdam', rdam)
+	g.bind('rdamdt', rdamdt)
+	g.bind('rdaw', rdaw)
+	g.bind('rdax', rdax)
+	g.bind('sin', sin)
+	g.load(f'file:{file}', format='xml')
+	g.serialize(destination=f'{file}', format='xml')
+
+def fix_URIs(entity, file):
+	# open xml parser
+	tree = ET.parse(f'input_{currentDate}/{entity}/{file}')
+	root = tree.getroot()
+
+	for child in root: # for each node...
+		for prop in child: # for each property in node...
+			if prop.text is not None: # if the property has a literal value...
+				if "http" in prop.text: # and if that literal is actually an IRI...
+					IRI = prop.text
+					prop.clear() # clear literal value
+					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI) # add IRI as attribute
+
+					tree.write(f'input_{currentDate}/{entity}/{file}')
+
+					reserialize(f'input_{currentDate}/{entity}/{file}')
 
 """Variables"""
 
+# format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')
 
-"""Lists"""
+"""Lists and Dictionaries"""
 
-workList = os.listdir(f'../input/{currentDate}/work')
-expressionList = os.listdir(f'../input/{currentDate}/expression')
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
-itemList = os.listdir(f'../input/{currentDate}/item')
+workList = os.listdir(f'input_{currentDate}/work')
+expressionList = os.listdir(f'input_{currentDate}/expression')
+manifestationList = os.listdir(f'input_{currentDate}/manifestation')
+itemList = os.listdir(f'input_{currentDate}/item')
+
+resource_dict = {"work": workList, "expression": expressionList, "manifestation": manifestationList, "item": itemList}
 
 ###
 
-for work in workList:
-	with open(f'../input/{currentDate}/work/{work}') as work_xml:
-		for line in work_xml:
-			if ">http" in line:
-				prop = line.split('>')[0]
-				prop = prop.strip()
-				prop = prop.strip('<')
+num_of_resources = len(workList) + len(expressionList) + len(manifestationList) + len(itemList)
 
-				URI = line.split('>')[1]
-				URI = URI.split('<')[0]
+bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
 
-				find_and_replace("work", work, prop, URI)
-
-for expression in expressionList:
-	with open(f'../input/{currentDate}/expression/{expression}') as expression_xml:
-		for line in expression_xml:
-			if ">http" in line:
-				prop = line.split('>')[0]
-				prop = prop.strip()
-				prop = prop.strip('<')
-
-				URI = line.split('>')[1]
-				URI = URI.split('<')[0]
-
-				find_and_replace("expression", expression, prop, URI)
-
-for manifestation in manifestationList:
-	with open(f'../input/{currentDate}/manifestation/{manifestation}') as manifestation_xml:
-		for line in manifestation_xml:
-			if ">http" in line:
-				prop = line.split('>')[0]
-				prop = prop.strip()
-				prop = prop.strip('<')
-
-				URI = line.split('>')[1]
-				URI = URI.split('<')[0]
-
-				find_and_replace("manifestation", manifestation, prop, URI)
-
-for item in itemList:
-	with open(f'../input/{currentDate}/item/{item}') as item_xml:
-		for line in item_xml:
-			if ">http" in line:
-				prop = line.split('>')[0]
-				prop = prop.strip()
-				prop = prop.strip('<')
-
-				URI = line.split('>')[1]
-				URI = URI.split('<')[0]
-
-				find_and_replace("item", item, prop, URI)
+for entity in resource_dict.keys():
+	for resource in resource_dict["work"]:
+		fix_URIs("work", resource)
+		bar.next()
+bar.finish()
