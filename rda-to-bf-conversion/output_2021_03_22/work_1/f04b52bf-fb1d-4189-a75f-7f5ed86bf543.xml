@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2dd12a0b602a4ac5b855cb48a821c6ff">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-04</bf:creationDate>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N2727133efe4940b59d94b3f82c0b8432"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N04f16e03da6945978b41aac8ce545347"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f04b52bf-fb1d-4189-a75f-7f5ed86bf543">
+    <ns3:prefLabel xml:lang="eng">Kline, M. S. (Mary Stiles), 1953-  Ferryboats</ns3:prefLabel>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1983-01-01</bf:originDate>
+    <bf:adminMetadata rdf:nodeID="N2dd12a0b602a4ac5b855cb48a821c6ff"/>
+    <bf:contribution rdf:nodeID="Nfbb49e481bf843729029ba2dfabcfc5f"/>
+    <bf:title rdf:nodeID="N80f39efa1c9042479acff58f26fdb30f"/>
+    <ns3:altLabel xml:lang="eng">Bayless, G. A. (George Albert), 1925-  Ferryboats</ns3:altLabel>
+    <bf:genreForm rdf:nodeID="N58b7d467b9014d80b084b4e44b08f306"/>
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79041965"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80f39efa1c9042479acff58f26fdb30f">
+    <bf:mainTitle xml:lang="eng">Ferryboats</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N58b7d467b9014d80b084b4e44b08f306">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+    <rdfs:label>reference works</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne03d2a61b708408ca9929bbe5900a066">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Bayless, G. A. (George Albert), 1925-</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N04f16e03da6945978b41aac8ce545347">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbb49e481bf843729029ba2dfabcfc5f">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="Ne03d2a61b708408ca9929bbe5900a066"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2727133efe4940b59d94b3f82c0b8432">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-22T14:20:20+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

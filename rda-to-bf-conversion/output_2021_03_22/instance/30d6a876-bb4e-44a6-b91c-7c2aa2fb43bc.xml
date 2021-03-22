@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N7028b5b1d76145ccb780da136f822c2e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="en">The Modern Library</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4fca3ebad8a4e5494061c490539b319">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>556391</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N46adc6f751324e638ce8ba1889fb3e15">
+    <bf:mainTitle xml:lang="en">Go down, Moses</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N289c9c6f9a6d404c9ccf025463551796">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="N7028b5b1d76145ccb780da136f822c2e"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/nr92033481"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">[1955]</bf:date>
+    <bf:place rdf:nodeID="Na9d588ed3f3f4ea797cced1254450da0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91446bc214d6431cbd213d43629f4d52">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID xml:lang="en">cec23</bflc:catalogerID>
+    <bf:status rdf:nodeID="N6797fb86253c4f13a22f6ba0fcbf8445"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N507686234deb4c769980c1cfdf3a281f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-12</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6797fb86253c4f13a22f6ba0fcbf8445">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc">
+    <bf:responsibilityStatement xml:lang="en">William Faulkner</bf:responsibilityStatement>
+    <bf:identifiedBy rdf:nodeID="Ne4fca3ebad8a4e5494061c490539b319"/>
+    <bf:seriesStatement xml:lang="en">The modern library of the world's best books</bf:seriesStatement>
+    <bf:provisionActivity rdf:nodeID="N289c9c6f9a6d404c9ccf025463551796"/>
+    <bf:extent rdf:nodeID="Nb924ec6c095c43fdb0d0ceb36ff9e90a"/>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©1942</bf:copyrightDate>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/repository/washington/5da0e125-c776-47b4-94e3-6d20c62763e3"/>
+    <bf:dimensions xml:lang="en">19 cm</bf:dimensions>
+    <bf:adminMetadata rdf:nodeID="N91446bc214d6431cbd213d43629f4d52"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="N46adc6f751324e638ce8ba1889fb3e15"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N507686234deb4c769980c1cfdf3a281f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-22T14:26:08+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9d588ed3f3f4ea797cced1254450da0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="en">New York</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb924ec6c095c43fdb0d0ceb36ff9e90a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="en">383 pages</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
