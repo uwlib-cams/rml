@@ -1,10 +1,10 @@
 # rda-to-bf-conversion
-This directory contains the transformation script `rml_2.6.py` as well as all necessary supplemental Python scripts.
+This directory contains the transformation script `rda-to-bf_2.9.py` as well as all necessary supplemental Python scripts.
 
-# rml_2.6.py
+# rda-to-bf_2.9.py
 ## RDA-to-BF Transform
 
-The RDA-to-BF transform (rml_2.6.py) is a script that pulls RDA data from [Sinopia](https://sinopia.io/) and runs them through [RML Mapper](https://github.com/RMLio/rmlmapper-java) using RML code from UW Libraries to output BIBFRAME data. The script uses [rdflib](https://rdflib.readthedocs.io/en/stable/) to retrieve the RDA data from [Sinopia via their API](https://ld4p.github.io/sinopia_api/), serialize it as RDF/XML, and to serialize the RML output BIBFRAME as JSON-LD. Input and output files are saved locally. The [ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html) is used to update IRIs in the output data with new ones generated using the [UUID Python module](https://docs.python.org/3/library/uuid.html).
+The RDA-to-BF transform (rda-to-bf_2.9.py) is a script that pulls RDA data from [Sinopia](https://sinopia.io/) and runs them through [RML Mapper](https://github.com/RMLio/rmlmapper-java) using RML code from UW Libraries to output BIBFRAME data. The script uses [rdflib](https://rdflib.readthedocs.io/en/stable/) to retrieve the RDA data from [Sinopia via their API](https://ld4p.github.io/sinopia_api/), serialize it as RDF/XML, and to serialize the RML output BIBFRAME as JSON-LD. Input and output files are saved locally.
 
 ### Prerequisites
  - [RML Mapper](https://github.com/RMLio/rmlmapper-java)
@@ -23,18 +23,18 @@ The RML Mapper jarfile (default: `rmlmapper-java/target/rmlmapper-4.8.1-r262.jar
 
 From the `rda-to-bf-conversion` directory, run the script:
 ```
-$ python3 rml_2.6.py
+$ python3 rda-to-bf_2.9.py
 ```
 
 _Note: this script may take upwards of an hour to complete._
 
-When the script is complete, the input RDA files will be in the directory `rml/input` in a new directory named after the current date (e.g. `2020_8_25`). The output BIBFRAME will be in the directory `rml/output` also in a directory named after the date.
+When the script is complete, the input RDA files will be in the directory `rda-to-bf-conversion/input_` with the current date appended (e.g. `input_2021_03_22`). The output BIBFRAME will be in the directory `rda-to-bf-conversion/output_` also with the date appended (e.g. `output_2021_03_22`).
 
-# Scripts run within rml_2.6py
+# Scripts run within rda-to-bf_2.9.py
 ## save_rda_locally.py
 This script pulls UW resources from [Sinopia via their API](https://ld4p.github.io/sinopia_api/) using [rdflib](https://rdflib.readthedocs.io/en/stable/), and saves them locally as RDF/XML.
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 save_rda_locally.py
 ```
@@ -71,7 +71,7 @@ Would be corrected to this:
   </rdf:Description>
 ```
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 remove_extra_descriptions.py
 ```
@@ -89,7 +89,7 @@ Would be corrected to this:
 <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
 ```
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 fix_URIs.py
 ```
@@ -102,43 +102,25 @@ In our Sinopia application profiles, the character "©" was included as a defaul
 ```
 This script goes through our RDA data and removes these meaningless triples.
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 fix_copyright_dates.py
 ```
 
 ## transform_rda_to_bf.py
 
-This script uses the [RML Mapper](https://github.com/RMLio/rmlmapper-java) to transform RDA/RDF data to BIBFRAME. It references RML scripts from [this directory](https://github.com/uwlib-cams/rml/tree/master/generateRML/rmlOutput). It uses [rdflib](https://rdflib.readthedocs.io/en/stable/) to serialize the output as RDF/XML, and it uses the [UUID Python module](https://docs.python.org/3/library/uuid.html) to generate unique identifiers and IRIs for the new BIBFRAME descriptions. This script also outputs a CSV file, `RDA_BF_IRI_list_YYYY_MM_DD.csv`, which is a master list of equivalent RDA and BIBFRAME identifiers using the [Python CSV module](https://docs.python.org/3/library/csv.html).
+This script uses the [RML Mapper](https://github.com/RMLio/rmlmapper-java) to transform RDA/RDF data to BIBFRAME. It references RML scripts from [this directory](https://github.com/uwlib-cams/rml/tree/master/generateRML/rmlOutput). It uses [rdflib](https://rdflib.readthedocs.io/en/stable/) to serialize the output as RDF/XML.
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 transform_rda_to_bf.py
-```
-
-## fix_related_IRIs.py
-
-This script looks for RDA IRIs in the BIBFRAME output where they are the objects of triples, and replaces them with their corresponding BIBFRAME IRI.
-
-_To run separately from rml_2.6.py:_
-```
-$ python3 fix_related_IRIs.py
 ```
 
 ## type_dates.py
 
 This script goes through the BIBFRAME output and adds datatypes `xsd:dateTime`, `xsd:date`, `xsd:gYearMonth`, and `xsd:gYear` where applicable.
 
-_To run separately from rml_2.6.py:_
+_To run separately from rda-to-bf_2.9.py:_
 ```
 $ python3 type_dates.py
-```
-
-## serialize_xml_json.py
-
-This script takes the BIBFRAME output in RDF/XML and reserializes it as JSON-LD in preparation for upload to Sinopia.
-
-_To run separately from rml_2.6.py:_
-```
-$ python3 serialize_xml_json.py
 ```
