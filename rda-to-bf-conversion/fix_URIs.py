@@ -52,6 +52,14 @@ def fix_URIs(entity, file):
 					tree.write(f'input_{currentDate}/{entity}/{file}')
 
 					reserialize(f'input_{currentDate}/{entity}/{file}')
+			elif '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource' in prop.attrib.keys():
+				if prop.attrib['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource'] == 'file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003':
+					prop.clear()
+					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', 'http://rdaregistry.info/termList/RDAColourContent/1003')
+
+					tree.write(f'../input/{currentDate}/{entity}/{file}')
+
+					reserialize(f'../input/{currentDate}/{entity}/{file}')
 
 """Variables"""
 
