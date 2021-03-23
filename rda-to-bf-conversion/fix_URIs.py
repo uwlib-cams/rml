@@ -44,7 +44,7 @@ def fix_URIs(entity, file):
 	for child in root: # for each node...
 		for prop in child: # for each property in node...
 			if prop.text is not None: # if the property has a literal value...
-				if "http" in prop.text: # and if that literal is actually an IRI...
+				if prop.text[0:4] == "http": # and if that literal is actually an IRI...
 					IRI = prop.text
 					prop.clear() # clear literal value
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI) # add IRI as attribute
@@ -75,7 +75,7 @@ num_of_resources = len(workList) + len(expressionList) + len(manifestationList) 
 bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
 
 for entity in resource_dict.keys():
-	for resource in resource_dict["work"]:
-		fix_URIs("work", resource)
+	for resource in resource_dict[entity]:
+		fix_URIs(entity, resource)
 		bar.next()
 bar.finish()
