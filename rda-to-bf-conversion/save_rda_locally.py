@@ -64,6 +64,8 @@ def save_all_resources(URI_list, currentDate):
 	Graph_sinopiaAll.bind('sin', sin)
 	Graph_sinopiaAll.bind('madsrdf', madsrdf)
 
+	print('...')
+
 	# load RDA from sinopia into graph
 	bar = Bar('Parsing all UW resources', max=len(URI_list), suffix='%(percent)d%%')
 	for URI in URI_list:
@@ -84,6 +86,8 @@ def save_works(URI_list, currentDate):
 		os.system(f'mkdir input_{currentDate}/work')
 
 	workURIList = []
+
+	print('...')
 
 	bar = Bar('Locating works', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
@@ -122,6 +126,8 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 	expressionURIList = []
 
+	print('...')
+
 	bar = Bar('Locating expressions', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
@@ -158,6 +164,8 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 	manifestationURIList = []
 
+	print('...')
+
 	bar = Bar('Locating manifestations', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
@@ -192,6 +200,8 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 	if not os.path.exists(f'input_{currentDate}/item'):
 		print("...\nCreating item directory")
 		os.system(f'mkdir input_{currentDate}/item')
+
+	print('...')
 
 	bar = Bar('Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
