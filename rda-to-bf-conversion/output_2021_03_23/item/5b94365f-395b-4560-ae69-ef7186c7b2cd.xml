@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N6ac4e25f8a4b4883aea2d4e6a3bd88b7">
+    <rdfs:label xml:lang="eng">szstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70d6eae6fef7401787f26830acd401a0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N9936b63eb6e04efcac79c33b6537c68e"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/5b94365f-395b-4560-ae69-ef7186c7b2cd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:identifier rdf:nodeID="N6596462a79744e1b89c47c63d4fbe3cd"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/b3e395e1-96a9-47cf-87dd-2be74335bfc8"/>
+    <bf:adminMetadata rdf:nodeID="N70d6eae6fef7401787f26830acd401a0"/>
+    <bf:sublocation rdf:nodeID="N6ac4e25f8a4b4883aea2d4e6a3bd88b7"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="Nf2a8561f907b4a1384e9ce4e83c2905f"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2a8561f907b4a1384e9ce4e83c2905f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PZ7.D664</bf:classificationPortion>
+    <bf:itemPortion>Han 1945</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6596462a79744e1b89c47c63d4fbe3cd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352014794218</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9936b63eb6e04efcac79c33b6537c68e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:06:38+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

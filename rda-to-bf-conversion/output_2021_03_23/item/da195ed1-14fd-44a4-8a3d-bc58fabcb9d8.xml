@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2a18601142434ab2a6535034dbfbe90b">
+    <rdfs:label>Crystal's bookshelf</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6bc8ef850fa4b049c361fd69286d07b">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-16</bf:creationDate>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:generationProcess rdf:nodeID="N44b38a4f3be341eebd3d1a6fd82293d0"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad468d95b97b4f7b912e791df0934672">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+    <rdfs:label xml:lang="eng">Requires key to Yragui house</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8">
+    <bf:adminMetadata rdf:nodeID="Na6bc8ef850fa4b049c361fd69286d07b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:heldBy rdf:nodeID="N2a18601142434ab2a6535034dbfbe90b"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/28838fda-3a72-4237-9c6d-ae11188b241e"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="Nad468d95b97b4f7b912e791df0934672"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44b38a4f3be341eebd3d1a6fd82293d0">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:07:44+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>
