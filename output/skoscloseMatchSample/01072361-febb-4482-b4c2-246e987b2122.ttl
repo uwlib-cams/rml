@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.sinopia.io/resource/01072361-febb-4482-b4c2-246e987b2122> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel [ skos:closeMatch <https://id.loc.gov/vocabulary/menclvl/f> ] ;
+            bf:creationDate "2011-02-11"^^xsd:date ;
+            bf:descriptionConventions [ skos:closeMatch <https://id.loc.gov/vocabulary/descriptionConventions/rda> ] ;
+            bf:descriptionLanguage [ skos:closeMatch <https://id.loc.gov/vocabulary/languages/eng> ] ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-03-18T15:28:38+00:00"^^xsd:dateTime ] ;
+            bf:source [ skos:closeMatch <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha" ] ;
+            bf:role [ skos:closeMatch <http://id.loc.gov/vocabulary/relators/ctg> ] ] ;
+    bf:genreForm [ skos:closeMatch <http://id.loc.gov/authorities/genreForms/gf2011026387> ] ;
+    bf:originDate "1950-01-01"^^xsd:gYear ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Japan" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Osaka (Japan)--Maps" ;
+            madsrdf:Authority "Osaka (Japan)--Maps" ;
+            madsrdf:authoritativeLabel "Osaka (Japan)--Maps" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "大阪市案内圖"@jpn ],
+        [ a bf:Title ;
+            bf:mainTitle "Ōsaka-shi annaizu"@jpn ] ;
+    owl:sameAs [ skos:closeMatch <https://api.sinopia.io/resource/01072361-febb-4482-b4c2-246e987b2122> ] ;
+    skos:altLabel "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖"@jpn ;
+    skos:prefLabel "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn .
+
