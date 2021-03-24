@@ -5,6 +5,7 @@ import requests
 from rdflib import *
 import rdflib
 import time
+from timeit import default_timer as timer
 
 """Namespaces"""
 LDP = Namespace('http://www.w3.org/ns/ldp#')
@@ -45,7 +46,7 @@ def create_URI_list():
 		URI_list.append(uri)
 
 	# remove temporary output file
-	#os.system('rm uw_uri_list.nq')
+	os.system('rm uw_uri_list.nq')
 
 	return URI_list
 
@@ -107,6 +108,7 @@ def save_works(URI_list, currentDate):
 
 		# look for resources classed as an RDA Work, serialize as XML, and save locally
 		for work in Graph_sinopiaWork.subjects(RDF.type, rdac.C10001):
+			workURIList.append(URI)
 			Graph_sinopiaWork.serialize(destination=f'input_{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
 		bar.next()
 	bar.finish()
@@ -146,6 +148,7 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 		# look for resources classed as an RDA Expression, serialize as XML, and save locally
 		for expression in Graph_sinopiaExpression.subjects(RDF.type, rdac.C10006):
+			expressionURIList.append(URI)
 			Graph_sinopiaExpression.serialize(destination=f'input_{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
 		bar.next()
 	bar.finish()
@@ -185,6 +188,7 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 		# look for resources classed as an RDA Manifestation, serialize as XML, and save locally
 		for manifestation in Graph_sinopiaManifestation.subjects(RDF.type, rdac.C10007):
+			manifestationURIList.append(URI)
 			Graph_sinopiaManifestation.serialize(destination=f'input_{currentDate}/manifestation/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
