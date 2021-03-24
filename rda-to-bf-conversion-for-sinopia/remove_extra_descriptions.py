@@ -4,6 +4,7 @@ from progress.bar import Bar
 from rdflib import *
 import rdflib
 import time
+from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
 """Namespaces"""
@@ -23,6 +24,8 @@ sin = Namespace('http://sinopia.io/vocabulary/')
 
 def remove_extra_descriptions(entity, file):
 	"""Remove triples from original RDA/RDF that do not describe the resource in question"""
+
+	edit_made = False
 
 	# create temporary output file
 	if not os.path.exists(f'temp.xml'):
@@ -47,6 +50,7 @@ def remove_extra_descriptions(entity, file):
 			if attrib_dict['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about'] != IRI:
 				# remove the description
 				root.remove(desc)
+				edit_made = True
 
 		# write new XML to a temporary file
 		tree.write('temp.xml')
@@ -67,11 +71,15 @@ def remove_extra_descriptions(entity, file):
 		g.load(f'file:temp.xml', format='xml')
 		g.serialize(destination=f'../input/{currentDate}/{entity}/{file}', format='xml')
 
+	return edit_made
+
 """Variables"""
 
 # format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')
+
+num_of_edits = 0
 
 """Lists and Dictionaries"""
 
@@ -84,9 +92,21 @@ resource_dict = {"work": workList, "expression": expressionList, "manifestation"
 
 ###
 
+num_of_resources = len(workList) + len(expressionList) + len(manifestationList) + len(itemList)
+
+bar = Bar(">> Removing extra descriptions", max=num_of_resources, suffix='%(percent)d%%') # progress bar
+
+start = timer()
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		remove_extra_descriptions(entity, resource)
+		edit_made = remove_extra_descriptions(entity, resource)
+		if edit_made == True:
+			num_of_edits += 1
+		bar.next()
+end = timer()
+bar.finish()
+print(f"Resources edited: {num_of_edits}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 # remove temporary file
 if os.path.exists('temp.xml'):
