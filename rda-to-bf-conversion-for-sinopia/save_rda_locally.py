@@ -5,6 +5,7 @@ import requests
 from rdflib import *
 import rdflib
 import time
+from timeit import default_timer as timer
 
 """Namespaces"""
 LDP = Namespace('http://www.w3.org/ns/ldp#')
@@ -45,7 +46,7 @@ def create_URI_list():
 		URI_list.append(uri)
 
 	# remove temporary output file
-	#os.system('rm uw_uri_list.nq')
+	os.system('rm uw_uri_list.nq')
 
 	return URI_list
 
@@ -85,6 +86,8 @@ def save_works(URI_list, currentDate):
 
 	workURIList = []
 
+	print('...')
+
 	bar = Bar('Locating works', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
@@ -103,6 +106,7 @@ def save_works(URI_list, currentDate):
 
 		# look for resources classed as an RDA Work, serialize as XML, and save locally
 		for work in Graph_sinopiaWork.subjects(RDF.type, rdac.C10001):
+			workURIList.append(URI)
 			Graph_sinopiaWork.serialize(destination=f'../input/{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
 		bar.next()
 	bar.finish()
@@ -122,6 +126,8 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 	expressionURIList = []
 
+	print('...')
+
 	bar = Bar('Locating expressions', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
@@ -140,6 +146,7 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 		# look for resources classed as an RDA Expression, serialize as XML, and save locally
 		for expression in Graph_sinopiaExpression.subjects(RDF.type, rdac.C10006):
+			expressionURIList.append(URI)
 			Graph_sinopiaExpression.serialize(destination=f'../input/{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
 		bar.next()
 	bar.finish()
@@ -157,6 +164,8 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 		os.system(f'mkdir ../input/{currentDate}/manifestation')
 
 	manifestationURIList = []
+
+	print('...')
 
 	bar = Bar('Locating manifestations', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
@@ -177,6 +186,7 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 		# look for resources classed as an RDA Manifestation, serialize as XML, and save locally
 		for manifestation in Graph_sinopiaManifestation.subjects(RDF.type, rdac.C10007):
+			manifestationURIList.append(URI)
 			Graph_sinopiaManifestation.serialize(destination=f'../input/{currentDate}/manifestation/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
@@ -192,6 +202,8 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 	if not os.path.exists(f'../input/{currentDate}/item'):
 		print("...\nCreating item directory")
 		os.system(f'mkdir ../input/{currentDate}/item')
+
+	print('...')
 
 	bar = Bar('Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
@@ -230,15 +242,36 @@ if not os.path.exists(f'../input/{currentDate}'):
 
 URI_list = create_URI_list()
 
+#start = timer()
 #save_all_resources(URI_list, currentDate)
+#end = timer()
+#print(f"Number of resources: {len(URI_list)}")
+#print(f"Elapsed time: {round((end - start), 1)} s")
 
+start = timer()
 workURIList = save_works(URI_list, currentDate)
+end = timer()
+print(f"Number of works: {len(workURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 workList = os.listdir(f'../input/{currentDate}/work')
+start = timer()
 expressionURIList = save_expressions(URI_list, currentDate, workURIList)
+end = timer()
+print(f"Number of expressions: {len(expressionURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 expressionList = os.listdir(f'../input/{currentDate}/expression')
+start = timer()
 manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
+end = timer()
+print(f"Number of works: {len(manifestationURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
+start = timer()
 save_items(URI_list, currentDate, manifestationURIList)
+end = timer()
+itemList = os.listdir(f'../input/{currentDate}/item')
+print(f"Number of works: {len(itemList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
