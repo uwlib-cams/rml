@@ -1,8 +1,8 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdfs1: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://api.sinopia.io/resource/0010d9b0-ec29-4ab0-b25a-9a1a87108dd2> a bf:Instance ;
@@ -24,9 +24,9 @@
     bf:extent [ a bf:Extent ;
             rdfs:label "277 pages"@eng ] ;
     bf:identifiedBy [ a bf:Identifier ;
-            rdfs1:value "ISBN 9788673462820" ],
+            rdf:value "ISBN 9788673462820" ],
         [ a bf:Identifier ;
-            rdfs1:value "ISBN 8673462827" ] ;
+            rdf:value "ISBN 8673462827" ] ;
     bf:instanceOf [ owl:sameAs <https://api.sinopia.io/resource/52c3b570-ab8a-4989-8eb9-28f2dcffb65e> ] ;
     bf:issuance [ owl:sameAs <http://rdaregistry.info/termList/ModeIssue/1001> ] ;
     bf:media [ owl:sameAs <http://rdaregistry.info/termList/RDAMediaType/1007> ] ;

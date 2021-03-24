@@ -1,8 +1,8 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdfs1: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://api.sinopia.io/resource/01246523-73e6-4c3a-9eb0-1f8aa338dd7d> a bf:Item ;
@@ -20,7 +20,7 @@
             bf:itemPortion ".P76 2016" ] ;
     bf:heldBy [ owl:sameAs <https://id.loc.gov/vocabulary/organizations/wau> ] ;
     bf:identifier [ a bf:Barcode ;
-            rdfs1:value "39352084161363" ] ;
+            rdf:value "39352084161363" ] ;
     bf:itemOf [ owl:sameAs <https://api.sinopia.io/resource/83337200-3e1f-4a11-8177-de83111d67bc> ] ;
     bf:physicalLocation "suzzallen" ;
     bf:sublocation [ a bf:Sublocation ;
