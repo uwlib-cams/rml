@@ -66,7 +66,7 @@ def save_all_resources(URI_list, currentDate):
 	Graph_sinopiaAll.bind('madsrdf', madsrdf)
 
 	# load RDA from sinopia into graph
-	bar = Bar('Parsing all UW resources', max=len(URI_list), suffix='%(percent)d%%')
+	bar = Bar('>> Parsing all UW resources', max=len(URI_list), suffix='%(percent)d%%')
 	for URI in URI_list:
 		Graph_sinopiaAll.parse(URI, format="json-ld")
 		bar.next()
@@ -81,14 +81,14 @@ def save_works(URI_list, currentDate):
 	"""Look for works from mongoDB according to RDA class"""
 	# create directory for works
 	if not os.path.exists(f'../input/{currentDate}/work'):
-		print("...\nCreating work directory")
+		print("...\n>> Creating work directory")
 		os.system(f'mkdir ../input/{currentDate}/work')
 
 	workURIList = []
 
 	print('...')
 
-	bar = Bar('Locating works', max=len(URI_list), suffix='%(percent)d%%') # progress bar
+	bar = Bar('>> Locating works', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
@@ -121,14 +121,14 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 	# create directory for expressions
 	if not os.path.exists(f'../input/{currentDate}/expression'):
-		print("...\nCreating expression directory")
+		print("...\n>> Creating expression directory")
 		os.system(f'mkdir ../input/{currentDate}/expression')
 
 	expressionURIList = []
 
 	print('...')
 
-	bar = Bar('Locating expressions', max=len(URI_list), suffix='%(percent)d%%') # progress bar
+	bar = Bar('>> Locating expressions', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
@@ -160,14 +160,14 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 	# create directory for manifestations
 	if not os.path.exists(f'../input/{currentDate}/manifestation'):
-		print("...\nCreating manifestation directory")
+		print("...\n>> Creating manifestation directory")
 		os.system(f'mkdir ../input/{currentDate}/manifestation')
 
 	manifestationURIList = []
 
 	print('...')
 
-	bar = Bar('Locating manifestations', max=len(URI_list), suffix='%(percent)d%%') # progress bar
+	bar = Bar('>> Locating manifestations', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
@@ -200,12 +200,12 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 
 	# create directory for items
 	if not os.path.exists(f'../input/{currentDate}/item'):
-		print("...\nCreating item directory")
+		print("...\n>> Creating item directory")
 		os.system(f'mkdir ../input/{currentDate}/item')
 
 	print('...')
 
-	bar = Bar('Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
+	bar = Bar('>> Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
 	for URI in URI_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
@@ -237,7 +237,7 @@ currentDate = str(today).replace('-', '_')
 
 # create directory with today's date for RDA-in-RDF/XML data
 if not os.path.exists(f'../input/{currentDate}'):
-	print('...\nCreating input folder')
+	print('...\n>> Creating input folder')
 	os.system(f'mkdir ../input/{currentDate}')
 
 URI_list = create_URI_list()
