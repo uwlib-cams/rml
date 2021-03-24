@@ -244,15 +244,36 @@ if not os.path.exists(f'input_{currentDate}'):
 
 URI_list = create_URI_list()
 
+#start = timer()
 #save_all_resources(URI_list, currentDate)
+#end = timer()
+#print(f"Number of resources: {len(URI_list)}")
+#print(f"Elapsed time: {round((end - start), 1)} s")
 
+start = timer()
 workURIList = save_works(URI_list, currentDate)
+end = timer()
+print(f"Number of works: {len(workURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 workList = os.listdir(f'input_{currentDate}/work')
+start = timer()
 expressionURIList = save_expressions(URI_list, currentDate, workURIList)
+end = timer()
+print(f"Number of works: {len(expressionURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 expressionList = os.listdir(f'input_{currentDate}/expression')
+start = timer()
 manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
+end = timer()
+print(f"Number of works: {len(manifestationURIList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
 
 manifestationList = os.listdir(f'input_{currentDate}/manifestation')
+start = timer()
 save_items(URI_list, currentDate, manifestationURIList)
+end = timer()
+itemList = os.listdir(f'input_{currentDate}/item')
+print(f"Number of works: {len(itemList)}")
+print(f"Elapsed time: {round((end - start), 1)} s")
