@@ -2,6 +2,7 @@ import os
 from datetime import date
 from progress.bar import Bar
 from rdflib import *
+from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
 """Namespaces"""
@@ -37,6 +38,8 @@ def reserialize(file):
 	g.serialize(destination=f'{file}', format='xml')
 
 def fix_URIs(entity, file):
+	edit_made = False
+
 	# open xml parser
 	tree = ET.parse(f'../input/{currentDate}/{entity}/{file}')
 	root = tree.getroot()
@@ -48,6 +51,7 @@ def fix_URIs(entity, file):
 					IRI = prop.text
 					prop.clear() # clear literal value
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI) # add IRI as attribute
+					edit_made = True
 
 					tree.write(f'../input/{currentDate}/{entity}/{file}')
 
@@ -56,16 +60,20 @@ def fix_URIs(entity, file):
 				if prop.attrib['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource'] == 'file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003':
 					prop.clear()
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', 'http://rdaregistry.info/termList/RDAColourContent/1003')
+					edit_made = True
 
 					tree.write(f'../input/{currentDate}/{entity}/{file}')
 
 					reserialize(f'../input/{currentDate}/{entity}/{file}')
+	return edit_made
 
 """Variables"""
 
 # format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')
+
+num_of_edits = 0
 
 """Lists and Dictionaries"""
 
@@ -80,10 +88,16 @@ resource_dict = {"work": workList, "expression": expressionList, "manifestation"
 
 num_of_resources = len(workList) + len(expressionList) + len(manifestationList) + len(itemList)
 
-bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
+bar = Bar(">> Fixing IRIs typed as literals", max=num_of_resources, suffix='%(percent)d%%') # progress bar
 
+start = timer()
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		fix_URIs(entity, resource)
+		edit_made = fix_URIs(entity, resource)
+		if edit_made == True:
+			num_of_edits += 1
 		bar.next()
+end = timer()
 bar.finish()
+print(f"Resources edited: {num_of_edits}")
+print(f"Elapsed time: {round((end - start), 1)} s")
