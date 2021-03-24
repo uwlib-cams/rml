@@ -5,41 +5,41 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N37bf8a93f3f14d4eba8970aba47c69e6">
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bflc:catalogerID xml:lang="eng">jlee37</bflc:catalogerID>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:status rdf:nodeID="N080cdb4a1c79402abf581fc54319a6de"/>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-09</bf:creationDate>
-    <bf:generationProcess rdf:nodeID="Ne15b717e4f58453c9b475bce9ffea63b"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/b8da121b-afbc-424f-a4e4-a644bcbe848c">
-    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/f0757925-8753-427f-bf6a-5f695a04c999"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-    <bf:sublocation rdf:nodeID="Nec604a4185f8479bae844c4a71d8a775"/>
-    <bf:adminMetadata rdf:nodeID="N37bf8a93f3f14d4eba8970aba47c69e6"/>
-    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <bf:physicalLocation xml:lang="eng">eastasia</bf:physicalLocation>
-    <bf:classification rdf:nodeID="N0f4766a9d9a44243afe1b0b263a25819"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/f0757925-8753-427f-bf6a-5f695a04c999"/>
+    <bf:sublocation rdf:nodeID="N14c67c8d3a3f49299b9bfed7b76efad3"/>
+    <bf:adminMetadata rdf:nodeID="Nff3aa68ca4884c16ababf427b8bc9f0b"/>
+    <bf:classification rdf:nodeID="Nd90a91eae7bc44e2a7ed650fc202bcce"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N0f4766a9d9a44243afe1b0b263a25819">
-    <bf:itemPortion>.C31126 2018</bf:itemPortion>
+  <rdf:Description rdf:nodeID="N14c67c8d3a3f49299b9bfed7b76efad3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">ealc</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8bd274b151c04509bf2d7363897160b7">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd90a91eae7bc44e2a7ed650fc202bcce">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.C31126 2018</bf:itemPortion>
     <bf:classificationPortion>Z278</bf:classificationPortion>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nec604a4185f8479bae844c4a71d8a775">
-    <rdfs:label xml:lang="eng">ealc</rdfs:label>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  <rdf:Description rdf:nodeID="Nff3aa68ca4884c16ababf427b8bc9f0b">
+    <bf:status rdf:nodeID="N8bd274b151c04509bf2d7363897160b7"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">jlee37</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N0951e1480a2b40a891f9dbd922f511e4"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-09</bf:creationDate>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N080cdb4a1c79402abf581fc54319a6de">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <bf:code>n</bf:code>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne15b717e4f58453c9b475bce9ffea63b">
+  <rdf:Description rdf:nodeID="N0951e1480a2b40a891f9dbd922f511e4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T15:03:37+00:00</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:07:21+00:00</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -5,41 +5,41 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N79a5f3d5eb6643a78b2b1948d3b13f3f">
+  <rdf:Description rdf:nodeID="N6f49b322de4a4a64a2e9d13264030855">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-24</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N724810c65db44c0797ed4ba831b71e59"/>
+    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N8d87797e1841441a8ad66511b225c7a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N724810c65db44c0797ed4ba831b71e59">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
     <bf:code>n</bf:code>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncebe583255dc44bfad32dd30041ab568">
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-24</bf:creationDate>
-    <bf:generationProcess rdf:nodeID="Nf79b548816c145f5955d991bcda77d15"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:status rdf:nodeID="N79a5f3d5eb6643a78b2b1948d3b13f3f"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/ae202089-b032-470d-83f1-49bed050da6f">
-    <bf:adminMetadata rdf:nodeID="Ncebe583255dc44bfad32dd30041ab568"/>
-    <bf:sublocation rdf:nodeID="N7ac5053c8d944bed9dd4b521474d992f"/>
-    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
-    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <bf:itemOf rdf:resource="https://api.sinopia.io/resource/d04328c3-db6a-4196-ab5b-22fe95309bf4"/>
+    <bf:adminMetadata rdf:nodeID="N6f49b322de4a4a64a2e9d13264030855"/>
+    <bf:classification rdf:nodeID="N51474e7eec7a4c308237e4cd68d14659"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="N04a33c0865824fc587fa128fce4d0f7b"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-    <bf:classification rdf:nodeID="N1027ee48463f44a7a5fa7e348fa7ac5b"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1027ee48463f44a7a5fa7e348fa7ac5b">
+  <rdf:Description rdf:nodeID="N04a33c0865824fc587fa128fce4d0f7b">
+    <rdfs:label xml:lang="eng">szgus</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d87797e1841441a8ad66511b225c7a0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T15:03:28+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51474e7eec7a4c308237e4cd68d14659">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Classification"/>
     <rdfs:label xml:lang="eng">Y 3.T 22/2:2 AM 3</rdfs:label>
     <bf:source rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf79b548816c145f5955d991bcda77d15">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:07:11+00:00</rdfs:label>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7ac5053c8d944bed9dd4b521474d992f">
-    <rdfs:label xml:lang="eng">szgus</rdfs:label>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
   </rdf:Description>
 </rdf:RDF>

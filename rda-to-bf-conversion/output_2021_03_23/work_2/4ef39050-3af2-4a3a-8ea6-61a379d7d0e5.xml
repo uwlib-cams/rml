@@ -2,43 +2,43 @@
 <rdf:RDF
    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
    xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N6253ee7a628b4ee0b0ffd5ef344ae8f2">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <bf:code>n</bf:code>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/4ef39050-3af2-4a3a-8ea6-61a379d7d0e5">
-    <bf:adminMetadata rdf:nodeID="Ncfc7a80ff69d4d4b944e92a6abc3a33d"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <bf:notation rdf:nodeID="N2b1ffb067874430db2f6c4b1c5ae3d82"/>
-    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
-    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/71b26abb-43ba-412e-a965-67e06fefedc2"/>
+    <ns3:prefLabel xml:lang="eng">Pritzker, David M. Negotiated rulemaking sourcebook. Text. English</ns3:prefLabel>
+    <bf:notation rdf:nodeID="N9689a800a98f46148a6f99b41c0bf289"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <ns3:altLabel xml:lang="eng">Dalton, Deborah S. Negotiated rulemaking sourcebook. Text. English</ns3:altLabel>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/71b26abb-43ba-412e-a965-67e06fefedc2"/>
     <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990-01-01</bf:originDate>
-    <ns2:prefLabel xml:lang="eng">Pritzker, David M. Negotiated rulemaking sourcebook. Text. English</ns2:prefLabel>
-    <ns2:altLabel xml:lang="eng">Dalton, Deborah S. Negotiated rulemaking sourcebook. Text. English</ns2:altLabel>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:adminMetadata rdf:nodeID="Neda4950cd8644e598b4996b6a7cf1db2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncfc7a80ff69d4d4b944e92a6abc3a33d">
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:generationProcess rdf:nodeID="N2a98f0b8899140889519d668353ef518"/>
-    <bf:status rdf:nodeID="N6253ee7a628b4ee0b0ffd5ef344ae8f2"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-18</bf:creationDate>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2a98f0b8899140889519d668353ef518">
+  <rdf:Description rdf:nodeID="N56e44d5e65224379aba8efcc1b182372">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T14:55:20+00:00</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T12:58:48+00:00</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N2b1ffb067874430db2f6c4b1c5ae3d82">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  <rdf:Description rdf:nodeID="N9689a800a98f46148a6f99b41c0bf289">
     <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neda4950cd8644e598b4996b6a7cf1db2">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-18</bf:creationDate>
+    <bf:status rdf:nodeID="Ne71cd083f51d407f9a61363f2686ea7a"/>
+    <bf:generationProcess rdf:nodeID="N56e44d5e65224379aba8efcc1b182372"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne71cd083f51d407f9a61363f2686ea7a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
   </rdf:Description>
 </rdf:RDF>

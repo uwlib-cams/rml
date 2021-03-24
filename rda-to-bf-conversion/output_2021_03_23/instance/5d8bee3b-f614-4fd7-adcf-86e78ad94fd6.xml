@@ -5,66 +5,66 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="Nd3381a9c336e409389a5e357fe2551e7">
-    <bf:agent rdf:nodeID="N0011b72093414a22bbdf61922f2d3726"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
-    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018-01-01</bf:date>
-    <bf:place rdf:nodeID="Nad3cada273aa4f2fb9a467eca7c53395"/>
-    <bf:agent rdf:nodeID="N82c9b6f5b00e4d94b16746133d479151"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/5d8bee3b-f614-4fd7-adcf-86e78ad94fd6">
+    <bf:adminMetadata rdf:nodeID="Nce98658ebf6046c08f1681deba1d079c"/>
+    <bf:note rdf:nodeID="N476fa47575c648a58c5ae3135ce067ce"/>
     <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
-    <bf:provisionActivity rdf:nodeID="Nd3381a9c336e409389a5e357fe2551e7"/>
-    <bf:productionMethod rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1008"/>
-    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-    <bf:responsibilityStatement xml:lang="eng">by Myra Mae Waddell</bf:responsibilityStatement>
-    <bf:note rdf:nodeID="Nc776bdbe19964725a1cc9727f75ddb93"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <bf:adminMetadata rdf:nodeID="N891d47bcf83442a6ab799ab65d20bf13"/>
-    <bf:title rdf:nodeID="Nc57f3e5583594f31b941b378ac8d98ab"/>
-    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
-    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
     <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/58d212a6-6925-4152-952a-380261985a88"/>
+    <bf:provisionActivity rdf:nodeID="N3d260242f3174ad19ef95bede165104b"/>
     <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:productionMethod rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1008"/>
+    <bf:responsibilityStatement xml:lang="eng">by Myra Mae Waddell</bf:responsibilityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:title rdf:nodeID="Nc57b55181a9e4120ba86459c2a92ab98"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N82c9b6f5b00e4d94b16746133d479151">
+  <rdf:Description rdf:nodeID="N476fa47575c648a58c5ae3135ce067ce">
+    <rdfs:label xml:lang="eng">stapled</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <bf:noteType xml:lang="en">type of binding</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nde35d7667e4147c08892d51d45564b78">
+    <rdfs:label xml:lang="eng">Gal-Pal Zines</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce98658ebf6046c08f1681deba1d079c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Ncfac612fa86d4474a8ea83a57b6106b9"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-12</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N510cc14286d341db9a4ddc4769e775ae"/>
+    <bflc:catalogerID xml:lang="eng">mathiasuw</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc57b55181a9e4120ba86459c2a92ab98">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Conchology haiku</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne415634034db4f7d92e8059d2d79f434">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <rdfs:label>Gal-Pal Zines</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nad3cada273aa4f2fb9a467eca7c53395">
+  <rdf:Description rdf:nodeID="N3d260242f3174ad19ef95bede165104b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="Nde35d7667e4147c08892d51d45564b78"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018-01-01</bf:date>
+    <bf:place rdf:nodeID="N9b6cb324434f42a781ea45d87a76ed74"/>
+    <bf:agent rdf:nodeID="Ne415634034db4f7d92e8059d2d79f434"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N510cc14286d341db9a4ddc4769e775ae">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T14:59:52+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfac612fa86d4474a8ea83a57b6106b9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b6cb324434f42a781ea45d87a76ed74">
     <rdfs:label xml:lang="eng">Honolulu, Hawaii</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N891d47bcf83442a6ab799ab65d20bf13">
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-12</bf:creationDate>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:generationProcess rdf:nodeID="N0c929ccd37f44ce08576d0632a843a9a"/>
-    <bflc:catalogerID xml:lang="eng">mathiasuw</bflc:catalogerID>
-    <bf:status rdf:nodeID="N27bdc8608bb24b5cb0da84ce1495f28b"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N27bdc8608bb24b5cb0da84ce1495f28b">
-    <bf:code>n</bf:code>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc776bdbe19964725a1cc9727f75ddb93">
-    <rdfs:label xml:lang="eng">stapled</rdfs:label>
-    <bf:noteType xml:lang="en">type of binding</bf:noteType>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc57f3e5583594f31b941b378ac8d98ab">
-    <bf:mainTitle xml:lang="eng">Conchology haiku</bf:mainTitle>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0c929ccd37f44ce08576d0632a843a9a">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:03:26+00:00</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0011b72093414a22bbdf61922f2d3726">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <rdfs:label xml:lang="eng">Gal-Pal Zines</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

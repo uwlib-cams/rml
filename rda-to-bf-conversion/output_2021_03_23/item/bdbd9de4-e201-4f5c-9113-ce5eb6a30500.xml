@@ -5,41 +5,41 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="Ne8950c4e9b954ad39d2592953be05f46">
+  <rdf:Description rdf:nodeID="Nb3775f788d574bb9b43829a1c983ad38">
     <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-20</bf:creationDate>
-    <bf:status rdf:nodeID="N05bb6d19ee7e48f998ed26d1f5974304"/>
+    <bf:status rdf:nodeID="Nbbe37be3ecac45f7b114857046b92438"/>
     <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
     <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
-    <bf:generationProcess rdf:nodeID="Nfdf4227d1d324ccba7a3470db880687b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N6e8a5c7a31934d0bbcc37682d37b8327"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-20</bf:creationDate>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N15da06229f16427880c6384947633d60">
+  <rdf:Description rdf:nodeID="N6e8a5c7a31934d0bbcc37682d37b8327">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T15:03:45+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbcb47a5333d4476af53f50219b2840f">
     <rdfs:label xml:lang="eng">szgus</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb40aeb6b2eed467bba415e38fece3ecf">
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/bdbd9de4-e201-4f5c-9113-ce5eb6a30500">
+    <bf:classification rdf:nodeID="Nf548099a8e9841bba36e33bd4dab3d97"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/ae37b855-a29b-4f8b-ab5c-09934acedf63"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:sublocation rdf:nodeID="Nfbcb47a5333d4476af53f50219b2840f"/>
+    <bf:adminMetadata rdf:nodeID="Nb3775f788d574bb9b43829a1c983ad38"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf548099a8e9841bba36e33bd4dab3d97">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Classification"/>
     <rdfs:label xml:lang="eng">Y 3.T 22/2:2 C 73/13</rdfs:label>
     <bf:source rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N05bb6d19ee7e48f998ed26d1f5974304">
-    <bf:code>n</bf:code>
+  <rdf:Description rdf:nodeID="Nbbe37be3ecac45f7b114857046b92438">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nfdf4227d1d324ccba7a3470db880687b">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:07:28+00:00</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://api.sinopia.io/resource/bdbd9de4-e201-4f5c-9113-ce5eb6a30500">
-    <bf:classification rdf:nodeID="Nb40aeb6b2eed467bba415e38fece3ecf"/>
-    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/ae37b855-a29b-4f8b-ab5c-09934acedf63"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-    <bf:sublocation rdf:nodeID="N15da06229f16427880c6384947633d60"/>
-    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:adminMetadata rdf:nodeID="Ne8950c4e9b954ad39d2592953be05f46"/>
-    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:code>n</bf:code>
   </rdf:Description>
 </rdf:RDF>

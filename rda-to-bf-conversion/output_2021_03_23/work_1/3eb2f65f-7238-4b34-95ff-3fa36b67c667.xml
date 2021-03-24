@@ -3,66 +3,66 @@
    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
    xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
    xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-   xmlns:ns5="http://www.w3.org/2004/02/skos/core#"
+   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N2f823b5f73bb476588a101da6f3fa04d">
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-28</bf:creationDate>
+  <rdf:Description rdf:nodeID="N21682656d6b94021b977fd377ceba407">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <rdfs:label>Crime--Fiction</rdfs:label>
+    <madsrdf:Authority>Crime--Fiction</madsrdf:Authority>
+    <madsrdf:authoritativeLabel>Crime--Fiction</madsrdf:authoritativeLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a65098da8a34e0599a7278e850cd4f8">
+    <madsrdf:authoritativeLabel>Murder--Fiction</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:Authority>Murder--Fiction</madsrdf:Authority>
+    <rdfs:label>Murder--Fiction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/3eb2f65f-7238-4b34-95ff-3fa36b67c667">
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026020"/>
+    <bf:historyOfWork xml:lang="eng">"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead &amp; co. the following year ... The book features her detective, Miss Marple"--Wikipedia, January 28, 2020.</bf:historyOfWork>
+    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060386"/>
+    <bf:subject rdf:nodeID="N0a65098da8a34e0599a7278e850cd4f8"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:subject rdf:nodeID="N1b7e3d9ec5f844368d3a5889dc9c8e9c"/>
+    <ns3:prefLabel xml:lang="eng">Christie, Agatha, 1890-1976. Pocket full of rye</ns3:prefLabel>
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
+    <bf:adminMetadata rdf:nodeID="N536eb9c5f9f44ccba2a57b59c524eb5b"/>
+    <bf:identifiedBy rdf:resource="http://www.wikidata.org/entity/Q29132"/>
+    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060358"/>
+    <bf:title rdf:nodeID="N2794b3be11564ad5b80eb5d3f1d442a8"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1953-01-01</bf:originDate>
+    <bf:subject rdf:nodeID="N21682656d6b94021b977fd377ceba407"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N536eb9c5f9f44ccba2a57b59c524eb5b">
+    <bf:generationProcess rdf:nodeID="Nf59420dc9f394b1c8522fd6474e46b5e"/>
     <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
     <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:generationProcess rdf:nodeID="N2f93fbbce2924103b1881e7fba312644"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="N26d5ebfeec8d41dfa14636f115bfe4a9"/>
     <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-28</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:status rdf:nodeID="Nab3ce2ac82414a0fb0bf294e77f8722b"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nab3ce2ac82414a0fb0bf294e77f8722b">
+  <rdf:Description rdf:nodeID="N2794b3be11564ad5b80eb5d3f1d442a8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Pocket full of rye</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26d5ebfeec8d41dfa14636f115bfe4a9">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
     <bf:code>n</bf:code>
   </rdf:Description>
-  <rdf:Description rdf:about="https://api.sinopia.io/resource/3eb2f65f-7238-4b34-95ff-3fa36b67c667">
-    <bf:adminMetadata rdf:nodeID="N2f823b5f73bb476588a101da6f3fa04d"/>
-    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2015026020"/>
-    <bf:subject rdf:nodeID="N5b77eb16113d489c999388cef789d840"/>
-    <bf:subject rdf:nodeID="Naad0e883f38e497ebf922d9001620a32"/>
-    <bf:identifiedBy rdf:resource="http://www.wikidata.org/entity/Q29132"/>
-    <ns5:prefLabel xml:lang="eng">Christie, Agatha, 1890-1976. Pocket full of rye</ns5:prefLabel>
-    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
-    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060386"/>
-    <bf:subject rdf:nodeID="Nb72954d8985d48b78f3d44960c2a9066"/>
-    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1953-01-01</bf:originDate>
-    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060358"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <bf:title rdf:nodeID="Nc97b7b6ef5584c2488a1a31f7b6105fd"/>
-    <bf:historyOfWork xml:lang="eng">"A Pocket Full of Rye is a work of detective fiction by Agatha Christie and first published in the UK by the Collins Crime Club on 9 November 1953,[1] and in the US by Dodd, Mead &amp; co. the following year ... The book features her detective, Miss Marple"--Wikipedia, January 28, 2020.</bf:historyOfWork>
-    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026280"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5b77eb16113d489c999388cef789d840">
-    <rdfs:label>Murder--Fiction</rdfs:label>
-    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-    <madsrdf:authoritativeLabel>Murder--Fiction</madsrdf:authoritativeLabel>
-    <madsrdf:Authority>Murder--Fiction</madsrdf:Authority>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Naad0e883f38e497ebf922d9001620a32">
-    <madsrdf:authoritativeLabel>Marple, Jane (Fictitious character)--Fiction</madsrdf:authoritativeLabel>
-    <rdfs:label>Marple, Jane (Fictitious character)--Fiction</rdfs:label>
+  <rdf:Description rdf:nodeID="N1b7e3d9ec5f844368d3a5889dc9c8e9c">
     <madsrdf:Authority>Marple, Jane (Fictitious character)--Fiction</madsrdf:Authority>
     <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <rdfs:label>Marple, Jane (Fictitious character)--Fiction</rdfs:label>
+    <madsrdf:authoritativeLabel>Marple, Jane (Fictitious character)--Fiction</madsrdf:authoritativeLabel>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb72954d8985d48b78f3d44960c2a9066">
-    <madsrdf:authoritativeLabel>Crime--Fiction</madsrdf:authoritativeLabel>
-    <rdfs:label>Crime--Fiction</rdfs:label>
-    <madsrdf:Authority>Crime--Fiction</madsrdf:Authority>
-    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc97b7b6ef5584c2488a1a31f7b6105fd">
-    <bf:mainTitle xml:lang="eng">Pocket full of rye</bf:mainTitle>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2f93fbbce2924103b1881e7fba312644">
+  <rdf:Description rdf:nodeID="Nf59420dc9f394b1c8522fd6474e46b5e">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T12:53:48+00:00</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T14:50:23+00:00</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -5,46 +5,46 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N493cbfe6da354b478a5498be42e50bb2">
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:status rdf:nodeID="N9f7f724af5b14050b1a170e0cdd6f305"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  <rdf:Description rdf:nodeID="N3fc9d4c633eb43a782bd9186694878b1">
+    <bf:status rdf:nodeID="N5a852e7b5ae44aa983f773367900f38f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Ne219ae2c83114eea8357fa444c783180"/>
     <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-07</bf:creationDate>
     <bflc:catalogerID xml:lang="en">cec23</bflc:catalogerID>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:generationProcess rdf:nodeID="N0487e37ea0334ca3a29c9c6af1ba5607"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/9ecc0ead-87a9-453f-bd5f-25287991a94a">
-    <bf:adminMetadata rdf:nodeID="N493cbfe6da354b478a5498be42e50bb2"/>
+    <bf:classification rdf:nodeID="N7318a64fa7894fac92ddcb05f2fcd8f2"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-    <bf:sublocation rdf:nodeID="N48878b5ddc7c4bee902d9b887c87e87a"/>
-    <bf:classification rdf:nodeID="N20db96271fa540d9891401d785b7db04"/>
-    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:identifier rdf:nodeID="Nee81f463cb0449a6a16ae695d11c5bfd"/>
     <bf:physicalLocation xml:lang="en">suzzallen</bf:physicalLocation>
+    <bf:sublocation rdf:nodeID="N9665774f782e4cb48f5acd6cc269a870"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="N3fc9d4c633eb43a782bd9186694878b1"/>
+    <bf:identifier rdf:nodeID="N7ddab0b59ed441d7a2d39470ad2d0168"/>
     <bf:itemOf rdf:resource="https://api.sinopia.io/resource/repository/washington/e8681ce8-c125-4640-9583-2404b7603e41"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N20db96271fa540d9891401d785b7db04">
-    <bf:classificationPortion>PG3328.Z7</bf:classificationPortion>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
-    <bf:itemPortion>P5 2009</bf:itemPortion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nee81f463cb0449a6a16ae695d11c5bfd">
-    <rdf:value xml:lang="en">39352073469538</rdf:value>
+  <rdf:Description rdf:nodeID="N7ddab0b59ed441d7a2d39470ad2d0168">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="en">39352073469538</rdf:value>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N48878b5ddc7c4bee902d9b887c87e87a">
-    <rdfs:label xml:lang="en">szstx</rdfs:label>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  <rdf:Description rdf:nodeID="Ne219ae2c83114eea8357fa444c783180">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T15:03:19+00:00</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N9f7f724af5b14050b1a170e0cdd6f305">
+  <rdf:Description rdf:nodeID="N5a852e7b5ae44aa983f773367900f38f">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
     <bf:code>n</bf:code>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N0487e37ea0334ca3a29c9c6af1ba5607">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:07:02+00:00</rdfs:label>
+  <rdf:Description rdf:nodeID="N9665774f782e4cb48f5acd6cc269a870">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="en">szstx</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7318a64fa7894fac92ddcb05f2fcd8f2">
+    <bf:itemPortion>P5 2009</bf:itemPortion>
+    <bf:classificationPortion>PG3328.Z7</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
   </rdf:Description>
 </rdf:RDF>

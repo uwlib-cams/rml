@@ -2,52 +2,52 @@
 <rdf:RDF
    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
    xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
+   xmlns:ns1="http://www.w3.org/2004/02/skos/core#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N447824db9c41456f9fa8951511cda03d">
-    <bf:agent rdf:nodeID="Nee8d764b10154164adffb128d59a81c1"/>
-    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd5a7e3167fe54578b42c2eafa3b2fc9e">
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-25</bf:creationDate>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <rdf:Description rdf:nodeID="Nd81f78b3ca7e4e08acf7c5c022eb886c">
+    <bf:generationProcess rdf:nodeID="N35e01b2545ca4e59a5cefc547c235bf3"/>
     <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
+    <bf:status rdf:nodeID="N6081630047414f08a8a60de2484610c5"/>
     <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-25</bf:creationDate>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bf:generationProcess rdf:nodeID="N103894897c304e9ba474e3ec7f446d06"/>
     <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:status rdf:nodeID="N4659df0489f74245b74f82cf569f393b"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nee8d764b10154164adffb128d59a81c1">
+  <rdf:Description rdf:nodeID="N6081630047414f08a8a60de2484610c5">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f967ac1b-60c5-4fa5-99ca-6aa04ec6d0d3">
+    <ns1:prefLabel xml:lang="eng">Meyer, Stephenie, 1973-. Twilight. Text. English</ns1:prefLabel>
+    <bf:contribution rdf:nodeID="N6f2efde19eab45d18fc630d4a4ecc40a"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/7cffe198-f453-409b-b985-9d5660c7272c"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:notation rdf:nodeID="N8b10209b7c7f4c129b9b09c361de0ae8"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005-01-01</bf:originDate>
+    <bf:colorContent rdf:resource="file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003"/>
+    <bf:adminMetadata rdf:nodeID="Nd81f78b3ca7e4e08acf7c5c022eb886c"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N646c1fd184324529acd8be4c19e1e0ca">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <rdfs:label>Tingley, Megan</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://api.sinopia.io/resource/f967ac1b-60c5-4fa5-99ca-6aa04ec6d0d3">
-    <bf:notation rdf:nodeID="N9490f6b7b44f4980be57fc46fab4fb43"/>
-    <ns3:prefLabel xml:lang="eng">Meyer, Stephenie, 1973-. Twilight. Text. English</ns3:prefLabel>
-    <bf:colorContent rdf:resource="file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003"/>
-    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005-01-01</bf:originDate>
-    <bf:contribution rdf:nodeID="N447824db9c41456f9fa8951511cda03d"/>
-    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/7cffe198-f453-409b-b985-9d5660c7272c"/>
-    <bf:adminMetadata rdf:nodeID="Nd5a7e3167fe54578b42c2eafa3b2fc9e"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9490f6b7b44f4980be57fc46fab4fb43">
+  <rdf:Description rdf:nodeID="N8b10209b7c7f4c129b9b09c361de0ae8">
     <rdfs:label xml:lang="eng">Latin</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N103894897c304e9ba474e3ec7f446d06">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:01:40+00:00</rdfs:label>
+  <rdf:Description rdf:nodeID="N6f2efde19eab45d18fc630d4a4ecc40a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+    <bf:agent rdf:nodeID="N646c1fd184324529acd8be4c19e1e0ca"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N4659df0489f74245b74f82cf569f393b">
-    <bf:code>n</bf:code>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  <rdf:Description rdf:nodeID="N35e01b2545ca4e59a5cefc547c235bf3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T14:58:13+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
   </rdf:Description>
 </rdf:RDF>

@@ -2,54 +2,54 @@
 <rdf:RDF
    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
    xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
-   xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+   xmlns:ns3="http://www.w3.org/2004/02/skos/core#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="Na081862001e549cc8f1cf0cf55aab540">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
-    <rdfs:label xml:lang="eng">Latin</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/7b05a65a-8b90-46a2-bc23-4fd434cfb36d">
+    <bf:notation rdf:nodeID="N7d746484f8fa406eb84fc1e3cc9cfb1c"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:colorContent rdf:nodeID="Ne5b9233c35a64407b308afe551b4a273"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
     <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
-    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
-    <bf:supplementaryContent rdf:nodeID="Nada1b3a936cf42c88b8a286d2168129d"/>
-    <bf:adminMetadata rdf:nodeID="N3b5dd0351b51432b9cd187a6e0034531"/>
-    <ns2:prefLabel xml:lang="eng">Van Aken, Norman, 1951- . Great exotic fruit book. Text. English</ns2:prefLabel>
-    <bf:notation rdf:nodeID="Na081862001e549cc8f1cf0cf55aab540"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/018e4c97-fb45-4333-9e8e-6cc0584e49ac"/>
     <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1995-01-01</bf:originDate>
-    <bf:colorContent rdf:nodeID="N2f939cb75640484893fd507050cd306b"/>
-    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:adminMetadata rdf:nodeID="Ncd0d7ae3acde4408927189481b5a0995"/>
+    <ns3:prefLabel xml:lang="eng">Van Aken, Norman, 1951- . Great exotic fruit book. Text. English</ns3:prefLabel>
     <bf:colorContent rdf:resource="file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003"/>
+    <bf:supplementaryContent rdf:nodeID="Nba773c10c30c4b948b57c580595a61b4"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N3b5dd0351b51432b9cd187a6e0034531">
+  <rdf:Description rdf:nodeID="Ncd0d7ae3acde4408927189481b5a0995">
     <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
-    <bf:generationProcess rdf:nodeID="N3c6dd5968943402f910ddcd542808bdd"/>
+    <bf:status rdf:nodeID="N8d161a739c1146f9b0d9c15a2ed81d11"/>
+    <bf:generationProcess rdf:nodeID="N8128aa26a1c44d749286cd9bbd759edf"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
     <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-16</bf:creationDate>
     <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:status rdf:nodeID="Ncbeb8e6926d444a2b11bbdfc75d46b09"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N3c6dd5968943402f910ddcd542808bdd">
+  <rdf:Description rdf:nodeID="N7d746484f8fa406eb84fc1e3cc9cfb1c">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d161a739c1146f9b0d9c15a2ed81d11">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8128aa26a1c44d749286cd9bbd759edf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T14:56:21+00:00</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T12:59:48+00:00</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N2f939cb75640484893fd507050cd306b">
+  <rdf:Description rdf:nodeID="Ne5b9233c35a64407b308afe551b4a273">
     <rdfs:label>color</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nada1b3a936cf42c88b8a286d2168129d">
-    <rdfs:label xml:lang="eng">Includes bibliographical references (page 144) and index.</rdfs:label>
+  <rdf:Description rdf:nodeID="Nba773c10c30c4b948b57c580595a61b4">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/SupplementaryContent"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncbeb8e6926d444a2b11bbdfc75d46b09">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-    <bf:code>n</bf:code>
+    <rdfs:label xml:lang="eng">Includes bibliographical references (page 144) and index.</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

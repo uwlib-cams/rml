@@ -5,41 +5,41 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="Ndfd49e9a8fef4035961165676f279359">
-    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</bf:creationDate>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
-    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
-    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
-    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
-    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
-    <bf:generationProcess rdf:nodeID="Nc117c287ce4e4f7ab9c8d6470d47e7e1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://api.sinopia.io/resource/4c559834-5945-4694-a079-86872f5b36a6">
-    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
-    <bf:adminMetadata rdf:nodeID="Ndfd49e9a8fef4035961165676f279359"/>
-    <bf:identifier rdf:nodeID="N5b5522bde4e042938580a12f13d7be64"/>
-    <bf:classification rdf:nodeID="N5329245ab7d54ca3a9e9af64b59fd348"/>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
     <bf:itemOf rdf:resource="https://api.sinopia.io/resource/64cb5d64-0992-4086-9c10-364ef750186f"/>
     <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
-    <bf:sublocation rdf:nodeID="Ne07a72204f0c45eab38072f2709d36e4"/>
+    <bf:sublocation rdf:nodeID="Nc9250d28f4b1420a83a0b273b94637c9"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:classification rdf:nodeID="Nda16f669d49b446482d352f8e2638d37"/>
+    <bf:identifier rdf:nodeID="Nbf32d2c8f66449babdaf6a9d352b12d9"/>
+    <bf:adminMetadata rdf:nodeID="N90d918c3b5964582a7704e260f4b3801"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne07a72204f0c45eab38072f2709d36e4">
+  <rdf:Description rdf:nodeID="N17c727d8a1e641c3a8627fcea8ebfb4d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T15:02:51+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda16f669d49b446482d352f8e2638d37">
+    <bf:classificationPortion>PZ7.D664</bf:classificationPortion>
+    <bf:itemPortion>Han 1936b</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90d918c3b5964582a7704e260f4b3801">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N17c727d8a1e641c3a8627fcea8ebfb4d"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-02</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc9250d28f4b1420a83a0b273b94637c9">
     <rdfs:label xml:lang="eng">szstx</rdfs:label>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc117c287ce4e4f7ab9c8d6470d47e7e1">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-03-23T13:06:32+00:00</rdfs:label>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5329245ab7d54ca3a9e9af64b59fd348">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
-    <bf:itemPortion>Han 1936b</bf:itemPortion>
-    <bf:classificationPortion>PZ7.D664</bf:classificationPortion>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5b5522bde4e042938580a12f13d7be64">
-    <rdf:value xml:lang="eng">39352014731939</rdf:value>
+  <rdf:Description rdf:nodeID="Nbf32d2c8f66449babdaf6a9d352b12d9">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352014731939</rdf:value>
   </rdf:Description>
 </rdf:RDF>

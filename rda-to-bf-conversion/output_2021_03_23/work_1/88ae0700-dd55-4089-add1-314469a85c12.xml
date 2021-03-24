@@ -5,25 +5,25 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://api.sinopia.io/resource/88ae0700-dd55-4089-add1-314469a85c12">
-    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026046"/>
-    <ns2:prefLabel xml:lang="eng">General Fruit Corporation. General news</ns2:prefLabel>
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <bf:contribution rdf:nodeID="N6b58311db4224dd9b6ab6faad94b35e3"/>
-    <bf:hasExpression rdf:resource="https://api.sinopia.io/resource/17d1cc4b-9d87-4ee0-9568-36a23dee7385"/>
-    <bf:title rdf:nodeID="Nc5a72882ce9e444c9a982feaee8bb291"/>
+  <rdf:Description rdf:nodeID="Na91d5ee9ec3445379420e6cd6983eeda">
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb421a9ae68b0461b94fcc8798453fa1b">
+  <rdf:Description rdf:nodeID="N78abb8c3b8eb401f987f9943bab1d677">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <rdfs:label>General Fruit Corporation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N6b58311db4224dd9b6ab6faad94b35e3">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-    <bf:agent rdf:nodeID="Nb421a9ae68b0461b94fcc8798453fa1b"/>
+  <rdf:Description rdf:nodeID="N79396cab897f4559ae078f59cf681cd3">
+    <bf:agent rdf:nodeID="N78abb8c3b8eb401f987f9943bab1d677"/>
     <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc5a72882ce9e444c9a982feaee8bb291">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/88ae0700-dd55-4089-add1-314469a85c12">
+    <bf:title rdf:nodeID="Na91d5ee9ec3445379420e6cd6983eeda"/>
+    <ns2:prefLabel xml:lang="eng">General Fruit Corporation. General news</ns2:prefLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="N79396cab897f4559ae078f59cf681cd3"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026046"/>
+    <bf:hasExpression rdf:resource="https://api.sinopia.io/resource/17d1cc4b-9d87-4ee0-9568-36a23dee7385"/>
   </rdf:Description>
 </rdf:RDF>
