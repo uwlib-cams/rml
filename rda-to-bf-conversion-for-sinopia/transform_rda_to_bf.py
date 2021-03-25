@@ -4,6 +4,7 @@ import os
 from progress.bar import Bar
 from rdflib import *
 import time
+from timeit import default_timer as timer
 import uuid
 import xml.etree.ElementTree as ET
 
@@ -23,6 +24,7 @@ rdau = Namespace('http://rdaregistry.info/Elements/u/')
 rdaw = Namespace('http://rdaregistry.info/Elements/w/')
 rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
+skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Functions"""
 # RDFLIB functions
@@ -43,6 +45,7 @@ def reserialize(file):
 	g.bind('rdaw', rdaw)
 	g.bind('rdax', rdax)
 	g.bind('sin', sin)
+	g.bind('skos', skos)
 	g.load(f'file:{file}', format='xml')
 	g.serialize(destination=f'{file}', format='xml')
 
@@ -104,19 +107,19 @@ def update_bf_IRI(entity, file, new_IRI):
 
 # RML functions
 def transform_works(workList, currentDate):
+	start = timer()
+
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/work_1_xml'):
-		print('...\nCreating work_1 directory')
+		print('>> Creating work_1_xml directory')
 		os.makedirs(f'../output/{currentDate}/work_1_xml')
 
-	print('...')
-
-	bar = Bar(f'Transforming {len(workList)} files from RDA Work to BIBFRAME Work', max=len(workList), suffix='%(percent)d%%') # progress bar
+	bar = Bar(f'>> Transforming RDA Work to BIBFRAME Work', max=len(workList), suffix='%(percent)d%%') # progress bar
 	for work in workList:
 		# identify RDA ID and IRI
 		RDA_ID = work.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		work_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/work/{RDA_ID}" # use RDA ID to make path
+		work_filepath = f"/home/mcm104/rml/input/{currentDate}/work/{RDA_ID}" # use RDA ID to make path # needs editing to be universal
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -138,6 +141,7 @@ def transform_works(workList, currentDate):
 		Graph_localWork.bind('bf', bf)
 		Graph_localWork.bind('bflc', bflc)
 		Graph_localWork.bind('madsrdf', madsrdf)
+		Graph_localWork.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localWork.load(f'file:{RDA_ID}.nq', format='nquads')
@@ -172,22 +176,25 @@ def transform_works(workList, currentDate):
 		update_bf_IRI("work_1", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
+	end = timer()
+	print(f"\nWorks transformed: {len(workList)}")
+	print(f"Time elapsed: {round((end - start), 1)} s")
 	bar.finish()
 
 def transform_expressions(expressionList, currentDate):
+	start = timer()
+
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/work_2_xml'):
-		print(f'...\nCreating work_2 directory')
+		print(f'\n>> Creating work_2_xml directory')
 		os.makedirs(f'../output/{currentDate}/work_2_xml')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(expressionList)} from RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
+	bar = Bar(f'>> Transforming RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
 	for expression in expressionList:
 		# identify RDA ID and IRI
 		RDA_ID = expression.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		expression_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
+		expression_filepath = f"/home/mcm104/rml/input/{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -208,6 +215,7 @@ def transform_expressions(expressionList, currentDate):
 		Graph_localExpression.bind('bf', bf)
 		Graph_localExpression.bind('bflc', bflc)
 		Graph_localExpression.bind('madsrdf', madsrdf)
+		Graph_localExpression.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localExpression.load(f'file:{RDA_ID}.nq', format='nquads')
@@ -242,23 +250,26 @@ def transform_expressions(expressionList, currentDate):
 		update_bf_IRI("work_2", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
+	end = timer()
+	print(f"\nExpressions transformed: {len(expressionList)}")
+	print(f"Elapsed time: {round((end - start), 1)} s")
 	bar.finish()
 
 def transform_manifestations(manifestationList, currentDate):
+	start = timer()
+
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/instance_xml'):
-		print(f'...\nCreating instance directory')
+		print(f'directory>> Creating instance_xml directory')
 		os.makedirs(f'../output/{currentDate}/instance_xml')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(manifestationList)} files from RDA Manifestation to BIBFRAME Instance', max=len(manifestationList), suffix='%(percent)d%%') # progress bar
+	bar = Bar(f'>> Transforming RDA Manifestation to BIBFRAME Instance', max=len(manifestationList), suffix='%(percent)d%%') # progress bar
 
 	for manifestation in manifestationList:
 		# identify RDA ID and IRI
 		RDA_ID = manifestation.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		manifestation_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
+		manifestation_filepath = f"/home/mcm104/rml/input/{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -279,6 +290,7 @@ def transform_manifestations(manifestationList, currentDate):
 		Graph_localManifestation.bind('bf', bf)
 		Graph_localManifestation.bind('bflc', bflc)
 		Graph_localManifestation.bind('madsrdf', madsrdf)
+		Graph_localManifestation.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localManifestation.load(f'file:{RDA_ID}.nq', format='nquads')
@@ -313,23 +325,26 @@ def transform_manifestations(manifestationList, currentDate):
 		update_bf_IRI("instance", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
+	end = timer()
+	print(f"\nManifestations transformed: {len(manifestationList)}")
+	print(f"Elapsed time: {round((end - start), 1)} s")
 	bar.finish()
 
 def transform_items(itemList, currentDate):
+	start = timer()
+
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/item_xml'):
-		print(f'...\nCreating item directory')
+		print(f'>> Creating item directory')
 		os.makedirs(f'../output/{currentDate}/item_xml')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(itemList)} files from RDA Item to BIBFRAME Item', max=len(itemList), suffix='%(percent)d%%') # progress bar
+	bar = Bar(f'>> Transforming RDA Item to BIBFRAME Item', max=len(itemList), suffix='%(percent)d%%') # progress bar
 
 	for item in itemList:
 		# identify RDA ID and IRI
 		RDA_ID = item.split('.')[0]
 		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
-		item_filepath = f"rda-to-bf-conversion-for-sinopia/input/{currentDate}/item/{RDA_ID}" # use RDA ID to make path
+		item_filepath = f"/home/mcm104/rml/input/{currentDate}/item/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
@@ -350,6 +365,7 @@ def transform_items(itemList, currentDate):
 		Graph_localItem.bind('bf', bf)
 		Graph_localItem.bind('bflc', bflc)
 		Graph_localItem.bind('madsrdf', madsrdf)
+		Graph_localItem.bind('skos', skos)
 
 		# add nquad file to new graph
 		Graph_localItem.load(f'file:{RDA_ID}.nq', format='nquads')
@@ -384,6 +400,9 @@ def transform_items(itemList, currentDate):
 		update_bf_IRI("item", f"{BF_ID}.xml", BF_IRI)
 
 		bar.next()
+	end = timer()
+	print(f"\nItems transformed: {len(itemList)}")
+	print(f"Elapsed time: {round((end - start), 1)} s")
 	bar.finish()
 
 # Find-and-replace functions
@@ -470,7 +489,7 @@ def item_map_replace_to_default(item_filepath):
 
 """Variables"""
 
-# format for naming folder according to date
+# format for naming directory according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')
 
@@ -487,7 +506,7 @@ rda_bf_dict = {}
 
 # create directory with today's date for BF-in-XML data
 if not os.path.exists(f'../output/{currentDate}'):
-	print('...\nCreating output folder')
+	print('>> Creating output directory')
 	os.makedirs(f'../output/{currentDate}')
 
 transform_works(workList, currentDate)
@@ -495,7 +514,8 @@ transform_expressions(expressionList, currentDate)
 transform_manifestations(manifestationList, currentDate)
 transform_items(itemList, currentDate)
 
-print("...\nCreating record of new IRIs")
+print(">> Creating record of new IRIs")
+start = timer()
 with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
 	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
@@ -504,3 +524,5 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
 
 	for RDA_ID in rda_bf_dict.keys():
 		csv_writer.writerow([f'{RDA_ID}', f'{rda_bf_dict[RDA_ID]}'])
+end = timer()
+print(f"Elapsed time: {round((end - start), 1)} s")
