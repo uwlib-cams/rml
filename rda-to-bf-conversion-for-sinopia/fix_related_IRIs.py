@@ -22,6 +22,7 @@ rdau = Namespace('http://rdaregistry.info/Elements/u/')
 rdaw = Namespace('http://rdaregistry.info/Elements/w/')
 rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
+skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
 
@@ -55,6 +56,7 @@ def reserialize(file):
 	g.bind('rdaw', rdaw)
 	g.bind('rdax', rdax)
 	g.bind('sin', sin)
+	g.bind('skos', skos)
 	g.load(f'file:{file}', format='xml')
 	g.serialize(destination=f'{file}', format='xml')
 
