@@ -2,6 +2,7 @@ from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
+from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
 """Namespaces"""
@@ -20,6 +21,7 @@ rdau = Namespace('http://rdaregistry.info/Elements/u/')
 rdaw = Namespace('http://rdaregistry.info/Elements/w/')
 rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
+skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
 
@@ -55,6 +57,7 @@ def reserialize(file):
 	g.bind('rdaw', rdaw)
 	g.bind('rdax', rdax)
 	g.bind('sin', sin)
+	g.bind('skos', skos)
 	g.load(f'file:{file}', format='xml')
 	g.serialize(destination=f'{file}', format='xml')
 
@@ -80,6 +83,8 @@ def determine_date_type(value):
 	return date_type
 
 def add_dates_in_xml(currentDate, entity, file):
+	edit_made = False
+
 	# open xml parser
 	tree = ET.parse(f'../output/{currentDate}/{entity}_xml/{file}')
 	root = tree.getroot()
@@ -89,23 +94,35 @@ def add_dates_in_xml(currentDate, entity, file):
 			if prop.tag.split('}')[-1] in bf_date_prop_list:
 				date_type = determine_date_type(prop.text)
 				prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
+				edit_made = True
 			elif prop.tag.split('}')[-1] == 'label':
 				if prop.text == None:
 					pass
 				elif prop.text[0:15] == "rml.py SNAPSHOT":
 					date_type = determine_date_type(prop.text)
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
+					edit_made = True
 
 	tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
 
 	reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
 
+	return edit_made
+
 ###
 num_of_resources = len(work_1_list) + len(work_2_list) + len(instance_list) + len(item_list)
+num_of_edits = 0
 
-bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
+start = timer()
+bar = Bar(">> Adding datatypes to dates", max=num_of_resources, suffix='%(percent)d%%') # progress bar
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		add_dates_in_xml(currentDate, entity, resource)
+		edit_made = add_dates_in_xml(currentDate, entity, resource)
+		if edit_made == True:
+			num_of_edits += 1
 		bar.next()
+end = timer()
 bar.finish()
+
+print(f"Edits made: {num_of_edits}")
+print(f"Elapsed time: {round((end - start), 1)} s")
