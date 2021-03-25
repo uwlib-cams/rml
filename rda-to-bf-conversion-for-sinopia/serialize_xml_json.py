@@ -4,6 +4,7 @@ from progress.bar import Bar
 from rdflib import *
 import rdflib
 import time
+from timeit import default_timer as timer
 
 """Namespaces"""
 
@@ -19,12 +20,10 @@ def work_1_xml_to_json(currentDate):
 
 	# create work_1 json directory
 	if not os.path.exists(f'../output/{currentDate}/work_1_json'):
-		print(f'...\nCreating work_1 directory')
+		print(f'>> Creating work_1_json directory')
 		os.makedirs(f'../output/{currentDate}/work_1_json')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(work_1_xml_list)} work_1 files from XML to JSON-LD', max=len(work_1_xml_list), suffix='%(percent)d%%')
+	bar = Bar(f'>> Reserializing work_1 files', max=len(work_1_xml_list), suffix='%(percent)d%%')
 	for work in work_1_xml_list:
 		# create new empty graph
 		Graph_localWork_1 = Graph()
@@ -45,12 +44,10 @@ def work_2_xml_to_json(currentDate):
 
 	# create work 2 json directory
 	if not os.path.exists(f'../output/{currentDate}/work_2_json'):
-		print(f'...\nCreating work_2 directory')
+		print(f'>> Creating work_2_json directory')
 		os.makedirs(f'../output/{currentDate}/work_2_json')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(work_2_xml_list)} work 2 files from XML to JSON-LD', max=len(work_2_xml_list), suffix='%(percent)d%%')
+	bar = Bar(f'>> Reserializing work_2 files', max=len(work_2_xml_list), suffix='%(percent)d%%')
 	for work in work_2_xml_list:
 		# create new empty graph
 		Graph_localWork_2 = Graph()
@@ -71,12 +68,10 @@ def instance_xml_to_json(currentDate):
 
 	# create instance json directory
 	if not os.path.exists(f'../output/{currentDate}/instance_json'):
-		print(f'...\nCreating instance directory')
+		print(f'>> Creating instance_json directory')
 		os.makedirs(f'../output/{currentDate}/instance_json')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(instance_xml_list)} instance files from XML to JSON-LD', max=len(instance_xml_list), suffix='%(percent)d%%')
+	bar = Bar(f'>> Reserializing instance files', max=len(instance_xml_list), suffix='%(percent)d%%')
 	for instance in instance_xml_list:
 		# create new empty graph
 		Graph_localInstance = Graph()
@@ -97,12 +92,10 @@ def item_xml_to_json(currentDate):
 
 	# create item json directory
 	if not os.path.exists(f'../output/{currentDate}/item_json'):
-		print(f'...\nCreating item directory')
+		print(f'>> Creating item_json directory')
 		os.makedirs(f'../output/{currentDate}/item_json')
 
-	print("...")
-
-	bar = Bar(f'Transforming {len(item_xml_list)} item files from XML to JSON-LD', max=len(item_xml_list), suffix='%(percent)d%%')
+	bar = Bar(f'>> Reserializing item files', max=len(item_xml_list), suffix='%(percent)d%%')
 	for item in item_xml_list:
 		# create new empty graph
 		Graph_localItem = Graph()
@@ -125,8 +118,12 @@ currentDate = str(today).replace('-', '_')
 
 ###
 
+start = timer()
 print("...\nReserializing XML output as JSON-LD")
 work_1_xml_to_json(currentDate)
 work_2_xml_to_json(currentDate)
 instance_xml_to_json(currentDate)
 item_xml_to_json(currentDate)
+end = timer()
+
+print(f"Elapsed time: {round((end - start), 1)} s")
