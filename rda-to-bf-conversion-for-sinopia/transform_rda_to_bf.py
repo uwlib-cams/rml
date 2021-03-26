@@ -186,7 +186,7 @@ def transform_expressions(expressionList, currentDate):
 
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/work_2_xml'):
-		print(f'\n>> Creating work_2_xml directory')
+		print(f'>> Creating work_2_xml directory')
 		os.makedirs(f'../output/{currentDate}/work_2_xml')
 
 	bar = Bar(f'>> Transforming RDA Expression to BIBFRAME Work', max=len(expressionList), suffix='%(percent)d%%') # progress bar
@@ -260,7 +260,7 @@ def transform_manifestations(manifestationList, currentDate):
 
 	# create output directory
 	if not os.path.exists(f'../output/{currentDate}/instance_xml'):
-		print(f'directory>> Creating instance_xml directory')
+		print(f'>> Creating instance_xml directory')
 		os.makedirs(f'../output/{currentDate}/instance_xml')
 
 	bar = Bar(f'>> Transforming RDA Manifestation to BIBFRAME Instance', max=len(manifestationList), suffix='%(percent)d%%') # progress bar
