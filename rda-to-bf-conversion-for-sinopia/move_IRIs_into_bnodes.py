@@ -42,7 +42,7 @@ def make_URI_values_compatible(entity, file):
 				g.add((new_b_node, owl.sameAs, o))
 				edit_made = True
 
-	g.serialize(destination=f'../output/owlsameAsSample/{file.split(".")[0]}.ttl', format='turtle')
+	g.serialize(destination=f'../output/{currentDate}/{entity}_xml/{file}', format='xml')
 
 	return edit_made
 
