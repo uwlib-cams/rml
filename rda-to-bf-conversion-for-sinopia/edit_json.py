@@ -1,8 +1,18 @@
 from datetime import date
+import json
 import os
 from progress.bar import Bar
+from rdflib import *
 import time
 from timeit import default_timer as timer
+
+"""Namespaces"""
+bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
+bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
+madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
+owl = Namespace('http://www.w3.org/2002/07/owl#')
+sin = Namespace('http://sinopia.io/vocabulary/')
+skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
 
@@ -11,87 +21,58 @@ today = date.today()
 currentDate = str(today).replace('-', '_')
 
 """Lists and Dictionaries"""
-work_1List = os.listdir(f'../output/{currentDate}/work_1_json')
-work_2List = os.listdir(f'../output/{currentDate}/work_2_json')
-instanceList = os.listdir(f'../output/{currentDate}/instance_json')
-itemList = os.listdir(f'../output/{currentDate}/item_json')
+
+work_1List = os.listdir(f'../output/{currentDate}/work_1_xml')
+work_2List = os.listdir(f'../output/{currentDate}/work_2_xml')
+instanceList = os.listdir(f'../output/{currentDate}/instance_xml')
+itemList = os.listdir(f'../output/{currentDate}/item_xml')
 
 resource_dict = {"work_1": work_1List, "work_2": work_2List, "instance": instanceList, "item": itemList}
-
 rt_dict = {"work_1": "WAU:RT:BF2:Work", "work_2": "WAU:RT:BF2:Work", "instance": "WAU:RT:BF2:Instance", "item": "WAU:RT:BF2:Item"}
-
 class_dict = {"work_1": "http://id.loc.gov/ontologies/bibframe/Work", "work_2": "http://id.loc.gov/ontologies/bibframe/Work", "instance": "http://id.loc.gov/ontologies/bibframe/Instance", "item": "http://id.loc.gov/ontologies/bibframe/Item"}
 
-new_line_list = [
-"{\n", # 0
-"  \"data\": [\n", # 1
-"  ],\n", # 2
-"  \"user\": \"mcm104\",\n", # 3
-"  \"group\": \"washington\",\n", # 4
-"  \"types\": [\n", # 5
-"  ],\n", # 6
-"}\n" # 7
-]
+"""Functions"""
+
+def add_rt_triple(entity, resource):
+	"""Loads RDF/XML into graph, adds triple for resource template, and outputs new graph in JSON-LD"""
+	# create output dir, if it does not already exist
+	if not os.path.exists(f'../output/{currentDate}/{entity}_json'):
+		print(f">> Creating {entity}_json directory")
+		os.makedirs(f'../output/{currentDate}/{entity}_json')
+
+	# create new empty graph
+	g = Graph()
+	# bind namespaces to graph
+	g.bind('bf', bf)
+	g.bind('bflc', bflc)
+	g.bind('madsrdf', madsrdf)
+	g.bind('owl', owl)
+	g.bind('sin', sin)
+	g.bind('skos', skos)
+	# load RDF/XMl
+	g.load(f'file:../output/{currentDate}/{entity}_xml/{resource}', format='xml')
+
+	# add RT triple
+	g.add((URIRef(f"https://api.stage.sinopia.io/resource/{resource.split('.')[0]}"), sin.hasResourceTemplate, Literal(f"{rt_dict[entity]}")))
+
+	# serialize as JSON-LD
+	g.serialize(destination=f'../output/{currentDate}/{entity}_json/{resource}', format='json-ld')
+
+def edit_json(entity, resource):
+	"""Prepare JSON-LD for upload into Sinopia"""
+	with open(f'../output/{currentDate}/{entity}_json/{resource}', 'r') as input_file:
+		original_data = json.load(input_file)
+		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
+		resource_id = resource.split('.')[0]
+		resource_iri = f"https://api.stage.sinopa.io/resource/{resource_id}"
+		sinopia_format = json.dumps({"data": original_data, "user": "mcm104", "group": "washington", "templateId": rt_dict[entity], "types": [ class_dict[entity] ], "id": resource_id, "uri": resource_iri, "timestamp": currentTime})
+
+	with open(f'../output/{currentDate}/{entity}_json/{resource}', 'w') as output_file:
+		output_file.write(sinopia_format)
 
 ###
 
-num_of_resources = len(work_1List) + len(work_2List) + len(instanceList) + len(itemList)
-
-start = timer()
-print("...\nEditing JSON-LD for upload to Sinopia")
-bar = Bar(max=num_of_resources, suffix='%(percent)d%%') # progress bar
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		output_list = []
-
-		for new_line in new_line_list[0:2]:
-			output_list.append(new_line)
-
-		with open(f'../output/{currentDate}/{entity}_json/{resource}', 'r') as original_file:
-			max_line_count = 0
-			for line in original_file:
-				max_line_count += 1
-			max_line_count = max_line_count - 1
-		with open(f'../output/{currentDate}/{entity}_json/{resource}', 'r') as original_file:
-			line_count = 0
-			for line in original_file:
-				if line_count == 0:
-					pass
-				elif line_count == max_line_count:
-					pass
-				else:
-					output_list.append(f"  {line}")
-				line_count += 1
-
-		for new_line in new_line_list[2:5]:
-			output_list.append(new_line)
-
-		rt = rt_dict[entity]
-		output_list.append(f"  \"templateId\": \"{rt}\",\n")
-
-		output_list.append(new_line_list[5])
-
-		class_IRI = class_dict[entity]
-		output_list.append(f"    \"{class_IRI}\"\n")
-		output_list.append(new_line_list[6])
-
-		resource_id = resource.split('.')[0]
-		output_list.append(f"  \"id\": \"{resource_id}\",\n")
-
-		resource_uri = f"https://api.stage.sinopia.io/resource/{resource_id}"
-		output_list.append(f"  \"uri\": \"{resource_uri}\",\n")
-
-		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
-		output_list.append(f"  \"timestamp\": \"{currentTime}\"\n")
-
-		output_list.append(new_line_list[7])
-
-		with open(f'../output/{currentDate}/{entity}_json/{resource}', 'w') as edited_file:
-			for line in output_list:
-				edited_file.write(line)
-
-		bar.next()
-end = timer()
-bar.finish()
-
-print(f"Elapsed time: {round((end - start), 1)} s")
+		add_rt_triple(entity, resource)
+		edit_json(entity, resource)
