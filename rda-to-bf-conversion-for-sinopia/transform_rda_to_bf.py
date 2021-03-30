@@ -118,12 +118,12 @@ def transform_works(workList, currentDate):
 	for work in workList:
 		# identify RDA ID and IRI
 		RDA_ID = work.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
+		RDA_IRI = f"https://api.stage.sinopia.io/resource/{RDA_ID}"
 		work_filepath = f"/home/mcm104/rml/input/{currentDate}/work/{RDA_ID}" # use RDA ID to make path # needs editing to be universal
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
+		BF_IRI = f"https://api.stage.sinopia.io/resource/{BF_ID}"
 
 		# record equivalence in dictionary
 		rda_bf_dict[RDA_ID] = BF_ID
@@ -193,12 +193,12 @@ def transform_expressions(expressionList, currentDate):
 	for expression in expressionList:
 		# identify RDA ID and IRI
 		RDA_ID = expression.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
+		RDA_IRI = f"https://api.stage.sinopia.io/resource/{RDA_ID}"
 		expression_filepath = f"/home/mcm104/rml/input/{currentDate}/expression/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
+		BF_IRI = f"https://api.stage.sinopia.io/resource/{BF_ID}"
 
 		# record equivalence in dictionary
 		rda_bf_dict[RDA_ID] = BF_ID
@@ -268,12 +268,12 @@ def transform_manifestations(manifestationList, currentDate):
 	for manifestation in manifestationList:
 		# identify RDA ID and IRI
 		RDA_ID = manifestation.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
+		RDA_IRI = f"https://api.stage.sinopia.io/resource/{RDA_ID}"
 		manifestation_filepath = f"/home/mcm104/rml/input/{currentDate}/manifestation/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
+		BF_IRI = f"https://api.stage.sinopia.io/resource/{BF_ID}"
 
 		# record equivalence in dictionary
 		rda_bf_dict[RDA_ID] = BF_ID
@@ -343,12 +343,12 @@ def transform_items(itemList, currentDate):
 	for item in itemList:
 		# identify RDA ID and IRI
 		RDA_ID = item.split('.')[0]
-		RDA_IRI = f"https://api.sinopia.io/resource/{RDA_ID}"
+		RDA_IRI = f"https://api.stage.sinopia.io/resource/{RDA_ID}"
 		item_filepath = f"/home/mcm104/rml/input/{currentDate}/item/{RDA_ID}" # use RDA ID to make path
 
 		# generate new BF ID and IRI
 		BF_ID = uuid.uuid4()
-		BF_IRI = f"https://api.sinopia.io/resource/{BF_ID}"
+		BF_IRI = f"https://api.stage.sinopia.io/resource/{BF_ID}"
 
 		# record equivalence in dictionary
 		rda_bf_dict[RDA_ID] = BF_ID
