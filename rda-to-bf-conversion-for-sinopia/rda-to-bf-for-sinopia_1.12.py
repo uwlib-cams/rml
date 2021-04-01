@@ -28,12 +28,10 @@ import type_dates
 """Putting IRIs into blank nodes"""
 import move_IRIs_into_bnodes
 
-"""Reserialize BIBFRAME in XML as JSON-LD"""
-import serialize_xml_json
-
 """Prepare JSON-LD for upload into Sinopia"""
 import edit_json
 
-# post each file to Sinopia
+"""Upload into Sinopia"""
+import post_to_sinopia
 
 print("...\nDone!")
