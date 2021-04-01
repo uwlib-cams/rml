@@ -35,11 +35,6 @@ class_dict = {"work_1": "http://id.loc.gov/ontologies/bibframe/Work", "work_2": 
 
 def add_rt_triple(entity, resource):
 	"""Loads RDF/XML into graph, adds triple for resource template, and outputs new graph in JSON-LD"""
-	# create output dir, if it does not already exist
-	if not os.path.exists(f'../output/{currentDate}/{entity}_json'):
-		print(f">> Creating {entity}_json directory")
-		os.makedirs(f'../output/{currentDate}/{entity}_json')
-
 	# create new empty graph
 	g = Graph()
 	# bind namespaces to graph
@@ -72,7 +67,19 @@ def edit_json(entity, resource):
 
 ###
 
+print("...\nConverting into JSON-LD for upload into Sinopia")
+start = timer()
 for entity in resource_dict.keys():
+	# create output dir, if it does not already exist
+	if not os.path.exists(f'../output/{currentDate}/{entity}_json'):
+		print(f">> Creating {entity}_json directory")
+		os.makedirs(f'../output/{currentDate}/{entity}_json')
+		
+	bar = Bar(f'>> Converting {entity} files', max=len(resource_dict[entity]), suffix='%(percent)d%%') # progress bar
 	for resource in resource_dict[entity]:
 		add_rt_triple(entity, resource)
 		edit_json(entity, resource)
+		bar.next()
+	bar.finish()
+end = timer()
+print(f"Elapsed time: {round((end - start), 2)} s")
