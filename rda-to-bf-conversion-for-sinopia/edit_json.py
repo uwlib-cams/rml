@@ -59,7 +59,7 @@ def edit_json(entity, resource):
 		original_data = json.load(input_file)
 		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
 		resource_id = resource.split('.')[0]
-		resource_iri = f"https://api.stage.sinopa.io/resource/{resource_id}"
+		resource_iri = f"https://api.stage.sinopia.io/resource/{resource_id}"
 		sinopia_format = json.dumps({"data": original_data, "user": "mcm104", "group": "washington", "templateId": rt_dict[entity], "types": [ class_dict[entity] ], "id": resource_id, "uri": resource_iri, "timestamp": currentTime})
 
 	with open(f'../output/{currentDate}/{entity}_json/{resource}', 'w') as output_file:
@@ -74,7 +74,7 @@ for entity in resource_dict.keys():
 	if not os.path.exists(f'../output/{currentDate}/{entity}_json'):
 		print(f">> Creating {entity}_json directory")
 		os.makedirs(f'../output/{currentDate}/{entity}_json')
-		
+
 	bar = Bar(f'>> Converting {entity} files', max=len(resource_dict[entity]), suffix='%(percent)d%%') # progress bar
 	for resource in resource_dict[entity]:
 		add_rt_triple(entity, resource)
