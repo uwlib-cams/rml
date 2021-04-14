@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/60151f40-658d-45d3-ad5e-fc55710ecf8a> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2012-12-10"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:02:16+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/f61f60b4-1a3c-464a-a5b4-15ac766280c7> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"Written about 1805. First published in 1871. Now reprinted from the manuscript.\""@eng ;
+            bf:noteType "note on expression"@en ] ;
+    bf:originDate "1925-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Flirtatious and recently widowed, Lady Susan Vernon seeks a new and advantageous marriage for herself, and at the same time attempts to push her daughter into marriage with a man she detests. The plot unfolds through letters exchanged among Lady Susan, her family, friends, and enemies."@eng ] ;
+    bf:supplementaryContent [ a bf:SupplementaryContent ;
+            rdfs:label "Notes on \"Variations, &c., in the manuscript\" and \"Variations in the edition of 1871\": 14 unnumbered pages at end."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Lady Susan"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/b1e9039f-d398-4d88-bf47-4e85591ee3ba> ;
+    skos:prefLabel "Austen, Jane, 1775-1817. Lady Susan. English. 1925"@eng .
+

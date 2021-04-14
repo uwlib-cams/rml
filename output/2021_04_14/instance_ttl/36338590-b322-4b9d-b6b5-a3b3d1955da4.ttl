@@ -1,0 +1,34 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/36338590-b322-4b9d-b6b5-a3b3d1955da4> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-22"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1047>,
+        <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    bf:dimensions "103 x 66 cm, on sheet 192 x 79 cm rolled to 79 x 5 cm in diameter"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 scroll"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/dc4cbeca-dffa-49f4-a885-82c6d52af533> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "秦百蘭"@eng ],
+                <http://id.loc.gov/rwo/agents/no2016169387> ;
+            bf:date "乙未 [2015]"^^xsd:gYear ] ;
+    bf:responsibilityStatement "百蘭"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "苏小妹"@chi ] ;
+    owl:sameAs <https://api.sinopia.io/resource/3a60f2a8-47e4-48d0-9722-3c5582b72a41> .
+

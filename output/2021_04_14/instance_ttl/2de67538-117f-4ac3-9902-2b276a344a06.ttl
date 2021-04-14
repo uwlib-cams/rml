@@ -1,0 +1,53 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2de67538-117f-4ac3-9902-2b276a344a06> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-20"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "© 1990"^^xsd:gYear ;
+    bf:dimensions "23 cm"@eng ;
+    bf:editionStatement "Revised and updated by Edward F. Willett"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vi, 70 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "Y 1.1/7:101-139" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/6c93d766-3d94-42ba-9388-d056bac1bf8c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"Bicentennial edition, 1789-1989\"--Cover"@eng ],
+        [ a bf:Note ;
+            rdfs:label "\"November 20, 1989.\""@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "United States Government Printing Office"@eng ],
+                <http://id.loc.gov/rwo/agents/n79143109> ;
+            bf:date "1990-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : United States Government Printing Office, 1990"@eng ;
+    bf:responsibilityStatement "Presented by Mr. Brooks"@eng,
+        "Revised and updated by Edward F. Willett"@eng ;
+    bf:seriesEnumeration "101-139"@zxx ;
+    bf:seriesStatement "Document / 101st Congress, 2d session, House of Representatives ; no. 101-139"@eng,
+        "House document (United States. Congress. House)"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "How our laws are made"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/3e8e8d5b-d6aa-4050-9470-8dc0f286fa94> .
+

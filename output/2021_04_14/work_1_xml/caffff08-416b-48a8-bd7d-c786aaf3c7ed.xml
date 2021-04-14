@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N86bc4863b4e04181bfdbd9482afd6216">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-22</bf:creationDate>
+    <bf:status rdf:nodeID="Nfdbbd949831c469988e5eb346b5a7851"/>
+    <bf:generationProcess rdf:nodeID="N23ffce760deb4f24a1e63e446eebeeb1"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID xml:lang="eng">aentze</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N098994cc58e54ab090fbe537a0c8f78c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic"/>
+    <rdfs:label>Men</rdfs:label>
+    <bflc:CreatorCharacteristic>Men</bflc:CreatorCharacteristic>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90bb6bc465a84d5f804ba1ce0c36f618">
+    <madsrdf:authoritativeLabel>Dracula, Count (Fictious character)</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:Authority>Dracula, Count (Fictious character)</madsrdf:Authority>
+    <rdfs:label>Dracula, Count (Fictious character)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/caffff08-416b-48a8-bd7d-c786aaf3c7ed">
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85141948"/>
+    <bf:contribution rdf:nodeID="N5e4ea937d39549858d9692c71ea73638"/>
+    <bf:adminMetadata rdf:nodeID="N86bc4863b4e04181bfdbd9482afd6216"/>
+    <bflc:creatorCharacteristic rdf:nodeID="N098994cc58e54ab090fbe537a0c8f78c"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:title rdf:nodeID="N5b657f5e74564cb98b9589cbc2244fbb"/>
+    <skos:prefLabel xml:lang="eng">Stoker, Bram, ǂd 1847-1912. Dracula.</skos:prefLabel>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1897-01-01</bf:originDate>
+    <bf:subject rdf:nodeID="N90bb6bc465a84d5f804ba1ce0c36f618"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026373"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/fb913d0c-e046-454d-ba60-8e4e1bd5fe90"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026360"/>
+    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2016060212"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23ffce760deb4f24a1e63e446eebeeb1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-14T13:58:31+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N39fce80a9df84d40a213e8a6f9112d4a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Stoker, Bram, ǂd 1847-1912</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e4ea937d39549858d9692c71ea73638">
+    <bf:agent rdf:nodeID="N39fce80a9df84d40a213e8a6f9112d4a"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b657f5e74564cb98b9589cbc2244fbb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Dracula.</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdbbd949831c469988e5eb346b5a7851">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

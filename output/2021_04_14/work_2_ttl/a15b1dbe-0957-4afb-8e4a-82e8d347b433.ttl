@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a15b1dbe-0957-4afb-8e4a-82e8d347b433> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-17"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:02:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Girard, Simone-Elise" ],
+                [ a bf:Agent ;
+                    rdfs:label "Sevigny, Chloë" ],
+                [ a bf:Agent ;
+                    rdfs:label "Zahn, Steve, 1968-" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/act> ] ;
+    bf:duration "93 min."@eng ;
+    bf:expressionOf <https://api.sinopia.io/resource/ac42984f-1697-4137-9640-db7d69a23db1> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "A biographical drama based on the career of Stephen Glass, a popular writer for such magazines as 'Rolling Stone', 'Harper's Bazaar' and 'George'. But by the mid 1990's, at the height of his career as staff writer for 'The new republic' under lead editor Chuck Lane, strange inconsistencies in his stories began to surface that called into question his professionalism."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/cf9aaa08-ae28-465c-85c3-75cc4584f182> ;
+    skos:prefLabel "Shattered glass (Motion picture). English"@eng .
+

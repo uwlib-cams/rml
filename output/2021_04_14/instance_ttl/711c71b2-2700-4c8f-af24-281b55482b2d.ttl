@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/711c71b2-2700-4c8f-af24-281b55482b2d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-24"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:07:13+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2009."^^xsd:gYear ;
+    bf:dimensions "24 cm"@eng ;
+    bf:editionStatement "First edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 286 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 978-0-06-155841-2" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/d47dc700-2382-481c-a7cd-9222b0e1f991> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Collins"@eng ],
+                [ a bf:Agent ;
+                    rdfs:label "Smithsonian Books"@eng ],
+                <http://id.loc.gov/rwo/agents/n86102676> ;
+            bf:date "[2009]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    bf:provisionActivityStatement "New York, NY :  Smithsonian Books :  Collins, [2009]"@eng ;
+    bf:responsibilityStatement "Curtis Ebbesmeyer and Eric Scigliano"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Flotsametrics and the floating world"@eng ;
+            bf:subtitle "how one man's obsession with runaway sneakers and rubber ducks revolutionized ocean science"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/e5d344ba-83d2-443c-92e3-7ca7546674f3> .
+

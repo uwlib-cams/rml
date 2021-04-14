@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5ac030c1-c85a-4ab1-a60d-d44d76c45cde> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:03:31+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (125 pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44725> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/08883560-08dd-4bc8-8009-c0d14c499428> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ;
+            bf:date "[2019]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle]"@eng ] ] ;
+    bf:provisionActivityStatement "[Seattle] : [University of Washington Libraries], [2019]"@eng ;
+    bf:responsibilityStatement "Yue Shi"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Species from feces"@eng ;
+            bf:subtitle "decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/0377c12e-91af-43ee-8e04-d2e8f7915be0> .
+

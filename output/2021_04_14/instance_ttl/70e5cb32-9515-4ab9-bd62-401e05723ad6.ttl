@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/70e5cb32-9515-4ab9-bd62-401e05723ad6> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-24"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:03:42+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019"^^xsd:gYear ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:editionStatement "Third edition"@eng ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://www-jstor-org.offcampus.lib.washington.edu/stable/j.ctvndv9kx> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/52b3db8d-39c0-4629-95ef-ae507ae39036> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Description based on online resource; title from title page (Safari, viewed October 16, 2019)."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "IT Governance Publishing"@eng ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Ely, Cambridgeshire, United Kingdom"@eng ] ] ;
+    bf:provisionActivityStatement "Ely, Cambridgeshire, United Kingdom : IT Governance Publishing, [2019]"@eng ;
+    bf:responsibilityStatement "Alan Calder, Steve G. Watkins"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Information security risk management for ISO 27001/ISO 27002"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/0cd6f58e-faac-4a54-a962-2edb8fed4592> .
+

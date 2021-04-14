@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/82ef4723-453d-4328-8bc1-7d3eb5238d21> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-02-19"^^xsd:date ;
+            bf:creationDate "2020-02-18"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:57:18+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Memory (Philosophy)--History" ;
+            madsrdf:Authority "Memory (Philosophy)--History" ;
+            madsrdf:authoritativeLabel "Memory (Philosophy)--History" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Две метафоры памяти"@rus ],
+        [ a bf:Title ;
+            bf:mainTitle "Dve metafory pami︠a︡ti"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/b868229b-4177-461a-b731-f36b95a73142> ;
+    skos:prefLabel "Malyshkin, E. V. (Evgeniĭ Vitalʹevich). Dve metafory pami︠a︡ti"@rus .
+

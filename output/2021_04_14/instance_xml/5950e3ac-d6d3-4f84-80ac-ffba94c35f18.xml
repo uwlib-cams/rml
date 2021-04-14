@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N00a7b596194f481aaf7b96b7e3c4fe94">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Archaia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09841696a81445d294288f7500c88724">
+    <bflc:catalogerID xml:lang="eng">jlee70</bflc:catalogerID>
+    <bf:generationProcess rdf:nodeID="N1ed2972793b84f498e636e9777a7a074"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-07</bf:creationDate>
+    <bf:status rdf:nodeID="Nea755c7c11ce4cdb9ad96ee0d3bd2358"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na5c092322aef4a6ebc3cce922e324787">
+    <rdf:value>ISBN 9781684151295</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fbd46ced9f44131bb562550bf12faa1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Archaia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9cc92de10424aaba90f14585d689c7a">
+    <bf:place rdf:nodeID="Nc6f2aed52e924d718eeef44de75ed5c8"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018-01-01</bf:date>
+    <bf:agent rdf:nodeID="N2fbd46ced9f44131bb562550bf12faa1"/>
+    <bf:agent rdf:nodeID="N00a7b596194f481aaf7b96b7e3c4fe94"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc6f2aed52e924d718eeef44de75ed5c8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Los Angeles, CA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/5950e3ac-d6d3-4f84-80ac-ffba94c35f18">
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:provisionActivityStatement xml:lang="eng">Los Angeles, CA : Archaia, [2018]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement xml:lang="eng">David Jesus Vignolli</bf:responsibilityStatement>
+    <bf:dimensions xml:lang="zxx">24 cm</bf:dimensions>
+    <bf:adminMetadata rdf:nodeID="N09841696a81445d294288f7500c88724"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/a9314f04-36e9-4240-a702-7d30a5daa1cb"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©2018</bf:copyrightDate>
+    <bf:identifiedBy rdf:nodeID="Na5c092322aef4a6ebc3cce922e324787"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:title rdf:nodeID="Nc02a315425754356abe40b9052124a08"/>
+    <bf:provisionActivity rdf:nodeID="Na9cc92de10424aaba90f14585d689c7a"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc02a315425754356abe40b9052124a08">
+    <bf:mainTitle xml:lang="eng">A girl in the Himalayas</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea755c7c11ce4cdb9ad96ee0d3bd2358">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ed2972793b84f498e636e9777a7a074">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-14T14:05:45+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cfb0c653-ebe5-4247-8a05-3846f8969091> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "0401-01-01"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:34+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:agent ;
+                    rdfs:label "Shen, Juan" ;
+                    bf:agent "Shen, Juan" ] ] ;
+    bf:originDate "2019-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79091151> ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh85030965> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Road to the invigoration of private international law"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Guo ji si fa de zhen yang zhi lu"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "国际私法的振扬之路"@chi ] ;
+    owl:sameAs <https://api.sinopia.io/resource/994efbab-6adb-4953-95e8-9a323436829f> ;
+    skos:altLabel "Road to the invigoration of private international law"@eng,
+        "国际私法的振扬之路"@eng ;
+    skos:prefLabel "Guo ji si fa de zhan yang zhi lu"@chi .
+

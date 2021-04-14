@@ -1,0 +1,57 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/11c1fa35-2353-4abe-a44a-f5112f02725d> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060737> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:57:47+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026217>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/subjects/sh85001072> ;
+    bf:hasDerivative <http://id.loc.gov/authorities/names/n2012059485>,
+        <http://id.loc.gov/authorities/names/n82020262>,
+        <http://id.loc.gov/authorities/names/n94107061>,
+        <http://id.loc.gov/authorities/names/no2004064962>,
+        <http://id.loc.gov/authorities/names/no2014126980>,
+        <http://id.loc.gov/authorities/names/no2019178429>,
+        <http://id.loc.gov/authorities/names/no98051324> ;
+    bf:historyOfWork "Le tour du monde en quatre-vingts jours is an adventure novel by the French writer Jules Verne, published in 1872."@eng ;
+    bf:identifiedBy <http://dbpedia.org/resource/Around_the_World_in_Eighty_Days>,
+        <http://id.worldcat.org/fast/1361614>,
+        <http://viaf.org/viaf/174954981>,
+        <http://www.wikidata.org/entity/Q1219561> ;
+    bf:originDate "1872-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79006404> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Wagers--Fiction" ;
+            madsrdf:Authority "Wagers--Fiction" ;
+            madsrdf:authoritativeLabel "Wagers--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Fogg, Phileas (Fictitious character)--Fiction" ;
+            madsrdf:Authority "Fogg, Phileas (Fictitious character)--Fiction" ;
+            madsrdf:authoritativeLabel "Fogg, Phileas (Fictitious character)--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Voyages around the world--Fiction" ;
+            madsrdf:Authority "Voyages around the world--Fiction" ;
+            madsrdf:authoritativeLabel "Voyages around the world--Fiction" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Tour du monde en quatre-vingts jours"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Tour du monde en 80 jours"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/da71d823-03f2-4122-8d5d-3e38df134370> ;
+    skos:prefLabel "Verne, Jules, ǂd 1828-1905. Tour du monde en quatre-vingts jours"@eng .
+

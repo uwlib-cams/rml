@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/9249e291-2c25-422d-a9d1-72c8990f0380> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-27"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:52+00:00"^^xsd:dateTime ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vi, 122 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/4700a65e-2057-499a-ad6a-2147a0f95da4> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Macmillan & Co. Ltd"@eng ] ;
+            bf:date "1945-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    bf:responsibilityStatement "a play by Gordon Glennon"@eng,
+        "from the novel by Jane Austen"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Emma"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/4806ea2e-ac6f-4177-8162-20e922436a11> .
+

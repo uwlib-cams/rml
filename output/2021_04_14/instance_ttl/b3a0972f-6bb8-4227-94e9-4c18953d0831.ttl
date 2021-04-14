@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b3a0972f-6bb8-4227-94e9-4c18953d0831> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:07+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©2016"^^xsd:gYear ;
+    bf:dimensions "21 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "320 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 9780143131144 (hardback)" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/d67b344f-75dc-4a5a-8f46-c9c93f647fed> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally published in UK under title: The secret lives of colour."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Penguin Books"@eng ] ;
+            bf:date "2017-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, New York"@eng ] ] ;
+    bf:provisionActivityStatement "New York, New York : Penguin Books, 2017"@eng ;
+    bf:responsibilityStatement "Kassia St. Clair"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The secret lives of color"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/a42814da-e980-4324-ba0a-0f4299f439af> .
+

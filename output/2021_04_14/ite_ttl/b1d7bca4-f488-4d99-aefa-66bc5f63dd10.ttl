@@ -1,0 +1,18 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://api.stage.sinopia.io/resource/b1d7bca4-f488-4d99-aefa-66bc5f63dd10> a bf:Item ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "GT1050" ;
+            bf:itemPortion ".R885 2010" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "832958432905893425823-4"@zxx ] ;
+    bf:itemOf <https://api.sinopia.io/resource/2aa6dab2-aad2-48aa-8ad5-e6df736da106> ;
+    bf:physicalLocation "suzzallen"@zxx ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "szstx"@zxx ] ;
+    owl:sameAs <https://api.sinopia.io/resource/1c611ed4-bfd1-4c57-b1c5-114a4bfc1425> .
+

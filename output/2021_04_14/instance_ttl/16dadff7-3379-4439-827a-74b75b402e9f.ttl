@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/16dadff7-3379-4439-827a-74b75b402e9f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:07:04+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1993"^^xsd:gYear ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvi, 271 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0-8133-1730-4" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/9b697edf-b073-49d7-bb42-0604ee38eb62> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Westview Press"@eng ] ;
+            bf:date "1993-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boulder"@eng ] ] ;
+    bf:provisionActivityStatement "Boulder: Westview Press, 1993"@eng ;
+    bf:responsibilityStatement "He Liyi with Claire Anne Chik"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mr. China's son"@eng ;
+            bf:subtitle "a villager's life"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d81ded4c-4502-4ba8-abc3-d0b9586d5169> .
+

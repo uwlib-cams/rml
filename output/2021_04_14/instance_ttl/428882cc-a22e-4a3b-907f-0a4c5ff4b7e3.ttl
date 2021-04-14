@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/428882cc-a22e-4a3b-907f-0a4c5ff4b7e3> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "CC83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-26"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/isbd>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "11 x 15 cm"@eng ;
+    bf:editionStatement "Shohan"@jpn,
+        "初版"@jpn ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "2, 104 pages, 72 pages of color plates"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/e190ee17-a0a1-4d0f-bbf9-1fb4fe967c35> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Sanseidō (Chiyoda-ku, Tokyo, Japan)" ],
+                [ a bf:Agent ;
+                    rdfs:label "Sanseidō"@jpn ],
+                [ a bf:Agent ;
+                    rdfs:label "三省堂"@jpn ] ;
+            bf:date "Shōwa 17 [1942]"^^xsd:gYear,
+                "昭和17 [1942]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Tōkyō"@jpn ],
+                [ a bf:Place ;
+                    rdfs:label "東京"@jpn ] ] ;
+    bf:responsibilityStatement "Imazeki Rokuya cho"@jpn,
+        "今關六也著"@jpn ;
+    bf:seriesStatement "Nature guide"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Genshoku kinoko"@jpn,
+                "原色きのこ"@jpn ;
+            bf:subtitle "Kinoko no saishū to miwakekata"@jpn,
+                "茸の採集と見分け方"@jpn ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c546397d-c96b-486a-b1cc-45aeaee24d78> .
+

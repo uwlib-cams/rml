@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/d8a8c169-2c9f-4521-897c-ee692ec9f873> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:08+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026165> ;
+    bf:originDate "1983-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Marine biology -- North Pacific Ocean" ;
+            madsrdf:Authority "Marine biology -- North Pacific Ocean" ;
+            madsrdf:authoritativeLabel "Marine biology -- North Pacific Ocean" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Seashore biology -- Northwest, Pacific" ;
+            madsrdf:Authority "Seashore biology -- Northwest, Pacific" ;
+            madsrdf:authoritativeLabel "Seashore biology -- Northwest, Pacific" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Seashore life of the northern Pacific coast"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/7f1ae484-c6e1-424e-9e18-a91e1c345161> ;
+    skos:prefLabel "Kozloff, Eugene N. Seashore life of the northern Pacific Coast"@eng .
+

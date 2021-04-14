@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2f5373ff-ee2d-431a-b2da-71aba975ebf3> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:00:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Attla, Catherine" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/9e8b7291-5e09-40dc-b9fd-3380a06f7fc2> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "LCCN 88011466" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language [ a bf:Language ;
+            rdfs:label "Athapaskan" ],
+        <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Chiefly color"@eng ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "1988-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Text about life cycle of moose and its place in Athapaskan culture"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/69fc88d5-620e-4d6d-981d-4d24f011f0d0> ;
+    skos:prefLabel "Hoshino, Michio, 1952-1996. Moose. English"@eng .
+
+[] a bf:Role ;
+    rdfs:label "writer of foreword"@en .
+

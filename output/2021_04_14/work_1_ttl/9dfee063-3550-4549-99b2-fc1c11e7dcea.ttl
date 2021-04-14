@@ -1,0 +1,34 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/9dfee063-3550-4549-99b2-fc1c11e7dcea> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "ries07"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:24+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lance, Yris T." ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Ph.D. University of Washington 2019"@eng ;
+            bf:noteType "dissertation or thesis information"@en ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Equity, humility, and culturally responsive education in health professional schools"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/8b96753d-1f7e-498f-b102-76faa7fc1061> ;
+    skos:prefLabel "Equity, humility, and culturally responsive education in health professional schools / Yris T. Lance."@eng .
+

@@ -1,0 +1,101 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/8cdc9af1-5dff-4af4-9121-5193dcb1174c> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060372> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2020-04-23"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:50+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ],
+        [ a bf:Dissertation ;
+            bf:date "2019-01-01"^^xsd:gYear ],
+        [ a bf:Dissertation ;
+            bf:degree "Ph. D."@eng ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Theses--Biology" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:originDate "2019-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:relatedTo [ a bf:Work ;
+            rdfs:label "Genetic resilience of a once endangered species, Tibetan antelope (Pantholops hodgsonii) / Yue Shi, Jiarui Chen, Jianping Su, Tongzuo Zhang, Samuel K. Wasser -- Shift of maternal gut microbiome of Tibetan antelope (Pantholops hodgsonii) during the perinatal period / Yue Shi, Ziyan Miao, Jianping Su, Samuel K. Wasser -- Prey partitioning between sympatric canid species revealed by DNA metabarcoding / Yue Shi, Yves Hoareau, Ellie Reese, Samuel K. Wasser" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Chiru--Variation--Tibet, Plateau of" ;
+            madsrdf:Authority "Chiru--Variation--Tibet, Plateau of" ;
+            madsrdf:authoritativeLabel "Chiru--Variation--Tibet, Plateau of" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Chiru--Migration--Tibet, Plateau of" ;
+            madsrdf:Authority "Chiru--Migration--Tibet, Plateau of" ;
+            madsrdf:authoritativeLabel "Chiru--Migration--Tibet, Plateau of" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Chiru--Feces--Microbiology" ;
+            madsrdf:Authority "Chiru--Feces--Microbiology" ;
+            madsrdf:authoritativeLabel "Chiru--Feces--Microbiology" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Coyote--Food--Washington (State)" ;
+            madsrdf:Authority "Coyote--Food--Washington (State)" ;
+            madsrdf:authoritativeLabel "Coyote--Food--Washington (State)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Microbial diversity--Tibet, Plateau of" ;
+            madsrdf:Authority "Microbial diversity--Tibet, Plateau of" ;
+            madsrdf:authoritativeLabel "Microbial diversity--Tibet, Plateau of" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Chiru--Seasonal distribution--Tibet, Plateau of" ;
+            madsrdf:Authority "Chiru--Seasonal distribution--Tibet, Plateau of" ;
+            madsrdf:authoritativeLabel "Chiru--Seasonal distribution--Tibet, Plateau of" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Coyote--Feces--Washington (State)--Analysis" ;
+            madsrdf:Authority "Coyote--Feces--Washington (State)--Analysis" ;
+            madsrdf:authoritativeLabel "Coyote--Feces--Washington (State)--Analysis" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Animal population genetics--Tibet, Plateau of" ;
+            madsrdf:Authority "Animal population genetics--Tibet, Plateau of" ;
+            madsrdf:authoritativeLabel "Animal population genetics--Tibet, Plateau of" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Animal droppings--Analysis" ;
+            madsrdf:Authority "Animal droppings--Analysis" ;
+            madsrdf:authoritativeLabel "Animal droppings--Analysis" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Coyote--Ecology--Washington (State)" ;
+            madsrdf:Authority "Coyote--Ecology--Washington (State)" ;
+            madsrdf:authoritativeLabel "Coyote--Ecology--Washington (State)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Gray wolf--Feces--Washington (State)--Analysis" ;
+            madsrdf:Authority "Gray wolf--Feces--Washington (State)--Analysis" ;
+            madsrdf:authoritativeLabel "Gray wolf--Feces--Washington (State)--Analysis" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Chiru--Feces--Analysis" ;
+            madsrdf:Authority "Chiru--Feces--Analysis" ;
+            madsrdf:authoritativeLabel "Chiru--Feces--Analysis" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Gray wolf--Ecology--Washington (State)" ;
+            madsrdf:Authority "Gray wolf--Ecology--Washington (State)" ;
+            madsrdf:authoritativeLabel "Gray wolf--Ecology--Washington (State)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Fecal DNA--Analysis" ;
+            madsrdf:Authority "Fecal DNA--Analysis" ;
+            madsrdf:authoritativeLabel "Fecal DNA--Analysis" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Gray wolf--Food--Washington (State)" ;
+            madsrdf:Authority "Gray wolf--Food--Washington (State)" ;
+            madsrdf:authoritativeLabel "Gray wolf--Food--Washington (State)" ],
+        <http://id.loc.gov/authorities/subjects/sh85037964> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Species from feces"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/a806ceaa-4ec4-46c2-99c8-3f11c8cfa3dd> ;
+    skos:prefLabel "Shi, Yue, 1988- . Species from feces"@eng .
+

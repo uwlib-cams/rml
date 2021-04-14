@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/f8bd6adf-b20f-441d-9935-609982d38bb2> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@zxx ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-24"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:06+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:editionStatement "Изданіе третье"@rus ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/d751547e-6b39-45d4-b5a3-316c6443c489> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1005> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Изданіе Национальнаго Совѣта Евреевъ Сибири и Урала"@rus ] ;
+            bf:date "[1917?]-"^^xsd:gYearMonth ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Иркутскъ"@rus ] ],
+        [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Типо-Литографія Commercial Press"@rus ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Шанхай, Китай"@rus ] ] ;
+    bf:responsibilityStatement "М.Г. Айзенштадтъ и М.И. Дайхесъ"@rus,
+        "съ участіемъ художника академика М.Л. Маймона"@rus ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Nashimʺ di︠e︡ti︠a︡m"@rus ;
+            bf:mainTitle "Nashimʺ di︠e︡ti︠a︡m"@rus ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Нашим детям"@rus ;
+            bf:mainTitle "Нашим детям"@rus ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Nashim deti︠a︡m"@rus ;
+            bf:mainTitle "Nashim deti︠a︡m"@rus ],
+        [ a bf:Title ;
+            bf:mainTitle "Нашимъ дѣтям"@rus ;
+            bf:subtitle "хрестоматія на русскомъ языкѣ для еврейскихъ дѣтей въ школѣ и семьѣ"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/2616e60e-7a10-4141-b516-174173a1bde4> .
+

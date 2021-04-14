@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/0eff1e9a-3bcf-4c30-a842-733e8d98a068> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-20"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:55:43+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026111> ;
+    bf:originDate "2016-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/no2015137282>,
+        <https://api.sinopia.io/resource/405a2e4c-5de4-4307-af6b-b730a9690113> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Transport planes--Markings--Europe--Pictorial works" ;
+            madsrdf:Authority "Transport planes--Markings--Europe--Pictorial works" ;
+            madsrdf:authoritativeLabel "Transport planes--Markings--Europe--Pictorial works" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Transport planes--Europe--Identification--Pictorial works" ;
+            madsrdf:Authority "Transport planes--Europe--Identification--Pictorial works" ;
+            madsrdf:authoritativeLabel "Transport planes--Europe--Identification--Pictorial works" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Airlines--Europe--Identification--Pictorial works" ;
+            madsrdf:Authority "Airlines--Europe--Identification--Pictorial works" ;
+            madsrdf:authoritativeLabel "Airlines--Europe--Identification--Pictorial works" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Airplanes--Markings--Europe--Pictorial works" ;
+            madsrdf:Authority "Airplanes--Markings--Europe--Pictorial works" ;
+            madsrdf:authoritativeLabel "Airplanes--Markings--Europe--Pictorial works" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Lost airline colors of Europe"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Lost airline colours of Europe"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/61231191-9b85-4ba4-aa90-42a64e6bac9c> ;
+    skos:altLabel "Falcus, Matt. Lost airline colors of Europe"@eng ;
+    skos:prefLabel "Falcus, Matt. Lost airline colours of Europe"@eng .
+

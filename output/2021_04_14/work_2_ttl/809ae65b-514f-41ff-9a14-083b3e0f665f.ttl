@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/809ae65b-514f-41ff-9a14-083b3e0f665f> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-20"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:00:15+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/0846bf56-646a-41ef-8862-e956a39afd30> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "2018959433" ] ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references and index."@en ;
+            bf:noteType "note on expression"@en ] ;
+    bf:originDate "2018-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"Nanobiotechnology in agriculture is a new knowledge area that offers novel possibilities to achieve high productivity levels at manageable costs during the production and merchandising of crops. This book shows us how we can use the cutting-edge knowledge about agriculture, nanotechnology, and biotechnology to increase the agricultural productivity and shape a sustainable future in order to increase the social welfare in rural areas and preserve the environmental health. Specialists from several countries will provide their feedback on a range of relevant topics such as environment-friendly use of nanofertilisers, nanodevices, nano-food packaging, nanocoating and nanocarriers and their relationship with modern agriculture\"--Page 4 of cover."@en ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Agricultural nanobiotechnology"@en ] ;
+    owl:sameAs <https://api.sinopia.io/resource/4a9ec86c-8209-4ac2-8322-bfd27db73edd> ;
+    skos:prefLabel "Agricultural nanobiotechnology. English"@en .
+

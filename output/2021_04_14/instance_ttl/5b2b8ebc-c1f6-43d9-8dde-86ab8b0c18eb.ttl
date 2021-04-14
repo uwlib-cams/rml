@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5b2b8ebc-c1f6-43d9-8dde-86ab8b0c18eb> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:05:07+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 cm"@eng ;
+    bf:editionStatement "2 izd."@rus,
+        "2 изд."@rus ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "8 unnumbered pages"@eng ] ;
+    bf:hasReproduction <https://api.sinopia.io/resource/c34ae14b-8dee-4246-a2c9-f4dd8e72e171> ;
+    bf:instanceOf <https://api.sinopia.io/resource/cb157c6a-d604-4b64-86ca-b2a62f79da67> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Single signature stapled into publisher's color printed pictorial paper wrappers. Chromolithographs."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Also available online."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Cover title."@eng ] ;
+    bf:productionMethod <http://rdaregistry.info/termList/RDAproductionMethod/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "ОГИЗ--Молодая гвардия"@rus ],
+                [ a bf:Agent ;
+                    rdfs:label "OGIZ--Molodai︠a︡ gvardii︠a︡"@rus ] ;
+            bf:date "1931-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Leningrad]"@eng ] ] ;
+    bf:provisionActivityStatement "[Leningrad] : OGIZ--Molodai︠a︡ gvardii︠a︡, 1931."@rus,
+        "[Ленинград] : ОГИЗ--Молодая гвардия, 1931."@rus ;
+    bf:responsibilityStatement "ris. E. Charushin"@rus,
+        "рис. Е. Чарушин"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Raznye zveri"@rus,
+                "Разные звери"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/5a6b2877-a6a8-4529-a9dc-827b0e5c4123> .
+

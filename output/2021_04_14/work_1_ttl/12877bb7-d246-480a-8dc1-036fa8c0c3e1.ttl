@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/12877bb7-d246-480a-8dc1-036fa8c0c3e1> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "women" ;
+            bflc:CreatorCharacteristic "women" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-29"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:55:27+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "drama" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    bf:originDate "1919-01-01"^^xsd:gYear ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "women college graduates -- drama" ;
+            madsrdf:Authority "women college graduates -- drama" ;
+            madsrdf:authoritativeLabel "women college graduates -- drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "grandmothers -- drama" ;
+            madsrdf:Authority "grandmothers -- drama" ;
+            madsrdf:authoritativeLabel "grandmothers -- drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "wisdom -- drama " ;
+            madsrdf:Authority "wisdom -- drama " ;
+            madsrdf:authoritativeLabel "wisdom -- drama " ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I grant you three wishes"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/59122c7c-302b-4a95-9201-717356a1350b> ;
+    skos:prefLabel "Bridgham, Gladys Ruth. I grant you three wishes"@eng .
+

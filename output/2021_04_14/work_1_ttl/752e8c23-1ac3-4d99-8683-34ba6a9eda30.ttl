@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/752e8c23-1ac3-4d99-8683-34ba6a9eda30> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060814>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060815> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <http://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:54:37+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2016026096> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "This picture book depicts different animals, such as bears, reindeer, and wolves. Each animal is illustrated and named, but there is otherwise no text."@eng ] ;
+    bf:originDate "1931-01-01"^^xsd:gYear ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2007101022> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Raznye zveri"@rus,
+                "Разные звери"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Various animals"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/25a341e3-305a-49a9-8322-5a45a6227535> ;
+    skos:altLabel "Charushin, Evgeniĭ Ivanovich, 1901-1965. Разные звери"@rus ;
+    skos:prefLabel "Charushin, Evgeniĭ Ivanovich, 1901-1965. Raznye zveri"@rus .
+

@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/67be7009-de1f-4061-832a-70530d44c967> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-26"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:18+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "18 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "251 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/bb7310b3-876e-4b22-9714-d064a92c976f> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "ရန်အောင်စာပေ"@bur ] ;
+            bf:date "2004-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "ရန်ကုန်"@bur ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "ဆရာကြီးဦးရန်အောင် ရာပြည့်အထိမ်းအမှတ် ရန်အောင်"@bur ;
+            bf:subtitle "ဝတ္ထုတိုစု (၁)"@bur ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ : Vatthu tui cu (1)"@bur ;
+            bf:mainTitle "Cha rā Krīʺ Ū Ranʻ ʼOnʻ rā praññʻʹ ʼa thimʻʺ ʼa mhatʻ Ranʻ ʼOnʻ : Vatthu tui cu (1)"@bur ] ;
+    owl:sameAs <https://api.sinopia.io/resource/2c19725a-49ae-45bf-b776-95ce1dbda6b3> .
+

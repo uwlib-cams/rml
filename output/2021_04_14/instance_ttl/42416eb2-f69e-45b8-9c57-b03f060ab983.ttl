@@ -1,0 +1,59 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/42416eb2-f69e-45b8-9c57-b03f060ab983> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-22"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:05:23+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@eng ] ;
+    bf:firstIssue "May 1948"@eng,
+        "Volume 1, Number 1"@eng ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Quarterly"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://tai2.ntu.edu.tw/taiwania/> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "0372-333X" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/9662bd4d-b801-4fc2-af51-6d3c0f312ea2> ;
+    bf:issuance [ a bf:Issuance ;
+            rdfs:label "Periodicals" ] ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Some issues have subtitles: Sciences reports of plant biology, An International journal of plant science, or An International journal of life science"@eng ;
+            bf:noteType "title"@en ],
+        [ a bf:Note ;
+            rdfs:label "Annual, 1948-<1990>"@eng ;
+            bf:noteType "frequency"@en ],
+        [ a bf:Note ;
+            rdfs:label "No. 1-4 also called v. 1, no. 1-4; None published between Mar. 1950 to Oct. 1954 and Dec. 1955 to Dec. 1960"@eng ;
+            bf:noteType "numbering of sequence"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Dept. of Botany, College of Science, National Taiwan University"@eng ],
+                <http://id.loc.gov/rwo/agents/n88005780> ;
+            bf:date "1948-01-01"^^xsd:gYearMonth ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Taipei"@eng ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Taiwania"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi ;
+            bf:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi ],
+        [ a bf:VariantTitle ;
+            rdfs:label "國立臺灣大學理學院植物學系研究報告"@chi ;
+            bf:mainTitle "國立臺灣大學理學院植物學系研究報告"@chi ] ;
+    owl:sameAs <https://api.sinopia.io/resource/702c94e2-54c7-4f6b-b88a-6653830f8de7> .
+

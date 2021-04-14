@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a605dbe1-87d6-4ff4-a6ff-64bf0f974538> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-27"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (viii, 331 pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://catalog.hathitrust.org/api/volumes/oclc/4092659.html> ],
+        [ a bf:Item ;
+            bf:electronicLocator <https://archive.org/details/annodomini2000or00voge> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/301af59d-6041-4b93-a5c0-417ff3bde367> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Electronic reproduction. [S.l.] : HathiTrust Digital Library, 2011. MiAaHDL"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. http://purl.oclc.org/DLF/benchrepro0212 MiAaHDL"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Hutchinson"@eng ],
+                <http://id.loc.gov/rwo/agents/no2008101666> ;
+            bf:date "1889-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    bf:provisionActivityStatement "London : Hutchinson, 1889"@eng ;
+    bf:reproductionOf [ a bf:Instance ;
+            rdfs:label "Print version: Vogel, Julius, Sir, 1835-1899. Anno Domini 2000. Anno Domini 2000, or, Woman's destiny. London : Hutchinson, 1889 (OCoLC)52848017" ] ;
+    bf:responsibilityStatement "by Sir Julius Vogel, K.C.M.G."@eng ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Anno Domini 2000"@eng ;
+            bf:mainTitle "Anno Domini 2000"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Anno Domini 2000, or, Woman's destiny"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Woman's destiny"@eng ;
+            bf:mainTitle "Woman's destiny"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d63e7bde-70d1-4ee4-aac9-98640a91ac26> .
+

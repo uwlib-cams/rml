@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/d16d9402-ff68-4efb-bb6e-e774c2989ed8> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-13"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:07:31+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1997"^^xsd:gYear ;
+    bf:dimensions "26 x 12 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ii, 158 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0-89815-855-9" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/4174436d-237c-4efb-9c63-9712598b1e36> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Cover title: The great citrus book : a guide with recipes"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ten Speed Press"@eng ],
+                <http://id.loc.gov/rwo/agents/n2017061021> ;
+            bf:date "[1995]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Berkeley, California"@eng ] ] ;
+    bf:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1997]"@eng ;
+    bf:responsibilityStatement "Allen Susser"@eng,
+        "photography by Lois Ellen Frank"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Great citrus book : a guide with recipes"@eng ;
+            bf:mainTitle "Great citrus book : a guide with recipes"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "The great citrus book"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/f9e58e6a-db2a-479d-b909-94e59d26649c> .
+

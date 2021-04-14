@@ -1,0 +1,30 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5a22ab4d-1717-427e-9707-9fe0c5d58e89> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "0301-01-01"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:10:02+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352084783232"@eng ] ;
+    bf:itemOf <https://api.sinopia.io/resource/2bb3cc41-3143-46a6-a03d-cd90370cb87c> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:shelfMark [ a bf:ShelfMark ;
+            rdf:value "DVD EAL 3483"@eng ] ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "szmed"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/ea697eb6-2c07-460d-82e6-9f8de4f10755> .
+

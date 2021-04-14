@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/23e3114c-df3c-4b2e-a324-fd3137de53f3> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-12"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:34+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1048> ;
+    bf:dimensions "49 x 33 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 map"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/075b4292-2503-44ce-b4aa-0329f383e7b4> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes three diagrams and text on verso."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha"@jpn ] ;
+            bf:date "[1950]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Ōsaka"@jpn ] ] ;
+    bf:provisionActivityStatement "Ōsaka : Nihon Chizu Kabushiki Kaisha, Shōwa 25 [1950]"@jpn ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Ōsaka-shi annaizu"@jpn ;
+            bf:mainTitle "Ōsaka-shi annaizu"@jpn ],
+        [ a bf:Title ;
+            bf:mainTitle "大阪市案内圖"@jpn ] ;
+    owl:sameAs <https://api.sinopia.io/resource/bf12d559-1b55-4ff9-907d-5d64b42e020d> .
+

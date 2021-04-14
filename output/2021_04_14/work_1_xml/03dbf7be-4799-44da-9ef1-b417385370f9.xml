@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N854656d107d644c2a3d30bb13391135b">
+    <bf:generationProcess rdf:nodeID="N0e96fa6139904ef7be93f355489e3f99"/>
+    <bf:status rdf:nodeID="N754ef0f193024eeab70f809f7895f746"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-27</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID xml:lang="eng">cec23</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N754ef0f193024eeab70f809f7895f746">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N883a79f0ea4e4430a66f544043da4718">
+    <bf:mainTitle xml:lang="eng">test</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/03dbf7be-4799-44da-9ef1-b417385370f9">
+    <skos:prefLabel xml:lang="eng">test</skos:prefLabel>
+    <bf:adminMetadata rdf:nodeID="N854656d107d644c2a3d30bb13391135b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a03b533e-b56f-410a-aa93-ab002bfcea6d"/>
+    <bf:title rdf:nodeID="N883a79f0ea4e4430a66f544043da4718"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e96fa6139904ef7be93f355489e3f99">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-14T13:56:38+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

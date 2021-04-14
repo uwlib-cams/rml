@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2f606da7-2f2b-4949-b8fd-bdaef79718fc> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-26"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:58:52+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Komarova, Natalʹi︠a︡" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/4d698ee0-a251-404f-9ce1-6a0707c29b7b> ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh99001576> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/rus> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Cyrillic"@eng ] ;
+    bf:originDate "1998-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "An analysis of the first five years of the Ukrainian national government. The starting point is the thesis that the national consensus reached in the moment of independence was the result of an \"historic compromise\" between three basic forces: the national movement, the Communist Party nomenklatura, and the striking miners of Donbass. This consensus was destroyed by economic crisis and disagreement about the policy of Ukrainianization. Separatist tendencies arose in Donbass and Crimea. Government consolidation became possible only with the appearance in regional elites of Eastern Ukraine of pragmatic interest in the existence of a national goverment."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/0fdb4413-f1ca-4f14-b60b-06156c4e0c8d> ;
+    skos:altLabel "Wittkowsky, Andreas. Pi︠a︡tiletka bez plana"@eng ;
+    skos:prefLabel "Wittkowsky, Andreas. Fünf Jahre ohne Plan. Russian"@eng .
+

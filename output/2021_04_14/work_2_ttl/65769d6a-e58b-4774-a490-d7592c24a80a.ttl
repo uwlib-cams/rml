@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/65769d6a-e58b-4774-a490-d7592c24a80a> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2018-02-03"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:58:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Archer, Phil" ],
+                [ a bf:Agent ;
+                    rdfs:label "Baker, Tom" ],
+                [ a bf:Agent ;
+                    rdfs:label "Miller, Libby" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "writer of foreword"@en ],
+                <http://id.loc.gov/vocabulary/relators/wst> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/447eec01-25c2-46ec-a54a-f8c481a3e77a> ;
+    bf:illustrativeContent <http://rdaregistry.info/termList/IllusContent/1014> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2018-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Describes two technologies for RDF validation: Shape Expressions (ShEx) and Shapes Constraint Language (SHACL), the rationales for their designs, a comparison of the two, and some example applications."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Validating RDF data"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/0409bd3c-3127-479c-b698-43d31c06546c> .
+

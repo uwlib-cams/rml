@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/99924344-1147-42b5-a6d6-08c8fde4c6ec> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "tgis"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-06"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:02:30+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "Chiefly colour." ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1014> ;
+    bf:expressionOf <https://api.sinopia.io/resource/04eaa7b0-f0b3-4509-a5f9-2e032a3f3854> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "2016-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Over 29,000 images of Russian sites, mostly buildings constructed from the Middle Ages and the present. The original film photographs were taken between 1970 and 2008 by a single photographer, Professor William Craft Brumfield of Tulane University."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c965bfd3-c20b-4bda-bcc5-72d644920712> ;
+    skos:prefLabel "Brumfield, William Craft, 1944- William Brumfield Russian architecture digital collection. English"@eng .
+

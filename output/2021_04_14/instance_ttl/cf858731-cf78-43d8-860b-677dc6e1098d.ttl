@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cf858731-cf78-43d8-860b-677dc6e1098d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2019-12-02"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:05:31+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1929"^^xsd:gYear ;
+    bf:dimensions "23 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "320 pages"@eng ] ;
+    bf:hasReproduction [ a bf:Electronic ;
+            rdfs:label "Dodge, Mary Mapes, 1830-1905. Hans Brinker. Hans Brinker, or, The silver skates. Chicago : Albert Whitman & Company, Publishers, [1929] (OCoLC)1129260725" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/b535c9fb-e422-46e0-a547-d22755161f6e> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Albert Whitman & Company, Publishers"@eng ],
+                <http://id.loc.gov/rwo/agents/n78059801> ;
+            bf:date "1929-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Chicago"@eng ] ] ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/no2019178337> ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng,
+        "illustrated by Violet Moore Higgins"@eng ;
+    bf:seriesStatement "Albert Whitman's classics fully illustrated"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Hans Brinker"@eng ;
+            bf:mainTitle "Hans Brinker"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Silver skates"@eng ;
+            bf:mainTitle "Silver skates"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/799422b6-1e5a-4cd2-8587-19ce9e695dad> .
+

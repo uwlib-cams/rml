@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/60c28b74-f765-45fd-b1f2-23d8b2e0457c> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:01+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1995"^^xsd:gYear ;
+    bf:dimensions "26 x 11 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "x, 149 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0-89815-688-2" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/bb9ba7dc-0716-4d90-9149-58f950342a55> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Subtitle on cover: A handbook with recipes"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ten Speed Press"@eng ],
+                <http://id.loc.gov/rwo/agents/n2017061021> ;
+            bf:date "[1995]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Berkeley, California"@eng ] ] ;
+    bf:provisionActivityStatement "Berkeley, California : Ten Speed Press, [1995]"@eng ;
+    bf:responsibilityStatement "Norman Van Aken with John Harrisson"@eng,
+        "photography by Lois Ellen Frank"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            rdfs:label "Exotic fruit"@eng ;
+            bf:mainTitle "Exotic fruit"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "The great exotic fruit book"@eng ;
+            bf:subtitle "a handbook of tropical and subtropical fruits, with recipes"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/9849909f-60f8-4b89-81a3-a9c1d686c23e> .
+

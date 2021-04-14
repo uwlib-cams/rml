@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/ee1e72ec-cfb3-4fc6-a7b0-07cf5baf38b1> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:05:42+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2015"^^xsd:gYear ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (vii, 196 pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/33106> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "OCLC 910922977" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/771af492-56a3-4e62-8de2-73b8b783627c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ;
+            bf:date "[2015]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ] ;
+    bf:provisionActivityStatement "[Seattle, Washington] : [University of Washington Libraries], [2015]"@eng ;
+    bf:responsibilityStatement "Meng Chen"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/852212bb-9ddb-45c5-a752-db1818f9790c> .
+

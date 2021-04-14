@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/0c5d3500-fdc0-4aa7-90bc-3d023755efd0> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060124>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060192>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060358> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-05"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:26+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Waddell, Myra Mae" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Waddell, Myra Mae" ] ;
+            bf:role [ a bf:Role ;
+                    rdfs:label "book artist"@en ],
+                <http://id.loc.gov/vocabulary/relators/art> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026366> ;
+    bf:originDate "2018-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041317> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Shells in art" ;
+            madsrdf:Authority "Shells in art" ;
+            madsrdf:authoritativeLabel "Shells in art" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Conchology haiku"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/8ddbe5d0-a962-4c51-a249-9cf55a6c2a00> ;
+    skos:prefLabel "Waddell, Myra Mae. Conchology haiku"@eng .
+

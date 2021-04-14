@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/53e0f7e8-391e-42e1-a58d-23bfa9cfeefd> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-13"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:27+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©1971"^^xsd:gYear ;
+    bf:dimensions "29 cm"@en ;
+    bf:editionStatement "Trade edition"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "61 unnumbered pages"@en ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "0394823370" ],
+        [ a bf:Identifier ;
+            rdf:value "74158378" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/repository/washington/19e8abd4-f1e4-47b6-afa0-7da404615a17> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Random House"@en ] ;
+            bf:date "[1971]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@en ] ] ;
+    bf:responsibilityStatement "by Dr. Seuss"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Lorax"@en ] ;
+    owl:sameAs <https://api.sinopia.io/resource/327694af-5194-468e-a68f-debab7cfc91b> .
+

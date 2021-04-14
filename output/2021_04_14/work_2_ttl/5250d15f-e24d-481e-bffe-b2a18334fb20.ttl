@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5250d15f-e24d-481e-bffe-b2a18334fb20> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-28"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:02:57+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/7e43e08e-0730-44a8-a7a1-ac8391e4acf4> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "1953-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"It started with a spot of tea. It ended in tragedy when the wealthy Rex Fortescue sipped his last cup, fell ill, and died. The only clue: a pocketful of rye found on the victim. The murder seemed without rhyme or reason--until the shrewd Miss Marple recalled that delightful nursery rhyme 'Sing a Song of Sixpence.' A playful hint, indeed. But the spinster sleuth knew that murder was anything but child's play...\"--Page 4 of cover."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Pocket full of rye"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/ddee57d3-5e03-43f3-ac3f-673231e23928> ;
+    skos:prefLabel "Christie, Agatha, 1890-1976. Pocket full of rye. English"@eng .
+

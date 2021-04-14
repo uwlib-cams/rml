@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/adb524d0-2b48-45a4-b122-9090e84e22da> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-20"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:46+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:copyrightDate "©2018"^^xsd:gYear ;
+    bf:dimensions "25 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xxiii, 492 pages"@en ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "1493977067" ],
+        [ a bf:Identifier ;
+            rdf:value "9781493977062" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/f9b98623-f397-462a-80cf-d80a98c04c15> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Birkhaüser"@en ] ;
+            bf:date "[2018]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, NY"@en ] ] ;
+    bf:responsibilityStatement "David E. Rowe, Tilman Sauer, Scott A. Walter, editors"@en ;
+    bf:seriesEnumeration "volume 14"@en ;
+    bf:seriesStatement "Einstein studies"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Beyond Einstein"@en ;
+            bf:subtitle "perspectives on geometry, gravitation, and cosmology in the twentieth century"@en ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c85b46a5-8af1-420b-a393-99ebb60f3d72> .
+

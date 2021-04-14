@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a9314f04-36e9-4240-a702-7d30a5daa1cb> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-02-07"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:01:03+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content [ a bf:Content ;
+            rdfs:label "still image" ],
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/f0b55398-7c01-4fc3-8be1-6dfa28bc36c5> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The young human girl Vijaya finds refuge in a magical sanctuary beyond the Himalaya Mountains, among immortal beings and mystical creatures, but when the sanctuary is threatened, Vijaya must protect her new friends and home from mankind's violence."@eng ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A girl in the Himalayas"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/6f37ad8e-93a0-40d2-b43e-1f7cc9e195b6> ;
+    skos:prefLabel "Vignolli, David Jesus. A girl in the Himalayas. English"@eng .
+

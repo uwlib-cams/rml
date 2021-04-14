@@ -1,0 +1,43 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/6ec73a37-ed13-4680-a80c-07c1859a97ab> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:05:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1979"^^xsd:gYear ;
+    bf:dimensions "12 x 15 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "96 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/86a54576-c9fd-4990-9cc8-88994fd85491> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The Mountaineers"@eng ] ;
+            bf:date "[1979]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle"@eng ] ],
+        [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Mountaineers"@eng ] ] ;
+    bf:provisionActivityStatement "Seattle : The Mountaineers, [1979]"@eng ;
+    bf:responsibilityStatement "text by Harvey Manning ; photos by Bob and Ira Spring"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mountain flowers"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/7e1669cb-5498-403e-8bb8-994f191c4d22> .
+

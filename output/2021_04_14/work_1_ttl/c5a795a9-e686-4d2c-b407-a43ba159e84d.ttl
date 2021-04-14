@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/c5a795a9-e686-4d2c-b407-a43ba159e84d> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060667> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-03-03"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:58:03+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:originDate "1555-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79021783> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Horace. Ars poetica" ;
+            madsrdf:Authority "Horace. Ars poetica" ;
+            madsrdf:authoritativeLabel "Horace. Ars poetica" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Aristotle. Poetics" ;
+            madsrdf:Authority "Aristotle. Poetics" ;
+            madsrdf:authoritativeLabel "Aristotle. Poetics" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Horace. Ars poetica--Paraphrases--Early works to 1800" ;
+            madsrdf:Authority "Horace. Ars poetica--Paraphrases--Early works to 1800" ;
+            madsrdf:authoritativeLabel "Horace. Ars poetica--Paraphrases--Early works to 1800" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "In librum Aristotelis De arte poëtica, explicationes."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/e357057e-1dea-4835-a404-518c1d4b7305> ;
+    skos:prefLabel "Robortello, Francesco, 1516-1567. Francisci Robortelli Vtinensis In librum Aristotelis De arte poëtica, explicationes."@eng .
+

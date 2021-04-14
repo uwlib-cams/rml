@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/c34ae14b-8dee-4246-a2c9-f4dd8e72e171> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:04:25+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:editionStatement "2 izd."@rus,
+        "2 изд."@rus ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (8 unnumbered pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://digitalcollections.lib.washington.edu/digital/collection/childrens/id/2507/rec/29> ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/cb157c6a-d604-4b64-86ca-b2a62f79da67> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Original University of Washington Libraries copy is a gift of Pamela K. Harer."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Cover title."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Single signature stapled into publisher's color printed pictorial paper wrappers. Chromolithographs."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Description based on print version."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ],
+        [ a bf:Note ;
+            bf:noteType "University of Washington note"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "OGIZ--Molodai︠a︡ gvardii︠a︡"@rus ],
+                [ a bf:Agent ;
+                    rdfs:label "ОГИЗ--Молодая гвардия"@rus ] ;
+            bf:date "1931-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Leningrad]"@eng ] ] ;
+    bf:provisionActivityStatement "[Leningrad] : OGIZ--Molodai︠a︡ gvardii︠a︡, 1931."@rus,
+        "[Ленинград] : ОГИЗ--Молодая гвардия, 1931."@rus ;
+    bf:responsibilityStatement "ris. E. Charushin"@rus,
+        "рис. Е. Чарушин"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Raznye zveri"@rus,
+                "Разные звери"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/326cdf4f-38dc-450c-8fb4-2156ce6a6b20> .
+

@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/376e4c17-671c-43dc-8866-2b9a4802e497> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "Women" ;
+            bflc:CreatorCharacteristic "Women" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-05-19"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:55:41+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:originDate "2017-01-01"^^xsd:gYear ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Cooking, Syrian" ;
+            madsrdf:Authority "Cooking, Syrian" ;
+            madsrdf:authoritativeLabel "Cooking, Syrian" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Cooking, Syrian--Aleppo " ;
+            madsrdf:Authority "Cooking, Syrian--Aleppo " ;
+            madsrdf:authoritativeLabel "Cooking, Syrian--Aleppo " ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/60b13770-473e-4dc9-bedf-de4e6c5130f5> ;
+    skos:prefLabel "Matar, Marlene. Aleppo cookbook : celebrating the legendary cuisine of Syria"@eng .
+

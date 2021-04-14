@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N7dfeb6be1f4a45e9b896a73101532a75">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0dfc222a5d1c48608a8e5a12445ed793">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-10</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID xml:lang="eng">lins@uw.edu</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N7dfeb6be1f4a45e9b896a73101532a75"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N89b9924f19dd4292ade9e070825df6f7"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/af0dc746-1be3-459b-95d5-1dc57fcd562f">
+    <bf:colorContent rdf:nodeID="Nc8e7132911e84858b4c0c095a0dcde47"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:illustrativeContent rdf:nodeID="N59068f29857a4db98c38fffa8ca90a1e"/>
+    <bf:summary rdf:nodeID="N50fdb53c5472456482da96fbacd558d6"/>
+    <bf:adminMetadata rdf:nodeID="N0dfc222a5d1c48608a8e5a12445ed793"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/e0319987-d987-44bd-b2a8-ef01507ad6a3"/>
+    <bf:notation rdf:nodeID="N8fe77f7df51941608e5ba1a599ce80a9"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/239091a1-d125-4c59-8837-b2e689f460a6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8fe77f7df51941608e5ba1a599ce80a9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N50fdb53c5472456482da96fbacd558d6">
+    <rdfs:label xml:lang="eng">Understanding the genetic causes of human diseases and traits has long been of interest in the scientific community. However, the large majority of research in this area has been conducted in European populations. This dissertation focuses on developing statistical methods for genetic studies in admixed populations, such as African Americans and Hispanics/Latinos, that have been historically underrepresented in genetics research. The diverse, mixed ancestry of admixed populations presents unique opportunities for statistical inference, many of which are explored in this work. Here, we focus in particular on two important tasks: inferring genetic ancestry from genotype and sequence data, and identifying genetic variants associated with complex traits and diseases. We propose and evaluate methods for inferring local ancestry on chromosome X, correcting for multiple testing in genome-wide admixture mapping studies, and controlling for confounding by global ancestry in admixture mapping and genome-wide association studies in admixed populations. We motivate our proposed methods with theoretical results, simulation studies, and applications to genotype and whole genome sequence data from large studies of African American and Hispanic/Latino individuals. Our work provides solutions to a number of the statistical challenges posed by genetic studies in admixed populations, and we hope that our results will help guide future studies in these populations.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89b9924f19dd4292ade9e070825df6f7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-14T14:03:01+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8e7132911e84858b4c0c095a0dcde47">
+    <rdfs:label>color</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N59068f29857a4db98c38fffa8ca90a1e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Illustration"/>
+    <rdfs:label> illustrations (chiefly color)</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cde21612-7d5b-4c89-938f-bd8800d2c1d2> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "playwrights" ;
+            bflc:CreatorCharacteristic "playwrights" ],
+        [ a bflc:CreatorCharacteristic ;
+            rdfs:label "women" ;
+            bflc:CreatorCharacteristic "women" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-30"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:56:48+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Bray, Louise Whitefield" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026369>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026462> ;
+    bf:originDate "1922-01-01"^^xsd:gYear ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Merchant mariners -- Drama " ;
+            madsrdf:Authority "Merchant mariners -- Drama " ;
+            madsrdf:authoritativeLabel "Merchant mariners -- Drama " ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Merchant mariners' spouses -- Drama" ;
+            madsrdf:Authority "Merchant mariners' spouses -- Drama" ;
+            madsrdf:authoritativeLabel "Merchant mariners' spouses -- Drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mothers and sons -- Drama" ;
+            madsrdf:Authority "Mothers and sons -- Drama" ;
+            madsrdf:authoritativeLabel "Mothers and sons -- Drama" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mis' Mercy"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/a76ab4e2-10f9-4310-9b08-fdd89441355e> ;
+    skos:prefLabel "Bray, Louise Whitefield. Mis' Mercy"@eng .
+

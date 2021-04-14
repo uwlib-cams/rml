@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/157fe566-5fde-402d-9be6-0061ecf3a070> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-20"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:06:28+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:copyrightDate "©1942"^^xsd:gYear ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "50 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/681da278-af16-48ae-b42c-c1ea4bd91b8e> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French, LTD"@eng ],
+                [ a bf:Agent ;
+                    rdfs:label "Samuel French"@eng ] ;
+            bf:date "1942-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Los Angeles, Calif."@eng ],
+                [ a bf:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    bf:responsibilityStatement "by Ned Albert"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Down in the heart of Texas"@eng ;
+            bf:subtitle "a comedy of the wide open spaces in one act"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/b3e713ec-cc30-4e7c-9ad4-d025cbbc6680> .
+

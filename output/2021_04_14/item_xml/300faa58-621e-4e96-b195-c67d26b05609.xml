@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N10cc9ff2a817457e8a8de436abb05d7b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.F57 1977</bf:itemPortion>
+    <bf:classificationPortion>QL138</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb0dc32d2126e46efba625b815f8124ed">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N2472470377234fa0a69792ee76050946"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Nb836c71ec42a464e9edce43900c2f31b"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-04</bf:creationDate>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2472470377234fa0a69792ee76050946">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/300faa58-621e-4e96-b195-c67d26b05609">
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest collection</bf:physicalLocation>
+    <bf:sublocation rdf:nodeID="N6cd40cdd76634e26af212c25707cd124"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/1404c9e6-36bf-44cc-9a4c-1e7cc164c8de"/>
+    <bf:adminMetadata rdf:nodeID="Nb0dc32d2126e46efba625b815f8124ed"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="N10cc9ff2a817457e8a8de436abb05d7b"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/11519e1e-11ca-48f6-aabd-33e5db1de6f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb836c71ec42a464e9edce43900c2f31b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-14T14:07:58+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cd40cdd76634e26af212c25707cd124">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">field guides</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

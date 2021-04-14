@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/bde3d6f4-5561-406c-8431-71b48bb16b1a> a bf:Instance ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent _:N2cabeb9c89994cabb816373a7d3b49cf ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:copyrightDate "©2107"^^xsd:gYear ;
+    bf:dimensions "27 cm" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "352 pages"@eng ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Cookbooks" ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "9781566569866" ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "2014032555" ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note _:Nba5c2dc5b7e7467e918a1ab05716e782 ;
+    bf:provisionActivity [ a bf:Manufacture ;
+            bf:agent _:N2cabeb9c89994cabb816373a7d3b49cf ;
+            bf:note _:Nba5c2dc5b7e7467e918a1ab05716e782 ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Interlink Books"@eng ] ;
+            bf:date "2017-01-01"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Northampton (Mass.)"@eng ] ] ;
+    bf:responsibilityStatement "Marlene Matar"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ;
+            bf:subtitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:VariantTitle ;
+            rdfs:label "Celebrating the legendary cuisine of Syria"@eng ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/90c6a594-81de-4a13-b962-9ded257622e2> .
+
+_:N2cabeb9c89994cabb816373a7d3b49cf a bf:Agent ;
+    rdfs:label "Moushabeck, Leyla " .
+
+_:Nba5c2dc5b7e7467e918a1ab05716e782 a bf:Note ;
+    rdfs:label "book designer"@en ;
+    bf:noteType "role in manufacture"@en .
+

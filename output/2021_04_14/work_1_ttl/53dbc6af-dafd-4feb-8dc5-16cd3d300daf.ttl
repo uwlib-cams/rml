@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/53dbc6af-dafd-4feb-8dc5-16cd3d300daf> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060358> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-12-16"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:57:36+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026109> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Contents: Why train your boxer? -- Understanding the boxer -- How the boxer learns -- House training -- Socialization -- Habituation -- Beginning command training -- Seven basic commands -- Seven more commands -- Five boxer tricks -- Looking for trouble -- Activities."@eng ] ;
+    bf:originDate "2001-01-01"^^xsd:gYear ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Boxer (Dog breed)--Training" ;
+            madsrdf:Authority "Boxer (Dog breed)--Training" ;
+            madsrdf:authoritativeLabel "Boxer (Dog breed)--Training" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Training your boxer"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c6edd386-5262-4bac-b6db-e1641879ed06> ;
+    skos:prefLabel "Walker, Joan Hustace, 1962-. Training your boxer"@eng .
+

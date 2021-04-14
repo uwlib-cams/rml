@@ -1,0 +1,35 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/8b958b04-749d-4acc-94cc-978745ea831c> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-01-15"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:03:27+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/76f7bccc-cb65-43f6-b091-0e4a0547cf9f> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:originDate "1915-01-01"^^xsd:gYear ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "\"The narrator, Aleksandr Petrovich Goryanchikov, has been sentenced to penalty deportation to Siberia and ten years of hard labour for murdering his wife. Life in prison is particularly hard for Aleksandr Petrovich, since he is a \"gentleman\" and suffers the malice of the other prisoners, nearly all of whom belong to the peasantry. Gradually Goryanchikov overcomes his revulsion at his situation and his fellow convicts, undergoing a spiritual re-awakening that culminates with his release from the camp. It is a work of great humanity; Dostoevsky portrays the inmates of the prison with sympathy for their plight, and also expresses admiration for their energy, ingenuity and talent. He concludes that the existence of the prison, with its absurd practices and savage corporal punishments is a tragic fact, both for the prisoners and for Russia\"--Wikipedia, January 15, 2020."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "House of the dead"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Zapiski iz mertvogo doma. English (Garnett)"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/fe32d648-1895-413e-8115-a45d48c8b9da> ;
+    skos:altLabel "Dostoyevsky, Fyodor, 1821-1881. House of the dead"@eng ;
+    skos:prefLabel "Dostoyevsky, Fyodor, 1821-1881. Zapiski iz mertvogo doma. English (Garnett)"@eng .
+

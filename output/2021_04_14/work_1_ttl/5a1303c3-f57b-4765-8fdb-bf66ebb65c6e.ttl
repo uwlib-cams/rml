@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5a1303c3-f57b-4765-8fdb-bf66ebb65c6e> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060001>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060101>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23"@en ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2019-11-12"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T13:55:08+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    bf:hasPart <http://id.loc.gov/authorities/names/n2010050909>,
+        <http://id.loc.gov/authorities/names/n80153668>,
+        <http://id.worldcat.org/fast/1367787> ;
+    bf:identifiedBy <http://viaf.org/viaf/174446829> ;
+    bf:originDate "1942-01-01"^^xsd:gYear ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n78095330> ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/n79138969> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mississippi--Social life and customs--Fiction" ;
+            madsrdf:Authority "Mississippi--Social life and customs--Fiction" ;
+            madsrdf:authoritativeLabel "Mississippi--Social life and customs--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Southern States--Race relations--Fiction" ;
+            madsrdf:Authority "Southern States--Race relations--Fiction" ;
+            madsrdf:authoritativeLabel "Southern States--Race relations--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Yoknapatawpha County (Imaginary place)--Fiction" ;
+            madsrdf:Authority "Yoknapatawpha County (Imaginary place)--Fiction" ;
+            madsrdf:authoritativeLabel "Yoknapatawpha County (Imaginary place)--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mississippi--Race relations--Fiction" ;
+            madsrdf:Authority "Mississippi--Race relations--Fiction" ;
+            madsrdf:authoritativeLabel "Mississippi--Race relations--Fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2008111599> ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Go down, Moses and other stories"@en ],
+        [ a bf:Title ;
+            bf:mainTitle "Go down, Moses"@en ] ;
+    owl:sameAs <https://api.sinopia.io/resource/47396f92-ff77-4480-a26d-8e7c73b83043> ;
+    skos:altLabel "Faulkner, William, 1897-1962. Go down, Moses and other stories"@en ;
+    skos:prefLabel "Faulkner, William, 1897-1962. Go down, Moses"@en .
+

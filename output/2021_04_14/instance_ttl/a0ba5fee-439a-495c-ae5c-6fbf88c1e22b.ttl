@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a0ba5fee-439a-495c-ae5c-6fbf88c1e22b> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze"@eng ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2020-04-21"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-04-14T14:07:08+00:00"^^xsd:dateTime ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:dimensions "27 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 volume"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/58627116-b4c3-4c2e-8576-b07868f92baa> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Cover title."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "International Cooperation Administration"@eng ] ;
+            bf:date "[1958]"^^xsd:gYear ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    bf:responsibilityStatement "Germany T.U. Methods to Increase Productivity, TE 09-374-70013."@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Program and itinerary."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/de21bb62-ae6f-4ee5-a0c6-2465e5a2b491> .
+
