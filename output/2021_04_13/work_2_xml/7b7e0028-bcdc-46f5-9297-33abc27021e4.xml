@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/7b7e0028-bcdc-46f5-9297-33abc27021e4">
+    <bf:adminMetadata rdf:nodeID="N2cf98ee3536341d483a2913aefe0232b"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <skos:prefLabel xml:lang="eng">Meyer, Stephenie, 1973-. Twilight. Text. English</skos:prefLabel>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/fd7ade91-9e47-437c-b7c5-54febbaf5b7a"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f967ac1b-60c5-4fa5-99ca-6aa04ec6d0d3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:contribution rdf:nodeID="N54d2f096c690430fa79a7499ee2e72f2"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005-01-01</bf:originDate>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:notation rdf:nodeID="N1635dfd5b4c4433e9b8ba264da3cc3b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2cf98ee3536341d483a2913aefe0232b">
+    <bf:generationProcess rdf:nodeID="N8ff82a74ef4546a0956cdb58c1ccb364"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="Ne70d05c8315b41a4b861f595c9c073ad"/>
+    <bflc:catalogerID xml:lang="eng">emcotter</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-25</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne70d05c8315b41a4b861f595c9c073ad">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05021b6ae7414885bb263780602507ac">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Tingley, Megan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ff82a74ef4546a0956cdb58c1ccb364">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:15:26+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1635dfd5b4c4433e9b8ba264da3cc3b9">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54d2f096c690430fa79a7499ee2e72f2">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N05021b6ae7414885bb263780602507ac"/>
+  </rdf:Description>
+</rdf:RDF>

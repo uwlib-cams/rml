@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2f9872cb932e41a2bd02c6f7e749a664">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Nbe8636e5467d48109cdfc17f9cb882aa"/>
+    <bf:status rdf:nodeID="N0550777ff5ca457e946e141651156b38"/>
+    <bflc:catalogerID xml:lang="zxx">dbrookin</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-17</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91196ea7411648938c337cfa2d2057c5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="zxx">453489572452704832750</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncad84d367fc34bea87e0991a91b83211">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="zxx">szstx</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/09d8895b-227b-483d-9438-fd33a76b408d">
+    <bf:sublocation rdf:nodeID="Ncad84d367fc34bea87e0991a91b83211"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="N456dc40bf93e406cbdc3ba03d899e250"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/ed7c84be-fcce-4553-9b31-00f869919f3b"/>
+    <bf:physicalLocation xml:lang="zxx">suzzallen</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N2f9872cb932e41a2bd02c6f7e749a664"/>
+    <bf:identifier rdf:nodeID="N91196ea7411648938c337cfa2d2057c5"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/099934b8-6ab1-433c-95f4-9ef0c46f7141"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N456dc40bf93e406cbdc3ba03d899e250">
+    <bf:classificationPortion>PH821</bf:classificationPortion>
+    <bf:itemPortion>.K95 1994</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe8636e5467d48109cdfc17f9cb882aa">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:22:19+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0550777ff5ca457e946e141651156b38">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

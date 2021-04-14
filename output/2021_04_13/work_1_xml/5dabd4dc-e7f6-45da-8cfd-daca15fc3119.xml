@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Ne5136369ee894ff4a2aab1ffb568e62b">
+    <bf:mainTitle xml:lang="eng">test</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b40183da1fa45e184f3b4696977b66b">
+    <bf:descriptionLanguage rdf:nodeID="N0164078da04248deb81e5fe06d36733b"/>
+    <bflc:catalogerID xml:lang="eng">cec23</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-27</bf:creationDate>
+    <bf:descriptionConventions rdf:nodeID="Nfdb95ea9104f4923a9f828daa3711887"/>
+    <bf:status rdf:nodeID="Nb715da88e2b94930b397c416e8d44b52"/>
+    <bf:generationProcess rdf:nodeID="N2a353a31648449dfa60deb8d8e0e2516"/>
+    <bf:source rdf:nodeID="N1ee51e3b8ae24b9baa9a81f11b8156f9"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:nodeID="N0c666d664fb948f09ce99c76b23c258f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ee51e3b8ae24b9baa9a81f11b8156f9">
+    <owl:sameAs rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdb95ea9104f4923a9f828daa3711887">
+    <owl:sameAs rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/5dabd4dc-e7f6-45da-8cfd-daca15fc3119">
+    <skos:prefLabel xml:lang="eng">test</skos:prefLabel>
+    <bf:title rdf:nodeID="Ne5136369ee894ff4a2aab1ffb568e62b"/>
+    <bf:adminMetadata rdf:nodeID="N4b40183da1fa45e184f3b4696977b66b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <owl:sameAs rdf:nodeID="N2fdcdc48f1cf404aa992b68429ffba12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a353a31648449dfa60deb8d8e0e2516">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T16:42:47+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb715da88e2b94930b397c416e8d44b52">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fdcdc48f1cf404aa992b68429ffba12">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a03b533e-b56f-410a-aa93-ab002bfcea6d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0164078da04248deb81e5fe06d36733b">
+    <owl:sameAs rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c666d664fb948f09ce99c76b23c258f">
+    <owl:sameAs rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+</rdf:RDF>

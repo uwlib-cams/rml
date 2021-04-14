@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nd59c132f3401427d83352b8fb07dae21">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N0e9eedc508a74d7493ce944c0f8f9e06"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-06</bf:creationDate>
+    <bf:status rdf:nodeID="Nec1eb7cdc5514b71bed0e1694fbe7d87"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e9eedc508a74d7493ce944c0f8f9e06">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:21:16+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/de0cd70f-b665-4441-bd1d-5ce11f18e94a">
+    <bf:sublocation rdf:nodeID="Nd549f314fa8e401fada933954e7aec6e"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/9cb7d52f-e8ad-42d0-a481-12a0ebe20c6b"/>
+    <bf:adminMetadata rdf:nodeID="Nd59c132f3401427d83352b8fb07dae21"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest collection</bf:physicalLocation>
+    <bf:classification rdf:nodeID="N41e1fa1c857b41bd89bb834030c54cfc"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/e51ccfa4-45f2-4889-87dd-42c7138ffa71"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd549f314fa8e401fada933954e7aec6e">
+    <rdfs:label xml:lang="eng">bookshelf</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec1eb7cdc5514b71bed0e1694fbe7d87">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41e1fa1c857b41bd89bb834030c54cfc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>QK144</bf:classificationPortion>
+    <bf:itemPortion>.S75 1993</bf:itemPortion>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Neda0282547a04101ad9ff8f97acc9139">
+    <bf:mainTitle xml:lang="jpn">大阪市案内圖</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf08aba8e73994e23a1af3d5f64d8fc98">
+    <bf:generationProcess rdf:nodeID="Nbde64fba36154921b6c3c89dd0017698"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID xml:lang="eng">jlee70</bflc:catalogerID>
+    <bf:status rdf:nodeID="Ndcf25aef2254436586df7e4d2ec59ffc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbde64fba36154921b6c3c89dd0017698">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:06:25+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63fc28a7229d4117939c9c665159b64d">
+    <madsrdf:authoritativeLabel>Osaka (Japan)--Maps</madsrdf:authoritativeLabel>
+    <rdfs:label>Osaka (Japan)--Maps</rdfs:label>
+    <madsrdf:Authority>Osaka (Japan)--Maps</madsrdf:Authority>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d753afeb0dd4ab5a853beaf752df996">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label>Japan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/4c26d4c8-c3e0-4850-8da4-f06b0aa6a316">
+    <skos:altLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. 大阪市案内圖</skos:altLabel>
+    <bf:originPlace rdf:nodeID="N2d753afeb0dd4ab5a853beaf752df996"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <skos:prefLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu</skos:prefLabel>
+    <bf:subject rdf:nodeID="N63fc28a7229d4117939c9c665159b64d"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <bf:adminMetadata rdf:nodeID="Nf08aba8e73994e23a1af3d5f64d8fc98"/>
+    <bf:title rdf:nodeID="N1be0caea0335408098f0c1d4ad9f87ca"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950-01-01</bf:originDate>
+    <bf:title rdf:nodeID="Neda0282547a04101ad9ff8f97acc9139"/>
+    <bf:contribution rdf:nodeID="Na384debdc1464b1a8751d7021582637f"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/2be1aad1-4cae-4a38-82aa-896480e41a79"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadc1d0b354db42738f541b6404ec1bc4">
+    <rdfs:label>Nihon Chizu Kabushiki Kaisha</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1be0caea0335408098f0c1d4ad9f87ca">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="jpn">Ōsaka-shi annaizu</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcf25aef2254436586df7e4d2ec59ffc">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na384debdc1464b1a8751d7021582637f">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="Nadc1d0b354db42738f541b6404ec1bc4"/>
+  </rdf:Description>
+</rdf:RDF>

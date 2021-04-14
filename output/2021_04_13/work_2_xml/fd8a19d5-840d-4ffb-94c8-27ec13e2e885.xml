@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2353ee1656c74012b40eb829a6659f68">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N327e0f9cf4794f6fa5976f509212fe36">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N09371c37b838443c972217cbdb8c477a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/fd8a19d5-840d-4ffb-94c8-27ec13e2e885">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="N327e0f9cf4794f6fa5976f509212fe36"/>
+    <bf:adminMetadata rdf:nodeID="N5166d027b57d49728c3aad75118ff574"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:contribution rdf:nodeID="Nff116e1f4bc34040adfa4b1e9bb387ca"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f477c113-52c8-4372-954b-890326c58ced"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:notation rdf:nodeID="N68a442f16696405784fd9ecbce3dceb1"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/cd3263d7-5c53-4397-84f1-2ef4e8278398"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1991-01-01</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31c966c779b540fb9e4062763c3f8ba9">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:15:20+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09371c37b838443c972217cbdb8c477a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Klochkov, R. A. (Rudolʹf Andreevich)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68a442f16696405784fd9ecbce3dceb1">
+    <rdfs:label xml:lang="eng">Cyrillic</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5166d027b57d49728c3aad75118ff574">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-19</bf:creationDate>
+    <bflc:catalogerID xml:lang="eng">dbrookin</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N31c966c779b540fb9e4062763c3f8ba9"/>
+    <bf:status rdf:nodeID="N2353ee1656c74012b40eb829a6659f68"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N719a3228449a47048ac3dbb67b13401c">
+    <rdfs:label>Sokolova, M. A. (Maĭi︠a︡ Anatolʹevna)</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff116e1f4bc34040adfa4b1e9bb387ca">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+    <bf:agent rdf:nodeID="N719a3228449a47048ac3dbb67b13401c"/>
+  </rdf:Description>
+</rdf:RDF>

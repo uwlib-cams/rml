@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N349245bc31614910bdbc411aea7e2cea">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N206ab0cd889f4e929f34f2d954d7e064">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-30</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N349245bc31614910bdbc411aea7e2cea"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N756ddde3d806465d907c7821367eab93"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69f77b3a854b44c7804f71663104d097">
+    <rdf:value xml:lang="eng">39352038659868</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N530fec54cd5e482dbe470f025a4f9d7b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">drstx</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N756ddde3d806465d907c7821367eab93">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:20:07+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29cf7110775c4639b5a1ba374998e3c4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>H35 1935</bf:itemPortion>
+    <bf:classificationPortion>PS3503.R2733</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/1b0e90c8-d07b-4669-8766-488cbd27ec63">
+    <bf:identifier rdf:nodeID="N69f77b3a854b44c7804f71663104d097"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/091396a4-59fc-473c-866f-d23ce444ff30"/>
+    <bf:physicalLocation xml:lang="eng">drama</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="N29cf7110775c4639b5a1ba374998e3c4"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/878c79e5-56b9-4080-b5cb-ed168e13abd9"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:sublocation rdf:nodeID="N530fec54cd5e482dbe470f025a4f9d7b"/>
+    <bf:adminMetadata rdf:nodeID="N206ab0cd889f4e929f34f2d954d7e064"/>
+  </rdf:Description>
+</rdf:RDF>

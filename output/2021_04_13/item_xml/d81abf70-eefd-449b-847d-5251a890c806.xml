@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N16b5e9e493a7411fab7b4411ed499c34">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">with Washington State books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96386fc8226c44be8b54ca4d5e00d6ad">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N31bc960410534cd4917890807dfb5a3f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-24</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N92d27ceb82ff4e7e8f13bd78010fe33f"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92d27ceb82ff4e7e8f13bd78010fe33f">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/d81abf70-eefd-449b-847d-5251a890c806">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d7eaa618-0fa7-4c5a-bb60-f4cc37aeb2f4"/>
+    <bf:sublocation rdf:nodeID="N16b5e9e493a7411fab7b4411ed499c34"/>
+    <bf:classification rdf:nodeID="Nbe12bfd3faaf4f3a8ca3123da212c704"/>
+    <bf:physicalLocation xml:lang="eng">Marine biology books</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N96386fc8226c44be8b54ca4d5e00d6ad"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/1e816a75-11b0-4a64-9e0b-2f16ecc2e2a9"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N31bc960410534cd4917890807dfb5a3f">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-13T17:22:02+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe12bfd3faaf4f3a8ca3123da212c704">
+    <bf:itemPortion>.E23 2009</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>GC231.2</bf:classificationPortion>
+  </rdf:Description>
+</rdf:RDF>
