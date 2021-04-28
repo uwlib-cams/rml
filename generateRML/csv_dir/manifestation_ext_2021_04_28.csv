@@ -21,7 +21,7 @@ has University of Washington-specific note on manifestation (RDA 2.17),https://d
 ""dvdVideo"",
 ""monograph"",
 ""soundRecording""",,,,literal,FALSE,TRUE,http://access.rdatoolkit.org/7.29.html,,,,,,
-manifestation held by (*),https://doi.org/10.6069/uwlib.55.d.4#heldBy,,not mapped,747,"""etd"",
+manifestation held by (*),https://doi.org/10.6069/uwlib.55.d.4#heldBy,not mapped,not mapped,747,"""etd"",
 ""map"",
 ""eMap"",
 ""eBook"",
@@ -34,40 +34,33 @@ manifestation held by (*),https://doi.org/10.6069/uwlib.55.d.4#heldBy,,not mappe
 ""soundRecording""","Left out of transformation as per note on extension property: ""This property is expected to be used to describe RDA Manifestations and Items only. The domain and range of the BIBFRAME property created for this purpose was judged too restrictive.""",,,lookup,TRUE,TRUE,,,WaU,https://id.loc.gov/vocabulary/organizations/wau,,,
 manifestation has Library of Congress Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartA,"bf:classification [
   a bf:ClassificationLcc;
-  bf:classificationPortion ""{part A}"" ;
-  bf:itemPortion ""{part B}""
-].",not mapped,0.0171,"""map"",
+  bf:classificationPortion ""PartAValue""
+].",classification >> ClassificationLcc > classificationPortion,0.0171,"""map"",
 ""serial"",
 ""graphic"",
 ""monograph""",,,,literal,FALSE,TRUE,,,,,,,
 manifestation has Library of Congress Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasLcClassificationPartB,"bf:classification [
   a bf:ClassificationLcc;
-  bf:classificationPortion ""{part A}"" ;
-  bf:itemPortion ""{part B}""
-].",not mapped,0.0172,"""map"",
+  bf:itemPortion ""PartBValue""
+].",classification >> ClassificationLcc > itemPortion,0.0172,"""map"",
 ""serial"",
 ""graphic"",
 ""monograph""",,,,literal,FALSE,TRUE,,,,,,,
 manifestation has National Library of Medicine Classification Number Part A,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartA,"bf:classification [
   a bf:ClassificationNlm;
-  bf:classificationPortion ""{part A}"" ;
-  bf:itemPortion ""{part B}""
-].",not mapped,119.4,"""serial"",
+  bf:classificationPortion ""PartAValue""
+].",classification >> ClassificationNlm > classificationPortion,119.4,"""serial"",
 ""graphic"",
 ""monograph""",,,,literal,FALSE,TRUE,,,,,,,
 manifestation has National Library of Medicine Classification Number Part B,https://doi.org/10.6069/uwlib.55.d.4#hasNlmClassificationPartB,"bf:classification [
   a bf:ClassificationNlm;
-  bf:classificationPortion ""{part A}"" ;
-  bf:itemPortion ""{part B}""
-].",not mapped,119.5,"""serial"",
+  bf:itemPortion ""PartBValue""
+].",classification >> ClassificationNlm > itemPortion,119.5,"""serial"",
 ""graphic"",
 ""monograph""",,,,literal,FALSE,TRUE,,,,,,,
-manifestation has SuDoc Classification Number,https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber,"bf:classification [
-  a bf:Classification;
-     bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ;
-  rdfs:label ""value""
-
-].",not mapped,118.52,"""map"",
+manifestation has SuDoc Classification Number,https://doi.org/10.6069/uwlib.55.d.4#hasSuDocClassificationNumber,"bf:classification [ a bf:Classification ;
+   bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ;
+   rdfs:label ""value"" ] .",classification >> Classification > source=<http://id.loc.gov/vocabulary/classSchemes/sudocs> > rdfs:label,118.52,"""map"",
 ""serial"",
 ""graphic"",
 ""monograph""",,,,literal,FALSE,TRUE,,,,,,,
