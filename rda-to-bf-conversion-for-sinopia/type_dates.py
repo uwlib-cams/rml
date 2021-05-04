@@ -59,26 +59,83 @@ def reserialize(file):
 	g.bind('sin', sin)
 	g.bind('skos', skos)
 	g.load(f'file:{file}', format='xml')
-	g.serialize(destination=f'{file}', format='xml')
+	g.serialize(destination=file, format='xml')
 
 def determine_date_type(value):
-	num_of_dashes = 0
-	time_included = False
-	for character in value:
-		if character == '-':
-			num_of_dashes += 1
-		elif character == ':':
-			time_included = True
+	date_type = ""
 
-	if num_of_dashes == 0: # e.g. "1886"
+	if len(value) == 4:
 		date_type = "gYear"
-	elif num_of_dashes == 1: # e.g. "1886-02"
-		date_type = 'gYearMonth'
-	elif num_of_dashes == 2: # e.g. "1886-02-14" or "2021-03-17T12:00:00+00:00"
-		if time_included == True:
-			date_type = 'dateTime'
+		for character in value:
+			if character.isnumeric() != True:
+				date_type = ""
+	elif len(value) == 7:
+		date_type = "gYearMonth"
+		for character in value[0:4]:
+			if character.isnumeric() != True:
+				date_type = ""
+		if value[4] != "-":
+			date_type = ""
+		for character in value[5:]:
+			if character.isnumeric() != True:
+				date_type = ""
+	elif len(value) == 10:
+		date_type = "date"
+		for character in value[0:4]:
+			if character.isnumeric() != True:
+				date_type = ""
+		if value[4] != "-":
+			date_type = ""
+		for character in value[5:7]:
+			if character.isnumeric() != True:
+				date_type = ""
+		if value[7] != "-":
+			date_type = ""
+		for character in value[8:]:
+			if character.isnumeric() != True:
+				date_type == ""
+	elif len(value) == 25:
+		date_type = "dateTime"
+		value_numbers = value.replace('-','***')
+		value_numbers = value_numbers.replace(':', '***')
+		value_numbers = value_numbers.replace('T', '***')
+		value_numbers = value_numbers.split('***')
+
+		if len(value_numbers) != 6:
+			date_type = ""
 		else:
-			date_type = 'date'
+			year = value_numbers[0]
+			month = value_numbers[1]
+			day = value_numbers[2]
+			hour = value_numbers[3]
+			minute = value_numbers[4]
+			seconds_additional_info = value_numbers[5]
+
+			if len(year) != 4:
+				date_type = ""
+			for character in year:
+				if character.isnumeric() != True:
+					date_type = ""
+			if len(month) != 2:
+				date_type = ""
+			for character in month:
+				if character.isnumeric() != True:
+					date_type = ""
+			if len(day) != 2:
+				date_type = ""
+			for character in day:
+				if character.isnumeric() != True:
+					date_type = ""
+			if len(hour) != 2:
+				date_type = ""
+			for character in hour:
+				if charhacter.isnumeric() != True:
+					date_type = ""
+			if len(minute) != 2:
+				date_type = ""
+			for character in minute:
+				if character.isnumeric() != True:
+					date_type = ""
 
 	return date_type
 
@@ -93,19 +150,13 @@ def add_dates_in_xml(currentDate, entity, file):
 		for prop in child:
 			if prop.tag.split('}')[-1] in bf_date_prop_list:
 				date_type = determine_date_type(prop.text)
-				prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
-				edit_made = True
-			elif prop.tag.split('}')[-1] == 'label':
-				if prop.text == None:
-					pass
-				elif prop.text[0:15] == "rml.py SNAPSHOT":
-					date_type = determine_date_type(prop.text)
+				if date_type == "date":
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
 					edit_made = True
 
-	tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
+					tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
 
-	reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
+					reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
 
 	return edit_made
 
