@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nfd08d655add0431f92bb9b0a3d2e4809">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:status rdf:nodeID="N011c2231ac8e48c0aa9071797f3ea538"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID>gerhart</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nd01fa641ccb94ea290881312d4ec79b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb247e9fb74e440c18cb1c573485a844e">
+    <bf:mainTitle xml:lang="fra">Histoire du soldat</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/d204459a-105e-420c-926f-488d85395220">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:adminMetadata rdf:nodeID="Nfd08d655add0431f92bb9b0a3d2e4809"/>
+    <bf:originDate>1918</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85011293"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026650"/>
+    <skos:altLabel xml:lang="eng">Stravinsky, Igor, 1882-1971. Soldier's tale.</skos:altLabel>
+    <bf:contribution rdf:nodeID="Ndab54ec97067433bb509e0392882eee9"/>
+    <bf:contribution rdf:nodeID="N05ccaa395fed4c1dbe60b4baa8e6d81a"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/4488232a-2514-409b-9a5e-95f423f1a1ae"/>
+    <skos:prefLabel>Stravinsky, Igor,1882-1971. Histoire du soldat</skos:prefLabel>
+    <bflc:creatorCharacteristic rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060814"/>
+    <skos:altLabel xml:lang="eng">Stravinsky, Igor, 1882-1971. The soldier's tale</skos:altLabel>
+    <bf:title rdf:nodeID="Nb247e9fb74e440c18cb1c573485a844e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndab54ec97067433bb509e0392882eee9">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n79070061"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05ccaa395fed4c1dbe60b4baa8e6d81a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n79076651"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/lbt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N011c2231ac8e48c0aa9071797f3ea538">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd01fa641ccb94ea290881312d4ec79b8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:25:26+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

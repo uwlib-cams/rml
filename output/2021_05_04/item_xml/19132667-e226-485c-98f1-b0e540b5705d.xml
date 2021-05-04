@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N1ceb5cf3239b4af4992e7ba89d006bcf">
+    <rdfs:label xml:lang="eng">szstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na107504995e549e6ab864c945597821e">
+    <bf:classificationPortion>PQ2469.T7</bf:classificationPortion>
+    <bf:itemPortion>E5 2008</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/19132667-e226-485c-98f1-b0e540b5705d">
+    <bf:sublocation rdf:nodeID="N1ceb5cf3239b4af4992e7ba89d006bcf"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="Ne0aa00cf71a34837bca4e070a47027f3"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/06c860ba-5649-4fd1-8000-9f9bb2de4aec"/>
+    <bf:identifier rdf:nodeID="Nfcafce4c32684712968c8e894ae289ce"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/36fdd52f-6a6d-4946-81c2-3b73e316bcb2"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:classification rdf:nodeID="Na107504995e549e6ab864c945597821e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfcafce4c32684712968c8e894ae289ce">
+    <rdf:value xml:lang="eng">39352080619653</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0aa00cf71a34837bca4e070a47027f3">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N8dc1240a85634b3e8566deb47da887b7"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8dc1240a85634b3e8566deb47da887b7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:38:03+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

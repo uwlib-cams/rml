@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nce8dff33e66f48c2a52faf0cb13b9bca">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Description based on: Vol. III, no. 1 (September 1929); title from title page.</rdfs:label>
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/81cb7f53-9c29-4afe-bcaa-e928255eaad6">
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:note rdf:nodeID="Nce8dff33e66f48c2a52faf0cb13b9bca"/>
+    <bf:adminMetadata rdf:nodeID="N53a1a820b2264bc19b1590b080bfbd16"/>
+    <bf:frequency rdf:nodeID="N1a6a5e57dcd34304bdf97a4d923751ed"/>
+    <bf:title rdf:nodeID="N8e2ac8c8c9ea472db7eb0ec6123b7262"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:provisionActivity rdf:nodeID="N9d509b7cceb8415a81773535e4695057"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d3e2e595-7bf8-4aa7-a558-c9ef11be8841"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ea7e226dfa9492fb89c89c1840a49d0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[General Fruit Corporation]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53a1a820b2264bc19b1590b080bfbd16">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N36a789c2eee74bd0af718a6e081be2b7"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>shadle</bflc:catalogerID>
+    <bf:status rdf:nodeID="N4a270e6ce13549a9acb4eaf78c59b729"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a270e6ce13549a9acb4eaf78c59b729">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d509b7cceb8415a81773535e4695057">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="Ne7a227d8ce6f4d0a9e316c7bc8ea5e61"/>
+    <bf:agent rdf:nodeID="N0ea7e226dfa9492fb89c89c1840a49d0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a6a5e57dcd34304bdf97a4d923751ed">
+    <rdfs:label xml:lang="eng">Monthly</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7a227d8ce6f4d0a9e316c7bc8ea5e61">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Seattle, Washington</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e2ac8c8c9ea472db7eb0ec6123b7262">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36a789c2eee74bd0af718a6e081be2b7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:37:07+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

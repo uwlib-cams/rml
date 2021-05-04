@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N63d01710337441e89e55a8f4943a51b8">
+    <bf:agent rdf:nodeID="Nad6b9df55d314c2db0463e6e0938ff20"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0036fd9e899d461eb0da160de143188e">
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:status rdf:nodeID="N3c71f372e80c4e3e8f57431414a7157d"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N7495d85f19cb487eaa58c3c34d325b00"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3557e16d44074aa58da28dcec373edca">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>P63 1991</bf:itemPortion>
+    <bf:classificationPortion>PR6005.H66</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N185926410c80407d9e08d313176d6dd7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>123456789</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/c0f4a4dd-4b2c-4449-93a5-e475d85bf229">
+    <bf:adminMetadata rdf:nodeID="N0036fd9e899d461eb0da160de143188e"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="N5ad4412ccb3b484c979a6879ec575f3b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3aee1fa8-6c01-4fec-ae51-bf0f18159c53"/>
+    <bf:contribution rdf:nodeID="N63d01710337441e89e55a8f4943a51b8"/>
+    <bf:classification rdf:nodeID="N3557e16d44074aa58da28dcec373edca"/>
+    <bf:heldBy rdf:nodeID="Nc15609260a0e4876b3faef6a016db587"/>
+    <bf:physicalLocation>crystalshouse</bf:physicalLocation>
+    <bf:sublocation rdf:nodeID="N6d94799da8444388ad0c0fa55fb562ba"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/8fe01a74-5c2d-4b51-b558-f839e97a8bd9"/>
+    <bf:immediateAcquisition rdf:nodeID="N4b23952207954446b1a7fbb3105e1b40"/>
+    <bf:identifier rdf:nodeID="N185926410c80407d9e08d313176d6dd7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d94799da8444388ad0c0fa55fb562ba">
+    <rdfs:label>crystalsbookshelfmysteryfiction</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad6b9df55d314c2db0463e6e0938ff20">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Klein, Gail</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7495d85f19cb487eaa58c3c34d325b00">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:38:29+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ad4412ccb3b484c979a6879ec575f3b">
+    <rdfs:label xml:lang="eng">Requires access to Crystal's bookshelf at home.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c71f372e80c4e3e8f57431414a7157d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b23952207954446b1a7fbb3105e1b40">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+    <rdfs:label xml:lang="eng">Inherited from grandma.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc15609260a0e4876b3faef6a016db587">
+    <rdfs:label>CeC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

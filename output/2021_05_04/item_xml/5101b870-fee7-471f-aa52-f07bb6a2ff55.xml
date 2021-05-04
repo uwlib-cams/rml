@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nc15db31ac3b54d27999aea5cdf752380">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Na8f78afe74f64d6798a21d9af1a1e458"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="Nc4d0fe73a92e4fdb87e67745d811770f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/5101b870-fee7-471f-aa52-f07bb6a2ff55">
+    <bf:physicalLocation xml:lang="eng">natural history books</bf:physicalLocation>
+    <bf:adminMetadata rdf:nodeID="Nc15db31ac3b54d27999aea5cdf752380"/>
+    <bf:sublocation rdf:nodeID="N0e379b748cf94549ac0a5102981f71dd"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/18a3b23c-6663-42e7-be3d-9de2cfbfdb13"/>
+    <bf:classification rdf:nodeID="N1a28be1712c94825941350dea4fe5f53"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/bda958c2-c723-4036-af8b-865c7e0f99e4"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e379b748cf94549ac0a5102981f71dd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">stack on the floor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4d0fe73a92e4fdb87e67745d811770f">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8f78afe74f64d6798a21d9af1a1e458">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:39:30+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a28be1712c94825941350dea4fe5f53">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>QL737.R632</bf:classificationPortion>
+    <bf:itemPortion>G64 2018</bf:itemPortion>
+  </rdf:Description>
+</rdf:RDF>

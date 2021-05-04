@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf864c92c9cf846e0b79003848a42ca27">
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-07</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N3d77db10bf2a44d2b8b0b310ac0e3d18"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N52443de698564fc988d8f6b07af77250"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c27d9cd7961459cad395dd00ded24ad">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[University of Washington Libraries]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N52443de698564fc988d8f6b07af77250">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:33:54+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/7b6902bd-84de-4463-80b8-2a712643ed6d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+    <bf:extent rdf:nodeID="N5b06c5346eef46e18c53e735d9e7d2c3"/>
+    <bf:provisionActivity rdf:nodeID="N7655746833334ce9895abffa19a38f90"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/0377c12e-91af-43ee-8e04-d2e8f7915be0"/>
+    <bf:responsibilityStatement xml:lang="eng">Yue Shi</bf:responsibilityStatement>
+    <bf:adminMetadata rdf:nodeID="Nf864c92c9cf846e0b79003848a42ca27"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:title rdf:nodeID="Naa630ddf4bb745ffb0b9455819782c1a"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/261e504d-b6b6-4f70-9d48-cdc602c6d261"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:hasItem rdf:nodeID="Nf089c371eb93470bb0dc076312492764"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Seattle] : [University of Washington Libraries], [2019]</bf:provisionActivityStatement>
+    <bf:copyrightDate>©2019</bf:copyrightDate>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b06c5346eef46e18c53e735d9e7d2c3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">1 online resource (125 pages)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na0a7c01dd16b409791e174bfc08b537b">
+    <rdfs:label xml:lang="eng">[Seattle]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d77db10bf2a44d2b8b0b310ac0e3d18">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf089c371eb93470bb0dc076312492764">
+    <bf:electronicLocator rdf:resource="http://hdl.handle.net/1773/44725"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7655746833334ce9895abffa19a38f90">
+    <bf:place rdf:nodeID="Na0a7c01dd16b409791e174bfc08b537b"/>
+    <bf:date>[2019]</bf:date>
+    <bf:agent rdf:nodeID="N1c27d9cd7961459cad395dd00ded24ad"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa630ddf4bb745ffb0b9455819782c1a">
+    <bf:subtitle xml:lang="eng">decoding the secrets of genetic resilience, microbiome shift and niche partitioning from droppings</bf:subtitle>
+    <bf:mainTitle xml:lang="eng">Species from feces</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

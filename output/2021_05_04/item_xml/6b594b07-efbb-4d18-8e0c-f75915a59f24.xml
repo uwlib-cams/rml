@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N5490f715bcbd4ac792d2bf9ed844ff92">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-04</bf:creationDate>
+    <bf:status rdf:nodeID="N47cac93612db4bf2a2db996ffc89ac8d"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>lins</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Nb3471ea246d64018abca9db8f470f58c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b94a3614a854167b061205b8bbe187b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.V5</bf:itemPortion>
+    <bf:classificationPortion>G4284.S4E635 2015</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/6b594b07-efbb-4d18-8e0c-f75915a59f24">
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:classification rdf:nodeID="N9b94a3614a854167b061205b8bbe187b"/>
+    <bf:adminMetadata rdf:nodeID="N5490f715bcbd4ac792d2bf9ed844ff92"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/296ec46f-8630-4534-a19c-6f175ce127b7"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/29b0f863-57ab-4694-8a7c-8588c7029465"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:identifier rdf:nodeID="N3f1a7030eefb4c148148f29fcc534565"/>
+    <bf:sublocation rdf:nodeID="N5d8df5ff83c447a3a13fcabaf10b7033"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f1a7030eefb4c148148f29fcc534565">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352084546803</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3471ea246d64018abca9db8f470f58c">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-04T13:38:21+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47cac93612db4bf2a2db996ffc89ac8d">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5d8df5ff83c447a3a13fcabaf10b7033">
+    <rdfs:label xml:lang="eng">mpgen</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+</rdf:RDF>
