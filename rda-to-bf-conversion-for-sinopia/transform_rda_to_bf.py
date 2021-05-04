@@ -149,6 +149,7 @@ def transform_works(workList, currentDate):
 		# create variables for new triples
 		snapshot_bnode = BNode()
 		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+		currentDate_hyphen = time.strftime("%Y-%m-%d")
 		snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
 
 		# create new triples
@@ -156,6 +157,11 @@ def transform_works(workList, currentDate):
 			Graph_localWork.add((o, bf.generationProcess, snapshot_bnode))
 			Graph_localWork.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localWork.add((snapshot_bnode, RDFS.label, snapshot_literal))
+
+		# edit bf:creationDate
+		for s, p, o in Graph_localWork.triples((None, bf.adminMetadata, None)):
+			Graph_localWork.remove((o, bf.creationDate, None))
+			Graph_localWork.add((o, bf.creationDate, Literal(currentDate_hyphen)))
 
 		# serialize graph as XML
 		Graph_localWork.serialize(destination=f'../output/{currentDate}/work_1_xml/{BF_ID}.xml', format="xml")
@@ -223,6 +229,7 @@ def transform_expressions(expressionList, currentDate):
 		# create variables for new triples
 		snapshot_bnode = BNode()
 		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+		currentDate_hyphen = time.strftime("%Y-%m-%d")
 		snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
 
 		# create new triples
@@ -230,6 +237,11 @@ def transform_expressions(expressionList, currentDate):
 			Graph_localExpression.add((o, bf.generationProcess, snapshot_bnode))
 			Graph_localExpression.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localExpression.add((snapshot_bnode, RDFS.label, snapshot_literal))
+
+		# edit bf:creationDate
+		for s, p, o in Graph_localExpression.triples((None, bf.adminMetadata, None)):
+			Graph_localExpression.remove((o, bf.creationDate, None))
+			Graph_localExpression.add((o, bf.creationDate, Literal(currentDate_hyphen)))
 
 		# serialize graph as XML
 		Graph_localExpression.serialize(destination=f'../output/{currentDate}/work_2_xml/{BF_ID}.xml', format="xml")
@@ -298,6 +310,7 @@ def transform_manifestations(manifestationList, currentDate):
 		# create variables for new triples
 		snapshot_bnode = BNode()
 		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+		currentDate_hyphen = time.strftime("%Y-%m-%d")
 		snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
 
 		# create new triples
@@ -305,6 +318,11 @@ def transform_manifestations(manifestationList, currentDate):
 			Graph_localManifestation.add((o, bf.generationProcess, snapshot_bnode))
 			Graph_localManifestation.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localManifestation.add((snapshot_bnode, RDFS.label, snapshot_literal))
+
+		# edit bf:creationDate
+		for s, p, o in Graph_localManifestation.triples((None, bf.adminMetadata, None)):
+			Graph_localManifestation.remove((o, bf.creationDate, None))
+			Graph_localManifestation.add((o, bf.creationDate, Literal(currentDate_hyphen)))
 
 		# serialize graph as XML
 		Graph_localManifestation.serialize(destination=f'../output/{currentDate}/instance_xml/{BF_ID}.xml', format="xml")
@@ -373,6 +391,7 @@ def transform_items(itemList, currentDate):
 		# create variables for new triples
 		snapshot_bnode = BNode()
 		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+		currentDate_hyphen = time.strftime("%Y-%m-%d")
 		snapshot_literal = Literal(f"rml.py SNAPSHOT: {currentTime}")
 
 		# create new triples
@@ -380,6 +399,11 @@ def transform_items(itemList, currentDate):
 			Graph_localItem.add((o, bf.generationProcess, snapshot_bnode))
 			Graph_localItem.add((snapshot_bnode, RDF.type, bf.GenerationProcess))
 			Graph_localItem.add((snapshot_bnode, RDFS.label, snapshot_literal))
+
+		# edit bf:creationDate
+		for s, p, o in Graph_localItem.triples((None, bf.adminMetadata, None)):
+			Graph_localItem.remove((o, bf.creationDate, None))
+			Graph_localItem.add((o, bf.creationDate, Literal(currentDate_hyphen)))
 
 		# serialize file in XML
 		Graph_localItem.serialize(destination=f'../output/{currentDate}/item_xml/{BF_ID}.xml', format="xml")
