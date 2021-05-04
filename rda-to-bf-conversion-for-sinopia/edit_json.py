@@ -51,9 +51,10 @@ def add_rt_triple(entity, resource):
 	g.add((URIRef(f"https://api.stage.sinopia.io/resource/{resource.split('.')[0]}"), sin.hasResourceTemplate, Literal(f"{rt_dict[entity]}")))
 
 	# serialize as JSON-LD
-	g.serialize(destination=f'../output/{currentDate}/{entity}_json/{resource}', format='json-ld')
+	g.serialize(destination=f"../output/{currentDate}/{entity}_json/{resource.split('.')[0]}.json", format='json-ld')
 
 def edit_json(entity, resource):
+	resource = resource.split('.')[0] + '.json'
 	"""Prepare JSON-LD for upload into Sinopia"""
 	with open(f'../output/{currentDate}/{entity}_json/{resource}', 'r') as input_file:
 		original_data = json.load(input_file)
