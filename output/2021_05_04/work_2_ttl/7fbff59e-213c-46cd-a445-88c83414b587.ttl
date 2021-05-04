@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/7fbff59e-213c-46cd-a445-88c83414b587> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:31:09+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent <http://rdaregistry.info/termList/RDAColourContent/1002> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Zhang, Qiong" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n87915411> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/trl> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/a1eaad12-0a69-4d78-aad7-dd2057548839> ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh99001576> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060283> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Han (Simplified variant)"@eng ] ;
+    bf:originDate "2018" ;
+    bf:translationOf <https://api.sinopia.io/resource/a1eaad12-0a69-4d78-aad7-dd2057548839> ;
+    owl:sameAs <https://api.sinopia.io/resource/638b68df-332d-4ded-9408-9602a8299e71> ;
+    skos:altLabel "Carrión, Jorge, 1976- Shu dian man you" ;
+    skos:prefLabel "Carrión, Jorge, 1976- Librerías. Chinese" .
+

@@ -1,0 +1,67 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/14442d7e-d2d3-44cb-a785-d1e8428b66b5> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:35+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PZ7.D664" ;
+            bf:itemPortion "Han 1903" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84226647> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/bkd> ] ;
+    bf:copyrightDate "©1896" ;
+    bf:dimensions "25 cm"@eng ;
+    bf:editionStatement "New Amsterdam edition"@eng,
+        "illustrated by Allen B. Doggett"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xiv, 393 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "LCCN 2009439765" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/dfb343c7-f5de-4c4e-8215-dae47de41d92> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Cloth cover signed by the designer: M.A. [Margaret Armstrong]."@eng ],
+        _:Nc6624819f800402a8603e8fccb2e7c76 ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Charles Scribner's Sons"@eng ] ;
+            bf:date "1903" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@eng ] ],
+        [ a bf:Manufacture ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84226647> ;
+            bf:note _:Nc6624819f800402a8603e8fccb2e7c76 ] ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Hans Brinker"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Silver skates"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ;
+            bf:subtitle "a story of life in Holland"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/6972f13d-f067-4d11-ac12-de219adf91cd> .
+
+_:Nc6624819f800402a8603e8fccb2e7c76 a bf:Note ;
+    rdfs:label "book designer"@en ;
+    bf:noteType "role in manufacture"@en .
+

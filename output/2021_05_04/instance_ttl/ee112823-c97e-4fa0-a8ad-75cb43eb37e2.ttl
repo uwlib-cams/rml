@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/ee112823-c97e-4fa0-a8ad-75cb43eb37e2> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:05+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "viii, 189 pages"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44258> ] ;
+    bf:identifiedBy <http://hdl.handle.net/1773/44258> ;
+    bf:instanceOf <https://api.sinopia.io/resource/bf3be60d-7597-48ae-8121-b636383b0406> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed October 8, 2019)."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ;
+            bf:date "2019" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ] ;
+    bf:responsibilityStatement "Martin C. Arostegui"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/8e41795c-591d-43fc-ab0a-26aee67c7c5e> .
+

@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/11c1e4e8-f03b-4581-9a0f-42c8c613dd99> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:09+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:Classification ;
+            rdfs:label "Ju 10.2:F 31"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "KF8719" ;
+            bf:itemPortion ".A345 1990" ] ;
+    bf:copyrightDate "©[1990]" ;
+    bf:dimensions "25 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 203 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "Ju 10.2:F 31" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/9513acae-d17e-42a7-8eb2-6c19fec67f9f> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "\"April 2, 1990.\""@eng ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-426-P"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Item 729"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[Federal Courts Study Committee]"@eng ] ;
+            bf:date "[1990]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Philadelphia, Pennsylvania?]"@eng ] ] ;
+    bf:provisionActivityStatement "[Philadelphia, Pennsylvania?] : [Federal Courts Study Committee], [1990]"@eng ;
+    bf:responsibilityStatement "Judicial Conference of the United States. Federal Courts Study Committee"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Report of the federal Courts Study Committee"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d4dd25db-1ec6-4931-9ea6-2f14be55f777> .
+

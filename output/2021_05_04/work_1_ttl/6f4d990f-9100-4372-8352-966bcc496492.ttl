@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/6f4d990f-9100-4372-8352-966bcc496492> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:48+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n2014046807> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026441>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026536>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026699> ;
+    bf:geographicCoverage [ a bf:GeographicCoverage ;
+            rdfs:label "G4284.S4E635 2015"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/lcc> ] ;
+    bf:originDate "2015" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Spokane, Washington" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "CCentral business districts--Washington (State)--Spokane--Maps" ;
+            madsrdf:authoritativeLabel "CCentral business districts--Washington (State)--Spokane--Maps" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Spokane Valley (Wash.)--Maps" ;
+            madsrdf:authoritativeLabel "Spokane Valley (Wash.)--Maps" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Spokane (Wash.)--Maps" ;
+            madsrdf:authoritativeLabel "Spokane (Wash.)--Maps" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Visit Spokane map"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/2370edaa-0c6e-4d0c-baef-994235d4f86c> ;
+    skos:prefLabel "Visit Spokane (Organization). Visit Spokane map"@eng .
+

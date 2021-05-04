@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/af4b7a14-f965-40f4-ad19-218d48e2c911> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:08+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1006> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/80f6fd31-cae1-4f92-95af-f41a85cac24a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Description based on DVD record; title from title screen (viewed April 27, 2020)"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "2005" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Germany"@eng ] ] ;
+    bf:responsibilityStatement "Fandango and Zero West present ; a film by Sandhya Suri ; produced by Carlo Cresto-Dina, Kai Kûnnemann, Thomas Kufus ; directed by Sandhya Suri."@eng ;
+    bf:soundCharacteristic <http://rdaregistry.info/termList/typeRec/1002> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I for India"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/438f1195-99fc-4c5f-aa8a-9a813131924e> .
+

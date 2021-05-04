@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/50fb0862-1136-4489-bcf2-886ab6c3752b> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:53+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QL138" ;
+            bf:itemPortion ".F57 1977" ] ;
+    bf:copyrightDate "©1977" ;
+    bf:dimensions "21 cm"@eng ;
+    bf:editionStatement "3rd edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 474 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "LCCN  78103194 " ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/dd559d8c-a169-4068-b494-fa35b618b875> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:date "[1977]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Washinhgton]"@eng ] ],
+        [ a bf:Manufacture ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Washington State Department of Printing"@eng ] ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Olympia, Washington"@eng ] ] ;
+    bf:provisionActivityStatement "[Washington] : [publisher not identified], [1977]  (Olympia : Washington State Department.of Printing)"@eng ;
+    bf:responsibilityStatement "by Charles J. Flora and Eugene Fairbanks"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Sound and the sea"@eng ;
+            bf:subtitle "a guide to northwestern neritic invertebrate zoology"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c18367aa-c65a-4fe1-80ee-cd8b712f0961> .
+

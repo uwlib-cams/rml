@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/c3609e1f-f442-44aa-85b8-686d3fb1c5bb> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:40+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PG3470.S75" ;
+            bf:itemPortion "P6 1991" ] ;
+    bf:copyrightDate "©1991" ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "477 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 525300209X" ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 9785253002094" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/4e461f29-0945-4416-a8a8-3a378d830179>,
+        <https://api.sinopia.io/resource/791aa168-730d-48b8-bd87-1719ad67c09b> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Издательство \"Правда\""@rus ] ;
+            bf:date "1991" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Москва"@rus ] ] ;
+    bf:responsibilityStatement "Константин Станюкович"@rus,
+        "иллюстрации Р.А. Клочкова"@rus,
+        "составление и послесовие М.А. Соколовой"@rus ;
+    bf:seriesStatement "Мир приключений"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Похождения одного матроса ; Рассказы"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Pokhozhdenii︠a︡ odnogo matrosa ; Rasskazy"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/f6461300-2e7b-427e-a926-7b58b2d31fe9> .
+

@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a149001d-0aa3-4d9d-bf2c-6e6e9486ba8d> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:05+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/no2011132310> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/isb> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026139> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "sn 85005487" ],
+        [ a bf:Issn ;
+            rdf:value "0372-333X"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Taiwan"@eng ;
+            bf:noteType "coverage of content"@en ] ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n50010973> ;
+    bf:precededBy [ a bf:Work ;
+            rdfs:label "Acta botanica Taiwanica " ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Botany--Taiwan--Periodicals" ;
+            madsrdf:authoritativeLabel "Botany--Taiwan--Periodicals" ],
+        <http://id.loc.gov/authorities/subjects/sh2007102112> ;
+    bf:succeededBy [ a bf:Work ;
+            rdfs:label "Taiwania" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Taiwania"@eng,
+                "Taiwania (Taipei)"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/64af3c0e-5fdd-4727-b207-2b7beeaeabf4> ;
+    skos:prefLabel "Taiwania"@eng .
+

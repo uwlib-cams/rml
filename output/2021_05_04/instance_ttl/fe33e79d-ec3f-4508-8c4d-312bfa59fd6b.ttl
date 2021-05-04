@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/fe33e79d-ec3f-4508-8c4d-312bfa59fd6b> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:00+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:Classification ;
+            rdfs:label "C 21.14/2:C 74/990"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "T223.F4" ;
+            bf:itemPortion "U543 1990" ] ;
+    bf:copyrightDate "©1990" ;
+    bf:dimensions "28 cm"@eng ;
+    bf:editionStatement "1990 ed."@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "184 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "C 21.14/2:C 74/990" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/12302a5c-78be-4294-ad2e-c1328be64c6a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Item 254-A"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Cover title: United States patent classification to international patent classification"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-290-P"@eng ],
+        [ a bf:Note ;
+            rdfs:label "S/N 003-004-00643-9"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations"@eng ] ;
+            bf:date "1990" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Washington, D.C.]"@eng ] ] ;
+    bf:provisionActivityStatement "[Washington, D.C.] : U.S. Dept. of Commerce, Patent and Trademark Office, Patent Documentation Organizations, 1990"@eng ;
+    bf:responsibilityStatement "United States. Patent Documentation Organizations"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Concordance, United States patent classification to international patent classification"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/0b5f373d-a838-49d1-9f92-b65522c741a5> .
+

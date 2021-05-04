@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cb191521-6b36-4f9c-8111-af2fd55c42de> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060373> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:57+00:00" ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/no2013022600> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:derivativeOf [ a bf:Work ;
+            rdfs:label "Austen, Jane, 1775-1817. Emma" ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026264>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026294>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026369>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026007> ;
+    bf:historyOfWork "Gordon Glennon's play Emma, an adaptation of Jane Austen's novel of the same name, was first produced at Rugby Repertory Theatre on August 24, 1943."@eng ;
+    bf:identifiedBy <http://viaf.org/viaf/316560479> ;
+    bf:originDate "1943" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79023147> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Emma"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/25406ec2-3893-45e6-b857-064fc606657d> ;
+    skos:prefLabel "Glennon, Gordon. Emma"@eng .
+

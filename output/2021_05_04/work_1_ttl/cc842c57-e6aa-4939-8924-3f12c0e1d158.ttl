@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cc842c57-e6aa-4939-8924-3f12c0e1d158> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:16+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026098> ;
+    bf:relatedTo [ a bf:Agent ;
+            rdfs:label " Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii\"" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Clothing and dress--Russia--Exhibitions" ;
+            madsrdf:authoritativeLabel "Clothing and dress--Russia--Exhibitions" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Clothing and dress--Russia (Federation)--Exhibitions." ;
+            madsrdf:authoritativeLabel "Clothing and dress--Russia (Federation)--Exhibitions." ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Russian costume in photographs"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/aa768b65-ed37-46f6-bc5d-7608c71abe66> ;
+    skos:altLabel "Russian costume in photographs"@eng ;
+    skos:prefLabel "Russkiĭ kosti︠u︡m v fotografii︠a︡kh"@rus .
+

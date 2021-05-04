@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/ce4f89a6-55f7-4bc7-8abc-2dc934e30a36> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:25+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lei, Zepu" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:originDate "1909",
+        "宣統元年" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Taishan Shi (Guangdong Sheng, China)" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Taishan Shi (Guangdong Sheng, China)--History" ;
+            madsrdf:authoritativeLabel "Taishan Shi (Guangdong Sheng, China)--History" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu li shi"@chi ] ;
+    owl:sameAs <https://api.sinopia.io/resource/7e72cdce-2517-4bd5-be85-5836273f0e31> ;
+    skos:prefLabel "Lei, Zepu. Xinning xiang tu li shi"@chi .
+

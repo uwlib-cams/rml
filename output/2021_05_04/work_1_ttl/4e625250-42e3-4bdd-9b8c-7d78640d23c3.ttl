@@ -1,0 +1,41 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/4e625250-42e3-4bdd-9b8c-7d78640d23c3> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:32+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no00024995> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2019" ;
+            bf:degree "M.P.H." ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:originDate "2019" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79041965> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Alcohol Drinking--prevention $ control" ;
+            madsrdf:authoritativeLabel "Alcohol Drinking--prevention $ control" ],
+        <http://id.nlm.nih.gov/mesh/D006297>,
+        <http://id.nlm.nih.gov/mesh/D006630>,
+        <http://id.nlm.nih.gov/mesh/D057545> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/b7ef5c30-4e4c-459c-8361-2c371359894f> ;
+    skos:prefLabel "Carey, Cathea Marcena. Help-seeking patterns and perceived barriers to care among Latino immigrant men with unhealthy alcohol use"@eng .
+

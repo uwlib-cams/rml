@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/bcd629e7-8f36-4f77-a9be-ef14db082cca> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "men" ],
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060077> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:55+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n81138329> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "local histories" ],
+        <http://id.loc.gov/authorities/genreForms/gf2014026049> ;
+    bf:originDate "1978" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Seattle (Wash.) -- Biography" ;
+            madsrdf:authoritativeLabel "Seattle (Wash.) -- Biography" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Maynard, David S.  (David Swinson), 1808-1873" ;
+            madsrdf:authoritativeLabel "Maynard, David S.  (David Swinson), 1808-1873" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Seattle (Wash.) -- History" ;
+            madsrdf:authoritativeLabel "Seattle (Wash.) -- History" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Physicians -- Washington (State) -- Seattle -- Biography" ;
+            madsrdf:authoritativeLabel "Physicians -- Washington (State) -- Seattle -- Biography" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Doc Maynard"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/251393a8-33fb-44fd-827e-a75328c3fbaa> ;
+    skos:prefLabel "Speidel, Bill, 1912-  Doc Maynard"@eng .
+

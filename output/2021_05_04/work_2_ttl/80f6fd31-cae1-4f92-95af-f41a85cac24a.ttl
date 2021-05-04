@@ -1,0 +1,31 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/80f6fd31-cae1-4f92-95af-f41a85cac24a> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:33:25+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1023> ;
+    bf:duration "70 min."@eng ;
+    bf:expressionOf <https://api.sinopia.io/resource/2eff86f5-50f8-4df1-a4bd-0fcac26cf2f8> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng>,
+        <http://id.loc.gov/vocabulary/languages/hin> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "In 1965 Yash Pal Suri left India for England. The first thing he did on his arrival is to buy two Super 8 cameras and two tape recorders; one set of equipment he sent to his family in India, the other he kept for himself. For forty years he used it to share his strange new life in the West with those at home. In turn he received their \"cine-letters\" of weddings, festivals, and village life. As time passed, the joy and curiosity of the early exchanges gave way to the darker reality of alienation, racism, and a family falling apart."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/e3d822cf-40a7-44f7-94c6-d1db4bec124b> .
+

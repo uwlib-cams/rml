@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/f3639aab-b952-47fd-aaab-94f19a89eb4b> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:12+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1001> ;
+    bf:dimensions "7 in."@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 audio disc"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/040e2365-0c4a-4529-9656-55d0440c5337> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1001> ;
+    bf:provisionActivity [ a bf:Production ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Montreal]"@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Radio Canada International"@eng ] ;
+            bf:date "[1979]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Montreal]"@eng ] ] ;
+    bf:provisionActivityStatement "[Montreal] : Radio Canada International, [1979]"@eng ;
+    bf:soundCharacteristic [ a bf:PlayingSpeed ;
+            rdfs:label "33 1/3 rpm"@eng ],
+        <http://rdaregistry.info/termList/configPlayback/1001>,
+        <http://rdaregistry.info/termList/typeRec/1001> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "French topical disc. FTD 79-123"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/9320b5fb-a7ba-465d-811b-5130549f9814> .
+

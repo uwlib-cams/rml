@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/3c47f02c-2dbb-4d66-a1cb-51a8d86d0aad> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mcm104" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:31:55+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/34314406-ff41-47d0-9ef5-5b2b2aaf785d> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:originDate "2011" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "Lady Almina and the Real Downton Abbey tells the story behind Highclere Castle, the real-life inspiration and setting for Julian Fellowe's Emmy Award-winning PBS show, Downton Abbey, and the life of one of its most famous inhabitants, Lady Almina, the 5th Countess of Carnarvon. Drawing on a rich store of materials from the archives of Highclere Castle, including diaries, letters, and photographs, the current Lady Carnarvon has written a transporting story of this fabled home on the brink of war. Much like her Masterpiece Classic counterpart, Lady Cora Crawley, Lady Almina was the daughter of a wealthy industrialist, Alfred de Rothschild, who married his daughter off at a young age, her dowry serving as the crucial link in the effort to preserve the Earl of Carnarvon's ancestral home. Throwing open the doors of Highclere Castle to tend to the wounded of World War I, Lady Almina distinguished herself as a brave and remarkable woman. This rich tale constrasts the splendor of Edwardian life in a great house against the backdrop of the First World War and offers an inspiring and revealing picture of the woman at the center of the history of Highclere Castle."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Lady Almina and the real Downton Abbey"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Lady Almina and the real Downton Abbey: The lost legacy of Highclere Castle"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/8c86c5d3-08d7-4b88-83fb-e74283a6fe3e> ;
+    skos:prefLabel "Lady Almina and the real Downton Abbey"@eng .
+

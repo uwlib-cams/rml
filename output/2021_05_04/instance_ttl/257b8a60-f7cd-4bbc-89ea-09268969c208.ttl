@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/257b8a60-f7cd-4bbc-89ea-09268969c208> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:09+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2010" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource"@eng ] ;
+    bf:hasEquivalent [ a bf:Instance ;
+            rdfs:label "Print version: European Conference on Product and Process Modelling in the Building and Construction Industry (2010 : Cork, Republic of Ireland). eWork and eBusiness in architecture, engineering and construction. Boca Raton, Fla. : CRC ; London : Taylor & Francis [distributor], 2010. 9780415605076 (OCoLC)664326023" ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://www.taylorfrancis.com/books/9780203833773> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 9780203833773 (electronic book)" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/c8bbaee2-37bb-4420-a5c8-0363f65ab9ef> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "CRC Press/Balkema"@eng ] ;
+            bf:date "[2010]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Leiden, Netherlands"@eng ] ] ;
+    bf:provisionActivityStatement "Leiden, Netherlands : CRC Press/Balkema, [2010]"@eng ;
+    bf:responsibilityStatement "editors, Karsten Menzel, Raimar Scherer"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "eWork and eBusiness in architecture, engineering and construction"@eng ;
+            bf:subtitle "proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Proceedings of the European Conference on Product and Process Modelling 2010, Cork, Republic of Ireland, 14-16 September 2010"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/122bb30a-d69d-4056-875a-b0159800f5a9> .
+

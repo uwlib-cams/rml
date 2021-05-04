@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b90862f4-c0f7-4e2b-9d40-329905226076> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:25:07+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Nihon Chizu Kabushiki Kaisha" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ctg> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026387> ;
+    bf:originDate "1950" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Japan" ] ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Osaka (Japan)--Maps" ;
+            madsrdf:authoritativeLabel "Osaka (Japan)--Maps" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "大阪市案内圖"@jpn ],
+        [ a bf:Title ;
+            bf:mainTitle "Ōsaka-shi annaizu"@jpn ] ;
+    owl:sameAs <https://api.sinopia.io/resource/2be1aad1-4cae-4a38-82aa-896480e41a79> ;
+    skos:altLabel "Nihon Chizu Kabushiki Kaisha. 大阪市案内圖"@jpn ;
+    skos:prefLabel "Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu"@jpn .
+

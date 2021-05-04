@@ -1,0 +1,38 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/d78a092a-523b-4fd9-983c-fec4d390a83a> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:18+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:dimensions "27 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 volume"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/ee1713a4-be18-4fc6-affd-a06e45e7f54a> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "International Cooperation Administration"@eng ] ;
+            bf:date "[1956]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    bf:responsibilityStatement "German the Role of Trade Union's in Productivity, TA 09-361."@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Program and itinerary."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/539ec249-083f-431c-a093-bad2aab21886> .
+

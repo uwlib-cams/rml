@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/49f56f6c-1319-4499-be51-760a332bb9c9> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-02-19"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:55+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "BD181.7" ;
+            bf:itemPortion ".M35 2011" ] ;
+    bf:copyrightDate "©2011" ;
+    bf:instanceOf <https://api.sinopia.io/resource/2e2ed01d-5987-4de3-8012-706544dedd20> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references (pages 236-245)."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Издательский дом Санкт-Петербургского государственного университета"@rus ] ;
+            bf:date "[2011]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Санкт-Петербург]"@rus ] ] ;
+    bf:responsibilityStatement "Е.В. Малышкин"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Две метафоры памяти"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/fe62d997-66df-4c28-b874-9aa862b1555d> .
+

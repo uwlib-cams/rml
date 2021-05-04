@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/5be83681-f04d-4b3b-b8e2-2d7fc80d7a38> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:04+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QC451" ;
+            bf:itemPortion ".M8 2019" ] ;
+    bf:copyrightDate "©2019" ;
+    bf:dimensions "24 cm"@en ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "ix, 320 pages"@en ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "9783030024772" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/repository/washington/2591250d-3dde-4f8b-b0da-0d0ead2d45e6> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Springer"@en ] ;
+            bf:date "[2019]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Cham, Switzerland"@en ] ] ;
+    bf:responsibilityStatement "Tiago Buckup, Jérémie Léonard, editors"@en,
+        "with contributions from Johanna Brazard, Tiago Buckup, Thomas P. Cheshire, Marco Garavelli, Zhenkun Guo, Harold Y. Hwang, Jan Philip Kraak, Jérémie Léonard, Xian Li, Jian Lu, Margherita Maiuri, Brian P. Molesky, Andrew M. Moran, Shaul Mukamel, Keith A. Nelson, Artur Nenov, Benjamin K. Ofori-Okai, Ivan Rivalta, Javier Segarra-Martí, Yaquing Zhang"@en ;
+    bf:seriesStatement "Topics in current chemistry collections"@en ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Multidimensional time-resolved spectroscopy"@en ] ;
+    owl:sameAs <https://api.sinopia.io/resource/3f90ecf0-f15b-4426-8d85-23c3d2ce341c> ;
+    skos:prefLabel "Multidimensional time-resolved spectroscopy"@en .
+

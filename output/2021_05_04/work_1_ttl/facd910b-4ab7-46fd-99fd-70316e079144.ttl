@@ -1,0 +1,17 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://api.stage.sinopia.io/resource/facd910b-4ab7-46fd-99fd-70316e079144> a bf:Work ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "General Fruit Corporation" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026046> ;
+    bf:hasExpression <https://api.sinopia.io/resource/18c2fc3a-f340-4a87-9a63-f25db2e540ee> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "General news"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/88ae0700-dd55-4089-add1-314469a85c12> ;
+    skos:prefLabel "General Fruit Corporation. General news"@eng .
+

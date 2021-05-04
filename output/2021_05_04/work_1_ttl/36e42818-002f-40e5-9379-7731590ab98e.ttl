@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/36e42818-002f-40e5-9379-7731590ab98e> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:25:18+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n84143926>,
+                <http://id.loc.gov/rwo/agents/no00037560> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/com> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026086> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Macedonian language--Dictionaries--Russian" ;
+            madsrdf:authoritativeLabel "Macedonian language--Dictionaries--Russian" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Makedonsko-ruski rečnik"@mac ],
+        [ a bf:Title ;
+            bf:mainTitle "Makedonsko-russkiĭ slovarʹ"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/3f51c956-0a93-4dc6-b16c-cecee7693db3> ;
+    skos:altLabel "Tolovski, D. (Dime). Makedonsko-ruski rečnik"@mac ;
+    skos:prefLabel "Tolovski, D. (Dime). Makedonsko-russkiĭ slovarʹ"@rus .
+

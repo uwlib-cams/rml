@@ -1,0 +1,71 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/fccba927-5639-43de-bab3-df5b6b1445ce> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:28:25+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ray, Billy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aus> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Ray, Billy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmd> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "baumgarten, craig" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2005051688>,
+                <http://id.loc.gov/rwo/agents/no2009078373>,
+                <http://id.loc.gov/rwo/agents/no2011018024> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prn> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walker, Mandy" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Cruise/Wagner Productions (Firm)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prn> ] ;
+    bf:derivativeOf [ a bf:Work ;
+            rdfs:label "Bissinger, Buzz, 1954-. Shattered glass" ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Internet videos" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Film adaptations." ],
+        [ a bf:GenreForm ;
+            rdfs:label "Feature films." ],
+        [ a bf:GenreForm ;
+            rdfs:label "Fiction films" ],
+        <http://id.loc.gov/authorities/genreForms/gf2011026406> ;
+    bf:originDate "2003" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Journalists--Washington (State)--Drama" ;
+            madsrdf:authoritativeLabel "Journalists--Washington (State)--Drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Glass, Stephen--Drama" ;
+            madsrdf:authoritativeLabel "Glass, Stephen--Drama" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Journalistic ethics--Drama" ;
+            madsrdf:authoritativeLabel "Journalistic ethics--Drama" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Shattered glass"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/eb572713-b9fc-4090-bf89-c8493678f694> ;
+    skos:prefLabel "Shattered glass (Motion picture)"@eng .
+

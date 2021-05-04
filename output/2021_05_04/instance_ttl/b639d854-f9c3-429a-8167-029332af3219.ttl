@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b639d854-f9c3-429a-8167-029332af3219> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:06+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3561.I483" ;
+            bf:itemPortion "E9 1987" ] ;
+    bf:copyrightDate "©1987" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "326 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/08ea53fb-96d6-499c-8221-3b6e3ee732a3> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Viking Penguin, Inc." ],
+                [ a bf:Agent ;
+                    rdfs:label "Viking Penguin, Inc."@eng ] ;
+            bf:date "1987" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, New York"@eng ] ] ;
+    bf:provisionActivityStatement "New York, New York : Viking Penguin, Inc., 1987."@eng ;
+    bf:responsibilityStatement "a story by Stephen King; with illustrations by David Palladini"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eyes of the dragon"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/8ee9850a-5eb1-41b7-8065-815b424d2670> .
+

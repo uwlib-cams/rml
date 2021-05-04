@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/9172dbcb-bde9-4d3f-b4eb-dde893e54fda> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:37+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TL795" ;
+            bf:itemPortion ".A23 1990" ],
+        [ a bf:Classification ;
+            rdfs:label "Y 3.T 22/2:2 SP 1/3"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ] ;
+    bf:copyrightDate "© [1990]" ;
+    bf:dimensions "27 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xii, 92 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "Y 3.T 22/2:2 SP 1/3" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/2d4b7d38-5740-4ef4-a23c-4671efbc3e29> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Item 1070-M"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 90-372-P"@eng ],
+        [ a bf:Note ;
+            rdfs:label "\"OTA-ISC-415\"--Page 4 of cover"@eng ],
+        [ a bf:Note ;
+            rdfs:label "\"April 1990\"--Page 4 of cover"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Congress of the U.S., Office of Technology Assessment"@eng ],
+                <http://id.loc.gov/rwo/agents/n79006671> ;
+            bf:date "[1990]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : Congress of the U.S., Office of Technology Assessment, [1990]"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Access to space"@eng ;
+            bf:subtitle "the future of U.S. space transportation systems"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/b039b29b-ff84-4429-a540-ccb5d89d7cc8> .
+

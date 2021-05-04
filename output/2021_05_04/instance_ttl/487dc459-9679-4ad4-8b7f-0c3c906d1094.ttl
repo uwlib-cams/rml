@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/487dc459-9679-4ad4-8b7f-0c3c906d1094> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:11+00:00" ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "vi, 122 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/741fdc26-5a41-4897-83e5-c6724fd001c3> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Macmillan & Co. Ltd"@eng ] ;
+            bf:date "1945" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    bf:responsibilityStatement "a play by Gordon Glennon"@eng,
+        "from the novel by Jane Austen"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Emma"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/4806ea2e-ac6f-4177-8162-20e922436a11> .
+

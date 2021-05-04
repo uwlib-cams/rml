@@ -1,0 +1,53 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/7b93827b-db44-47bb-9d19-d61a4c144bc7> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:15+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R2733" ;
+            bf:itemPortion "H35 1935" ] ;
+    bf:copyrightDate "©1935" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "43 pages,  1 unnumbered page"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/b57c3836-61f1-4d13-bb87-b14e1c3435e2> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French, Ltd."@eng ],
+                [ a bf:Agent ;
+                    rdfs:label "Samuel French" ],
+                [ a bf:Agent ;
+                    rdfs:label "Samuel French, Inc."@eng ] ;
+            bf:date "[1935]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Los Angeles, Calif."@eng ],
+                [ a bf:Place ;
+                    rdfs:label "London"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    bf:provisionActivityStatement "New York, N.Y. ; Los Angeles, Calif. : Samuel French, Inc. ;  London, Samuel French, Ltd., [1935]"@eng ;
+    bf:responsibilityStatement "by Wilbur Braun"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "He ain't done right by Nell"@eng ;
+            bf:subtitle "an old-fashioned melodrama in one act"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/5082630b-c92d-492b-9e5a-5419d26d6dca> .
+

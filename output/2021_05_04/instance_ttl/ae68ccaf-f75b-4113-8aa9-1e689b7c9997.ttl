@@ -1,0 +1,63 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/ae68ccaf-f75b-4113-8aa9-1e689b7c9997> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:27+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PZ7.A335" ;
+            bf:itemPortion "Li68" ] ;
+    bf:copyrightDate "©1968" ;
+    bf:dimensions "24 cm"@eng ;
+    bf:editionStatement "Centennial edition"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xvii, 444 pages, 8 unnumbered leaves of plates"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "OCLC 1157" ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 0-316-030-90-2" ],
+        [ a bf:Identifier ;
+            rdf:value "LCCN 68-0211171" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/e74feef4-a29b-4cf5-a88d-da5a7c5b7d74> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/subjects/sh85055012> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Little Brown and Company"@eng ],
+                <http://id.loc.gov/rwo/agents/n80020835> ;
+            bf:date "[1968]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "Toronto"@eng ] ] ;
+    bf:provisionActivityStatement "Boston ; Toronto : Little Brown and Company, [1968]"@eng ;
+    bf:responsibilityStatement "by Louisa May Alcott"@eng,
+        "illustrations in color by Jessie Willcox Smith"@eng,
+        "with a new introduction by Cornelia Meigs"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Little women, or, Meg, Jo, Beth, and Amy"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Meg, Jo, Beth, and Amy"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Little women"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/5c35ef9b-be8e-4ef4-aa74-61759291e0f4> .
+

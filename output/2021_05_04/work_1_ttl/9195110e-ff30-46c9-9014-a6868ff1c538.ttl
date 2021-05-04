@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/9195110e-ff30-46c9-9014-a6868ff1c538> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:46+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79006671> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cre> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh85140119> ;
+    bf:originDate "[1990]" ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2007100595>,
+        <http://id.loc.gov/authorities/subjects/sh2010114282>,
+        <http://id.loc.gov/authorities/subjects/sh85096159> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Access to space"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/224f348e-85a0-4832-9d42-f779a37457da> ;
+    skos:prefLabel "Access to space"@eng .
+

@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/cca44efc-5d30-4918-af36-6f521d8e1cc1> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:56+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "NA735.S45" ;
+            bf:itemPortion "S53 1998" ] ;
+    bf:copyrightDate "©1998" ;
+    bf:dimensions "23 cm"@eng ;
+    bf:editionStatement "Second printing, with additions and corrections"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xlii, 402 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "0-295-97366-8" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/cd277477-9d34-471f-871a-bdbf80ba1f04> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "paperback"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University of Washington Press"@eng ] ;
+            bf:date "1998" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle"@eng ] ] ;
+    bf:provisionActivityStatement "University of Washington Press, Seattle and London in association with the American Institute of Architects Seattle Chapter and the Seattle Architectural Foundation"@eng ;
+    bf:responsibilityStatement "Jeffrey Karl Ochsner, editor"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Historical guide to the architects"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Shaping Seattle architecture"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/83a2f43b-8840-4e21-8f7e-dcc16a35e027> .
+

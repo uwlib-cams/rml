@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/655b781a-c55d-4b04-848d-680de3e55b3f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:46+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R2743" ;
+            bf:itemPortion "M5 1922" ] ;
+    bf:copyrightDate "©1922" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "21 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/69478384-0515-4500-a3c7-458ddc76fe76> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French"@eng ] ;
+            bf:date "[1922]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Lops Angeles"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "New York City"@eng ] ] ;
+    bf:provisionActivityStatement "New York City ;  Los Angeles : Samuel French,  [1922]"@eng ;
+    bf:responsibilityStatement "by Louise Whitefield Bray"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mis' Mercy"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/bc6ded31-f446-4ac7-b173-20b24e4a00fe> .
+

@@ -1,0 +1,55 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/e74feef4-a29b-4cf5-a88d-da5a7c5b7d74> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-02-11"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:31:05+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:colorContent [ a bf:ColorContent ;
+            rdfs:label "color" ],
+        <http://rdaregistry.info/termList/RDAColourContent/1003> ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n80005675> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ill> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n88116786> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/ee9bbf27-7ce5-4cc6-adb9-e402bb2aa9bf> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060360> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Meigs and Smith"@eng ;
+            bf:noteType "other distinguishing characteristic of expression"@en ] ;
+    bf:originDate "1968" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "The adventures of Meg, Jo, Beth, and Amy as they grow into young women in mid-nineteenth-century New England."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Little women. English. 1968"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Little women. English. Text"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Little women. English (Meigs and Smith)"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/60c5bb24-c721-4dde-aa2d-ff7ea07a6884> ;
+    skos:altLabel "Alcott, Louisa May, 1832-1888. Little women, or, Meg, Jo, Beth, and Amy. English. Text"@eng,
+        "Alcott, Louisa May, 1832-1888. Meg, Jo, Beth, and Amy. English. Text"@eng ;
+    skos:prefLabel "Alcott, Louisa May, 1832-1888. Little women. English. Text"@eng .
+

@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/093fe191-c7fd-4cb7-a104-2bc0dea22536> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85004432> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:40+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n99273876> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2015" ;
+            bf:degree "Ph. D." ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ;
+            bf:note [ a bf:Note ;
+                    rdfs:label "Ph. D.  University of Washington  2015"@eng ;
+                    bf:noteType "dissertation or thesis information"@en ] ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:originDate "2015" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Marketing--Law and legislation--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Marketing--Law and legislation--Russia (Federation)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Law reform--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Law reform--Kazakhstan" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Marketing--Law and legislation--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Marketing--Law and legislation--Kazakhstan" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Investments, Foreign--Law and legislation--Kazakhstan" ;
+            madsrdf:authoritativeLabel "Investments, Foreign--Law and legislation--Kazakhstan" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Investments, Foreign--Law and legislation--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Investments, Foreign--Law and legislation--Russia (Federation)" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Law reform--Russia (Federation)" ;
+            madsrdf:authoritativeLabel "Law reform--Russia (Federation)" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Impetus or impediment"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Market power, foreign direct investment and judicial reform in Russia and Kazakhstan"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/20492d30-7f5a-48fc-9857-ca975c586494> ;
+    skos:prefLabel "Murg, Bradley Jensen. Impetus or impediment"@eng .
+

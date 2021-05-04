@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2f486162-36d7-42a5-839d-2e6efe4c401e> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <http://id.loc.gov/vocabulary/descriptionConventions/pn>,
+                <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:51+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2019" ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "PDF"@eng ],
+        <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (xix, 20-189 pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://hdl.handle.net/1773/44816> ] ;
+    bf:identifiedBy <http://hdl.handle.net/1773/44816> ;
+    bf:instanceOf <https://api.sinopia.io/resource/9e24a680-3798-4a6e-ae6c-d2dc7ac64604> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Includes bibliographical references."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Online resource; title from PDF title page (ResearchWorks Archive, viewed December 2, 2019)."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "[University of Washington Libraries]"@eng ] ;
+            bf:date "[2019]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "[Seattle, Washington]"@eng ] ] ;
+    bf:responsibilityStatement "Daniel G. Hernandez"@eng ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "The host-pathogen interactions of Chinook salmon (Oncorhynchus tshawytscha) and the aquatic rhabdoviral pathogen infectious hematopoietic necrosis virus"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c133296d-f709-454b-87bf-476ead50d819> .
+

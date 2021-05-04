@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b2b150bf-ea34-4183-8352-782527ef04e3> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060814> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:59+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79029930> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026339>,
+        <http://id.loc.gov/authorities/genreForms/gf2014026370>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026001> ;
+    bf:identifiedBy <http://viaf.org/viaf/180506435> ;
+    bf:originDate "1869" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80001203> ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/n80001203> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Russia--History--19th century--Fiction" ;
+            madsrdf:authoritativeLabel "Russia--History--19th century--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Russia--Social conditions--19th century--Fiction" ;
+            madsrdf:authoritativeLabel "Russia--Social conditions--19th century--Fiction" ],
+        <http://id.loc.gov/authorities/subjects/sh2001005716>,
+        <http://id.loc.gov/authorities/subjects/sh2007101961>,
+        <http://id.loc.gov/authorities/subjects/sh85078534>,
+        <http://id.loc.gov/authorities/subjects/sh85101002>,
+        <http://id.loc.gov/authorities/subjects/sh94004075>,
+        <http://id.loc.gov/authorities/subjects/sh94005098>,
+        <http://id.loc.gov/authorities/subjects/sh94006704> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Idiot"@en ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Идиот"@ru ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d72465eb-d1dc-4ee4-a30d-062c033bfbe3> ;
+    skos:altLabel "Достоевский, Федор, 1821-1881. Идиот"@ru ;
+    skos:prefLabel "Dostoyevsky, Fyodor, 1821-1881. Idiot"@en .
+

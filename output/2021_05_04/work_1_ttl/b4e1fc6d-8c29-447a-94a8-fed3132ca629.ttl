@@ -1,0 +1,47 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b4e1fc6d-8c29-447a-94a8-fed3132ca629> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:24:18+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n86072799> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm [ a bf:GenreForm ;
+            rdfs:label "Field guides" ],
+        [ a bf:GenreForm ;
+            rdfs:label "Illustrated works" ] ;
+    bf:originDate "1993" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Wild flowers -- Northwest, Pacific -- Identification" ;
+            madsrdf:authoritativeLabel "Wild flowers -- Northwest, Pacific -- Identification" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Roadside plants -- Northwest, Pacific -- Pictorial works." ;
+            madsrdf:authoritativeLabel "Roadside plants -- Northwest, Pacific -- Pictorial works." ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Wildflowers -- Northwest, Pacific -- Pictorial works" ;
+            madsrdf:authoritativeLabel "Wildflowers -- Northwest, Pacific -- Pictorial works" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Roadside plants -- Northwest, Pacific -- Identification" ;
+            madsrdf:authoritativeLabel "Roadside plants -- Northwest, Pacific -- Identification" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Wayside wildflowers of the Pacific Northwest"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/1204a5b5-49c0-40b0-b7ce-cdee99e8e54b> ;
+    skos:altLabel "Strickler, Zoe. Wayside wildflowers of the Pacific Northwest"@eng ;
+    skos:prefLabel "Strickler, Dee. Wayside wildflowers of the Pacific Northwest"@eng .
+

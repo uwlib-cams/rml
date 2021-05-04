@@ -1,0 +1,57 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/fbb4be6e-776a-47a1-a8d4-7aab2abd4314> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2019-12-02"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:29:48+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1014>,
+        <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n83328550> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/win> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/n50046686> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ill> ] ;
+    bf:expressionOf <https://api.sinopia.io/resource/9f99e91d-9cbd-4b30-a474-3d5641550c5e> ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh85064405> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Becker"@eng ;
+            bf:noteType "other distinguishing characteristic of expression"@en ],
+        [ a bf:Note ;
+            rdfs:label "some color"@eng ;
+            bf:noteType "note on expression"@en ],
+        [ a bf:Note ;
+            rdfs:label "Van Stockum"@eng ;
+            bf:noteType "other distinguishing characteristic of expression"@en ] ;
+    bf:originDate "1946" ;
+    bf:summary [ a bf:Summary ;
+            rdfs:label "When a new friend gives Hans and his sister Gretel enough money for one pair of ice skates, Hans insists that Gretel enter the grand skating competition, while he approaches the great Doctor who consents to try to restore their father's health and memory."@eng ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Silver skates"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Hans Brinker"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/2d2cdef9-c690-4537-b2a4-f0da15e57d77> ;
+    skos:altLabel "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Becker)"@eng,
+        "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English. 1946"@eng ;
+    skos:prefLabel "Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Van Stockum)"@eng .
+

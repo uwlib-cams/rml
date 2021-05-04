@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/e56fea25-aa2a-4fe9-92d5-0e461e9019ff> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:33:57+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R2733" ;
+            bf:itemPortion "E7 1933" ] ;
+    bf:copyrightDate "©1933" ;
+    bf:instanceOf <https://api.sinopia.io/resource/bac99828-6d66-4bdf-8460-11959da56218> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French, Inc."@eng ] ;
+            bf:date "[1933]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    bf:provisionActivityStatement "New York, N.Y. : Samuel French, Inc., [1933]"@eng ;
+    bf:responsibilityStatement "by Wilbur Braun"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eternally yours"@eng ;
+            bf:subtitle "a romantic farce-comedy in three acts"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/081097d8-27b7-4fb8-a6ca-fb280d818f11> .
+

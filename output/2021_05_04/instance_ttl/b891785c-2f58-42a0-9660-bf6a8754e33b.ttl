@@ -1,0 +1,21 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://api.stage.sinopia.io/resource/b891785c-2f58-42a0-9660-bf6a8754e33b> a bf:Instance ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (approximately 29000 photographs)"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/2582e80b-6b1a-448d-a248-c29e0b02e54c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University Libraries, University of Washington"@eng ] ;
+            bf:date "2016" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Seattle, WA"@eng ] ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "William Brumfield Russian Architecture Digital Collection"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c95c8347-2cda-4ea7-a405-2ba187351d0a> .
+

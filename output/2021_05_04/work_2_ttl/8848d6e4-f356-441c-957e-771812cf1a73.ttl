@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/8848d6e4-f356-441c-957e-771812cf1a73> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:Nbf76188bead549c087019216fe0ecfdd ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N799030a4b7354a7593beef7856b73c86,
+                _:Ncbf552e144514f40930a953495c592eb ],
+        [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-04-23"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess _:Nbf76188bead549c087019216fe0ecfdd ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status _:N799030a4b7354a7593beef7856b73c86,
+                _:Ncbf552e144514f40930a953495c592eb ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/dc73d81a-7007-4482-a63e-211e7b90995b> ;
+    bf:illustrativeContent <http://id.loc.gov/vocabulary/millus/ill> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/eng> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Latin"@eng ] ;
+    bf:note [ a bf:Note ;
+            rdfs:label "color illustrations"@eng ;
+            bf:noteType "has details of colour content"@en ] ;
+    bf:originDate "2004" ;
+    owl:sameAs <https://api.sinopia.io/resource/81141d70-53d0-4864-ba9a-492ba667af87> ;
+    skos:prefLabel "Wood, Deborah, 1952- Little dogs"@eng .
+
+_:N799030a4b7354a7593beef7856b73c86 a bf:Status ;
+    bf:code "n" .
+
+_:Nbf76188bead549c087019216fe0ecfdd a bf:GenerationProcess ;
+    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:31:51+00:00" .
+
+_:Ncbf552e144514f40930a953495c592eb a bf:Status ;
+    bf:code "n" .
+

@@ -1,0 +1,42 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/bc9f7993-6541-4abe-b4fc-4a70b6d3739f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "mathiasuw" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:58+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1039> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "N7433.4.M445" ;
+            bf:itemPortion "Z57 2018" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/586a9a33-f7e0-45e3-af06-443b8077d3a9> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "UW Libraries has limited edition copy 4/10"@eng ],
+        [ a bf:Note ;
+            bf:noteType "University of Washington note"@en ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Transformer Press"@eng ] ;
+            bf:date "2018" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Kingston (Ont.)"@eng ] ] ;
+    bf:provisionActivityStatement "[Kingston, Ontario] : Transformer Press, 2018"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Zipper"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/3ae462fd-27e3-4b13-8127-0c0bdb016fc4> .
+

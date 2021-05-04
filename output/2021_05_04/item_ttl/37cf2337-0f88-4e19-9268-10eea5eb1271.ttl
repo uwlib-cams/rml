@@ -1,0 +1,21 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://api.stage.sinopia.io/resource/37cf2337-0f88-4e19-9268-10eea5eb1271> a bf:Item ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "N7433.4.M445" ;
+            bf:itemPortion "Z57 2018" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/nr94023259> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ato> ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352082573908"@eng ] ;
+    bf:itemOf <https://api.sinopia.io/resource/bc9f7993-6541-4abe-b4fc-4a70b6d3739f> ;
+    bf:physicalLocation "suzzallen"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "scba"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/64ee2559-c08f-4595-80fb-f77c2edf60eb> .
+

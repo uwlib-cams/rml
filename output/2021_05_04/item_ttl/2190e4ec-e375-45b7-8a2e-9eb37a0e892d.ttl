@@ -1,0 +1,39 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2190e4ec-e375-45b7-8a2e-9eb37a0e892d> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:38:04+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "ND1049.Q2" ;
+            bf:itemPortion "A72 2015" ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/no2016169387> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmo> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2016169387> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352078280773"@eng ] ;
+    bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
+            rdfs:label "Gift of Qin Bailan"@eng ] ;
+    bf:itemOf <https://api.sinopia.io/resource/a7532c9c-8d9b-4a29-9064-7983e567ed92> ;
+    bf:physicalLocation "East Asia Library"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "Special Coll Oversize"@eng ] ;
+    bf:usageAndAccessPolicy [ a bf:AccessPolicy ;
+            rdfs:label "Access is restricted; on site use only"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/086fe612-1591-4a25-97bf-d4e4c9d3b295> .
+

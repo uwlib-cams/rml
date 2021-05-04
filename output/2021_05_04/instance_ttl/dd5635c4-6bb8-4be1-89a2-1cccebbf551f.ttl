@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/dd5635c4-6bb8-4be1-89a2-1cccebbf551f> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:21+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    bf:copyrightDate "©2020" ;
+    bf:digitalCharacteristic <http://rdaregistry.info/termList/fileType/1002> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 online resource (ix, 247 pages)"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <https://www.taylorfrancis.com/books/e/9780429316845> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "9780429316845 electronic book" ] ;
+    bf:instanceOf [ a bf:Work ;
+            rdfs:label "2019032288" ] ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Routledge"@eng ] ;
+            bf:date "2020" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Abingdon, Oxon ; New York, NY"@eng ] ] ;
+    bf:provisionActivityStatement "Abingdon, Oxon ; New York, NY : Routledge, 2020"@eng ;
+    bf:reproductionOf [ a bf:Instance ;
+            rdfs:label "1111655174" ] ;
+    bf:responsibilityStatement "edited by Pavan Kumar Malreddy, Anindya Sekhar Purakayastha and Birte Heidemann"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Violence in South Asia"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "contemporary perspectives"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/22bd4cca-654d-4df7-8670-c06e6de47ba2> .
+

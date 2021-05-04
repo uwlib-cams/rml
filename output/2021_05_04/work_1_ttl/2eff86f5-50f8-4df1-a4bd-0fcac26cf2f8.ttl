@@ -1,0 +1,84 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2eff86f5-50f8-4df1-a4bd-0fcac26cf2f8> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.edu" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:28:35+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Suri, Yash Pal" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ivr> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2001076834>,
+                <http://id.loc.gov/rwo/agents/nr2005007651> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Organization ;
+                    rdfs:label "Zero West (Firm)" ],
+                [ a bf:Organization ;
+                    rdfs:label "Fandango (Production Company)" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/prn> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2008035935> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/ivr> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Kunnemann, Kai" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmp> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Lenski, Lars" ],
+                [ a bf:Agent ;
+                    rdfs:label "Suri, Yash Pal" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/cng> ],
+        [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/rwo/agents/no2008035935> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/fmd> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2011026089>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026205>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026232>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026247>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026337>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026406>,
+        <http://id.loc.gov/authorities/genreForms/gf2011026423> ;
+    bf:originDate "2005" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n80125931>,
+        <http://id.loc.gov/authorities/subjects/sh85056605> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Amateur films--India" ;
+            madsrdf:authoritativeLabel "Amateur films--India" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "East Indians--England--Social life and customs" ;
+            madsrdf:authoritativeLabel "East Indians--England--Social life and customs" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Immigrants--Family relationships" ;
+            madsrdf:authoritativeLabel "Immigrants--Family relationships" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Suri, Sandhya--Family" ;
+            madsrdf:authoritativeLabel "Suri, Sandhya--Family" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Amateur films--Great Britain" ;
+            madsrdf:authoritativeLabel "Amateur films--Great Britain" ],
+        <http://id.loc.gov/authorities/subjects/sh2004001275>,
+        <http://id.loc.gov/authorities/subjects/sh2008115423>,
+        <http://id.loc.gov/authorities/subjects/sh2008117808>,
+        <http://id.loc.gov/authorities/subjects/sh85065070> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I for India"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/f3b38747-4060-445b-9b2c-52408cc16124> ;
+    skos:prefLabel "I for India"@eng .
+

@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/f617ebf1-dab2-47c0-bac2-8827bd75d65a> a bf:Item ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cec23" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:38:01+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PG3476.C355" ;
+            bf:itemPortion "R39 1931" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352080020381" ] ;
+    bf:itemOf <https://api.sinopia.io/resource/c7896de6-7c63-4779-8386-8945b6b23c11> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "note on item"@en ] ;
+    bf:physicalLocation "suzzallen" ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "scr" ] ;
+    bf:usageAndAccessPolicy [ a bf:UsePolicy ;
+            rdfs:label "This item is fragile and requires an appointment for use. Please contact Special Collections."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/05ecd0f7-2baa-4782-b0d7-f45e3a5e652a> .
+

@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/e2a5f5e3-8e4c-430f-a7b4-3c6be21f1ef7> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "lins@uw.ed" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:28+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Mahorter, Siobhan" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ],
+        [ a bf:Contribution ;
+            bf:agent [ a bf:Person ;
+                    rdfs:label "Lion, K. Casey" ],
+                [ a bf:Person ;
+                    rdfs:label "Petrescu-Prahova, Miruna" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/dgs> ] ;
+    bf:dissertation [ a bf:Dissertation ;
+            bf:date "2019" ;
+            bf:degree "M.P.H." ;
+            bf:grantingInstitution <http://id.loc.gov/authorities/names/n79054596> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026039> ;
+    bf:originDate "2019" ;
+    bf:originPlace [ a bf:Place ;
+            rdfs:label "Seattle" ] ;
+    bf:subject <http://id.nlm.nih.gov/mesh/D000080536>,
+        <http://id.nlm.nih.gov/mesh/D003144>,
+        <http://id.nlm.nih.gov/mesh/D006776>,
+        <http://id.nlm.nih.gov/mesh/D057220> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/82f4a21f-79c9-4370-b40e-16dd363466bf> ;
+    skos:prefLabel "Mahorter, Siobhan.Parental health literacy, barriers to care, and child hospital outcomes among hospitalized children"@eng .
+

@@ -1,0 +1,40 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/4c96a724-0932-4f84-80c6-745cf4b7d7a3> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aentze" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:32+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:dimensions "22 cm"@eng ;
+    bf:editionStatement "Fifteenth printing."@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "416 pages."@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/a55627e4-7d21-4a67-b043-5d421da4f1b6> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Dell Publishing Co., Inc."@eng ] ;
+            bf:date "July, 1974." ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    bf:provisionActivityStatement "New York, N.Y."@eng ;
+    bf:responsibilityStatement "by Bram Stoker."@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Dracula."@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/635cfe10-0edc-456d-b9c6-ddf81d5937f1> .
+

@@ -1,0 +1,32 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/16e78699-8b8b-487a-b5aa-9c9b26d9bce8> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:11+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903" ] ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2015026020>,
+        <http://id.loc.gov/authorities/genreForms/gf2016026006> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Pokhozhdenii︠a︡ odnogo matrosa"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Похождения одного матроса"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/6b974e4c-0d1d-4a7a-b750-a5d4cb54ffd9> ;
+    skos:prefLabel "Stani︠u︡kovich, K. M. (Konstantin Mikhaĭlovich), 1843-1903. Pokhozhdenii︠a︡ odnogo matrosa"@rus .
+

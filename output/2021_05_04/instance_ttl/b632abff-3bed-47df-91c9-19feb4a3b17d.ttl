@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b632abff-3bed-47df-91c9-19feb4a3b17d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:26+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QL737.R632" ;
+            bf:itemPortion "G64 2018" ] ;
+    bf:copyrightDate "©2018" ;
+    bf:dimensions "20 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xi, 286 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 9781603589086" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/c641026a-6ba8-4ef9-b308-5d334ed9aecc> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Chelsea Green Publishing"@eng ],
+                <http://id.loc.gov/rwo/agents/no2011013084> ;
+            bf:date "[2018]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London, UK"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "White River Junction, Vermont"@eng ] ] ;
+    bf:provisionActivityStatement "Chelsea Green Publishing : White River Junction, Vermont : London, UK,  [2018]"@eng ;
+    bf:responsibilityStatement "Ben Goldfarb ; foreword by Dan Flores"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Eager"@eng ;
+            bf:subtitle "the surprising, secret life of beavers and why they matter"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/239f95ad-00ff-4c7c-99b3-18acb567d312> .
+

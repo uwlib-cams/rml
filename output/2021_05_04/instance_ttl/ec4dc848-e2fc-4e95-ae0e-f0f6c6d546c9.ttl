@@ -1,0 +1,50 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/ec4dc848-e2fc-4e95-ae0e-f0f6c6d546c9> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:20+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PJ5054.A715" ;
+            bf:itemPortion "Y3713 2012" ] ;
+    bf:copyrightDate "©2012" ;
+    bf:dimensions "22 cm"@zxx ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "445 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 978-1-905559-23-7" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/d7a1b226-b569-41b2-bc62-e587309162e8> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Halban Publishers" ],
+                [ a bf:Agent ;
+                    rdfs:label "Halban"@eng ] ;
+            bf:date "2012" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ] ] ;
+    bf:provisionActivityStatement "London : Halban, 2012"@eng ;
+    bf:responsibilityStatement "Eli Amir"@eng,
+        "translated by Yael Lotan"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Yasmine"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/53b37d1f-2aba-4564-846c-2403a77a9e3d> .
+

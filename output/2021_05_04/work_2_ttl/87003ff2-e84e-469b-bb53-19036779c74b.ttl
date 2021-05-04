@@ -1,0 +1,37 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/87003ff2-e84e-469b-bb53-19036779c74b> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:29:33+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:expressionOf <https://api.sinopia.io/resource/ce4f89a6-55f7-4bc7-8abc-2dc934e30a36> ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026191> ;
+    bf:language <http://id.loc.gov/vocabulary/languages/chi> ;
+    bf:notation [ a bf:Script ;
+            rdfs:label "Traditional Chinese"@eng ] ;
+    bf:originDate "1909" ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Xinning xiang tu li shi"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "新寧鄉土歷史 : [二卷]"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Xinning xiang tu li shi : [er juan]"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/22ea168e-2587-4838-838c-bc2f8ce53103> ;
+    skos:altLabel "Lei, Zepu. Xinning xiang tu li shi (1909)"@eng,
+        "Lei, Zepu. 新寧鄉土歷史. Chinese"@eng ;
+    skos:prefLabel "Lei, Zepu. Xinning xiang tu li shi. Chinese"@eng .
+

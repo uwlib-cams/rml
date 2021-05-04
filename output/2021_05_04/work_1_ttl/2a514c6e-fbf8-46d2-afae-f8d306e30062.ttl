@@ -1,0 +1,33 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/2a514c6e-fbf8-46d2-afae-f8d306e30062> a bf:Work ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:21+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n2004030792> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/subjects/sh94000084> ;
+    bf:originDate "2005" ;
+    bf:subject <http://id.loc.gov/authorities/subjects/sh2008111268>,
+        <http://id.loc.gov/authorities/subjects/sh2008113166>,
+        <http://id.loc.gov/authorities/subjects/sh2008113494>,
+        <http://id.loc.gov/authorities/subjects/sh2008121577> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Twilight"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/7cffe198-f453-409b-b985-9d5660c7272c> ;
+    skos:prefLabel "Meyer, Stephenie, 1973-. Twilight"@eng .
+

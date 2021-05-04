@@ -1,0 +1,49 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/fc9106b3-47d9-4567-a377-744bf4e5df91> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:45+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "319 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/4f6a0ae4-7e00-4d39-9e26-51e9b9478dbd> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Published to accompany an exhibit held April-May, 2009 as part of the Moskovskiĭ mezhdunarodnyĭ festivalʹ \"Moda i stilʹ v fotografii.\""@eng ],
+        [ a bf:Note ;
+            rdfs:label "Includes bibliographical references."@eng ],
+        [ a bf:Note ;
+            rdfs:label "Contents and summary also in English."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Слово"@rus ],
+                [ a bf:Agent ;
+                    rdfs:label "Slovo"@eng ] ;
+            bf:date "2010" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Москва"@rus ] ] ;
+    bf:responsibilityStatement "редактор, Е. Усенко"@rus,
+        "тексты А. Петрова, К. Соловьева"@rus ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Russian costume in photographs"@eng,
+                "Русский костюм в фотографиях"@rus ;
+            bf:subtitle "metamorphoses"@eng,
+                "метаморфозы"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/fa61de0d-63e9-42f3-a99a-79ba3ab95b43> .
+

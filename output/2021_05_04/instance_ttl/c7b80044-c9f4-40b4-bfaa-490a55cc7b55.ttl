@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/c7b80044-c9f4-40b4-bfaa-490a55cc7b55> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:16+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R53" ;
+            bf:itemPortion "I2 1919" ] ;
+    bf:copyrightDate "©1919" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "18 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/0d474ee6-164b-453e-8569-b0712092a7d0> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker Company" ],
+                [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker Company"@eng ] ;
+            bf:date "[1919]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@eng ] ] ;
+    bf:provisionActivityStatement "Boston : Walter H. Baker Company,  [1919]"@eng ;
+    bf:responsibilityStatement "by Gladys Ruth Bridgham"@eng ;
+    bf:seriesStatement "Baker's edition of plays"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "I grant you three wishes"@eng ;
+            bf:subtitle "a fantasy in one act ; composed of prologue, three scenes and an epilogue"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/512a903e-0856-44d2-83d1-ee0512df8e90> .
+

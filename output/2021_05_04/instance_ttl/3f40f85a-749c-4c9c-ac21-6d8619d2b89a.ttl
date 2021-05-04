@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/3f40f85a-749c-4c9c-ac21-6d8619d2b89a> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee70" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:42+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1060> ;
+    bf:digitalCharacteristic [ a bf:EncodingFormat ;
+            rdfs:label "DVD video"@eng ],
+        <http://rdaregistry.info/termList/RDARegionalEncoding/1001>,
+        <http://rdaregistry.info/termList/fileType/1006> ;
+    bf:dimensions "4 3/4 in."@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "1 videodisc"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "EAN: 8809104052678" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/5cefd24a-e5e5-45e0-90d0-9e10b5461709> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1008> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "Originally broadcast January-December, 2006."@eng ] ;
+    bf:productionMethod <http://rdaregistry.info/termList/RDAproductionMethod/1017> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "월드 디지탈"@kor ] ;
+            bf:date "2008" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Korea"@eng ] ] ;
+    bf:provisionActivityStatement "[Korea] : 월드 디지탈, 2008"@kor ;
+    bf:responsibilityStatement "produced by Arirang TV"@eng,
+        "producer & director, Won Jongsun"@eng,
+        "script writer, Kwon Minhee, Shin Minjung"@eng ;
+    bf:soundCharacteristic [ a bf:PlaybackCharacteristic ;
+            rdfs:label "2.0 Dolby Digital Audio"@eng ],
+        <http://rdaregistry.info/termList/configPlayback/1002>,
+        <http://rdaregistry.info/termList/recMedium/1003>,
+        <http://rdaregistry.info/termList/typeRec/1002> ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "The dancer, Choi Seunghee"@eng,
+                "무용가 최 승희"@kor ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Muyongga Ch'oe Sŭng-hŭi"@eng ] ;
+    bf:videoCharacteristic <http://rdaregistry.info/termList/broadcastStand/1002> ;
+    owl:sameAs <https://api.sinopia.io/resource/71b34bef-f4d6-4ce9-a541-579a2f6186da> .
+

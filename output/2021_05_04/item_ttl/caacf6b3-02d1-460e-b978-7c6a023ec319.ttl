@@ -1,0 +1,17 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://api.stage.sinopia.io/resource/caacf6b3-02d1-460e-b978-7c6a023ec319> a bf:Item ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "N7433.4.W225" ;
+            bf:itemPortion "C66 2018" ] ;
+    bf:heldBy <https://id.loc.gov/vocabulary/organizations/wau> ;
+    bf:identifier [ a bf:Barcode ;
+            rdf:value "39352084716331"@eng ] ;
+    bf:physicalLocation "bothell"@eng ;
+    bf:sublocation [ a bf:Sublocation ;
+            rdfs:label "boart"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/32d5089a-3642-4996-a9da-5ab5bcabf5ef> .
+

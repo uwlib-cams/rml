@@ -1,0 +1,48 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/b0ed30f1-928b-4daa-9b42-46b18523c1d1> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:38+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R2733" ;
+            bf:itemPortion "H55 1941" ] ;
+    bf:copyrightDate "©1941" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "46 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/f6ce5586-2d2a-43a4-802a-9e7283d0ec8c> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Samuel French"@eng ],
+                <http://id.loc.gov/rwo/agents/n89646383> ;
+            bf:date "[1941]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Los Angeles, Calif."@eng ],
+                [ a bf:Place ;
+                    rdfs:label "New York, N.Y."@eng ] ] ;
+    bf:provisionActivityStatement "New York, N.Y. ; Los Angeles, Calif. : Samuel French, [1941]"@eng ;
+    bf:responsibilityStatement "by Ned Albert"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hillbilly Sue"@eng ;
+            bf:subtitle "a rousing one-act comedy"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/f44955d7-60e3-45a2-8191-af416bfb61e0> .
+

@@ -1,0 +1,44 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/292464f1-df44-4a73-89db-3e446f287aeb> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/subjects/sh85024235>,
+        <http://id.loc.gov/authorities/subjects/sh85083510> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jlee37" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:18+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/no2013091186> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:originDate "2018" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79091151> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Tungus-Manchu languages--Grammar, Comparative--Korean" ;
+            madsrdf:authoritativeLabel "Tungus-Manchu languages--Grammar, Comparative--Korean" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Korean language--Grammar, Comparative--Tungus" ;
+            madsrdf:authoritativeLabel "Korean language--Grammar, Comparative--Tungus" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Comparative study of Korean and Tungusic languages"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "朝鲜语与通古斯语关系研究"@chi ],
+        [ a bf:Title ;
+            bf:mainTitle "Chaoxian yu yu Tonggusi yu guan xi yan jiu"@chi ] ;
+    owl:sameAs <https://api.sinopia.io/resource/ad5a3368-f3e1-4872-8bb0-460ba65d30d2> ;
+    skos:altLabel "Yin, Tiechao, 1958- Comparative study of Korean and Tungusic languages"@chi,
+        "Yin, Tiechao, 1958- 朝鲜语与通古斯语关系研究"@chi ;
+    skos:prefLabel "Yin, Tiechao, 1958- Chaoxian yu yu Tonggusi yu guan xi yan jiu"@chi .
+

@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/3c117796-dfa2-4049-9d0c-12b63503c5b4> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "cc83" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:19+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QK1" ;
+            bf:itemPortion ".T13" ] ;
+    bf:dimensions "27 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    bf:frequency [ a bf:Frequency ;
+            rdfs:label "Annual, 1948-"@eng ],
+        [ a bf:Frequency ;
+            rdfs:label "Quarterly, <1990->"@eng ] ;
+    bf:hasReproduction <https://api.sinopia.io/resource/264c5691-fb21-446f-b205-535831f50206> ;
+    bf:instanceOf <https://api.sinopia.io/resource/a149001d-0aa3-4d9d-bf2c-6e6e9486ba8d> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1003> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "None published from Mar. 1950 to Oct. 1954 and Dec. 1955 to Dec. 1960."@eng ;
+            bf:noteType "frequency"@en ],
+        [ a bf:Note ;
+            rdfs:label "Latest issue consulted: Vol. 63, no. 3 (September 2018)."@eng ;
+            bf:noteType "issue, part, or iteration used as basis for identification of manifestation"@en ],
+        [ a bf:Note ;
+            rdfs:label "No. 1-4 also called v. 1, no. 1-4;"@eng ;
+            bf:noteType "frequency"@en ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "國立臺灣大學理學院植物學系研究報告"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "植物科學期刊"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Guo li Taiwan da xue li xue yuan zhi wu xue xi yan jiu bao gao"@chi ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Zhi wu ke xue qi kan"@chi ],
+        [ a bf:Title ;
+            bf:mainTitle "Taiwania"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/db307413-697e-4e64-b972-ace8b150ed74> .
+

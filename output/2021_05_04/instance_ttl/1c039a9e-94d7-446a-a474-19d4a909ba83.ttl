@@ -1,0 +1,56 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/1c039a9e-94d7-446a-a474-19d4a909ba83> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "dbrookin" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:34:32+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PH821" ;
+            bf:itemPortion ".K95 1994" ] ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "volumes"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 9785759005919" ],
+        [ a bf:Identifier ;
+            rdf:value "ISBN 575900591X" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/5c1069dd-13c6-46fa-899b-c6dd5586c1ed> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1005> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "1. кн. Прозо -- Кокымшо книга. Поэзий, драматургий."@chm ],
+        [ a bf:Note ;
+            rdfs:label "In Mari."@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Марий книга савыктыш"@chm ] ;
+            bf:date "1994-" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Йошкар-Ола"@chm ] ] ;
+    bf:responsibilityStatement "Р.А. Кудрявцева ямдылен"@chm ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Kyzytse mariĭ literatur"@chm ],
+        [ a bf:Title ;
+            bf:mainTitle "Кызытсе марий литератур"@chm ;
+            bf:subtitle "11 класслан хрестоматий"@chm ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Современная марийская литература"@rus ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Sovremennai︠a︡ mariĭskai︠a︡ literatura"@rus ] ;
+    owl:sameAs <https://api.sinopia.io/resource/28c01f9f-2502-4488-a144-71a31f21d0d4> .
+

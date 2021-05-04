@@ -1,0 +1,54 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/15689f2b-7954-45ce-be7a-0526cf9ae1d0> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:13+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "QL737.U55" ;
+            bf:itemPortion "H675 1988" ] ;
+    bf:copyrightDate "©1988" ;
+    bf:dimensions "28 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "21 pages, 68 unnumbered pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0877014949" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/dc01f4af-284f-41e5-aa04-2c1a66c31b5b> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Production ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Raincoast Books"@eng ] ;
+            bf:date "1988" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Vancouver, B.C."@eng ] ],
+        [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Chronicle Books"@eng ],
+                <http://id.loc.gov/rwo/agents/n87936832> ;
+            bf:date "[1988]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "San Francisco"@eng ] ] ;
+    bf:provisionActivityStatement "San Francisco : Chronicle Books, [1988]"@eng ;
+    bf:responsibilityStatement "Michio Hoshino"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Moose"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/4aa945a6-3fde-44e8-a2b4-bd7eeb7c5266> .
+

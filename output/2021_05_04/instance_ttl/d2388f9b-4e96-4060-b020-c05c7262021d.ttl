@@ -1,0 +1,52 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/d2388f9b-4e96-4060-b020-c05c7262021d> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:35:22+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "NA730.W2" ;
+            bf:itemPortion "W66 1980" ] ;
+    bf:copyrightDate "©1980" ;
+    bf:dimensions "23 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "xv, 483 pages"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "ISBN 0295957794" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/480f752d-d1eb-436d-91ea-d1a5d13367bb> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "University of Washington Press" ],
+                [ a bf:Agent ;
+                    rdfs:label "University of Washington Press"@eng ] ;
+            bf:date "[1980]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "London"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "Seattle"@eng ] ] ;
+    bf:provisionActivityStatement "Seattle ; London : University of Washington Press, [1980]"@eng ;
+    bf:responsibilityStatement "Sally B. Woodbridge and Roger Montgomery ; essay on landscape design by David S. Streatfield."@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "A guide to architecture in Washington State"@eng ;
+            bf:subtitle "an environmental perspective"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/53cfeb78-aa5c-4256-a463-358ca04520e6> .
+

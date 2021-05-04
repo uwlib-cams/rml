@@ -1,0 +1,46 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/13fa4b9f-fb88-4f6b-9d49-5cf29849aa90> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:05+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PS3503.R53" ;
+            bf:itemPortion "S5 1914" ] ;
+    bf:copyrightDate "Copryright, 1914" ;
+    bf:dimensions "19 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "43 pages"@eng ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/3be3755c-4207-4620-8fc6-ab2e8d32d0c2> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Walter H. Baker & Co."@eng ] ;
+            bf:date "1914" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Boston"@eng ] ] ;
+    bf:provisionActivityStatement "Boston : Walter H. Baker & Co."@eng ;
+    bf:responsibilityStatement "by Gladys Ruth Bridgham"@eng ;
+    bf:seriesStatement "Baker's edition of plays."@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Six times nine"@eng ;
+            bf:subtitle "a comedy in two acts"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d1e428e1-0463-49e2-8bd5-299c8ad8269c> .
+

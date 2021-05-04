@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/7b2e362e-413a-4441-9b61-c97f68756d51> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:36:49+00:00" ] ;
+            bf:source <http://id.loc.gov/vocabulary/organizations/wau> ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1008> ;
+    bf:classification [ a bf:ClassificationLcc ;
+            bf:classificationPortion "PZ7.D664" ;
+            bf:itemPortion "Han 1946" ] ;
+    bf:copyrightDate "©1946" ;
+    bf:dimensions "22 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "335 pages, 4 unnumbered leaves of plates"@eng ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "LCCN 46025118" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/fbb4be6e-776a-47a1-a8d4-7aab2abd4314> ;
+    bf:intendedAudience <http://id.loc.gov/authorities/demographicTerms/dg2015060010> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "The World Publishing Company"@eng ] ;
+            bf:date "[1946]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "New York"@eng ],
+                [ a bf:Place ;
+                    rdfs:label "Cleveland"@eng ] ] ;
+    bf:relatedTo <http://id.loc.gov/authorities/names/no00049285> ;
+    bf:responsibilityStatement "by Mary Mapes Dodge"@eng,
+        "illustrated by Hilda van Stockum"@eng,
+        "with an introduction by May Lamberton Becker"@eng ;
+    bf:seriesStatement "Rainbow classics"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Hans Brinker, or, The silver skates"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/c0a15cd9-521a-44fe-8e75-a9783a7c31a5> .
+

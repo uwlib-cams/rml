@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/a9461c68-d01b-48d8-b0f1-08c4a39d9277> a bf:Work ;
+    bflc:creatorCharacteristic <http://id.loc.gov/authorities/demographicTerms/dg2015060254>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060316>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2015060359>,
+        <http://id.loc.gov/authorities/demographicTerms/dg2016060051>,
+        <http://id.loc.gov/authorities/subjects/sh85070496> ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "aschiff" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:changeDate "2020-05-07"^^xsd:date ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:42+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n84228230> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://id.loc.gov/authorities/genreForms/gf2014026516>,
+        <http://id.loc.gov/authorities/genreForms/gf2015026020> ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "VIAF ID: 302444691" ],
+        <http://viaf.org/viaf/302444691> ;
+    bf:originDate "2005" ;
+    bf:originPlace <http://id.loc.gov/authorities/names/n79003285> ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Women, Palestinian Arab--Fiction" ;
+            madsrdf:authoritativeLabel "Women, Palestinian Arab--Fiction" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Israel--History--1967-1993--Fiction " ;
+            madsrdf:authoritativeLabel "Israel--History--1967-1993--Fiction " ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Arab-Israeli conflict--Social aspects--Fiction" ;
+            madsrdf:authoritativeLabel "Arab-Israeli conflict--Social aspects--Fiction" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Yasmin"@heb ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "Jasmine"@eng ],
+        [ a bf:VariantTitle ;
+            bf:mainTitle "יסמין"@heb ] ;
+    owl:sameAs <https://api.sinopia.io/resource/bd9d343d-229d-49b9-9eb1-34367dcbfada> ;
+    skos:altLabel "Amir, Eli. יסמין",
+        "Ami, Eli. Jasmine"@eng ;
+    skos:prefLabel "Amir, Eli. Yasmin"@heb .
+

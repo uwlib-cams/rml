@@ -1,0 +1,60 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/3c7edca1-8752-4f07-8165-3e3840af4dfc> a bf:Instance ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "emcotter" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:37:03+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:appliedMaterial <http://rdaregistry.info/termList/RDAMaterial/1017> ;
+    bf:baseMaterial <http://rdaregistry.info/termList/RDAMaterial/1025> ;
+    bf:carrier <http://www.rdaregistry.info/termList/RDACarrierType/1049> ;
+    bf:classification [ a bf:Classification ;
+            rdfs:label "Y 3.T 22/2:2 AM 3"@eng ;
+            bf:source <http://id.loc.gov/vocabulary/classSchemes/sudocs> ],
+        [ a bf:ClassificationLcc ;
+            bf:classificationPortion "TD788" ;
+            bf:itemPortion "F33 1989" ] ;
+    bf:copyrightDate "© [1989]" ;
+    bf:dimensions "26 cm"@eng ;
+    bf:extent [ a bf:Extent ;
+            rdfs:label "viii, 377 pages"@eng ] ;
+    bf:hasItem [ a bf:Item ;
+            bf:electronicLocator <http://purl.access.gpo.gov/GPO/LPS27253> ] ;
+    bf:identifiedBy [ a bf:Identifier ;
+            rdf:value "Y 3.T 22/2:2 AM 3" ] ;
+    bf:instanceOf <https://api.sinopia.io/resource/e98e5bbe-bd70-4b43-8c58-74d1f5eea360> ;
+    bf:issuance <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    bf:media <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+    bf:note [ a bf:Note ;
+            rdfs:label "S/N 052-003-01168-9"@eng ],
+        [ a bf:Note ;
+            rdfs:label "Shipping list no.: 1989-0742-P"@eng ],
+        [ a bf:Note ;
+            rdfs:label "\"October 1989\"--Page 4 of cover"@eng ],
+        [ a bf:Note ;
+            rdfs:label "\"OTA-O-424\"--Page 4 of cover"@eng ] ;
+    bf:provisionActivity [ a bf:Publication ;
+            bf:agent [ a bf:Agent ;
+                    rdfs:label "Congress of the U.S. Office of Technology Assessment"@eng ],
+                <http://id.loc.gov/rwo/agents/n79006671> ;
+            bf:date "[1989]" ;
+            bf:place [ a bf:Place ;
+                    rdfs:label "Washington, D.C."@eng ] ] ;
+    bf:provisionActivityStatement "Washington, D.C. : Congress of the U.S. Office of Technology Assessment, [1989]"@eng ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Facing America's trash"@eng ;
+            bf:subtitle "what next for municipal solid waste?"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/d04328c3-db6a-4196-ab5b-22fe95309bf4> .
+

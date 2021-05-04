@@ -1,0 +1,45 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/1a4cfdf2-353e-4d5f-b74d-c9897067c9a0> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "men" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "pfreeman" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionAuthentication <http://id.loc.gov/vocabulary/marcauthen/pcc> ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:27:04+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:contribution [ a bf:Contribution ;
+            bf:agent <http://id.loc.gov/authorities/names/n79045409> ;
+            bf:role <http://id.loc.gov/vocabulary/relators/aut> ] ;
+    bf:genreForm <http://vocab.getty.edu/aat/300048725> ;
+    bf:originDate "1979" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Mountain plants  -- Washington (State) -- Olympic Mountains -- Identification" ;
+            madsrdf:authoritativeLabel "Mountain plants  -- Washington (State) -- Olympic Mountains -- Identification" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Wild flowers -- Cascade Range -- Identification." ;
+            madsrdf:authoritativeLabel "Wild flowers -- Cascade Range -- Identification." ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Mountain plants -- Cascade Range -- Identification" ;
+            madsrdf:authoritativeLabel "Mountain plants -- Cascade Range -- Identification" ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Wild flowers -- Washington (State) -- Olympic Mountains -- Identification" ;
+            madsrdf:authoritativeLabel "Wild flowers -- Washington (State) -- Olympic Mountains -- Identification" ] ;
+    bf:title [ a bf:Title ;
+            bf:mainTitle "Mountain flowers"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/a36e9ced-6550-4bcc-b37d-aa7e8a0e123e> ;
+    skos:prefLabel "Manning, Harvey. Mountain flowers"@eng .
+

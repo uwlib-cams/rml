@@ -1,0 +1,36 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bflc: <http://id.loc.gov/ontologies/bflc/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.stage.sinopia.io/resource/abc14ae6-4af4-415a-aec5-8f7ec2bed2e1> a bf:Work ;
+    bflc:creatorCharacteristic [ a bflc:CreatorCharacteristic ;
+            rdfs:label "Women" ] ;
+    bf:adminMetadata [ a bf:AdminMetadata ;
+            bflc:catalogerID "jmoede" ;
+            bflc:encodingLevel <https://id.loc.gov/vocabulary/menclvl/f> ;
+            bf:creationDate "2021-05-04"^^xsd:date ;
+            bf:descriptionConventions <https://id.loc.gov/vocabulary/descriptionConventions/rda> ;
+            bf:descriptionLanguage <https://id.loc.gov/vocabulary/languages/eng> ;
+            bf:generationProcess [ a bf:GenerationProcess ;
+                    rdfs:label "rml.py SNAPSHOT: 2021-05-04T13:26:01+00:00" ] ;
+            bf:source <https://id.loc.gov/vocabulary/organizations/wau> ;
+            bf:status [ a bf:Status ;
+                    bf:code "n" ] ] ;
+    bf:originDate "2017" ;
+    bf:subject [ a madsrdf:Authority ;
+            rdfs:label "Cooking, Syrian--Aleppo " ;
+            madsrdf:authoritativeLabel "Cooking, Syrian--Aleppo " ],
+        [ a madsrdf:Authority ;
+            rdfs:label "Cooking, Syrian" ;
+            madsrdf:authoritativeLabel "Cooking, Syrian" ] ;
+    bf:title [ a bf:VariantTitle ;
+            bf:mainTitle "Celebrating the legendary cuisine of Syria"@eng ],
+        [ a bf:Title ;
+            bf:mainTitle "Aleppo cookbook"@eng ] ;
+    owl:sameAs <https://api.sinopia.io/resource/60b13770-473e-4dc9-bedf-de4e6c5130f5> ;
+    skos:prefLabel "Matar, Marlene. Aleppo cookbook : celebrating the legendary cuisine of Syria"@eng .
+
