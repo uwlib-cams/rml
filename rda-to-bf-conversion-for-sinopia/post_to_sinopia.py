@@ -30,6 +30,8 @@ fail_dict = {"work_1": [], "work_2": [], "instance": [], "item": []}
 print("Copy and paste a Java Web Token for Sinopia-Stage below.")
 jwt = input("> ")
 
+yes_to_all = False
+
 start = timer()
 bar = Bar('Posting to Sinopia-Stage', max=num_of_resources, suffix='%(percent)d%%') # progress bar
 for entity in resource_dict.keys():
@@ -40,7 +42,7 @@ for entity in resource_dict.keys():
 			headers = {"Authorization": f"Bearer {jwt}", "Content-Type": "application/json"}
 
 			resource_id = resource.split('.')[0]
-			resource_iri = f'https://api.stage.sinopia.io/resource/a{resource_id[1:]}'
+			resource_iri = f'https://api.stage.sinopia.io/resource/{resource_id}'
 
 			resource = open(f'../output/{currentDate}/{entity}_json/{resource}')
 			data = resource.read()
@@ -59,8 +61,22 @@ for entity in resource_dict.keys():
 					print("Copy and paste a Java Web Token for Sinopia-Stage below.")
 					jwt = input("> ")
 				elif error_code == 409: # conflict
-					print("\nWarning: IRI is not unique. Make sure you are uploading the correct data.")
-					break
+					if yes_to_all == False:
+						print("\nWarning: IRI is not unique. Overwrite existing data? (y/n)")
+						overwrite = input("> ")
+						if overwrite.lower() == "y":
+							requests.put(resource_iri, data=data.encode('utf-8'), headers = headers)
+							success_dict[entity].append(resource_iri)
+							print("\nOverwrite data for all repeated IRIs? (y/n)")
+							overwrite_all = input("> ")
+							if overwrite_all.lower() == "y":
+								yes_to_all = True
+						else:
+							fail_dict[entity].append((resource_id, error_code))
+					else:
+						requests.put(resource_iri, data=data.encode('utf-8'), headers = headers)
+						success_dict[entity].append(resource_iri)
+					resource_loop = False
 				else:
 					fail_dict[entity].append((resource_id, error_code))
 					resource_loop = False
@@ -70,7 +86,7 @@ for entity in resource_dict.keys():
 		bar.next()
 bar.finish()
 
-with open(f'post_to_sinopia_report.txt', 'w') as report:
+with open(f'post_to_sinopia_report_{currentDate}.txt', 'w') as report:
 	currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
 	report.write(f"Time of report: {currentTime}\n\n---\n")
 	for entity in resource_dict.keys():
