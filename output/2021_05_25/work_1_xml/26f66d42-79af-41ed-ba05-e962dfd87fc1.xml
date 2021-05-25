@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N0c4ee858e3d64698a18f708cd5ec6dc2">
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nb2002066406"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2010049080"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b18e48c7a084816b85c883c1df00784">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nbae980a3c1ad46a59e454e28a5c09beb"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>jlee70</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N2ae8133e6b9c4a96972ae5833965eb5f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a861a4fbf1b401c80e6fed5a7b9a201">
+    <rdfs:label>Data protection--Standards</rdfs:label>
+    <madsrdf:authoritativeLabel>Data protection--Standards</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6f21619dae3447dbb3c4a22837aa32d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+    <rdfs:label>Electronic books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/26f66d42-79af-41ed-ba05-e962dfd87fc1">
+    <bf:genreForm rdf:resource="http://vocab.getty.edu/aat/300265554"/>
+    <bf:subject rdf:nodeID="N7a861a4fbf1b401c80e6fed5a7b9a201"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <skos:prefLabel xml:lang="eng">Caler, Alan, 1957- Information security risk management for ISO 27001/ISO 27002</skos:prefLabel>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh99004226"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009121243"/>
+    <bf:title rdf:nodeID="N2d2dbca8033d4f94b235716492a3f183"/>
+    <bf:adminMetadata rdf:nodeID="N2b18e48c7a084816b85c883c1df00784"/>
+    <bf:genreForm rdf:nodeID="Nd6f21619dae3447dbb3c4a22837aa32d"/>
+    <bf:contribution rdf:nodeID="N0c4ee858e3d64698a18f708cd5ec6dc2"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/53ac989d-d13d-402a-9f6c-03d165f91319"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d2dbca8033d4f94b235716492a3f183">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Information security risk management for ISO 27001/ISO 27002</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2ae8133e6b9c4a96972ae5833965eb5f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbae980a3c1ad46a59e454e28a5c09beb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-25T14:42:22</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

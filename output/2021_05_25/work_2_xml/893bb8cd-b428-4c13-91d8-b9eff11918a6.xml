@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Ne3b3396e39534780a62ca27c632907f1">
+    <rdfs:label>Baker, Tom</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndee7042cf9634fe1abe67b387d97268e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nfb2676df09814dda830dca1cb6536d41"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:changeDate>
+    <bflc:catalogerID>tgis</bflc:catalogerID>
+    <bf:generationProcess rdf:nodeID="Ncfb20df3751d41fbbb44f4e441001a32"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfb20df3751d41fbbb44f4e441001a32">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-25T14:44:53</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab8321da8bc24a14bf1a640394dead31">
+    <rdfs:label>Miller, Libby</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/893bb8cd-b428-4c13-91d8-b9eff11918a6">
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/851889da-4142-410c-85f7-f898dd42abc3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:notation rdf:nodeID="Nfc09d70577744860bf347f86de343844"/>
+    <bf:summary rdf:nodeID="N7de5bd2852fa4d31867cb532bbf37c42"/>
+    <bf:originDate>2018</bf:originDate>
+    <bf:illustrativeContent rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:contribution rdf:nodeID="Ne7c838dff3b94a60be4b4edf4c87f187"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/0409bd3c-3127-479c-b698-43d31c06546c"/>
+    <bf:title rdf:nodeID="N1888c3c1267544ceb10a3bcd4c083144"/>
+    <bf:contribution rdf:nodeID="N11c95f9c27174a379963cfbe788d4216"/>
+    <bf:adminMetadata rdf:nodeID="Ndee7042cf9634fe1abe67b387d97268e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11c95f9c27174a379963cfbe788d4216">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="Ne3b3396e39534780a62ca27c632907f1"/>
+    <bf:role rdf:nodeID="N7bf28048f95e412ab0409276edc7ffe2"/>
+    <bf:agent rdf:nodeID="Nab8321da8bc24a14bf1a640394dead31"/>
+    <bf:agent rdf:nodeID="Na81b6f321da1423c87e535f557aee2db"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/wst"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na81b6f321da1423c87e535f557aee2db">
+    <rdfs:label>Archer, Phil</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7bf28048f95e412ab0409276edc7ffe2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Role"/>
+    <rdfs:label xml:lang="en">writer of foreword</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb2676df09814dda830dca1cb6536d41">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7de5bd2852fa4d31867cb532bbf37c42">
+    <rdfs:label xml:lang="eng">Describes two technologies for RDF validation: Shape Expressions (ShEx) and Shapes Constraint Language (SHACL), the rationales for their designs, a comparison of the two, and some example applications.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7c838dff3b94a60be4b4edf4c87f187">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no2010154579"/>
+    <bf:role rdf:nodeID="N7bf28048f95e412ab0409276edc7ffe2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc09d70577744860bf347f86de343844">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1888c3c1267544ceb10a3bcd4c083144">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Validating RDF data</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

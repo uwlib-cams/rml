@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/ab6ea349-28e4-4248-bc70-eef828d4226b">
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/70a6106d-0138-43d2-907b-94d0a4010a81"/>
+    <bf:colorContent rdf:nodeID="N8d0096ecaa0246eb97c5ddc6ce1b9eca"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:contribution rdf:nodeID="N427dad23865b48bb8ff95dc9a19e6d29"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/1cdb84c1-a494-42c7-8fc6-abf6aa8b9769"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:notation rdf:nodeID="N1d8d191620a143ffa39f8759c23bf77f"/>
+    <bf:originDate>1997</bf:originDate>
+    <skos:prefLabel xml:lang="eng">Susser, Allen. Great citrus book. Text. English</skos:prefLabel>
+    <bf:adminMetadata rdf:nodeID="Nf885c90bd885480181ddbba823d74eda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf885c90bd885480181ddbba823d74eda">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N959e2587076944ebb8836d2278018227"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="N359bec2d56264a5a8d4a996f91c63e15"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d0096ecaa0246eb97c5ddc6ce1b9eca">
+    <rdfs:label>color</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N427dad23865b48bb8ff95dc9a19e6d29">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n90677144"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N359bec2d56264a5a8d4a996f91c63e15">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d8d191620a143ffa39f8759c23bf77f">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N959e2587076944ebb8836d2278018227">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-25T14:45:16</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

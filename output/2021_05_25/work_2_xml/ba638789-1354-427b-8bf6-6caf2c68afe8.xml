@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N15b68d5865e54d2b91d22ac59e234ab6">
+    <bf:status rdf:nodeID="Ncd71220985a745cf8726ae7314759159"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:changeDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N95a7aabfa30e4251a50d1f1e99d4a3a8"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b4cd982fdb1438b889bbe52bfd18f0b">
+    <bf:agent rdf:nodeID="N14d79b9e088f47bfaf87e01e72e3fbbd"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14d79b9e088f47bfaf87e01e72e3fbbd">
+    <rdfs:label>Strickler, Zoe</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/ba638789-1354-427b-8bf6-6caf2c68afe8">
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:notation rdf:nodeID="N0676a8fbbb994a7e85d1b3236217bfdd"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:contribution rdf:nodeID="N2b4cd982fdb1438b889bbe52bfd18f0b"/>
+    <bf:adminMetadata rdf:nodeID="N15b68d5865e54d2b91d22ac59e234ab6"/>
+    <bf:supplementaryContent rdf:nodeID="Nf0c92a1556194314b38b23a0befb217b"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/c17f1a38-1530-4446-a249-9edca04a41fa"/>
+    <bf:summary rdf:nodeID="Nbfb9698c24ed4ae0a5c8fb44e2c40459"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate>1993</bf:originDate>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/9925a8e6-ed73-4817-acbb-e844b70df187"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd71220985a745cf8726ae7314759159">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N95a7aabfa30e4251a50d1f1e99d4a3a8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-25T14:47:26</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0676a8fbbb994a7e85d1b3236217bfdd">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfb9698c24ed4ae0a5c8fb44e2c40459">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+    <rdfs:label xml:lang="eng">Features wildflowers along the roads and highways of the Pacific Northwest.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0c92a1556194314b38b23a0befb217b">
+    <rdfs:label xml:lang="eng">Includes bibliographical references (page 261) and index</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/SupplementaryContent"/>
+  </rdf:Description>
+</rdf:RDF>

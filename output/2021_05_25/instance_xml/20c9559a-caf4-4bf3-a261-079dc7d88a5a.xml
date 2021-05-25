@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N983a5e6ee603454b8a42389c33a4753d">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerID>aentze</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N3a889d9f0bc84fafa6a62cbc2e6e3aa6"/>
+    <bf:generationProcess rdf:nodeID="Nc95c4cbac93947aebcf236de05165eb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf6c05c58c5e14815acab352850a9ffd2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Bantam Books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0ba3abcc81b41158fd0fa99a809a1d9">
+    <bf:mainTitle xml:lang="eng">Murder on the Orient Express</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2cc282efac7479ab525d06227e8fe06">
+    <rdfs:label xml:lang="eng">212 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/20c9559a-caf4-4bf3-a261-079dc7d88a5a">
+    <bf:identifiedBy rdf:nodeID="N82403d0baf4d446aa4a94651eb52be0e"/>
+    <bf:extent rdf:nodeID="Nd2cc282efac7479ab525d06227e8fe06"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:responsibilityStatement xml:lang="eng">Agatha Christie</bf:responsibilityStatement>
+    <bf:dimensions xml:lang="eng">24 cm</bf:dimensions>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:title rdf:nodeID="Nd0ba3abcc81b41158fd0fa99a809a1d9"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/22c4bb2a-2de5-4627-bba2-d618605d9d42"/>
+    <bf:classification rdf:nodeID="N988bca7703af47c783ae7f0d623aacb9"/>
+    <bf:provisionActivity rdf:nodeID="N4da08118270c44e2bd7a0189bf81d54d"/>
+    <bf:provisionActivityStatement xml:lang="eng">Toronto : Bantam Books, 1983</bf:provisionActivityStatement>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/584f8390-6d19-4f5a-a73d-40494fd3bb03"/>
+    <bf:adminMetadata rdf:nodeID="N983a5e6ee603454b8a42389c33a4753d"/>
+    <bf:seriesStatement xml:lang="eng">Agatha Christie hardcover collection</bf:seriesStatement>
+    <bf:copyrightDate>©1960</bf:copyrightDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3a889d9f0bc84fafa6a62cbc2e6e3aa6">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4da08118270c44e2bd7a0189bf81d54d">
+    <bf:agent rdf:nodeID="Nf6c05c58c5e14815acab352850a9ffd2"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n83120388"/>
+    <bf:place rdf:nodeID="Nb854603d91ed44ff99aee69449639227"/>
+    <bf:date>1983</bf:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82403d0baf4d446aa4a94651eb52be0e">
+    <rdf:value>ISBN 0-553-03000-0</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N988bca7703af47c783ae7f0d623aacb9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>M88 1983</bf:itemPortion>
+    <bf:classificationPortion>PR6005.H66</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb854603d91ed44ff99aee69449639227">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Toronto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc95c4cbac93947aebcf236de05165eb4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-25T14:48:59</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
