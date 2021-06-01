@@ -3408,7 +3408,7 @@ nosplit_bnode_list = [
 "Dissertation_"
 ]
 
-no_language_tag_list = ["P10219", "P20214", "P30007", "P30011", "P30009"]
+no_language_tag_list = ["P10219", "P20214", "P30007", "P30011", "P30009", "hasBarcode"]
 
 provisionActivityDistributionList = [
 	"P30008",

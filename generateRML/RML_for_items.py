@@ -55,6 +55,7 @@ from logical_source_functions import generate_constant_logical_source
 from logical_source_functions import generate_dissertation_logical_source
 from logical_source_functions import generate_lang_logical_source
 from logical_source_functions import generate_lang_nosplit_logical_source
+from logical_source_functions import generate_neutral_literal_logical_source
 from logical_source_functions import generate_main_logical_source
 from logical_source_functions import generate_not_lang_logical_source
 from logical_source_functions import generate_not_lang_nosplit_logical_source
@@ -70,6 +71,7 @@ from po_map_functions import generate_lang_literal_split_po_map
 from po_map_functions import generate_langnotlang_literal_po_main_map
 from po_map_functions import generate_neutral_literal_nosplit_po_map
 from po_map_functions import generate_neutral_literal_po_main_map
+from po_map_functions import generate_neutral_literal_split_po_map
 from po_map_functions import generate_not_lang_literal_split_po_map
 
 from start_RML_map import start_RML_map
@@ -206,8 +208,7 @@ def generate_rml_for_items(csv_dir):
 							elif "*" in map_2: # the blank node takes an IRI
 								generate_IRI_logical_source(RML_graph, "item", bnode_map_name, property_number)
 							elif property_number in no_language_tag_list: # the blank node takes a literal, lang tag doesn't matter
-								logical_source = generate_neutral_literal_logical_source(bnode_map_name, default_path, property_number)
-								item_RML_list.append(logical_source + "\n")
+								logical_source = generate_neutral_literal_logical_source(RML_graph, "item", bnode_map_name, property_number)
 							else: # the blank node takes a literal, lang tag does matter
 								generate_lang_logical_source(RML_graph, "item", bnode_map_name, property_number)
 
@@ -259,13 +260,11 @@ def generate_rml_for_items(csv_dir):
 							elif map_name in nosplit_bnode_list:
 								generate_neutral_literal_nosplit_po_map(RML_graph, map_name, node, property_number)
 							elif property_number in no_language_tag_list:
-								literal_po_map = generate_neutral_literal_split_po_map(node, map_name)
-								item_RML_list.append(literal_po_map + "\n")
+								generate_neutral_literal_split_po_map(RML_graph, map_name, node)
 
 								if "Lang" in map_name:
 									not_lang_map_name = f"Not_{map_name}"
-									second_literal_po_map = generate_neutral_literal_split_po_map(node, not_lang_map_name)
-									item_RML_list.append(second_literal_po_map + "\n")
+									generate_neutral_literal_split_po_map(RML_graph, not_lang_map_name, node)
 							else:
 								generate_lang_literal_split_po_map(RML_graph, map_name, node, property_number.split(':')[-1])
 
@@ -289,13 +288,11 @@ def generate_rml_for_items(csv_dir):
 								elif map_name in nosplit_bnode_list:
 									generate_neutral_literal_nosplit_po_map(RML_graph, map_name, node, property_number)
 								elif property_number in no_language_tag_list:
-									literal_po_map = generate_neutral_literal_split_po_map(node, map_name)
-									item_RML_list.append(literal_po_map + "\n")
+									generate_neutral_literal_split_po_map(RML_graph, map_name, node)
 
 									if "Lang" in map_name:
 										not_lang_map_name = f"Not_{map_name}"
-										second_literal_po_map = generate_neutral_literal_split_po_map(node, not_lang_map_name)
-										item_RML_list.append(second_literal_po_map + "\n")
+										generate_neutral_literal_split_po_map(RML_graph, not_lang_map_name, node)
 								else:
 									generate_lang_literal_split_po_map(RML_graph, map_name, node, property_number.split(':')[-1])
 
@@ -451,9 +448,8 @@ def generate_rml_for_testing_item_prop(csv_dir, prop):
 									generate_IRI_logical_source(RML_graph, "item", bnode_map_name, property_number)
 									print("\t\tgenerating IRI logical source (generate_IRI_logical_source())")
 								elif property_number in no_language_tag_list: # the blank node takes a literal, lang tag doesn't matter
-									generate_neutral_literal_logical_source(bnode_map_name, default_path, property_number)
+									generate_neutral_literal_logical_source(RML_graph, "item", bnode_map_name, property_number)
 									print("\t\tgenerating logical source (generate_neutral_literal_logical_source())")
-									item_RML_list.append(logical_source + "\n")
 								else: # the blank node takes a literal, lang tag does matter
 									generate_lang_logical_source(RML_graph, "item", bnode_map_name, property_number)
 									print("\t\tgenerating logical source (generate_lang_logical_source())")
@@ -500,12 +496,12 @@ def generate_rml_for_testing_item_prop(csv_dir, prop):
 									generate_neutral_literal_nosplit_po_map(RML_graph, map_name, node, property_number)
 									print("\t\tgenerating literal predicate object map, no split (generate_neutral_literal_nosplit_po_map())")
 								elif property_number in no_language_tag_list:
-									generate_neutral_literal_split_po_map(node, map_name)
+									generate_neutral_literal_split_po_map(RML_graph, map_name, node)
 									print("\t\tgenerating literal predicate object map, yes split (generate_neutral_literal_split_po_map())")
 
 									if "Lang" in map_name:
 										not_lang_map_name = f"Not_{map_name}"
-										generate_neutral_literal_split_po_map(node, not_lang_map_name)
+										generate_neutral_literal_split_po_map(RML_graph, not_lang_map_name, node)
 										print("\t\tgenerating literal predicate object map, yes split (generate_neutral_literal_split_po_map())")
 								else:
 									generate_lang_literal_split_po_map(RML_graph, map_name, node, prop)
@@ -538,12 +534,12 @@ def generate_rml_for_testing_item_prop(csv_dir, prop):
 										generate_neutral_literal_nosplit_po_map(RML_graph, map_name, node, property_number)
 										print("\t\tgenerating literal predicate object map, no split (generate_neutral_literal_nosplit_po_map())")
 									elif property_number in no_language_tag_list:
-										generate_neutral_literal_split_po_map(node, map_name)
+										generate_neutral_literal_split_po_map(RML_graph, map_name, node)
 										print("\t\tgenerating literal predicate object map, yes split (generate_neutral_literal_split_po_map())")
 
 										if "Lang" in map_name:
 											not_lang_map_name = f"Not_{map_name}"
-											generate_neutral_literal_split_po_map(node, not_lang_map_name)
+											generate_neutral_literal_split_po_map(RML_graph, not_lang_map_name, node)
 											print("\t\tgenerating literal predicate object map, yes split (generate_neutral_literal_split_po_map())")
 									else:
 										generate_lang_literal_split_po_map(RML_graph, map_name, node, prop)
