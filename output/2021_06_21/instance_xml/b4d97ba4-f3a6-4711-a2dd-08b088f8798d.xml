@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N80be0e768c584852bf100a5b60387d38">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bflc:catalogerID>leemihwa</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N0cab9cc8589941a1839d1f1c89dff4fc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06e43b86cff94742a882103be03f51a8">
+    <bf:place rdf:nodeID="Naac43034859d432c89a86e58b31ff5a9"/>
+    <bf:agent rdf:nodeID="N79d30f0037f149d68d03ee237f0685b3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>2016</bf:date>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n80016154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/b4d97ba4-f3a6-4711-a2dd-08b088f8798d">
+    <bf:provisionActivity rdf:nodeID="N06e43b86cff94742a882103be03f51a8"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/4e519bfa-90d9-4192-9535-e30c55a8569a"/>
+    <bf:title rdf:nodeID="Naecd087fe53b43ac8b1ed5b9f7d820aa"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:responsibilityStatement xml:lang="eng">Marcia Lei Zeng, Jian Qin</bf:responsibilityStatement>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/5742a9a1-07e0-4e1e-8a25-b2c3ee6be438"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:classification rdf:nodeID="Na2cdc046564f40ea98a98f4d30979ac8"/>
+    <bf:editionStatement xml:lang="eng">2nd edition</bf:editionStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:copyrightDate>2016</bf:copyrightDate>
+    <bf:adminMetadata rdf:nodeID="N80be0e768c584852bf100a5b60387d38"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79d30f0037f149d68d03ee237f0685b3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Neal-Schuman</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naac43034859d432c89a86e58b31ff5a9">
+    <rdfs:label xml:lang="eng">Chicago</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naecd087fe53b43ac8b1ed5b9f7d820aa">
+    <bf:mainTitle xml:lang="eng">Metadata</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2cdc046564f40ea98a98f4d30979ac8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>Z666.7</bf:classificationPortion>
+    <bf:itemPortion>.Z46 2016</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0cab9cc8589941a1839d1f1c89dff4fc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:18:35</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

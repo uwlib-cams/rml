@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2347ea79205842919d7554cae7f7d1bc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>cc83</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N7526e656e7f94590b04958be302c4767"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8efeddf91bbe4f76aaeafeccfb3fbe3d">
+    <bf:mainTitle xml:lang="chi">苏小妹</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7526e656e7f94590b04958be302c4767">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:18:08</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7bb18f28830546d7b1496969831c58bf">
+    <rdfs:label xml:lang="eng">1 scroll</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N00697c40ef8043b68dfd3a3ba67f8468">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">秦百蘭</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/800a2372-6001-4741-ba02-b0205c083500">
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1047"/>
+    <bf:extent rdf:nodeID="N7bb18f28830546d7b1496969831c58bf"/>
+    <bf:title rdf:nodeID="N8efeddf91bbe4f76aaeafeccfb3fbe3d"/>
+    <bf:provisionActivity rdf:nodeID="N62259abf4ef44fb0825804e77c9c6849"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1048"/>
+    <bf:responsibilityStatement xml:lang="eng">百蘭</bf:responsibilityStatement>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/e9402fd0-213a-4c28-8bab-bbc47c7b8452"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:adminMetadata rdf:nodeID="N2347ea79205842919d7554cae7f7d1bc"/>
+    <bf:dimensions xml:lang="eng">103 x 66 cm, on sheet 192 x 79 cm rolled to 79 x 5 cm in diameter</bf:dimensions>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3a60f2a8-47e4-48d0-9722-3c5582b72a41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62259abf4ef44fb0825804e77c9c6849">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no2016169387"/>
+    <bf:date>乙未 [2015]</bf:date>
+    <bf:agent rdf:nodeID="N00697c40ef8043b68dfd3a3ba67f8468"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+</rdf:RDF>

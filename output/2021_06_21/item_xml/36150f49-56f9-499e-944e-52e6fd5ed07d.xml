@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N44233995db8b4676923da59c6ad32c33">
+    <bf:status rdf:nodeID="Ned67a3614c294e6d81619657e849e76a"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N90f1344df31749cf935004a71d057305"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90f1344df31749cf935004a71d057305">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:21:19</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/36150f49-56f9-499e-944e-52e6fd5ed07d">
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/a2cf9e18-226b-44b8-b1db-ad5294440029"/>
+    <bf:adminMetadata rdf:nodeID="N44233995db8b4676923da59c6ad32c33"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/18508f13-1493-4de0-ac1c-3a1f7a0c2eed"/>
+    <bf:classification rdf:nodeID="N03573e91317946acbd2b5e850ff2f8df"/>
+    <bf:sublocation rdf:nodeID="N1cc5378fe7d74bec81c24cfeace80fa9"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Nothwest collection</bf:physicalLocation>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03573e91317946acbd2b5e850ff2f8df">
+    <bf:itemPortion>K54 1983</bf:itemPortion>
+    <bf:classificationPortion>HE5783.W3</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ned67a3614c294e6d81619657e849e76a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1cc5378fe7d74bec81c24cfeace80fa9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">field guides</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

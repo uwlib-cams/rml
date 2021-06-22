@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N08ed6f34e27f4c7c822f1ce172173d20">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n50044220"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na55e67bca5cf4cb382e9574c742cadcd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Seashore life of the northern Pacific coast</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/dc66a966-661e-469d-9429-bbcc295ec77a">
+    <bf:title rdf:nodeID="Na55e67bca5cf4cb382e9574c742cadcd"/>
+    <bf:subject rdf:nodeID="Na09077457be546a5836727a2f462184a"/>
+    <bf:originDate>1983</bf:originDate>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026165"/>
+    <bf:contribution rdf:nodeID="N08ed6f34e27f4c7c822f1ce172173d20"/>
+    <bf:subject rdf:nodeID="N1809574dffd3492fadb8081fa4cd8a2f"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/7f1ae484-c6e1-424e-9e18-a91e1c345161"/>
+    <bf:adminMetadata rdf:nodeID="N61152b3bdd2b4c6e90a38d61175f2962"/>
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79041965"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <skos:prefLabel xml:lang="eng">Kozloff, Eugene N. Seashore life of the northern Pacific Coast</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N61152b3bdd2b4c6e90a38d61175f2962">
+    <bf:status rdf:nodeID="N28603773de9d43c3a629f9b591d076df"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N88715e059d6449049f350a2900f0a167"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88715e059d6449049f350a2900f0a167">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:09:46</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1809574dffd3492fadb8081fa4cd8a2f">
+    <rdfs:label>Seashore biology -- Northwest, Pacific</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Seashore biology -- Northwest, Pacific</madsrdf:authoritativeLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na09077457be546a5836727a2f462184a">
+    <rdfs:label>Marine biology -- North Pacific Ocean</rdfs:label>
+    <madsrdf:authoritativeLabel>Marine biology -- North Pacific Ocean</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28603773de9d43c3a629f9b591d076df">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N4e0d3213857649b8bde79e1a6acee094">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:status rdf:nodeID="N35bd4bb9f1a14cd8a6f47e490753057c"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N1eee57f2ddbb483799fc0042003cda90"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69291dc5ed7a4a019bc4784b44088a81">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/841785ac-e5b6-4313-a4bc-6bc986ca9f70">
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:derivativeOf rdf:nodeID="Nd2ea1a073aec43cd9ff62b93c557a2bc"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/34884ecf-896b-4817-8dc9-1c4a1ca98c38"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:adminMetadata rdf:nodeID="N4e0d3213857649b8bde79e1a6acee094"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/146a1a53-99c9-41a3-8bdd-052fd4fd888c"/>
+    <bf:originDate>1943</bf:originDate>
+    <skos:prefLabel xml:lang="eng">Glennon, Gordon. Emma. English</skos:prefLabel>
+    <bf:notation rdf:nodeID="N69291dc5ed7a4a019bc4784b44088a81"/>
+    <bf:title rdf:nodeID="N1aa24ea7a1e941cc86aa4c4ddcd315e3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1eee57f2ddbb483799fc0042003cda90">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:13:14</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2ea1a073aec43cd9ff62b93c557a2bc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:label>Austen, Jane, 1775-1817. Emma. English</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1aa24ea7a1e941cc86aa4c4ddcd315e3">
+    <bf:mainTitle xml:lang="eng">Emma</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35bd4bb9f1a14cd8a6f47e490753057c">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

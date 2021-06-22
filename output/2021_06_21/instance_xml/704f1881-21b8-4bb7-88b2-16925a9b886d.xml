@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N866d35ee21c249c9826486b8f7092bb7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PZ7.7.V566</bf:classificationPortion>
+    <bf:itemPortion>Gi 2018</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N226672e4918447bbb587afe0ef68640f">
+    <bf:mainTitle xml:lang="eng">A girl in the Himalayas</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/704f1881-21b8-4bb7-88b2-16925a9b886d">
+    <bf:copyrightDate>©2018</bf:copyrightDate>
+    <bf:provisionActivityStatement xml:lang="eng">Los Angeles, CA : Archaia, [2018]</bf:provisionActivityStatement>
+    <bf:classification rdf:nodeID="N866d35ee21c249c9826486b8f7092bb7"/>
+    <bf:dimensions xml:lang="zxx">24 cm</bf:dimensions>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa"/>
+    <bf:responsibilityStatement xml:lang="eng">David Jesus Vignolli</bf:responsibilityStatement>
+    <bf:title rdf:nodeID="N226672e4918447bbb587afe0ef68640f"/>
+    <bf:adminMetadata rdf:nodeID="N19afd3994df540a6a3115e373562e8e4"/>
+    <bf:provisionActivity rdf:nodeID="N9638ec97c08745c7b00c5e81d21b339f"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/945dc867-f369-4f9c-8903-3fd066f5b236"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:identifiedBy rdf:nodeID="N996f78226c6f49f2b08e5d120ef165bd"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N380dadfae8354076a87b6f8985257db5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Los Angeles, CA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae8474798bc0479480fde85924128089">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Archaia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19afd3994df540a6a3115e373562e8e4">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>jlee70</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N72daf81ba6794f4ab29cd3a472c7f0d8"/>
+    <bf:status rdf:nodeID="N187eb414a77940dda4522e2a2e3c623c"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9638ec97c08745c7b00c5e81d21b339f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="Nae8474798bc0479480fde85924128089"/>
+    <bf:place rdf:nodeID="N380dadfae8354076a87b6f8985257db5"/>
+    <bf:date>2018</bf:date>
+    <bf:agent rdf:nodeID="N8620e73ec5fe43bb8dec45f2499dfa8a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N187eb414a77940dda4522e2a2e3c623c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72daf81ba6794f4ab29cd3a472c7f0d8">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:19:13</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N996f78226c6f49f2b08e5d120ef165bd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>ISBN 9781684151295</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8620e73ec5fe43bb8dec45f2499dfa8a">
+    <rdfs:label xml:lang="eng">Archaia</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

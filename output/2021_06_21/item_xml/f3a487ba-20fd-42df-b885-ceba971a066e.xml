@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nb806ed699fe04c5cae0cddf58372d4d3">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:21:12</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e22149704a34466afdbc557d3623a59">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+    <rdfs:label xml:lang="eng">Access is restricted; on site use only</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f95f0efcaea487596660c390e6ce0c7">
+    <bf:generationProcess rdf:nodeID="Nb806ed699fe04c5cae0cddf58372d4d3"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bflc:catalogerID>cc83</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f3a487ba-20fd-42df-b885-ceba971a066e">
+    <bf:adminMetadata rdf:nodeID="N1f95f0efcaea487596660c390e6ce0c7"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/800a2372-6001-4741-ba02-b0205c083500"/>
+    <bf:classification rdf:nodeID="Nce74dbafe0a143a6b32e9dad573c63ac"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:contribution rdf:nodeID="N7a5685945f9f49f8a73bab0e33fabc7b"/>
+    <bf:sublocation rdf:nodeID="Nbde985099da849e39c885d9ceb77e1e4"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:immediateAcquisition rdf:nodeID="Na44528bf9afe4148a9765530d15b1693"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/086fe612-1591-4a25-97bf-d4e4c9d3b295"/>
+    <bf:contribution rdf:nodeID="N01391e303aa546b499dc09cd75846747"/>
+    <bf:identifier rdf:nodeID="Nf07fc2dd04e04526977116ad47214db6"/>
+    <bf:physicalLocation xml:lang="eng">East Asia Library</bf:physicalLocation>
+    <bf:usageAndAccessPolicy rdf:nodeID="N8e22149704a34466afdbc557d3623a59"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a5685945f9f49f8a73bab0e33fabc7b">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2016169387"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf07fc2dd04e04526977116ad47214db6">
+    <rdf:value>39352078280773</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce74dbafe0a143a6b32e9dad573c63ac">
+    <bf:classificationPortion>ND1049.Q2</bf:classificationPortion>
+    <bf:itemPortion>A72 2015</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01391e303aa546b499dc09cd75846747">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no2016169387"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/dnr"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbde985099da849e39c885d9ceb77e1e4">
+    <rdfs:label xml:lang="eng">Special Coll Oversize</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na44528bf9afe4148a9765530d15b1693">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+    <rdfs:label xml:lang="eng">Gift of Qin Bailan</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

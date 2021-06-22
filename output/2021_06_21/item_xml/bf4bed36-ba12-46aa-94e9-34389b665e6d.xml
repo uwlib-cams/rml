@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf519afaafdd6491185d83a2c420ee25c">
+    <rdfs:label xml:lang="eng">szstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N698f30e98b6b48059bb126459dc468a4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PR4034</bf:classificationPortion>
+    <bf:itemPortion>.L3 1925</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf7fe41f0a1c54e849881591a3c48bac3">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="Nd663fa26259342279bf03d5b8865e415"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/bf4bed36-ba12-46aa-94e9-34389b665e6d">
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <bf:identifier rdf:nodeID="Ncf09187aa3184e5c98dbd50660dc6f89"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="N698f30e98b6b48059bb126459dc468a4"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/ae4ed6a1-c8cd-46f6-9d8c-4818e635935e"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="Nf7fe41f0a1c54e849881591a3c48bac3"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/33ffa488-a769-4430-8b54-489c0c4d2b7e"/>
+    <bf:sublocation rdf:nodeID="Nf519afaafdd6491185d83a2c420ee25c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf09187aa3184e5c98dbd50660dc6f89">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>39352010758886</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd663fa26259342279bf03d5b8865e415">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:21:35</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

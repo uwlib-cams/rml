@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf6d401cf61634a23a87f1326ffde9464">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbef8999b3ec4d1cad4b711d3b8baa02">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-21</bf:changeDate>
+    <bf:generationProcess rdf:nodeID="Nc324738486c14c81995fd0c90cb360f0"/>
+    <bf:status rdf:nodeID="Nf6d401cf61634a23a87f1326ffde9464"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/4093ee78-19b3-4248-9d50-9570bfee01b9">
+    <bf:adminMetadata rdf:nodeID="Nfbef8999b3ec4d1cad4b711d3b8baa02"/>
+    <bf:sublocation rdf:nodeID="N1c724ec1ee9d43ac9aa1bf2ec85dd552"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/a8048500-bb3b-43d8-81bb-9bc6e8653ff6"/>
+    <bf:physicalLocation xml:lang="eng">natural history books</bf:physicalLocation>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/bda958c2-c723-4036-af8b-865c7e0f99e4"/>
+    <bf:classification rdf:nodeID="Neab39088aad24e2a9014252a50c54128"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neab39088aad24e2a9014252a50c54128">
+    <bf:itemPortion>G64 2018</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>QL737.R632</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c724ec1ee9d43ac9aa1bf2ec85dd552">
+    <rdfs:label xml:lang="eng">stack on the floor</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc324738486c14c81995fd0c90cb360f0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-21T16:22:36</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
