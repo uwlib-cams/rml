@@ -138,7 +138,7 @@ def transform_rda_to_bf(entity, entityList, currentDate, output_location):
 				g.remove((o, bf.creationDate, None))
 				g.remove((o, bf.changeDate, None))
 				g.add((o, bf.creationDate, Literal(IRI_dict[RDA_ID][1])))
-				if currentDate_hyphen != IRI_dict[RDA_ID][1]): # current date is different from original post date
+				if currentDate_hyphen != IRI_dict[RDA_ID][1]: # current date is different from original post date
 					g.add((o, bf.changeDate, Literal(currentDate_hyphen)))
 		else: # BF has not already been posted to Sinopia; treat as creation
 			for s, p, o in g.triples((None, bf.adminMetadata, None)):
@@ -235,6 +235,7 @@ with open(f"set_IRIs.csv", mode="a") as csv_output:
 	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
 	for RDA_ID in rda_bf_dict.keys():
-		csv_writer.writerow([RDA_ID, rda_bf_dict[RDA_ID], currentDate_hyphen])
+		if RDA_ID not in IRI_dict.keys():
+			csv_writer.writerow([RDA_ID, rda_bf_dict[RDA_ID], currentDate_hyphen])
 end = timer()
 print(f"Elapsed time: {round((end - start), 1)} s")
