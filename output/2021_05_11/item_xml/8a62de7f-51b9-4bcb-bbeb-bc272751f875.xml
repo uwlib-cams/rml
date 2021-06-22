@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/8a62de7f-51b9-4bcb-bbeb-bc272751f875">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/eef37748-267d-462a-9e21-e6b0a30e4678"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest books</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/aa5ff87e-c73a-438e-9f24-de999ba306d0"/>
+    <bf:adminMetadata rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f"/>
+    <bf:classification rdf:nodeID="Neefa463da0144bfa93982ee7d540e362"/>
+    <bf:sublocation rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neefa463da0144bfa93982ee7d540e362">
+    <bf:classificationPortion>PS3569.M537518</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>S43 1990</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N3762f48c24d84212b9eb32539de408ac"/>
+    <bf:status rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3762f48c24d84212b9eb32539de408ac">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-11T15:18:04</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e">
+    <rdfs:label xml:lang="eng">Mysteries</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/e1adf825-fcdd-4dd6-902f-1f1e7aab2a91">
+    <bf:responsibilityStatement xml:lang="eng">by Bram Stoker.</bf:responsibilityStatement>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/635cfe10-0edc-456d-b9c6-ddf81d5937f1"/>
+    <bf:editionStatement xml:lang="eng">Fifteenth printing.</bf:editionStatement>
+    <bf:adminMetadata rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e"/>
+    <bf:provisionActivityStatement xml:lang="eng">New York, N.Y.</bf:provisionActivityStatement>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:provisionActivity rdf:nodeID="Neefa463da0144bfa93982ee7d540e362"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/74959199-9271-4353-844f-4819ba4f3f14"/>
+    <bf:extent rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:title rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:dimensions xml:lang="eng">22 cm</bf:dimensions>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neefa463da0144bfa93982ee7d540e362">
+    <bf:date>July, 1974.</bf:date>
+    <bf:place rdf:nodeID="Nfde3a2c3a95d41f1bee4b997d56f879c"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="N584cb435e3854ba9acde0c121a9c4aaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e">
+    <bf:status rdf:nodeID="N30864635720a441aa40165a6f5d8d9b3"/>
+    <bflc:catalogerID>aentze</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N1fa06a8d2185499e97bccd7d61eb66bd"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">416 pages.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30864635720a441aa40165a6f5d8d9b3">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N584cb435e3854ba9acde0c121a9c4aaf">
+    <rdfs:label xml:lang="eng">Dell Publishing Co., Inc.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Dracula.</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfde3a2c3a95d41f1bee4b997d56f879c">
+    <rdfs:label xml:lang="eng">New York, N.Y.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fa06a8d2185499e97bccd7d61eb66bd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-11T15:13:42</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

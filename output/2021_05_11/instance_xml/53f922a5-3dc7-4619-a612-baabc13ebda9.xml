@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/53f922a5-3dc7-4619-a612-baabc13ebda9">
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:responsibilityStatement xml:lang="eng">from the novel by Jane Austen</bf:responsibilityStatement>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/34884ecf-896b-4817-8dc9-1c4a1ca98c38"/>
+    <bf:provisionActivity rdf:nodeID="Neefa463da0144bfa93982ee7d540e362"/>
+    <bf:title rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f"/>
+    <bf:responsibilityStatement xml:lang="eng">a play by Gordon Glennon</bf:responsibilityStatement>
+    <bf:dimensions xml:lang="eng">20 cm</bf:dimensions>
+    <bf:adminMetadata rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/4806ea2e-ac6f-4177-8162-20e922436a11"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:extent rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dca6fa7384b429ca6b662ea32c3481f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Emma</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neefa463da0144bfa93982ee7d540e362">
+    <bf:agent rdf:nodeID="N584cb435e3854ba9acde0c121a9c4aaf"/>
+    <bf:date>1945</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="Nfde3a2c3a95d41f1bee4b997d56f879c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35a6df8b9fe644658fb578898ee5285e">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N30864635720a441aa40165a6f5d8d9b3"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:generationProcess rdf:nodeID="N338510ac15714e28b4cc28f7247cd23f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N338510ac15714e28b4cc28f7247cd23f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-11T15:13:22</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N584cb435e3854ba9acde0c121a9c4aaf">
+    <rdfs:label xml:lang="eng">Macmillan &amp; Co. Ltd</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfde3a2c3a95d41f1bee4b997d56f879c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">London</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30864635720a441aa40165a6f5d8d9b3">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2122ff191f5c4810956d51698c7d4efa">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">vi, 122 pages</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
