@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N8f478a4bcde84c4394c78996b0b53e2a">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nf922db2cc72e4765910e466222f691b0"/>
+    <bflc:catalogerID>lins@uw.edu</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Na3f86aab991448378780b5e4025a21a4"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N995d6b57b7d745b9b8c9defd314eba41">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+    <bf:agent rdf:nodeID="N49d2cf3b3fb1480b8fe97dcdda6565aa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/9477bc79-8ba0-460d-8692-891372aa11da">
+    <bf:title rdf:nodeID="Nad864dfeb3374b688d64172ded3cf2cb"/>
+    <bf:originPlace rdf:nodeID="N3bf062678e1d45a78961082a5d1e67ca"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026536"/>
+    <bf:originDate>2015</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008110918"/>
+    <skos:prefLabel xml:lang="eng">Idaho Montana</skos:prefLabel>
+    <bf:adminMetadata rdf:nodeID="N8f478a4bcde84c4394c78996b0b53e2a"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008110917"/>
+    <bf:contribution rdf:nodeID="N995d6b57b7d745b9b8c9defd314eba41"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/420d9d87-de67-45fd-8367-e1c451ef725a"/>
+    <bf:cartographicAttributes rdf:nodeID="Ne2fa27c8b5f84a018cc29c02d710433b"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:cartographicAttributes rdf:nodeID="N1f796d232d384565b92fe728e1bd53a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49d2cf3b3fb1480b8fe97dcdda6565aa">
+    <rdfs:label>AAA (Organization : U.S.)</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3bf062678e1d45a78961082a5d1e67ca">
+    <rdfs:label>Heathrow, FL</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f796d232d384565b92fe728e1bd53a0">
+    <bf:coordinates xml:lang="eng">W 117°--W 103°/N 49°--N 45°</bf:coordinates>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartographic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf922db2cc72e4765910e466222f691b0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad864dfeb3374b688d64172ded3cf2cb">
+    <bf:mainTitle xml:lang="eng">Idaho Montana</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2fa27c8b5f84a018cc29c02d710433b">
+    <bf:coordinates xml:lang="eng">W 117°--W 110°/N 49°--N 42°</bf:coordinates>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartographic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3f86aab991448378780b5e4025a21a4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T16:13:10+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

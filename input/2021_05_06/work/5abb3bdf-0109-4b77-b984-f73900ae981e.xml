@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sin="http://sinopia.io/vocabulary/"
+>
+  <rdf:Description rdf:nodeID="Nff778654e0124fd5a23e499581b566e8">
+    <bf:code xml:lang="en">n</bf:code>
+    <sin:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata:Status</sin:hasResourceTemplate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e67999beddc423c9b2c8b5786bfdc01">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <sin:hasResourceTemplate>WAU:RT:BF2:BFLC:AdminMetadata</sin:hasResourceTemplate>
+    <bf:status rdf:nodeID="Nff778654e0124fd5a23e499581b566e8"/>
+    <bf:creationDate xml:lang="en">2019-09-25</bf:creationDate>
+    <bflc:catalogerID xml:lang="en">cec</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/isbd"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/5abb3bdf-0109-4b77-b984-f73900ae981e">
+    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+    <sin:hasResourceTemplate>WAU:RT:RDA:Work:monograph</sin:hasResourceTemplate>
+    <bf:adminMetadata rdf:nodeID="N7e67999beddc423c9b2c8b5786bfdc01"/>
+    <owl:sameAs rdf:resource="https://api.stage.sinopia.io/resource/03bb5824-7c63-438c-8452-a525007dad1b"/>
+    <rdaw:P10078 rdf:resource="http://id.loc.gov/authorities/names/n94102982.html"/>
+  </rdf:Description>
+</rdf:RDF>

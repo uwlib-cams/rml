@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N3f369d10a9ed47da91c6ee806fae54d0">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N594b3075e05f4f0882e174889fe79f66"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:status rdf:nodeID="Nc91950c03c9146f189b01f78d4d50611"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/c283e535-ba05-4b70-bf2c-bb7030514e17">
+    <bf:adminMetadata rdf:nodeID="N3f369d10a9ed47da91c6ee806fae54d0"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/0c282e57-ab72-4266-a153-8e34454667d6"/>
+    <bf:physicalLocation xml:lang="eng">Adam's home</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/89ed3655-bef0-42b0-a9ed-bc52c07aa0ec"/>
+    <bf:sublocation rdf:nodeID="Nc97fcc705824464d84949c6e5ca8b740"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:classification rdf:nodeID="N5abeb664617a435ebd42329edebe7d70"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5abeb664617a435ebd42329edebe7d70">
+    <bf:itemPortion>S87 1997</bf:itemPortion>
+    <bf:classificationPortion>TX813.C5</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc97fcc705824464d84949c6e5ca8b740">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">Cookbook collection</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc91950c03c9146f189b01f78d4d50611">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N594b3075e05f4f0882e174889fe79f66">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T21:32:54+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

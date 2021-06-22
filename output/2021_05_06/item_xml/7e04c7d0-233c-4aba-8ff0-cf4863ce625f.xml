@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N57c0ce29100d4e5ca92483431bbe73ce">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Nb981354d5b544919be23168d065c8c2f"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="Nd288fdcff57b46f1ba70975a14ad5436"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53b3b454023b45b68bc681ea83bb4a73">
+    <bf:itemPortion>W66 1980</bf:itemPortion>
+    <bf:classificationPortion>NA730.W2</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/7e04c7d0-233c-4aba-8ff0-cf4863ce625f">
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest collection</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N57c0ce29100d4e5ca92483431bbe73ce"/>
+    <bf:classification rdf:nodeID="N53b3b454023b45b68bc681ea83bb4a73"/>
+    <bf:sublocation rdf:nodeID="N34c9e3a5a8da4b13b0d1c7b20964efe3"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a9ea08ed-39f9-4781-8dcf-778e00e2065a"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/139ffc4c-bc4d-43e8-b723-be59d11af4a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34c9e3a5a8da4b13b0d1c7b20964efe3">
+    <rdfs:label xml:lang="eng">bookshelf</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb981354d5b544919be23168d065c8c2f">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T21:33:08+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd288fdcff57b46f1ba70975a14ad5436">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

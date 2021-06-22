@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N05555ef25f594988a8b9611db68300fd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd198cb2eb514d13a35cb74e6071ab0e">
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:status rdf:nodeID="Nd2fc7d41036248e29ea99976ffdc409f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N7543ab74766d4b839782c536ebca54e0"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N005a018b7e9e4bf1bd7266d6777aa88b">
+    <bf:agent rdf:nodeID="Nd50be3b3f2b54bcbb1ee0a4fd888a071"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/74a23b6b-e8c2-47ca-97a3-e7fa89d5fc02">
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/532fb963-a3c3-4da7-a7f8-eb870b86264d"/>
+    <bf:contribution rdf:nodeID="N005a018b7e9e4bf1bd7266d6777aa88b"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d21f1469-3e8b-40c9-8d9d-db575649c681"/>
+    <bf:originDate>1979</bf:originDate>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:adminMetadata rdf:nodeID="Nbd198cb2eb514d13a35cb74e6071ab0e"/>
+    <bf:notation rdf:nodeID="N05555ef25f594988a8b9611db68300fd"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:supplementaryContent rdf:nodeID="N2b6a4df29fab43d185e3ca757b411dfd"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="Ne59b30e5a5f04d588df3c2a9669bdedb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2fc7d41036248e29ea99976ffdc409f">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b6a4df29fab43d185e3ca757b411dfd">
+    <rdfs:label xml:lang="eng">Includes index</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/SupplementaryContent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd50be3b3f2b54bcbb1ee0a4fd888a071">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Spring, Ira</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne59b30e5a5f04d588df3c2a9669bdedb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n79069743"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7543ab74766d4b839782c536ebca54e0">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T16:21:03+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

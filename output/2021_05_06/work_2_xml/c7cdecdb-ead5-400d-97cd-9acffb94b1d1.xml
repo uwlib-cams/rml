@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Neac63a8bf9f045529e49ccc55c142831">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N7ae1d337d1cd4cd58f82a176e65c6dbc"/>
+    <bf:generationProcess rdf:nodeID="N1a209b1e267f47f4980f85d0cf770887"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/c7cdecdb-ead5-400d-97cd-9acffb94b1d1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:adminMetadata rdf:nodeID="Neac63a8bf9f045529e49ccc55c142831"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/454c764e-7531-4d0e-9b40-568860445626"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:notation rdf:nodeID="N19b09a896caf446ba22d97048458ca74"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/6964315d-ff22-4524-949c-b342e2e0c673"/>
+    <bf:originDate>1919</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a209b1e267f47f4980f85d0cf770887">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T16:18:16+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ae1d337d1cd4cd58f82a176e65c6dbc">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19b09a896caf446ba22d97048458ca74">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

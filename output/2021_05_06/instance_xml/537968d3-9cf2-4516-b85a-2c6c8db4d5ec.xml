@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/537968d3-9cf2-4516-b85a-2c6c8db4d5ec">
+    <bf:provisionActivity rdf:nodeID="Nb74a3d6179b1406d80af68c66364849f"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d3e2e595-7bf8-4aa7-a558-c9ef11be8841"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:note rdf:nodeID="N20f2a229a5fe45fcba5c0c15e8788494"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003"/>
+    <bf:title rdf:nodeID="Nd7c5246f271247c29428be456c491f6d"/>
+    <bf:frequency rdf:nodeID="N0c4d972f2bca430eba80574c395e21e3"/>
+    <bf:adminMetadata rdf:nodeID="Nec83ed1bfa664976b6bee91dbe553374"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec83ed1bfa664976b6bee91dbe553374">
+    <bf:status rdf:nodeID="N7ff6bc098c58494f8da8465ef2fe5e00"/>
+    <bf:generationProcess rdf:nodeID="Na501ca43cb2e4df5b813ea0ae40c2eb7"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>shadle</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7c5246f271247c29428be456c491f6d">
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd50ff447d57548169f57757d0caf23da">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Seattle, Washington</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20f2a229a5fe45fcba5c0c15e8788494">
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+    <rdfs:label xml:lang="eng">Description based on: Vol. III, no. 1 (September 1929); title from title page.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa707f532f7a436eb793f5c3a42b77b8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[General Fruit Corporation]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb74a3d6179b1406d80af68c66364849f">
+    <bf:agent rdf:nodeID="Nfa707f532f7a436eb793f5c3a42b77b8"/>
+    <bf:place rdf:nodeID="Nd50ff447d57548169f57757d0caf23da"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ff6bc098c58494f8da8465ef2fe5e00">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na501ca43cb2e4df5b813ea0ae40c2eb7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T16:25:09+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c4d972f2bca430eba80574c395e21e3">
+    <rdfs:label xml:lang="eng">Monthly</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
+  </rdf:Description>
+</rdf:RDF>

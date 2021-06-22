@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N2db5ade90f34480e8634d1beb7328f66">
+    <rdfs:label xml:lang="en">note on item</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne06ba28b66d44aacbbb6207fdb25475b">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-06</bf:creationDate>
+    <bflc:catalogerID>cc83</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Ne4bcf16f96b14a1d92028dfefbc209d1"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/47b7c8f2-dbf3-45fc-9855-f5215baf03cf">
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/148b3811-8a3d-431f-a8fd-139e28566ad9"/>
+    <bf:classification rdf:nodeID="N54c41ae093264454bbc5d7f57c4cc6d2"/>
+    <bf:adminMetadata rdf:nodeID="Ne06ba28b66d44aacbbb6207fdb25475b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:identifier rdf:nodeID="Nf1d3bb0783bd4571a25b1e93834b8fd6"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/df0a069e-f03d-44e6-abf5-ec9fb1f4a0d1"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:physicalLocation xml:lang="eng">Suzzallo and Allen Libraries</bf:physicalLocation>
+    <bf:sublocation rdf:nodeID="Ne8452cda1e0a4d2883de2a1db262c269"/>
+    <bf:note rdf:nodeID="N2db5ade90f34480e8634d1beb7328f66"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8452cda1e0a4d2883de2a1db262c269">
+    <rdfs:label xml:lang="eng">Stacks</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54c41ae093264454bbc5d7f57c4cc6d2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.T13 v.55</bf:itemPortion>
+    <bf:classificationPortion>QK1</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4bcf16f96b14a1d92028dfefbc209d1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-06T21:33:46+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1d3bb0783bd4571a25b1e93834b8fd6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352071651012</rdf:value>
+  </rdf:Description>
+</rdf:RDF>
