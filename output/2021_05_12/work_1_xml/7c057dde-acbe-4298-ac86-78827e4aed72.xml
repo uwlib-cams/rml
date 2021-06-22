@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N1a6aef6d04954984946a6e7f35f7fe0e">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N4b9f2f2bce744d53b3015035e0f0824c"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="Nb85f1493e89e4a088d28d81c7485025b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7c057dde-acbe-4298-ac86-78827e4aed72">
+    <bf:contribution rdf:nodeID="Nd19b671f455a4d31bab29b2274404053"/>
+    <bf:originDate>1941</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008107215"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026282"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:adminMetadata rdf:nodeID="N1a6aef6d04954984946a6e7f35f7fe0e"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85122849"/>
+    <bf:title rdf:nodeID="N133dd6727f98402f8797aae08f2c6129"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026264"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/94c8153f-01b0-42ad-b356-70f3bd64e6dc"/>
+    <bf:subject rdf:nodeID="Ncd5874b8b10e4fab8c87f5de418f1b7b"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <bf:subject rdf:nodeID="N2de8d03fa2b9427d8db86ce4c9ec3088"/>
+    <skos:prefLabel xml:lang="eng">Albert, Ned, 1894-1968. Hillbilly Sue</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb85f1493e89e4a088d28d81c7485025b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N133dd6727f98402f8797aae08f2c6129">
+    <bf:mainTitle xml:lang="eng">Hillbilly Sue</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0798cdec19ac4ca9aba42cd886d4400b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Albert, Ned, 1894-1968</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b9f2f2bce744d53b3015035e0f0824c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:49:01</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2de8d03fa2b9427d8db86ce4c9ec3088">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Ozark Mountains -- Drama</madsrdf:authoritativeLabel>
+    <rdfs:label>Ozark Mountains -- Drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd19b671f455a4d31bab29b2274404053">
+    <bf:agent rdf:nodeID="N0798cdec19ac4ca9aba42cd886d4400b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncd5874b8b10e4fab8c87f5de418f1b7b">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Mountain people -- Drama</madsrdf:authoritativeLabel>
+    <rdfs:label>Mountain people -- Drama</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

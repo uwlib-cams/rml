@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N1dbbc7e60d8646e29980b7c074780f04">
+    <rdf:value xml:lang="en">12345</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N25ded43483774b4b90595d8deb48928a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/da449f06-5d3c-47fa-99ab-c6c6624dfedd">
+    <bf:immediateAcquisition rdf:nodeID="Nc04c17a7e26f4de8b4d3bbde62160de5"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="Nd7c5bd3f55304ed6ab59d1a5c71f5dc2"/>
+    <bf:adminMetadata rdf:nodeID="Nfef1ea516b7e48f6b063125916b509b7"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/b22e4e53-f744-461e-8bef-b9a9a402830d"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/repository/washington/30d6a876-bb4e-44a6-b91c-7c2aa2fb43bc"/>
+    <bf:classification rdf:nodeID="Nfd37dc4d446647749da5391f6467130a"/>
+    <bf:identifier rdf:nodeID="N1dbbc7e60d8646e29980b7c074780f04"/>
+    <bf:sublocation rdf:nodeID="N23923c389ecb448abd247bea2c3fe81b"/>
+    <bf:heldBy rdf:nodeID="N6a90d28f6f374488a94acbd80962ae5f"/>
+    <bf:physicalLocation xml:lang="en">Yragui bookshelf</bf:physicalLocation>
+    <bf:usageAndAccessPolicy rdf:nodeID="N9892cfdfe3484788841e947bf9eda807"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7c5bd3f55304ed6ab59d1a5c71f5dc2">
+    <rdfs:label xml:lang="en">Need keys to Yragui house or delivery by Crystal Clements, who is infamously stingy when it comes to loaning out personal copies of her books, especially if she studied them with her favorite late professor, Willis Konick. This is one of those books and you'll probably need to pry it out of her cold, dead fingers. Better to find another copy.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfef1ea516b7e48f6b063125916b509b7">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nbf1f59d0ba6f46d7985c64d3ec994a2c"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N25ded43483774b4b90595d8deb48928a"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd37dc4d446647749da5391f6467130a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>G6 1955</bf:itemPortion>
+    <bf:classificationPortion>PS3511.A86</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23923c389ecb448abd247bea2c3fe81b">
+    <rdfs:label xml:lang="en">American fiction</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc04c17a7e26f4de8b4d3bbde62160de5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+    <rdfs:label xml:lang="en">Magus Books</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9892cfdfe3484788841e947bf9eda807">
+    <rdfs:label xml:lang="en">Need permission from Crystal Clements</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbf1f59d0ba6f46d7985c64d3ec994a2c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T14:01:08</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a90d28f6f374488a94acbd80962ae5f">
+    <rdfs:label>WAU</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

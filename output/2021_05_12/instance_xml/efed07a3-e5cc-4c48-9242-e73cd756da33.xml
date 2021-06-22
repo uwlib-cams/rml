@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/efed07a3-e5cc-4c48-9242-e73cd756da33">
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:note rdf:nodeID="N67d949b000a34021bdadbecc792ed6f8"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d3e2e595-7bf8-4aa7-a558-c9ef11be8841"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003"/>
+    <bf:provisionActivity rdf:nodeID="Nb5cf5a2c3e0d4816b310bf4e7c0808d7"/>
+    <bf:title rdf:nodeID="Nbe9b01567fde41b4845eeb3da7e7da40"/>
+    <bf:frequency rdf:nodeID="N2acda0b2314041e6aa44f583f2bdb28d"/>
+    <bf:adminMetadata rdf:nodeID="N3c76ff3bf3bf45a9a73b93bacf607799"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8cde545899141b7a22b306aa4e09aff">
+    <rdfs:label xml:lang="eng">[General Fruit Corporation]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neca2c4f44852433bad69adf5d83b2a9c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:59:01</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3313714f5f0b4478892f7eb1d78a0895">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Seattle, Washington</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c76ff3bf3bf45a9a73b93bacf607799">
+    <bflc:catalogerID>shadle</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="Neca2c4f44852433bad69adf5d83b2a9c"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="Nbbc7f8d5ac9745b6875b91730723c232"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe9b01567fde41b4845eeb3da7e7da40">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5cf5a2c3e0d4816b310bf4e7c0808d7">
+    <bf:agent rdf:nodeID="Nd8cde545899141b7a22b306aa4e09aff"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="N3313714f5f0b4478892f7eb1d78a0895"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2acda0b2314041e6aa44f583f2bdb28d">
+    <rdfs:label xml:lang="eng">Monthly</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbbc7f8d5ac9745b6875b91730723c232">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67d949b000a34021bdadbecc792ed6f8">
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+    <rdfs:label xml:lang="eng">Description based on: Vol. III, no. 1 (September 1929); title from title page.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+</rdf:RDF>

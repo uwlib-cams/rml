@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/815c1efe-c055-449e-8269-e34b67e24fc2">
+    <bf:sublocation rdf:nodeID="N0a7149aa1cfd4473905c349321782391"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="Nf50211659ca443d898058e0c054ba259"/>
+    <bf:identifier rdf:nodeID="N5e51c5486fdb48fba016fb18d41b1e9c"/>
+    <bf:adminMetadata rdf:nodeID="N774de70a735441019e85ec62621b5477"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/repository/washington/0d1f4ee2-ed20-497c-a589-916ab694008b"/>
+    <bf:heldBy rdf:nodeID="Na707e4b52f3241ef9bca63f9b8e50879"/>
+    <bf:physicalLocation xml:lang="en">Yragui bookshelf</bf:physicalLocation>
+    <bf:contribution rdf:nodeID="Nc8dbbba09c564f98ae8123ddaa691fdb"/>
+    <bf:immediateAcquisition rdf:nodeID="N5f836bb088f84b1a8279858776393cc5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/b0527c0a-d03d-4515-be85-fa1ffad8891b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:classification rdf:nodeID="N0044acde3c734b61a3b5b0fc95483b04"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="N4f63796cd39e44cba98bf490a8d1774a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f836bb088f84b1a8279858776393cc5">
+    <rdfs:label xml:lang="en">Amazon</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N774de70a735441019e85ec62621b5477">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="Ndc7b93bd95554b69a2d4251a0d5513de"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N7bc2d591e755496392636dcee48aa0ef"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f63796cd39e44cba98bf490a8d1774a">
+    <rdfs:label xml:lang="en">Need Crystal's permission, which is unlikely to be given.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e51c5486fdb48fba016fb18d41b1e9c">
+    <rdf:value xml:lang="en">12345</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf50211659ca443d898058e0c054ba259">
+    <rdfs:label xml:lang="en">Need keys to Yragui house or delivery from Crystal Clements</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc64a5adf868946cbadf95cfc13ee25f2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Clements, Crystal, 1987-</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8dbbba09c564f98ae8123ddaa691fdb">
+    <bf:agent rdf:nodeID="Nc64a5adf868946cbadf95cfc13ee25f2"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ann"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0a7149aa1cfd4473905c349321782391">
+    <rdfs:label xml:lang="en">Russian literature</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0044acde3c734b61a3b5b0fc95483b04">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PG3326</bf:classificationPortion>
+    <bf:itemPortion>.I3 1998</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc7b93bd95554b69a2d4251a0d5513de">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T14:01:06</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na707e4b52f3241ef9bca63f9b8e50879">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Crystal Clements</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7bc2d591e755496392636dcee48aa0ef">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

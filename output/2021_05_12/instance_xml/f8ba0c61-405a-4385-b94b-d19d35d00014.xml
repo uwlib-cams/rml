@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f8ba0c61-405a-4385-b94b-d19d35d00014">
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/cf9aaa08-ae28-465c-85c3-75cc4584f182"/>
+    <bf:soundCharacteristic rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1006"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:responsibilityStatement xml:lang="eng">Lions Gate Films presents ; a Cruise/Wagner production ; a Baumgarten Merims production ; in association with Forest Park Pictures ; produced by Craig Baumgarten ; written and directed by Billy Ray.</bf:responsibilityStatement>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <bf:adminMetadata rdf:nodeID="Na8acdd0648ae4a6799a9742af41dcbeb"/>
+    <bf:provisionActivity rdf:nodeID="N7ab8b192954e43ecbb4f58e3d192ca80"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Santa Monica, CA] Lions Gate Films  [2003]</bf:provisionActivityStatement>
+    <bf:note rdf:nodeID="Ne3dad86cad414b7ea769bd0b99ab0686"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/9d4fa093-828f-4a9f-9b4e-e44f4673cd6a"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:extent rdf:nodeID="Nd05e8153347f4ddfa261a33c440c6f59"/>
+    <bf:title rdf:nodeID="Nd4bdb8f4d3ec48b9a61fda066c92ab3b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8acdd0648ae4a6799a9742af41dcbeb">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N5b5af9b6d5714e1fabac30c81e311dd1"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:status rdf:nodeID="N343d2d60e81d4a8b87099a96fbab138e"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID>lins</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd05e8153347f4ddfa261a33c440c6f59">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">1 video file</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3dad86cad414b7ea769bd0b99ab0686">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Title from title screen (viewed April 17, 2020)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ab8b192954e43ecbb4f58e3d192ca80">
+    <bf:agent rdf:nodeID="N1fcfd648bea341dbb4f87c89bbc2f6de"/>
+    <bf:date>2003</bf:date>
+    <bf:place rdf:nodeID="Nfde41a2700fa49209288362d017ef1f4"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4bdb8f4d3ec48b9a61fda066c92ab3b">
+    <bf:mainTitle xml:lang="eng">Shattered glass</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfde41a2700fa49209288362d017ef1f4">
+    <rdfs:label xml:lang="eng">Santa Monica, CA</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fcfd648bea341dbb4f87c89bbc2f6de">
+    <rdfs:label xml:lang="eng">Lions Gate Films</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N343d2d60e81d4a8b87099a96fbab138e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b5af9b6d5714e1fabac30c81e311dd1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:58:15</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

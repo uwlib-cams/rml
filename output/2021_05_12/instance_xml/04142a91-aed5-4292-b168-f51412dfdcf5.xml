@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N3bb41cf554b0439d928d887edf046e4d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="ukr">"Наукова думка"</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne01ded71f789432d949f29d78d83d5c5">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N3f66b84bdc8d407d8c25a3b279b1a40c"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:status rdf:nodeID="N3cd5ad20bca54be4b16ddf7511d7b5aa"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/04142a91-aed5-4292-b168-f51412dfdcf5">
+    <bf:note rdf:nodeID="N53f95136915c4449b94124f7bb7d7907"/>
+    <bf:provisionActivity rdf:nodeID="Ne6c013f87a5d405ba5e5fc7261c67a00"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/46865484-c1d1-42ca-9f42-c73a4c546ad9"/>
+    <bf:provisionActivityStatement xml:lang="ukr">Київ : "Наукова думка", 1968.</bf:provisionActivityStatement>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/5c7a09ac-9803-41b5-88e2-68d55160749d"/>
+    <bf:title rdf:nodeID="N7488707926104b02bd7e82c1013b154d"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:responsibilityStatement xml:lang="ukr">Г.М. Удовиченко</bf:responsibilityStatement>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:extent rdf:nodeID="N6ffb2d153658449d80f1c5c200a9f031"/>
+    <bf:note rdf:nodeID="N696c245861f24c6eaf42f2735d371208"/>
+    <bf:adminMetadata rdf:nodeID="Ne01ded71f789432d949f29d78d83d5c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f66b84bdc8d407d8c25a3b279b1a40c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:57:25</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53f95136915c4449b94124f7bb7d7907">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Includes bibliographical references (pages 213-224).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7488707926104b02bd7e82c1013b154d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="ukr">Словосполучення в сучасній українській літературній мові</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3cd5ad20bca54be4b16ddf7511d7b5aa">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd36f9bb0dae54b4f918fb2e8265fecf6">
+    <rdfs:label xml:lang="ukr">Київ</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6c013f87a5d405ba5e5fc7261c67a00">
+    <bf:place rdf:nodeID="Nd36f9bb0dae54b4f918fb2e8265fecf6"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="N3bb41cf554b0439d928d887edf046e4d"/>
+    <bf:date>1968</bf:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ffb2d153658449d80f1c5c200a9f031">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">227 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N696c245861f24c6eaf42f2735d371208">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="ukr">At head of title: Академія наук Української РСР. Інстітут мовознавства ім. О.О. Потебні.</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

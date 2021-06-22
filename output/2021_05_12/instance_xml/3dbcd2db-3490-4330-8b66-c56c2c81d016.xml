@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N8f746ad59fc0456d9200bb57f31b7330">
+    <bf:generationProcess rdf:nodeID="N7606b472c2d74e9cbab2aaf1f8308277"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N8d97bd0ac69e4700a2a3a1eca14b2c57"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/3dbcd2db-3490-4330-8b66-c56c2c81d016">
+    <bf:title rdf:nodeID="Na52e7e86b34b47db9b10195157c9f78c"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:responsibilityStatement xml:lang="eng">by Wilbur Braun</bf:responsibilityStatement>
+    <bf:adminMetadata rdf:nodeID="N8f746ad59fc0456d9200bb57f31b7330"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/5082630b-c92d-492b-9e5a-5419d26d6dca"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:classification rdf:nodeID="N4cdfe55770be4a13a8455efd51b4bb60"/>
+    <bf:provisionActivityStatement xml:lang="eng">New York, N.Y. ; Los Angeles, Calif. : Samuel French, Inc. ;  London, Samuel French, Ltd., [1935]</bf:provisionActivityStatement>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:extent rdf:nodeID="N33d23b882a864b71a9ac5ba56422b5a9"/>
+    <bf:provisionActivity rdf:nodeID="Nff4a5dc4b3054001a265e84e89e51226"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:copyrightDate>©1935</bf:copyrightDate>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/45df3fee-8071-4e32-8de7-b2dbf0a492f9"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf71947b5ed14b5caba2929994fac19e">
+    <rdfs:label xml:lang="eng">New York, N.Y.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47cdd8b66732414ea4bf7590382e9a96">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Samuel French</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na52e7e86b34b47db9b10195157c9f78c">
+    <bf:mainTitle xml:lang="eng">He ain't done right by Nell</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:subtitle xml:lang="eng">an old-fashioned melodrama in one act</bf:subtitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff4a5dc4b3054001a265e84e89e51226">
+    <bf:agent rdf:nodeID="N47cdd8b66732414ea4bf7590382e9a96"/>
+    <bf:place rdf:nodeID="Ncf71947b5ed14b5caba2929994fac19e"/>
+    <bf:date>[1935]</bf:date>
+    <bf:agent rdf:nodeID="N2a991e10be07429892b9f5515b6102d1"/>
+    <bf:agent rdf:nodeID="N598559ee8c2243aba2ace0e6c578344a"/>
+    <bf:place rdf:nodeID="N16fdad0bf75c49089e1120b8e5096610"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="N4364945232904071bd85afae9d6b13da"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7606b472c2d74e9cbab2aaf1f8308277">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:57:12</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N598559ee8c2243aba2ace0e6c578344a">
+    <rdfs:label xml:lang="eng">Samuel French, Ltd.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cdfe55770be4a13a8455efd51b4bb60">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PS3503.R2733</bf:classificationPortion>
+    <bf:itemPortion>H35 1935</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d97bd0ac69e4700a2a3a1eca14b2c57">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4364945232904071bd85afae9d6b13da">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">London</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a991e10be07429892b9f5515b6102d1">
+    <rdfs:label xml:lang="eng">Samuel French, Inc.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16fdad0bf75c49089e1120b8e5096610">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Los Angeles, Calif.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33d23b882a864b71a9ac5ba56422b5a9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">43 pages,  1 unnumbered page</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

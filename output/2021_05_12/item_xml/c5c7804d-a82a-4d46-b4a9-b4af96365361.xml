@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na77fff9570844269a331ce99a8486d71">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N18a5b74febd84d82a336efc47d25a688"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:status rdf:nodeID="Nfc9892bac71f4c0ca3f071410969d473"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc9892bac71f4c0ca3f071410969d473">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N581a672318c14ffaaf6ed9e008bfb6d1">
+    <rdfs:label xml:lang="eng">Bookshelf</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/c5c7804d-a82a-4d46-b4a9-b4af96365361">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a40940e4-7a02-4f19-9129-99be2f03168d"/>
+    <bf:classification rdf:nodeID="Nb43ee012dd5e4ee18e229e3378796213"/>
+    <bf:sublocation rdf:nodeID="N581a672318c14ffaaf6ed9e008bfb6d1"/>
+    <bf:adminMetadata rdf:nodeID="Na77fff9570844269a331ce99a8486d71"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/2442f2d5-0841-4384-b08e-bd25c3a3d4e9"/>
+    <bf:physicalLocation xml:lang="eng">natural history books</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18a5b74febd84d82a336efc47d25a688">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T14:00:58</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb43ee012dd5e4ee18e229e3378796213">
+    <bf:classificationPortion>QL737.U55</bf:classificationPortion>
+    <bf:itemPortion>H675 1988</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+</rdf:RDF>

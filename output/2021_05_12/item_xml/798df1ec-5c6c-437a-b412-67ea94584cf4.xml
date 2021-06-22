@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N5ae37731c9724f06baaf19292ca0e6fc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Na8ffb7a97f7140af8d77aedadbf6ef97"/>
+    <bflc:catalogerID>mathiasuw</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="Nb03ddb93932e4599ace315f82824edc3"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e5370a8cef443d99beb659bcd5bef67">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>N7433.4.W225</bf:classificationPortion>
+    <bf:itemPortion>C66 2018</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8ffb7a97f7140af8d77aedadbf6ef97">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T14:01:57</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb03ddb93932e4599ace315f82824edc3">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/798df1ec-5c6c-437a-b412-67ea94584cf4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:classification rdf:nodeID="N3e5370a8cef443d99beb659bcd5bef67"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:physicalLocation xml:lang="eng">bothell</bf:physicalLocation>
+    <bf:identifier rdf:nodeID="Nf01273989a1f45929d41e38bcb149a1c"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/5d8bee3b-f614-4fd7-adcf-86e78ad94fd6"/>
+    <bf:sublocation rdf:nodeID="N40220074b1d24eaf83b47f8286001e50"/>
+    <bf:adminMetadata rdf:nodeID="N5ae37731c9724f06baaf19292ca0e6fc"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f94e3e92-555b-4100-961f-b78db89ab09e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf01273989a1f45929d41e38bcb149a1c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">39352084716331</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40220074b1d24eaf83b47f8286001e50">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">boart</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

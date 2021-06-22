@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Na4d275a6ad78459a9704a6707a6431c9">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:53:04</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89694de7807f42e5aadb9054bd38de11">
+    <bf:noteType xml:lang="en">has details of colour content</bf:noteType>
+    <rdfs:label xml:lang="eng">Color illustrations</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0142ab83bcb54ad582175fb062aa9d8b">
+    <rdfs:label>color</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/e64ec937-aca6-4b49-8751-508fd3e5fa27">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:note rdf:nodeID="N89694de7807f42e5aadb9054bd38de11"/>
+    <bf:adminMetadata rdf:nodeID="Nf64ec13540ab427aaf081966dbd7552b"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <skos:prefLabel xml:lang="eng">Wood, Deborah, 1952- Little dogs</skos:prefLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/5d3cbee4-5cbc-4ce6-98a8-302c6d7833e5"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:originDate>2004</bf:originDate>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/7580672d-ace4-4a41-b89a-8a0b8631e586"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:notation rdf:nodeID="Nba36c82a82b842f490827599b449c70f"/>
+    <bf:colorContent rdf:nodeID="N0142ab83bcb54ad582175fb062aa9d8b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf64ec13540ab427aaf081966dbd7552b">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="N7be06e651f094cb2b74f6886f7fe55f7"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Na4d275a6ad78459a9704a6707a6431c9"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bflc:catalogerID>aentze</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7be06e651f094cb2b74f6886f7fe55f7">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nba36c82a82b842f490827599b449c70f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

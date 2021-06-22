@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf10dd3cd62f94874bb604bd6830546cd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">46 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/c7817609-2ddb-4d9f-987d-b78492baf117">
+    <bf:responsibilityStatement xml:lang="eng">by Ned Albert</bf:responsibilityStatement>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f44955d7-60e3-45a2-8191-af416bfb61e0"/>
+    <bf:provisionActivity rdf:nodeID="N9089a02aa7cc434a804975359166187b"/>
+    <bf:adminMetadata rdf:nodeID="N4f00e7290aa040dcb4cf9b979105928c"/>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:provisionActivityStatement xml:lang="eng">New York, N.Y. ; Los Angeles, Calif. : Samuel French, [1941]</bf:provisionActivityStatement>
+    <bf:title rdf:nodeID="N7a2ba2bf44c844c8af36614a39f825c5"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:copyrightDate>©1941</bf:copyrightDate>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:extent rdf:nodeID="Nf10dd3cd62f94874bb604bd6830546cd"/>
+    <bf:classification rdf:nodeID="N9afcfd6164a54bf7a3d0d806003c5912"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/1225f60f-601a-4828-b0a2-5d406e9343c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f00e7290aa040dcb4cf9b979105928c">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-12</bf:changeDate>
+    <bf:status rdf:nodeID="N64856b983c354b2dbd57c9942c3b8cf3"/>
+    <bf:generationProcess rdf:nodeID="Nd7259fc0246a4fe49503e8950a3903b1"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a2ba2bf44c844c8af36614a39f825c5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Hillbilly Sue</bf:mainTitle>
+    <bf:subtitle xml:lang="eng">a rousing one-act comedy</bf:subtitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fa8468283bd4bc692d75560357a74f4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">New York, N.Y.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9089a02aa7cc434a804975359166187b">
+    <bf:date>[1941]</bf:date>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n89646383"/>
+    <bf:place rdf:nodeID="Nd2e38e6c001942c0b9b0ab43dbb84855"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="N0fa8468283bd4bc692d75560357a74f4"/>
+    <bf:agent rdf:nodeID="N2e7d5b177f614739b449efce480156de"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9afcfd6164a54bf7a3d0d806003c5912">
+    <bf:classificationPortion>PS3503.R2733</bf:classificationPortion>
+    <bf:itemPortion>H55 1941</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64856b983c354b2dbd57c9942c3b8cf3">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7259fc0246a4fe49503e8950a3903b1">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-12T13:59:31</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2e38e6c001942c0b9b0ab43dbb84855">
+    <rdfs:label xml:lang="eng">Los Angeles, Calif.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e7d5b177f614739b449efce480156de">
+    <rdfs:label xml:lang="eng">Samuel French</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>
