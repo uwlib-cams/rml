@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N453a69febeb347e39c4a51a9ab6e51ba">
+    <bf:generationProcess rdf:nodeID="N243b5ff665774002a168926884ad41f0"/>
+    <bflc:catalogerID>aentze</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nc8f59b9d1c52409c8b2aec1e2c07613c"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf88526b3be9d4d7a8af7619212bdbc9d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n80034014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7bcb65e2-6afe-4e4a-8a88-e0148a8c58f1">
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060011"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060012"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/adb96585-afda-4635-9862-398cca1d633a"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <skos:prefLabel xml:lang="eng">King, Stephen, 1947- Eyes of the dragon. Text. English</skos:prefLabel>
+    <bf:colorContent rdf:nodeID="Nbb0c5cadc74f49d291e9422c4eabaf99"/>
+    <bf:notation rdf:nodeID="Ndfc20f40f7034a68bb0478588b655727"/>
+    <bf:contribution rdf:nodeID="Nf88526b3be9d4d7a8af7619212bdbc9d"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/74e37d6f-e45b-4f88-858b-e0f8ffd1937a"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:adminMetadata rdf:nodeID="N453a69febeb347e39c4a51a9ab6e51ba"/>
+    <bf:note rdf:nodeID="N506ca54cf4894b6880479c7877bc3b60"/>
+    <bf:originDate>1987</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb0c5cadc74f49d291e9422c4eabaf99">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+    <rdfs:label>black and white</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndfc20f40f7034a68bb0478588b655727">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc8f59b9d1c52409c8b2aec1e2c07613c">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N506ca54cf4894b6880479c7877bc3b60">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">black and white illustrations</rdfs:label>
+    <bf:noteType xml:lang="en">has details of colour content</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N243b5ff665774002a168926884ad41f0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:40:21</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

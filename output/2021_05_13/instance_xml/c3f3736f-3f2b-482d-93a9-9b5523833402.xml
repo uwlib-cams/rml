@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/c3f3736f-3f2b-482d-93a9-9b5523833402">
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:classification rdf:nodeID="Nb8d2f1b950c5428ca4dd0566d44ceae1"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/3bf67b0a-e76b-4f36-afbe-89933acb89bd"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d1e428e1-0463-49e2-8bd5-299c8ad8269c"/>
+    <bf:provisionActivity rdf:nodeID="N026262a634f64093b410569ddb8ccca0"/>
+    <bf:adminMetadata rdf:nodeID="N0cb048605ecd4ccf899226f849adec30"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:provisionActivityStatement xml:lang="eng">Boston : Walter H. Baker &amp; Co.</bf:provisionActivityStatement>
+    <bf:extent rdf:nodeID="Nd1c3cfe2ed864080accd74d74c0bbeb9"/>
+    <bf:responsibilityStatement xml:lang="eng">by Gladys Ruth Bridgham</bf:responsibilityStatement>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:seriesStatement xml:lang="eng">Baker's edition of plays.</bf:seriesStatement>
+    <bf:copyrightDate>Copryright, 1914</bf:copyrightDate>
+    <bf:title rdf:nodeID="Nfca66bd288a542deb59e510c2ac66821"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0cb048605ecd4ccf899226f849adec30">
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="N1fb8581ed2a5491c809cba05c9b53607"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Ne0320865c5d94596a1d12fa4ff474eaf"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8d2f1b950c5428ca4dd0566d44ceae1">
+    <bf:itemPortion>S5 1914</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PS3503.R53</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N026262a634f64093b410569ddb8ccca0">
+    <bf:date>1914</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="Nd4fab4c791374e1fb97fa255c163e2ac"/>
+    <bf:place rdf:nodeID="N09052c69ab3443a2b07c98a7f351da6b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09052c69ab3443a2b07c98a7f351da6b">
+    <rdfs:label xml:lang="eng">Boston</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0320865c5d94596a1d12fa4ff474eaf">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfca66bd288a542deb59e510c2ac66821">
+    <bf:subtitle xml:lang="eng">a comedy in two acts</bf:subtitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Six times nine</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4fab4c791374e1fb97fa255c163e2ac">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Walter H. Baker &amp; Co.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1fb8581ed2a5491c809cba05c9b53607">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:45:11</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1c3cfe2ed864080accd74d74c0bbeb9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">43 pages</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

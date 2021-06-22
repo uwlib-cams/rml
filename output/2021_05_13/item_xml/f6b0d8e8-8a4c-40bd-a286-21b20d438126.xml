@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na3e8601f25cd4d1eab60e9699483860b">
+    <bf:classificationPortion>PN6737.V54</bf:classificationPortion>
+    <bf:itemPortion>G57 2018</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c186370d05c439989b320d8b897da5c">
+    <bf:generationProcess rdf:nodeID="N73a5dd20176b48778c1f44bac1fa3972"/>
+    <bflc:catalogerID>jlee70</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="N04689bd1f0ed41daa1fb55bddf69ab78"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73a5dd20176b48778c1f44bac1fa3972">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:47:01</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f6b0d8e8-8a4c-40bd-a286-21b20d438126">
+    <bf:identifier rdf:nodeID="N0e51cdccfead491f8bbc916b9e7463ad"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a6f7c345-2b4a-4a12-adf8-99ecc700355c"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="Na2a177ec389c4aa3ae1cab4360eadb3d"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:classification rdf:nodeID="Na3e8601f25cd4d1eab60e9699483860b"/>
+    <bf:physicalLocation xml:lang="eng">bothell</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/8a12ccb8-8f45-4f64-97ec-bb690f8b84aa"/>
+    <bf:adminMetadata rdf:nodeID="N0c186370d05c439989b320d8b897da5c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N04689bd1f0ed41daa1fb55bddf69ab78">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e51cdccfead491f8bbc916b9e7463ad">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="eng">Barcode 39352083989533</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2a177ec389c4aa3ae1cab4360eadb3d">
+    <rdfs:label xml:lang="eng">bogph</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+</rdf:RDF>

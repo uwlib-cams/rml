@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nd26305a7394f4e6fabfb6e4112bb997b">
+    <bf:status rdf:nodeID="N84a3816c013c4c208a6ff748615b3757"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N5fd47b2030634b1b88e3ee091f4c3a8c"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5dc4a55e27e4906a86fcb547973c977">
+    <rdfs:label xml:lang="eng">bostx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6e86d26e55e497f8d19e29c25b8a649">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value xml:lang="zxx">22610548410001452</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/d3f15a28-4b8b-436b-adfb-74404d956f72">
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/a42814da-e980-4324-ba0a-0f4299f439af"/>
+    <bf:classification rdf:nodeID="N4cba2ea77d4249cdb6e877fc78cd96c6"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/72bd33dc-32f4-4c8c-9e2e-0dc26d4d0661"/>
+    <bf:physicalLocation xml:lang="eng">bothell</bf:physicalLocation>
+    <bf:adminMetadata rdf:nodeID="Nd26305a7394f4e6fabfb6e4112bb997b"/>
+    <bf:sublocation rdf:nodeID="Nd5dc4a55e27e4906a86fcb547973c977"/>
+    <bf:identifier rdf:nodeID="Ne6e86d26e55e497f8d19e29c25b8a649"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cba2ea77d4249cdb6e877fc78cd96c6">
+    <bf:classificationPortion>BF789.C7</bf:classificationPortion>
+    <bf:itemPortion>S64 2017</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5fd47b2030634b1b88e3ee091f4c3a8c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:46:46</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N84a3816c013c4c208a6ff748615b3757">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

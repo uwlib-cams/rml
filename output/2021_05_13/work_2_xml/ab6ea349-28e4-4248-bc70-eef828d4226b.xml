@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nfc330a279ac84dd5b31afcdd1194dbe1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8cfaaf21e8140118aee39f3eb0b8b2a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N54e515b2f4dd4199b573f05840c8be7a"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N085b7c997be748d2b9080a70cd3334f9"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3499c80a4b1a4ec9b0aa6f00d62ba535">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n90677144"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndaa49db6b88045ad9ce6b0598858974a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+    <rdfs:label>color</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/ab6ea349-28e4-4248-bc70-eef828d4226b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:notation rdf:nodeID="Nfc330a279ac84dd5b31afcdd1194dbe1"/>
+    <bf:adminMetadata rdf:nodeID="Ne8cfaaf21e8140118aee39f3eb0b8b2a"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:colorContent rdf:nodeID="Ndaa49db6b88045ad9ce6b0598858974a"/>
+    <bf:contribution rdf:nodeID="N3499c80a4b1a4ec9b0aa6f00d62ba535"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/1cdb84c1-a494-42c7-8fc6-abf6aa8b9769"/>
+    <skos:prefLabel xml:lang="eng">Susser, Allen. Great citrus book. Text. English</skos:prefLabel>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/032cba08-e735-425c-bc88-9433d2616226"/>
+    <bf:originDate>1997</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N085b7c997be748d2b9080a70cd3334f9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54e515b2f4dd4199b573f05840c8be7a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:38:28</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

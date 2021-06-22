@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/62d10f55-f827-4f11-ac90-cbbf934b345b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="N6b507d415ad747ad9253801dcde5c234"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/dff80804-5b2a-4d65-bbc9-7ebb0c01fd13"/>
+    <skos:prefLabel xml:lang="rus">Milovskiĭ, Aleksandr. Skachi, dobryĭ edinorog</skos:prefLabel>
+    <bf:contribution rdf:nodeID="N0c5f6a5ca00f43daaacfc862538570ad"/>
+    <bf:title rdf:nodeID="N1f09ba54cd6e4ca090d340910c3d3023"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008120754"/>
+    <bf:adminMetadata rdf:nodeID="Nff4125b42c1f4108b4f950761e055aa4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff4125b42c1f4108b4f950761e055aa4">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="Nfcd6d5058899403abea9aef465320fbd"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bf:status rdf:nodeID="N762e26585b74403990c47d4f85a7a201"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f09ba54cd6e4ca090d340910c3d3023">
+    <bf:mainTitle xml:lang="rus">Skachi, dobryĭ edinorog</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89df54bbd00f4440abf363a92d7c7c7b">
+    <rdfs:label>Milovskiĭ, Aleksandr</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N762e26585b74403990c47d4f85a7a201">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N169230cea95543d199f37232380de736">
+    <rdfs:label>Milovskiĭ, Aleksandr</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b507d415ad747ad9253801dcde5c234">
+    <bf:agent rdf:nodeID="N169230cea95543d199f37232380de736"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c5f6a5ca00f43daaacfc862538570ad">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/pht"/>
+    <bf:agent rdf:nodeID="N89df54bbd00f4440abf363a92d7c7c7b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfcd6d5058899403abea9aef465320fbd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:37:25</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

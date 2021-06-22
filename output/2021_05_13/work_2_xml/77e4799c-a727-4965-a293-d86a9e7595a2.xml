@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N5aada18649e34603a369dc0f31625131">
+    <rdfs:label>Cyrillic</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5012148309814123af86022c9423c53f">
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="N6c23cd10a5004179b533cb563fb6d737"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N9864bede332e4f6682f8770f1c6b8610"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/77e4799c-a727-4965-a293-d86a9e7595a2">
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:adminMetadata rdf:nodeID="N5012148309814123af86022c9423c53f"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/27a9720d-4d6b-4656-bf50-2ed39776d38a"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate>1939</bf:originDate>
+    <bf:notation rdf:nodeID="N5aada18649e34603a369dc0f31625131"/>
+    <bf:title rdf:nodeID="N159d49b7cc344e11b3d0c4a0869bc634"/>
+    <bf:title rdf:nodeID="N7e3d8403577b453392cfc1163e72c0ee"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <skos:altLabel xml:lang="rus">Lebedev, Vladimir Vasilʹevich, 1891-1967. Игрушки и зверушки. Russian.</skos:altLabel>
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060032"/>
+    <bf:contribution rdf:nodeID="Nd9479fe289e441b8a183713d98addcf4"/>
+    <bf:summary rdf:nodeID="N65d0544958944a8aa3b4404abe934437"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/20578541-d001-4b6a-818c-413ee8d77b4a"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <skos:prefLabel xml:lang="rus">Lebedev, Vladimir Vasilʹevich, 1891-1967. Igrushki i zverushki. Russian</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9864bede332e4f6682f8770f1c6b8610">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:38:42</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd9479fe289e441b8a183713d98addcf4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n87917115"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c23cd10a5004179b533cb563fb6d737">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e3d8403577b453392cfc1163e72c0ee">
+    <bf:mainTitle xml:lang="rus">Igrushki i zverushki</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N159d49b7cc344e11b3d0c4a0869bc634">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="rus">Игрушки и зверушки</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N65d0544958944a8aa3b4404abe934437">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+    <rdfs:label xml:lang="eng">This simple picture book, with just a few words per page, uses facing illustrations to compare children's toys with objects from real life.  A baby bear from the forest is paired with a toy bear on wheels, fish in an aquarium with toy fish. Additional pictures illustrate a cat chasing mice and a dog chasing a girl's pet kitten.</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

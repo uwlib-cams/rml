@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Ncf1f36b019fb44f78274b828bd3cbd69">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:47:33</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e4dc878a7a9419eb3112e5008eafb06">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Ncf1f36b019fb44f78274b828bd3cbd69"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/9d8caeee-f739-442b-9398-96b1526fb9b5">
+    <bf:heldBy rdf:nodeID="Nce479f5c78124e0296220c2d3dd74652"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N4e4dc878a7a9419eb3112e5008eafb06"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="N1e73a1af8a7a44f8936e26a42c1a0d6a"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/28838fda-3a72-4237-9c6d-ae11188b241e"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e73a1af8a7a44f8936e26a42c1a0d6a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+    <rdfs:label xml:lang="eng">Requires key to Yragui house</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce479f5c78124e0296220c2d3dd74652">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Crystal's bookshelf</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

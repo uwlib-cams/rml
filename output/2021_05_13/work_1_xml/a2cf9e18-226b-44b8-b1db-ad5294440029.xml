@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N419d3a2495eb4d8cb6f477854f3a2c00">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Ferryboats</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nddfb20de180b47f9a32eb979c985acf7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n83190598"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/a2cf9e18-226b-44b8-b1db-ad5294440029">
+    <bf:contribution rdf:nodeID="Nba157b9c388d4297becf55a04e4a3ce8"/>
+    <bf:contribution rdf:nodeID="Nddfb20de180b47f9a32eb979c985acf7"/>
+    <bf:title rdf:nodeID="N419d3a2495eb4d8cb6f477854f3a2c00"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f04b52bf-fb1d-4189-a75f-7f5ed86bf543"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:adminMetadata rdf:nodeID="N6cc75bb7a07a4a019f7c3462be505a6a"/>
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79041965"/>
+    <skos:altLabel xml:lang="eng">Bayless, G. A. (George Albert), 1925-  Ferryboats</skos:altLabel>
+    <bf:genreForm rdf:nodeID="Nb46873b5e4134ab09fe3e883648fedb5"/>
+    <skos:prefLabel xml:lang="eng">Kline, M. S. (Mary Stiles), 1953-  Ferryboats</skos:prefLabel>
+    <bf:originDate>1983</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6cc75bb7a07a4a019f7c3462be505a6a">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="Nb25d592e6e4746d4ac65938921598412"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="Nc066989156f04947ba991e473a5cee34"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7dc115dde7ef447089b5503e537a84f0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Bayless, G. A. (George Albert), 1925-</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb46873b5e4134ab09fe3e883648fedb5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+    <rdfs:label>reference works</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nba157b9c388d4297becf55a04e4a3ce8">
+    <bf:agent rdf:nodeID="N7dc115dde7ef447089b5503e537a84f0"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb25d592e6e4746d4ac65938921598412">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc066989156f04947ba991e473a5cee34">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:37:41</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

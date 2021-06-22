@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N4d23c2ce4eff4d4aac3acefb16d44e20">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:generationProcess rdf:nodeID="N5db4d444b7f346aaae20f7648f11240c"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N77ede0ee0d9f496a8b5d4cd65abf20d5"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5db4d444b7f346aaae20f7648f11240c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:34:49</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7f02abb0-ab85-4f96-98db-edb78254f18b">
+    <bf:title rdf:nodeID="N3e49c22de0d34aa285d8466b221ec1b5"/>
+    <bf:subject rdf:nodeID="N09064b842c2e46ad9897f1c37677ed35"/>
+    <bf:adminMetadata rdf:nodeID="N4d23c2ce4eff4d4aac3acefb16d44e20"/>
+    <bf:title rdf:nodeID="Na4f2f014a9ca44a9a6f25cb1d00427a5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3f51c956-0a93-4dc6-b16c-cecee7693db3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="N66117ed5ce7140eba7c3c7e237ed8d6d"/>
+    <skos:altLabel xml:lang="mac">Tolovski, D. (Dime). Makedonsko-ruski rečnik</skos:altLabel>
+    <skos:prefLabel xml:lang="rus">Tolovski, D. (Dime). Makedonsko-russkiĭ slovarʹ</skos:prefLabel>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026086"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66117ed5ce7140eba7c3c7e237ed8d6d">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no00037560"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/com"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n84143926"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N09064b842c2e46ad9897f1c37677ed35">
+    <madsrdf:authoritativeLabel>Macedonian language--Dictionaries--Russian</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <rdfs:label>Macedonian language--Dictionaries--Russian</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77ede0ee0d9f496a8b5d4cd65abf20d5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e49c22de0d34aa285d8466b221ec1b5">
+    <bf:mainTitle xml:lang="rus">Makedonsko-russkiĭ slovarʹ</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4f2f014a9ca44a9a6f25cb1d00427a5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="mac">Makedonsko-ruski rečnik</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N0f99419ffea44b13a6c733c594b3857f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="Na4e0e0d898034095a4d746b25f190178"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N3f8c9e3b7a4641f6995985fe6d6e669d"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>ries07</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a73d31f690b4fd3a976a176f040f27f">
+    <rdfs:label xml:lang="eng">Ph.D. University of Washington 2019</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <bf:noteType xml:lang="en">dissertation or thesis information</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndead59fd3e764da183aadf19a9308b93">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Dissertation"/>
+    <bf:note rdf:nodeID="N4a73d31f690b4fd3a976a176f040f27f"/>
+    <bf:grantingInstitution rdf:resource="http://id.loc.gov/authorities/names/n79054596"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na735865b42344e388d076949f58a419d">
+    <bf:agent rdf:nodeID="N97102818151844f6aa9f3071172ed87b"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/6e0c8705-de58-48ec-b03b-3d54654b8210">
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026039"/>
+    <bf:dissertation rdf:nodeID="Ndead59fd3e764da183aadf19a9308b93"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/8b96753d-1f7e-498f-b102-76faa7fc1061"/>
+    <skos:prefLabel xml:lang="eng">Equity, humility, and culturally responsive education in health professional schools / Yris T. Lance.</skos:prefLabel>
+    <bf:title rdf:nodeID="Na1a565c4e2dc4710a6c682aef41d45c4"/>
+    <bf:contribution rdf:nodeID="Na735865b42344e388d076949f58a419d"/>
+    <bf:adminMetadata rdf:nodeID="N0f99419ffea44b13a6c733c594b3857f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f8c9e3b7a4641f6995985fe6d6e669d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:36:05</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4e0e0d898034095a4d746b25f190178">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na1a565c4e2dc4710a6c682aef41d45c4">
+    <bf:mainTitle xml:lang="eng">Equity, humility, and culturally responsive education in health professional schools</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N97102818151844f6aa9f3071172ed87b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Lance, Yris T.</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

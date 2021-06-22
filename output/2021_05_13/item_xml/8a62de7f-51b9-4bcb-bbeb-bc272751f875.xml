@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N8ef8c76d78f544b7a1d0af6b56f3de31">
+    <bf:status rdf:nodeID="Nfd85325ee17f4c4baa8fc39008ba6fb1"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-13</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nd1b04428544c46b7960ff7b6c598cab6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf29fd50ccc754416ab1f5bcf9009e592">
+    <rdfs:label xml:lang="eng">Mysteries</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfd85325ee17f4c4baa8fc39008ba6fb1">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1b04428544c46b7960ff7b6c598cab6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-05-13T13:47:46</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/8a62de7f-51b9-4bcb-bbeb-bc272751f875">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:classification rdf:nodeID="N7ea594746fdb49939a0161cd841f32df"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/eef37748-267d-462a-9e21-e6b0a30e4678"/>
+    <bf:sublocation rdf:nodeID="Nf29fd50ccc754416ab1f5bcf9009e592"/>
+    <bf:adminMetadata rdf:nodeID="N8ef8c76d78f544b7a1d0af6b56f3de31"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/aa5ff87e-c73a-438e-9f24-de999ba306d0"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest books</bf:physicalLocation>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ea594746fdb49939a0161cd841f32df">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>S43 1990</bf:itemPortion>
+    <bf:classificationPortion>PS3569.M537518</bf:classificationPortion>
+  </rdf:Description>
+</rdf:RDF>
