@@ -1,3 +1,4 @@
+from arguments import define_arg
 import os
 from datetime import date
 from progress.bar import Bar
@@ -6,11 +7,14 @@ from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
 """Functions"""
-def fix_copyright_dates(entity, file):
-	edit_made = False
+
+def fix_copyright_dates(entity, file, input_location):
+	"""Find literals that contain "©" and nothing else, and remove the triple"""
+
+	num_of_edits = 0
 
 	# open xml parser
-	tree = ET.parse(f'../input/{currentDate}/{entity}/{file}')
+	tree = ET.parse(f'{input_location}/{currentDate}/{entity}/{file}')
 	root = tree.getroot()
 
 	for child in root: # for each node...
@@ -18,12 +22,12 @@ def fix_copyright_dates(entity, file):
 			if prop.text is not None: # if the property has a literal value...
 				if prop.text == "©": # and if that literal is the copyright symbol and nothing else...
 					child.remove(prop) # remove that property
-					edit_made = True
+					num_of_edits += 1
 
-					tree.write(f'../input/{currentDate}/{entity}/{file}')
+					tree.write(f'{input_location}/{currentDate}/{entity}/{file}')
 
-					reserialize(f'../input/{currentDate}/{entity}/{file}', 'xml')
-	return edit_made
+					reserialize(f'{input_location}/{currentDate}/{entity}/{file}', f'{input_location}/{currentDate}/{entity}/{file}', 'xml')
+	return num_of_edits
 
 """Variables"""
 
@@ -31,14 +35,18 @@ def fix_copyright_dates(entity, file):
 today = date.today()
 currentDate = str(today).replace('-', '_')
 
+# arguments from command line
+args = define_arg()
+input_location = args.input
+
 num_of_edits = 0
 
 """Lists and Dictionaries"""
 
-workList = os.listdir(f'../input/{currentDate}/work')
-expressionList = os.listdir(f'../input/{currentDate}/expression')
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
-itemList = os.listdir(f'../input/{currentDate}/item')
+workList = os.listdir(f'{input_location}/{currentDate}/work')
+expressionList = os.listdir(f'{input_location}/{currentDate}/expression')
+manifestationList = os.listdir(f'{input_location}/{currentDate}/manifestation')
+itemList = os.listdir(f'{input_location}/{currentDate}/item')
 
 resource_dict = {"work": workList, "expression": expressionList, "manifestation": manifestationList, "item": itemList}
 
@@ -51,11 +59,10 @@ bar = Bar(">> Removing blank copyright dates", max=num_of_resources, suffix='%(p
 start = timer()
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		edit_made = fix_copyright_dates(entity, resource)
-		if edit_made == True:
-			num_of_edits += 1
+		edits_made = fix_copyright_dates(entity, resource, input_location)
+		num_of_edits += edits_made
 		bar.next()
 end = timer()
 bar.finish()
-print(f"Resources edited: {num_of_edits}")
+print(f"Triples removed: {num_of_edits}")
 print(f"Elapsed time: {round((end - start), 1)} s")
