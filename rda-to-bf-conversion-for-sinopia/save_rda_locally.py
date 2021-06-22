@@ -1,3 +1,4 @@
+from arguments import define_arg
 from datetime import date
 import os
 from progress.bar import Bar
@@ -12,6 +13,7 @@ LDP = Namespace('http://www.w3.org/ns/ldp#')
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
 bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
 dbo = Namespace('http://dbpedia.org/ontology/')
+ex = Namespace('http://example.org/rules/')
 madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
 owl = Namespace('http://www.w3.org/2002/07/owl')
 rdac = Namespace('http://rdaregistry.info/Elements/c/')
@@ -26,31 +28,42 @@ sin = Namespace('http://sinopia.io/vocabulary/')
 
 """Functions"""
 
-def create_URI_list():
+def create_uri_dict(source):
 	"""Creates a list of all URIs for all records in UW mongoDB"""
-	# pull from mongo + http to get all URIs
-	response = requests.get('https://api.sinopia.io/resource?limit=1000&group=washington')
-	with open('uw_list.json', 'w') as output_file:
-		output_file.write(response.text)
-
-	# create temporary output file
+	# create temporary output files
+	if not os.path.exists('uw_list.json'):
+		os.system('touch uw_list.json')
 	if not os.path.exists('uw_uri_list.nq'):
 		os.system('touch uw_uri_list.nq')
 
+	# pull from mongo + http to get all URIs
+	response = requests.get(source)
+	with open('uw_list.json', 'w') as output_file:
+		output_file.write(response.text)
+
 	# get URIs from JSON-LD into python list
 	os.system('java -jar rmlmapper-4.9.1-r328.jar -m json_rml.ttl -o uw_uri_list.nq')
-	URI_list = []
+	uri_dict = {"work": [], "expression": [], "manifestation": [], "item": []}
 	uriGraph = Graph()
+	uriGraph.bind('ex', ex)
 	uriGraph.load('file:uw_uri_list.nq', format='nquads')
-	for uri in uriGraph.objects(None, None):
-		URI_list.append(uri)
 
-	# remove temporary output file
+	for uri in uriGraph.objects(ex.Work_URIs, None):
+		uri_dict["work"].append(uri)
+	for uri in uriGraph.objects(ex.Expression_URIs, None):
+		uri_dict["expression"].append(uri)
+	for uri in uriGraph.objects(ex.Manifestation_URIs, None):
+		uri_dict["manifestation"].append(uri)
+	for uri in uriGraph.objects(ex.Item_URIs, None):
+		uri_dict["item"].append(uri)
+
+	# remove temporary output files
+	os.system('rm uw_list.json')
 	os.system('rm uw_uri_list.nq')
 
-	return URI_list
+	return uri_dict
 
-def save_all_resources(URI_list, currentDate):
+def save_all_resources(uri_dict, currentDate):
 	# create new graph, bind namespaces
 	Graph_sinopiaAll = rdflib.Graph()
 	Graph_sinopiaAll.bind('bf', bf)
@@ -65,29 +78,31 @@ def save_all_resources(URI_list, currentDate):
 	Graph_sinopiaAll.bind('sin', sin)
 	Graph_sinopiaAll.bind('madsrdf', madsrdf)
 
+	resource_list = uri_dict["work"] + uri_dict["expression"] + uri_dict["manifestation"] + uri_dict["item"]
+
 	# load RDA from sinopia into graph
-	bar = Bar('Parsing all UW resources', max=len(URI_list), suffix='%(percent)d%%')
-	for URI in URI_list:
+	bar = Bar('Parsing all UW resources', max=len(resource_list), suffix='%(percent)d%%')
+	for URI in resource_list:
 		Graph_sinopiaAll.parse(URI, format="json-ld")
 		bar.next()
 	bar.finish()
 
 	print('...\nSerializing as RDF/XML')
-	Graph_sinopiaAll.serialize(destination=f'../input/{currentDate}/all_resources.xml', format="xml") # serializes in xml
+	Graph_sinopiaAll.serialize(destination=f'{input_location}/{currentDate}/all_resources.xml', format="xml") # serializes in xml
 
 	print('...\nDone!')
 
-def save_works(URI_list, currentDate):
+def save_works(uri_dict, currentDate):
 	"""Look for works from mongoDB according to RDA class"""
 	# create directory for works
-	if not os.path.exists(f'../input/{currentDate}/work'):
+	if not os.path.exists(f'{input_location}/{currentDate}/work'):
 		print(">> Creating work directory")
-		os.system(f'mkdir ../input/{currentDate}/work')
+		os.system(f'mkdir {input_location}/{currentDate}/work')
 
-	workURIList = []
+	work_list = uri_dict["work"]
 
-	bar = Bar('>> Locating works', max=len(URI_list), suffix='%(percent)d%%') # progress bar
-	for URI in URI_list:
+	bar = Bar('>> Locating works', max=len(work_list), suffix='%(percent)d%%') # progress bar
+	for URI in work_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
 		Graph_sinopiaWork = rdflib.Graph()
@@ -104,28 +119,21 @@ def save_works(URI_list, currentDate):
 
 		# look for resources classed as an RDA Work, serialize as XML, and save locally
 		for work in Graph_sinopiaWork.subjects(RDF.type, rdac.C10001):
-			workURIList.append(URI)
-			Graph_sinopiaWork.serialize(destination=f'../input/{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
+			Graph_sinopiaWork.serialize(destination=f'{input_location}/{currentDate}/work/' + label + '.xml', format="xml") # serializes in xml
 		bar.next()
 	bar.finish()
 
-	return workURIList
-
-def save_expressions(URI_list, currentDate, workURIList=[]):
+def save_expressions(uri_dict, currentDate):
 	"""Look for expressions from mongoDB according to RDA class"""
-	# remove works from URI list to save time
-	for work in workURIList:
-		URI_list.remove(work)
-
 	# create directory for expressions
-	if not os.path.exists(f'../input/{currentDate}/expression'):
+	if not os.path.exists(f'{input_location}/{currentDate}/expression'):
 		print("\n>> Creating expression directory")
-		os.system(f'mkdir ../input/{currentDate}/expression')
+		os.system(f'mkdir {input_location}/{currentDate}/expression')
 
-	expressionURIList = []
+	expression_list = uri_dict["expression"]
 
-	bar = Bar('>> Locating expressions', max=len(URI_list), suffix='%(percent)d%%') # progress bar
-	for URI in URI_list:
+	bar = Bar('>> Locating expressions', max=len(expression_list), suffix='%(percent)d%%') # progress bar
+	for URI in expression_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
 		Graph_sinopiaExpression = rdflib.Graph()
@@ -142,27 +150,21 @@ def save_expressions(URI_list, currentDate, workURIList=[]):
 
 		# look for resources classed as an RDA Expression, serialize as XML, and save locally
 		for expression in Graph_sinopiaExpression.subjects(RDF.type, rdac.C10006):
-			expressionURIList.append(URI)
-			Graph_sinopiaExpression.serialize(destination=f'../input/{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
+			Graph_sinopiaExpression.serialize(destination=f'{input_location}/{currentDate}/expression/' + label + '.xml', format="xml") # serialize in xml
 		bar.next()
 	bar.finish()
-	return expressionURIList
 
-def save_manifestations(URI_list, currentDate, expressionURIList=[]):
+def save_manifestations(uri_dict, currentDate):
 	"""Look for manifestations from mongoDB according to RDA class"""
-	# remove expressions from URI list to save time # works removed in previous step
-	for expression in expressionURIList:
-		URI_list.remove(expression)
-
 	# create directory for manifestations
-	if not os.path.exists(f'../input/{currentDate}/manifestation'):
+	if not os.path.exists(f'{input_location}/{currentDate}/manifestation'):
 		print("\n>> Creating manifestation directory")
-		os.system(f'mkdir ../input/{currentDate}/manifestation')
+		os.system(f'mkdir {input_location}/{currentDate}/manifestation')
 
-	manifestationURIList = []
+	manifestation_list = uri_dict["manifestation"]
 
-	bar = Bar('>> Locating manifestations', max=len(URI_list), suffix='%(percent)d%%') # progress bar
-	for URI in URI_list:
+	bar = Bar('>> Locating manifestations', max=len(manifestation_list), suffix='%(percent)d%%') # progress bar
+	for URI in manifestation_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
 		Graph_sinopiaManifestation = rdflib.Graph()
@@ -180,25 +182,21 @@ def save_manifestations(URI_list, currentDate, expressionURIList=[]):
 
 		# look for resources classed as an RDA Manifestation, serialize as XML, and save locally
 		for manifestation in Graph_sinopiaManifestation.subjects(RDF.type, rdac.C10007):
-			manifestationURIList.append(URI)
-			Graph_sinopiaManifestation.serialize(destination=f'../input/{currentDate}/manifestation/' + label + '.xml', format="xml")
+			Graph_sinopiaManifestation.serialize(destination=f'{input_location}/{currentDate}/manifestation/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
-	return manifestationURIList
 
-def save_items(URI_list, currentDate, manifestationURIList=[]):
+def save_items(uri_dict, currentDate):
 	"""Look for items from mongoDB according to RDA class"""
-	# remove manifestations from URI list to save time # works and expressions removed in previous steps
-	for manifestation in manifestationURIList:
-		URI_list.remove(manifestation)
-
 	# create directory for items
-	if not os.path.exists(f'../input/{currentDate}/item'):
+	if not os.path.exists(f'{input_location}/{currentDate}/item'):
 		print("\n>> Creating item directory")
-		os.system(f'mkdir ../input/{currentDate}/item')
+		os.system(f'mkdir {input_location}/{currentDate}/item')
 
-	bar = Bar('>> Locating items', max=len(URI_list), suffix='%(percent)d%%') # progress bar
-	for URI in URI_list:
+	item_list = uri_dict["item"]
+
+	bar = Bar('>> Locating items', max=len(item_list), suffix='%(percent)d%%') # progress bar
+	for URI in item_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
 		Graph_sinopiaItem = rdflib.Graph()
@@ -215,7 +213,7 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 
 		# look for resources classed as an RDA Item, serialize as XML, and save locally
 		for item in Graph_sinopiaItem.subjects(RDF.type, rdac.C10003):
-			Graph_sinopiaItem.serialize(destination=f'../input/{currentDate}/item/' + label + '.xml', format="xml")
+			Graph_sinopiaItem.serialize(destination=f'{input_location}/{currentDate}/item/' + label + '.xml', format="xml")
 		bar.next()
 	bar.finish()
 
@@ -225,45 +223,58 @@ def save_items(URI_list, currentDate, manifestationURIList=[]):
 today = date.today()
 currentDate = str(today).replace('-', '_')
 
+# arguments from command line
+args = define_arg()
+source = args.source
+input_location = args.input
+
 ###
 
-# create directory with today's date for RDA-in-RDF/XML data
-if not os.path.exists(f'../input/{currentDate}'):
+"""Create input folder"""
+if not os.path.exists(f'{input_location}'):
 	print('>> Creating input directory')
-	os.system(f'mkdir ../input/{currentDate}')
+	os.system(f'mkdir {input_location}')
 
-URI_list = create_URI_list()
+if not os.path.exists(f'{input_location}/{currentDate}'):
+	os.system(f'mkdir {input_location}/{currentDate}')
 
+"""Create list of URIs from Sinopia"""
+uri_dict = create_uri_dict(source)
+
+"""Save all resources in one file"""
 #start = timer()
-#save_all_resources(URI_list, currentDate)
+#save_all_resources(uri_dict, currentDate)
 #end = timer()
-#print(f"Number of resources: {len(URI_list)}")
 #print(f"Elapsed time: {round((end - start), 1)} s")
 
+"""Save works"""
 start = timer()
-workURIList = save_works(URI_list, currentDate)
+save_works(uri_dict, currentDate)
+workURIList = os.listdir(f'{input_location}/{currentDate}/work')
 end = timer()
 print(f"Number of works: {len(workURIList)}")
 print(f"Elapsed time: {round((end - start), 1)} s")
 
-workList = os.listdir(f'../input/{currentDate}/work')
+"""Save expressions"""
 start = timer()
-expressionURIList = save_expressions(URI_list, currentDate, workURIList)
+save_expressions(uri_dict, currentDate)
+expressionURIList = os.listdir(f'{input_location}/{currentDate}/expression')
 end = timer()
 print(f"Number of expressions: {len(expressionURIList)}")
 print(f"Elapsed time: {round((end - start), 1)} s")
 
-expressionList = os.listdir(f'../input/{currentDate}/expression')
+"""Save manifestations"""
 start = timer()
-manifestationURIList = save_manifestations(URI_list, currentDate, expressionURIList)
+save_manifestations(uri_dict, currentDate)
+manifestationURIList = os.listdir(f'{input_location}/{currentDate}/manifestation')
 end = timer()
 print(f"Number of works: {len(manifestationURIList)}")
 print(f"Elapsed time: {round((end - start), 1)} s")
 
-manifestationList = os.listdir(f'../input/{currentDate}/manifestation')
+"""Save items"""
 start = timer()
-save_items(URI_list, currentDate, manifestationURIList)
+save_items(uri_dict, currentDate)
+itemList = os.listdir(f'{input_location}/{currentDate}/item')
 end = timer()
-itemList = os.listdir(f'../input/{currentDate}/item')
 print(f"Number of works: {len(itemList)}")
 print(f"Elapsed time: {round((end - start), 1)} s")
