@@ -1,3 +1,4 @@
+from arguments import define_arg
 from datetime import date
 import os
 from progress.bar import Bar
@@ -7,15 +8,20 @@ from timeit import default_timer as timer
 
 """Variables"""
 
+# format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-','_')
 
+# arguments from command line
+args = define_arg()
+output_location = args.output
+
 """Lists"""
 
-work_1_list = os.listdir(f"../output/{currentDate}/work_1_json/")
-work_2_list = os.listdir(f"../output/{currentDate}/work_2_json/")
-instance_list = os.listdir(f"../output/{currentDate}/instance_json/")
-item_list = os.listdir(f"../output/{currentDate}/item_json/")
+work_1_list = os.listdir(f"{output_location}/{currentDate}/work_1_json/")
+work_2_list = os.listdir(f"{output_location}/{currentDate}/work_2_json/")
+instance_list = os.listdir(f"{output_location}/{currentDate}/instance_json/")
+item_list = os.listdir(f"{output_location}/{currentDate}/item_json/")
 
 resource_dict = {"work_1": work_1_list, "work_2": work_2_list, "instance": instance_list, "item": item_list}
 
@@ -42,9 +48,9 @@ for entity in resource_dict.keys():
 			headers = {"Authorization": f"Bearer {jwt}", "Content-Type": "application/json"}
 
 			resource_id = resource.split('.')[0]
-			resource_iri = f'https://api.stage.sinopia.io/resource/{resource_id}'
+			resource_iri = f'https://api.sinopia.io/resource/{resource_id}'
 
-			resource = open(f'../output/{currentDate}/{entity}_json/{resource}')
+			resource = open(f'{output_location}/{currentDate}/{entity}_json/{resource}')
 			data = resource.read()
 
 			# post to sinopia
