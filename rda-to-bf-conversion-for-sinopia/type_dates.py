@@ -1,65 +1,33 @@
+from arguments import define_arg
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
+from reserialize import reserialize
 from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
-
-"""Namespaces"""
-LDP = Namespace('http://www.w3.org/ns/ldp#')
-bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
-bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
-dbo = Namespace('http://dbpedia.org/ontology/')
-madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
-owl = Namespace('http://www.w3.org/2002/07/owl#')
-rdac = Namespace('http://rdaregistry.info/Elements/c/')
-rdae = Namespace('http://rdaregistry.info/Elements/e/')
-rdai = Namespace('http://rdaregistry.info/Elements/i/')
-rdam = Namespace('http://rdaregistry.info/Elements/m/')
-rdamdt = Namespace('http://rdaregistry.info/Elements/m/datatype/')
-rdau = Namespace('http://rdaregistry.info/Elements/u/')
-rdaw = Namespace('http://rdaregistry.info/Elements/w/')
-rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
-sin = Namespace('http://sinopia.io/vocabulary/')
-skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
 
 today = date.today()
 currentDate = str(today).replace('-','_')
 
+# arguments from command line
+args = define_arg()
+output_location = args.output
+
 """Lists and Dictionaries"""
 
 bf_date_prop_list = ["date", "originDate", "legalDate", "copyrightDate", "changeDate", "creationDate", "generationDate"]
 
-work_1_list = os.listdir(f"../output/{currentDate}/work_1_xml/")
-work_2_list = os.listdir(f"../output/{currentDate}/work_2_xml/")
-instance_list = os.listdir(f"../output/{currentDate}/instance_xml/")
-item_list = os.listdir(f"../output/{currentDate}/item_xml/")
+work_1_list = os.listdir(f"{output_location}/{currentDate}/work_1_xml/")
+work_2_list = os.listdir(f"{output_location}/{currentDate}/work_2_xml/")
+instance_list = os.listdir(f"{output_location}/{currentDate}/instance_xml/")
+item_list = os.listdir(f"{output_location}/{currentDate}/item_xml/")
 
 resource_dict = {"work_1": work_1_list, "work_2": work_2_list, "instance": instance_list, "item": item_list}
 
 """Functions"""
-def reserialize(file):
-	"""Reserialize with rdflib to fix namespaces and UTf-8"""
-	g = Graph()
-	g.bind('bf', bf)
-	g.bind('bflc', bflc)
-	g.bind('dbo', dbo)
-	g.bind('madsrdf', madsrdf)
-	g.bind('owl', owl)
-	g.bind('rdac', rdac)
-	g.bind('rdae', rdae)
-	g.bind('rdai', rdai)
-	g.bind('rdam', rdam)
-	g.bind('rdamdt', rdamdt)
-	g.bind('rdau', rdau)
-	g.bind('rdaw', rdaw)
-	g.bind('rdax', rdax)
-	g.bind('sin', sin)
-	g.bind('skos', skos)
-	g.load(f'file:{file}', format='xml')
-	g.serialize(destination=file, format='xml')
 
 def determine_date_type(value):
 	date_type = ""
@@ -139,11 +107,11 @@ def determine_date_type(value):
 
 	return date_type
 
-def add_dates_in_xml(currentDate, entity, file):
-	edit_made = False
+def add_dates_in_xml(currentDate, entity, file, output_location):
+	num_of_edits = 0
 
 	# open xml parser
-	tree = ET.parse(f'../output/{currentDate}/{entity}_xml/{file}')
+	tree = ET.parse(f'{output_location}/{currentDate}/{entity}_xml/{file}')
 	root = tree.getroot()
 
 	for child in root:
@@ -152,13 +120,13 @@ def add_dates_in_xml(currentDate, entity, file):
 				date_type = determine_date_type(prop.text)
 				if date_type == "date":
 					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}datatype', f"http://www.w3.org/2001/XMLSchema#{date_type}")
-					edit_made = True
+					num_of_edits += 1
 
-					tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
+					tree.write(f'{output_location}/{currentDate}/{entity}_xml/{file}')
 
-					reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
+					reserialize(f'{output_location}/{currentDate}/{entity}_xml/{file}', f'{output_location}/{currentDate}/{entity}_xml/{file}', 'xml')
 
-	return edit_made
+	return num_of_edits
 
 ###
 num_of_resources = len(work_1_list) + len(work_2_list) + len(instance_list) + len(item_list)
@@ -168,12 +136,11 @@ start = timer()
 bar = Bar(">> Adding datatypes to dates", max=num_of_resources, suffix='%(percent)d%%') # progress bar
 for entity in resource_dict.keys():
 	for resource in resource_dict[entity]:
-		edit_made = add_dates_in_xml(currentDate, entity, resource)
-		if edit_made == True:
-			num_of_edits += 1
+		edits_made = add_dates_in_xml(currentDate, entity, resource, output_location)
+		num_of_edits += edits_made
 		bar.next()
 end = timer()
 bar.finish()
 
-print(f"Edits made: {num_of_edits}")
+print(f"Datatypes added: {num_of_edits}")
 print(f"Elapsed time: {round((end - start), 1)} s")
