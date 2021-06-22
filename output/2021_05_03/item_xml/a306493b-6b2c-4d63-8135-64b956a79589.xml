@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nfd0d2a69ccbe410bb165df62416cee7f">
+    <rdfs:label xml:lang="eng">bookshelf</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd60c49c5f9854333b9ddee60e3a8364d">
+    <bf:classificationPortion>QK192</bf:classificationPortion>
+    <bf:itemPortion>.M36 1979</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4aecc4b03cf24d78ba7a9843c35784f1">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-03</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:status rdf:nodeID="N7b8577f3f93841aab69ca4f57f34f855"/>
+    <bf:generationProcess rdf:nodeID="N79487f5f91b44491ad16a9453937b33c"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/a306493b-6b2c-4d63-8135-64b956a79589">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:sublocation rdf:nodeID="Nfd0d2a69ccbe410bb165df62416cee7f"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/f727189f-33ef-4a09-9b71-9cb5449155aa"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a143aa19-f5ec-4084-b33f-40ac515ac2cf"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest books</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="N4aecc4b03cf24d78ba7a9843c35784f1"/>
+    <bf:classification rdf:nodeID="Nd60c49c5f9854333b9ddee60e3a8364d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b8577f3f93841aab69ca4f57f34f855">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79487f5f91b44491ad16a9453937b33c">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-03T17:33:40+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

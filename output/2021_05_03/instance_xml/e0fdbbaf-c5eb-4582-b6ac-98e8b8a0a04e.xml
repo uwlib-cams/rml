@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N41b0b2b1b3c442eaba53e9e1916b5492">
+    <bf:mainTitle xml:lang="eng">Northanger Abbey</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5bcf904cf28549208deb2aba0888e6cb">
+    <bf:date>[1950]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:resource="http://id.loc.gov/entities/providers/74c75a2bf3f8dbd4c393d0bf9894d7d4"/>
+    <bf:place rdf:nodeID="N9046d94ea81a4ae89409b6d5343bec8a"/>
+    <bf:agent rdf:nodeID="N3e3b37ca114c484aa24f3e85cee59349"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/e0fdbbaf-c5eb-4582-b6ac-98e8b8a0a04e">
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:provisionActivity rdf:nodeID="N5bcf904cf28549208deb2aba0888e6cb"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="N41b0b2b1b3c442eaba53e9e1916b5492"/>
+    <bf:copyrightDate>©1950</bf:copyrightDate>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/1a91cb54-3b13-42b7-8cef-bb8310760a91"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:classification rdf:nodeID="Nb8f65e9ca51b4bde91890059cfc38d9c"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/b9274075-d2b4-4703-a6d9-aad1755f4ef8"/>
+    <bf:identifiedBy rdf:nodeID="N40ae67a6f5bd4eb2bf5e2a571d41fbca"/>
+    <bf:provisionActivityStatement xml:lang="eng">[New York] : Doric Books, [1950]</bf:provisionActivityStatement>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:dimensions xml:lang="eng">19 cm</bf:dimensions>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:responsibilityStatement xml:lang="eng">by Jane Austen</bf:responsibilityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:adminMetadata rdf:nodeID="N4fe5316d006a4a2a95f8ad3f00bdbc24"/>
+    <bf:extent rdf:nodeID="N95107670f516426497f26575fe88fc1f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4fe5316d006a4a2a95f8ad3f00bdbc24">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:generationProcess rdf:nodeID="N6256381a222a441e9b1b645f9ea15532"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-03</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40ae67a6f5bd4eb2bf5e2a571d41fbca">
+    <rdf:value>LCCN 50001514</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6256381a222a441e9b1b645f9ea15532">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-03T17:28:45+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N95107670f516426497f26575fe88fc1f">
+    <rdfs:label xml:lang="eng">243 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9046d94ea81a4ae89409b6d5343bec8a">
+    <rdfs:label xml:lang="eng">[New York]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8f65e9ca51b4bde91890059cfc38d9c">
+    <bf:itemPortion>.N7 1950</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PR4034</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3e3b37ca114c484aa24f3e85cee59349">
+    <rdfs:label xml:lang="eng">Doric Books</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

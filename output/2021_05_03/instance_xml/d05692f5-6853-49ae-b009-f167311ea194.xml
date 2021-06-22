@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N0c70430af36f4368b1a530a5514e138b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Honolulu, Hawaii</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N490992d3133f4da2880b03ee56dea5f7">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N80d7f8979a0c41b08a117b74b5ff632a"/>
+    <bf:status rdf:nodeID="N79545a4faad047c394d144067ea5d0fd"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID>mathiasuw</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-03</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee6e64d7d04a437c9b26eeb3d5c3b574">
+    <bf:place rdf:nodeID="N0c70430af36f4368b1a530a5514e138b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>2017</bf:date>
+    <bf:agent rdf:nodeID="N16777869b18545c2abb2576f2d706d4c"/>
+    <bf:agent rdf:nodeID="N2c07ca45f01e4d27b2fd4bc88d9c6a1d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16777869b18545c2abb2576f2d706d4c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Gal-Pal Zines</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/d05692f5-6853-49ae-b009-f167311ea194">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/35dfd27d-237e-4ab2-af3a-91d96f3bd9a4"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="Nf069169ae9cc495b89c646f4966e0140"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:extent rdf:nodeID="N0f6e1d6c5872450589762d375bdc7507"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:responsibilityStatement xml:lang="eng">by Myra Mae Waddell</bf:responsibilityStatement>
+    <bf:provisionActivity rdf:nodeID="Nee6e64d7d04a437c9b26eeb3d5c3b574"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Honolulu, Hawaii] : Gal-Pal Zines, 2017</bf:provisionActivityStatement>
+    <bf:dimensions xml:lang="eng">12 cm</bf:dimensions>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/19d50088-3009-4cb7-967e-eaa981a6e2ad"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:classification rdf:nodeID="N33a303fd5c72415499200927a55969f0"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:adminMetadata rdf:nodeID="N490992d3133f4da2880b03ee56dea5f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c07ca45f01e4d27b2fd4bc88d9c6a1d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Gal-Pal Zines</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf069169ae9cc495b89c646f4966e0140">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Nautilus</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33a303fd5c72415499200927a55969f0">
+    <bf:classificationPortion>N7433.4.W225</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>N38 2017</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N79545a4faad047c394d144067ea5d0fd">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f6e1d6c5872450589762d375bdc7507">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">12 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80d7f8979a0c41b08a117b74b5ff632a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-03T17:29:24+00:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N37fd1645a43b457fab35a6da51d0145a">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-03</bf:creationDate>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Nb1dca78945df4a53821b8f3989a1e476"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="Nca74029e747c4a5685a823918c914384"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/20a5e0ce-501b-462a-869f-4a9ca867e40d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/a32c3713-5e96-4f92-82cb-2fdc2f1b0b2d"/>
+    <bf:originDate>1998</bf:originDate>
+    <bf:adminMetadata rdf:nodeID="N37fd1645a43b457fab35a6da51d0145a"/>
+    <skos:altLabel xml:lang="eng">Wittkowsky, Andreas. Pi︠a︡tiletka bez plana</skos:altLabel>
+    <skos:prefLabel xml:lang="eng">Wittkowsky, Andreas. Fünf Jahre ohne Plan. Russian</skos:prefLabel>
+    <bf:notation rdf:nodeID="N004e9066dc9f4a64bebd10e75542cc38"/>
+    <bf:contribution rdf:nodeID="N107764781e624b90baf531d3d86c2db3"/>
+    <bf:summary rdf:nodeID="N23726585e03d4d2daa7371c052532807"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/subjects/sh99001576"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/0fdb4413-f1ca-4f14-b60b-06156c4e0c8d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23726585e03d4d2daa7371c052532807">
+    <rdfs:label xml:lang="eng">An analysis of the first five years of the Ukrainian national government. The starting point is the thesis that the national consensus reached in the moment of independence was the result of an "historic compromise" between three basic forces: the national movement, the Communist Party nomenklatura, and the striking miners of Donbass. This consensus was destroyed by economic crisis and disagreement about the policy of Ukrainianization. Separatist tendencies arose in Donbass and Crimea. Government consolidation became possible only with the appearance in regional elites of Eastern Ukraine of pragmatic interest in the existence of a national goverment.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca74029e747c4a5685a823918c914384">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99db11b379ea42a285f5bd63e6fd1e41">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Komarova, Natalʹi︠a︡</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1dca78945df4a53821b8f3989a1e476">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-03T17:23:37+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N107764781e624b90baf531d3d86c2db3">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/trl"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N99db11b379ea42a285f5bd63e6fd1e41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N004e9066dc9f4a64bebd10e75542cc38">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Cyrillic</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
