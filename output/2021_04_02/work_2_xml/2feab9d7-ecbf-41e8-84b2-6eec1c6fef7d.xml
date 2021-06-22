@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nde87f101bffb43f8b11c2f1c3f8c60a4">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+    <bf:agent rdf:nodeID="Nc018875c186c4bf7bce2dd93525e15de"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc018875c186c4bf7bce2dd93525e15de">
+    <rdfs:label>S.P. Sinha Ray</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/2feab9d7-ecbf-41e8-84b2-6eec1c6fef7d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:contribution rdf:nodeID="Nde87f101bffb43f8b11c2f1c3f8c60a4"/>
+    <bf:adminMetadata rdf:nodeID="N2804caace9b14767af2da812117f0ea5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/41b29c94-25c8-4566-9287-34c3d5fc1809"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/21466357-0e51-4ae2-803f-300c445a0a8e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2804caace9b14767af2da812117f0ea5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-20</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N30ffcadb5cc2491a90376030f12c0b7e"/>
+    <bflc:catalogerID xml:lang="en">ries07</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="N415e1fa261184442ac7acc530454f2db"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30ffcadb5cc2491a90376030f12c0b7e">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-02T12:55:34+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N415e1fa261184442ac7acc530454f2db">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

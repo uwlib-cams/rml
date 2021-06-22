@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N0146c0c90d25457f9fdd229a07e7b0eb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">New York</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nded57474344c4edda2e9e69b4ba34e28">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID xml:lang="eng">aschiff</bflc:catalogerID>
+    <bf:generationProcess rdf:nodeID="N977eaa1503fc48a69e05ac5e008eda10"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-27</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N977eaa1503fc48a69e05ac5e008eda10">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-02T13:02:03+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb7650bc827c94647b37597270b051e7a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">335 pages, 4 unnumbered leaves of plates</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a72998781984ee39d3373eebea08e2c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Hans Brinker, or, The silver skates</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/dd3ff9a8-c8a1-4f06-9fb5-d4ee6888352a">
+    <bf:relatedTo rdf:nodeID="N199e71e4e3d1437aac029e4d09e08b11"/>
+    <bf:identifiedBy rdf:nodeID="Ne5052bdb74b1499bbf5e6ea9f6cb5bf0"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:dimensions xml:lang="eng">22 cm</bf:dimensions>
+    <bf:extent rdf:nodeID="Nb7650bc827c94647b37597270b051e7a"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/2bf77d16-4ae3-4662-ae5a-02e99d5fc14e"/>
+    <bf:responsibilityStatement xml:lang="eng">by Mary Mapes Dodge</bf:responsibilityStatement>
+    <bf:responsibilityStatement xml:lang="eng">illustrated by Hilda van Stockum</bf:responsibilityStatement>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:seriesStatement xml:lang="eng">Rainbow classics</bf:seriesStatement>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060010"/>
+    <bf:provisionActivity rdf:nodeID="Nf66a4be4b02341d9b02bc4e502bd85e6"/>
+    <bf:adminMetadata rdf:nodeID="Nded57474344c4edda2e9e69b4ba34e28"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/c0a15cd9-521a-44fe-8e75-a9783a7c31a5"/>
+    <bf:responsibilityStatement xml:lang="eng">with an introduction by May Lamberton Becker</bf:responsibilityStatement>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:copyrightDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">©1946</bf:copyrightDate>
+    <bf:title rdf:nodeID="N8a72998781984ee39d3373eebea08e2c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncdd9698e8e1f4ee2b341e04d4d561fb3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Cleveland</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5052bdb74b1499bbf5e6ea9f6cb5bf0">
+    <rdf:value>LCCN 46025118</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf66a4be4b02341d9b02bc4e502bd85e6">
+    <bf:place rdf:nodeID="N0146c0c90d25457f9fdd229a07e7b0eb"/>
+    <bf:place rdf:nodeID="Ncdd9698e8e1f4ee2b341e04d4d561fb3"/>
+    <bf:agent rdf:nodeID="N233c8094979240fb86b1a043c4a87264"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">[1946]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N233c8094979240fb86b1a043c4a87264">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">The World Publishing Company</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N199e71e4e3d1437aac029e4d09e08b11">
+    <rdfs:label>http://id.loc.gov/authorities/names/no00049285</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  </rdf:Description>
+</rdf:RDF>

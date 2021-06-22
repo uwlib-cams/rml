@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N1f59a56c66014d368d511b70415a33bd">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nebc9a608cce94f8cb58529e36868f264"/>
+    <bflc:catalogerID xml:lang="eng">pfreeman</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="N08908996fa8b454581c3751202cdd995"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-04</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b1e7c30db4a4b14834863a0aa98bd7d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">field guides</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.stage.sinopia.io/resource/bcfe37d1-e3ca-4d34-9259-8ec395d11639">
+    <bf:sublocation rdf:nodeID="N0b1e7c30db4a4b14834863a0aa98bd7d"/>
+    <bf:classification rdf:nodeID="Ncc46b8b5753443f58ddd5801e259b6d3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="N1f59a56c66014d368d511b70415a33bd"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/18508f13-1493-4de0-ac1c-3a1f7a0c2eed"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/b5616927-a706-4b68-9490-5a6b761c372f"/>
+    <bf:physicalLocation xml:lang="eng">Pacific Nothwest collection</bf:physicalLocation>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebc9a608cce94f8cb58529e36868f264">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">rml.py SNAPSHOT: 2021-04-02T13:03:28+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N08908996fa8b454581c3751202cdd995">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc46b8b5753443f58ddd5801e259b6d3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>HE5783.W3</bf:classificationPortion>
+    <bf:itemPortion>K54 1983</bf:itemPortion>
+  </rdf:Description>
+</rdf:RDF>
