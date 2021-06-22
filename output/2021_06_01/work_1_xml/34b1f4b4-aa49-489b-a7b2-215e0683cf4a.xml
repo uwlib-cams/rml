@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nca2e38fd8b1f43ddbe324ab8f9650f5c">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:status rdf:nodeID="Nbe3f6ce21577491ebe454baadf6aaf8a"/>
+    <bf:generationProcess rdf:nodeID="N517f140de19d41acbe1b39217ce07519"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/34b1f4b4-aa49-489b-a7b2-215e0683cf4a">
+    <skos:prefLabel xml:lang="eng">Braun, Wilbur, 1894-1968. He ain't done right by Nell</skos:prefLabel>
+    <bf:title rdf:nodeID="Ne0f2504e1d3d46aa8d46c15487709303"/>
+    <bf:subject rdf:nodeID="N065b0cc5146b43588a7cab55586b0bfb"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026432"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:contribution rdf:nodeID="Nbaa34c9a39e244a1af4bf7d34cd77ac3"/>
+    <bf:originDate>1935</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008121119"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <bf:adminMetadata rdf:nodeID="Nca2e38fd8b1f43ddbe324ab8f9650f5c"/>
+    <bf:genreForm rdf:nodeID="Nd05106c8a4cd492f95a96d434ea4c3a6"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/7a9c8d69-4c3c-468c-aab9-0bee9026d145"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N065b0cc5146b43588a7cab55586b0bfb">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Grandmothers -- Drama</madsrdf:authoritativeLabel>
+    <rdfs:label>Grandmothers -- Drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd05106c8a4cd492f95a96d434ea4c3a6">
+    <rdfs:label>Drama</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe3f6ce21577491ebe454baadf6aaf8a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0f2504e1d3d46aa8d46c15487709303">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">He ain't done right by Nell</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbaa34c9a39e244a1af4bf7d34cd77ac3">
+    <bf:agent rdf:nodeID="N706a7d5c35d948399194453ecad472aa"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N706a7d5c35d948399194453ecad472aa">
+    <rdfs:label> Braun, Wilbur, 1894-1968</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N517f140de19d41acbe1b39217ce07519">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:17:14</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N01e8a2382d2046158dfe86f734888e58">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>ND1049.Q2</bf:classificationPortion>
+    <bf:itemPortion>A72 2015</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b6abe0187d04beebf4147f6e1698488">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N67d15e8c246940b688c9bbd5944630a3"/>
+    <bflc:catalogerID>cc83</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncbc39ceca3c04f5fa3ba581d8b3cd741">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessPolicy"/>
+    <rdfs:label xml:lang="eng">Access is restricted; on site use only</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb706469a55904e55b93d524d1686bd95">
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2016169387"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/f3a487ba-20fd-42df-b885-ceba971a066e">
+    <bf:usageAndAccessPolicy rdf:nodeID="Ncbc39ceca3c04f5fa3ba581d8b3cd741"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:contribution rdf:nodeID="Nb706469a55904e55b93d524d1686bd95"/>
+    <bf:classification rdf:nodeID="N01e8a2382d2046158dfe86f734888e58"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/086fe612-1591-4a25-97bf-d4e4c9d3b295"/>
+    <bf:immediateAcquisition rdf:nodeID="Nf37caf4988344ca2a596d530eff37bb4"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="N0ad6bc73b18848efb72363fa8f09dd48"/>
+    <bf:physicalLocation xml:lang="eng">East Asia Library</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/800a2372-6001-4741-ba02-b0205c083500"/>
+    <bf:adminMetadata rdf:nodeID="N7b6abe0187d04beebf4147f6e1698488"/>
+    <bf:identifier rdf:nodeID="N1b08fe0468f941f2bc349f42337fda40"/>
+    <bf:contribution rdf:nodeID="N379735a9452e4dfa8b98eab496c4bb74"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N379735a9452e4dfa8b98eab496c4bb74">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/dnr"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no2016169387"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67d15e8c246940b688c9bbd5944630a3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:25:53</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ad6bc73b18848efb72363fa8f09dd48">
+    <rdfs:label xml:lang="eng">Special Coll Oversize</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf37caf4988344ca2a596d530eff37bb4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition"/>
+    <rdfs:label xml:lang="eng">Gift of Qin Bailan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b08fe0468f941f2bc349f42337fda40">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>39352078280773</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

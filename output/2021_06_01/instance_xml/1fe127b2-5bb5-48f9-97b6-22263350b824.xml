@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Ncbe168ae9e0c4334a58f04875004c11f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Description based on DVD record; title from title screen (viewed April 27, 2020)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e280c0aa30c47689139b9311903ae46">
+    <bf:status rdf:nodeID="Nb9a82f4e4acf49c5bf5318576246effd"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerID>lins@uw.edu</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N0d8c4a64ff984477844b9b864ada12ff"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9a82f4e4acf49c5bf5318576246effd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N25999f4292e8499f892609306a3a0547">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Germany</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N805d9acf7d134379941072ebb06da560">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">1 online resource</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/1fe127b2-5bb5-48f9-97b6-22263350b824">
+    <bf:adminMetadata rdf:nodeID="N4e280c0aa30c47689139b9311903ae46"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/438f1195-99fc-4c5f-aa8a-9a813131924e"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:title rdf:nodeID="N26a5013c93c5476da5005b4fb8e656ed"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:extent rdf:nodeID="N805d9acf7d134379941072ebb06da560"/>
+    <bf:note rdf:nodeID="Ncbe168ae9e0c4334a58f04875004c11f"/>
+    <bf:responsibilityStatement xml:lang="eng">Fandango and Zero West present ; a film by Sandhya Suri ; produced by Carlo Cresto-Dina, Kai Kûnnemann, Thomas Kufus ; directed by Sandhya Suri.</bf:responsibilityStatement>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/7d67632f-32c4-4f06-af03-d941ae964994"/>
+    <bf:provisionActivity rdf:nodeID="N36d3feacaa604895b6e873493b426a81"/>
+    <bf:soundCharacteristic rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1006"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N36d3feacaa604895b6e873493b426a81">
+    <bf:place rdf:nodeID="N25999f4292e8499f892609306a3a0547"/>
+    <bf:date>2005</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26a5013c93c5476da5005b4fb8e656ed">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">I for India</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0d8c4a64ff984477844b9b864ada12ff">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:23:46</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

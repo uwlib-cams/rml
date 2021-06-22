@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nf0523e0281944bd68da7259042daa6ad">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N3c202405e9d747849846b535a595cf3f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:generationProcess rdf:nodeID="Naa85dbf1fc684f0f9a958eee0e54c86b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N228cf40ab9e14f7f9145cd22f2850937">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Strickler, Zoe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94a969c9a2314321b77f094028fbed23">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <bf:agent rdf:nodeID="N228cf40ab9e14f7f9145cd22f2850937"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/ba638789-1354-427b-8bf6-6caf2c68afe8">
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/c17f1a38-1530-4446-a249-9edca04a41fa"/>
+    <bf:notation rdf:nodeID="Nec8f66139bf042d699626ff31020eb53"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:supplementaryContent rdf:nodeID="Nf6f6163f071e444e9523efebce407f79"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/9925a8e6-ed73-4817-acbb-e844b70df187"/>
+    <bf:adminMetadata rdf:nodeID="Nf0523e0281944bd68da7259042daa6ad"/>
+    <bf:contribution rdf:nodeID="N94a969c9a2314321b77f094028fbed23"/>
+    <bf:originDate>1993</bf:originDate>
+    <bf:summary rdf:nodeID="N99aef9c63e834828ac1fedad0379f8b5"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec8f66139bf042d699626ff31020eb53">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c202405e9d747849846b535a595cf3f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf6f6163f071e444e9523efebce407f79">
+    <rdfs:label xml:lang="eng">Includes bibliographical references (page 261) and index</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/SupplementaryContent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99aef9c63e834828ac1fedad0379f8b5">
+    <rdfs:label xml:lang="eng">Features wildflowers along the roads and highways of the Pacific Northwest.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa85dbf1fc684f0f9a958eee0e54c86b">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:21:43</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

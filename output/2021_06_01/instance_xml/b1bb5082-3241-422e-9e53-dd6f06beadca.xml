@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N0a629aa0578842d9aecea9dadd7706b4">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nd25d3285c1d14eda9c400362b4b47995"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="Nd7b780ae20664e97a74afc49f39cc305"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0414e8d4ce2f4f8ba7db44f42bb29493">
+    <bf:mainTitle xml:lang="rus">Skachi, dobryĭ edinorog : ocherki</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac514e500c84428db8eba78978bc9e83">
+    <rdfs:label xml:lang="rus">Москва</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/b1bb5082-3241-422e-9e53-dd6f06beadca">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:adminMetadata rdf:nodeID="N0a629aa0578842d9aecea9dadd7706b4"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/700dcd07-2ba5-4360-80a0-75339178addf"/>
+    <bf:extent rdf:nodeID="N23062485614341ea8b165cf481cee53e"/>
+    <bf:provisionActivity rdf:nodeID="N385b69ddd19c44e1a34386e3cd51ebb7"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/afd25017-3d8d-46a5-a453-6ba8306a55ef"/>
+    <bf:responsibilityStatement xml:lang="rus">Александр Миловский</bf:responsibilityStatement>
+    <bf:classification rdf:nodeID="N4937474d76f646a185960411ab35cdbf"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="N0414e8d4ce2f4f8ba7db44f42bb29493"/>
+    <bf:responsibilityStatement xml:lang="rus">фотографии автора</bf:responsibilityStatement>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:title rdf:nodeID="Nbb63abbbca084041a5e1a7c7a0aec4bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7b780ae20664e97a74afc49f39cc305">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4937474d76f646a185960411ab35cdbf">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>NK975</bf:classificationPortion>
+    <bf:itemPortion>.M554 1986</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N385b69ddd19c44e1a34386e3cd51ebb7">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="Nac514e500c84428db8eba78978bc9e83"/>
+    <bf:date>1986</bf:date>
+    <bf:agent rdf:nodeID="N73f06b260d434bacb5d00a5942e4692d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd25d3285c1d14eda9c400362b4b47995">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:24:46</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb63abbbca084041a5e1a7c7a0aec4bd">
+    <bf:subtitle xml:lang="rus">очерки</bf:subtitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="rus">Скачи, добрый единорог</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73f06b260d434bacb5d00a5942e4692d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="rus">Детская литература</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23062485614341ea8b165cf481cee53e">
+    <rdfs:label xml:lang="eng">189 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N9eaee5df1e2b4e9a8350750cb71287ed">
+    <rdfs:label>Tolstoĭ, Nikita, 1923-1996</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc20f15069924019bd52ecac9ba7374b">
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N3cdf817b64c5497b90769c016df49c54"/>
+    <bf:status rdf:nodeID="Nbda7ef224c6345fd81da9f4307e5682f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/10f5f607-cc54-4dd2-86c9-8c3ff874bd9e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:notation rdf:nodeID="N5df660ad84864e7a98d43778cf10d10e"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/mac"/>
+    <bf:adminMetadata rdf:nodeID="Ncc20f15069924019bd52ecac9ba7374b"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/90ecceaa-a3f1-4cdd-8e61-96d76bd1b160"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/7f02abb0-ab85-4f96-98db-edb78254f18b"/>
+    <bf:contribution rdf:nodeID="N4c50739e26594618940674d1588c204f"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c50739e26594618940674d1588c204f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N9eaee5df1e2b4e9a8350750cb71287ed"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5df660ad84864e7a98d43778cf10d10e">
+    <rdfs:label xml:lang="eng">Cyrillic</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbda7ef224c6345fd81da9f4307e5682f">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3cdf817b64c5497b90769c016df49c54">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:21:34</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

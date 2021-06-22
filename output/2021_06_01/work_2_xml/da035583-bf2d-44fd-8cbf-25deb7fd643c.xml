@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Na111c74f73d54f1c9f2cec9b0e3b61e1">
+    <bflc:catalogerID>cec23</bflc:catalogerID>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N8aca6bc419be4064af7184cb37ebbdbe"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nc5d844a46c2e4590ae4bee8b428089f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/da035583-bf2d-44fd-8cbf-25deb7fd643c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:hasDerivative rdf:resource="https://api.sinopia.io/resource/47e02f0a-0c29-4d66-aea4-c0af2ace880e"/>
+    <bf:adminMetadata rdf:nodeID="Na111c74f73d54f1c9f2cec9b0e3b61e1"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/6c2530fc-e3cc-4355-bded-ca35576645ce"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/plt"/>
+    <skos:prefLabel xml:lang="eng">Du Cane, Florence. Flowers &amp; gardens of Madeira (English : 1909)</skos:prefLabel>
+    <skos:altLabel xml:lang="eng">Du Cane, Florence. Flowers and gardens of Madeira (English : 1909)</skos:altLabel>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:originDate>1909</bf:originDate>
+    <bf:notation rdf:nodeID="Nce80c2e785844c3b82690d317e022e79"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d8891644-c60d-45bd-b53c-19bf56ef15ec"/>
+    <bf:contribution rdf:nodeID="Nbb84e88a8d254c949196a0015440a2b8"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc5d844a46c2e4590ae4bee8b428089f8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:22:27</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb84e88a8d254c949196a0015440a2b8">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+    <bf:agent rdf:nodeID="Nab6d1e7cf37b4cdfbdf9afc55199bde5"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab6d1e7cf37b4cdfbdf9afc55199bde5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Du Cane, Ella</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8aca6bc419be4064af7184cb37ebbdbe">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce80c2e785844c3b82690d317e022e79">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label>Latin</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

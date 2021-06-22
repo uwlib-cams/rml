@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N037aedd501f7407ea98776063b8e0026">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb02757d94a2644ea83bf8c772c9f849d">
+    <bf:generationProcess rdf:nodeID="N4847dbe12071475b824b1995fede7c5c"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerID>gerhart</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N037aedd501f7407ea98776063b8e0026"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/bad81367-837f-4637-89f0-9b3360e38cb3">
+    <bf:shelfMark rdf:nodeID="Nf83078ec1765420fa568168372de5410"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/a832adb8-e349-49f9-a19b-f5aabac4b58c"/>
+    <bf:sublocation rdf:nodeID="Nc4ec4497cf47422cbd8d97b8f88eda9a"/>
+    <bf:identifier rdf:nodeID="N7d42f4acf3a84029b96ce23bc8116f0b"/>
+    <bf:adminMetadata rdf:nodeID="Nb02757d94a2644ea83bf8c772c9f849d"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:physicalLocation xml:lang="eng">music</bf:physicalLocation>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/557b7317-0291-4bf4-84df-6d082d5fd1c0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4ec4497cf47422cbd8d97b8f88eda9a">
+    <rdfs:label xml:lang="eng">mulc</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4847dbe12071475b824b1995fede7c5c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-06-01T15:26:19</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf83078ec1765420fa568168372de5410">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ShelfMark"/>
+    <rdf:value xml:lang="eng">Compact disc CD 14610</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d42f4acf3a84029b96ce23bc8116f0b">
+    <rdf:value>39352080893449</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+</rdf:RDF>
