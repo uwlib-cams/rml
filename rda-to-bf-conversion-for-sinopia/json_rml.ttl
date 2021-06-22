@@ -3,19 +3,76 @@
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix ex: <http://example.org/rules/> .
 
-ex:URIMap a rr:TriplesMap;
+ex:WorkURIMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "uw_list.json";
     rml:referenceFormulation ql:JSONPath;
-    rml:iterator "$.data[*]"
+    rml:iterator "$.data[?(@.types == ['http://rdaregistry.info/Elements/c/C10001'])]"
   ].
 
-ex:URIMap rr:subjectMap [
-  rr:constant "ex:UW_URIs"
+ex:WorkURIMap rr:subjectMap [
+  rr:constant ex:Work_URIs
 ].
 
-ex:URIMap rr:predicateObjectMap [
-	rr:predicate "ex:hasURI";
+ex:WorkURIMap rr:predicateObjectMap [
+	rr:predicate ex:hasURI;
+	rr:objectMap [
+		rml:reference "uri";
+		rr:termType rr:IRI
+	]
+].
+
+ex:ExpressionURIMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "uw_list.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.data[?(@.types == ['http://rdaregistry.info/Elements/c/C10006'])]"
+  ].
+
+ex:ExpressionURIMap rr:subjectMap [
+  rr:constant ex:Expression_URIs
+].
+
+ex:ExpressionURIMap rr:predicateObjectMap [
+	rr:predicate ex:hasURI;
+	rr:objectMap [
+		rml:reference "uri";
+		rr:termType rr:IRI
+	]
+].
+
+ex:ManifestationURIMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "uw_list.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.data[?(@.types == ['http://rdaregistry.info/Elements/c/C10007'])]"
+  ].
+
+ex:ManifestationURIMap rr:subjectMap [
+  rr:constant ex:Manifestation_URIs
+].
+
+ex:ManifestationURIMap rr:predicateObjectMap [
+	rr:predicate ex:hasURI;
+	rr:objectMap [
+		rml:reference "uri";
+		rr:termType rr:IRI
+	]
+].
+
+ex:ItemURIMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "uw_list.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.data[?(@.types == ['http://rdaregistry.info/Elements/c/C10003'])]"
+  ].
+
+ex:ItemURIMap rr:subjectMap [
+  rr:constant ex:Item_URIs
+].
+
+ex:ItemURIMap rr:predicateObjectMap [
+	rr:predicate ex:hasURI;
 	rr:objectMap [
 		rml:reference "uri";
 		rr:termType rr:IRI
