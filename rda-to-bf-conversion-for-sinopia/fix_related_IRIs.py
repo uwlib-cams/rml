@@ -1,28 +1,12 @@
+from arguments import define_arg
 import csv
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
+from reserialize import reserialize
 from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
-
-"""Namespaces"""
-LDP = Namespace('http://www.w3.org/ns/ldp#')
-bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
-bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
-dbo = Namespace('http://dbpedia.org/ontology/')
-madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
-owl = Namespace('http://www.w3.org/2002/07/owl#')
-rdac = Namespace('http://rdaregistry.info/Elements/c/')
-rdae = Namespace('http://rdaregistry.info/Elements/e/')
-rdai = Namespace('http://rdaregistry.info/Elements/i/')
-rdam = Namespace('http://rdaregistry.info/Elements/m/')
-rdamdt = Namespace('http://rdaregistry.info/Elements/m/datatype/')
-rdau = Namespace('http://rdaregistry.info/Elements/u/')
-rdaw = Namespace('http://rdaregistry.info/Elements/w/')
-rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
-sin = Namespace('http://sinopia.io/vocabulary/')
-skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
 
@@ -30,41 +14,26 @@ skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 today = date.today()
 currentDate = str(today).replace('-', '_')
 
+# arguments from command line
+args = define_arg()
+output_location = args.output
+
 """Lists and Dictionaries"""
 
-work_1List = os.listdir(f'../output/{currentDate}/work_1_xml')
-work_2List = os.listdir(f'../output/{currentDate}/work_2_xml')
-instanceList = os.listdir(f'../output/{currentDate}/instance_xml')
-itemList = os.listdir(f'../output/{currentDate}/item_xml')
+work_1List = os.listdir(f'{output_location}/{currentDate}/work_1_xml')
+work_2List = os.listdir(f'{output_location}/{currentDate}/work_2_xml')
+instanceList = os.listdir(f'{output_location}/{currentDate}/instance_xml')
+itemList = os.listdir(f'{output_location}/{currentDate}/item_xml')
 resource_dict = {"work_1": work_1List, "work_2": work_2List, "instance": instanceList, "item": itemList}
 
 """Functions"""
-def reserialize(file):
-	"""Reserialize with rdflib to fix namespaces and UTf-8"""
-	g = Graph()
-	g.bind('bf', bf)
-	g.bind('bflc', bflc)
-	g.bind('dbo', dbo)
-	g.bind('madsrdf', madsrdf)
-	g.bind('owl', owl)
-	g.bind('rdac', rdac)
-	g.bind('rdae', rdae)
-	g.bind('rdai', rdai)
-	g.bind('rdam', rdam)
-	g.bind('rdamdt', rdamdt)
-	g.bind('rdau', rdau)
-	g.bind('rdaw', rdaw)
-	g.bind('rdax', rdax)
-	g.bind('sin', sin)
-	g.bind('skos', skos)
-	g.load(f'file:{file}', format='xml')
-	g.serialize(destination=f'{file}', format='xml')
 
-def fix_related_IRIs(RDA_ID, BF_ID, entity, file):
+def fix_related_IRIs(RDA_ID, BF_ID, entity, file, output_location):
+	num_of_edits = 0
 	edit = False
 
 	# open xml parser
-	tree = ET.parse(f'../output/{currentDate}/{entity}_xml/{file}')
+	tree = ET.parse(f'{output_location}/{currentDate}/{entity}_xml/{file}')
 	root = tree.getroot()
 
 	for child in root: # for each node...
@@ -75,14 +44,15 @@ def fix_related_IRIs(RDA_ID, BF_ID, entity, file):
 					if prop.tag != '{http://www.w3.org/2002/07/owl#}sameAs': # and it is NOT our owl:sameAs triple, which should be left alone
 						BF_IRI = f'https://api.sinopia.io/resource/{BF_ID}'
 						prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', BF_IRI) # replace it with its equivalent BF IRI
+						num_of_edits += 1
 						edit = True
 
 	if edit == True: # only rewrite / reserialize if an edit was made
-		tree.write(f'../output/{currentDate}/{entity}_xml/{file}')
+		tree.write(f'{output_location}/{currentDate}/{entity}_xml/{file}')
 
-		reserialize(f'../output/{currentDate}/{entity}_xml/{file}')
+		reserialize(f'{output_location}/{currentDate}/{entity}_xml/{file}', f'{output_location}/{currentDate}/{entity}_xml/{file}', 'xml')
 
-	return edit
+	return num_of_edits
 
 ###
 
@@ -94,6 +64,8 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 
 	for line in csv_reader:
 		total_line_count += 1
+
+num_of_edits = 0
 
 with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 	"""For each resource, look for IRI pairs and make appropriate changes"""
@@ -111,13 +83,12 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 
 			for entity in resource_dict.keys():
 				for resource in resource_dict[entity]:
-					edit_made = fix_related_IRIs(RDA_ID, BF_ID, entity, resource)
-					if edit_made == True:
-						num_of_edits += 1
+					edits_made = fix_related_IRIs(RDA_ID, BF_ID, entity, resource, output_location)
+					num_of_edits += edits_made
 		line_count += 1
 		bar.next()
 	end = timer()
 	bar.finish()
 
-print(f"Edits made: {num_of_edits}")
+print(f"IRIs fixed: {num_of_edits}")
 print(f"Elapsed time: {round((end - start), 1)} s")
