@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N870e247e1ba94e53a65f6655e8d20411">
+    <rdfs:label xml:lang="eng">drstx</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3720ce08194b4712a7e3a75acc9766dc">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N76ab496c92a3479a970ede99b6a58492">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N3720ce08194b4712a7e3a75acc9766dc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-10</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nd3b300cc040b4bf78dce9f60316dfd28"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/11bfd039-10a5-40a9-9d94-28b10fd8faf4">
+    <bf:sublocation rdf:nodeID="N870e247e1ba94e53a65f6655e8d20411"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/886d09cd-00cd-4a63-9eed-160a568aaa06"/>
+    <bf:physicalLocation xml:lang="eng">drama</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/4956885b-6917-4a57-8157-2bc753855287"/>
+    <bf:adminMetadata rdf:nodeID="N76ab496c92a3479a970ede99b6a58492"/>
+    <bf:classification rdf:nodeID="N30240a9e30734978bf9d3eaa56537694"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:identifier rdf:nodeID="N2615dac2bd134d77ac2a19bdd8d38641"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3b300cc040b4bf78dce9f60316dfd28">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-10T13:23:13+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30240a9e30734978bf9d3eaa56537694">
+    <bf:classificationPortion>PS3503.R53</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>S5 1914</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2615dac2bd134d77ac2a19bdd8d38641">
+    <rdf:value xml:lang="eng">39352039333661</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+  </rdf:Description>
+</rdf:RDF>

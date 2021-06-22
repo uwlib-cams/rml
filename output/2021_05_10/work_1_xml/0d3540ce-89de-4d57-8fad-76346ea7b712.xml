@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N5b16c8a753c14c7f84372afa7fb74665">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nb6b242f154544f279bc0b57b3d13ae71"/>
+    <bflc:catalogerID>jlee70</bflc:catalogerID>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-10</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="Nf90d315d3e5e4a909ac69f8351f7191f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd69de497da046e99c30a8b537b42920">
+    <bf:mainTitle xml:lang="jpn">大阪市案内圖</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6dcab3f1bf4c41b8a6a8edbeae26ccc6">
+    <rdfs:label>Japan</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b7d87d7d6e54199914943722a47942c">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+    <bf:agent rdf:nodeID="N5a0538848c344a4ea6d152f56e3733fc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/0d3540ce-89de-4d57-8fad-76346ea7b712">
+    <bf:title rdf:nodeID="Nbd69de497da046e99c30a8b537b42920"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <skos:prefLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu</skos:prefLabel>
+    <bf:subject rdf:nodeID="N310c7cf81b6a4b0c9ca8790ca5927eef"/>
+    <bf:title rdf:nodeID="N3c008a885b57406485b1c02c9bbce7b6"/>
+    <bf:contribution rdf:nodeID="N0b7d87d7d6e54199914943722a47942c"/>
+    <bf:adminMetadata rdf:nodeID="N5b16c8a753c14c7f84372afa7fb74665"/>
+    <bf:originDate>1950</bf:originDate>
+    <bf:originPlace rdf:nodeID="N6dcab3f1bf4c41b8a6a8edbeae26ccc6"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <skos:altLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. 大阪市案内圖</skos:altLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/2be1aad1-4cae-4a38-82aa-896480e41a79"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf90d315d3e5e4a909ac69f8351f7191f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6b242f154544f279bc0b57b3d13ae71">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-10T13:08:53+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N310c7cf81b6a4b0c9ca8790ca5927eef">
+    <madsrdf:authoritativeLabel>Osaka (Japan)--Maps</madsrdf:authoritativeLabel>
+    <rdfs:label>Osaka (Japan)--Maps</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a0538848c344a4ea6d152f56e3733fc">
+    <rdfs:label>Nihon Chizu Kabushiki Kaisha</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c008a885b57406485b1c02c9bbce7b6">
+    <bf:mainTitle xml:lang="jpn">Ōsaka-shi annaizu</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

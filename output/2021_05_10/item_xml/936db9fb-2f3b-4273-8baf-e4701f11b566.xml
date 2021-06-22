@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N72bb586899b442c8ba1d0bb3ce9e4525">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>TL603</bf:classificationPortion>
+    <bf:itemPortion>.F34 2016</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2197ade0a4f64874a5b32272fce9b9ad">
+    <rdfs:label xml:lang="eng">Adam's house</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ef88a2bb5a149be86577a19ba987eef">
+    <bf:status rdf:nodeID="N8c6ba11b35c6455e8b18e0e2a6399424"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N9e30ca4c2ebf44168d1fa9f11de2fd65"/>
+    <bflc:catalogerID>aschiff</bflc:catalogerID>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-10</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/936db9fb-2f3b-4273-8baf-e4701f11b566">
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/fca19a69-7d1e-42cd-880f-f6e71570a488"/>
+    <bf:sublocation rdf:nodeID="N2197ade0a4f64874a5b32272fce9b9ad"/>
+    <bf:classification rdf:nodeID="N72bb586899b442c8ba1d0bb3ce9e4525"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/dac4352b-7198-4e40-a2e4-69da53ddc839"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:adminMetadata rdf:nodeID="N0ef88a2bb5a149be86577a19ba987eef"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e30ca4c2ebf44168d1fa9f11de2fd65">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-10T13:24:04+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c6ba11b35c6455e8b18e0e2a6399424">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N07ebc06bc9ea42a0857fe74bd3b9a451">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N9ea7618643354cfd99616771e7965ddf"/>
+    <bflc:catalogerID>pfreeman</bflc:catalogerID>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-10</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:status rdf:nodeID="N5557831078934450bccdc25396c7b734"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N619081a628934b5e966948e7e408988f">
+    <bf:agent rdf:nodeID="N1d01eff2e44941af86529f042538212b"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/d17f062d-2c73-4db5-9c1d-82f01ebe47f4">
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79041965"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate>1983</bf:originDate>
+    <bf:contribution rdf:nodeID="N619081a628934b5e966948e7e408988f"/>
+    <bf:adminMetadata rdf:nodeID="N07ebc06bc9ea42a0857fe74bd3b9a451"/>
+    <bf:contribution rdf:nodeID="Nd8c43e53f08a406cb494b0ce5effd5de"/>
+    <bf:genreForm rdf:nodeID="Nf4a09807b4eb49969b144598d7484244"/>
+    <bf:title rdf:nodeID="Nc4d5a753b2f04194af8cf7a94b14fd05"/>
+    <skos:altLabel xml:lang="eng">Bayless, G. A. (George Albert), 1925-  Ferryboats</skos:altLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/f04b52bf-fb1d-4189-a75f-7f5ed86bf543"/>
+    <skos:prefLabel xml:lang="eng">Kline, M. S. (Mary Stiles), 1953-  Ferryboats</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4d5a753b2f04194af8cf7a94b14fd05">
+    <bf:mainTitle xml:lang="eng">Ferryboats</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8c43e53f08a406cb494b0ce5effd5de">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n83190598"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5557831078934450bccdc25396c7b734">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ea7618643354cfd99616771e7965ddf">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-10T13:12:25+00:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4a09807b4eb49969b144598d7484244">
+    <rdfs:label>reference works</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1d01eff2e44941af86529f042538212b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Bayless, G. A. (George Albert), 1925-</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

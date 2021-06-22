@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N8d961657f5174d8bb9526f617799a336">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no97025160"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0409434d63bb48e48bd9ba49e681ccc2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Cyrillic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neae7c97e9de8449fbef5b18aa054d8e3">
+    <bflc:catalogerID>dbrookin</bflc:catalogerID>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N3c08d5a98fea4ff7a7b6448e800bde06"/>
+    <bf:status rdf:nodeID="N195d6146f8854c3ea1e2cc89330cfb48"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-10</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/a55052a9-fb15-482d-8fa5-f411cae01b4f">
+    <bf:contribution rdf:nodeID="N8d961657f5174d8bb9526f617799a336"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/de1d8a73-1156-4073-a0e6-ede11bcab0dc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:adminMetadata rdf:nodeID="Neae7c97e9de8449fbef5b18aa054d8e3"/>
+    <bf:notation rdf:nodeID="N0409434d63bb48e48bd9ba49e681ccc2"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/chm"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d0e83555-868c-4d03-99dc-8ac323bc2c2f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N195d6146f8854c3ea1e2cc89330cfb48">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c08d5a98fea4ff7a7b6448e800bde06">
+    <rdfs:label>rml.py SNAPSHOT: 2021-05-10T13:17:06+00:00</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>
