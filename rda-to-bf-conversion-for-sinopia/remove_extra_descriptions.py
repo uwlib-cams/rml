@@ -8,19 +8,6 @@ import time
 from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
-"""Namespaces"""
-bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
-bflc = Namespace('http://id.loc.gov/ontologies/bflc/')
-madsrdf = Namespace('http://www.loc.gov/mads/rdf/v1#')
-rdac = Namespace('http://rdaregistry.info/Elements/c/')
-rdae = Namespace('http://rdaregistry.info/Elements/e/')
-rdai = Namespace('http://rdaregistry.info/Elements/i/')
-rdam = Namespace('http://rdaregistry.info/Elements/m/')
-rdamdt = Namespace('http://rdaregistry.info/Elements/m/datatype/')
-rdaw = Namespace('http://rdaregistry.info/Elements/w/')
-rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
-sin = Namespace('http://sinopia.io/vocabulary/')
-
 """Functions"""
 
 def remove_extra_descriptions(entity, file, input_location):
