@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N052cd64877ac4120b04e46f35ffaee75">
+    <bflc:catalogerId>aschiff</bflc:catalogerId>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:status rdf:nodeID="Ncb6558cf480b45dea594c3fd4c7c774a"/>
+    <bf:generationProcess rdf:nodeID="Na34a5f70dfa54933a0ad5f5dc747a72c"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Necf688aa41704c099a369aca71b7da21">
+    <rdfs:label xml:lang="eng">London</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c35c401bdcb4976bf464368a11a9536">
+    <bf:agent rdf:nodeID="N5156092714be4f7eaa81ade4b65be34f"/>
+    <bf:place rdf:nodeID="Necf688aa41704c099a369aca71b7da21"/>
+    <bf:date>1945</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/53f922a5-3dc7-4619-a612-baabc13ebda9">
+    <bf:responsibilityStatement xml:lang="eng">from the novel by Jane Austen</bf:responsibilityStatement>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:extent rdf:nodeID="N1c1f4e09d03a4b569ef9d7c8dc8bc286"/>
+    <bf:adminMetadata rdf:nodeID="N052cd64877ac4120b04e46f35ffaee75"/>
+    <bf:dimensions xml:lang="eng">20 cm</bf:dimensions>
+    <bf:title rdf:nodeID="N9b5c7ce73b114ab59fa71fea8b246b3b"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/841785ac-e5b6-4313-a4bc-6bc986ca9f70"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/4806ea2e-ac6f-4177-8162-20e922436a11"/>
+    <bf:responsibilityStatement xml:lang="eng">a play by Gordon Glennon</bf:responsibilityStatement>
+    <bf:provisionActivity rdf:nodeID="N8c35c401bdcb4976bf464368a11a9536"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na34a5f70dfa54933a0ad5f5dc747a72c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:55:40</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb6558cf480b45dea594c3fd4c7c774a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c1f4e09d03a4b569ef9d7c8dc8bc286">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">vi, 122 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5156092714be4f7eaa81ade4b65be34f">
+    <rdfs:label xml:lang="eng">Macmillan &amp; Co. Ltd</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b5c7ce73b114ab59fa71fea8b246b3b">
+    <bf:mainTitle xml:lang="eng">Emma</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

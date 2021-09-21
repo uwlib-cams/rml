@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/4bbfe828-3c07-4536-9a88-87fc9f0b7f17">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/b38a0e85-9769-4eb0-acac-9168e127283b"/>
+    <bf:title rdf:nodeID="Na38958d47407468abc05d097698c3367"/>
+    <bf:summary rdf:nodeID="N05c9ef5b7361489a82502a374cc69a7a"/>
+    <bf:contribution rdf:nodeID="Ne122e8cb51fa445d990d7ab74b1725bb"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:title rdf:nodeID="Ndc3867d27b9b42ce9ad341be278cca06"/>
+    <bf:adminMetadata rdf:nodeID="N7fa7d485abe74cbeb373431f54fb8a3d"/>
+    <bf:contribution rdf:nodeID="N3b94d71a26084855885476f67e36b41c"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/acd98131-e252-4adf-8000-84758282ea95"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <skos:prefLabel xml:lang="eng">Twain, Mark, 1835-1910. Adventures of Huckleberry Finn</skos:prefLabel>
+    <bf:originDate>2003</bf:originDate>
+    <bf:title rdf:nodeID="N166ad2e3f10e49ecaa6ba1040b8856af"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc3867d27b9b42ce9ad341be278cca06">
+    <bf:mainTitle xml:lang="eng">Adventures of Huckleberry Finn</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05c9ef5b7361489a82502a374cc69a7a">
+    <rdfs:label xml:lang="eng">Huckleberry Finn, rebel against school and church, casual inheritor of gold treasure, rafter of the Mississippi, and savior of Jim the runaway slave, is the archetypal American maverick. Fleeing the respectable society that wants to "sivilize" him, Huck Finn shoves off with Jim on a rhapsodic raft journey down the Mississippi River. As Huck learns about love, responsibility, and how to make moral choices, the trip becomes a metaphoric voyage through his own soul, culminating in the glorious moment when he decides to "go to hell" rather than return Jim to slavery. Mark Twain defined "classic" as "a book which people praise and don't read." Huckleberry Finn is a happy exception to this rule. Twain's mastery of dialect, coupled with his famous wit, makes Adventures of Huckleberry Finn one of the most enjoyable and distinctly American classics ever written.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d8bfbbf17c346fe8c239d879e559eea">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7fa7d485abe74cbeb373431f54fb8a3d">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:catalogerId>mcm104</bflc:catalogerId>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N6d8bfbbf17c346fe8c239d879e559eea"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N103a71658def41308d22620fdb83d997"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b94d71a26084855885476f67e36b41c">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79021164"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne122e8cb51fa445d990d7ab74b1725bb">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/win"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n80027800"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na38958d47407468abc05d097698c3367">
+    <bf:mainTitle xml:lang="eng">Huckleberry Finn</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N103a71658def41308d22620fdb83d997">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:53:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N166ad2e3f10e49ecaa6ba1040b8856af">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="eng">Huck Finn</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/201ebe55-6815-4946-9c16-e0791fa786b3">
+    <bf:physicalLocation xml:lang="eng">Pacific Northwest books</bf:physicalLocation>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/9bd8004a-3e5d-4fd7-ae8b-70776311a384"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:adminMetadata rdf:nodeID="Nd19b69efb9864144892239d5c0980e83"/>
+    <bf:classification rdf:nodeID="N9e4dada3b74d4dccb007c55a58494cd2"/>
+    <bf:sublocation rdf:nodeID="N6a993b26728745ceb4042b44252e867a"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a143aa19-f5ec-4084-b33f-40ac515ac2cf"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd19b69efb9864144892239d5c0980e83">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="Nca52881e524f42d383900200ff2a6c38"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nb97327a12f44415ea5aba9875f3c1fb2"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e4dada3b74d4dccb007c55a58494cd2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>.M36 1979</bf:itemPortion>
+    <bf:classificationPortion>QK192</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca52881e524f42d383900200ff2a6c38">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:59:29</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a993b26728745ceb4042b44252e867a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">bookshelf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb97327a12f44415ea5aba9875f3c1fb2">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

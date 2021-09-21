@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N15ed2d2ce1e2458b890eec6d6ac3d5c1">
+    <rdfs:label xml:lang="eng">Destinworld Publishing</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0463a28305d94b97aacfeb718937905f">
+    <bflc:catalogerId>aschiff</bflc:catalogerId>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="Nab201c876fb549f5af8e8c2a36b3966c"/>
+    <bf:status rdf:nodeID="Nbe4bdca3849a458a9d9128d0f5d4c3f0"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3562934e6ea041e28db4c95b89b029ec">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Darlington, Co. Durham</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5dd597a8c2294640b1fa8b0c5cdae048">
+    <rdf:value>ISBN 978-0-9930950-4-7</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0b315129db0845afbf09dab75abf1f99">
+    <bf:place rdf:nodeID="N3562934e6ea041e28db4c95b89b029ec"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>2016</bf:date>
+    <bf:agent rdf:nodeID="N15ed2d2ce1e2458b890eec6d6ac3d5c1"/>
+    <bf:agent rdf:nodeID="N7879161c4cfe4ced86465db064d218d2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7577be17-7d5e-471e-8d54-95bb29f69190">
+    <bf:responsibilityStatement xml:lang="eng">Matt Falcus</bf:responsibilityStatement>
+    <bf:dimensions xml:lang="zxx">24 cm</bf:dimensions>
+    <bf:title rdf:nodeID="N6bf13b80b218446880181f0be6612019"/>
+    <bf:seriesStatement xml:lang="eng">Timelines</bf:seriesStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:provisionActivity rdf:nodeID="N0b315129db0845afbf09dab75abf1f99"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:copyrightDate>©2016</bf:copyrightDate>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/1dfd8828-7cd4-4efc-9ce8-edf9cb765148"/>
+    <bf:provisionActivityStatement xml:lang="eng">Darlington, Co. Durham : Destinworld Publishing, 2016</bf:provisionActivityStatement>
+    <bf:title rdf:nodeID="N02d14d5b893347028d8a7d33c25e359f"/>
+    <bf:classification rdf:nodeID="Ne8e7e2ff57d9400f8b1fed7c9e0582f2"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a72da7e0-9f9d-402b-b1f0-d1acd14a18c7"/>
+    <bf:extent rdf:nodeID="N52eac17d346940198c7b22c7efa6d762"/>
+    <bf:identifiedBy rdf:nodeID="N5dd597a8c2294640b1fa8b0c5cdae048"/>
+    <bf:adminMetadata rdf:nodeID="N0463a28305d94b97aacfeb718937905f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8e7e2ff57d9400f8b1fed7c9e0582f2">
+    <bf:classificationPortion>TL603</bf:classificationPortion>
+    <bf:itemPortion>.F34 2016</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab201c876fb549f5af8e8c2a36b3966c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:56:53</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N02d14d5b893347028d8a7d33c25e359f">
+    <bf:mainTitle xml:lang="eng">Lost airline colours of Europe</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe4bdca3849a458a9d9128d0f5d4c3f0">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N52eac17d346940198c7b22c7efa6d762">
+    <rdfs:label xml:lang="eng">103 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6bf13b80b218446880181f0be6612019">
+    <bf:mainTitle xml:lang="eng">Lost airline colors of Europe</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7879161c4cfe4ced86465db064d218d2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Destinworld Publishing</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

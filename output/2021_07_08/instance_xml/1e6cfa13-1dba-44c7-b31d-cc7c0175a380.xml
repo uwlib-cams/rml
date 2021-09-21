@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N3e5dab53a75e44d49f0e8f52b437ce60">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="Nfcbc4b6f9a184137bd8702a487dc5fd9"/>
+    <bf:generationProcess rdf:nodeID="N406b6b1d1b2b493e832e9f38ad70603b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerId>dbrookin</bflc:catalogerId>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/1e6cfa13-1dba-44c7-b31d-cc7c0175a380">
+    <bf:provisionActivity rdf:nodeID="N4f425de6ef054106acb7097ee0ed9435"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:classification rdf:nodeID="Nef6999bafba749508a8b0cc7c5b0f98d"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/340a8a08-3546-4ff5-874e-d430162c576e"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:adminMetadata rdf:nodeID="N3e5dab53a75e44d49f0e8f52b437ce60"/>
+    <bf:copyrightDate>©2011</bf:copyrightDate>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/fe62d997-66df-4c28-b874-9aa862b1555d"/>
+    <bf:note rdf:nodeID="N51a0a31e5bbe415ea54cbc4ca9782a93"/>
+    <bf:title rdf:nodeID="Nfdc6ce8d388f4165a15bd767a4c64ec9"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:responsibilityStatement xml:lang="rus">Е.В. Малышкин</bf:responsibilityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nef6999bafba749508a8b0cc7c5b0f98d">
+    <bf:classificationPortion>BD181.7</bf:classificationPortion>
+    <bf:itemPortion>.M35 2011</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51a0a31e5bbe415ea54cbc4ca9782a93">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Includes bibliographical references (pages 236-245).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f425de6ef054106acb7097ee0ed9435">
+    <bf:agent rdf:nodeID="N0fd86e23dbe944169dab9bbfe8ca2cf4"/>
+    <bf:place rdf:nodeID="N903526e5cb1240d09ac4a04c010a6221"/>
+    <bf:date>[2011]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N406b6b1d1b2b493e832e9f38ad70603b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:58:20</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdc6ce8d388f4165a15bd767a4c64ec9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="rus">Две метафоры памяти</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfcbc4b6f9a184137bd8702a487dc5fd9">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N903526e5cb1240d09ac4a04c010a6221">
+    <rdfs:label xml:lang="rus">[Санкт-Петербург]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fd86e23dbe944169dab9bbfe8ca2cf4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="rus">Издательский дом Санкт-Петербургского государственного университета</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

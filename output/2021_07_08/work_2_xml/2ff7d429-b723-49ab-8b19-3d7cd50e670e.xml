@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N3c6dce3c41f34785b814b19faeeceaf5">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N50669780791946cfa4390d4be929fba1"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bf:status rdf:nodeID="N4e31bc5f4a5e403aa38e261af042860a"/>
+    <bflc:catalogerId>dbrookin</bflc:catalogerId>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e31bc5f4a5e403aa38e261af042860a">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/2ff7d429-b723-49ab-8b19-3d7cd50e670e">
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ukr"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/46865484-c1d1-42ca-9f42-c73a4c546ad9"/>
+    <bf:adminMetadata rdf:nodeID="N3c6dce3c41f34785b814b19faeeceaf5"/>
+    <bf:notation rdf:nodeID="N7ee58bb081574265b495a9f54dd71321"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/1957547a-1831-4bb6-9820-0c7d8fa7ed7b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ee58bb081574265b495a9f54dd71321">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Cyrillic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N50669780791946cfa4390d4be929fba1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:51:00</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

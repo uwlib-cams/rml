@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N7abea52795e74e6289b2e9030a9f1ca0">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N4242f43baf5e4c6fa2de13d44eb928bd"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N4e3f31cd0a4f4f169b35d4d56a4e90ab"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/1ea3896e-ad16-4a3b-bb7f-334860896de8">
+    <bf:notation rdf:nodeID="N6b48d27fc41d43a59921cf725b5fd01b"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/5fe7d2be-70f0-4326-8375-e357a4fb5552"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate>1922</bf:originDate>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/7a3d4f26-0cde-4a1b-8a2c-f36070e7499d"/>
+    <bf:adminMetadata rdf:nodeID="N7abea52795e74e6289b2e9030a9f1ca0"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e3f31cd0a4f4f169b35d4d56a4e90ab">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4242f43baf5e4c6fa2de13d44eb928bd">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:52:14</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b48d27fc41d43a59921cf725b5fd01b">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nbb44799edab9406085ad71f3ed5a29ff">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n87917115"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N733e71c3a2234b25b3b783d6623de266">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:status rdf:nodeID="N1be1ebd6dc4a46038fdc3538fd45fbc3"/>
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N87c5c712d6ac46728d075d047c3bd5b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88333fc1103e47b19df08787039160be">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+    <rdfs:label xml:lang="eng">This simple picture book, with just a few words per page, uses facing illustrations to compare children's toys with objects from real life.  A baby bear from the forest is paired with a toy bear on wheels, fish in an aquarium with toy fish. Additional pictures illustrate a cat chasing mice and a dog chasing a girl's pet kitten.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1be1ebd6dc4a46038fdc3538fd45fbc3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9b03a340d1d4268b9a67195851d5901">
+    <bf:mainTitle xml:lang="rus">Igrushki i zverushki</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/77e4799c-a727-4965-a293-d86a9e7595a2">
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060032"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/663c5408-a6a7-4030-82e9-c80d084ee4ab"/>
+    <bf:title rdf:nodeID="Nd8140b353481400fab26b56440c6de97"/>
+    <bf:adminMetadata rdf:nodeID="N733e71c3a2234b25b3b783d6623de266"/>
+    <skos:altLabel xml:lang="rus">Lebedev, Vladimir Vasilʹevich, 1891-1967. Игрушки и зверушки. Russian.</skos:altLabel>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:notation rdf:nodeID="N4f70e24600a54d2895f1e7c424d65c10"/>
+    <bf:contribution rdf:nodeID="Nbb44799edab9406085ad71f3ed5a29ff"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/27a9720d-4d6b-4656-bf50-2ed39776d38a"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <bf:title rdf:nodeID="Nb9b03a340d1d4268b9a67195851d5901"/>
+    <bf:summary rdf:nodeID="N88333fc1103e47b19df08787039160be"/>
+    <bf:originDate>1939</bf:originDate>
+    <skos:prefLabel xml:lang="rus">Lebedev, Vladimir Vasilʹevich, 1891-1967. Igrushki i zverushki. Russian</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4f70e24600a54d2895f1e7c424d65c10">
+    <rdfs:label>Cyrillic</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8140b353481400fab26b56440c6de97">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="rus">Игрушки и зверушки</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N87c5c712d6ac46728d075d047c3bd5b9">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:50:16</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+</rdf:RDF>

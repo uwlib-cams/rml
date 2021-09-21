@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nfa5629916e234208bc9de74b0245a11d">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N98989318db5a4d2ca14d162652dc11d4"/>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:generationProcess rdf:nodeID="N889adf1c817344b68b85d6388f2f2641"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5ae4b8d21be548c39937a475db7f99c5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+    <rdfs:label>Drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/34b1f4b4-aa49-489b-a7b2-215e0683cf4a">
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026432"/>
+    <bf:subject rdf:nodeID="N308630241d8c441a915a61a6abf0cb0a"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <skos:prefLabel xml:lang="eng">Braun, Wilbur, 1894-1968. He ain't done right by Nell</skos:prefLabel>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008121119"/>
+    <bf:adminMetadata rdf:nodeID="Nfa5629916e234208bc9de74b0245a11d"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:genreForm rdf:nodeID="N5ae4b8d21be548c39937a475db7f99c5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/7a9c8d69-4c3c-468c-aab9-0bee9026d145"/>
+    <bf:originDate>1935</bf:originDate>
+    <bf:title rdf:nodeID="N5c0c4bc8d36048fc9da357f7bbe6bc0a"/>
+    <bf:contribution rdf:nodeID="Ne0004b61f01d489c86db09cc6b6aeb31"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N308630241d8c441a915a61a6abf0cb0a">
+    <rdfs:label>Grandmothers -- Drama</rdfs:label>
+    <madsrdf:authoritativeLabel>Grandmothers -- Drama</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c0c4bc8d36048fc9da357f7bbe6bc0a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">He ain't done right by Nell</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N889adf1c817344b68b85d6388f2f2641">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:46:57</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N98989318db5a4d2ca14d162652dc11d4">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne0004b61f01d489c86db09cc6b6aeb31">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N0eee08fe53b843c5a58cf9a8be0813eb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0eee08fe53b843c5a58cf9a8be0813eb">
+    <rdfs:label> Braun, Wilbur, 1894-1968</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

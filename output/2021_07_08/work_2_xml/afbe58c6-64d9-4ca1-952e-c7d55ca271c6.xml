@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Na3a07328e1c948e69487d2ae532da49f">
+    <bflc:catalogerId>leemihwa</bflc:catalogerId>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N1879f9ce32be4dde8792e289c79122e9"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Nb04eb83f48434b8f95617ee7f10c8488"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1879f9ce32be4dde8792e289c79122e9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/afbe58c6-64d9-4ca1-952e-c7d55ca271c6">
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/e5327b04-32e0-4177-903c-a54d56438353"/>
+    <bf:adminMetadata rdf:nodeID="Na3a07328e1c948e69487d2ae532da49f"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <skos:prefLabel xml:lang="eng">Metadata</skos:prefLabel>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:title rdf:nodeID="N4249a93201714ea98c5e92e141da0b7d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb04eb83f48434b8f95617ee7f10c8488">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:53:59</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4249a93201714ea98c5e92e141da0b7d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Metadata</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

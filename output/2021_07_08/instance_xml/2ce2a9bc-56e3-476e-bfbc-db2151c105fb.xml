@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/2ce2a9bc-56e3-476e-bfbc-db2151c105fb">
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:dimensions xml:lang="eng">24 cm</bf:dimensions>
+    <bf:classification rdf:nodeID="Nb7bdc0126d8d43ccb6ee90a28315f5f9"/>
+    <bf:responsibilityStatement xml:lang="eng">Ilja Nieuwland</bf:responsibilityStatement>
+    <bf:provisionActivity rdf:nodeID="Nfdf54cb45f084e30b7dc6f26495483a3"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="N05f22be06eb1452db17127f3f5e9ee33"/>
+    <bf:copyrightDate>©2019</bf:copyrightDate>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:adminMetadata rdf:nodeID="Nc93df76696cc49e092452dc87bf925ef"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/10c01e5a-2868-47ac-a02d-b81246edb650"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/71f38d30-b08c-421d-ba9d-28fb9d851792"/>
+    <bf:extent rdf:nodeID="Ne3255574a73a4cc984f857fb8b867e6f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc93df76696cc49e092452dc87bf925ef">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N7165bea467b54d4eab79fe6bc8f1e0ef"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N6c944e633354434b9268559dc927858d"/>
+    <bflc:catalogerId>ries07</bflc:catalogerId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7165bea467b54d4eab79fe6bc8f1e0ef">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:56:13</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c295c1dff824856bc4a49dfa1c01876">
+    <rdfs:label xml:lang="eng">University of Pittsburgh Press</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdf54cb45f084e30b7dc6f26495483a3">
+    <bf:date>[2019]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="N8947a461670d4c478c94467b8a2e603f"/>
+    <bf:agent rdf:nodeID="N3c295c1dff824856bc4a49dfa1c01876"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb7bdc0126d8d43ccb6ee90a28315f5f9">
+    <bf:itemPortion>N54 2019</bf:itemPortion>
+    <bf:classificationPortion>QE862.S3</bf:classificationPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05f22be06eb1452db17127f3f5e9ee33">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">American dinosaur abroad</bf:mainTitle>
+    <bf:subtitle xml:lang="eng">a cultural history of Carnegie's plaster Diplodocus</bf:subtitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3255574a73a4cc984f857fb8b867e6f">
+    <rdfs:label xml:lang="eng">xvii, 318 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8947a461670d4c478c94467b8a2e603f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Pittsburgh, Pa.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c944e633354434b9268559dc927858d">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>

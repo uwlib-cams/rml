@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nde3ae5a1fc7b4712874cefb8204f9b70">
+    <rdfs:label xml:lang="eng">Seattle, Washington</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/efed07a3-e5cc-4c48-9242-e73cd756da33">
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:title rdf:nodeID="N611353046b0f4a07bfd88abf5d3c0d24"/>
+    <bf:note rdf:nodeID="N1529700d4f504f9685d1a601bd925476"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:provisionActivity rdf:nodeID="N7265bc1254b24898aaf5290bc392e8eb"/>
+    <bf:frequency rdf:nodeID="N40faa9a99a0f433694f45122512ea145"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003"/>
+    <bf:adminMetadata rdf:nodeID="N411e54cb1184420a99f584fc4f89549e"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d3e2e595-7bf8-4aa7-a558-c9ef11be8841"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N411e54cb1184420a99f584fc4f89549e">
+    <bf:status rdf:nodeID="Nf1d67596213e422e9be0fb9b2b4f90e3"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Nca49ce714ef045129a12dcfa7c5d0cd2"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerId>shadle</bflc:catalogerId>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-08</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N611353046b0f4a07bfd88abf5d3c0d24">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f38d4a4974242ada63e82beb03d27f3">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[General Fruit Corporation]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40faa9a99a0f433694f45122512ea145">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
+    <rdfs:label xml:lang="eng">Monthly</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1529700d4f504f9685d1a601bd925476">
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Description based on: Vol. III, no. 1 (September 1929); title from title page.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7265bc1254b24898aaf5290bc392e8eb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="Nde3ae5a1fc7b4712874cefb8204f9b70"/>
+    <bf:agent rdf:nodeID="N6f38d4a4974242ada63e82beb03d27f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca49ce714ef045129a12dcfa7c5d0cd2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2021-07-08T14:57:33</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1d67596213e422e9be0fb9b2b4f90e3">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+</rdf:RDF>
