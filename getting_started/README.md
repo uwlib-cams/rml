@@ -38,6 +38,56 @@ _The numbers with these files may be different with future versions of RML Mappe
 # Running RML Mapper
 
 `java -jar rmlmapper-4.7.0-r152.jar -m RML_demo_map.ttl -s turtle`
+_Name of jar file may be different on your computer_
+
+# RML property cheat sheet
+- All triples maps need to be classed as rr:TriplesMap
+- All triples need ONE logical source, ONE subject map, and one or more predicate object maps
+
+Properties in logical sources:
+- [rml:source](http://semweb.mmlab.be/ns/rml#sourceName)
+	- filepath to data for conversion
+- [rml:referenceFormulation](http://semweb.mmlab.be/ns/rml#referenceFormulation)
+	- ql:XPath, ql:JSONPath, or ql:CSV
+- [rml:iterator](http://semweb.mmlab.be/ns/rml#iterator)
+	- parent properties (default for our purposes is "RDF/Description")
+
+Properties in subject map:
+- When the subject is a resource...
+	- [rml:reference](http://semweb.mmlab.be/ns/rml#reference)
+		- For when the value exists somewhere in the data for conversion
+	- [rr:constant](http://www.w3.org/ns/r2rml#constant)
+		- For constant values that are the same every time
+- When the subject is a blank node...
+	- [rr:termType](http://www.w3.org/ns/r2rml#termType)
+	  - [rr:BlankNode](http://www.w3.org/ns/r2rml#BlankNode)
+- [rr:class](http://www.w3.org/ns/r2rml#class)
+
+Properties in predicate object map:
+- [rr:predicate](http://www.w3.org/ns/r2rml#predicate)
+- [rr:objectMap](http://www.w3.org/ns/r2rml#objectMap)
+
+Properties in object map:
+- When the object is an IRI or literal...
+	- [rml:reference](http://semweb.mmlab.be/ns/rml#reference)
+		- For when the value exists somewhere in the data for conversion
+	- [rr:constant](http://www.w3.org/ns/r2rml#constant)
+		- For constant values that are the same every time
+- When the object is a blank node...
+	- [rr:parentTriplesMap](http://www.w3.org/ns/r2rml#parentTriplesMap)
+- rr:termType
+	- [rr:Literal](http://www.w3.org/ns/r2rml#Literal) (optional; this is the default)
+	- [rr:IRI](http://www.w3.org/ns/r2rml#IRI)
+	- [rr:BlankNode](http://www.w3.org/ns/r2rml#BlankNode)
+- For literals with language tags...
+	- [rr:language](http://www.w3.org/ns/r2rml#language)
+		- use for constant language tag (e.g. if it will ALWAYS be English, use "en")
+	- [rml:languageMap](http://semweb.mmlab.be/ns/rml#languageMap)
+		- use when the language tag depends on the data for conversion
+
+Properties in language map:
+- [rml:reference](http://semweb.mmlab.be/ns/rml#reference)
+	- For when the value exists somewhere in the data for conversion
 
 # Troubleshooting
 
