@@ -31,7 +31,7 @@ _Note: the install seems to trip up while running the CSV tests. It may skip the
     - `rmlmapper-4.7.0-r152.jar`  
 _The numbers with these files may be different with future versions of RML Mapper._  
 
- - The correct jar file is the latter (`rmlmapper-4.7.0-r152.jar`)
+ - Try both to see which one works on your computer. (For mcm104, one would only work on WSL, while the other worked for Mac.)
  - Confirm the installation of RML Mapper worked by asking for the help menu  
 `$ java -jar rmlmapper-4.7.0-r152.jar -h`
 
