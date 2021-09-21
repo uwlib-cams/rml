@@ -71,7 +71,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	catalogerID_object_map = BNode()
 
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, catalogerID_po_map))
-	RML_graph.add((catalogerID_po_map, rr.predicate, bflc.catalogerID))
+	RML_graph.add((catalogerID_po_map, rr.predicate, bflc.catalogerId))
 	RML_graph.add((catalogerID_po_map, rr.objectMap, catalogerID_object_map))
 	RML_graph.add((catalogerID_object_map, rml.reference, Literal("catalogerID")))
 	RML_graph.add((catalogerID_object_map, rr.termType, rr.Literal))
