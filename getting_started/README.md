@@ -45,7 +45,7 @@ _Note: the install seems to trip up while running the CSV tests. It may skip the
  - Try both to see which one works on your computer. (For mcm104, one would only work on WSL, while the other worked for Mac.)
  - Confirm the installation of RML Mapper worked by asking for the help menu
 
-`$ java -jar rmlmapper-4.7.0-r152.jar -h`
+`$ java -jar rmlmapper-[version number].jar -h`
 
  - The .jar file(s) can be renamed using the [mv command](https://en.wikipedia.org/wiki/Mv_(Unix)) for ease of use, e.g. to mapper.jar or rmlmapper.jar
 
