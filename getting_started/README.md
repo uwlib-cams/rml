@@ -1,5 +1,14 @@
 # Installing RML Mapper
 
+## Install WSL
+_For Windows users only_
+ - [Instructions for installing WSL on Windows 10 or higher](https://docs.microsoft.com/en-us/windows/wsl/install)
+ - [Instructions for installing WSL on older versions](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
+
+## Download Ubuntu
+_For Windows users only_
+ - [Download Ubuntu](https://ubuntu.com/download/desktop)
+
 ## Install maven
 
  - Run the following commands  
@@ -14,31 +23,39 @@
 
 ## Install using maven
 
- - Navigate to the directory that contains pom.xml  
+ - Navigate to the directory that contains pom.xml
+
 `$ cd rmlmapper-java`
 
-  - Run the following command:  
+  - Run the following command:
+
 `$ mvn install`
 
-_Note: the install seems to trip up while running the CSV tests. It may skip them (which is fine, unless you’re transforming CSV data), or the install may fail. If the install fails, instead of `mvn install`, run the following command instead:_  
+_Note: the install seems to trip up while running the CSV tests. It may skip them (which is fine, unless you’re transforming CSV data), or the install may fail. If the install fails, instead of `mvn install`, run the following command instead:_
+
 `$ mvn install -Dmaven.test.skip=true`
 
- - Locate the jar file  
+ - Locate the jar file
+
 `$ cd target`
 
  - The directory should contain the following files:  
-    - `original-rmlmapper-4.7.0-r152.jar`
-    - `rmlmapper-4.7.0-r152.jar`  
-_The numbers with these files may be different with future versions of RML Mapper._  
-
+    - `rmlmapper-[version number].jar`
+    - `rmlmapper-[version number]-all.jar`  
  - Try both to see which one works on your computer. (For mcm104, one would only work on WSL, while the other worked for Mac.)
- - Confirm the installation of RML Mapper worked by asking for the help menu  
+ - Confirm the installation of RML Mapper worked by asking for the help menu
+
 `$ java -jar rmlmapper-4.7.0-r152.jar -h`
+
+ - The .jar file(s) can be renamed using the [mv command](https://en.wikipedia.org/wiki/Mv_(Unix)) for ease of use, e.g. to mapper.jar or rmlmapper.jar
+
+`$ mv rmlmapper-[version number].jar mapper.jar`
+
+`$ mv rmlmapper-[version number]-all.jar mapper.jar`
 
 # Running RML Mapper
 
-`java -jar rmlmapper-4.7.0-r152.jar -m RML_demo_map.ttl -s turtle`
-_Name of jar file may be different on your computer_
+`java -jar mapper.jar -m RML_demo_map.ttl -s turtle`
 
 # RML property cheat sheet
 - All triples maps need to be classed as rr:TriplesMap
