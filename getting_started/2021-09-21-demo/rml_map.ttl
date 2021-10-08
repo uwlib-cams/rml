@@ -1,0 +1,56 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+
+@prefix ex: <http://example.org/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:ExampleMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "20210921demo_data.xml";
+		rml:referenceFormulation ql:XPath;
+		rml:iterator "RDF/Description"
+	];
+	rr:subjectMap [
+		rml:reference "@about";
+		rr:class bf:Work
+	];
+	rr:predicateObjectMap [
+		rr:predicate bf:genreForm;
+		rr:objectMap [
+			rml:reference "P10004/@resource";
+			rr:termType rr:IRI
+		]
+	];
+	rr:predicateObjectMap [
+		rr:predicate bf:genreForm;
+		rr:objectMap [
+			rr:parentTriplesMap ex:ExampleGenreFormMap;
+			rr:termType rr:BlankNode
+		]
+	].
+
+ex:ExampleGenreFormMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "20210921demo_data.xml";
+		rml:referenceFormulation ql:XPath;
+		rml:iterator "RDF/Description[P10004[not(@resource)]]"
+	];
+	rr:subjectMap [
+		rr:termType rr:BlankNode;
+		rr:class bf:GenreForm
+	];
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label;
+		rr:objectMap [
+			rml:reference "P10004[not(@resource)]";
+			rr:termType rr:Literal;
+			rml:languageMap [
+				rml:reference "P10004/@lang"
+			]
+		]
+	].
