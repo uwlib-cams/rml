@@ -1,0 +1,84 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix ex: <http://example.org/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+# kiegel for P10061
+
+# contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/aut>
+# or
+# contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>
+
+ex:WorkMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012_CEC.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[@about='https://api.sinopia.io/resource/0a4ea663-988e-474b-a25e-659b935b65a9']"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@about";
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:contribution ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:ContributionMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+ex:ContributionMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012_CEC.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P10061]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Contribution
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:agent ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:AgentMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+ex:AgentMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012_CEC.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF" # iterator has to go up a parent property; if it iterates over each rdf:Description separately, it puts these values in two separate blank nodes, so instead we iterate over each rdf:RDF
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Agent
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdf:value ;
+		rr:objectMap [
+			rml:reference "Description/P10061/@resource" ; # add rdf:Description here since we took it out of the iterator
+			rr:termType rr:IRI
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "Description/label" ; # add rdf:Description here since we took it out of the iterator
+			rr:termType rr:Literal # optional
+		]
+	] .

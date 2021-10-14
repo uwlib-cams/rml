@@ -1,0 +1,92 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix ex: <http://example.org/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+# kiegel for P10061
+
+# contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/aut>
+# or
+# contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/aut>
+
+# The following is a mapping for just literal values
+
+ex:WorkMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[@about='https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef']"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@about";
+		rr:class bf:Work
+	] ;
+
+	# Here's where we open the blank node
+
+	rr:predicateObjectMap [
+		rr:predicate bf:contribution ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:ContributionMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+# Here are the contents of the blank node
+
+ex:ContributionMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P10061]" # writing the XPath like this ensures this blank node will only generate if this property exists
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Contribution
+	] ;
+
+	# Here we open another blank node
+
+	rr:predicateObjectMap [
+		rr:predicate bf:agent ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:AgentMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+ex:AgentMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "demodata_20211012.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P10061[not(@resource)]]" # adding this [not(@resource)] ensures this blank node only generates if A) the property exists, and B) there is at least one instance where the value is not an IRI
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Agent
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "P10061[not(@resource)]" ;
+			rr:termType rr:Literal # optional
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:role ;
+		rr:objectMap [
+			rr:constant "http://id.loc.gov/vocabulary/relators/aut" ;
+			rr:termType rr:IRI
+		]
+	] .
