@@ -1,3 +1,11 @@
+# Table of Contents
+ - [Install RML Mapper](https://github.com/uwlib-cams/rml/tree/master/getting_started#installing-rml-mapper)
+    - [Install using WSL & Ubuntu](https://github.com/uwlib-cams/rml/tree/master/getting_started#install-using-wsl--ubuntu)
+    - [Install using Windows PowerShell](https://github.com/uwlib-cams/rml/tree/master/getting_started#install-using-windows-powershell)
+ - [Running RML Mapper](https://github.com/uwlib-cams/rml/tree/master/getting_started#running-rml-mapper)
+ - [RML property cheat sheet](https://github.com/uwlib-cams/rml/tree/master/getting_started#rml-property-cheat-sheet)
+ - [Troubleshooting](https://github.com/uwlib-cams/rml/tree/master/getting_started#troubleshooting)
+
 # Installing RML Mapper
 
 ## Install using WSL & Ubuntu
