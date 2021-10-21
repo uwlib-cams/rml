@@ -1,43 +1,58 @@
 # Installing RML Mapper
 
-## Install WSL
+## Install using WSL & Ubuntu
+### Install WSL
 _For Windows users only_
  - [Instructions for installing WSL on Windows 10 or higher](https://docs.microsoft.com/en-us/windows/wsl/install)
  - [Instructions for installing WSL on older versions](https://docs.microsoft.com/en-us/windows/wsl/install-manual)
 
-## Download Ubuntu
+### Download Ubuntu
 _For Windows users only_
  - [Download Ubuntu](https://ubuntu.com/download/desktop)
 
-## Install maven
+### Install maven
 
  - Run the following commands  
-`$ sudo apt update`  
-`$ sudo apt install maven`
+```
+$ sudo apt update
+$ sudo apt install maven
+```
 
  - Confirm that the installation worked by asking for the version number  
-`$ mvn -v`
+```
+$ mvn -v
+```
 
-## Clone the [RML Mapper GitHub Repository](https://github.com/RMLio/rmlmapper-java)  
-`$ git clone https://github.com/RMLio/rmlmapper-java.git`
+### Clone the [RML Mapper GitHub Repository](https://github.com/RMLio/rmlmapper-java)  
+```
+$ git clone https://github.com/RMLio/rmlmapper-java.git
+```
 
-## Install using maven
+### Install using maven
 
  - Navigate to the directory that contains pom.xml
 
-`$ cd rmlmapper-java`
+```
+$ cd rmlmapper-java
+```
 
   - Run the following command:
 
-`$ mvn install`
+```
+$ mvn install
+```
 
 _Note: the install seems to trip up while running the CSV tests. It may skip them (which is fine, unless you’re transforming CSV data), or the install may fail. If the install fails, instead of `mvn install`, run the following command instead:_
 
-`$ mvn install -Dmaven.test.skip=true`
+```
+$ mvn install -Dmaven.test.skip=true
+```
 
  - Locate the jar file
 
-`$ cd target`
+```
+$ cd target
+```
 
  - The directory should contain the following files:  
     - `rmlmapper-[version number].jar`
@@ -45,17 +60,103 @@ _Note: the install seems to trip up while running the CSV tests. It may skip the
  - Try both to see which one works on your computer. (For mcm104, one would only work on WSL, while the other worked for Mac.)
  - Confirm the installation of RML Mapper worked by asking for the help menu
 
-`$ java -jar rmlmapper-[version number].jar -h`
+```
+$ java -jar rmlmapper-[version number].jar -h
+```
 
  - The .jar file(s) can be renamed using the [mv command](https://en.wikipedia.org/wiki/Mv_(Unix)) for ease of use, e.g. to mapper.jar or rmlmapper.jar
 
-`$ mv rmlmapper-[version number].jar mapper.jar`
+```
+$ mv rmlmapper-[version number].jar mapper.jar
+```
 
-`$ mv rmlmapper-[version number]-all.jar mapper.jar`
+```
+$ mv rmlmapper-[version number]-all.jar mapper.jar
+```
+
+## Install using Windows PowerShell
+
+### Install JAVA
+ - [Download JAVA](https://www.java.com/download/ie_manual.jsp)
+ - Set JAVA_HOME environment variable:
+
+```
+System Variable
+  Variable name: JAVA_HOME
+  Variable value: [path to your jdk]\jdk1.8.0_291  
+```
+
+### Install maven
+ - [Download binary zip archive](https://maven.apache.org/download.cgi)
+ - Unzip to desired location
+ - In PowerShell, run:
+
+```
+$ Expand-Archive -LiteralPath '<path to maven zip file downloaded above>' -DestinationPath '<path where maven should go>'
+```
+
+ - Add maven bin directory to the "Path" environment variable
+ - Check to make sure it works
+	- This should output maven info:
+
+```
+$ mvn-v
+```
+
+### Clone the [RML Mapper GitHub Repository](https://github.com/RMLio/rmlmapper-java) 
+
+```
+$ git clone https://github.com/RMLio/rmlmapper-java.git
+```
+
+### Install using maven
+ - Navigate to the directory that contains pom.xml
+```
+$ cd rmlmapper-java
+```
+ - Run the following command:
+```
+$ mvn install -DskipTests
+```
+
+ - Locate the jar file
+
+```
+$ cd target
+```
+
+ - The directory should contain the following files:  
+    - `rmlmapper-[version number].jar`
+    - `rmlmapper-[version number]-all.jar`
+ - The `-all` file is the one to use.
+ - Confirm the installation of RML Mapper worked by asking for the help menu
+
+```
+$ java -jar rmlmapper-[version number]-all.jar -h
+```
+
+ - The .jar file(s) can be renamed using the [cp command](https://en.wikipedia.org/wiki/Cp_(Unix)) for ease of use, e.g. to mapper.jar or rmlmapper.jar
+
+```
+$ cp rmlmapper-[version number]-all.jar mapper.jar
+```
+
+### (Optional) Create an environment variable
+ - If you want to create an environment variable for the path to the jar file, you can
+ - Access in PowerShell using $Env
+ - For example, if you name the path `rmlm`, you could run the help command like this:
+```
+$ java -jar $Env:rmlm:mapper.jar -h
+```
 
 # Running RML Mapper
 
-`java -jar mapper.jar -m RML_demo_map.ttl -s turtle`
+```
+$ java -jar mapper.jar -m RML_demo_map.ttl -s turtle
+```
+ - The `-m` variable is followed by the filepath to our RML map
+ - The `-s` variable is optional, and chooses our output serialization. The default is nquads, so for ease of reading, you can choose to output in Turtle instead.
+ - [See list of all variables here](https://github.com/RMLio/rmlmapper-java#cli)
 
 # RML property cheat sheet
 - All triples maps need to be classed as rr:TriplesMap
