@@ -1,0 +1,236 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix ex: <http://example.org/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:ManifestationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[@about='https://api.sinopia.io/resource/28c01f9f-2502-4488-a144-71a31f21d0d4']"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@about" ;
+		rr:class bf:Instance
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:title ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:TitleMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:title ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:VariantTitleMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:extent ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:ExtentMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:note ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:NoteMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:classification ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:hasLcClassificationMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+# P30156
+# title >> Title > mainTitle
+# P30142
+# title >> Title > subtitle
+ex:TitleMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P30156 or P30142]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Title
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:mainTitle ;
+		rr:objectMap [
+			rml:reference "P30156[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30156/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:mainTitle ;
+		rr:objectMap [
+			rml:reference "P30156[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	rr:predicateObjectMap [
+			rr:predicate bf:subtitle ;
+			rr:objectMap [
+				rml:reference "P30142[@lang]" ;
+				rr:termType rr:Literal ;
+				rml:languageMap [
+					rml:reference "P30142/@lang"
+				]
+			]
+		] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:subtitle ;
+		rr:objectMap [
+			rml:reference "P30142[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30128
+# title >> VariantTitle > mainTitle
+ex:VariantTitleMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P30128]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:VariantTitle
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:mainTitle ;
+		rr:objectMap [
+			rml:reference "P30128" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30182
+# extent >> Extent > rdfs:label
+ex:ExtentMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P30182]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Extent
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "P30182[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30182/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "P30182[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30137
+# note >> Note > rdfs:label
+ex:NoteMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[P30137]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Note
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:note ;
+		rr:objectMap [
+			rml:reference "P30137[@lang]" ;
+			rr:termType rr:Literal;
+			rml:languageMap [
+				rml:reference "P30137/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:note ;
+		rr:objectMap [
+			rml:reference "P30137[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# hasLcClassificationPartA
+# classification >> ClassificationLcc > classificationPortion
+# hasLcClassificationPartB
+# classification >> ClassificationLcc > itemPortion
+ex:hasLcClassificationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../28c01f9f-2502-4488-a144-71a31f21d0d4.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[hasLcClassificationPartA or hasLcClassificationPartB]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:ClassificationLcc
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:classificationPortion ;
+		rr:objectMap [
+			rml:reference "hasLcClassificationPartA" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:itemPortion ;
+		rr:objectMap [
+			rml:reference "hasLcClassificationPartB" ;
+			rr:termType rr:Literal
+		]
+	] .

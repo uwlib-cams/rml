@@ -1,0 +1,157 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix ex: <http://example.org/>.
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix rdam: <http://rdaregistry.info/Elements/m/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:ManifestationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../2c54c399-b393-4c4c-a79c-9f2ac5a31b0b.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "RDF/Description[@about='https://api.sinopia.io/resource/2c54c399-b393-4c4c-a79c-9f2ac5a31b0b']"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@about" ;
+		rr:class bf:Instance
+	] ;
+
+	# P30111
+	# provisionActivityStatement
+	rr:predicateObjectMap [
+		rr:predicate bf:provisionActivityStatement ;
+		rr:objectMap [
+			rml:reference "P30111[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30111/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:provisionActivityStatement ;
+		rr:objectMap [
+			rml:reference "P30111[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30007
+	# copyrightDate
+	rr:predicateObjectMap [
+		rr:predicate bf:copyrightDate ;
+		rr:objectMap [
+			rml:reference "P30007" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30106
+	# seriesStatement
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "P30106[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30106/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "P30106[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30133
+	# editionStatement
+	rr:predicateObjectMap [
+		rr:predicate bf:editionStatement ;
+		rr:objectMap [
+			rml:reference "P30133[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30133/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:editionStatement ;
+		rr:objectMap [
+			rml:reference "P30133[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30105
+	# responsibilityStatement
+	rr:predicateObjectMap [
+		rr:predicate bf:responsibilityStatement ;
+		rr:objectMap [
+			rml:reference "P30105[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30105/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:responsibilityStatement ;
+		rr:objectMap [
+			rml:reference "P30105[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30157
+	# seriesStatement
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "P30157[@lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "P30157/@lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "P30157[not(@lang)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30169
+	# dimensions
+	rr:predicateObjectMap [
+		rr:predicate bf:dimensions ;
+		rr:objectMap [
+			rml:reference "P30169" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	# P30014
+	# seriesEnumeration
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesEnumeration ;
+		rr:objectMap [
+			rml:reference "P30014" ;
+			rr:termType rr:Literal
+		]
+	] .
