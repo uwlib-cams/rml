@@ -124,6 +124,9 @@ Example:
 Input: 'note >> Note > rdfs:label > noteType="type of binding"'
 Output: ['note', '>>', 'Note', '>', 'rdfs:label', '>', 'noteType="type of binding"']
 
+#### edit_kiegel
+Takes in a kiegel mapping, and expands it into a dictionary where mappings that take an IRI as a value becomes values for an "IRI" key, and mappings that take a literal as a value becomes values for a "literal" key.
+
 ### identifiedBy_functions.py
 Functions that generate the RML for RDA properties [rdaw:P10002](http://rdaregistry.info/Elements/w/P10002), [rdae:P20002](http://rdaregistry.info/Elements/e/P20002), [rdam:P30004](http://rdaregistry.info/Elements/m/P30004), and [rdai:P40001](http://rdaregistry.info/Elements/i/P40001).
 
