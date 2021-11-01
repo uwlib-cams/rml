@@ -60,25 +60,25 @@ Creates list of tuples containing an RDA property and its respective mapping(s) 
 #### create_kiegel_dict
 Creates dictionary with RDA property numbers as keys and its mapping(s) as values. These values are themselves dictionaries, with either "IRI" or "literal" as the key, depending on what type of value the mapping will take.
 
-_See [edit_kiegel]()_
+_See [edit_kiegel](https://github.com/uwlib-cams/rml/tree/master/generateRML#edit_kiegel)_
 
 #### kiegel_reader
 Iterates through mappings as organized by the [create_kiegel_dict]() function. Generates RML according to mapping.
 
- - _See [start_RML_map]()_
- - _See [generate_main_logical_source]()_
- - _See [generate_main_subject_map]()_
- - _See [admin_metadata_mapping]()_
- - _See [P10002_mapping]()_
- - _See [P20002_mapping]()_
- - _See [P30004_mapping]()_
- - _See [P40001_mapping]()_
- - _See [split_by_space]()_
- - _See [generate_RML_for_IRI]()_
- - _See [generate_RML_for_constant]()_
- - _See [generate_RML_for_bnode]()_
- - _See [class_test]()_
- - _See [generate_RML_for_literal]()_
+ - _See [start_RML_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#start_rml_map)_
+ - _See [generate_main_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_main_logical_source)_
+ - _See [generate_main_subject_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_main_subject_map)_
+ - _See [admin_metadata_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML#admin_metadata_mapping)_
+ - _See [P10002_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML#P10002_mapping)_
+ - _See [P20002_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML#P20002_mapping)_
+ - _See [P30004_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML#P30004_mapping)_
+ - _See [P40001_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML#P40001_mapping)_
+ - _See [split_by_space](https://github.com/uwlib-cams/rml/tree/master/generateRML#split_by_space)_
+ - _See [generate_RML_for_IRI](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_IRI)_
+ - _See [generate_RML_for_constant](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_constant)_
+ - _See [generate_RML_for_bnode](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_bnode)_
+ - _See [class_test](https://github.com/uwlib-cams/rml/tree/master/generateRML#class_test)_
+ - _See [generate_RML_for_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_literal)_
 
 _[How kiegel_reader works]()_
 
