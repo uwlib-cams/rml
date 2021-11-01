@@ -60,6 +60,8 @@ RDA properties that map into the same blank node, classed as [bf:Publication](ht
 #### work_title_props
 [RDA work](http://rdaregistry.info/Elements/c/C10001) properties that map into the same blank node, classed as [bf:Title](https://id.loc.gov/ontologies/bibframe.html#c_Title).
 
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
+
 ### kiegel_functions.py
 Functions necessary to parse kiegel mappings.
 
@@ -119,6 +121,8 @@ Iterates through the mapping for a given property, generates RML for that proper
 - _See [class_test](https://github.com/uwlib-cams/rml/tree/master/generateRML#class_test)_
 - _See [generate_RML_for_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_literal)_
 
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
+
 ### admin_metadata_functions.py
 #### admin_metadata_mapping
 Generates the RML to map the administrative metadata from BIBFRAME to BIBFRAME.
@@ -126,6 +130,8 @@ Generates the RML to map the administrative metadata from BIBFRAME to BIBFRAME.
 ### boolean_functions.py
 #### class_test
 Takes in a given node, and tests to see if it's a class or a property.
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
 
 ### formatting_functions.py
 #### convert_string_to_IRI
@@ -151,6 +157,8 @@ Output: ['note', '>>', 'Note', '>', 'rdfs:label', '>', 'noteType="type of bindin
 #### edit_kiegel
 Takes in a kiegel mapping, and expands it into a dictionary where mappings that take an IRI as a value becomes values for an "IRI" key, and mappings that take a literal as a value becomes values for a "literal" key.
 
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
+
 ### identifiedBy_functions.py
 Functions that generate the RML for RDA properties [rdaw:P10002](http://rdaregistry.info/Elements/w/P10002), [rdae:P20002](http://rdaregistry.info/Elements/e/P20002), [rdam:P30004](http://rdaregistry.info/Elements/m/P30004), and [rdai:P40001](http://rdaregistry.info/Elements/i/P40001).
 
@@ -165,6 +173,8 @@ Generates the RML to map the value(s) of [rdam:P30004](http://rdaregistry.info/E
 
 #### P40001_mapping
 Generates the RML to map the value(s) of [rdai:P40001](http://rdaregistry.info/Elements/i/P40001) to a blank node classed as [bf:Identifier](https://id.loc.gov/ontologies/bibframe.html#c_Identifier).
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
 
 ### logical_source_functions.py
 Functions that generate an [RML logical source](https://rml.io/specs/rml/#logical-source).
@@ -229,6 +239,8 @@ Generates an RML logical source for an [RML triples map](https://rml.io/specs/rm
 
  - _See [dissertationList](https://github.com/uwlib-cams/rml/tree/master/generateRML#dissertationList)_
 
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
+
 ### po_map_functions.py
 Functions that generate an [RML predicate-object map](https://rml.io/specs/rml/#predicate-object-map).
 
@@ -274,10 +286,14 @@ Generates a predicate-object map where the object is a [constant](https://rml.io
 #### generate_constant_literal
 Generates a predicate-object map where the object is a [constant](https://rml.io/specs/rml/#constant) literal. The default language tag is "en".
 
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
+
 ### start_RML_map.py
 
 #### start_RML_map
 Creates a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) and binds to it all possible namespaces from the RDA/RDF data that the RML will transform.
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
 
 ### subject_map_functions.py
 Functions that generate an [RML subject map](https://rml.io/specs/rml/#subject-map).
@@ -290,6 +306,8 @@ Generates an RML subject map for the "main" [RML triples map](https://rml.io/spe
 
 #### generate_bnode_subject_map
 Generates an RML subject map for a blank node.
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
 
 ### value_functions.py
 
@@ -331,3 +349,5 @@ Generates the necessary RML for a property that takes a literal as a value.
  - _See [generate_neutral_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_neutral_literal_split_po_map)_
  - _See [generate_lang_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_lang_literal_split_po_map)_
  - _See [generate_not_lang_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_not_lang_literal_split_po_map)_
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML#generatermlpy)_
