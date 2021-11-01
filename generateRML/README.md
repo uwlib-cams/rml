@@ -7,8 +7,25 @@ $ python3 generateRML.py csv_dir
 
 ## Imported scripts
 
+### Table of Contents
+ - [lists.py](https://github.com/uwlib-cams/rml/tree/master/generateRML#listspy)
+ - [kiegel_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML#kiegel_functionspy)
+
 ### lists.py
 Lists used throughout the generation process.
+
+#### Table of Contents
+ - [classificationLcc_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationLcc_props)
+ - [classificationNlm_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationNlm_props)
+ - [dissertationList](https://github.com/uwlib-cams/rml/tree/master/generateRML#dissertationList)
+ - [expression_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#expression_title_props)
+ - [item_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#item_title_props)
+ - [manifestation_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#manifestation_title_props)
+ - [provisionActivityDistributionList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityDistributionList)
+ - [provisionActivityManufactureList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityManufactureList)
+ - [provisionActivityProductionList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityProductionList)
+ - [provisionActivityPublicationList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityPublicationList)
+ - [work_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#work_title_props)
 
 #### classificationLcc_props
 RDA properties that map into the same blank node, classed as [bf:ClassificationLcc](https://id.loc.gov/ontologies/bibframe.html#c_ClassificationLcc).
@@ -45,6 +62,13 @@ RDA properties that map into the same blank node, classed as [bf:Publication](ht
 
 ### kiegel_functions.py
 Functions necessary to parse kiegel mappings.
+
+#### Table of Contents
+ - [get_file_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#get_file_list)
+ - [get_property_kiegel_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#get_property_kiegel_list)
+ - [create_kiegel_dict](https://github.com/uwlib-cams/rml/tree/master/generateRML#create_kiegel_dict)
+ - [kiegel_reader](https://github.com/uwlib-cams/rml/tree/master/generateRML#kiegel_reader)
+ - [kiegel_reader_tester](https://github.com/uwlib-cams/rml/tree/master/generateRML#kiegel_reader_tester)
 
 _Python Libraries/Modules/Packages_
  - _[csv](https://docs.python.org/3/library/csv.html)_
