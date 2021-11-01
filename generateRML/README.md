@@ -85,15 +85,15 @@ _[How kiegel_reader works]()_
 #### kiegel_reader_tester
 Iterates through the mapping for a given property, generates RML for that property, and prints information about the generation process. For testing purposes.
 
-- _See [start_RML_map]()_
-- _See [generate_main_logical_source]()_
-- _See [generate_main_subject_map]()_
-- _See [split_by_space]()_
-- _See [generate_RML_for_IRI]()_
-- _See [generate_RML_for_constant]()_
-- _See [generate_RML_for_bnode]()_
-- _See [class_test]()_
-- _See [generate_RML_for_literal]()_
+- _See [start_RML_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#start_RML_map)_
+- _See [generate_main_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_main_logical_source)_
+- _See [generate_main_subject_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_main_subject_map)_
+- _See [split_by_space](https://github.com/uwlib-cams/rml/tree/master/generateRML#split_by_space)_
+- _See [generate_RML_for_IRI](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_IRI)_
+- _See [generate_RML_for_constant](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_constant)_
+- _See [generate_RML_for_bnode](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_bnode)_
+- _See [class_test](https://github.com/uwlib-cams/rml/tree/master/generateRML#class_test)_
+- _See [generate_RML_for_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_literal)_
 
 ### admin_metadata_functions.py
 #### admin_metadata_mapping
@@ -173,26 +173,26 @@ Generates an RML logical source for an [RML triples map](https://rml.io/specs/rm
  - [bf:Production](https://id.loc.gov/ontologies/bibframe.html#c_Production)
  - [bf:Publication](https://id.loc.gov/ontologies/bibframe.html#c_Publication)
 
- - _See [provisionActivityDistributionList]()_
- - _See [provisionActivityManufactureList]()_
- - _See [provisionActivityProductionList]()_
- - _See [provisionActivityPublicationList]()_
+ - _See [provisionActivityDistributionList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityDistributionList)_
+ - _See [provisionActivityManufactureList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityManufactureList)_
+ - _See [provisionActivityProductionList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityProductionList)_
+ - _See [provisionActivityPublicationList](https://github.com/uwlib-cams/rml/tree/master/generateRML#provisionActivityPublicationList)_
 
 #### generate_title_logical_source
 Generates an RML logical source for an [RML triples map](https://rml.io/specs/rml/#triples-map) that only maps RDA properties that map to a blank node classed as [bf:Title](https://id.loc.gov/ontologies/bibframe.html#c_Title).
 
- - _See [expression_title_props]()_
- - _See [item_title_props]()_
- - _See [manifestation_title_props]()_
- - _See [work_title_props]()_
+ - _See [expression_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#expression_title_props)_
+ - _See [item_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#item_title_props)_
+ - _See [manifestation_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#manifestation_title_props)_
+ - _See [work_title_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#work_title_props)_
 
 #### generate_classification_logical_source
 Generates an RML logical source for an [RML triples map](https://rml.io/specs/rml/#triples-map) that only maps RDA properties that map to a blank node classed as one the of subclasses of [bf:Classification](https://id.loc.gov/ontologies/bibframe.html#c_Classification):
  - [bf:ClassificationLcc](https://id.loc.gov/ontologies/bibframe.html#c_ClassificationLcc)
  - [bf:ClassificationNlm](https://id.loc.gov/ontologies/bibframe.html#c_ClassificationNlm)
 
- - _See [classificationLcc_props]()_
- - _See [classificationNlm_props]()_
+ - _See [classificationLcc_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationLcc_props)_
+ - _See [classificationNlm_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationNlm_props)_
 
 #### generate_lang_nosplit_logical_source
 Generates an RML logical source for an [RML triples map](https://rml.io/specs/rml/#triples-map) in which multiple values for a single RDA/RDF properties are mapped into the same blank node in BIBFRAME, i.e. "no split" because they are not split apart. This logical source can be used for IRIs or literals that have language tags.
@@ -203,7 +203,7 @@ Generates an RML logical source for an [RML triples map](https://rml.io/specs/rm
 #### generate_dissertation_logical_source
 Generates an RML logical source for an [RML triples map](https://rml.io/specs/rml/#triples-map) that only maps RDA properties that map to a blank node classed as a [bf:Dissertation](https://id.loc.gov/ontologies/bibframe.html#c_Dissertation).
 
- - _See [dissertationList]()_
+ - _See [dissertationList](https://github.com/uwlib-cams/rml/tree/master/generateRML#dissertationList)_
 
 ### po_map_functions.py
 Functions that generate an [RML predicate-object map](https://rml.io/specs/rml/#predicate-object-map).
@@ -272,38 +272,38 @@ Generates an RML subject map for a blank node.
 #### generate_RML_for_IRI
 Generates the necessary RML for a property that takes an IRI as a value.
 
- - _See [generate_IRI_po_main_map]()_
- - _See [generate_IRI_nosplit_po_map]()_
- - _See [generate_IRI_split_po_map]()_
+ - _See [generate_IRI_po_main_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_IRI_po_main_map)_
+ - _See [generate_IRI_nosplit_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_IRI_nosplit_po_map)_
+ - _See [generate_IRI_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_IRI_split_po_map)_
 
 #### generate_RML_for_constant
 Generates the necessary RML for a property that takes a [constant value](https://rml.io/specs/rml/#constant).
 
- - _See [generate_constant_IRI]()_
- - _See [generate_constant_literal]()_
+ - _See [generate_constant_IRI](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_constant_IRI)_
+ - _See [generate_constant_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_constant_literal)_
 
 #### generate_RML_for_bnode
 Generates the necessary RML for a property that takes a blank node as a value.
 
- - _See [create_bnode_name]()_
- - _See [generate_bnode_po_map]()_
- - _See [generate_dissertation_logical_source]()_
- - _See [generate_title_logical_source]()_
- - _See [generate_lang_nosplit_logical_source]()_
- - _See [generate_not_lang_nosplit_logical_source]()_
- - _See [generate_constant_logical_source]()_
- - _See [generate_IRI_logical_source]()_
- - _See [generate_neutral_literal_logical_source]()_
- - _See [generate_lang_logical_source]()_
- - _See [generate_not_lang_logical_source]()_
- - _See [generate_bnode_subject_map]()_
+ - _See [create_bnode_name](https://github.com/uwlib-cams/rml/tree/master/generateRML#create_bnode_name)_
+ - _See [generate_bnode_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_bnode_po_map)_
+ - _See [generate_dissertation_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_dissertation_logical_source)_
+ - _See [generate_title_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_title_logical_source)_
+ - _See [generate_lang_nosplit_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_lang_nosplit_logical_source)_
+ - _See [generate_not_lang_nosplit_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_not_lang_nosplit_logical_source)_
+ - _See [generate_constant_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_constant_logical_source)_
+ - _See [generate_IRI_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_IRI_logical_source)_
+ - _See [generate_neutral_literal_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_neutral_literal_logical_source)_
+ - _See [generate_lang_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_lang_logical_source)_
+ - _See [generate_not_lang_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML#[generate_not_lang_logical_source)_
+ - _See [generate_bnode_subject_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_bnode_subject_map)_
 
 #### generate_RML_for_literal
 Generates the necessary RML for a property that takes a literal as a value.
 
- - _See [generate_neutral_literal_po_main_map]()_
- - _See [generate_langnotlang_literal_po_main_map]()_
- - _See [generate_neutral_literal_nosplit_po_map]()_
- - _See [generate_neutral_literal_split_po_map]()_
- - _See [generate_lang_literal_split_po_map]()_
- - _See [generate_not_lang_literal_split_po_map]()_
+ - _See [generate_neutral_literal_po_main_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_neutral_literal_po_main_map)_
+ - _See [generate_langnotlang_literal_po_main_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_langnotlang_literal_po_main_map)_
+ - _See [generate_neutral_literal_nosplit_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_neutral_literal_nosplit_po_map)_
+ - _See [generate_neutral_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_neutral_literal_split_po_map)_
+ - _See [generate_lang_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_lang_literal_split_po_map)_
+ - _See [generate_not_lang_literal_split_po_map](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_not_lang_literal_split_po_map)_
