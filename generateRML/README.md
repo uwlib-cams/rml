@@ -261,7 +261,7 @@ Functions that generate an [RML subject map](https://rml.io/specs/rml/#subject-m
 _Python Libraries/Modules/Packages_
  - _[rdflib](https://rdflib.readthedocs.io/en/stable/)_
 
-#### generate_main_subject_source
+#### generate_main_subject_map
 Generates an RML subject map for the "main" [RML triples map](https://rml.io/specs/rml/#triples-map), i.e. the ex:WorkMap, the ex:ExpressionMap, the ex:ManifestationMap, or the ex:ItemMap.
 
 #### generate_bnode_subject_map
