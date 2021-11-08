@@ -30,7 +30,7 @@ ex:ExampleMap a rr:TriplesMap;
   rr:predicateObjectMap [
     rr:predicate bf:title; # determine predicate
     rr:objectMap [
-      rml:reference "P10223"; # again using "reference" to locate an existing value
-      rr:termType rr:Literal # type as a literal, IRI, or blank node
+      rml:reference "P10004/@resource"; # again using "reference" to locate an existing value
+      rr:termType rr:IRI # type as a literal, IRI, or blank node
     ]
   ].
