@@ -5,7 +5,7 @@ Script that takes in kiegel mappings via CSV files, and outputs RML that will tr
 $ python3 generateRML.py csv_dir
 ```
 
-## How kiegel is read
+## How kiegel is parsed in this script
 
 This scripts takes in a directory with at least one CSV file. The CSV file should be structured the same as the University of Washington's [RDA-to-BIBFRAME-map](https://docs.google.com/spreadsheets/d/1y0coXcJAoVOP2BPtzwmnc9l-OWQbwYujVJ8oXXYpMRc/edit?usp=sharing).
 
@@ -202,7 +202,7 @@ Iterates through mappings as organized by the [create_kiegel_dict](https://githu
  - _See [class_test](https://github.com/uwlib-cams/rml/tree/master/generateRML#class_test)_
  - _See [generate_RML_for_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML#generate_RML_for_literal)_
 
-_[How kiegel_reader works]()_
+_[How kiegel is parsed in this script](https://github.com/uwlib-cams/rml/tree/master/generateRML#how-kiegel-is-parsed-in-this-script)_
 
 #### kiegel_reader_tester
 Iterates through the mapping for a given property, generates RML for that property, and prints information about the generation process. For testing purposes.
