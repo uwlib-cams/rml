@@ -89,9 +89,9 @@ Each item in this list will then by assessed by a series of if-then statements.
         - The specifics of these maps will be determined by information gleaned from the new triples map's map name, e.g. if the map is "Title_", if it contains "Lang_", etc.
     - The rest of the mapping will run with the map name being the name of this new triples map for the blank node, until instructed otherwise
  - Otherwise...
-		- If this is not the last item in the list and the next item is >>, this property takes a blank node. We will pass it during this loop and take care of it in the next loop
-		- Otherwise...
-				- If this is definitely a property and not a class, generate a literal predicate-object map
+    - If this is not the last item in the list and the next item is >>, this property takes a blank node. We will pass it during this loop and take care of it in the next loop
+    - Otherwise...
+        - If this is definitely a property and not a class, generate a literal predicate-object map
 
 ## Imported scripts
 
