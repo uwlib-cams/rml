@@ -81,13 +81,13 @@ Each item in this list will then by assessed by a series of if-then statements.
             - If the property takes a literal as a value...
                 - If this blank node only contains a constant value but the predicate is not bf:contribution, its map name will follow the format IRI_Constant_Predicate_PropertyNumber_, e.g. "IRI_Constant_GenreForm_10004_"
                 - Otherwise, its map name will follow the format IRI_Predicate_PropertyNumber_, e.g. "IRI_GenreForm_10004_"
-		- The next step is to determine whether we are creating a new triples map, or are adding more statements to an existing one
+    - The next step is to determine whether we are creating a new triples map, or are adding more statements to an existing one
         - If we are creating a new triples map, we need to generate...
-				    - A predicate-object map that links this new triples map as a [parent triples map](https://rml.io/specs/rml/#parent-triples-map) for the default triples map
-						- A [logical source](https://rml.io/specs/rml/#logical-source) for the new triples map
-						- A [subject map](https://rml.io/specs/rml/#subject-map) for the new triples map
+            - A predicate-object map that links this new triples map as a [parent triples map](https://rml.io/specs/rml/#parent-triples-map) for the default triples map
+            - A [logical source](https://rml.io/specs/rml/#logical-source) for the new triples map
+            - A [subject map](https://rml.io/specs/rml/#subject-map) for the new triples map
         - The specifics of these maps will be determined by information gleaned from the new triples map's map name, e.g. if the map is "Title_", if it contains "Lang_", etc.
-		- The rest of the mapping will run with the map name being the name of this new triples map for the blank node, until instructed otherwise
+    - The rest of the mapping will run with the map name being the name of this new triples map for the blank node, until instructed otherwise
  - Otherwise...
 		- If this is not the last item in the list and the next item is >>, this property takes a blank node. We will pass it during this loop and take care of it in the next loop
 		- Otherwise...
