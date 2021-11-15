@@ -70,17 +70,17 @@ Each item in this list will then by assessed by a series of if-then statements.
 		- The following item is the class for this blank node
 		- A map name is generated for this new blank node
         - If this map name contains "Provisionactivity", its map name will follow the format Predicate_Class_, e.g. for P30008 this would be "Provisionactivity_Distribution_"
-				- If this map name contains "Title" but does not contain "Variant" or "Abbreviated", its map name will be "Title_"
-				- If this map name contains "Dissertation" and it is a Work property, its map name will be "Dissertation_"
-				- If the property is in the list [classificationLcc_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationLcc_props), its map name will be "Classification_Lcc_"
-				- If the property is in the list [classificationNlm_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationNlm_props), its map name will be "Classification_Nlm_"
-				- If the property takes a literal as a value...
-				    - If the property is in the list [no_language_tag_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#no_language_tag_list), its map name will follow the format Literal_Predicate_PropertyNumber_, e.g. "Literal_GenreForm_10004_"
-			    	- If this blank node only contains a constant value, its map name will follow the format Literal_Constant_Predicate_PropertyNumber_, e.g. "Literal_Constant_GenreForm_10004_"
-						- If this property is _not_ in the list [no_language_tag_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#no_language_tag_list), its map name will follow the format Lang_Literal_Predicate_PropertyNumber_, e.g. "Lang_Literal_GenreForm_10004_"
-				- If the property takes a literal as a value...
-				    - If this blank node only contains a constant value but the predicate is not bf:contribution, its map name will follow the format IRI_Constant_Predicate_PropertyNumber_, e.g. "IRI_Constant_GenreForm_10004_"
-				    - Otherwise, its map name will follow the format IRI_Predicate_PropertyNumber_, e.g. "IRI_GenreForm_10004_"
+        - If this map name contains "Title" but does not contain "Variant" or "Abbreviated", its map name will be "Title_"
+        - If this map name contains "Dissertation" and it is a Work property, its map name will be "Dissertation_"
+        - If the property is in the list [classificationLcc_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationLcc_props), its map name will be "Classification_Lcc_"
+        - If the property is in the list [classificationNlm_props](https://github.com/uwlib-cams/rml/tree/master/generateRML#classificationNlm_props), its map name will be "Classification_Nlm_"
+        - If the property takes a literal as a value...
+            - If the property is in the list [no_language_tag_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#no_language_tag_list), its map name will follow the format Literal_Predicate_PropertyNumber_, e.g. "Literal_GenreForm_10004_"
+            - If this blank node only contains a constant value, its map name will follow the format Literal_Constant_Predicate_PropertyNumber_, e.g. "Literal_Constant_GenreForm_10004_"
+            - If this property is _not_ in the list [no_language_tag_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#no_language_tag_list), its map name will follow the format Lang_Literal_Predicate_PropertyNumber_, e.g. "Lang_Literal_GenreForm_10004_"
+        - If the property takes a literal as a value...
+            - If this blank node only contains a constant value but the predicate is not bf:contribution, its map name will follow the format IRI_Constant_Predicate_PropertyNumber_, e.g. "IRI_Constant_GenreForm_10004_"
+            - Otherwise, its map name will follow the format IRI_Predicate_PropertyNumber_, e.g. "IRI_GenreForm_10004_"
 		- The next step is to determine whether we are creating a new triples map, or are adding more statements to an existing one
         - If we are creating a new triples map, we need to generate...
 				    - A predicate-object map that links this new triples map as a [parent triples map](https://rml.io/specs/rml/#parent-triples-map) for the default triples map
