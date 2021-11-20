@@ -1,7 +1,6 @@
 """Python Libraries/Modules/Packages"""
 from rdflib import *
 
-
 """Imported Functions"""
 from formatting_functions import convert_string_to_IRI
 

@@ -1,6 +1,5 @@
 """Python Libraries/Modules/Packages"""
 from rdflib import *
-from timeit import default_timer as timer
 
 """Namespaces"""
 ex = Namespace('http://example.org/entity/')

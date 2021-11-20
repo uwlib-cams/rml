@@ -144,7 +144,16 @@ def generate_constant_logical_source(RML_graph, entity, map_name, property_numbe
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	constant_logical_source = BNode()
-	constant_iterator = Literal(f"/RDF/Description[{property_number}]")
+	if "Literal" in map_name:
+		if "Not_" in map_name and "Lang_" in map_name:
+			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource) and not(@lang)]]")
+		elif "Lang_" in map_name:
+			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource)][@lang]]")
+		else:
+			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource)]]")
+	elif "IRI" in map_name:
+		constant_iterator = Literal(f"/RDF/Description[{property_number}[@resource]]")
+
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, constant_logical_source))

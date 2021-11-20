@@ -6,6 +6,41 @@ from lists import classificationLcc_props
 from lists import classificationNlm_props
 from lists import no_language_tag_list
 
+"""Copied & Pasted Functions"""
+def constant_only_test(node_list, start_point):
+	"""Copied from boolean_functions.py"""
+	# ImportError: cannot import name 'constant_only_test' from partially initialized module 'boolean_functions' (most likely due to a circular import)
+	num_of_nodes = len(node_list)
+	start_num = 0
+	bnode = ""
+	for num in range(0, num_of_nodes):
+		node = node_list[num].strip()
+		if node == start_point:
+			start_num = 1
+		if start_num > 0:
+			bnode = bnode + node + " "
+		else:
+			pass
+	bnode_contents = bnode.split(" >> ")[1:]
+	bnode_contents = (" >> ").join(bnode_contents)
+	bnode_contents_list = split_by_space(bnode_contents)
+	if "" in bnode_contents_list:
+		bnode_contents_list.remove("")
+	only_constants = True
+	for node in bnode_contents_list:
+		if node[0].isupper() == True: # class
+			pass
+		elif node == ">":
+			pass
+		elif node == ">>":
+			only_constants = False
+		else:
+			if "*" in node: # IRI
+				only_constants = False
+			elif "=" not in node: # literal
+				only_constants = False
+	return only_constants
+
 """Functions"""
 def convert_string_to_IRI(string):
 	if ":" not in string:
@@ -72,7 +107,7 @@ def generate_constant(string):
 
 	return constant_pair
 
-def create_bnode_name(predicate_name, class_name, property_number, kiegel_map):
+def create_bnode_name(predicate_name, class_name, property_number, value_type, kiegel_map, node_list):
 	map_number = property_number.strip('P')
 	bnode_map_name = predicate_name.capitalize() + "_" + str(map_number) + "_"
 	if "Provisionactivity" in bnode_map_name:
@@ -90,11 +125,28 @@ def create_bnode_name(predicate_name, class_name, property_number, kiegel_map):
 		bnode_map_name = "Classification_Lcc_"
 	elif property_number in classificationNlm_props:
 		bnode_map_name = "Classification_Nlm_"
-	elif "*" not in kiegel_map:
-		if property_number not in no_language_tag_list:
-			bnode_map_name = f"Lang_{bnode_map_name}"
-	elif "*" in kiegel_map:
-		bnode_map_name = f"IRI_{bnode_map_name}"
+	elif value_type == "literal":
+		if property_number in no_language_tag_list:
+			bnode_map_name = f"{value_type.capitalize()}_{bnode_map_name}"
+		#elif constant_only_test(node_list, predicate_name) == True: # and predicate_name != "contribution":
+		#	bnode_map_name = f"{value_type.capitalize()}_Constant_{bnode_map_name}"
+		elif property_number not in no_language_tag_list:
+			bnode_map_name = f"Lang_{value_type.capitalize()}_{bnode_map_name}"
+		else:
+			print('uh oh 136')
+			quit()
+	elif value_type == "IRI":
+		#if constant_only_test(node_list, predicate_name) == True and predicate_name != "contribution":
+		#	bnode_map_name = f"{value_type}_Constant_{bnode_map_name}"
+		#else:
+		bnode_map_name = f"{value_type}_{bnode_map_name}"
+	else:
+		print('uh oh 141')
+		quit()
+
+#	if constant_only_test(node_list, predicate_name) == True and predicate_name != "contribution":
+#		"""New blank node only contains a constant value"""
+#		bnode_map_name = f"Constant_{predicate_name.capitalize()}_{class_name}_{property_number}_"
 
 	return bnode_map_name
 
@@ -153,7 +205,7 @@ def split_by_space(map):
 						broken_constant_list.append(item)
 						if item[-1] == '"': # if the last character is ", the broken constant list has all the parts of the literal
 							continue_search = False
-							fixed_constant = fix_broken_constants(broken_constant_list)
+							fixed_constant = " ".join(broken_constant_list)
 							new_map_list.append(fixed_constant)
 					else:
 						new_map_list.append(item)
@@ -162,8 +214,77 @@ def split_by_space(map):
 
 	return map_list
 
-def fix_broken_constants(constant_list):
-	"""Takes in a list of values that ought to be one literal, and outputs them as a single literal"""
-	space = " "
-	new_literal = space.join(constant_list)
-	return new_literal
+def set_map_name(entity, prop_num, map_list, mapping, node_list):
+	if mapping[0] == ">":
+		"""This is an additional part of an existing blank node"""
+		num_of_mappings = len(map_list)
+		mapping_range = range(0, num_of_mappings)
+		use_this_num = -1
+
+		for num in mapping_range:
+			current_mapping = map_list[num]
+			if current_mapping == mapping:
+				use_this_num = num - 1
+
+		existing_bnode = map_list[use_this_num]
+		predicate_name = split_by_space(existing_bnode)[0]
+		class_name = split_by_space(existing_bnode)[2]
+		new_map_name = create_bnode_name(predicate_name, class_name, prop_num, mapping, node_list)
+	else:
+		"""Use the default map"""
+		new_map_name = entity.capitalize()
+
+	return new_map_name
+
+def edit_kiegel(kiegel):
+	new_kiegel_dict = {}
+
+	mapping_list = kiegel.split("\nor\n")
+	IRI_list = []
+	literal_list = []
+	for mapping in mapping_list:
+		new_mapping_list = mapping.split(" ; ")
+		if "*" in mapping:
+			for new_mapping in new_mapping_list:
+				IRI_list.append(new_mapping)
+		else:
+			for new_mapping in new_mapping_list:
+				literal_list.append(new_mapping)
+	if len(IRI_list) > 0:
+		new_IRI_list = edit_kiegel_list(IRI_list)
+		new_kiegel_dict["IRI"] = new_IRI_list
+	if len(literal_list) > 0:
+		new_literal_list = edit_kiegel_list(literal_list)
+		new_kiegel_dict["literal"] = new_literal_list
+
+	return new_kiegel_dict
+
+def edit_kiegel_list(kiegel_list):
+	new_kiegel_list = []
+
+	num_of_mappings = len(kiegel_list)
+	mapping_range = range(0, num_of_mappings)
+
+	for num in mapping_range:
+		mapping = kiegel_list[num]
+		if mapping[0] == ">":
+			"""This goes into previous blank node"""
+			previous_blank_node_index = num
+			previous_blank_node = ">"
+			while previous_blank_node[0] == ">":
+				previous_blank_node_index = previous_blank_node_index - 1
+				previous_blank_node = kiegel_list[previous_blank_node_index]
+
+			predicate_name = previous_blank_node.split(' ')[0]
+			class_name = previous_blank_node.split(' ')[2]
+			if predicate_name == "" or class_name == "":
+				print(f"Error: predicate and/or class not found")
+				bad_mapping = kiegel_list.join(" ; ")
+				print(f"Kiegel: {bad_mapping}")
+				quit()
+			new_mapping = f"{predicate_name} >> {class_name} {mapping}"
+			new_kiegel_list.append(new_mapping)
+		else:
+			new_kiegel_list.append(mapping)
+
+	return new_kiegel_list

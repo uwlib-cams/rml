@@ -3405,10 +3405,21 @@ nosplit_bnode_list = [
 "IRI_Contribution_hasContributorAgent_",
 "Lang_Contribution_hasContributorAgent_",
 "Not_Lang_Contribution_hasContributorAgent_",
-"Dissertation_"
+"Dissertation_",
+"Classification_Lcc_",
+"Title_"
 ]
 
-no_language_tag_list = ["P10219", "P20214", "P30007", "P30011", "P30009", "hasBarcode"]
+no_language_tag_list = [
+	"P10219",
+	"P20214",
+	"P30007",
+	"P30011",
+	"P30009",
+	"hasBarcode",
+	"hasLcClassificationPartA",
+	"hasLcClassificationPartB"
+]
 
 provisionActivityDistributionList = [
 	"P30008",

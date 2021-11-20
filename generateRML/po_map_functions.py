@@ -3,10 +3,24 @@ from rdflib import *
 
 """Lists"""
 from lists import classification_props
+from lists import no_language_tag_list
+from lists import nosplit_bnode_list
 
 """Imported Functions"""
+from boolean_functions import constant_only_test
 from formatting_functions import convert_string_to_IRI
+from formatting_functions import create_bnode_name
 from formatting_functions import generate_constant
+from logical_source_functions import generate_constant_logical_source
+from logical_source_functions import generate_dissertation_logical_source
+from logical_source_functions import generate_IRI_logical_source
+from logical_source_functions import generate_lang_logical_source
+from logical_source_functions import generate_lang_nosplit_logical_source
+from logical_source_functions import generate_neutral_literal_logical_source
+from logical_source_functions import generate_not_lang_logical_source
+from logical_source_functions import generate_not_lang_nosplit_logical_source
+from logical_source_functions import generate_title_logical_source
+from subject_map_functions import generate_bnode_subject_map
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
@@ -46,7 +60,7 @@ def generate_bnode_po_map(RML_graph, map_name, bnode_map_name, predicate):
 
 	return RML_graph
 
-def generate_langnotlang_literal_po_main_map(RML_graph, map_name, predicate, property_number):
+def generate_langnotlang_literal_po_map(RML_graph, map_name, predicate, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	predicate = convert_string_to_IRI(predicate)
 	# lang
@@ -77,7 +91,7 @@ def generate_langnotlang_literal_po_main_map(RML_graph, map_name, predicate, pro
 
 	return RML_graph
 
-def generate_neutral_literal_po_main_map(RML_graph, map_name, predicate, property_number):
+def generate_neutral_literal_po_map(RML_graph, map_name, predicate, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	predicate = convert_string_to_IRI(predicate)
 	property_number = Literal(f'{property_number}[not(@resource)]')
@@ -93,7 +107,7 @@ def generate_neutral_literal_po_main_map(RML_graph, map_name, predicate, propert
 
 	return RML_graph
 
-def generate_IRI_po_main_map(RML_graph, map_name, predicate, property_number):
+def generate_IRI_po_map(RML_graph, map_name, predicate, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	if "*" not in predicate:
 		print(f"{predicate} -- are you sure this takes an IRI?")
