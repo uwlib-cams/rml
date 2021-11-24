@@ -1,0 +1,1168 @@
+RDA label,RDA IRI,pseudo-Turtle,Kiegel syntax
+type,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,rdf:type bf:Item .,rdf:type=<http://id.loc.gov/ontologies/bibframe/Item>
+has identifier for item (RDA 2.20),http://rdaregistry.info/Elements/i/P40001,"
+
+bf:identifiedBy <p40001value> .
+# with literal value:
+bf:identifiedBy [ a bf:Identifier ;
+   rdf:value ""P40001value"" ] .
+# with literal value and source:
+bf:identifiedBy [ a bf:Identifier ;
+   rdf:value ""P40001value"" ;
+   bf:source [ a bf:Source ;
+      rdfs:label ""source name"" ] .
+# note: with literal value:
+  #if possible type the bf:Identifier node as a subclass of bf:Identifier","identifierBy* 
+or
+identifiedBy >> Identifier > rdf:value
+or
+identifiedBy >> Identifier > rdf:value > source >> Source > rdfs:label
+or
+identifiedBy >> Identifier.subclass > rdf:value
+"
+has modification of item (RDA 3.22),http://rdaregistry.info/Elements/i/P40003,"bf:note [ a nf:Note ;
+  rdfs:label ""P40003value"" ;
+  bf:noteType ""modification"" ] .","note >> Note > rdfs:label > noteType=""modification"""
+has collector agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40004,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40004value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40004value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/col>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/col>"
+has collection registrar agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40005,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40005value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40005value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cor>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cor>"
+has depositor agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40006,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40006value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40006value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dpt> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dpt>"
+has donor agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40007,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40007value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40007value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dnr> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dnr>"
+has seller agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40008,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40008value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40008value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/sll> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/sll>"
+is contained in item (RDA 24.5),http://rdaregistry.info/Elements/i/P40009,"bf:partOf <P40009value> .
+#with literal value
+bf:partOf [ a bf:Item ;
+  rdfs:label ""P40009value"" ] .","partOf*
+or
+partOf >> Item > rdfs:label"
+has note on dimensions of item (RDA 3.22.3),http://rdaregistry.info/Elements/i/P40010,"bf:note [ a bf:Note ;
+   rdfs:label ""P40010value"" ;
+   bf:noteType ""dimensions"" ] .","note >> Note > rdfs:label > noteType=""dimensions"""
+has note on extent of item (RDA 3.22.2),http://rdaregistry.info/Elements/i/P40011,"bf:note [ a bf:Note ;
+   rdfs:label ""P40011value"" ;
+   bf:noteType ""extent"" ] .","note >> Note > rdfs:label > noteType=""extent"""
+has illuminator agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40012,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40012value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40012value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ilu> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ilu>"
+has binder agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40013,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40013value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40013value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/bnd> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/bnd>"
+has inscriber (RDA 18.5),http://rdaregistry.info/Elements/i/P40014,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40014value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ins> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40014value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ins> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ins> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ins>"
+has annotator (RDA 18.5),http://rdaregistry.info/Elements/i/P40015,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40015value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ann> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40015value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ann> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ann> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ann>"
+has autographer (RDA 18.5),http://rdaregistry.info/Elements/i/P40016,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40016value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ato> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40016value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ato> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ato> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ato>"
+has curator agent,http://rdaregistry.info/Elements/i/P40017,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40017value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40017value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cur>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cur>"
+has current owner agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40018,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40018value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] ;
+bf:custodialHistory ""P40018value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40018value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/own> ; custodialHistory
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/own>"
+has former owner agent (RDA 18.5),http://rdaregistry.info/Elements/i/P40019,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40019value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+bf:custodialHistory ""P40019value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40019value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmo> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmo>"
+has custodian agent (RDA 22.3),http://rdaregistry.info/Elements/i/P40020,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40020value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ] ] ;
+bf:custodialHistory ""P40020value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40020value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""custodian"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""custodian"" "
+has owner agent (RDA 22.2),http://rdaregistry.info/Elements/i/P40021,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40021value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ] ] ;
+bf:custodialHistory ""P40021value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40021value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""owner"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""owner"" "
+has honouree agent of item (RDA 18.5),http://rdaregistry.info/Elements/i/P40022,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40022value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40022value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/hnr>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/hnr>"
+has restorationist agent of item (RDA 18.5),http://rdaregistry.info/Elements/i/P40024,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40024value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40024value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsr> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsr>"
+has dedicatee agent of item (RDA 18.5),http://rdaregistry.info/Elements/i/P40025,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40025value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40025value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/dte>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dte>"
+has custodial history of item (RDA 2.18),http://rdaregistry.info/Elements/i/P40026,"bf:custodialHistory ""P40026value"" .",custodialHistory
+has note on item (RDA 2.21),http://rdaregistry.info/Elements/i/P40028,"bf:note [ a bf:Note ;
+   rdfs:label ""P40028value"" ;
+   bf:noteType ""note on item"" ] .","note >> Note > rdfs:label=""note on item"""
+is accompanied by item (RDA 24.5),http://rdaregistry.info/Elements/i/P40029,"bf:accompaniedBy <P40029value> .
+# with literal value
+bf:accompaniedBy [ a bf:Item ; 
+   rdfs:label ""P40029value"" ] .","accompaniedBy*
+or
+accompaniedBy >> Item > rdfs:label"
+has equivalent item (RDA 24.5),http://rdaregistry.info/Elements/i/P40031,"bf:hasEquivalent <P40031value> .
+# with literal value
+bf:hasEquivalent [ a bf:Item ;
+  rdfs:label ""P40031value"" ] .","hasEquivalent*
+or
+hasEquivalent >> Item > rdfs:label"
+is bound with (RDA 24.5),http://rdaregistry.info/Elements/i/P40032,"bf:accompaniedBy <P40032value> .
+# with literal value
+bf:accompaniedBy [ a bf:Item ; 
+   rdfs:label ""P40032value"" ] .","accompaniedBy
+or
+accompaniedBy >> Item > rdfs:label"
+is container of item (RDA 24.5),http://rdaregistry.info/Elements/i/P40034,"bf:hasPart <P40034value> .
+# with literal value
+bf:hasPart [ a bf:Item ;
+   rdfs:label ""P40034value"" ] .","hasPart*
+or
+hasPart >> Item > rdfs:label"
+is on disc with item (RDA 24.5),http://rdaregistry.info/Elements/i/P40035,"bf:accompaniedBy <P40035value> .
+# with literal value
+bf:accompaniedBy [ a bf:Item ; 
+   rdfs:label ""P40035value"" ] .","accompaniedBy
+or
+accompaniedBy >> Item > rdfs:label"
+is filmed with item (RDA 24.5),http://rdaregistry.info/Elements/i/P40036,"bf:accompaniedBy <P40036value> .
+# with literal value
+bf:accompaniedBy [ a bf:Item ; 
+   rdfs:label ""P40036value"" ] .","accompaniedBy
+or
+accompaniedBy >> Item > rdfs:label"
+has related item of item,http://rdaregistry.info/Elements/i/P40046,"bf:relatedTo <p40046value> .
+# with literal value
+bf:relatedTo [ a bf:Item ;
+   rdfs:label ""P40046value"" ] .","relatedTo*
+or
+relatedTo >> Item > rdfs:label"
+has restriction on access to item (RDA 4.4),http://rdaregistry.info/Elements/i/P40047,"bf:usageAndAccessPolicy <P40047value> .
+# with literal value
+bf:usageAndAccessPolicy [ a bf:AccessPolicy ;
+   rdfs:label ""P40047value"" ] .","usageAndAccessPolicy*
+or
+usageAndAccessPolicy >> AccessPolicy > rdfs:label"
+has restriction on use of item (RDA 4.5),http://rdaregistry.info/Elements/i/P40048,"bf:usageAndAccessPolicy <P40048value> .
+# with literal value
+bf:usageAndAccessPolicy [ a bf:UsePolicy ;
+   rdfs:label ""P40048value"" ] .","usageAndAccessPolicy*
+or
+usageAndAccessPolicy >> UsePolicy > rdfs:label"
+has manifestation exemplified (*) (RDA 17.12),http://rdaregistry.info/Elements/i/P40049,"bf:itemOf <P40049value> .
+# with literal value
+bf:itemOf [ a bf:Instance ;
+  rdfs:label ""P40049value"" ] .
+# note: with literal value:
+  #if possible type the bf:Instance node as a subclass of bf:Instance","itemOf*
+or
+itemOf >> Instance > rdfs:label
+or
+itemOf >> Instance.subclass > rdfs:label"
+has immediate source of acquisition of item (RDA 2.19),http://rdaregistry.info/Elements/i/P40050,"bf:immediateAcquisition <P40050value> .
+# with literal value
+bf:immediateAcquisition [ a bf:ImmediateAcquisition ;
+   rdfs:label ""P40050value"" ] .","immediateAcquisition*
+or
+immediateAcquisition >> ImmediateAcquisition > rdfs:label"
+is subject item of,http://rdaregistry.info/Elements/i/P40061,"bf:referencedBy <P40061value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40061value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item described in (RDA 23.5),http://rdaregistry.info/Elements/i/P40062,"bf:referencedBy <P40062value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40062value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item analysed in (RDA 23.5),http://rdaregistry.info/Elements/i/P40063,"bf:referencedBy <P40063value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40063value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item commentary in (RDA 23.5),http://rdaregistry.info/Elements/i/P40064,"bf:referencedBy <P40064value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40064value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item critiqued in (RDA 23.5),http://rdaregistry.info/Elements/i/P40065,"bf:referencedBy <P40065value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40065value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item evaluated in (RDA 23.5),http://rdaregistry.info/Elements/i/P40066,"bf:referencedBy <P40066value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40066value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+is item reviewed in (RDA 23.5),http://rdaregistry.info/Elements/i/P40067,"bf:referencedBy <P40067value> .
+# with literal value
+bf:referencedBy [ a bf:Work ; 
+rdfs:label ""P40067value"" ] .","referencedBy*
+or
+referencedBy >> Work > rdfs:label
+"
+has related RDA entity of item,http://rdaregistry.info/Elements/i/P40068,"bf:relatedTo <P40068value> .
+# with literal value
+bf:relatedTo [ a rdfs:Resource ;
+   rdfs:label ""P40068value"" ] .",not mapped
+has related work of item,http://rdaregistry.info/Elements/i/P40069,"bf:relatedTo [ a bf:Work ;
+   rdfs:label ""p40069value"" ] .
+# with IRI value
+bf:relatedTo <p40069value> .","relatedTo >> Work > rdfs:label 
+or
+relatedTo*"
+has related expression of item,http://rdaregistry.info/Elements/i/P40070,"bf:relatedTo [ a bf:Work ;
+   rdfs:label ""p40070value"" ] .
+# with IRI value
+bf:relatedTo <p40070value> .","relatedTo >> Work > rdfs:label 
+or
+relatedTo*"
+has related manifestation of item,http://rdaregistry.info/Elements/i/P40071,"bf:relatedTo [ a bf:Instance;
+   rdfs:label ""p40071value"" ] .
+# with IRI value
+bf:relatedTo <p40071value> .","relatedTo >> Instance > rdfs:label 
+or
+relatedTo*"
+has related agent of item (RDA 22.4),http://rdaregistry.info/Elements/i/P40072,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40072value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40072value> ] .","contribution >> Contribution > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent*"
+has related person of item,http://rdaregistry.info/Elements/i/P40073,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40073value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40073value> ] .","contribution >> Contribution > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent*"
+has related family of item,http://rdaregistry.info/Elements/i/P40074,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40074value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40074value> ] .","contribution >> Contribution > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent*"
+has related corporate body of item,http://rdaregistry.info/Elements/i/P40075,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization;
+      rdfs:label ""P40075value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40075value> ] .","contribution >> Contribution > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent*"
+has related collective agent of item,http://rdaregistry.info/Elements/i/P40076,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40076value"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40076value> ] .","contribution >> Contribution > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent*"
+has related place of item,http://rdaregistry.info/Elements/i/P40077,"bf:place [ a bf:Place;
+   rdfs:label ""p40077value"" ] .
+# with IRI value
+bf:place <p40077value> .","place >> Place > rdfs:label 
+or
+place*"
+has related timespan of item,http://rdaregistry.info/Elements/i/P40078,not mapped,not mapped
+has related nomen of item,http://rdaregistry.info/Elements/i/P40079,not mapped,not mapped
+has access point for item,http://rdaregistry.info/Elements/i/P40080,"rdfs:label ""P40080value"" .",rdfs:label
+has appellation of item,http://rdaregistry.info/Elements/i/P40081,not mapped,not mapped
+has title of item,http://rdaregistry.info/Elements/i/P40082,"rdfs:label ""P40082value"" ;
+bf:title [ a bf:Title;
+   bf:mainTitle ""P40082value"" ] . ",rdfs:label ; title >> Title > mainTitle
+has authorized access point for item,http://rdaregistry.info/Elements/i/P40083,"skos:prefLabel ""p40083value"" .",skos:prefLabel
+has variant access point for item,http://rdaregistry.info/Elements/i/P40084,"skos:altLabel ""p40084value"" .",skos:altLabel
+has preferred title of item,http://rdaregistry.info/Elements/i/P40085,"rdfs:label ""P40085value"" ;
+bf:title [ a bf:Title;
+   bf:mainTitle ""P40085value"" ] . ",title >> Title > mainTitle
+has variant title of item,http://rdaregistry.info/Elements/i/P40086,"bf:title [ a bf:VariantTitle ;
+   bf:mainTitle ""P40086value"" ] .",title >> VariantTitle > mainTitle
+has digital transfer of item,http://rdaregistry.info/Elements/i/P40087,"bf:hasReproduction <P40087value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40087value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+has electronic reproduction of item,http://rdaregistry.info/Elements/i/P40088,"bf:hasReproduction <P40088value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40088value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+has facsimile of item,http://rdaregistry.info/Elements/i/P40089,"bf:hasReproduction <P40089value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40089value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+has preservation facsimile of item,http://rdaregistry.info/Elements/i/P40090,"bf:hasReproduction <P40090value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40090value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+is reprinted as item,http://rdaregistry.info/Elements/i/P40091,"bf:hasReproduction <P40091value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40091value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+is reproduced as item,http://rdaregistry.info/Elements/i/P40092,"bf:hasReproduction <P40092value> .
+# with literal value
+bf:hasReproduction [ a bf:Item ;
+  rdfs:label ""P40092value"" ] .","hasReproduction*
+or
+hasReproduction >> Item > rdfs:label"
+has modifier agent,http://rdaregistry.info/Elements/i/P40093,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40093value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40093value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""modifier""
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""modifier"" "
+has binding of item,http://rdaregistry.info/Elements/i/P40094,"bf:note [ a bf:Note ;
+  rdfs:label ""P40094value"" ;
+  bf:noteType ""binding"" ] .","note >> Note > rdfs:label > noteType=""binding"""
+has related entity of item,http://rdaregistry.info/Elements/i/P40095,not mapped,not mapped
+has category of item,http://rdaregistry.info/Elements/i/P40096,"bf:genreForm <p40096value> .
+# with literal value
+bf:genreForm [ a bf:GenreForm ;
+   rdfs:label ""p40096value"" ] .","genreForm*
+or
+genreForm >> GenreForm > rdfs:label "
+has dedicatee person of item,http://rdaregistry.info/Elements/i/P40097,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""p40097value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40097value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/dte>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dte>"
+has binder person,http://rdaregistry.info/Elements/i/P40098,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40098value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40098value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/bnd> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/bnd>"
+has curator person,http://rdaregistry.info/Elements/i/P40099,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person;
+      rdfs:label ""p40099value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40099value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cur>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cur>"
+has illuminator person,http://rdaregistry.info/Elements/i/P40100,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40100value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40100value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ilu> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ilu>"
+has current owner person,http://rdaregistry.info/Elements/i/P40101,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40101value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] ;
+bf:custodialHistory ""P40101value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40101value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/own> ; custodialHistory
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/own>"
+has former owner person,http://rdaregistry.info/Elements/i/P40102,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40102value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+bf:custodialHistory ""P40102value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40102value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmo> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmo>"
+has custodian person,http://rdaregistry.info/Elements/i/P40103,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40103value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ] ] ;
+bf:custodialHistory ""P40103value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40103value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ]  ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""custodian"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""custodian"" "
+has owner person,http://rdaregistry.info/Elements/i/P40104,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40104value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ] ] ;
+bf:custodialHistory ""P40104value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40104value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ]  ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""owner"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""owner"" "
+has collector person,http://rdaregistry.info/Elements/i/P40105,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""p40105value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40105value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/col>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/col>"
+has collection registrar person,http://rdaregistry.info/Elements/i/P40106,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""p40106value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40106value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cor>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cor>"
+has depositor person,http://rdaregistry.info/Elements/i/P40107,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40107value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40107value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dpt> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dpt>"
+has donor person,http://rdaregistry.info/Elements/i/P40108,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40108value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40108value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dnr> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dnr>"
+has seller person,http://rdaregistry.info/Elements/i/P40109,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40109value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40109value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/sll> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/sll>"
+has honouree person of item,http://rdaregistry.info/Elements/i/P40110,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""p40110value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40110value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/hnr>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/hnr>"
+has restorationist person of item,http://rdaregistry.info/Elements/i/P40111,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""p40111value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40111value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsr> > agent >> Person > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsr>"
+has modifier person,http://rdaregistry.info/Elements/i/P40112,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Person ;
+      rdfs:label ""P40112value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40112value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ]  ] .","contribution >> Contribution > agent >> Person > rdfs:label ; > role >> Role > rdfs:label=""modifier""
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""modifier"" "
+has dedicatee collective agent of item,http://rdaregistry.info/Elements/i/P40113,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40113value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40113value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/dte>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dte>"
+has binder collective agent,http://rdaregistry.info/Elements/i/P40114,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40114value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40114value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/bnd> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/bnd>"
+has curator collective agent,http://rdaregistry.info/Elements/i/P40115,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40115value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40115value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cur>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cur>"
+has illuminator collective agent,http://rdaregistry.info/Elements/i/P40116,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40116value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40116value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ilu> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ilu>"
+has current owner collective agent,http://rdaregistry.info/Elements/i/P40117,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40117value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] ;
+bf:custodialHistory ""P40017value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40117value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/own> ; custodialHistory
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/own>"
+has former owner collective agent,http://rdaregistry.info/Elements/i/P40118,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40118value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+bf:custodialHistory ""P40118value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40118value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmo> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmo>"
+has custodian collective agent,http://rdaregistry.info/Elements/i/P40119,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40119value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ] ] ;
+bf:custodialHistory ""P40119value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40119value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""custodian"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""custodian"" "
+has owner collective agent,http://rdaregistry.info/Elements/i/P40120,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40120value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ] ] ;
+bf:custodialHistory ""P40120value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40120value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""owner"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""owner"" "
+has collector collective agent,http://rdaregistry.info/Elements/i/P40121,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40121value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40121value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/col>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/col>"
+has collection registrar collective agent,http://rdaregistry.info/Elements/i/P40122,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40122value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40122value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cor>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cor>"
+has depositor collective agent,http://rdaregistry.info/Elements/i/P40123,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40123value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40123value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dpt> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dpt>"
+has donor collective agent,http://rdaregistry.info/Elements/i/P40124,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40124value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40124value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dnr> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dnr>"
+has seller collective agent,http://rdaregistry.info/Elements/i/P40125,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40125value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40125value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/sll> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/sll>"
+has honouree collective agent of item,http://rdaregistry.info/Elements/i/P40126,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40126value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40126value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/hnr>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/hnr>"
+has restorationist collective agent of item,http://rdaregistry.info/Elements/i/P40127,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""p40127value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40127value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsr> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsr>"
+has modifier collective agent,http://rdaregistry.info/Elements/i/P40128,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Agent ;
+      rdfs:label ""P40128value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40128value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ]  ] .","contribution >> Contribution > agent >> Agent > rdfs:label ; > role >> Role > rdfs:label=""modifier""
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""modifier"" "
+has dedicatee corporate body of item,http://rdaregistry.info/Elements/i/P40129,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40129value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40129value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/dte>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dte>"
+has binder corporate body,http://rdaregistry.info/Elements/i/P40130,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40130value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40130value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/bnd> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/bnd>"
+has curator corporate body,http://rdaregistry.info/Elements/i/P40131,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40131value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40131value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cur>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cur>"
+has illuminator corporate body,http://rdaregistry.info/Elements/i/P40132,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40132value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40132value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ilu> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ilu>"
+has current owner corporate body,http://rdaregistry.info/Elements/i/P40133,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40133value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] ;
+bf:custodialHistory ""P40017value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40133value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/own> ; custodialHistory
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/own>"
+has former owner corporate body,http://rdaregistry.info/Elements/i/P40134,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40134value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+bf:custodialHistory ""P40134value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40134value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmo> > agent >> Agent > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmo>"
+has custodian corporate body,http://rdaregistry.info/Elements/i/P40135,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40135value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ] ] ;
+bf:custodialHistory ""P40135value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40135value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ]  ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""custodian"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""custodian"" "
+has owner corporate body,http://rdaregistry.info/Elements/i/P40136,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40136value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ] ] ;
+bf:custodialHistory ""P40136value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40136value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ]  ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""owner"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""owner"" "
+has collector corporate body,http://rdaregistry.info/Elements/i/P40137,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40137value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40137value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/col>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/col>"
+has collection registrar corporate body,http://rdaregistry.info/Elements/i/P40138,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40138value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40138value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cor>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cor>"
+has depositor corporate body,http://rdaregistry.info/Elements/i/P40139,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40139value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40139value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dpt> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dpt>"
+has donor corporate body,http://rdaregistry.info/Elements/i/P40140,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40140value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40140value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dnr> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dnr>"
+has seller corporate body,http://rdaregistry.info/Elements/i/P40141,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40141value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40141value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/sll> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/sll>"
+has honouree corporate body of item,http://rdaregistry.info/Elements/i/P40142,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40142value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40142value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/hnr>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/hnr>"
+has restorationist corporate body of item,http://rdaregistry.info/Elements/i/P40143,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""p40143value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40143value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsr> > agent >> Organization > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsr>"
+has modifier corporate body,http://rdaregistry.info/Elements/i/P40144,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Organization ;
+      rdfs:label ""P40144value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40144value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ]  ] .","contribution >> Contribution > agent >> Organization > rdfs:label ; > role >> Role > rdfs:label=""modifier""
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""modifier"" "
+has dedicatee family of item,http://rdaregistry.info/Elements/i/P40145,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40145value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40145value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dte> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/dte>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dte>"
+has binder family,http://rdaregistry.info/Elements/i/P40146,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40146value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40146value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/bnd> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/bnd> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/bnd>"
+has curator family,http://rdaregistry.info/Elements/i/P40147,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40147value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40147value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cur> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cur>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cur>"
+has illuminator family,http://rdaregistry.info/Elements/i/P40148,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40148value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40148value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/ilu> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/ilu> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/ilu>"
+has current owner family,http://rdaregistry.info/Elements/i/P40149,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40149value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] ;
+bf:custodialHistory ""P40017value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40149value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/own> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/own> ; custodialHistory
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/own>"
+has former owner family,http://rdaregistry.info/Elements/i/P40150,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40150value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] ;
+bf:custodialHistory ""P40150value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40150value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/fmo> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/fmo> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/fmo>"
+has custodian family,http://rdaregistry.info/Elements/i/P40151,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40151value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ] ] ;
+bf:custodialHistory ""P40151value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40151value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""custodian"" ]  ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""custodian"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""custodian"" "
+has owner family,http://rdaregistry.info/Elements/i/P40152,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40152value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ] ] ;
+bf:custodialHistory ""P40152value"" .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40152value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""owner"" ]  ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""owner"" ; custodialHistory
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""owner"" "
+has collector family,http://rdaregistry.info/Elements/i/P40153,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40153value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40153value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/col> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/col>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/col>"
+has collection registrar family,http://rdaregistry.info/Elements/i/P40154,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40154value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40154value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/cor> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/cor>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/cor>"
+has depositor family,http://rdaregistry.info/Elements/i/P40155,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40155value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40155value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dpt> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dpt> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dpt>"
+has donor family,http://rdaregistry.info/Elements/i/P40156,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40156value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40156value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/dnr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/dnr> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/dnr>"
+has seller family,http://rdaregistry.info/Elements/i/P40157,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40157value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <P40157value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/sll> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/sll> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/sll>"
+has honouree family of item,http://rdaregistry.info/Elements/i/P40158,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40158value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40158value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/hnr> ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/hnr>
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/hnr>"
+has restorationist family of item,http://rdaregistry.info/Elements/i/P40159,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""p40159value"" ] ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40159value> ;
+   bf:role <http://id.loc.gov/vocabulary/relators/rsr> ] .","contribution >> Contribution > role=<http://id.loc.gov/vocabulary/relators/rsr> > agent >> Family > rdfs:label
+or
+contribution >> Contribution > agent* > role=<http://id.loc.gov/vocabulary/relators/rsr>"
+has modifier family,http://rdaregistry.info/Elements/i/P40160,"bf:contribution [ a bf:Contribution ;
+   bf:agent [ a bf:Family ;
+      rdfs:label ""P40160value"" ] ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ] ] .
+# with IRI value
+bf:contribution [ a bf:Contribution ;
+   bf:agent <p40160value> ;
+   bf:role [ a bf:Role ;
+      rdfs:label ""modifier"" ]  ] .","contribution >> Contribution > agent >> Family > rdfs:label ; > role >> Role > rdfs:label=""modifier""
+or
+contribution >> Contribution > agent* > role >> Role > rdfs:label=""modifier"" "
