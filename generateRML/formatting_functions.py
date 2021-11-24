@@ -237,9 +237,19 @@ def set_map_name(entity, prop_num, map_list, mapping, node_list):
 	return new_map_name
 
 def edit_kiegel(kiegel):
+	# get rid of extraneous spaces within the mapping
+	kiegel_list = kiegel.split("\n")
+	new_kiegel_list = []
+	for line in kiegel_list:
+		line = line.strip()
+		new_kiegel_list.append(line)
+	new_kiegel = "\n".join(new_kiegel_list)
+	kiegel = new_kiegel
+
 	new_kiegel_dict = {}
 
 	mapping_list = kiegel.split("\nor\n")
+
 	IRI_list = []
 	literal_list = []
 	for mapping in mapping_list:
