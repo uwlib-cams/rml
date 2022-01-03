@@ -4,18 +4,17 @@ import os
 from rdflib import *
 
 """Imported Functions"""
-from admin_metadata_functions import admin_metadata_mapping
-from boolean_functions import class_test
-from formatting_functions import edit_kiegel
-from formatting_functions import set_map_name
-from formatting_functions import split_by_space
-from logical_source_functions import generate_main_logical_source
-from value_functions import generate_RML_for_bnode
-from value_functions import generate_RML_for_constant
-from value_functions import generate_RML_for_IRI
-from value_functions import generate_RML_for_literal
-from start_RML_map import start_RML_map
-from subject_map_functions import generate_main_subject_map
+from functions.admin_metadata_functions import admin_metadata_mapping
+from functions.boolean_functions import class_test
+from functions.formatting_functions import edit_kiegel
+from functions.split_by_space import split_by_space
+from functions.logical_source_functions import generate_main_logical_source
+from functions.value_functions import generate_RML_for_bnode
+from functions.value_functions import generate_RML_for_constant
+from functions.value_functions import generate_RML_for_IRI
+from functions.value_functions import generate_RML_for_literal
+from functions.start_RML_map import start_RML_map
+from functions.subject_map_functions import generate_main_subject_map
 
 """Functions"""
 def get_file_list(csv_dir, entity):
@@ -33,16 +32,16 @@ def get_property_kiegel_list(csv_dir, entity):
 
 	if entity == "work":
 		rda_iri = 'http://rdaregistry.info/Elements/w/'
-		from lists import skip_work_props as skip_prop_list
+		from functions.lists import skip_work_props as skip_prop_list
 	elif entity == "expression":
 		rda_iri = 'http://rdaregistry.info/Elements/e/'
-		from lists import skip_expression_props as skip_prop_list
+		from functions.lists import skip_expression_props as skip_prop_list
 	elif entity == "manifestation":
 		rda_iri = 'http://rdaregistry.info/Elements/m/'
-		from lists import skip_manifestation_props as skip_prop_list
+		from functions.lists import skip_manifestation_props as skip_prop_list
 	elif entity == "item":
 		rda_iri = 'http://rdaregistry.info/Elements/i/'
-		from lists import skip_item_props as skip_prop_list
+		from functions.lists import skip_item_props as skip_prop_list
 	else:
 		print("Entity not recognized.")
 		quit()
@@ -110,16 +109,16 @@ def kiegel_reader(csv_dir, entity):
 	RML_graph = generate_main_subject_map(RML_graph, entity)
 	RML_graph = admin_metadata_mapping(RML_graph, entity)
 	if entity == "work":
-		from identifiedBy_functions import P10002_mapping
+		from functions.identifiedBy_functions import P10002_mapping
 		RML_graph = P10002_mapping(RML_graph)
 	elif entity == "expression":
-		from identifiedBy_functions import P20002_mapping
+		from functions.identifiedBy_functions import P20002_mapping
 		RML_graph = P20002_mapping(RML_graph)
 	elif entity == "manifestation":
-		from identifiedBy_functions import P30004_mapping
+		from functions.identifiedBy_functions import P30004_mapping
 		RML_graph = P30004_mapping(RML_graph)
 	elif entity == "item":
-		from identifiedBy_functions import P40001_mapping
+		from functions.identifiedBy_functions import P40001_mapping
 		RML_graph = P40001_mapping(RML_graph)
 	else:
 		print("Entity not recognized.")
@@ -179,91 +178,3 @@ def kiegel_reader(csv_dir, entity):
 							if its_a_class == False:
 								RML_graph = generate_RML_for_literal(RML_graph, default_map_name, map_name, prop_num, node)
 	return RML_graph
-
-def kiegel_reader_tester(csv_dir, entity, prop):
-	from start_RML_map import start_RML_map
-	RML_graph = start_RML_map()
-
-	from logical_source_functions import generate_main_logical_source
-	RML_graph = generate_main_logical_source(RML_graph, entity)
-
-	from subject_map_functions import generate_main_subject_map
-	RML_graph = generate_main_subject_map(RML_graph, entity)
-
-	"""For each property in kiegel_dict, convert kiegel map to RML code"""
-	kiegel_dict = create_kiegel_dict(csv_dir, entity)
-
-	bnode_po_dict = {}
-	logsource_subject_list = []
-
-	default_map_name = entity.capitalize()
-
-	for prop_num in kiegel_dict.keys():
-		if prop in prop_num:
-			prop_dict = kiegel_dict[prop_num]
-			print("prop_dict:")
-			for value_type in prop_dict.keys():
-				print(value_type)
-				for mapping in prop_dict[value_type]:
-					print(f" - {mapping}")
-			print("\n")
-
-			for value_type in prop_dict.keys(): # value_type == "IRI" or value_type == "literal"
-				map_list = prop_dict[value_type]
-				for mapping in map_list:
-					map_name = default_map_name
-					print(mapping)
-					#print(f"\tmap name: {map_name}")
-					node_list = split_by_space(mapping)
-					node_range = range(0, len(node_list))
-
-					for num in node_range:
-						node = node_list[num].strip()
-						if node == ">":
-							pass
-						elif node == "not":
-							pass
-						elif node == "mapped":
-							pass
-
-						elif "*" in node:
-							"""Property takes an IRI value"""
-							print(f"\t{node}: takes an IRI value")
-							RML_graph = generate_RML_for_IRI(RML_graph, default_map_name, map_name, node, prop_num, True)
-
-
-						elif "=" in node:
-							"""Property takes a constant value"""
-							print(f"\t{node}: takes a constant value")
-							RML_graph = generate_RML_for_constant(RML_graph, map_name, node)
-
-						elif node == ">>":
-							"""Previous property in kiegel mapping takes a blank node as an object"""
-							generate_RML_for_bnode_tuple = generate_RML_for_bnode(RML_graph, bnode_po_dict, logsource_subject_list, entity, prop_num, value_type, mapping, node_list, num, map_name, True)
-
-							print(f"\t{node}: opens a blank node")
-							RML_graph = generate_RML_for_bnode_tuple[0]
-							bnode_po_dict = generate_RML_for_bnode_tuple[1]
-							logsource_subject_list = generate_RML_for_bnode_tuple[2]
-							if map_name == default_map_name:
-								constant_map_name = generate_RML_for_bnode_tuple[3] # only update for the first bnode in a mapping
-							map_name = generate_RML_for_bnode_tuple[3]
-
-						else:
-							"""Property takes a literal or a blank node"""
-							if num != len(node_list)-1 and node_list[num+1] == ">>":
-								"""This property takes a blank node; pass, and get it in the previous elif on the next loop"""
-								print(f"\t{node}: takes a blank node")
-								pass
-							else:
-								"""Make sure it's a property, and not a class for a blank node. Otherwise, it takes a literal"""
-								its_a_class = class_test(node)
-								if its_a_class == False:
-									print(f"\t{node}: takes a literal value")
-									RML_graph = generate_RML_for_literal(RML_graph, default_map_name, map_name, prop_num, node, True)
-	return RML_graph
-
-#test_prop = ""
-#entity = ""
-#graph = kiegel_reader_tester("csv_dir", entity, test_prop)
-#graph.serialize(destination=f"rmlOutput/{test_prop}RML.ttl", format="turtle")

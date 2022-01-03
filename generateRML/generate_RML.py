@@ -1,13 +1,14 @@
+"""Python Libraries/Modules/Packages"""
 import os
 from sys import argv
 
 script, csv_dir = argv
 
 """Lists"""
-from lists import entities
+from functions.lists import entities
 
 """Imported Functions"""
-from kiegel_functions import kiegel_reader
+from functions.kiegel_functions import kiegel_reader
 
 ###
 

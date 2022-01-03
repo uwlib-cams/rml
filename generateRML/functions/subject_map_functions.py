@@ -2,7 +2,7 @@
 from rdflib import *
 
 """Imported Functions"""
-from formatting_functions import convert_string_to_IRI
+from functions.formatting_functions import convert_string_to_IRI
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')

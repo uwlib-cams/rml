@@ -24,6 +24,7 @@ schema = Namespace('http://schema.org/')
 sin = Namespace('http://sinopia.io/vocabulary/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
+"""Functions"""
 def start_RML_map():
 	RML_graph = Graph()
 	RML_graph.bind('bf', bf)

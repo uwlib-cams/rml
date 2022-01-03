@@ -2,17 +2,17 @@
 from rdflib import *
 
 """Lists"""
-from lists import classificationLcc_props
-from lists import classificationNlm_props
-from lists import dissertationList
-from lists import expression_title_props
-from lists import item_title_props
-from lists import manifestation_title_props
-from lists import provisionActivityDistributionList
-from lists import provisionActivityManufactureList
-from lists import provisionActivityProductionList
-from lists import provisionActivityPublicationList
-from lists import work_title_props
+from functions.lists import classificationLcc_props
+from functions.lists import classificationNlm_props
+from functions.lists import dissertationList
+from functions.lists import expression_title_props
+from functions.lists import item_title_props
+from functions.lists import manifestation_title_props
+from functions.lists import provisionActivityDistributionList
+from functions.lists import provisionActivityManufactureList
+from functions.lists import provisionActivityProductionList
+from functions.lists import provisionActivityPublicationList
+from functions.lists import work_title_props
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
