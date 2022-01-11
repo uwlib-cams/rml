@@ -15,13 +15,13 @@ ex:ExampleMap a rr:TriplesMap;
   rml:logicalSource [
     rml:source "RML_demo_data.xml"; # file path to our data
     rml:referenceFormulation ql:XPath; # what format our source data is in
-    rml:iterator "/RDF/Description" # our parent properties
+    rml:iterator "/rdf:RDF/rdf:Description" # our parent properties
   ];
 
 # Next, we need a subject map
 
   rr:subjectMap [
-    rml:reference "@about"; # "reference" means we're referencing a value that exists in our data
+    rml:reference "@rdf:about"; # "reference" means we're referencing a value that exists in our data
     rr:class bf:Work # optional: add a class
   ];
 
@@ -30,7 +30,7 @@ ex:ExampleMap a rr:TriplesMap;
   rr:predicateObjectMap [
     rr:predicate bf:title; # determine predicate
     rr:objectMap [
-      rml:reference "P10004/@resource"; # again using "reference" to locate an existing value
-      rr:termType rr:IRI # type as a literal, IRI, or blank node
+      rml:reference "rdaw:P10223"; # again using "reference" to locate an existing value
+      rr:termType rr:Literal # type as a literal, IRI, or blank node
     ]
   ].
