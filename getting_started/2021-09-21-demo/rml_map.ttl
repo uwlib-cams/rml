@@ -8,6 +8,7 @@
 @prefix rdaw: <http://rdaregistry.info/Elements/w/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
 
 ex:ExampleMap a rr:TriplesMap ;
 	rml:logicalSource [
@@ -47,7 +48,10 @@ ex:ExampleGenreFormMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label;
 		rr:objectMap [
-			rml:reference "rdaw:P10004[not(@rdf:resource)]";
-			rr:termType rr:Literal
+			rml:reference "rdaw:P10004[not(@rdf:resource)][@xml:lang]";
+			rr:termType rr:Literal;
+			rml:languageMap [
+				rml:reference "rdaw:P10004/@xml:lang"
+			]
 		]
 	].
