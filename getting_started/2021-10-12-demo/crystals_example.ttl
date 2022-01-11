@@ -19,11 +19,11 @@ ex:WorkMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012_CEC.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF/Description[@about='https://api.sinopia.io/resource/0a4ea663-988e-474b-a25e-659b935b65a9']"
+		rml:iterator "rdf:RDF/rdf:Description[@rdf:about='https://api.sinopia.io/resource/0a4ea663-988e-474b-a25e-659b935b65a9']"
 	] ;
 
 	rr:subjectMap [
-		rml:reference "@about";
+		rml:reference "@rdf:about";
 		rr:class bf:Work
 	] ;
 
@@ -39,7 +39,7 @@ ex:ContributionMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012_CEC.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF/Description[P10061]"
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10061]"
 	] ;
 
 	rr:subjectMap [
@@ -59,7 +59,7 @@ ex:AgentMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012_CEC.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF" # iterator has to go up a parent property; if it iterates over each rdf:Description separately, it puts these values in two separate blank nodes, so instead we iterate over each rdf:RDF
+		rml:iterator "rdf:RDF" # iterator has to go up a parent property; if it iterates over each rdf:Description separately, it puts these values in two separate blank nodes, so instead we iterate over each rdf:RDF
 	] ;
 
 	rr:subjectMap [
@@ -70,7 +70,7 @@ ex:AgentMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate rdf:value ;
 		rr:objectMap [
-			rml:reference "Description/P10061/@resource" ; # add rdf:Description here since we took it out of the iterator
+			rml:reference "rdf:Description/rdaw:P10061/@rdf:resource" ; # add rdf:Description here since we took it out of the iterator
 			rr:termType rr:IRI
 		]
 	] ;
@@ -78,7 +78,7 @@ ex:AgentMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label ;
 		rr:objectMap [
-			rml:reference "Description/label" ; # add rdf:Description here since we took it out of the iterator
+			rml:reference "rdf:Description/rdfs:label" ; # add rdf:Description here since we took it out of the iterator
 			rr:termType rr:Literal # optional
 		]
 	] .

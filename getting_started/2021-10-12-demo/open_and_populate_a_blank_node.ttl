@@ -21,11 +21,11 @@ ex:WorkMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF/Description[@about='https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef']"
+		rml:iterator "rdf:RDF/rdf:Description[@rdf:about='https://trellis.sinopia.io/repository/washington/003c0e59-9ab1-4fc2-8522-1a7b78601fef']"
 	] ;
 
 	rr:subjectMap [
-		rml:reference "@about";
+		rml:reference "@rdf:about";
 		rr:class bf:Work
 	] ;
 
@@ -45,7 +45,7 @@ ex:ContributionMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF/Description[P10061]" # writing the XPath like this ensures this blank node will only generate if this property exists
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10061]" # writing the XPath like this ensures this blank node will only generate if this property exists
 	] ;
 
 	rr:subjectMap [
@@ -67,7 +67,7 @@ ex:AgentMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "demodata_20211012.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "RDF/Description[P10061[not(@resource)]]" # adding this [not(@resource)] ensures this blank node only generates if A) the property exists, and B) there is at least one instance where the value is not an IRI
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10061[not(@rdf:resource)]]" # adding this [not(@rdf:resource)] ensures this blank node only generates if A) the property exists, and B) there is at least one instance where the value is not an IRI
 	] ;
 
 	rr:subjectMap [
@@ -78,7 +78,7 @@ ex:AgentMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate rdfs:label ;
 		rr:objectMap [
-			rml:reference "P10061[not(@resource)]" ;
+			rml:reference "rdaw:P10061[not(@rdf:resource)]" ;
 			rr:termType rr:Literal # optional
 		]
 	] ;
