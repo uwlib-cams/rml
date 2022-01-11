@@ -40,7 +40,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	"""Logical source map for admin metadata blank node"""
 	# Set variables
 	admin_metadata_logical_source = BNode()
-	admin_metadata_iterator = Literal("/RDF/Description[catalogerID]")
+	admin_metadata_iterator = Literal("/rdf:RDF/rdf:Description[bflc:catalogerID]")
 
 	# Add triples to graph
 	RML_graph.add((ex.AdminMetadataMap, rdf.type, rr.TriplesMap))
@@ -68,7 +68,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, catalogerID_po_map))
 	RML_graph.add((catalogerID_po_map, rr.predicate, bflc.catalogerId))
 	RML_graph.add((catalogerID_po_map, rr.objectMap, catalogerID_object_map))
-	RML_graph.add((catalogerID_object_map, rml.reference, Literal("catalogerID")))
+	RML_graph.add((catalogerID_object_map, rml.reference, Literal("bflc:catalogerID")))
 	RML_graph.add((catalogerID_object_map, rr.termType, rr.Literal))
 
 	"""Predicate-object map for encoding level"""
@@ -80,7 +80,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, encodingLevel_po_map))
 	RML_graph.add((encodingLevel_po_map, rr.predicate, bflc.encodingLevel))
 	RML_graph.add((encodingLevel_po_map, rr.objectMap, encodingLevel_object_map))
-	RML_graph.add((encodingLevel_object_map, rml.reference, Literal("encodingLevel/@resource")))
+	RML_graph.add((encodingLevel_object_map, rml.reference, Literal("bflc:encodingLevel/@rdf:resource")))
 	RML_graph.add((encodingLevel_object_map, rr.termType, rr.IRI))
 
 	"""Predicate-object map for description conventions"""
@@ -92,7 +92,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, descriptionConventions_po_map))
 	RML_graph.add((descriptionConventions_po_map, rr.predicate, bf.descriptionConventions))
 	RML_graph.add((descriptionConventions_po_map, rr.objectMap, descriptionConventions_object_map))
-	RML_graph.add((descriptionConventions_object_map, rml.reference, Literal("descriptionConventions/@resource")))
+	RML_graph.add((descriptionConventions_object_map, rml.reference, Literal("bf:descriptionConventions/@rdf:resource")))
 	RML_graph.add((descriptionConventions_object_map, rr.termType, rr.IRI))
 
 	"""Predicate-object map for source"""
@@ -104,7 +104,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, source_po_map))
 	RML_graph.add((source_po_map, rr.predicate, bf.source))
 	RML_graph.add((source_po_map, rr.objectMap, source_object_map))
-	RML_graph.add((source_object_map, rml.reference, Literal("source/@resource")))
+	RML_graph.add((source_object_map, rml.reference, Literal("bf:source/@rdf:resource")))
 	RML_graph.add((source_object_map, rr.termType, rr.IRI))
 
 	"""Predicate-object map for description language"""
@@ -116,7 +116,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, descriptionLanguage_po_map))
 	RML_graph.add((descriptionLanguage_po_map, rr.predicate, bf.descriptionLanguage))
 	RML_graph.add((descriptionLanguage_po_map, rr.objectMap, descriptionLanguage_object_map))
-	RML_graph.add((descriptionLanguage_object_map, rml.reference, Literal("descriptionLanguage/@resource")))
+	RML_graph.add((descriptionLanguage_object_map, rml.reference, Literal("bf:descriptionLanguage/@rdf:resource")))
 	RML_graph.add((descriptionLanguage_object_map, rr.termType, rr.IRI))
 
 	"""Predicate-object map for creation date"""
@@ -128,7 +128,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, creationDate_po_map))
 	RML_graph.add((creationDate_po_map, rr.predicate, bf.creationDate))
 	RML_graph.add((creationDate_po_map, rr.objectMap, creationDate_object_map))
-	RML_graph.add((creationDate_object_map, rml.reference, Literal("creationDate")))
+	RML_graph.add((creationDate_object_map, rml.reference, Literal("bf:creationDate")))
 	RML_graph.add((creationDate_object_map, rr.termType, rr.Literal))
 
 	"""Predicate-object map for change date"""
@@ -140,7 +140,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, changeDate_po_map))
 	RML_graph.add((changeDate_po_map, rr.predicate, bf.changeDate))
 	RML_graph.add((changeDate_po_map, rr.objectMap, changeDate_object_map))
-	RML_graph.add((changeDate_object_map, rml.reference, Literal("changeDate")))
+	RML_graph.add((changeDate_object_map, rml.reference, Literal("bf:changeDate")))
 	RML_graph.add((changeDate_object_map, rr.termType, rr.Literal))
 
 	"""Predicate-object map for description authentication"""
@@ -152,7 +152,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.AdminMetadataMap, rr.predicateObjectMap, descriptionAuthentication_po_map))
 	RML_graph.add((descriptionAuthentication_po_map, rr.predicate, bf.descriptionAuthentication))
 	RML_graph.add((descriptionAuthentication_po_map, rr.objectMap, descriptionAuthentication_object_map))
-	RML_graph.add((descriptionAuthentication_object_map, rml.reference, Literal("descriptionAuthentication/@resource")))
+	RML_graph.add((descriptionAuthentication_object_map, rml.reference, Literal("bf:descriptionAuthentication/@rdf:resource")))
 	RML_graph.add((descriptionAuthentication_object_map, rr.termType, rr.IRI))
 
 	"""Predicate-object map to open status blank node"""
@@ -169,7 +169,7 @@ def admin_metadata_mapping(RML_graph, entity):
 	"""Logical source map for status blank node"""
 	# Set variables
 	status_logical_source = BNode()
-	status_iterator = Literal("/RDF/Description[code]")
+	status_iterator = Literal("/rdf:RDF/rdf:Description[bf:code]")
 
 	# Add triples to graph
 	RML_graph.add((ex.StatusMap, rdf.type, rr.TriplesMap))
@@ -197,6 +197,6 @@ def admin_metadata_mapping(RML_graph, entity):
 	RML_graph.add((ex.StatusMap, rr.predicateObjectMap, code_po_map))
 	RML_graph.add((code_po_map, rr.predicate, bf.code))
 	RML_graph.add((code_po_map, rr.objectMap, code_object_map))
-	RML_graph.add((code_object_map, rml.reference, Literal("code")))
+	RML_graph.add((code_object_map, rml.reference, Literal("bf:code")))
 
 	return RML_graph
