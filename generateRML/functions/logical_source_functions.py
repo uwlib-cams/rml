@@ -42,19 +42,19 @@ def generate_main_logical_source(RML_graph, entity):
 	if entity.lower() == "work":
 		default_map = ex.WorkMap
 		default_path = Literal("!!work_filepath!!.xml")
-		default_iterator = Literal("/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10001']")
+		default_iterator = Literal("/rdf:RDF/rdf:Description[rdf:type/@rdf:resource='http://rdaregistry.info/Elements/c/C10001']")
 	elif entity.lower() == "expression":
 		default_map = ex.ExpressionMap
 		default_path = Literal("!!expression_filepath!!.xml")
-		default_iterator = Literal("/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10006']")
+		default_iterator = Literal("/rdf:RDF/rdf:Description[rdf:type/@rdf:resource='http://rdaregistry.info/Elements/c/C10006']")
 	elif entity.lower() == "manifestation":
 		default_map = ex.ManifestationMap
 		default_path = Literal("!!manifestation_filepath!!.xml")
-		default_iterator = Literal("/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10007']")
+		default_iterator = Literal("/rdf:RDF/rdf:Description[rdf:type/@rdf:resource='http://rdaregistry.info/Elements/c/C10007']")
 	elif entity.lower() == "item":
 		default_map = ex.ItemMap
 		default_path = Literal("!!item_filepath!!.xml")
-		default_iterator = Literal("/RDF/Description[type/@resource='http://rdaregistry.info/Elements/c/C10003']")
+		default_iterator = Literal("/rdf:RDF/rdf:Description[rdf:type/@rdf:resource='http://rdaregistry.info/Elements/c/C10003']")
 
 	main_logical_source = BNode()
 
@@ -78,7 +78,7 @@ def generate_IRI_logical_source(RML_graph, entity, map_name, property_number):
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	IRI_logical_source = BNode()
-	IRI_iterator = Literal(f"/RDF/Description/{property_number}/@resource")
+	IRI_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}/@rdf:resource")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, IRI_logical_source))
@@ -100,7 +100,7 @@ def generate_neutral_literal_logical_source(RML_graph, entity, map_name, propert
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	neutral_literal_logical_source = BNode()
-	neutral_literal_iterator = Literal(f"/RDF/Description/{property_number}[not(@resource)]")
+	neutral_literal_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource)]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, neutral_literal_logical_source))
@@ -122,7 +122,7 @@ def generate_lang_logical_source(RML_graph, entity, map_name, property_number):
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	lang_logical_source = BNode()
-	lang_iterator = Literal(f"/RDF/Description/{property_number}[not(@resource)][@lang]")
+	lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource)][@lang]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, lang_logical_source))
@@ -146,13 +146,13 @@ def generate_constant_logical_source(RML_graph, entity, map_name, property_numbe
 	constant_logical_source = BNode()
 	if "Literal" in map_name:
 		if "Not_" in map_name and "Lang_" in map_name:
-			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource) and not(@lang)]]")
+			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@lang)]]")
 		elif "Lang_" in map_name:
-			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource)][@lang]]")
+			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@lang]]")
 		else:
-			constant_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource)]]")
+			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)]]")
 	elif "IRI" in map_name:
-		constant_iterator = Literal(f"/RDF/Description[{property_number}[@resource]]")
+		constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[@rdf:resource]]")
 
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
@@ -175,7 +175,7 @@ def generate_not_lang_logical_source(RML_graph, entity, map_name, property_numbe
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	not_lang_logical_source = BNode()
-	not_lang_iterator = Literal(f"/RDF/Description/{property_number}[not(@resource) and not(@lang)]")
+	not_lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource) and not(@lang)]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, not_lang_logical_source))
@@ -197,7 +197,7 @@ def generate_provact_logical_source(RML_graph, class_name, map_name):
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	provact_logical_source = BNode()
-	provact_iterator = Literal(f"/RDF/Description[{property_numbers}]")
+	provact_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}]")
 	manifestation_path = Literal("!!manifestation_filepath!!.xml")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
@@ -224,7 +224,7 @@ def generate_title_logical_source(RML_graph, entity, map_name):
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	title_logical_source = BNode()
-	title_iterator = Literal(f"/RDF/Description[{property_numbers}]")
+	title_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, title_logical_source))
@@ -247,7 +247,7 @@ def generate_classification_logical_source(RML_graph, entity, map_name):
 
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	classification_logical_source = BNode()
-	classification_iterator = Literal(f"/RDF/Description[{property_numbers}]")
+	classification_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, classification_logical_source))
@@ -270,9 +270,9 @@ def generate_lang_nosplit_logical_source(RML_graph, entity, map_name, property_n
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	lang_nosplit_logical_source = BNode()
 	if "IRI" in map_name:
-		lang_nosplit_iterator = Literal(f"/RDF/Description[{property_number}[@resource]]")
+		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[@rdf:resource]]")
 	else:
-		lang_nosplit_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource)][@lang]]")
+		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@lang]]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, lang_nosplit_logical_source))
@@ -295,9 +295,9 @@ def generate_not_lang_nosplit_logical_source(RML_graph, entity, map_name, proper
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	not_lang_nosplit_logical_source = BNode()
 	if "IRI" in map_name:
-		not_lang_nosplit_iterator = Literal(f"/RDF/Description[{property_numbers}[@resource]]")
+		not_lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}[@rdf:resource]]")
 	else:
-		not_lang_nosplit_iterator = Literal(f"/RDF/Description[{property_number}[not(@resource) and not(@lang)]]")
+		not_lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@lang)]]")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
 	RML_graph.add((map_name, rml.logicalSource, not_lang_nosplit_logical_source))
@@ -311,7 +311,7 @@ def generate_dissertation_logical_source(RML_graph, map_name):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	dissertation_logical_source = BNode()
 	property_numbers = " or ".join(dissertationList)
-	dissertation_iterator = Literal(f"/RDF/Description[{property_numbers}]")
+	dissertation_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}]")
 	work_path = Literal("!!work_filepath!!.xml")
 
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))

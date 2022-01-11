@@ -1,5 +1,7 @@
 entities = ["work", "expression", "manifestation", "item"]
 
+entity_prefixes = {"P1": "rdaw", "P2": "rdae", "P3": "rdam", "P4": "rdai"}
+
 nosplit_bnode_list = [
 	"Provisionactivity_Publication_",
 	"Provisionactivity_Production_",

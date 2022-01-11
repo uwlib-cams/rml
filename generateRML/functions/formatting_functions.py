@@ -77,7 +77,8 @@ def generate_constant(string):
 def create_bnode_name(predicate_name, class_name, property_number, value_type, kiegel_map, node_list):
 	"""Create descriptive name for RML triples map for a blank node"""
 	# default bnode map name
-	map_number = property_number.strip('P')
+	map_number = property_number.split(":")[-1]
+	map_number = map_number.strip('P')
 	bnode_map_name = predicate_name.capitalize() + "_" + str(map_number) + "_"
 
 	# for "no-split" blank nodes, replace with pre-established name

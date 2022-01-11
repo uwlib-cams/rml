@@ -47,8 +47,8 @@ def generate_langnotlang_literal_po_map(RML_graph, map_name, predicate, property
 	po_map_lang = BNode()
 	object_map_lang = BNode()
 	language_map = BNode()
-	property_number_lang = Literal(f'{property_number}[not(@resource)][@lang]')
-	language_map_reference = Literal(f'{property_number}/@lang')
+	property_number_lang = Literal(f'{property_number}[not(@rdf:resource)][@xml:lang]')
+	language_map_reference = Literal(f'{property_number}/@xml:lang')
 
 	RML_graph.add((map_name, rr.predicateObjectMap, po_map_lang))
 	RML_graph.add((po_map_lang, rr.predicate, predicate))
@@ -61,7 +61,7 @@ def generate_langnotlang_literal_po_map(RML_graph, map_name, predicate, property
 	# not lang
 	po_map_not_lang = BNode()
 	object_map_not_lang = BNode()
-	property_number_not_lang = Literal(f'{property_number}[not(@resource) and not(@lang)]')
+	property_number_not_lang = Literal(f'{property_number}[not(@rdf:resource) and not(@xml:lang)]')
 
 	RML_graph.add((map_name, rr.predicateObjectMap, po_map_not_lang))
 	RML_graph.add((po_map_not_lang, rr.predicate, predicate))
@@ -74,7 +74,7 @@ def generate_langnotlang_literal_po_map(RML_graph, map_name, predicate, property
 def generate_neutral_literal_po_map(RML_graph, map_name, predicate, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	predicate = convert_string_to_IRI(predicate)
-	property_number = Literal(f'{property_number}[not(@resource)]')
+	property_number = Literal(f'{property_number}[not(@rdf:resource)]')
 
 	po_map = BNode()
 	object_map = BNode()
@@ -95,7 +95,7 @@ def generate_IRI_po_map(RML_graph, map_name, predicate, property_number):
 	else:
 		predicate = predicate.strip('*')
 		predicate = convert_string_to_IRI(predicate)
-	property_number = Literal(f'{property_number}/@resource')
+	property_number = Literal(f'{property_number}/@rdf:resource')
 
 	po_map = BNode()
 	object_map = BNode()
@@ -121,7 +121,7 @@ def generate_lang_literal_split_po_map(RML_graph, map_name, predicate, RDA_prop)
 		language_map = BNode()
 
 		reference_value = Literal('.')
-		lang_map_value = Literal('@lang')
+		lang_map_value = Literal('@xml:lang')
 
 		RML_graph.add((map_name, rr.predicateObjectMap, po_map))
 		RML_graph.add((po_map, rr.predicate, predicate))
@@ -192,12 +192,12 @@ def generate_IRI_split_po_map(RML_graph, map_name, predicate):
 def generate_lang_literal_nosplit_po_map(RML_graph, map_name, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	predicate = convert_string_to_IRI(predicate)
-	property_number = Literal(f'{property_number}[not(@resource)][@lang]')
+	property_number = Literal(f'{property_number}[not(@rdf:resource)][@xml:lang]')
 
 	po_map = BNode()
 	object_map = BNode()
 	language_map = BNode()
-	language_map_reference = Literal(f'{property_number}/@lang')
+	language_map_reference = Literal(f'{property_number}/@xml:lang')
 
 	RML_graph.add((map_name, rr.predicateObjectMap, po_map))
 	RML_graph.add((po_map, rr.predicate, predicate))
@@ -212,7 +212,7 @@ def generate_lang_literal_nosplit_po_map(RML_graph, map_name, property_number):
 def generate_not_lang_literal_nosplit_po_map(RML_graph, map_name, property_number):
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	predicate = convert_string_to_IRI(predicate)
-	property_number = Literal(f'{property_number}[not(@resource) and not(@lang)]')
+	property_number = Literal(f'{property_number}[not(@rdf:resource) and not(@xml:lang)]')
 
 	po_map = BNode()
 	object_map = BNode()
@@ -249,7 +249,7 @@ def generate_IRI_nosplit_po_map(RML_graph, map_name, predicate, property_number)
 	else:
 		predicate = predicate.strip('*')
 		predicate = convert_string_to_IRI(predicate)
-	property_number = Literal(f'{property_number}/@resource')
+	property_number = Literal(f'{property_number}/@rdf:resource')
 
 	po_map = BNode()
 	object_map = BNode()

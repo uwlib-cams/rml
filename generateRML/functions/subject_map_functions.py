@@ -46,7 +46,7 @@ def generate_main_subject_map(RML_graph, entity):
 	class_property = URIRef('http://www.w3.org/ns/r2rml#class') # throws an error when you just enter rr.class
 
 	RML_graph.add((default_map, rr.subjectMap, main_subject_map))
-	RML_graph.add((main_subject_map, rml.reference, Literal("@about")))
+	RML_graph.add((main_subject_map, rml.reference, Literal("@rdf:about")))
 	RML_graph.add((main_subject_map, class_property, class_name))
 
 	return RML_graph

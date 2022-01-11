@@ -3,6 +3,9 @@ import csv
 import os
 from rdflib import *
 
+"""Lists"""
+from functions.lists import entity_prefixes
+
 """Imported Functions"""
 from functions.admin_metadata_functions import admin_metadata_mapping
 from functions.boolean_functions import class_test
@@ -134,6 +137,12 @@ def kiegel_reader(csv_dir, entity):
 
 	for prop_num in kiegel_dict.keys():
 		prop_dict = kiegel_dict[prop_num]
+		# determine prefix for this property
+		first_two_characters = prop_num[0:2]
+		if first_two_characters in entity_prefixes.keys():
+			prefix = entity_prefixes[first_two_characters]
+		else:
+			prefix = "rdax"
 		for value_type in prop_dict.keys(): # value_type == "IRI" or value_type == "literal"
 			map_list = prop_dict[value_type]
 			for mapping in map_list:
@@ -152,7 +161,7 @@ def kiegel_reader(csv_dir, entity):
 
 					elif "*" in node:
 						"""Property takes an IRI value"""
-						RML_graph = generate_RML_for_IRI(RML_graph, default_map_name, map_name, node, prop_num)
+						RML_graph = generate_RML_for_IRI(RML_graph, default_map_name, map_name, node, f"{prefix}:{prop_num}")
 
 					elif "=" in node:
 						"""Property takes a constant value"""
@@ -160,7 +169,7 @@ def kiegel_reader(csv_dir, entity):
 
 					elif node == ">>":
 						"""Previous property in kiegel mapping takes a blank node as an object"""
-						generate_RML_for_bnode_tuple = generate_RML_for_bnode(RML_graph, bnode_po_dict, logsource_subject_list, entity, prop_num, value_type, mapping, node_list, num, map_name)
+						generate_RML_for_bnode_tuple = generate_RML_for_bnode(RML_graph, bnode_po_dict, logsource_subject_list, entity, f"{prefix}:{prop_num}", value_type, mapping, node_list, num, map_name)
 
 						RML_graph = generate_RML_for_bnode_tuple[0]
 						bnode_po_dict = generate_RML_for_bnode_tuple[1]
@@ -176,5 +185,5 @@ def kiegel_reader(csv_dir, entity):
 							"""Make sure it's a property, and not a class for a blank node. Otherwise, it takes a literal"""
 							its_a_class = class_test(node)
 							if its_a_class == False:
-								RML_graph = generate_RML_for_literal(RML_graph, default_map_name, map_name, prop_num, node)
+								RML_graph = generate_RML_for_literal(RML_graph, default_map_name, map_name, f"{prefix}:{prop_num}", node)
 	return RML_graph
