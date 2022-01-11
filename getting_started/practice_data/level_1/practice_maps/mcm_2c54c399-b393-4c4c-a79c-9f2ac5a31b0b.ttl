@@ -8,6 +8,7 @@
 @prefix rdam: <http://rdaregistry.info/Elements/m/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
 
 ex:ManifestationMap a rr:TriplesMap ;
 	rml:logicalSource [
@@ -26,7 +27,18 @@ ex:ManifestationMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate bf:provisionActivityStatement ;
 		rr:objectMap [
-			rml:reference "rdam:P30111" ;
+			rml:reference "rdam:P30111[@xml:lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30111/@xml:lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:provisionActivityStatement ;
+		rr:objectMap [
+			rml:reference "rdam:P30111[not(@xml:lang)]" ;
 			rr:termType rr:Literal
 		]
 	] ;
@@ -46,7 +58,18 @@ ex:ManifestationMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate bf:seriesStatement ;
 		rr:objectMap [
-			rml:reference "rdam:P30106" ;
+			rml:reference "rdam:P30106[@xml:lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30106/@xml:lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "rdam:P30106[not(@xml:lang)]" ;
 			rr:termType rr:Literal
 		]
 	] ;
@@ -56,7 +79,18 @@ ex:ManifestationMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate bf:editionStatement ;
 		rr:objectMap [
-			rml:reference "rdam:P30133" ;
+			rml:reference "rdam:P30133[@xml:lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30133/@xml:lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:editionStatement ;
+		rr:objectMap [
+			rml:reference "rdam:P30133[not(@xml:lang)]" ;
 			rr:termType rr:Literal
 		]
 	] ;
@@ -66,7 +100,18 @@ ex:ManifestationMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate bf:responsibilityStatement ;
 		rr:objectMap [
-			rml:reference "rdam:P30105" ;
+			rml:reference "rdam:P30105[@xml:lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30105/@xml:lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:responsibilityStatement ;
+		rr:objectMap [
+			rml:reference "rdam:P30105[not(@xml:lang)]" ;
 			rr:termType rr:Literal
 		]
 	] ;
@@ -76,7 +121,18 @@ ex:ManifestationMap a rr:TriplesMap ;
 	rr:predicateObjectMap [
 		rr:predicate bf:seriesStatement ;
 		rr:objectMap [
-			rml:reference "rdam:P30157" ;
+			rml:reference "rdam:P30157[@xml:lang]" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30157/@xml:lang"
+			]
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:seriesStatement ;
+		rr:objectMap [
+			rml:reference "rdam:P30157[not(@xml:lang)]" ;
 			rr:termType rr:Literal
 		]
 	] ;
