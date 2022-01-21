@@ -1,0 +1,51 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ex: <http://example.org/rules/>.
+@prefix rdaw: <http://rdaregistry.info/Elements/w/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+
+ex:WorkMap a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "multiple_lang_tags.xml";
+		rml:referenceFormulation ql:XPath;
+		rml:iterator "/rdf:RDF/rdf:Description"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@rdf:about";
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:title;
+		rr:objectMap [
+			rr:parentTriplesMap ex:TitleMap;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+ex:TitleMap a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "multiple_lang_tags.xml";
+		rml:referenceFormulation ql:XPath;
+		rml:iterator "/rdf:RDF/rdf:Description/rdaw:P10223"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Title
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label;
+		rr:objectMap [
+			rml:reference ".";
+			rr:termType rr:Literal;
+			rml:languageMap [
+				rml:reference "self::node()/@*[namespace-uri()='http://www.w3.org/XML/1998/namespace' and local-name()='lang']"
+			]
+		]
+	] .
