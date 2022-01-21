@@ -54,15 +54,15 @@ Each item in this list will then by assessed by a series of if-then statements.
  - Is there a * in this item?
     - If yes, this item takes an IRI as a value
         - If the current map name is the default map name, generate a standard IRI predicate-object map
-				- If the current map name is in the [nosplit_bnode_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#nosplit_bnode_list), generate a "no-split" IRI predicate-object map
-				- Otherwise, generate a standard (in this case, a "split") IRI predicate-object map
+        - If the current map name is in the [nosplit_bnode_list](https://github.com/uwlib-cams/rml/tree/master/generateRML#nosplit_bnode_list), generate a "no-split" IRI predicate-object map
+        - Otherwise, generate a standard (in this case, a "split") IRI predicate-object map
  - Is there a = in this item?
     - If yes, this item takes a constant as a value
         - If there is a < in this item, generate a constant IRI predicate-object map
         - Otherwise, generate a constant literal predicate-object map
     - Is "Lang" in this map name? (i.e. is this a triples map that requires language tags?)
         - If yes, we need to generate these same predicate-object maps for an equivalent "no language tag" triples map (i.e. a triples map that requires _no_ language tags)
-			    	- If there is a < in this item, generate a constant IRI predicate-object map
+            - If there is a < in this item, generate a constant IRI predicate-object map
             - Otherwise, generate a constant literal predicate-object map
  - Is the item >>?
     - In kiegel, >> denotes a blank node
