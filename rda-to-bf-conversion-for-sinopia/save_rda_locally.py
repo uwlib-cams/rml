@@ -42,7 +42,11 @@ def create_uri_dict(source):
 		output_file.write(response.text)
 
 	# get URIs from JSON-LD into python list
-	os.system('java -jar rmlmapper-4.9.1-r328.jar -m json_rml.ttl -o uw_uri_list.nq')
+	if os.path.exists('rmlmapper-4.14.3-r362-all.jar'):
+		os.system('java -jar rmlmapper-4.14.3-r362-all.jar -m json_rml.ttl -o uw_uri_list.nq')
+	else:
+		print("RML Mapper file missing.")
+		quit()
 	uri_dict = {"work": [], "expression": [], "manifestation": [], "item": []}
 	uriGraph = Graph()
 	uriGraph.bind('ex', ex)

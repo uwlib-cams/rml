@@ -15,8 +15,6 @@ import fix_URIs
 """Remove empty copyright dates"""
 import fix_copyright_dates
 
-#os.system('cp -r RDA/2021_05_11 RDA/do_not_touch')
-
 """Transform RDA to BIBFRAME in XML"""
 print("...\nTransforming RDA data into BIBFRAME in RDF/XML")
 import transform_rda_to_bf
@@ -28,8 +26,6 @@ import fix_related_IRIs
 
 """Adding datatypes to dates"""
 import type_dates
-
-#os.system('cp -r BIBFRAME/2021_05_12 RDA/do_not_touch')
 
 """Prepare JSON-LD for upload into Sinopia"""
 import edit_json

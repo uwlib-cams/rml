@@ -100,7 +100,7 @@ def transform_rda_to_bf(entity, entityList, currentDate, output_location):
 		replace_default_with_filepath(RDA_entity, rml_filepath)
 
 		# run RML Mapper
-		os.system(f"java -jar rmlmapper-4.9.1-r328.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
+		os.system(f"java -jar rmlmapper-4.14.3-r362-all.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
 
 		# create new empty graph
 		g = Graph()
