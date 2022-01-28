@@ -34,7 +34,7 @@ Converts a URI written as a string into an [RDFLIB URIRef](https://rdflib.readth
 ### generate_constant
 Converts the mapping for a [constant value](https://rml.io/specs/rml/#constant) into RDFLIB terms. The predicate is turned into an [RDFLIB URIRef](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#urirefs), and the object is turned into an [RDFLIB URIRef](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#urirefs) or an [RDFLIB Literal](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#literals). It is returned as a tuple.
 
-Example:\n
+Example:  
 Input:
 ```
 "role=<http://id.loc.gov/vocabulary/relators/ppm>"
@@ -54,7 +54,7 @@ Takes in a kiegel mapping, and expands it into a dictionary where mappings that 
 ### edit_kiegel_list
 Used with [edit_kiegel](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#edit_kiegel) to make sure kiegel statements are going into the correct blank node.
 
-Example:\n
+Example:  
 Kiegel mapping that goes into edit_kiegel:
 ```
 contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/prn>
@@ -366,7 +366,7 @@ _[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functio
 ### split_by_space
 Takes in a kiegel map as a string, and returns the elements in the map separated into a list.
 
-Example:\n
+Example:  
 Kiegel mapping input:
 ```
 note >> Note > rdfs:label > noteType="numeric designation for musical work"
