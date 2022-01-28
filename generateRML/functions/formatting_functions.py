@@ -157,7 +157,7 @@ def edit_kiegel_list(kiegel_list):
 	for num in mapping_range:
 		mapping = kiegel_list[num]
 		if mapping[0] == ">":
-			"""This is "incomplete" mapping that goes into previous blank node"""
+			"""This is an "incomplete" mapping that goes into previous blank node"""
 			# determine the previous mapping in mapping list that is "complete", i.e. does not begin with ">"
 			previous_blank_node_index = num
 			previous_blank_node = ">"

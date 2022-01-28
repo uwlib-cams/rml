@@ -3418,9 +3418,9 @@ no_language_tag_list = [
 	"rdam:P30007",
 	"rdam:P30011",
 	"rdam:P30009",
-	"hasBarcode",
-	"hasLcClassificationPartA",
-	"hasLcClassificationPartB"
+	"rdax:hasBarcode",
+	"rdax:hasLcClassificationPartA",
+	"rdax:hasLcClassificationPartB"
 ]
 
 provisionActivityDistributionList = [
@@ -3571,9 +3571,9 @@ item_title_props = [
 	"rdai:P40085"
 ]
 
-classificationLcc_props = ["hasLcClassificationPartA", "hasLcClassificationPartB"]
+classificationLcc_props = ["rdax:hasLcClassificationPartA", "rdax:hasLcClassificationPartB"]
 
-classificationNlm_props = ["hasNlmClassificationPartA", "hasNlmClassificationPartB"]
+classificationNlm_props = ["rdax:hasNlmClassificationPartA", "rdax:hasNlmClassificationPartB"]
 
 classification_props = classificationLcc_props + classificationNlm_props
 
