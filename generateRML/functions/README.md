@@ -2,18 +2,18 @@
 These functions are utilized in [generate_RML.py](https://github.com/uwlib-cams/rml/tree/master/generateRML) to convert mappings written in kiegel into RML code.
 
 ## Table of Contents
- - [admin_metadata_functions.py](#)
- - [boolean_functions.py](#)
- - [formatting_functions.py](#)
- - [identifiedBy_functions.py](#)
- - [kiegel_functions.py](#)
- - [lists.py](#)
- - [logical_source_functions.py](#)
- - [po_map_functions.py](#)
- - [split_by_space.py](#)
- - [start_RML_map.py](#)
- - [subject_map_functions.py](#)
- - [value_functions.py](#)
+ - [admin_metadata_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#admin_metadata_functionspy)
+ - [boolean_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#boolean_functionspy)
+ - [formatting_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#formatting_functionspy)
+ - [identifiedBy_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#identifiedby_functionspy)
+ - [kiegel_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#kiegel_functionspy)
+ - [lists.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#listspy)
+ - [logical_source_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#logical_source_functionspy)
+ - [po_map_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#po_map_functionspy)
+ - [split_by_space.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#split_by_spacepy)
+ - [start_RML_map.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#start_rml_mappy)
+ - [subject_map_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#subject_map_functionspy)
+ - [value_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#value_functionspy)
 
 ## admin_metadata_functions.py
 ### admin_metadata_mapping
@@ -34,9 +34,16 @@ Converts a URI written as a string into an [RDFLIB URIRef](https://rdflib.readth
 ### generate_constant
 Converts the mapping for a [constant value](https://rml.io/specs/rml/#constant) into RDFLIB terms. The predicate is turned into an [RDFLIB URIRef](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#urirefs), and the object is turned into an [RDFLIB URIRef](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#urirefs) or an [RDFLIB Literal](https://rdflib.readthedocs.io/en/stable/rdf_terms.html#literals). It is returned as a tuple.
 
-Example:
-Input: "role=<http://id.loc.gov/vocabulary/relators/ppm>"
-Output: (URIRef('http://id.loc.gov/ontologies/bibframe/role'), URIRef('http://id.loc.gov/vocabulary/relators/ppm'))
+Example:\n
+Input:
+```
+"role=<http://id.loc.gov/vocabulary/relators/ppm>"
+```
+
+Output:
+```
+(URIRef('http://id.loc.gov/ontologies/bibframe/role'), URIRef('http://id.loc.gov/vocabulary/relators/ppm'))
+```
 
 ### create_bnode_name
 Create a descriptive title for a blank node based on the predicate that takes that blank node as an object, the class of the blank node, and the value(s) that will populate that blank node.
@@ -47,7 +54,7 @@ Takes in a kiegel mapping, and expands it into a dictionary where mappings that 
 ### edit_kiegel_list
 Used with [edit_kiegel](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#edit_kiegel) to make sure kiegel statements are going into the correct blank node.
 
-Example:
+Example:\n
 Kiegel mapping that goes into edit_kiegel:
 ```
 contribution >> Contribution > agent >> Organization > rdfs:label ; > role=<http://id.loc.gov/vocabulary/relators/prn>
@@ -359,7 +366,7 @@ _[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functio
 ### split_by_space
 Takes in a kiegel map as a string, and returns the elements in the map separated into a list.
 
-Example:
+Example:\n
 Kiegel mapping input:
 ```
 note >> Note > rdfs:label > noteType="numeric designation for musical work"
