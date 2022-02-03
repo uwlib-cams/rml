@@ -45,7 +45,7 @@ def create_uri_dict(source):
 
 	# get URIs from JSON-LD into python list
 	if os.path.exists('rmlmapper-4.15.0-r361-all.jar'):
-		os.system('java -jar rmlmapper-4.15.0-r361-all.jar -m json_rml.ttl -o uw_uri_list.nq')
+		os.system('java -jar rmlmapper-4.15.0-r361-all.jar -m other_files/json_rml.ttl -o uw_uri_list.nq')
 	else:
 		print("RML Mapper file missing.")
 		quit()

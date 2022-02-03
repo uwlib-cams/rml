@@ -53,7 +53,7 @@ rda_bf_dict = {}
 """Functions"""
 def create_already_transformed_dict():
 	IRI_dict = {}
-	with open('set_IRIs.csv', mode='r') as IRI_file:
+	with open('other_files/set_IRIs.csv', mode='r') as IRI_file:
 		csv_reader = csv.reader(IRI_file, delimiter=',')
 		line_count = 0
 
@@ -233,7 +233,7 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
 
 	for RDA_ID in rda_bf_dict.keys():
 		csv_writer.writerow([f'{RDA_ID}', f'{rda_bf_dict[RDA_ID]}'])
-with open(f"set_IRIs.csv", mode="a") as csv_output:
+with open(f"other_files/set_IRIs.csv", mode="a") as csv_output:
 	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
 	for RDA_ID in rda_bf_dict.keys():

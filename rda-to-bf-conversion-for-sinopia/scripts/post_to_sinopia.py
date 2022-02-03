@@ -93,7 +93,7 @@ for entity in resource_dict.keys():
 		bar.next()
 bar.finish()
 
-with open(f'post_to_sinopia_report_{currentDate}.txt', 'w') as report:
+with open(f'other_files/post_to_sinopia_report_{currentDate}.txt', 'w') as report:
 	currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
 	report.write(f"Time of report: {currentTime}\n\n---\n")
 	for entity in resource_dict.keys():
