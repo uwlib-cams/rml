@@ -1,3 +1,4 @@
+"""Python Libraries/Modules/Packages"""
 from rdflib import *
 
 """Namespaces"""
@@ -17,6 +18,7 @@ rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
+"""Functions"""
 def reserialize(file1, file2, format):
 	"""Reserialize with rdflib to fix namespaces and UTf-8"""
 	g = Graph()

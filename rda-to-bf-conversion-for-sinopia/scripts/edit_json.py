@@ -1,4 +1,4 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 from datetime import date
 import json
 import os
@@ -6,6 +6,9 @@ from progress.bar import Bar
 from rdflib import *
 import time
 from timeit import default_timer as timer
+
+"""Imported Functions"""
+from scripts.arguments import define_arg
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
@@ -16,7 +19,6 @@ sin = Namespace('http://sinopia.io/vocabulary/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
-
 # format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')
@@ -26,7 +28,6 @@ args = define_arg()
 output_location = args.output
 
 """Lists and Dictionaries"""
-
 work_1List = os.listdir(f'{output_location}/{currentDate}/work_1_xml')
 work_2List = os.listdir(f'{output_location}/{currentDate}/work_2_xml')
 instanceList = os.listdir(f'{output_location}/{currentDate}/instance_xml')
@@ -37,7 +38,6 @@ rt_dict = {"work_1": "WAU:RT:BF2:Works", "work_2": "WAU:RT:BF2:Works", "instance
 class_dict = {"work_1": "http://id.loc.gov/ontologies/bibframe/Work", "work_2": "http://id.loc.gov/ontologies/bibframe/Work", "instance": "http://id.loc.gov/ontologies/bibframe/Instance", "item": "http://id.loc.gov/ontologies/bibframe/Item"}
 
 """Functions"""
-
 def add_rt_triple(entity, resource, output_location):
 	"""Loads RDF/XML into graph, adds triple for resource template, and outputs new graph in JSON-LD"""
 	# create new empty graph

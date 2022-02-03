@@ -1,15 +1,17 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
-from reserialize import reserialize
 import time
 from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
-"""Functions"""
+"""Imported Functions"""
+from scripts.arguments import define_arg
+from scripts.reserialize import reserialize
 
+"""Functions"""
 def remove_extra_descriptions(entity, file, input_location):
 	"""Remove triples from original RDA/RDF that do not describe the resource in question"""
 
@@ -49,7 +51,6 @@ def remove_extra_descriptions(entity, file, input_location):
 	return num_of_edits
 
 """Variables"""
-
 # format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-', '_')

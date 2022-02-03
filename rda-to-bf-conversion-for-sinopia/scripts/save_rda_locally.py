@@ -1,4 +1,4 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 from datetime import date
 import os
 from progress.bar import Bar
@@ -7,6 +7,9 @@ from rdflib import *
 import rdflib
 import time
 from timeit import default_timer as timer
+
+"""Imported Functions"""
+from scripts.arguments import define_arg
 
 """Namespaces"""
 LDP = Namespace('http://www.w3.org/ns/ldp#')
@@ -27,7 +30,6 @@ rdax = Namespace('https://doi.org/10.6069/uwlib.55.d.4#')
 sin = Namespace('http://sinopia.io/vocabulary/')
 
 """Functions"""
-
 def create_uri_dict(source):
 	"""Creates a list of all URIs for all records in UW mongoDB"""
 	# create temporary output files
@@ -42,8 +44,8 @@ def create_uri_dict(source):
 		output_file.write(response.text)
 
 	# get URIs from JSON-LD into python list
-	if os.path.exists('rmlmapper-4.14.3-r362-all.jar'):
-		os.system('java -jar rmlmapper-4.14.3-r362-all.jar -m json_rml.ttl -o uw_uri_list.nq')
+	if os.path.exists('rmlmapper-4.15.0-r361-all.jar'):
+		os.system('java -jar rmlmapper-4.15.0-r361-all.jar -m json_rml.ttl -o uw_uri_list.nq')
 	else:
 		print("RML Mapper file missing.")
 		quit()
@@ -244,12 +246,6 @@ if not os.path.exists(f'{input_location}/{currentDate}'):
 
 """Create list of URIs from Sinopia"""
 uri_dict = create_uri_dict(source)
-
-"""Save all resources in one file"""
-#start = timer()
-#save_all_resources(uri_dict, currentDate)
-#end = timer()
-#print(f"Elapsed time: {round((end - start), 1)} s")
 
 """Save works"""
 start = timer()

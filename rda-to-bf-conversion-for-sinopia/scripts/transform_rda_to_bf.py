@@ -1,13 +1,16 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 import csv
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
-from reserialize import reserialize
 import time
 from timeit import default_timer as timer
 import uuid
+
+"""Imported Functions"""
+from scripts.arguments import define_arg
+from scripts.reserialize import reserialize
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
@@ -27,7 +30,6 @@ sin = Namespace('http://sinopia.io/vocabulary/')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Variables"""
-
 # format for naming folder according to date
 currentDate_hyphen = date.today()
 currentDate = str(currentDate_hyphen).replace('-', '_')
@@ -48,6 +50,7 @@ rda_to_bf_entity_dict = {"work": "work_1", "expression": "work_2", "manifestatio
 bf_to_rda_entity_dict = {"work_1": "work", "work_2": "expression", "instance": "manifestation", "item": "item"}
 rda_bf_dict = {}
 
+"""Functions"""
 def create_already_transformed_dict():
 	IRI_dict = {}
 	with open('set_IRIs.csv', mode='r') as IRI_file:
@@ -61,9 +64,6 @@ def create_already_transformed_dict():
 			line_count += 1
 
 	return IRI_dict
-IRI_dict = create_already_transformed_dict()
-
-"""Functions"""
 
 def transform_rda_to_bf(entity, entityList, currentDate, output_location):
 	start = timer()
@@ -100,7 +100,7 @@ def transform_rda_to_bf(entity, entityList, currentDate, output_location):
 		replace_default_with_filepath(RDA_entity, rml_filepath)
 
 		# run RML Mapper
-		os.system(f"java -jar rmlmapper-4.14.3-r362-all.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
+		os.system(f"java -jar rmlmapper-4.15.0-r361-all.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
 
 		# create new empty graph
 		g = Graph()
@@ -212,6 +212,8 @@ def replace_filepath_with_default(entity, filepath):
 	new.close()
 
 ###
+
+IRI_dict = create_already_transformed_dict()
 
 # create directory with today's date for BF-in-XML data
 if not os.path.exists(f'{output_location}/{currentDate}'):

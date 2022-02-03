@@ -1,14 +1,16 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 from datetime import date
 import os
 from progress.bar import Bar
 from rdflib import *
-from reserialize import reserialize
 from timeit import default_timer as timer
 import xml.etree.ElementTree as ET
 
-"""Variables"""
+"""Imported Functions"""
+from scripts.arguments import define_arg
+from scripts.reserialize import reserialize
 
+"""Variables"""
 today = date.today()
 currentDate = str(today).replace('-','_')
 
@@ -17,7 +19,6 @@ args = define_arg()
 output_location = args.output
 
 """Lists and Dictionaries"""
-
 bf_date_prop_list = ["date", "originDate", "legalDate", "copyrightDate", "changeDate", "creationDate", "generationDate"]
 
 work_1_list = os.listdir(f"{output_location}/{currentDate}/work_1_xml/")
@@ -28,7 +29,6 @@ item_list = os.listdir(f"{output_location}/{currentDate}/item_xml/")
 resource_dict = {"work_1": work_1_list, "work_2": work_2_list, "instance": instance_list, "item": item_list}
 
 """Functions"""
-
 def determine_date_type(value):
 	date_type = ""
 
@@ -129,6 +129,7 @@ def add_dates_in_xml(currentDate, entity, file, output_location):
 	return num_of_edits
 
 ###
+
 num_of_resources = len(work_1_list) + len(work_2_list) + len(instance_list) + len(item_list)
 num_of_edits = 0
 

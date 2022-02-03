@@ -1,3 +1,4 @@
+"""Python Libraries/Modules/Packages"""
 import os
 from datetime import date
 from progress.bar import Bar
@@ -61,6 +62,7 @@ itemList = os.listdir(f'../output/{currentDate}/item_xml')
 resource_dict = {"work_1": work_1List, "work_2": work_2List, "instance": instanceList, "item": itemList}
 
 ###
+
 num_of_resources = len(work_1List) + len(work_2List) + len(instanceList) + len(itemList)
 num_of_edits = 0
 

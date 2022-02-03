@@ -1,4 +1,4 @@
-from arguments import define_arg
+"""Python Libraries/Modules/Packages"""
 from datetime import date
 import os
 from progress.bar import Bar
@@ -6,8 +6,10 @@ import requests
 import time
 from timeit import default_timer as timer
 
-"""Variables"""
+"""Imported Functions"""
+from scripts.arguments import define_arg
 
+"""Variables"""
 # format for naming folder according to date
 today = date.today()
 currentDate = str(today).replace('-','_')
@@ -17,7 +19,6 @@ args = define_arg()
 output_location = args.output
 
 """Lists"""
-
 work_1_list = os.listdir(f"{output_location}/{currentDate}/work_1_json/")
 work_2_list = os.listdir(f"{output_location}/{currentDate}/work_2_json/")
 instance_list = os.listdir(f"{output_location}/{currentDate}/instance_json/")
