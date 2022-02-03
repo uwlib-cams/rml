@@ -14,10 +14,10 @@ Can RML handle a file with multiple resources in it?
   <rdf:Description rdf:about="https://example.org/Resource1">
     <rdaw:P10223 xml:lang="en">Book 1</rdaw:P10223>
   </rdf:Description>
-	<rdf:Description rdf:about="https://example.org/Resource1">
+	<rdf:Description rdf:about="https://example.org/Resource2">
     <rdaw:P10223 xml:lang="fr">Livre 2</rdaw:P10223>
   </rdf:Description>
-	<rdf:Description rdf:about="https://example.org/Resource1">
+	<rdf:Description rdf:about="https://example.org/Resource3">
     <rdaw:P10223 xml:lang="ja">本 3</rdaw:P10223>
   </rdf:Description>
 </rdf:RDF>
@@ -85,23 +85,25 @@ ex:TitleMap a rr:TriplesMap;
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://example.org/Resource1> a bf:Work;
-  bf:title _:0 .
+  bf:title _:0, _:1, _:2 .
+
+<https://example.org/Resource2> a bf:Work;
+  bf:title _:0, _:1, _:2 .
+
+<https://example.org/Resource3> a bf:Work;
+  bf:title _:0, _:1, _:2 .
 
 _:0 a bf:Title;
   rdfs:label "Book 1"@en .
 
-<https://example.org/Resource1> bf:title _:1 .
-
 _:1 a bf:Title;
   rdfs:label "Livre 2"@fr .
-
-<https://example.org/Resource1> bf:title _:2 .
 
 _:2 a bf:Title;
   rdfs:label "本 3"@ja .
 ```
 
-So in our data we have Resource1, Resource2, and Resource3. The iterator for `ex:WorkMap` (`"/RDF/Description"`) _should_ be iterating over all three of these... and it _is_ iterating over all three! Because it's finding the title (P10023) for each! But for some reason, when it's running the subject map, instead of using the `@about` value for the current `rdf:Description`, it's pulling from the first `rdf:Description` in the document...
+So in our data we have Resource1, Resource2, and Resource3. Ideally, the iterator for `ex:WorkMap` (`"/RDF/Description"`) would select one rdf:Description (e.g. Resource1), and run the rest of the triples map for only the child elements of that given rdf:Description. Instead, it seems to be run the triples maps for all child elements of all rdf:Descriptions within the data.
 
 We had a similar issue with language tags, where if there were multiple values for a single property all with different language tags, if they were put in the same blank node, they would all just end up with whatever language tag came first, e.g.:
 
@@ -243,7 +245,7 @@ ex:TitleMap a rr:TriplesMap;
 			rml:reference ".";
 			rr:termType rr:Literal;
 			rml:languageMap [
-				rml:reference "self::node()/@lang"
+				rml:reference "@lang"
 			]
 		]
 	] .
@@ -341,23 +343,27 @@ ex:TitleMap a rr:TriplesMap;
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://example.org/Resource1> a bf:Work;
-  bf:title _:0 .
+  bf:title _:0, _:1, _:2 .
+
+<https://example.org/Resource2> a bf:Work;
+  bf:title _:0, _:1, _:2 .
+
+<https://example.org/Resource3> a bf:Work;
+  bf:title _:0, _:1, _:2 .
 
 _:0 a bf:Title;
   rdfs:label "Book 1"@en .
 
-<https://example.org/Resource1> bf:title _:1 .
-
 _:1 a bf:Title;
   rdfs:label "Livre 2"@fr .
-
-<https://example.org/Resource1> bf:title _:2 .
 
 _:2 a bf:Title;
   rdfs:label "本 3"@ja .
 ```
 
 I thought after the meeting that there was something complicated happening that made the way RML was generating this make sense, but now that I've played around without, nah. It's definitely just an issue.
+
+It seems like the iterator is just not that sophisticated? As in, it doesn't really "remember" where it is in the data, it's just processing each XPath as it comes across it.
 
 The question now is: do we bring this up with the RML Mapper team? OR do we just let it go and continue with our one-resource-per-file method?
 
