@@ -30,3 +30,18 @@ $ python3 rda-to-bf-for-sinopia.py
 ```
 
 _Note: this script may take upwards of an hour to complete._
+
+## other_files
+### json_rml.ttl
+Used in `scripts/save_rda_locally.py` to parse UW's RDA data.
+
+### post_to_sinopia_report_YYYY_MM_DD.txt
+Output of `scripts/post_to_sinopia.py`.
+
+### RDA_BF_IRI_list_YYYY_MM_DD.csv
+Output of `scripts/transform_rda_to_bf.py` to record equivalent identifiers for the original RDA data and its BIBFRAME output.
+
+Used in `scripts/fix_related_IRIs.py` to replace identifiers for RDA data with the identifier for the equivalent BIBFRAME data where appropriate.
+
+### set_IRIs.csv
+Output of and used in `scripts/transform_rda_to_bf.py` to record the IRIs generated for output BIBFRAME data so that IRIs are consistent every time the transform is run.
