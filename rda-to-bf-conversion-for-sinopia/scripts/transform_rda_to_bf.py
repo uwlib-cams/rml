@@ -225,7 +225,7 @@ for entity in resource_dict.keys():
 
 print(">> Creating record of new IRIs")
 start = timer()
-with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
+with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
 	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
 	# write header row

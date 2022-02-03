@@ -57,7 +57,7 @@ def fix_related_IRIs(RDA_ID, BF_ID, entity, file, output_location):
 ###
 
 start = timer()
-with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
+with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 	"""Get number of IRI pairs to iterate through"""
 	csv_reader = csv.reader(key_file, delimiter=',')
 	total_line_count = 0
@@ -67,7 +67,7 @@ with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 
 num_of_edits = 0
 
-with open(f"RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
+with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
 	"""For each resource, look for IRI pairs and make appropriate changes"""
 	csv_reader = csv.reader(key_file, delimiter=',')
 	line_count = 0
