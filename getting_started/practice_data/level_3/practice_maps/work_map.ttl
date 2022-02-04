@@ -28,6 +28,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10147/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# hasPart >> Work > rdfs:label
 		[
 			rr:parentTriplesMap ex:HasPartMap ;
 			rr:termType rr:BlankNode
@@ -42,6 +43,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10198/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# relatedTo >> Work > rdfs:label
 		[
 			rr:parentTriplesMap ex:RelatedToMap ;
 			rr:termType rr:BlankNode
@@ -56,6 +58,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10016/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# hasDerivative >> Work > rdfs:label
 		[
 			rr:parentTriplesMap ex:HasDerivativeMap ;
 			rr:termType rr:BlankNode
@@ -70,6 +73,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10004/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# genreForm >> GenreForm > rdfs:label
 		[
 			rr:parentTriplesMap ex:GenreFormMap ;
 			rr:termType rr:BlankNode
@@ -84,6 +88,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10218/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# originPlace >> Place > rdfs:label
 		[
 			rr:parentTriplesMap ex:OriginPlaceMap ;
 			rr:termType rr:BlankNode
@@ -98,6 +103,7 @@ ex:WorkMap a rr:TriplesMap ;
 			rml:reference "rdaw:P10256/@rdf:resource" ;
 			rr:termType rr:IRI
 		],
+		# subject >> madsrdf:Authority > madsrdf:authoritativeLabel > rdfs:label
 		[
 			rr:parentTriplesMap ex:SubjectMap ;
 			rr:termType rr:BlankNode
@@ -172,7 +178,6 @@ ex:HasDerivativeMap a rr:TriplesMap ;
 
 # P10004
 # genreForm >> GenreForm > rdfs:label
-
 ex:GenreFormMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "../work.xml" ;
