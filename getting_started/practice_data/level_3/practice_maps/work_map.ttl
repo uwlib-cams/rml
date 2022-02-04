@@ -10,7 +10,7 @@
 
 ex:WorkMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description"
 	] ;
@@ -108,7 +108,7 @@ ex:WorkMap a rr:TriplesMap ;
 # hasPart >> Work > rdfs:label
 ex:HasPartMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10147[not(@rdf:resource)]]"
 	] ;
@@ -130,7 +130,7 @@ ex:HasPartMap a rr:TriplesMap ;
 # relatedTo >> Work > rdfs:label
 ex:RelatedToMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10198[not(@rdf:resource)]]"
 	] ;
@@ -152,7 +152,7 @@ ex:RelatedToMap a rr:TriplesMap ;
 # hasDerivative >> Work > rdfs:label
 ex:HasDerivativeMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10016[not(@rdf:resource)]]"
 	] ;
@@ -175,7 +175,7 @@ ex:HasDerivativeMap a rr:TriplesMap ;
 
 ex:GenreFormMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10004[not(@rdf:resource)]]"
 	] ;
@@ -197,7 +197,7 @@ ex:GenreFormMap a rr:TriplesMap ;
 # originPlace >> Place > rdfs:label
 ex:OriginPlaceMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10218[not(@rdf:resource)]]"
 	] ;
@@ -219,7 +219,7 @@ ex:OriginPlaceMap a rr:TriplesMap ;
 # subject >> madsrdf:Authority > madsrdf:authoritativeLabel > rdfs:label
 ex:SubjectMap a rr:TriplesMap ;
 	rml:logicalSource [
-		rml:source "../work_1.xml" ;
+		rml:source "../work.xml" ;
 		rml:referenceFormulation ql:XPath ;
 		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10256[not(@rdf:resource)]]"
 	] ;
