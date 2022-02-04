@@ -19,8 +19,6 @@ ex:ManifestationMap a rr:TriplesMap ;
 		rr:class bf:Work
 	] ;
 
-	# P30176
-	# provisionActivity >> Publication > agent >> Agent > rdfs:label
 	# P30011
 	# provisionActivity >> Publication > date
 	rr:predicateObjectMap [
@@ -76,15 +74,13 @@ ex:ManifestationMap a rr:TriplesMap ;
 		]
 	] .
 
-# P30176
-# provisionActivity >> Publication > agent >> Agent > rdfs:label
 # P30011
 # provisionActivity >> Publication > date
 ex:PublicationMap a rr:TriplesMap ;
 	rml:logicalSource [
 		rml:source "../manifestation.xml" ;
 		rml:referenceFormulation ql:XPath ;
-		rml:iterator "rdf:RDF/rdf:Description[rdam:P30176 or rdam:P30011]"
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30011]"
 	] ;
 
 	rr:subjectMap [
@@ -92,47 +88,13 @@ ex:PublicationMap a rr:TriplesMap ;
 		rr:class bf:Publication
 	] ;
 
-	# P30176
-	# provisionActivity >> Publication > agent >> Agent > rdfs:label
-	rr:predicateObjectMap [
-		rr:predicate bf:agent ;
-		rr:objectMap [
-			rr:parentTriplesMap ex:AgentMap ;
-			rr:termType rr:BlankNode
-		]
-	],
 	# P30011
 	# provisionActivity >> Publication > date
-	[
+	rr:predicateObjectMap [
 		rr:predicate bf:date ;
 		rr:objectMap [
 			rml:reference "rdam:P30011" ;
 			rr:termType rr:Literal
-		]
-	] .
-
-# P30176
-# provisionActivity >> Publication > agent >> Agent > rdfs:label
-ex:AgentMap a rr:TriplesMap ;
-	rml:logicalSource [
-		rml:source "../manifestation.xml" ;
-		rml:referenceFormulation ql:XPath ;
-		rml:iterator "rdf:RDF/rdf:Description[rdam:P30176]"
-	] ;
-
-	rr:subjectMap [
-		rr:termType rr:BlankNode ;
-		rr:class bf:Agent
-	] ;
-
-	rr:predicateObjectMap [
-		rr:predicate rdfs:label ;
-		rr:objectMap [
-			rml:reference "rdam:P30176" ;
-			rr:termType rr:Literal ;
-			rml:languageMap [
-				rml:reference "rdam:P30176/@xml:lang"
-			]
 		]
 	] .
 
