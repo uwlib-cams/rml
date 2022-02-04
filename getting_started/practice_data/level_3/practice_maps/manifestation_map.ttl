@@ -1,0 +1,203 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ex: <http://example.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:ManifestationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@rdf:about" ;
+		rr:class bf:Work
+	] ;
+
+	# P30176
+	# provisionActivity >> Publication > agent >> Agent > rdfs:label
+	# P30011
+	# provisionActivity >> Publication > date
+	rr:predicateObjectMap [
+		rr:predicate bf:provisionActivity ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:PublicationMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P30184
+	# soundCharacteristic >> PlaybackChannels > rdfs:label
+	rr:predicateObjectMap [
+		rr:predicate bf:soundCharacteristic ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:SoundCharacteristicMap ;
+			rr:termType rr:BlankNode
+		],
+		# soundCharacteristic*
+		[
+			rml:reference "rdam:P30184/@rdf:resource" ;
+			rr:termType rr:IRI
+		]
+	] ;
+
+	# P30096
+	# digitalCharacteristic >> EncodingFormat > rdfs:label
+	rr:predicateObjectMap [
+		rr:predicate bf:digitalCharacteristic ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:DigitalCharacteristicMap ;
+			rr:termType rr:BlankNode
+		],
+		# digitalCharacteristic*
+		[
+			rml:reference "rdam:P30096/@rdf:resource" ;
+			rr:termType rr:IRI
+		]
+	] ;
+
+	# P30139
+	# instanceOf >> Work > rdfs:label
+	rr:predicateObjectMap [
+		rr:predicate bf:instanceOf ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:InstanceOfMap ;
+			rr:termType rr:BlankNode
+		],
+		# instanceOf*
+		[
+			rml:reference "rdam:P30139/@rdf:resource" ;
+			rr:termType rr:IRI
+		]
+	] .
+
+# P30176
+# provisionActivity >> Publication > agent >> Agent > rdfs:label
+# P30011
+# provisionActivity >> Publication > date
+ex:PublicationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30176 or rdam:P30011]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Publication
+	] ;
+
+	# P30176
+	# provisionActivity >> Publication > agent >> Agent > rdfs:label
+	rr:predicateObjectMap [
+		rr:predicate bf:agent ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:AgentMap ;
+			rr:termType rr:BlankNode
+		]
+	],
+	# P30011
+	# provisionActivity >> Publication > date
+	[
+		rr:predicate bf:date ;
+		rr:objectMap [
+			rml:reference "rdam:P30011" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30176
+# provisionActivity >> Publication > agent >> Agent > rdfs:label
+ex:AgentMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30176]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Agent
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdam:P30176" ;
+			rr:termType rr:Literal ;
+			rml:languageMap [
+				rml:reference "rdam:P30176/@xml:lang"
+			]
+		]
+	] .
+
+# P30184
+# soundCharacteristic >> PlaybackChannels > rdfs:label
+ex:SoundCharacteristicMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30184[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:PlaybackChannels
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdam:P30184[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30096
+# digitalCharacteristic >> EncodingFormat > rdfs:label
+ex:DigitalCharacteristicMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30096[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:EncodingFormat
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdam:P30096[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30139
+# instanceOf >> Work > rdfs:label
+ex:InstanceOfMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30139[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdam:P30139[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
