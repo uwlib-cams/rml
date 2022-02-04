@@ -1,0 +1,114 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ex: <http://example.org/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:ManifestationMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@rdf:about" ;
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate bf:provisionActivity ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:ProvisionActivity ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+ex:ProvisionActivity a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdam:P30083 or rdam:P30086 or rdam:P30088]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Publication
+	] ;
+
+	# P30083
+	# provisionActivity >> Publication > agent*
+	rr:predicateObjectMap [
+		rr:predicate bf:agent ;
+		rr:objectMap [
+			rml:reference "rdam:P30083/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		# provisionActivity >> Publication > agent >> Agent > rdfs:label
+		[
+			rr:parentTriplesMap ex:AgentMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P30086
+	# provisionActivity >> Production > place >> Place > rdfs:label
+	rr:predicateObjectMap [
+		rr:predicate bf:place ;
+		rr:objectMap [
+			rr:parentTriplesMap ex:PlaceMap ;
+			rr:termType rr:BlankNode
+		],
+		# provisionActivity >> Production > place*
+		[
+			rml:reference "rdam:P30086/@rdf:resource" ;
+			rr:termType rr:IRI
+		]
+	] .
+
+# P30083
+# provisionActivity >> Publication > agent >> Agent > rdfs:label
+ex:AgentMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description/rdam:P30083[not(@rdf:resource)]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Agent
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "self::node()[not(@rdf:resource)]";
+			rr:termType rr:Literal
+		]
+	] .
+
+# P30086
+# provisionActivity >> Production > place >> Place > rdfs:label
+ex:PlaceMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../manifestation.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description/rdam:P30086[not(@rdf:resource)]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Place
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "self::node()[not(@rdf:resource)]";
+			rr:termType rr:Literal
+		]
+	] .
