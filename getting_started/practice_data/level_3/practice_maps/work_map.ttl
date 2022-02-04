@@ -1,0 +1,246 @@
+# rml prefixes
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+# other prefixes
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/>.
+@prefix ex: <http://example.org/>.
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ex:WorkMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description"
+	] ;
+
+	rr:subjectMap [
+		rml:reference "@rdf:about" ;
+		rr:class bf:Work
+	] ;
+
+	# P10147
+	# hasPart*
+	rr:predicateObjectMap [
+		rr:predicate bf:hasPart ;
+		rr:objectMap [
+			rml:reference "rdaw:P10147/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:HasPartMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P10198
+	# relatedTo*
+	rr:predicateObjectMap [
+		rr:predicate bf:relatedTo ;
+		rr:objectMap [
+			rml:reference "rdaw:P10198/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:RelatedToMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P10016
+	# hasDerivative*
+	rr:predicateObjectMap [
+		rr:predicate bf:hasDerivative ;
+		rr:objectMap [
+			rml:reference "rdaw:P10016/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:HasDerivativeMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P10004
+	# genreForm*
+	rr:predicateObjectMap [
+		rr:predicate bf:genreForm ;
+		rr:objectMap [
+			rml:reference "rdaw:P10004/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:GenreFormMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P10218
+	# originPlace*
+	rr:predicateObjectMap [
+		rr:predicate bf:originPlace ;
+		rr:objectMap [
+			rml:reference "rdaw:P10218/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:OriginPlaceMap ;
+			rr:termType rr:BlankNode
+		]
+	] ;
+
+	# P10256
+	# subject*
+	rr:predicateObjectMap [
+		rr:predicate bf:subject ;
+		rr:objectMap [
+			rml:reference "rdaw:P10256/@rdf:resource" ;
+			rr:termType rr:IRI
+		],
+		[
+			rr:parentTriplesMap ex:SubjectMap ;
+			rr:termType rr:BlankNode
+		]
+	] .
+
+# P10147
+# hasPart >> Work > rdfs:label
+ex:HasPartMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10147[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10147[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P10198
+# relatedTo >> Work > rdfs:label
+ex:RelatedToMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10198[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10198[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P10016
+# hasDerivative >> Work > rdfs:label
+ex:HasDerivativeMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10016[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Work
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10016[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P10004
+# genreForm >> GenreForm > rdfs:label
+
+ex:GenreFormMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10004[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:GenreForm
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10004[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P10218
+# originPlace >> Place > rdfs:label
+ex:OriginPlaceMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10218[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class bf:Place
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10218[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
+
+# P10256
+# subject >> madsrdf:Authority > madsrdf:authoritativeLabel > rdfs:label
+ex:SubjectMap a rr:TriplesMap ;
+	rml:logicalSource [
+		rml:source "../work_1.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "rdf:RDF/rdf:Description[rdaw:P10256[not(@rdf:resource)]]"
+	] ;
+
+	rr:subjectMap [
+		rr:termType rr:BlankNode ;
+		rr:class madsrdf:Authority
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate madsrdf:authoritativeLabel ;
+		rr:objectMap [
+			rml:reference "rdaw:P10256[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate rdfs:label ;
+		rr:objectMap [
+			rml:reference "rdaw:P10256[not(@rdf:resource)]" ;
+			rr:termType rr:Literal
+		]
+	] .
