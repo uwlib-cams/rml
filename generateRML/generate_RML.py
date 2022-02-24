@@ -8,7 +8,7 @@ script, csv_dir = argv
 from functions.lists import entities
 
 """Imported Functions"""
-from functions.kiegel_functions import kiegel_reader
+from functions.parse_kiegel import kiegel_reader
 
 ###
 
