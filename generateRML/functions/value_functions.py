@@ -4,8 +4,8 @@ from functions.lists import nosplit_bnode_list
 
 """Imported Functions"""
 from functions.formatting_functions import create_bnode_name
-from functions.logical_source_functions import generate_constant_logical_source
-from functions.logical_source_functions import generate_dissertation_logical_source
+#from functions.logical_source_functions import generate_constant_logical_source
+#from functions.logical_source_functions import generate_dissertation_logical_source
 from functions.logical_source_functions import generate_IRI_logical_source
 from functions.logical_source_functions import generate_lang_logical_source
 from functions.logical_source_functions import generate_lang_nosplit_logical_source
@@ -33,12 +33,14 @@ def generate_RML_for_IRI(RML_graph, default_map_name, map_name, node, prop_num, 
 		generate_IRI_po_map(RML_graph, map_name, node, prop_num)
 		if print_check == True:
 			print("\t\tgenerating IRI predicate object map")
+
 	elif map_name in nosplit_bnode_list:
 		"""Property is in 'no split' blank node"""
-		# see explanation here https://github.com/uwlib-cams/rml/tree/master/generateRML#no-split-blank-nodes # ! update link after updating readme
+		# See: https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#nosplit_bnode_list
 		generate_IRI_nosplit_po_map(RML_graph, map_name, node, prop_num)
 		if print_check == True:
 			print("\t\tgenerating IRI no split predicate object map")
+
 	else:
 		"""Property goes into blank node"""
 		generate_IRI_split_po_map(RML_graph, map_name, node)
