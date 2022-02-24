@@ -26,7 +26,10 @@ skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 
 """Functions"""
 def start_RML_map():
+	# start graph
 	RML_graph = Graph()
+
+	# bind to graph all prefixes used in RML, UW's RDA data, and desired BIBFRAME output
 	RML_graph.bind('bf', bf)
 	RML_graph.bind('bflc', bflc)
 	RML_graph.bind('dbo', dbo)
