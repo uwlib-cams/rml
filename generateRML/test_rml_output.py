@@ -63,23 +63,13 @@ def compare_graphs(graph_1, graph_2):
 		bad_triples = [] # list for any triples that are in one graph and not the other
 		for s, p, o in graph_1: # for each triple in graph 1...
 			if (s, p, o) not in graph_2: # if triple is not in graph 2...
-				bad_triple = False
-				if isinstance(s, rdflib.term.BNode) == False and isinstance(o, rdflib.term.BNode) == False:
-					# Neither subject nor object is a blank node, so it's a bad triple
-					bad_triple = True
-				elif isinstance(s, rdflib.term.BNode) == True and isinstance(o, rdflib.term.BNode) == False:
-					# The subject is a blank node, so let's look for that same triple but ignore the subject
-					if find_triple_in_graph((None, p, o), graph_2) == False:
-						bad_triple = True
-				elif isinstance(s, rdflib.term.BNode) == False and isinstance(o, rdflib.term.BNode) == True:
-					# The object is a blank node, so let's look for that same triple but ignore the object
-					if find_triple_in_graph((s, p, None), graph_2) == False:
-						bad_triple = True
-				elif isinstance(s, rdflib.term.BNode) == True and isinstance(o, rdflib.term.BNode) == True:
-					# The subject and object are both blank nodes, so let's look for that same triple but ignore the subject and object
-					if find_triple_in_graph((None, p, None), graph_2) == False:
-						bad_triple = True
+				bad_triple = find_equivalent_triple(graph_2, s, p, o)
+				if bad_triple == True:
+					bad_triples.append((s, p, o))
 
+		for s, p, o in graph_2: # for each triple in graph 1...
+			if (s, p, o) not in graph_1: # if triple is not in graph 2...
+				bad_triple = find_equivalent_triple(graph_1, s, p, o)
 				if bad_triple == True:
 					bad_triples.append((s, p, o))
 
@@ -90,6 +80,39 @@ def compare_graphs(graph_1, graph_2):
 			graphs_are_the_same = True
 
 	return graphs_are_the_same
+
+def find_equivalent_triple(graph, s, p, o):
+	bad_triple = False
+	if (s, p, o) not in graph: # if triple is not in graph...
+		if isinstance(s, rdflib.term.BNode) == False and isinstance(o, rdflib.term.BNode) == False:
+			# Neither subject nor object is a blank node, so it's a bad triple
+			bad_triple = True
+		elif isinstance(s, rdflib.term.BNode) == True and isinstance(o, rdflib.term.BNode) == False:
+			# The subject is a blank node, so let's look for that same triple but ignore the subject
+			match_found = False
+			for s2, p2, o2 in graph:
+				if isinstance(s2, rdflib.term.BNode) == True and p == p2 and o == o2:
+					match_found = True
+			if match_found == False:
+				bad_triple = True
+			elif isinstance(s, rdflib.term.BNode) == False and isinstance(o, rdflib.term.BNode) == True:
+				# The object is a blank node, so let's look for that same triple but ignore the object
+				match_found = False
+				for s2, p2, o2 in graph:
+					if s == s2 and p == p2 and isinstance(o2, rdflib.term.BNode) == True:
+						match_found = True
+				if match_found == False:
+					bad_triple = True
+			elif isinstance(s, rdflib.term.BNode) == True and isinstance(o, rdflib.term.BNode) == True:
+				# The subject and object are both blank nodes, so let's look for that same triple but ignore the subject and object
+				match_found = False
+				for s2, p2, o2 in graph:
+					if isinstance(s2, rdflib.term.BNode) == True and p == p2 and isinstance(o2, rdflib.term.BNode) == True:
+						match_found = True
+				if match_found == False:
+					bad_triple = True
+
+	return bad_triple
 
 def find_triple_in_graph(triple_tuple, graph):
 	triple_in_graph = True
@@ -122,6 +145,9 @@ for tuple in test_files:
 
 	# run RML again on the same file
 	os.system(f'java -jar mapper.jar -m rmlOutput/{entity}RML.ttl -s turtle -o {entity}_output_2.ttl')
+	# test
+	input("make a change")
+	# test
 	# add output to new graph
 	output_2 = Graph()
 	output_2.load(f'{entity}_output_2.ttl', format='ttl')
