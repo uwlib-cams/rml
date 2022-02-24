@@ -3,23 +3,23 @@ from rdflib import *
 
 """Lists"""
 from functions.lists import classification_props
-from functions.lists import no_language_tag_list
-from functions.lists import nosplit_bnode_list
+#from functions.lists import no_language_tag_list
+#from functions.lists import nosplit_bnode_list
 
 """Imported Functions"""
 from functions.formatting_functions import convert_string_to_IRI
-from functions.formatting_functions import create_bnode_name
+#from functions.formatting_functions import create_bnode_name
 from functions.formatting_functions import generate_constant
-from functions.logical_source_functions import generate_constant_logical_source
-from functions.logical_source_functions import generate_dissertation_logical_source
-from functions.logical_source_functions import generate_IRI_logical_source
-from functions.logical_source_functions import generate_lang_logical_source
-from functions.logical_source_functions import generate_lang_nosplit_logical_source
-from functions.logical_source_functions import generate_neutral_literal_logical_source
-from functions.logical_source_functions import generate_not_lang_logical_source
-from functions.logical_source_functions import generate_not_lang_nosplit_logical_source
-from functions.logical_source_functions import generate_title_logical_source
-from functions.subject_map_functions import generate_bnode_subject_map
+#from functions.logical_source_functions import generate_constant_logical_source
+#from functions.logical_source_functions import generate_dissertation_logical_source
+#from functions.logical_source_functions import generate_IRI_logical_source
+#from functions.logical_source_functions import generate_lang_logical_source
+#from functions.logical_source_functions import generate_lang_nosplit_logical_source
+#from functions.logical_source_functions import generate_neutral_literal_logical_source
+#from functions.logical_source_functions import generate_not_lang_logical_source
+#from functions.logical_source_functions import generate_not_lang_nosplit_logical_source
+#from functions.logical_source_functions import generate_title_logical_source
+#from functions.subject_map_functions import generate_bnode_subject_map
 
 """Namespaces"""
 rml = Namespace('http://semweb.mmlab.be/ns/rml#')
