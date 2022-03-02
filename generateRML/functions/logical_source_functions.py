@@ -2,16 +2,14 @@
 from rdflib import *
 
 """Lists"""
-#from functions.lists import classificationLcc_props
-#from functions.lists import classificationNlm_props
-#from functions.lists import dissertationList
+from functions.lists import classification_props
 from functions.lists import expression_title_props
 from functions.lists import item_title_props
 from functions.lists import manifestation_title_props
-#from functions.lists import provisionActivityDistributionList
-#from functions.lists import provisionActivityManufactureList
-#from functions.lists import provisionActivityProductionList
-#from functions.lists import provisionActivityPublicationList
+from functions.lists import provisionActivityDistributionList
+from functions.lists import provisionActivityManufactureList
+from functions.lists import provisionActivityProductionList
+from functions.lists import provisionActivityPublicationList
 from functions.lists import work_title_props
 
 """Namespaces"""
@@ -127,7 +125,7 @@ def generate_lang_logical_source(RML_graph, entity, map_name, property_number):
 	"""Set other variables"""
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	lang_logical_source = BNode()
-	lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource)][@lang]")
+	lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource)][@xml:lang]")
 
 	"""Add triples"""
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
@@ -156,7 +154,7 @@ def generate_not_lang_logical_source(RML_graph, entity, map_name, property_numbe
 	"""Set other variables"""
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
 	not_lang_logical_source = BNode()
-	not_lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource) and not(@lang)]")
+	not_lang_iterator = Literal(f"/rdf:RDF/rdf:Description/{property_number}[not(@rdf:resource) and not(@xml:lang)]")
 
 	"""Add triples"""
 	RML_graph.add((map_name, rdf.type, rr.TriplesMap))
@@ -183,9 +181,9 @@ def generate_constant_logical_source(RML_graph, entity, map_name, property_numbe
 	"""Set defaults based on value type"""
 	if "Literal" in map_name:
 		if "Not_" in map_name and "Lang_" in map_name:
-			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@lang)]]")
+			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@xml:lang)]]")
 		elif "Lang_" in map_name:
-			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@lang]]")
+			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@xml:lang]]")
 		else:
 			constant_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)]]")
 	elif "IRI" in map_name:
@@ -329,8 +327,10 @@ def generate_lang_nosplit_logical_source(RML_graph, entity, map_name, property_n
 	"""Set defaults based on value type"""
 	if "IRI" in map_name:
 		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[@rdf:resource]]")
+	elif property_number in classification_props:
+		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}]")
 	else:
-		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@lang]]")
+		lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource)][@xml:lang]]")
 
 	"""Set other variables"""
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")
@@ -365,7 +365,7 @@ def generate_not_lang_nosplit_logical_source(RML_graph, entity, map_name, proper
 	if "IRI" in map_name:
 		not_lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_numbers}[@rdf:resource]]")
 	else:
-		not_lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@lang)]]")
+		not_lang_nosplit_iterator = Literal(f"/rdf:RDF/rdf:Description[{property_number}[not(@rdf:resource) and not(@xml:lang)]]")
 
 	"""Set other variables"""
 	map_name = URIRef(f"http://example.org/entity/{map_name}Map")

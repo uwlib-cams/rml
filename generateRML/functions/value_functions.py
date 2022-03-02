@@ -1,17 +1,20 @@
 """Lists"""
 from functions.lists import no_language_tag_list
 from functions.lists import nosplit_bnode_list
+from functions.lists import provisionActivityDistributionList
+from functions.lists import provisionActivityManufactureList
+from functions.lists import provisionActivityProductionList
+from functions.lists import provisionActivityPublicationList
 
 """Imported Functions"""
 from functions.formatting_functions import create_bnode_name
-#from functions.logical_source_functions import generate_constant_logical_source
-#from functions.logical_source_functions import generate_dissertation_logical_source
 from functions.logical_source_functions import generate_IRI_logical_source
 from functions.logical_source_functions import generate_lang_logical_source
 from functions.logical_source_functions import generate_lang_nosplit_logical_source
 from functions.logical_source_functions import generate_neutral_literal_logical_source
 from functions.logical_source_functions import generate_not_lang_logical_source
 from functions.logical_source_functions import generate_not_lang_nosplit_logical_source
+from functions.logical_source_functions import generate_provact_logical_source
 from functions.logical_source_functions import generate_title_logical_source
 from functions.po_map_functions import generate_bnode_po_map
 from functions.po_map_functions import generate_constant_IRI
@@ -147,6 +150,10 @@ def generate_RML_for_bnode(RML_graph, bnode_po_dict, logsource_subject_list, ent
 			generate_title_logical_source(RML_graph, entity, bnode_map_name)
 			if print_check == True:
 				print("\t\tgenerating title logical source")
+		elif bnode_map_name[0:18] == "Provisionactivity_":
+			generate_provact_logical_source(RML_graph, class_name, bnode_map_name)
+			if print_check == True:
+				print("\t\tgenerating provision activity logical source")
 		elif bnode_map_name in nosplit_bnode_list:
 			generate_lang_nosplit_logical_source(RML_graph, entity, bnode_map_name, prop_num)
 			if print_check == True:
@@ -241,14 +248,14 @@ def generate_RML_for_literal(RML_graph, default_map_name, map_name, prop_num, no
 
 	else:
 		"""We DO want the language tag(s) for this literal if they exist"""
-		generate_lang_literal_split_po_map(RML_graph, map_name, node, prop_num.split(':')[-1])
+		generate_lang_literal_split_po_map(RML_graph, map_name, node)
 		if print_check == True:
-			print(f"\t\tgenerating literal predicate object map, ({map_name})")
+			print(f"\t\tgenerating literal predicate object map ({map_name})")
 
-		if "Lang" in map_name:
+		if map_name[0:4] == "Lang":
 			"""Generate RML code for equivalent 'no lang' blank node"""
 			not_lang_map_name = f"Not_{map_name}"
-			generate_not_lang_literal_split_po_map(RML_graph, not_lang_map_name, node, prop_num.split(':')[-1])
+			generate_not_lang_literal_split_po_map(RML_graph, not_lang_map_name, node, prop_num)
 			if print_check == True:
 				print(f"\t\tgenerating literal predicate object map, yes split ({not_lang_map_name})")
 

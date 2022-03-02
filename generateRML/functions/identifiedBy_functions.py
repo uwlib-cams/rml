@@ -119,17 +119,20 @@ def P30004_mapping(RML_graph):
 	identifiedBy_po_map = BNode()
 	identifiedBy_object_map = BNode()
 
-	RML_graph.add((ex.ManifestationMap, rr.predicateObjectMap, manifestation_po_map_identifiedBy_bnode))
-	RML_graph.add((manifestation_po_map_identifiedBy_bnode, rr.predicate, bf.identifiedBy))
-	RML_graph.add((manifestation_po_map_identifiedBy_bnode, rr.objectMap, manifestation_object_map_identifiedBy_bnode))
-	RML_graph.add((manifestation_object_map_identifiedBy_bnode, rr.parentTriplesMap, ex.IdentifierMap))
-
+	# IRIs
 	RML_graph.add((ex.ManifestationMap, rr.predicateObjectMap, manifestation_po_map_identifiedBy_IRI))
 	RML_graph.add((manifestation_po_map_identifiedBy_IRI, rr.predicate, bf.identifiedBy))
 	RML_graph.add((manifestation_po_map_identifiedBy_IRI, rr.objectMap, manifestation_object_map_identifiedBy_IRI))
 	RML_graph.add((manifestation_object_map_identifiedBy_IRI, rml.reference, Literal("rdam:P30004/@rdf:resource")))
 	RML_graph.add((manifestation_object_map_identifiedBy_IRI, rr.termType, rr.IRI))
 
+	# literals
+	RML_graph.add((ex.ManifestationMap, rr.predicateObjectMap, manifestation_po_map_identifiedBy_bnode))
+	RML_graph.add((manifestation_po_map_identifiedBy_bnode, rr.predicate, bf.identifiedBy))
+	RML_graph.add((manifestation_po_map_identifiedBy_bnode, rr.objectMap, manifestation_object_map_identifiedBy_bnode))
+	RML_graph.add((manifestation_object_map_identifiedBy_bnode, rr.parentTriplesMap, ex.IdentifierMap))
+
+	# blank node for literal value
 	RML_graph.add((ex.IdentifierMap, rdf.type, rr.TriplesMap))
 	RML_graph.add((ex.IdentifierMap, rml.logicalSource, identifiedBy_logical_source))
 	RML_graph.add((identifiedBy_logical_source, rml.source, Literal("!!manifestation_filepath!!.xml")))
@@ -145,6 +148,52 @@ def P30004_mapping(RML_graph):
 	RML_graph.add((identifiedBy_po_map, rr.objectMap, identifiedBy_object_map))
 	RML_graph.add((identifiedBy_object_map, rml.reference, Literal('.')))
 	RML_graph.add((identifiedBy_object_map, rr.termType, rr.Literal))
+
+	# for rdam:30004 values with wrong namespace in original Sinopia data <http://rdaregistry.info/Elements/m/datatype/>
+	manifestation_po_map_identifiedBy_bnode_rdamdt = BNode()
+	manifestation_object_map_identifiedBy_bnode_rdamdt = BNode()
+	manifestation_logical_source_identifiedBy_bnode_rdamdt = BNode()
+
+	manifestation_po_map_identifiedBy_IRI_rdamdt = BNode()
+	manifestation_object_map_identifiedBy_IRI_rdamdt = BNode()
+	manifestation_logical_source_identifiedBy_IRI_rdamdt = BNode()
+
+	identifiedBy_logical_source_rdamdt = BNode()
+
+	identifiedBy_subject_map_rdamdt = BNode()
+
+	identifiedBy_po_map_rdamdt = BNode()
+	identifiedBy_object_map_rdamdt = BNode()
+
+	# IRIs
+	RML_graph.add((ex.ManifestationMap, rr.predicateObjectMap, manifestation_po_map_identifiedBy_IRI_rdamdt))
+	RML_graph.add((manifestation_po_map_identifiedBy_IRI_rdamdt, rr.predicate, bf.identifiedBy))
+	RML_graph.add((manifestation_po_map_identifiedBy_IRI_rdamdt, rr.objectMap, manifestation_object_map_identifiedBy_IRI_rdamdt))
+	RML_graph.add((manifestation_object_map_identifiedBy_IRI_rdamdt, rml.reference, Literal("rdamdt:P30004/@rdf:resource")))
+	RML_graph.add((manifestation_object_map_identifiedBy_IRI_rdamdt, rr.termType, rr.IRI))
+
+	# literals
+	RML_graph.add((ex.ManifestationMap, rr.predicateObjectMap, manifestation_po_map_identifiedBy_bnode_rdamdt))
+	RML_graph.add((manifestation_po_map_identifiedBy_bnode_rdamdt, rr.predicate, bf.identifiedBy))
+	RML_graph.add((manifestation_po_map_identifiedBy_bnode_rdamdt, rr.objectMap, manifestation_object_map_identifiedBy_bnode_rdamdt))
+	RML_graph.add((manifestation_object_map_identifiedBy_bnode_rdamdt, rr.parentTriplesMap, ex.RdamdtIdentifierMap))
+
+	# blank node for literal value
+	RML_graph.add((ex.RdamdtIdentifierMap, rdf.type, rr.TriplesMap))
+	RML_graph.add((ex.RdamdtIdentifierMap, rml.logicalSource, identifiedBy_logical_source_rdamdt))
+	RML_graph.add((identifiedBy_logical_source_rdamdt, rml.source, Literal("!!manifestation_filepath!!.xml")))
+	RML_graph.add((identifiedBy_logical_source_rdamdt, rml.referenceFormulation, ql.XPath))
+	RML_graph.add((identifiedBy_logical_source_rdamdt, rml.iterator, Literal("/rdf:RDF/rdf:Description/rdamdt:P30004[not(@rdf:resource)]")))
+
+	RML_graph.add((ex.RdamdtIdentifierMap, rr.subjectMap, identifiedBy_subject_map_rdamdt))
+	RML_graph.add((identifiedBy_subject_map_rdamdt, rr.termType, rr.BlankNode))
+	RML_graph.add((identifiedBy_subject_map_rdamdt, class_property, bf.Identifier))
+
+	RML_graph.add((ex.RdamdtIdentifierMap, rr.predicateObjectMap, identifiedBy_po_map_rdamdt))
+	RML_graph.add((identifiedBy_po_map_rdamdt, rr.predicate, rdf.value))
+	RML_graph.add((identifiedBy_po_map_rdamdt, rr.objectMap, identifiedBy_object_map_rdamdt))
+	RML_graph.add((identifiedBy_object_map_rdamdt, rml.reference, Literal('.')))
+	RML_graph.add((identifiedBy_object_map_rdamdt, rr.termType, rr.Literal))
 
 	return RML_graph
 
