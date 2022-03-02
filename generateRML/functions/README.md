@@ -9,6 +9,7 @@ These functions are utilized in [generate_RML.py](https://github.com/uwlib-cams/
  - [kiegel_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#kiegel_functionspy)
  - [lists.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#listspy)
  - [logical_source_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#logical_source_functionspy)
+ - [parse_kiegel.py](https://github.com/uwlib-cams/rml/blob/master/generateRML/functions#parse_kiegelpy)
  - [po_map_functions.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#po_map_functionspy)
  - [split_by_space.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#split_by_spacepy)
  - [start_RML_map.py](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#start_rml_mappy)
@@ -113,8 +114,6 @@ Functions necessary to parse kiegel mappings.
  - [get_file_list](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#get_file_list)
  - [get_property_kiegel_list](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#get_property_kiegel_list)
  - [create_kiegel_dict](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#create_kiegel_dict)
- - [kiegel_reader](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#kiegel_reader)
- - [kiegel_reader_tester](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#kiegel_reader_tester)
 
 _Python Libraries/Modules/Packages_
  - _[csv](https://docs.python.org/3/library/csv.html)_
@@ -132,25 +131,7 @@ Creates dictionary with RDA property numbers as keys and its mapping(s) as value
 
 _See [edit_kiegel](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#edit_kiegel)_
 
-### kiegel_reader
-Iterates through mappings as organized by the [create_kiegel_dict](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#create_kiegel_dict) function. Generates RML according to mapping.
-
- - _See [start_RML_map](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#start_rml_map)_
- - _See [generate_main_logical_source](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_main_logical_source)_
- - _See [generate_main_subject_map](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_main_subject_map)_
- - _See [admin_metadata_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#admin_metadata_mapping)_
- - _See [P10002_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#P10002_mapping)_
- - _See [P20002_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#P20002_mapping)_
- - _See [P30004_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#P30004_mapping)_
- - _See [P40001_mapping](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#P40001_mapping)_
- - _See [split_by_space](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#split_by_space)_
- - _See [generate_RML_for_IRI](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_RML_for_IRI)_
- - _See [generate_RML_for_constant](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_RML_for_constant)_
- - _See [generate_RML_for_bnode](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_RML_for_bnode)_
- - _See [class_test](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#class_test)_
- - _See [generate_RML_for_literal](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#generate_RML_for_literal)_
-
-_[How kiegel is parsed in this script](https://github.com/uwlib-cams/rml/tree/master/generateRML#how-kiegel-is-parsed-in-this-script)_
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#functions)_
 
 ## lists.py
 Lists used throughout the generation process.
@@ -311,6 +292,13 @@ Generates an RML logical source for an [RML triples map](https://rml.io/specs/rm
 Generates an RML logical source for an [RML triples map](https://rml.io/specs/rml/#triples-map) that only maps RDA properties that map to a blank node classed as a [bf:Dissertation](https://id.loc.gov/ontologies/bibframe.html#c_Dissertation).
 
  - _See [dissertationList](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#dissertationList)_
+
+_[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#functions)_
+
+## parse_kiegel.py
+### kiegel_reader
+
+Iterates through dictionary of kiegel mappings created by the function [create_kiegel_dict](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#create_kiegel_dict) and generates RML for each mapping.
 
 _[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#functions)_
 
