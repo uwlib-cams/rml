@@ -130,6 +130,7 @@ Creates list of tuples containing an RDA property and its respective mapping(s) 
 Creates dictionary with RDA property numbers as keys and its mapping(s) as values. These values are themselves dictionaries, with either "IRI" or "literal" as the key, depending on what type of value the mapping will take.
 
 _See [kiegel_reader](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#kiegel_reader)_
+
 _See [edit_kiegel](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#edit_kiegel)_
 
 _[Back to top](https://github.com/uwlib-cams/rml/tree/master/generateRML/functions#functions)_
