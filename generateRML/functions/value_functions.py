@@ -1,4 +1,5 @@
 """Lists"""
+from functions.lists import classification_props
 from functions.lists import no_language_tag_list
 from functions.lists import nosplit_bnode_list
 from functions.lists import provisionActivityDistributionList
@@ -8,6 +9,7 @@ from functions.lists import provisionActivityPublicationList
 
 """Imported Functions"""
 from functions.formatting_functions import create_bnode_name
+from functions.logical_source_functions import generate_classification_logical_source
 from functions.logical_source_functions import generate_IRI_logical_source
 from functions.logical_source_functions import generate_lang_logical_source
 from functions.logical_source_functions import generate_lang_nosplit_logical_source
@@ -154,6 +156,10 @@ def generate_RML_for_bnode(RML_graph, bnode_po_dict, logsource_subject_list, ent
 			generate_provact_logical_source(RML_graph, class_name, bnode_map_name)
 			if print_check == True:
 				print("\t\tgenerating provision activity logical source")
+		elif prop_num in classification_props:
+			generate_classification_logical_source(RML_graph, entity, bnode_map_name)
+			if print_check == True:
+				print("\t\tgenerating classification logical source")
 		elif bnode_map_name in nosplit_bnode_list:
 			generate_lang_nosplit_logical_source(RML_graph, entity, bnode_map_name, prop_num)
 			if print_check == True:

@@ -3409,6 +3409,7 @@ nosplit_bnode_list = [
 	"Not_Lang_Contribution_hasContributorAgent_",
 	"Dissertation_",
 	"Classification_Lcc_",
+	"Classification_Nlm_",
 	"Title_"
 ]
 
@@ -3420,7 +3421,9 @@ no_language_tag_list = [
 	"rdam:P30009",
 	"rdax:hasBarcode",
 	"rdax:hasLcClassificationPartA",
-	"rdax:hasLcClassificationPartB"
+	"rdax:hasLcClassificationPartB",
+	"rdax:hasNlmClassificationPartA",
+	"rdax:hasNlmClassificationPartB"
 ]
 
 provisionActivityDistributionList = [

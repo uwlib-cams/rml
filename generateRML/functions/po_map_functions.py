@@ -1,9 +1,6 @@
 """Python Libraries/Modules/Packages"""
 from rdflib import *
 
-"""Lists"""
-from functions.lists import classification_props
-
 """Imported Functions"""
 from functions.formatting_functions import convert_string_to_IRI
 from functions.formatting_functions import generate_constant
