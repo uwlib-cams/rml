@@ -4,7 +4,6 @@ import os
 from progress.bar import Bar
 import requests
 from rdflib import *
-import rdflib
 import time
 from timeit import default_timer as timer
 
@@ -70,7 +69,7 @@ def save_resources(uri_dict, currentDate, entity):
 	"""Look for resources from mongoDB and save as RDF/XML"""
 	# create directory for resources
 	if not os.path.exists(f'{input_location}/{currentDate}/{entity}'):
-		print("\n>> Creating resource directory")
+		print(f"\n>> Creating {entity} directory")
 		os.system(f'mkdir {input_location}/{currentDate}/{entity}')
 
 	resource_list = uri_dict[entity]
@@ -79,8 +78,7 @@ def save_resources(uri_dict, currentDate, entity):
 	for URI in resource_list:
 		label = URI.split('/')[-1]
 		# create new graph, bind namespaces
-		graph = rdflib.Graph()
-		graph = rdflib.Graph()
+		graph = Graph()
 		graph.bind('bf', bf)
 		graph.bind('bflc', bflc)
 		graph.bind('madsrdf', madsrdf)
