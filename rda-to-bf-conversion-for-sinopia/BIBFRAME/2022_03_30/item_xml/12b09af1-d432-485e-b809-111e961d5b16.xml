@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N5891a5c67b784d92b2eb5b5f946dfbc2">
+    <rdf:value xml:lang="eng">DVD EAL 3483</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ShelfMark"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b879a3794564c03abde1401c103a111">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N266d79f6a8604dd085b6fd9b2332bd2e">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N042854fd2f3147e9af4e240a89ad2a9f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N9b879a3794564c03abde1401c103a111"/>
+    <bflc:catalogerId>jlee70</bflc:catalogerId>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbceabf4d8e7b4089ac37a0470071806b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>39352084783232</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N285967559de94491806aca074318da45">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">szmed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N042854fd2f3147e9af4e240a89ad2a9f">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:57:45</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/12b09af1-d432-485e-b809-111e961d5b16">
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/1a227d93-9924-42fd-a621-3574a767d0ed"/>
+    <bf:identifier rdf:nodeID="Nbceabf4d8e7b4089ac37a0470071806b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:physicalLocation xml:lang="eng">suzzallen</bf:physicalLocation>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/ea697eb6-2c07-460d-82e6-9f8de4f10755"/>
+    <bf:adminMetadata rdf:nodeID="N266d79f6a8604dd085b6fd9b2332bd2e"/>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:shelfMark rdf:nodeID="N5891a5c67b784d92b2eb5b5f946dfbc2"/>
+    <bf:sublocation rdf:nodeID="N285967559de94491806aca074318da45"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Na0f6acb317444c788fa17adf5d739e1f">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:40:36</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21e2087a5827475eb1d64eb594c4cf53">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nabfa8946fbdd4fcaa8a0c3706993687f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/CreatorCharacteristic"/>
+    <rdfs:label>Catholic Church</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4782fe9425d64999877c1e48f617f040">
+    <bflc:catalogerId>leemihwa</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:status rdf:nodeID="N21e2087a5827475eb1d64eb594c4cf53"/>
+    <bf:generationProcess rdf:nodeID="Na0f6acb317444c788fa17adf5d739e1f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2827ccdbd3a240f995c381dc411df379">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="Nc299df02d72846478c82476fad9ef695"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/e6a8a899-0c47-4475-9402-d54f4fce6b8d">
+    <bflc:creatorCharacteristic rdf:nodeID="Nabfa8946fbdd4fcaa8a0c3706993687f"/>
+    <bf:contribution rdf:nodeID="N2827ccdbd3a240f995c381dc411df379"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/24cd1b8d-48fe-43dc-95d9-d64df2032f24"/>
+    <bf:title rdf:nodeID="Ncec2f45491d1415fa60ed960d449b70a"/>
+    <skos:prefLabel xml:lang="eng">Catholicisme en Corée</skos:prefLabel>
+    <bf:adminMetadata rdf:nodeID="N4782fe9425d64999877c1e48f617f040"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1880</bf:originDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncec2f45491d1415fa60ed960d449b70a">
+    <bf:mainTitle xml:lang="eng">Catholicisme en Corée</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc299df02d72846478c82476fad9ef695">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Missions etrangeres de Paris</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

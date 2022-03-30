@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N4ff9f92cad1a437aa4c460c7bd7f4e2d">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N0e8d5fb4e20d4b3f9bcf12458f5e845d"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bflc:catalogerId>lins@uw.edu</bflc:catalogerId>
+    <bf:generationProcess rdf:nodeID="Nf122c3157063470d9f9aa30399094b56"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6529897336bc4002a080bdfe5d571123">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+    <rdfs:label xml:lang="eng">Four short segments on Canadian life, originally broadcast on Radio Canada International.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nddf01d994a0542a08e0020954c3bba10">
+    <rdfs:label>Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6809806e286645ab8459ff946f8c49b5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="fra">Side 1. Plage 1. Les droites a la mode (4:49) ;  plage 2. Des petro-dollars pour la posterite (2.22) -- side 2. plage 3. Venus par vauges (3:27) ; plage 4. Un faux chef Indien (3:45)</rdfs:label>
+    <bf:noteType xml:lang="en">note on expression</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/eb3ca281-a229-406d-8e80-e3786bf957d7">
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/09bac7ff-5c73-43de-9c6f-1e14c0ffb33e"/>
+    <bf:notation rdf:nodeID="Nddf01d994a0542a08e0020954c3bba10"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
+    <bf:summary rdf:nodeID="N6529897336bc4002a080bdfe5d571123"/>
+    <bf:duration xml:lang="eng">approximately 14 min.</bf:duration>
+    <bf:adminMetadata rdf:nodeID="N4ff9f92cad1a437aa4c460c7bd7f4e2d"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:note rdf:nodeID="N6809806e286645ab8459ff946f8c49b5"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/50a06a60-3366-46a9-85f1-dd879b7765ed"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf122c3157063470d9f9aa30399094b56">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:47:16</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e8d5fb4e20d4b3f9bcf12458f5e845d">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

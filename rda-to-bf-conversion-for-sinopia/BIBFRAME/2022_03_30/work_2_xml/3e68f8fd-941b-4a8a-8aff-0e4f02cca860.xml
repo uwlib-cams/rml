@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nb7183636a94d4c5281120619b05c18e7">
+    <rdfs:label xml:lang="eng">Higgins</rdfs:label>
+    <bf:noteType xml:lang="en">other distinguishing characteristic of expression</bf:noteType>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4658f27569354737b851f17f430e641d">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n2002042350"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/3e68f8fd-941b-4a8a-8aff-0e4f02cca860">
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/>
+    <bf:intendedAudience rdf:resource="http://id.loc.gov/authorities/demographicTerms/dg2015060010"/>
+    <bf:adminMetadata rdf:nodeID="Nb49886def1c04d77ada3d98b892aa5d7"/>
+    <bf:contribution rdf:nodeID="N4658f27569354737b851f17f430e641d"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/subjects/sh85064405"/>
+    <bf:note rdf:nodeID="Nb7183636a94d4c5281120619b05c18e7"/>
+    <bf:title rdf:nodeID="N5db9b18a2764476db43becde5fa07845"/>
+    <bf:summary rdf:nodeID="Naeb406475fc4486aaf338329deb9e72b"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:notation rdf:nodeID="N1df131d5b0e14b4c90e064c91f17b906"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <skos:altLabel xml:lang="eng">Dodge, Mary Mapes, 1830-1905. Hans Brinker. English. 1929</skos:altLabel>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/9f8d19d9-6a1c-4d2d-929e-d40f809306bb"/>
+    <bf:note rdf:nodeID="Nde93ffc46591419c976e298e7389ba43"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:title rdf:nodeID="N212b1e9520b149889bc10a686c12e1eb"/>
+    <skos:prefLabel xml:lang="eng">Dodge, Mary Mapes, 1830-1905. Hans Brinker. English (Higgins)</skos:prefLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/9da40fe2-ab05-45b2-90b1-16d80d252e0b"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1929</bf:originDate>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb49886def1c04d77ada3d98b892aa5d7">
+    <bflc:catalogerId>aschiff</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:generationProcess rdf:nodeID="N9ffb28d225e941068c073d24ab23ada9"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1df131d5b0e14b4c90e064c91f17b906">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nde93ffc46591419c976e298e7389ba43">
+    <bf:noteType xml:lang="en">has details of colour content</bf:noteType>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Black and white illustrations against green background</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5db9b18a2764476db43becde5fa07845">
+    <bf:mainTitle xml:lang="eng">Hans Brinker</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ffb28d225e941068c073d24ab23ada9">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:49:12</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naeb406475fc4486aaf338329deb9e72b">
+    <rdfs:label xml:lang="eng">When a new friend gives Hans and his sister Gretel enough money for one pair of ice skates, Hans insists that Gretel enter the grand skating competition, while he approaches the great Doctor who consents to try to restore their father's health and memory.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N212b1e9520b149889bc10a686c12e1eb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="eng">Hans Brinker, or, The silver skates</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

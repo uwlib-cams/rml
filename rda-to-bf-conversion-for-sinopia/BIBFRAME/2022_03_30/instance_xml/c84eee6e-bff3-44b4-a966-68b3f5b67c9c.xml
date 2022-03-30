@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N20b21e046e4e48cd96918b43ed143dd8">
+    <bf:classificationPortion>Q175.4</bf:classificationPortion>
+    <bf:itemPortion>.P76 2016</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9cb4dd8c6de14d57bcb1efee0e58d247">
+    <rdf:value>3319699733</rdf:value>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc971a10902d4c26a4b07916564d1af0">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:generationProcess rdf:nodeID="N96c5fc736be3484f91a76770425829a3"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/c84eee6e-bff3-44b4-a966-68b3f5b67c9c">
+    <bf:identifiedBy rdf:nodeID="N7db4a906297b4a41a1509330b73fb22b"/>
+    <bf:provisionActivity rdf:nodeID="N062e7723c6a64717be0284bd97386f1a"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:identifiedBy rdf:nodeID="N9cb4dd8c6de14d57bcb1efee0e58d247"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:adminMetadata rdf:nodeID="Nfc971a10902d4c26a4b07916564d1af0"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:copyrightDate>©2018</bf:copyrightDate>
+    <bf:dimensions xml:lang="eng">24 cm</bf:dimensions>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/83337200-3e1f-4a11-8177-de83111d67bc"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/1f7c622b-b573-40b9-9b78-96c15135cc3e"/>
+    <bf:classification rdf:nodeID="N20b21e046e4e48cd96918b43ed143dd8"/>
+    <bf:title rdf:nodeID="Nc03ce6a058c948b39cbb319a34639f55"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:responsibilityStatement xml:lang="eng">Alain Tressaud, editor</bf:responsibilityStatement>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:extent rdf:nodeID="N80ac52bceafa4a56b30b053f56d550d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7db4a906297b4a41a1509330b73fb22b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>9783319699738</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N80ac52bceafa4a56b30b053f56d550d7">
+    <rdfs:label xml:lang="eng">xi, 108 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncbd35bf1da914e168eb4d813d9b8fd73">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Cham, Switzerland</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N062e7723c6a64717be0284bd97386f1a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>[2018]</bf:date>
+    <bf:place rdf:nodeID="Ncbd35bf1da914e168eb4d813d9b8fd73"/>
+    <bf:agent rdf:nodeID="N7a4aa48f7bb048d8a0ace1e6fd3e0dbb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a4aa48f7bb048d8a0ace1e6fd3e0dbb">
+    <rdfs:label xml:lang="eng">Springer</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96c5fc736be3484f91a76770425829a3">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:53:22</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc03ce6a058c948b39cbb319a34639f55">
+    <bf:mainTitle xml:lang="eng">Progress in science, progress in society</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

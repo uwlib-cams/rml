@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N52398d7504a4423fa99011b32bfebbfc">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-25</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N084ca177d5cf472aa97b392852d904d6"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess rdf:nodeID="Nfab4f2b781ee4d4fb2d4762f1e395686"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3ebc1fcefb35436da6f6fa3a3e77d46a">
+    <bf:noteType xml:lang="en">note on expression</bf:noteType>
+    <rdfs:label xml:lang="eng">"First published, with 24 illustrations, in 1909. Reprinted, with some slight alterations and 16 illustrations, in 1926"--Title page verso.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ca6c295f6b84576812a93ed7a166e1e">
+    <rdfs:label>Du Cane, Ella</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47351d2ef387415089d6e615ebd5ede1">
+    <bf:agent rdf:nodeID="N6ca6c295f6b84576812a93ed7a166e1e"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/47e02f0a-0c29-4d66-aea4-c0af2ace880e">
+    <bf:contribution rdf:nodeID="N47351d2ef387415089d6e615ebd5ede1"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/2bcc71b3-6b6d-4a3c-aadd-28c295cdef35"/>
+    <bf:colorContent rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <skos:altLabel xml:lang="eng">Du Cane, Florence. Flowers and gardens of Madeira (English : 1926)</skos:altLabel>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/plt"/>
+    <bf:adminMetadata rdf:nodeID="N52398d7504a4423fa99011b32bfebbfc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1926</bf:originDate>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+    <bf:notation rdf:nodeID="N1193206caf5241f7a65f30dc8658b8a0"/>
+    <bf:note rdf:nodeID="N3ebc1fcefb35436da6f6fa3a3e77d46a"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <skos:prefLabel xml:lang="eng">Du Cane, Florence. Flowers &amp; gardens of Madeira (English : 1926)</skos:prefLabel>
+    <bf:derivativeOf rdf:resource="https://api.sinopia.io/resource/da035583-bf2d-44fd-8cbf-25deb7fd643c"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/6c2530fc-e3cc-4355-bded-ca35576645ce"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfab4f2b781ee4d4fb2d4762f1e395686">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:46:15</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N084ca177d5cf472aa97b392852d904d6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1193206caf5241f7a65f30dc8658b8a0">
+    <rdfs:label>Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+</rdf:RDF>

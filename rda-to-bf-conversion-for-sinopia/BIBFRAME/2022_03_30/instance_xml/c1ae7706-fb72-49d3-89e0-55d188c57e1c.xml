@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N67ce0d2af3fc476bb58dc2410bf59152">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="Nf7a3b650c1cf4bf6b9826dbde5c79fc6"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N3158f8082bc6454f920cec163886ac07"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerId>aschiff</bflc:catalogerId>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf7a3b650c1cf4bf6b9826dbde5c79fc6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:53:26</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3158f8082bc6454f920cec163886ac07">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb863cd6234584891bad0979abcc47f2f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Investigating the functional morphology, locomotor diversification, and paleoecology of Mesozoic mammals</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/c1ae7706-fb72-49d3-89e0-55d188c57e1c">
+    <bf:identifiedBy rdf:nodeID="N986c5857126f45f98f4220e57f50d5e1"/>
+    <bf:extent rdf:nodeID="N56b6ec3c7e3341b7ac4321a8529174d6"/>
+    <bf:responsibilityStatement xml:lang="eng">Meng Chen</bf:responsibilityStatement>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/41063f29-136c-460e-b65e-6c4772af7bd5"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/852212bb-9ddb-45c5-a752-db1818f9790c"/>
+    <bf:provisionActivity rdf:nodeID="Nd94187c088cf4231869ca6ac49b9e599"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <bf:copyrightDate>©2015</bf:copyrightDate>
+    <bf:adminMetadata rdf:nodeID="N67ce0d2af3fc476bb58dc2410bf59152"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Seattle, Washington] : [University of Washington Libraries], [2015]</bf:provisionActivityStatement>
+    <bf:title rdf:nodeID="Nb863cd6234584891bad0979abcc47f2f"/>
+    <bf:hasItem rdf:nodeID="Ne059bd3c67f7462dbafdc519e42a347e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N986c5857126f45f98f4220e57f50d5e1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>OCLC 910922977</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6156e05587114e26ab175b324b4624be">
+    <rdfs:label xml:lang="eng">[University of Washington Libraries]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd94187c088cf4231869ca6ac49b9e599">
+    <bf:place rdf:nodeID="Nac46a37f26ba424184694097f7cb2bae"/>
+    <bf:agent rdf:nodeID="N6156e05587114e26ab175b324b4624be"/>
+    <bf:date>[2015]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne059bd3c67f7462dbafdc519e42a347e">
+    <bf:electronicLocator rdf:resource="http://hdl.handle.net/1773/33106"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac46a37f26ba424184694097f7cb2bae">
+    <rdfs:label xml:lang="eng">[Seattle, Washington]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N56b6ec3c7e3341b7ac4321a8529174d6">
+    <rdfs:label xml:lang="eng">1 online resource (vii, 196 pages)</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+</rdf:RDF>

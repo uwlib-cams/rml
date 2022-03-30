@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nd1234abcdec64518b129d1eb6caf90e5">
+    <rdfs:label>University of Washington Press</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86253931868d45b48334d3c4fcaaf585">
+    <bf:place rdf:nodeID="N72e23643a02e4c978026a63ca347050d"/>
+    <bf:date>[1980]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="N6c6d6515c8634bb884a9aa846d0a5fda"/>
+    <bf:agent rdf:nodeID="Nea75c46cdc0e4ea3a1df77972379c531"/>
+    <bf:agent rdf:nodeID="Nd1234abcdec64518b129d1eb6caf90e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51f80d30cac246f1aa2cd0e71b1fdfd3">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:52:44</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2147ee1f0c1416bb8691995c4a2082d">
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N51f80d30cac246f1aa2cd0e71b1fdfd3"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:status rdf:nodeID="N5e05c5956c00413e818b0df54bdfdd22"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c6d6515c8634bb884a9aa846d0a5fda">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">London</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/5b24272d-cade-4e7f-89c6-ad070de3e629">
+    <bf:adminMetadata rdf:nodeID="Na2147ee1f0c1416bb8691995c4a2082d"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/27b30f17-66bf-42a7-af0f-18d828a24882"/>
+    <bf:dimensions xml:lang="eng">23 cm</bf:dimensions>
+    <bf:extent rdf:nodeID="Naa658ddad8b6455487e57ea47de9afb6"/>
+    <bf:classification rdf:nodeID="N6e7edbb0103b401fbc54370658a3abf2"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <bf:provisionActivityStatement xml:lang="eng">Seattle ; London : University of Washington Press, [1980]</bf:provisionActivityStatement>
+    <bf:provisionActivity rdf:nodeID="N86253931868d45b48334d3c4fcaaf585"/>
+    <bf:copyrightDate>©1980</bf:copyrightDate>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/53cfeb78-aa5c-4256-a463-358ca04520e6"/>
+    <bf:identifiedBy rdf:nodeID="N92b8e0d0531e427386a7a2e1a5736567"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:title rdf:nodeID="Nfa50a0b86c61493aa3e292a127072662"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:responsibilityStatement xml:lang="eng">Sally B. Woodbridge and Roger Montgomery ; essay on landscape design by David S. Streatfield.</bf:responsibilityStatement>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e7edbb0103b401fbc54370658a3abf2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>W66 1980</bf:itemPortion>
+    <bf:classificationPortion>NA730.W2</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa50a0b86c61493aa3e292a127072662">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">A guide to architecture in Washington State</bf:mainTitle>
+    <bf:subtitle xml:lang="eng">an environmental perspective</bf:subtitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea75c46cdc0e4ea3a1df77972379c531">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">University of Washington Press</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa658ddad8b6455487e57ea47de9afb6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+    <rdfs:label xml:lang="eng">xv, 483 pages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72e23643a02e4c978026a63ca347050d">
+    <rdfs:label xml:lang="eng">Seattle</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N92b8e0d0531e427386a7a2e1a5736567">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>ISBN 0295957794</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e05c5956c00413e818b0df54bdfdd22">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

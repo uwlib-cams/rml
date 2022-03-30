@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Ne68366257fb141e3b106029803110110">
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:generationProcess rdf:nodeID="N9f5d2b9bdf284321b309d3d94d87a07c"/>
+    <bf:status rdf:nodeID="N0db3ded3480642aea47b10d737b357f7"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-30</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N401e133fd04948dd9154d6e407d617e8">
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N73e2f106db75415883f3934672622e72">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">map of North American beaver range</rdfs:label>
+    <bf:noteType xml:lang="en">details of illustrative content</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c0aca9aec8b40d5a6974b1a0450f20c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ColorContent"/>
+    <rdfs:label>some color illustrations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/997e82b6-34bd-4b6b-a423-900ecbf76edb">
+    <bf:note rdf:nodeID="N73e2f106db75415883f3934672622e72"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/a8048500-bb3b-43d8-81bb-9bc6e8653ff6"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:contribution rdf:nodeID="N8e6cf4492a794a1c8734f88c907635f2"/>
+    <bf:adminMetadata rdf:nodeID="Ne68366257fb141e3b106029803110110"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/0a8385c4-35ad-4640-a702-0e285625eefb"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:notation rdf:nodeID="N401e133fd04948dd9154d6e407d617e8"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/map"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</bf:originDate>
+    <bf:summary rdf:nodeID="Nf8bf8fa31bfa46cdaa09306c35e4652b"/>
+    <bf:colorContent rdf:nodeID="N7c0aca9aec8b40d5a6974b1a0450f20c"/>
+    <bf:supplementaryContent rdf:nodeID="Nce1e5600652b4cc490f4d54e8776170a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f85794c556040478a2bbb459ac3a7c5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Role"/>
+    <rdfs:label xml:lang="en">writer of foreword</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f5d2b9bdf284321b309d3d94d87a07c">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-03-30T12:45:20</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e6cf4492a794a1c8734f88c907635f2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N3d30c2a474104536a3cd6f9e0a21872a"/>
+    <bf:role rdf:nodeID="N2f85794c556040478a2bbb459ac3a7c5"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/wst"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d30c2a474104536a3cd6f9e0a21872a">
+    <rdfs:label> Flores, Dan L. (Dan Louie), 1948- .</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0db3ded3480642aea47b10d737b357f7">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8bf8fa31bfa46cdaa09306c35e4652b">
+    <rdfs:label xml:lang="eng">Ben Goldfarb reveals that our modern idea of what a healthy landscape looks like and how it functions is wrong, distorted by the fur trade that once trapped out millions of beavers from North America's lakes and rivers. The consequences of losing beavers were profound: streams eroded, wetlands dried up, and species from salmon to swans lost vital habitat.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Summary"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce1e5600652b4cc490f4d54e8776170a">
+    <rdfs:label xml:lang="eng">Includes bibliographical references (pages249-270) and index</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/SupplementaryContent"/>
+  </rdf:Description>
+</rdf:RDF>
