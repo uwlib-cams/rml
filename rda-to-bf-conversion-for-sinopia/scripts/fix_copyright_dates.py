@@ -1,13 +1,12 @@
 """Python Libraries/Modules/Packages"""
-import os
 from datetime import date
+import os
 from progress.bar import Bar
+from rdflib import *
 from timeit import default_timer as timer
-import xml.etree.ElementTree as ET
 
 """Imported Functions"""
 from scripts.arguments import define_arg
-from scripts.reserialize import reserialize
 
 """Functions"""
 def fix_copyright_dates(entity, file, input_location):
@@ -15,20 +14,18 @@ def fix_copyright_dates(entity, file, input_location):
 
 	num_of_edits = 0
 
-	# open xml parser
-	tree = ET.parse(f'{input_location}/{currentDate}/{entity}/{file}')
-	root = tree.getroot()
+	g = Graph()
 
-	for child in root: # for each node...
-		for prop in child: # for each property in node...
-			if prop.text is not None: # if the property has a literal value...
-				if prop.text == "©": # and if that literal is the copyright symbol and nothing else...
-					child.remove(prop) # remove that property
-					num_of_edits += 1
+	g.load(f'{input_location}/{currentDate}/{entity}/{file}', format="xml")
 
-					tree.write(f'{input_location}/{currentDate}/{entity}/{file}')
+	for s, p, o in g:
+		object = "{}".format(o)
+		if object == "©":
+			g.remove((s, p, o))
+			num_of_edits += 1
 
-					reserialize(f'{input_location}/{currentDate}/{entity}/{file}', f'{input_location}/{currentDate}/{entity}/{file}', 'xml')
+	g.serialize(destination=f'{input_location}/{currentDate}/{entity}/{file}', format="xml")
+
 	return num_of_edits
 
 """Variables"""

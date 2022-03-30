@@ -1,14 +1,13 @@
 """Python Libraries/Modules/Packages"""
-import os
 from datetime import date
+import os
 from progress.bar import Bar
+import rdflib
 from rdflib import *
 from timeit import default_timer as timer
-import xml.etree.ElementTree as ET
 
 """Imported Functions"""
 from scripts.arguments import define_arg
-from scripts.reserialize import reserialize
 
 """Functions"""
 def fix_URIs(entity, file, input_location):
@@ -16,31 +15,26 @@ def fix_URIs(entity, file, input_location):
 
 	num_of_edits = 0
 
-	# open xml parser
-	tree = ET.parse(f'{input_location}/{currentDate}/{entity}/{file}')
-	root = tree.getroot()
+	g = Graph()
+	g.load(f'{input_location}/{currentDate}/{entity}/{file}', format='xml')
 
-	for child in root: # for each node...
-		for prop in child: # for each property in node...
-			if prop.text is not None: # if the property has a literal value...
-				if prop.text[0:4] == "http": # and if that literal is actually an IRI...
-					IRI = prop.text
-					prop.clear() # clear literal value
-					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', IRI) # add IRI as attribute
-					num_of_edits += 1
+	for s, p, o in g:
+		if isinstance(o, rdflib.term.Literal) == True:
+			object_literal = "{}".format(o)
+			if object_literal[0:4] == "http": # literal is actually an IRI
+				new_object = URIRef(object_literal)
+				g.remove((s, p, o))
+				g.add((s, p, new_object))
+				num_of_edits += 1
+		elif isinstance(o, rdflib.term.URIRef) == True:
+			object_IRI = "{}".format(o)
+			if object_IRI == "file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003": # correcting some incorrect IRIs in our data
+				g.remove((s, p, o))
+				g.add((s, p, URIRef('http://rdaregistry.info/termList/RDAColourContent/1003')))
+				num_of_edits += 1
 
-					tree.write(f'{input_location}/{currentDate}/{entity}/{file}')
+	g.serialize(destination=f'{input_location}/{currentDate}/{entity}/{file}', format='xml')
 
-					reserialize(f'{input_location}/{currentDate}/{entity}/{file}', f'{input_location}/{currentDate}/{entity}/{file}', 'xml')
-			elif '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource' in prop.attrib.keys():
-				if prop.attrib['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource'] == 'file:///home/forge/rda.metadataregistry.org/storage/repos/projects/177/xml/termList/rdacc1003':
-					prop.clear()
-					prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', 'http://rdaregistry.info/termList/RDAColourContent/1003')
-					num_of_edits += 1
-
-					tree.write(f'{input_location}/{currentDate}/{entity}/{file}')
-
-					reserialize(f'{input_location}/{currentDate}/{entity}/{file}', f'{input_location}/{currentDate}/{entity}/{file}', 'xml')
 	return num_of_edits
 
 """Variables"""

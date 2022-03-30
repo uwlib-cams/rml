@@ -2,14 +2,12 @@
 from datetime import date
 import os
 from progress.bar import Bar
+import rdflib
 from rdflib import *
-import time
 from timeit import default_timer as timer
-import xml.etree.ElementTree as ET
 
 """Imported Functions"""
 from scripts.arguments import define_arg
-from scripts.reserialize import reserialize
 
 """Functions"""
 def remove_extra_descriptions(entity, file, input_location):
@@ -17,36 +15,23 @@ def remove_extra_descriptions(entity, file, input_location):
 
 	num_of_edits = 0
 
-	# create temporary output file
-	if not os.path.exists(f'temp.xml'):
-		os.system('touch temp.xml')
+	g = Graph()
 
-	# open xml parser
-	tree = ET.parse(f'{input_location}/{currentDate}/{entity}/{file}')
-	root = tree.getroot()
+	g.load(f'{input_location}/{currentDate}/{entity}/{file}', format='xml')
 
-	resource_identifier = file.split('.')[0]
-	IRI = f'https://api.sinopia.io/resource/{resource_identifier}'
+	resource_label = file.split('.')[0]
 
-	ns = {'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'}
+	for s, p, o in g:
+		if isinstance(s, rdflib.term.BNode) == False:
+			# subject is IRI
+			subject_iri = "{}".format(s)
+			subject_label = subject_iri.split("/")[-1]
 
-	for desc in root.findall('rdf:Description', ns):
-		# create dictionary of attributes for description
-		attrib_dict = desc.attrib
+			if subject_label != resource_label:
+				g.remove((s, p, o))
+				num_of_edits += 1
 
-		# if it contains rdf:about as an attribute...
-		if '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about' in attrib_dict.keys():
-			# and if the value of rdf:about is not the resource in question...
-			if attrib_dict['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about'] != IRI:
-				# remove the description
-				root.remove(desc)
-				num_of_edits += 0
-
-		# write new XML to a temporary file
-		tree.write('temp.xml')
-
-		# reserialize with rdflib to fix namespaces and UTf-8
-		reserialize('temp.xml', f'{input_location}/{currentDate}/{entity}/{file}', 'xml')
+	g.serialize(destination=f'{input_location}/{currentDate}/{entity}/{file}', format='xml')
 
 	return num_of_edits
 
@@ -86,7 +71,3 @@ end = timer()
 bar.finish()
 print(f"Descriptions removed: {num_of_edits}")
 print(f"Elapsed time: {round((end - start), 1)} s")
-
-# remove temporary file
-if os.path.exists('temp.xml'):
-	os.system('rm temp.xml')

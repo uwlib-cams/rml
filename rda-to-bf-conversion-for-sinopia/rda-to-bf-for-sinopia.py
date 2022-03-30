@@ -31,9 +31,11 @@ import scripts.fix_related_IRIs
 import scripts.type_dates
 
 """Prepare JSON-LD for upload into Sinopia"""
+print("...\nConverting into JSON-LD for upload into Sinopia")
 import scripts.edit_json
 
 """Upload into Sinopia"""
+print("...\nUploading into Sinopia")
 import scripts.post_to_sinopia
 
 print("...\nDone!")

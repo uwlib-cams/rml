@@ -10,7 +10,6 @@ import uuid
 
 """Imported Functions"""
 from scripts.arguments import define_arg
-from scripts.reserialize import reserialize
 
 """Namespaces"""
 bf = Namespace('http://id.loc.gov/ontologies/bibframe/')
@@ -47,7 +46,6 @@ itemList = os.listdir(f'{input_location}/{currentDate}/item')
 
 resource_dict = {"work": workList, "expression": expressionList, "manifestation": manifestationList, "item": itemList}
 rda_to_bf_entity_dict = {"work": "work_1", "expression": "work_2", "manifestation": "instance", "item": "item"}
-bf_to_rda_entity_dict = {"work_1": "work", "work_2": "expression", "instance": "manifestation", "item": "item"}
 rda_bf_dict = {}
 
 """Functions"""
@@ -100,7 +98,7 @@ def transform_rda_to_bf(entity, entityList, currentDate, output_location):
 		replace_default_with_filepath(RDA_entity, rml_filepath)
 
 		# run RML Mapper
-		os.system(f"java -jar rmlmapper-4.15.0-r361-all.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
+		os.system(f"java -jar mapper.jar -m ../generateRML/rmlOutput/{RDA_entity}RML.ttl -o {RDA_ID}.nq")
 
 		# create new empty graph
 		g = Graph()
@@ -225,14 +223,6 @@ for entity in resource_dict.keys():
 
 print(">> Creating record of new IRIs")
 start = timer()
-with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="w") as csv_output:
-	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-	# write header row
-	csv_writer.writerow(['original_RDA_identifier','equivalent_BF_identifier'])
-
-	for RDA_ID in rda_bf_dict.keys():
-		csv_writer.writerow([f'{RDA_ID}', f'{rda_bf_dict[RDA_ID]}'])
 with open(f"other_files/set_IRIs.csv", mode="a") as csv_output:
 	csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 

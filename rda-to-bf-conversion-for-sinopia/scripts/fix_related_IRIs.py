@@ -3,13 +3,12 @@ import csv
 from datetime import date
 import os
 from progress.bar import Bar
+import rdflib
 from rdflib import *
 from timeit import default_timer as timer
-import xml.etree.ElementTree as ET
 
 """Imported Functions"""
 from scripts.arguments import define_arg
-from scripts.reserialize import reserialize
 
 """Variables"""
 # format for naming folder according to date
@@ -28,52 +27,63 @@ itemList = os.listdir(f'{output_location}/{currentDate}/item_xml')
 resource_dict = {"work_1": work_1List, "work_2": work_2List, "instance": instanceList, "item": itemList}
 
 """Functions"""
-def fix_related_IRIs(RDA_ID, BF_ID, entity, file, output_location):
-	num_of_edits = 0
-	edit = False
+def find_IRIs_to_fix(output_location, resource_dict, rda_bf_dict):
+	fix_dict = {}
 
-	# open xml parser
-	tree = ET.parse(f'{output_location}/{currentDate}/{entity}_xml/{file}')
-	root = tree.getroot()
+	for entity in resource_dict.keys():
+		for resource in resource_dict[entity]:
+			g = Graph()
 
-	for child in root: # for each node...
-		for prop in child: # for each property in node...
-			if '{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource' in prop.attrib.keys(): # if the value is an IRI...
-				RDA_IRI = f'https://api.sinopia.io/resource/{RDA_ID}'
-				if prop.attrib['{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource'] == RDA_IRI: # if that IRI is the RDA IRI in question
-					if prop.tag != '{http://www.w3.org/2002/07/owl#}sameAs': # and it is NOT our owl:sameAs triple, which should be left alone
-						BF_IRI = f'https://api.sinopia.io/resource/{BF_ID}'
-						prop.set('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource', BF_IRI) # replace it with its equivalent BF IRI
-						num_of_edits += 1
-						edit = True
+			g.load(f'{output_location}/{currentDate}/{entity}_xml/{resource}', format="xml")
 
-	if edit == True: # only rewrite / reserialize if an edit was made
-		tree.write(f'{output_location}/{currentDate}/{entity}_xml/{file}')
+			for s, p, o in g:
+				if isinstance(o, rdflib.term.URIRef) == True:
+					if p != URIRef("http://www.w3.org/2002/07/owl#sameAs"):
+						if o[0:32] == "https://api.sinopia.io/resource/":
+							# add to dict
+							if resource not in fix_dict.keys():
+								fix_dict[resource] = []
 
-		reserialize(f'{output_location}/{currentDate}/{entity}_xml/{file}', f'{output_location}/{currentDate}/{entity}_xml/{file}', 'xml')
+							RDA_ID = o.split("/")[-1]
+							if RDA_ID in rda_bf_dict.keys():
+								BF_ID = rda_bf_dict[RDA_ID]
+							else: # the IRI found in this triple is not for a resource we know
+								print(f"Error: RDA IRI https://api.sinopia.io/resource/{RDA_ID} found in {output_location}/{currentDate}/{entity}_xml/{resource}, but no equivalent BIBFRAME IRI is found in other_files/set_IRIs.csv. Is this IRI correct?")
+								continue
+							new_object = URIRef(f"https://api.sinopia.io/resource/{BF_ID}")
+							tuple = (entity, s, p, o, new_object)
 
-	return num_of_edits
+							fix_dict[resource].append(tuple)
+
+	return fix_dict
+
+def fix_related_IRIs(file, tuple, output_location):
+	entity = tuple[0]
+	s = tuple[1]
+	p = tuple[2]
+	o = tuple[3]
+	new_object = tuple[4]
+
+	g = Graph()
+
+	g.load(f'{output_location}/{currentDate}/{entity}_xml/{file}', format="xml")
+
+	g.remove((s, p, o))
+	g.add((s, p, new_object))
+
+	g.serialize(destination=f'{output_location}/{currentDate}/{entity}_xml/{file}', format="xml")
 
 ###
 
 start = timer()
-with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
-	"""Get number of IRI pairs to iterate through"""
-	csv_reader = csv.reader(key_file, delimiter=',')
-	total_line_count = 0
-
-	for line in csv_reader:
-		total_line_count += 1
 
 num_of_edits = 0
+rda_bf_dict = {}
 
-with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_file:
+with open(f"other_files/set_IRIs.csv", mode="r") as key_file:
 	"""For each resource, look for IRI pairs and make appropriate changes"""
 	csv_reader = csv.reader(key_file, delimiter=',')
 	line_count = 0
-	num_of_edits = 0
-
-	bar = Bar(">> Replacing RDA IRIs with BIBFRAME IRIs", max=total_line_count, suffix='%(percent)d%%') # progress bar
 	for line in csv_reader:
 		if line_count == 0: # skip header row
 			pass
@@ -81,14 +91,24 @@ with open(f"other_files/RDA_BF_IRI_list_{currentDate}.csv", mode="r") as key_fil
 			RDA_ID = line[0]
 			BF_ID = line[1]
 
-			for entity in resource_dict.keys():
-				for resource in resource_dict[entity]:
-					edits_made = fix_related_IRIs(RDA_ID, BF_ID, entity, resource, output_location)
-					num_of_edits += edits_made
-		line_count += 1
-		bar.next()
-	end = timer()
-	bar.finish()
+			rda_bf_dict[RDA_ID] = BF_ID
 
-print(f"IRIs fixed: {num_of_edits}")
+		line_count += 1
+
+fix_dict = find_IRIs_to_fix(output_location, resource_dict, rda_bf_dict)
+
+max_len = 0
+for key in fix_dict.keys():
+	list = fix_dict[key]
+	max_len += len(list)
+
+bar = Bar(">> Replacing RDA IRIs with BIBFRAME IRIs", max=max_len, suffix='%(percent)d%%') # progress bar
+for resource in fix_dict.keys():
+	for tuple in fix_dict[resource]:
+		edits_made = fix_related_IRIs(resource, tuple, output_location)
+		bar.next()
+end = timer()
+bar.finish()
+
+print(f"IRIs fixed: {max_len}")
 print(f"Elapsed time: {round((end - start), 1)} s")

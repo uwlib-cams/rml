@@ -73,7 +73,6 @@ def edit_json(entity, resource, output_location):
 
 ###
 
-print("...\nConverting into JSON-LD for upload into Sinopia")
 start = timer()
 for entity in resource_dict.keys():
 	# create output dir, if it does not already exist

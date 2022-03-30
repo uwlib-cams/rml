@@ -4,7 +4,6 @@ import os
 from progress.bar import Bar
 import requests
 from rdflib import *
-import time
 from timeit import default_timer as timer
 
 """Imported Functions"""
