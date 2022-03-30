@@ -19,6 +19,9 @@ def kiegel_reader(csv_dir, entity):
 	RML_graph = start_RML_map()
 	RML_graph = generate_main_logical_source(RML_graph, entity)
 	RML_graph = generate_main_subject_map(RML_graph, entity)
+
+	"""Add mapping for admin metadata"""
+	# MCM: for our UW RDA data, we have this going from BIBFRAME to BIBFRAME, so it's not in our RDA-to-BIBFRAME map, so it's done "manually" here!
 	RML_graph = admin_metadata_mapping(RML_graph, entity)
 
 	"""Add RML for 'has identifier for work'/'expression'/'manifestation'/'item'"""
@@ -109,4 +112,5 @@ def kiegel_reader(csv_dir, entity):
 							its_a_class = class_test(node)
 							if its_a_class == False:
 								RML_graph = generate_RML_for_literal(RML_graph, default_map_name, map_name, f"{prefix}:{prop_num}", node)
+
 	return RML_graph
