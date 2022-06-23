@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nad9abfcd4c2547bba0e3a252a02eb1fa">
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="N5bec32fd38e2453b8bf72a5e10d244ce"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N179983b513c44317ae2592a7500d45ae">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:electronicLocator rdf:resource="http://hdl.handle.net/1773/44258"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4519c0bc57254e678449054994f5b042">
+    <bf:mainTitle xml:lang="eng">Nonanadromous life history diversity of rainbow trout (Oncorhynchus mykiss)</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nda56c9ba1d5845ca8537d5ed68a67a11">
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <rdfs:label xml:lang="eng">Online resource; title from PDF title page (ResearchWorks Archive, viewed October 8, 2019).</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/ddd476db-e09a-4f37-9ef5-cbcd7cebf5b2">
+    <bf:responsibilityStatement xml:lang="eng">Martin C. Arostegui</bf:responsibilityStatement>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/8e41795c-591d-43fc-ab0a-26aee67c7c5e"/>
+    <bf:copyrightDate>©2019</bf:copyrightDate>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:identifiedBy rdf:resource="http://hdl.handle.net/1773/44258"/>
+    <bf:note rdf:nodeID="Nda56c9ba1d5845ca8537d5ed68a67a11"/>
+    <bf:extent rdf:nodeID="N123a6af277ba49d1bd65713835ae7f01"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/2b867a59-7a35-4d22-9fea-ba6b2404bdf7"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <bf:title rdf:nodeID="N4519c0bc57254e678449054994f5b042"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+    <bf:adminMetadata rdf:nodeID="Nad9abfcd4c2547bba0e3a252a02eb1fa"/>
+    <bf:provisionActivity rdf:nodeID="Nf4a63df05ce746caab7bb87f9c5254c3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:hasItem rdf:nodeID="N179983b513c44317ae2592a7500d45ae"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4a63df05ce746caab7bb87f9c5254c3">
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="Na23a058a7a32475f92194cfad12ed09a"/>
+    <bf:place rdf:nodeID="N63dcfd74af634599b92c2b5948ea125a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na23a058a7a32475f92194cfad12ed09a">
+    <rdfs:label xml:lang="eng">[University of Washington Libraries]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N123a6af277ba49d1bd65713835ae7f01">
+    <rdfs:label xml:lang="eng">viii, 189 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5bec32fd38e2453b8bf72a5e10d244ce">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:27:55</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N63dcfd74af634599b92c2b5948ea125a">
+    <rdfs:label xml:lang="eng">[Seattle, Washington]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+</rdf:RDF>

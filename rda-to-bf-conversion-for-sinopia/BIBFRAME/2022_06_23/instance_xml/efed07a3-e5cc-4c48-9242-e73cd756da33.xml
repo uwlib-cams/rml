@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nc8adb32927834525b11e2261c3b2e6c6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18114f7385064c3f87fece07103be470">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="Nfa608059563d433991fb32182761b3cb"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="Nc8adb32927834525b11e2261c3b2e6c6"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerId>shadle</bflc:catalogerId>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/efed07a3-e5cc-4c48-9242-e73cd756da33">
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:adminMetadata rdf:nodeID="N18114f7385064c3f87fece07103be470"/>
+    <bf:frequency rdf:nodeID="N7c5ef18ea1f646d9939b5030a9184fa4"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:title rdf:nodeID="N6b9d270775ff4fe9b0fc3e25d1c3d2c0"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/d3e2e595-7bf8-4aa7-a558-c9ef11be8841"/>
+    <bf:note rdf:nodeID="Ncfd7833f0993469faf8fa44c8b4968ab"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003"/>
+    <bf:provisionActivity rdf:nodeID="N72a2aa4c54404141b86c7789ec4b076b"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N72a2aa4c54404141b86c7789ec4b076b">
+    <bf:place rdf:nodeID="Nf0fc36e5569e4b12af05ed897f74f2f4"/>
+    <bf:agent rdf:nodeID="N55ddd2deaeec44b0a0cc8b01b224c8ef"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0fc36e5569e4b12af05ed897f74f2f4">
+    <rdfs:label xml:lang="eng">Seattle, Washington</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b9d270775ff4fe9b0fc3e25d1c3d2c0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">General news</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncfd7833f0993469faf8fa44c8b4968ab">
+    <rdfs:label xml:lang="eng">Description based on: Vol. III, no. 1 (September 1929); title from title page.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <bf:noteType xml:lang="en">issue, part, or iteration used as basis for identification of manifestation</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa608059563d433991fb32182761b3cb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:29:03</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c5ef18ea1f646d9939b5030a9184fa4">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Frequency"/>
+    <rdfs:label xml:lang="eng">Monthly</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55ddd2deaeec44b0a0cc8b01b224c8ef">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[General Fruit Corporation]</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

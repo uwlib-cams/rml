@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N56fe5457810e4bb9a09f3b31ee9c9071">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N29cadf62493343e8959269290390a889"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29cadf62493343e8959269290390a889">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:32:00</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf9ff7b2d8bde4cdaad2c003beba40645">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Crystal's bookshelf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/9d8caeee-f739-442b-9398-96b1526fb9b5">
+    <bf:heldBy rdf:nodeID="Nf9ff7b2d8bde4cdaad2c003beba40645"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/da195ed1-14fd-44a4-8a3d-bc58fabcb9d8"/>
+    <bf:usageAndAccessPolicy rdf:nodeID="N03839702757f4727ac2dea26640f7c21"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/c5b41673-5085-490f-a279-ba3008dc69ca"/>
+    <bf:adminMetadata rdf:nodeID="N56fe5457810e4bb9a09f3b31ee9c9071"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03839702757f4727ac2dea26640f7c21">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/UsePolicy"/>
+    <rdfs:label xml:lang="eng">Requires key to Yragui house</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nbc9f2fb3ae1943198f2390fee3634e2d">
+    <bf:mainTitle xml:lang="deu">Alten Stettin</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0432d94228d432fa99db572ff079527">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">[Cologne]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/469bed59-7ef0-47bf-97d5-8cf191b81372">
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/aec92f4e-44c0-4e07-8ad7-759d381ca982"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1048"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/1d44dc2c-4016-4888-b5ca-ff402a7176ce"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:provisionActivity rdf:nodeID="Neeff36271613464c8e58dd7d188dfa66"/>
+    <bf:dimensions xml:lang="eng">34 x 47 cm</bf:dimensions>
+    <bf:classification rdf:nodeID="N7c872404611b4662af3c07fcdcc9e408"/>
+    <bf:extent rdf:nodeID="N05dfed44bf174f41b2aad93f74bf3ab1"/>
+    <bf:productionMethod rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1005"/>
+    <bf:title rdf:nodeID="Nbc9f2fb3ae1943198f2390fee3634e2d"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:adminMetadata rdf:nodeID="N86d40499185843bf802b2cf8a5ae31c8"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86d40499185843bf802b2cf8a5ae31c8">
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N8d2bf8a1990e4550995016ddeff7b41b"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/dcrmc"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neeff36271613464c8e58dd7d188dfa66">
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n50043890"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>[1617]</bf:date>
+    <bf:agent rdf:nodeID="Nb94cf7e8ad694a7bbc42b29f5ce02d5f"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n50043248"/>
+    <bf:place rdf:nodeID="Nc0432d94228d432fa99db572ff079527"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb94cf7e8ad694a7bbc42b29f5ce02d5f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[Braun &amp; Hogenberg]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N05dfed44bf174f41b2aad93f74bf3ab1">
+    <rdfs:label xml:lang="eng">1 view</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d2bf8a1990e4550995016ddeff7b41b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:28:25</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c872404611b4662af3c07fcdcc9e408">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>G6524.S93 1617</bf:classificationPortion>
+    <bf:itemPortion>.A4</bf:itemPortion>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N5eb5e77f38e6400e95b9e7546f44511c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N78ed01be64fe49948feeef50e0a30657"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:generationProcess rdf:nodeID="N504ebd75a90040ae9fa624e9d7ffb4e8"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerId>gerhart</bflc:catalogerId>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49ad142b26994e1bb01f597d6ba53000">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Nimbus Records</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N78ed01be64fe49948feeef50e0a30657">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/61de184e-2039-427b-857b-d83c67fed8fd">
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1001"/>
+    <bf:responsibilityStatement xml:lang="eng">Stravinsky/Ramuz</bf:responsibilityStatement>
+    <bf:provisionActivity rdf:nodeID="Nf5f461bf092345f2927fa2dd32042bd2"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:copyrightDate>℗1986</bf:copyrightDate>
+    <bf:dimensions xml:lang="eng">4 3/4 in.</bf:dimensions>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <bf:adminMetadata rdf:nodeID="N5eb5e77f38e6400e95b9e7546f44511c"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/>
+    <bf:soundCharacteristic rdf:resource="http://rdaregistry.info/termList/typeRec/1002"/>
+    <bf:soundCharacteristic rdf:resource="http://rdaregistry.info/termList/configPlayback/1002"/>
+    <bf:title rdf:nodeID="Nfdd3c2e607e043ed9f9f3004d7be255e"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/a832adb8-e349-49f9-a19b-f5aabac4b58c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5f461bf092345f2927fa2dd32042bd2">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:date>[1986]</bf:date>
+    <bf:agent rdf:nodeID="N49ad142b26994e1bb01f597d6ba53000"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N504ebd75a90040ae9fa624e9d7ffb4e8">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:28:20</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdd3c2e607e043ed9f9f3004d7be255e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">The soldier's tale</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

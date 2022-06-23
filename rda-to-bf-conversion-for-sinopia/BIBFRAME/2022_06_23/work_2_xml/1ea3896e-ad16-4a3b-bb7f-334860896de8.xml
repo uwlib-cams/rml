@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N25965b04546d45d2a94364fe44273a43">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:generationProcess rdf:nodeID="N49df8de451a7445c842dd05bad1d4755"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:status rdf:nodeID="N864b2860b2864bd08036727bbaa2b154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/1ea3896e-ad16-4a3b-bb7f-334860896de8">
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/7a3d4f26-0cde-4a1b-8a2c-f36070e7499d"/>
+    <bf:adminMetadata rdf:nodeID="N25965b04546d45d2a94364fe44273a43"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:expressionOf rdf:resource="https://api.sinopia.io/resource/5fe7d2be-70f0-4326-8375-e357a4fb5552"/>
+    <bf:content rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1922</bf:originDate>
+    <bf:notation rdf:nodeID="N01942ade64b644e396630b5d6a80d008"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N864b2860b2864bd08036727bbaa2b154">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N49df8de451a7445c842dd05bad1d4755">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:22:57</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01942ade64b644e396630b5d6a80d008">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Script"/>
+    <rdfs:label xml:lang="eng">Latin</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

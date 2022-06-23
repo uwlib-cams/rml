@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nd30f9493d9324fb2874e39a132241a05">
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerId>jlee70</bflc:catalogerId>
+    <bf:generationProcess rdf:nodeID="N7435439cefd7445e8b8e254c27f3b092"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:status rdf:nodeID="N11d093e9defe4db6aa8b51a238176d5e"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8ec327fcfd44e71a08ac01ac187cce5">
+    <rdfs:label>Nihon Chizu Kabushiki Kaisha</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne50e3c8e3d6c4c51bc29c76967e2698c">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="jpn">大阪市案内圖</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N417e4558398d4a448625882c1fe6db00">
+    <rdfs:label>Japan</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N11d093e9defe4db6aa8b51a238176d5e">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ed71a78fa9442bab1031848ce8ea0a1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+    <bf:agent rdf:nodeID="Nd8ec327fcfd44e71a08ac01ac187cce5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/d00d37e6-0888-49bf-b47f-9c098f7ddda6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950</bf:originDate>
+    <bf:originPlace rdf:nodeID="N417e4558398d4a448625882c1fe6db00"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <bf:subject rdf:nodeID="Na0f25d5a80604ec9b9e7c8a1807cf402"/>
+    <bf:adminMetadata rdf:nodeID="Nd30f9493d9324fb2874e39a132241a05"/>
+    <skos:prefLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. Ōsaka-shi annaizu</skos:prefLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/2be1aad1-4cae-4a38-82aa-896480e41a79"/>
+    <bf:contribution rdf:nodeID="N9ed71a78fa9442bab1031848ce8ea0a1"/>
+    <bf:title rdf:nodeID="Na91cf6fd33e948359ef9eb0a9cd9cb71"/>
+    <skos:altLabel xml:lang="jpn">Nihon Chizu Kabushiki Kaisha. 大阪市案内圖</skos:altLabel>
+    <bf:title rdf:nodeID="Ne50e3c8e3d6c4c51bc29c76967e2698c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na0f25d5a80604ec9b9e7c8a1807cf402">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Osaka (Japan)--Maps</madsrdf:authoritativeLabel>
+    <rdfs:label>Osaka (Japan)--Maps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na91cf6fd33e948359ef9eb0a9cd9cb71">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="jpn">Ōsaka-shi annaizu</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7435439cefd7445e8b8e254c27f3b092">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:15:16</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

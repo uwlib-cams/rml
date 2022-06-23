@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/0308c0c6-3288-4722-a683-e66cd6cf149e">
+    <bf:digitalCharacteristic rdf:nodeID="Nf6a0c8c8cf644080b6b3240bbee36857"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Seattle, Washington] : [University of Washington Libraries], [2019]</bf:provisionActivityStatement>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:adminMetadata rdf:nodeID="Nbe5d42c7a18145658376e3df62accadb"/>
+    <bf:responsibilityStatement xml:lang="eng">Ashley Bagley</bf:responsibilityStatement>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:carrier rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+    <bf:hasItem rdf:nodeID="Nead3b1f8f3c544bca07011ce2a853cd5"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/32b576fe-cd32-420b-bf94-860f3f7d3bfe"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3921a728-e4d6-4d88-9dfd-cf17b1768ebd"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+    <bf:provisionActivity rdf:nodeID="Nd6aef658beb44b708d6a71d4d7cc4ae2"/>
+    <bf:digitalCharacteristic rdf:resource="http://rdaregistry.info/termList/fileType/1002"/>
+    <bf:copyrightDate>©2019</bf:copyrightDate>
+    <bf:title rdf:nodeID="N4a0f79dcfab149ea95519e7271149cb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N97592d899dbe432e97eb590a3a6de7e7">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:26:36</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf6a0c8c8cf644080b6b3240bbee36857">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/FileType"/>
+    <rdfs:label>PDF</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a0f79dcfab149ea95519e7271149cb8">
+    <bf:mainTitle xml:lang="eng">Evaluating temperature buffering capacity of floodplain side channels to promote refugia for salmonids in the Stillaguamish River basin</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe5d42c7a18145658376e3df62accadb">
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bflc:catalogerId>cec23</bflc:catalogerId>
+    <bf:generationProcess rdf:nodeID="N97592d899dbe432e97eb590a3a6de7e7"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N9a96d23dd7c94379a0ff4d9f7b725414"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3fcaa0f0f80f4cbca906a848aea4d073">
+    <rdfs:label xml:lang="eng">[Seattle, Washington]</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb5611002b594b62b1894e75dc9cb27a">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">[University of Washington Libraries]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6aef658beb44b708d6a71d4d7cc4ae2">
+    <bf:agent rdf:nodeID="Nfb5611002b594b62b1894e75dc9cb27a"/>
+    <bf:date>[2019]</bf:date>
+    <bf:place rdf:nodeID="N3fcaa0f0f80f4cbca906a848aea4d073"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nead3b1f8f3c544bca07011ce2a853cd5">
+    <bf:electronicLocator rdf:resource="http://hdl.handle.net/1773/44348"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9a96d23dd7c94379a0ff4d9f7b725414">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+</rdf:RDF>

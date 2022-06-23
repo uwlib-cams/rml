@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/152ce345-738e-4317-a628-59d4264deff7">
+    <bf:note rdf:nodeID="Nf02a99dd07314c76b4c6aa73957ca3bb"/>
+    <bf:responsibilityStatement xml:lang="eng">by Myra Mae Waddell</bf:responsibilityStatement>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:productionMethod rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1008"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/5d8bee3b-f614-4fd7-adcf-86e78ad94fd6"/>
+    <bf:classification rdf:nodeID="N3dd05a6fbdb04e60882fafdd3c52c7ac"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:title rdf:nodeID="Nef702d2e6efc44c88913714d84de3335"/>
+    <bf:adminMetadata rdf:nodeID="N96c79114aee64359b876b901ed7f10e8"/>
+    <bf:provisionActivity rdf:nodeID="Nf56ba682c2984b3eb942accc053f74eb"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/67f2f809-3ddd-4e28-9e25-fc9254239ebb"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce85053d9ef946908068d29b4e2802e1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Gal-Pal Zines</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3dd05a6fbdb04e60882fafdd3c52c7ac">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>N7433.4.W225</bf:classificationPortion>
+    <bf:itemPortion>C66 2018</bf:itemPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne14fb3f26bf242a5ab8350b606509885">
+    <rdfs:label xml:lang="eng">Honolulu, Hawaii</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N906d5749a8484cb9a22543627aa2c8ab">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96c79114aee64359b876b901ed7f10e8">
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bflc:catalogerId>mathiasuw</bflc:catalogerId>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N906d5749a8484cb9a22543627aa2c8ab"/>
+    <bf:generationProcess rdf:nodeID="N530beef278194af28ff2b6f41a777973"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf38da517d9564e49b34d24730e1e137f">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Gal-Pal Zines</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nef702d2e6efc44c88913714d84de3335">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Conchology haiku</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf56ba682c2984b3eb942accc053f74eb">
+    <bf:place rdf:nodeID="Ne14fb3f26bf242a5ab8350b606509885"/>
+    <bf:agent rdf:nodeID="Nf38da517d9564e49b34d24730e1e137f"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:nodeID="Nce85053d9ef946908068d29b4e2802e1"/>
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</bf:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N530beef278194af28ff2b6f41a777973">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:27:17</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf02a99dd07314c76b4c6aa73957ca3bb">
+    <rdfs:label xml:lang="eng">stapled</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <bf:noteType xml:lang="en">type of binding</bf:noteType>
+  </rdf:Description>
+</rdf:RDF>

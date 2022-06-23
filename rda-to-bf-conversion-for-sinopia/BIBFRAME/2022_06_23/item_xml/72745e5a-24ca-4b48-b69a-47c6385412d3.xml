@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N95dbaa583c47464ca4d1cd6b3dc93396">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">ugstx</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc474803fe75432b8e1594b0d2e53296">
+    <bf:generationProcess rdf:nodeID="N100d8ce0852c4ec5b2ae63847368a007"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerId>ries07</bflc:catalogerId>
+    <bf:status rdf:nodeID="Nca2987f35f1148f99a9b1ebc77d83859"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/72745e5a-24ca-4b48-b69a-47c6385412d3">
+    <bf:sublocation rdf:nodeID="N95dbaa583c47464ca4d1cd6b3dc93396"/>
+    <bf:identifier rdf:nodeID="Ne9caee4832bc46f790bcbb2f94cd35c6"/>
+    <bf:physicalLocation xml:lang="eng">ougl</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/2ce2a9bc-56e3-476e-bfbc-db2151c105fb"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/b32c0797-4adf-4849-8086-e74f324f1871"/>
+    <bf:classification rdf:nodeID="Ne4b4c88491f24ef5b819720c5b2ffd51"/>
+    <bf:adminMetadata rdf:nodeID="Nfc474803fe75432b8e1594b0d2e53296"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne9caee4832bc46f790bcbb2f94cd35c6">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Barcode"/>
+    <rdf:value>39352084275270</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca2987f35f1148f99a9b1ebc77d83859">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4b4c88491f24ef5b819720c5b2ffd51">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>N54 2019</bf:itemPortion>
+    <bf:classificationPortion>QE862.S3</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N100d8ce0852c4ec5b2ae63847368a007">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:31:31</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

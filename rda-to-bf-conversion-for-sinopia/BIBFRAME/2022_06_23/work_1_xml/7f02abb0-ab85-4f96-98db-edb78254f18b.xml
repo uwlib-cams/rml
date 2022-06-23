@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N06afec283e594c2d84ca8d090d77bc29">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ab038f6be6e4ac796c9ff92a887995f">
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:status rdf:nodeID="N06afec283e594c2d84ca8d090d77bc29"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N90d62ee5437149cbb7da35de43092aba"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bflc:catalogerId>dbrookin</bflc:catalogerId>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90d62ee5437149cbb7da35de43092aba">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:15:30</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7f02abb0-ab85-4f96-98db-edb78254f18b">
+    <skos:altLabel xml:lang="mac">Tolovski, D. (Dime). Makedonsko-ruski rečnik</skos:altLabel>
+    <bf:contribution rdf:nodeID="Nac73db2baf04435185651ea8d73087c6"/>
+    <bf:title rdf:nodeID="N55e593d3931d42a9a2f584830632bf31"/>
+    <skos:prefLabel xml:lang="rus">Tolovski, D. (Dime). Makedonsko-russkiĭ slovarʹ</skos:prefLabel>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3f51c956-0a93-4dc6-b16c-cecee7693db3"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:title rdf:nodeID="Ndfd5b71ef7f14fdcbd4c25066caf5051"/>
+    <bf:subject rdf:nodeID="Na3ca13496f584c52b7c4d2c932f777a4"/>
+    <bf:adminMetadata rdf:nodeID="N0ab038f6be6e4ac796c9ff92a887995f"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026086"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55e593d3931d42a9a2f584830632bf31">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="mac">Makedonsko-ruski rečnik</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac73db2baf04435185651ea8d73087c6">
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/com"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no00037560"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/n84143926"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3ca13496f584c52b7c4d2c932f777a4">
+    <rdfs:label>Macedonian language--Dictionaries--Russian</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <madsrdf:authoritativeLabel>Macedonian language--Dictionaries--Russian</madsrdf:authoritativeLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndfd5b71ef7f14fdcbd4c25066caf5051">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="rus">Makedonsko-russkiĭ slovarʹ</bf:mainTitle>
+  </rdf:Description>
+</rdf:RDF>

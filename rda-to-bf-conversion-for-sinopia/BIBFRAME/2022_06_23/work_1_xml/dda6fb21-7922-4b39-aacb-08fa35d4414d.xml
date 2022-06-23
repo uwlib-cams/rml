@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Na820717ef2e841a8b64961e03b11e12e">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ab2361ac8004254bb693d5ef0811717">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bflc:catalogerId>dbrookin</bflc:catalogerId>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:status rdf:nodeID="Na820717ef2e841a8b64961e03b11e12e"/>
+    <bf:generationProcess rdf:nodeID="N77406cd4001741fe937c17245e393443"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/dda6fb21-7922-4b39-aacb-08fa35d4414d">
+    <bf:title rdf:nodeID="Nc021156597bc48fa8b5e1ac30a57d95e"/>
+    <bf:adminMetadata rdf:nodeID="N0ab2361ac8004254bb693d5ef0811717"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/b868229b-4177-461a-b731-f36b95a73142"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <skos:prefLabel xml:lang="rus">Malyshkin, E. V. (Evgeniĭ Vitalʹevich). Dve metafory pami︠a︡ti</skos:prefLabel>
+    <bf:contribution rdf:nodeID="Nc2504539338044e9bc64458318d5921c"/>
+    <bf:subject rdf:nodeID="N4ba99378afcc44a6a450f13f16aac167"/>
+    <bf:title rdf:nodeID="Ndb2816df15b1425f99c60cf0782e4b67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77406cd4001741fe937c17245e393443">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:18:05</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb2816df15b1425f99c60cf0782e4b67">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+    <bf:mainTitle xml:lang="rus">Две метафоры памяти</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc2504539338044e9bc64458318d5921c">
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2004043482"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ba99378afcc44a6a450f13f16aac167">
+    <rdfs:label>Memory (Philosophy)--History</rdfs:label>
+    <madsrdf:authoritativeLabel>Memory (Philosophy)--History</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc021156597bc48fa8b5e1ac30a57d95e">
+    <bf:mainTitle xml:lang="rus">Dve metafory pami︠a︡ti</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

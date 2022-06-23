@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N02715b2393bc4793822d8186c6dba051">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <bf:mainTitle xml:lang="eng">Zipper</bf:mainTitle>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8da05f4a97a24bd5b208ff125d3f44ef">
+    <rdfs:label xml:lang="eng">UW Libraries has limited edition copy 4/10</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
+    <bf:noteType xml:lang="en">University of Washington note</bf:noteType>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb837396ee02f46ceb98b49c8520f122b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label xml:lang="eng">Kingston (Ont.)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7a9b4ea3221046b695284bef73d350ce">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:26:40</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b844fe550e14c0ba44e87b61be2e1dc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:itemPortion>Z57 2018</bf:itemPortion>
+    <bf:classificationPortion>N7433.4.M445</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/77572afc-f8c9-428d-90ee-f01234b2f5c8">
+    <bf:adminMetadata rdf:nodeID="N552564c2563841419a8998e680bdcf6f"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:provisionActivityStatement xml:lang="eng">[Kingston, Ontario] : Transformer Press, 2018</bf:provisionActivityStatement>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:note rdf:nodeID="N8da05f4a97a24bd5b208ff125d3f44ef"/>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1008"/>
+    <bf:provisionActivity rdf:nodeID="Nc0441e42f1bf4d8fa73ce5ad31fb6ebc"/>
+    <bf:title rdf:nodeID="N02715b2393bc4793822d8186c6dba051"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1039"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/3ae462fd-27e3-4b13-8127-0c0bdb016fc4"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/73e577f0-e928-4b01-b008-76469430e23a"/>
+    <bf:classification rdf:nodeID="N4b844fe550e14c0ba44e87b61be2e1dc"/>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne6cc945572d54ef6a6e5b9005f245259">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0441e42f1bf4d8fa73ce5ad31fb6ebc">
+    <bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:place rdf:nodeID="Nb837396ee02f46ceb98b49c8520f122b"/>
+    <bf:agent rdf:nodeID="N4b943c43825242bfb0f3d8d8e36cd92b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N552564c2563841419a8998e680bdcf6f">
+    <bf:status rdf:nodeID="Ne6cc945572d54ef6a6e5b9005f245259"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:generationProcess rdf:nodeID="N7a9b4ea3221046b695284bef73d350ce"/>
+    <bflc:catalogerId>mathiasuw</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b943c43825242bfb0f3d8d8e36cd92b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Transformer Press</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

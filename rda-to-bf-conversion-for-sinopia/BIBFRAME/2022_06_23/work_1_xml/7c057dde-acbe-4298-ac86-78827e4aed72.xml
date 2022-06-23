@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N20c7b200567f4108852ffea8bc308fcf">
+    <rdfs:label>Albert, Ned, 1894-1968</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N08fa9eecc3624ca1bedaf4438b00b39c">
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:status rdf:nodeID="N97bc1e8f096b4f0bae246830a411ffdb"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:generationProcess rdf:nodeID="N28e3f9bcce5c40bea1ed32712022fedb"/>
+    <bflc:catalogerId>pfreeman</bflc:catalogerId>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Necf71a99b00f4f36806fe3a55872f2d0">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <bf:agent rdf:nodeID="N20c7b200567f4108852ffea8bc308fcf"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N97bc1e8f096b4f0bae246830a411ffdb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/7c057dde-acbe-4298-ac86-78827e4aed72">
+    <bf:originDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1941</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85122849"/>
+    <skos:prefLabel xml:lang="eng">Albert, Ned, 1894-1968. Hillbilly Sue</skos:prefLabel>
+    <bf:adminMetadata rdf:nodeID="N08fa9eecc3624ca1bedaf4438b00b39c"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008107215"/>
+    <bf:contribution rdf:nodeID="Necf71a99b00f4f36806fe3a55872f2d0"/>
+    <bf:subject rdf:nodeID="N30e01bb13e6f4467b5500c4cca7cc570"/>
+    <bf:subject rdf:nodeID="N5f730308efa84471bab053229d799ccd"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026462"/>
+    <bf:title rdf:nodeID="N348813a1f7174b3d86d5c7c5b6d527d0"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/94c8153f-01b0-42ad-b356-70f3bd64e6dc"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026264"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026282"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30e01bb13e6f4467b5500c4cca7cc570">
+    <madsrdf:authoritativeLabel>Ozark Mountains -- Drama</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <rdfs:label>Ozark Mountains -- Drama</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f730308efa84471bab053229d799ccd">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+    <rdfs:label>Mountain people -- Drama</rdfs:label>
+    <madsrdf:authoritativeLabel>Mountain people -- Drama</madsrdf:authoritativeLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28e3f9bcce5c40bea1ed32712022fedb">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:17:14</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N348813a1f7174b3d86d5c7c5b6d527d0">
+    <bf:mainTitle xml:lang="eng">Hillbilly Sue</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+</rdf:RDF>

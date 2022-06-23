@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N7136c27deab1433b8aacd0b65279dfec">
+    <bf:place rdf:nodeID="N33c8ae13402041a59f3f01ff631b0693"/>
+    <bf:agent rdf:nodeID="N1dc685d68956452696248eb7d90fe93b"/>
+    <bf:date>[1962]</bf:date>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+    <bf:agent rdf:resource="http://id.loc.gov/rwo/agents/no2017063288"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/33738e81-1e18-425e-99f1-9a000f27c843">
+    <bf:copyrightDate>©1960</bf:copyrightDate>
+    <bf:extent rdf:nodeID="Ncb7bec3f4ea5487290958fd1feec4c77"/>
+    <bf:issuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+    <bf:baseMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1025"/>
+    <bf:title rdf:nodeID="N6c35f531915e441086cd3cbc3fe16b20"/>
+    <bf:appliedMaterial rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1017"/>
+    <bf:adminMetadata rdf:nodeID="N8eaad67f70734bc5bea702dc5d0a12ab"/>
+    <bf:instanceOf rdf:resource="https://api.sinopia.io/resource/839b94e8-2d4d-4ca1-99f2-4b69f4e5abc5"/>
+    <bf:dimensions xml:lang="eng">21 cm</bf:dimensions>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <bf:editionStatement xml:lang="eng">Popular Library edition</bf:editionStatement>
+    <bf:media rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+    <bf:responsibilityStatement xml:lang="eng">Harper Lee</bf:responsibilityStatement>
+    <bf:classification rdf:nodeID="Ne355982103b74e9d92d042c84f1cf7d8"/>
+    <bf:provisionActivityStatement xml:lang="eng">New York : Popular Library, [1962]</bf:provisionActivityStatement>
+    <bf:carrier rdf:resource="http://www.rdaregistry.info/termList/RDACarrierType/1049"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/8846a80b-5fa3-4dfe-8032-1b5dcf42e2e5"/>
+    <bf:provisionActivity rdf:nodeID="N7136c27deab1433b8aacd0b65279dfec"/>
+    <bf:identifiedBy rdf:nodeID="Nfdddc2f28b4e4b81953de2201b895b51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8eaad67f70734bc5bea702dc5d0a12ab">
+    <bf:status rdf:nodeID="N66a2f27556eb4be688aad4a467ff41aa"/>
+    <bflc:catalogerId>aentze</bflc:catalogerId>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:generationProcess rdf:nodeID="N250afda2d7b74f38bb893232334b52d1"/>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne355982103b74e9d92d042c84f1cf7d8">
+    <bf:itemPortion>T6 1962</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+    <bf:classificationPortion>PS3562.E353</bf:classificationPortion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33c8ae13402041a59f3f01ff631b0693">
+    <rdfs:label xml:lang="eng">New York</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66a2f27556eb4be688aad4a467ff41aa">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+    <bf:code>n</bf:code>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c35f531915e441086cd3cbc3fe16b20">
+    <bf:mainTitle xml:lang="eng">To kill a mockingbird</bf:mainTitle>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfdddc2f28b4e4b81953de2201b895b51">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdf:value>LCCN: 60-7847</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N250afda2d7b74f38bb893232334b52d1">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:27:49</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1dc685d68956452696248eb7d90fe93b">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label xml:lang="eng">Popular Library</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb7bec3f4ea5487290958fd1feec4c77">
+    <rdfs:label xml:lang="eng">284 pages</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Extent"/>
+  </rdf:Description>
+</rdf:RDF>

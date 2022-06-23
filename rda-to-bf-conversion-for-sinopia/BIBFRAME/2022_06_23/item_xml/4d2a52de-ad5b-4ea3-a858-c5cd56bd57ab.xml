@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+   xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na6847eefc00c412c929cfef518214138">
+    <bf:source rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:generationProcess rdf:nodeID="Neb396bc8948a4f0a9c6c1667ff4e730f"/>
+    <bflc:catalogerId>aschiff</bflc:catalogerId>
+    <bf:status rdf:nodeID="Nc9b1aeaff10040d8b4931ed0dcbd5eb1"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
+    <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-23</bf:changeDate>
+    <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-11</bf:creationDate>
+    <bflc:encodingLevel rdf:resource="https://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:descriptionLanguage rdf:resource="https://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionConventions rdf:resource="https://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N930bcb2886ed45b88dac07eb4dfb069c">
+    <bf:classificationPortion>TX795</bf:classificationPortion>
+    <bf:itemPortion>.L55 2008</bf:itemPortion>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ClassificationLcc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://api.sinopia.io/resource/4d2a52de-ad5b-4ea3-a858-c5cd56bd57ab">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <bf:itemOf rdf:resource="https://api.sinopia.io/resource/5aa489c7-4c13-40f7-a507-4a7a16cba583"/>
+    <owl:sameAs rdf:resource="https://api.sinopia.io/resource/843769d1-4861-42ef-8370-db32eebab131"/>
+    <bf:physicalLocation xml:lang="eng">Adam's house</bf:physicalLocation>
+    <bf:heldBy rdf:resource="https://id.loc.gov/vocabulary/organizations/wau"/>
+    <bf:sublocation rdf:nodeID="N39df028fcf9e4415a9fd5d519156b5d5"/>
+    <bf:classification rdf:nodeID="N930bcb2886ed45b88dac07eb4dfb069c"/>
+    <bf:adminMetadata rdf:nodeID="Na6847eefc00c412c929cfef518214138"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc9b1aeaff10040d8b4931ed0dcbd5eb1">
+    <bf:code>n</bf:code>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb396bc8948a4f0a9c6c1667ff4e730f">
+    <rdfs:label>rda-to-bf-for-sinopia.py SNAPSHOT: 2022-06-23T13:31:06</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenerationProcess"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N39df028fcf9e4415a9fd5d519156b5d5">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <rdfs:label xml:lang="eng">Dining room</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
