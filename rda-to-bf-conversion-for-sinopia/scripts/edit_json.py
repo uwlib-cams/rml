@@ -4,7 +4,7 @@ import json
 import os
 from progress.bar import Bar
 from rdflib import *
-import time
+from datetime import datetime
 from timeit import default_timer as timer
 
 """Imported Functions"""
@@ -63,10 +63,10 @@ def edit_json(entity, resource, output_location):
 	"""Prepare JSON-LD for upload into Sinopia"""
 	with open(f'{output_location}/{currentDate}/{entity}_json/{resource}', 'r') as input_file:
 		original_data = json.load(input_file)
-		currentTime = time.strftime("%Y-%m-%dT%H:%M:%S")
+		currentTime = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
 		resource_id = resource.split('.')[0]
 		resource_iri = f"https://api.sinopia.io/resource/{resource_id}"
-		sinopia_format = json.dumps({"data": original_data, "user": "mcm104", "group": "washington", "templateId": rt_dict[entity], "types": [ class_dict[entity] ], "id": resource_id, "uri": resource_iri, "timestamp": currentTime})
+		sinopia_format = json.dumps({"data": original_data, "user": "mcm104", "group": "washington", "editGroups": [], "templateId": rt_dict[entity], "types": [ class_dict[entity] ], "bfAdminMetadataRefs": [], "sinopiaLocalAdminMetadataForRefs": [], "bfItemRefs": [], "bfInstanceRefs": [], "bfWorkRefs": [], "id": resource_id, "uri": resource_iri, "timestamp": currentTime})
 
 	with open(f'{output_location}/{currentDate}/{entity}_json/{resource}', 'w') as output_file:
 		output_file.write(sinopia_format)
